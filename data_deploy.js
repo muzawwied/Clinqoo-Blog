@@ -48,6 +48,48 @@ window.countryDataFiles["deploy"] = {
           source3: "Clinqoo", sourceUrl3: "https://clinqoo.pages.dev/", sourceSnippet3: "Menu Deploy Clinqoo"
         }
       }
+    },
+    {
+      id: "pratinjau-sebelum-deploy",
+      langs: {
+        "id": {
+          title: "Pratinjau Dulu, Deploy Kemudian",
+          desc: "Pratinjau editor Clinqoo adalah jaring pengaman terakhir. Cek desktop dan HP sebelum situs benar-benar tayang.",
+          content: "<p class=\"mb-4\">Tombol deploy terasa menggoda begitu halaman terlihat cukup rapi. Tahan dulu. Pratinjau di editor Clinqoo ada supaya kamu melihat situs seperti pengunjung melihatnya — bukan seperti kamu melihatnya di tab kode.</p><p class=\"mb-4\">Buka pratinjau, gulir dari atas sampai bawah, klik setiap tautan dan tombol. Periksa teks yang terpotong, gambar yang terlalu besar, dan formulir yang tidak merespons. Lalu sempitkan jendela atau gunakan mode HP: banyak masalah tata letak baru muncul di layar kecil.</p><p class=\"mb-4\">Kalau ada yang aneh, perbaiki di editor, simpan, lalu pratinjau lagi. Ulangi sampai kamu rela orang lain membukanya. Barulah deploy. Lima menit pengecekan ini jauh lebih murah daripada menjelaskan ke teman kenapa tombolnya tidak bisa diklik.</p><p class=\"mb-4\">Anggap pratinjau sebagai latihan panggung. Deploy adalah malam tayang. Kamu tetap bisa deploy ulang nanti, tapi kesan pertama pengunjung hanya datang sekali.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Pratinjau di editor Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/performance/", sourceSnippet2: "Dasar performa dan pengalaman pengguna",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi HTML dan CSS responsif"
+        },
+        "en": {
+          title: "Preview First, Deploy Second",
+          desc: "The Clinqoo editor preview is your last safety net. Check desktop and phone before the site actually goes live.",
+          content: "<p class=\"mb-4\">The deploy button feels tempting the moment a page looks tidy enough. Hold on. Preview in the Clinqoo editor exists so you see the site the way visitors will — not the way you see it in a code tab.</p><p class=\"mb-4\">Open preview, scroll top to bottom, click every link and button. Watch for clipped text, oversized images, and forms that do nothing. Then shrink the window or use phone mode: many layout issues only appear on a small screen.</p><p class=\"mb-4\">If something looks off, fix it in the editor, save, and preview again. Repeat until you would be fine with a stranger opening it. Then deploy. Five minutes of checking is cheaper than explaining to a friend why the button does not click.</p><p class=\"mb-4\">Treat preview as a dress rehearsal. Deploy is opening night. You can always deploy again later, but a visitor's first impression only happens once.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Preview in the Clinqoo editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/performance/", sourceSnippet2: "Performance and user experience basics",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "HTML and responsive CSS reference"
+        }
+      }
+    },
+    {
+      id: "deploy-ulang-tanpa-takut",
+      langs: {
+        "id": {
+          title: "Deploy Ulang Tanpa Takut Kehilangan Situs",
+          desc: "Mengubah situs yang sudah live bukan memulai dari nol. Deploy ulang di Clinqoo mengganti versi lama dengan yang baru.",
+          content: "<p class=\"mb-4\">Banyak pemula menahan diri mengubah situs yang sudah tayang karena takut versi lama hilang tanpa jejak. Di Clinqoo, deploy ulang justru alur normal: kamu sunting di editor, simpan, lalu terbitkan lagi. Alamat yang sama menampilkan versi terbaru.</p><p class=\"mb-4\">Yang perlu diingat: yang ditayangkan adalah berkas yang sudah tersimpan di proyek. Kalau perubahan masih mengambang di tab, simpan dulu. Setelah deploy, buka alamat publik — bukan hanya pratinjau — dan pastikan pengunjung melihat yang baru, kadang cache browser butuh refresh.</p><p class=\"mb-4\">Kalau hasilnya tidak sesuai harapan, perbaiki lagi dan deploy sekali lagi. Tidak ada hukuman untuk iterasi. Situs hidup justru karena kamu berani menyentuhnya setelah tayang perdana.</p><p class=\"mb-4\">Jadwalkan deploy ulang kecil: typo hari ini, warna tombol besok, halaman baru minggu depan. Situs yang berkembang pelan lebih sehat daripada situs yang dibiarkan beku karena takut tombol terbitkan.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/pages/", sourceSnippet2: "Pembaruan situs statis",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web"
+        },
+        "en": {
+          title: "Redeploy Without Fear of Losing Your Site",
+          desc: "Changing a live site is not starting from zero. Redeploying in Clinqoo replaces the old version with the new one.",
+          content: "<p class=\"mb-4\">Many beginners freeze a live site because they fear the old version will vanish without a trace. In Clinqoo, redeploying is the normal loop: edit in the editor, save, then publish again. The same address shows the newest version.</p><p class=\"mb-4\">Remember: what goes live are the files already saved in the project. If a change is still floating in a tab, save first. After deploy, open the public address — not only preview — and confirm visitors see the new version; sometimes the browser cache needs a refresh.</p><p class=\"mb-4\">If the result is not what you hoped, fix it and deploy once more. There is no penalty for iteration. A living site exists because you dare to touch it after opening night.</p><p class=\"mb-4\">Schedule small redeploys: a typo today, a button color tomorrow, a new page next week. A site that grows slowly is healthier than one frozen because the publish button felt dangerous.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo Deploy menu",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/pages/", sourceSnippet2: "Static site updates",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Web best practices"
+        }
+      }
     }
   ]
 };
