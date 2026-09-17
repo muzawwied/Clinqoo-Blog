@@ -69,6 +69,48 @@ window.countryDataFiles["editor"] = {
           source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
         }
       }
+    },
+    {
+      id: "pratinjau-langsung-di-editor",
+      langs: {
+        "id": {
+          title: "Pratinjau Langsung di Editor: Lihat Hasil Tanpa Keluar dari Kode",
+          desc: "Pratinjau Clinqoo menempel di ruang kerja. Ubah kode, simpan, lalu lihat halaman berubah tanpa pindah aplikasi.",
+          content: "<p class=\"mb-4\">Menulis kode tanpa melihat hasilnya seperti memasak dengan mata tertutup. Editor Clinqoo menyediakan pratinjau di ruang kerja yang sama, sehingga kamu tidak perlu menyalin berkas ke folder lain atau membuka server lokal terpisah.</p><p class=\"mb-4\">Alur yang nyaman: ubah HTML atau CSS, simpan, buka atau segarkan pratinjau. Kalau jaraknya masih jauh dari yang kamu bayangkan, kembali ke tab kode — file explorer dan tab tetap di tempatnya. Tidak ada konteks yang hilang.</p><p class=\"mb-4\">Pakai pratinjau juga untuk membandingkan dua perubahan kecil. Ganti warna, lihat. Ganti spasi, lihat. Keputusan desain jadi cepat karena umpan baliknya langsung, bukan spekulasi.</p><p class=\"mb-4\">Biasakan menutup siklus ini sebelum beralih ke fitur baru. Halaman yang sudah kamu lihat dengan mata sendiri jauh lebih mudah dijelaskan ke AI atau ke kolaborator daripada halaman yang baru ada di imajinasi.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Pratinjau editor Clinqoo",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/", sourceSnippet2: "Referensi HTML, CSS, JS",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web"
+        },
+        "en": {
+          title: "Live Preview in the Editor: See Results Without Leaving Your Code",
+          desc: "Clinqoo preview lives in the same workspace. Change code, save, and watch the page update without switching apps.",
+          content: "<p class=\"mb-4\">Writing code without seeing the result is like cooking with your eyes closed. The Clinqoo editor keeps preview in the same workspace, so you do not copy files elsewhere or spin up a separate local server.</p><p class=\"mb-4\">A comfortable loop: change HTML or CSS, save, open or refresh preview. If it is still far from what you imagined, jump back to the code tab — the file explorer and tabs stay put. No context is lost.</p><p class=\"mb-4\">Use preview to compare two small changes as well. Swap a color, look. Tweak spacing, look. Design decisions get faster because the feedback is immediate, not speculative.</p><p class=\"mb-4\">Close that loop before you jump to a new feature. A page you have seen with your own eyes is much easier to explain to the AI or a collaborator than a page that only exists in your head.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Clinqoo editor preview",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/", sourceSnippet2: "HTML, CSS, JS reference",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Web best practices"
+        }
+      }
+    },
+    {
+      id: "menyimpan-dan-riwayat-berkas",
+      langs: {
+        "id": {
+          title: "Simpan Berkas dan Jaga Riwayat Perubahan di Editor",
+          desc: "Editor Clinqoo menyimpan kerjaanmu ke proyek. Gabungkan kebiasaan simpan dengan catatan perubahan agar mudah kembali.",
+          content: "<p class=\"mb-4\">Editor yang nyaman tetap bisa menyembunyikan risiko: perubahan yang belum disimpan hanya hidup di tab. Tutup browser, ganti perangkat, atau kehabisan kuota — dan yang belum tersimpan tidak ikut.</p><p class=\"mb-4\">Jadikan simpan sebagai titik akhir setiap blok kerja, bukan ritual sebelum tidur. Setelah itu, kalau proyekmu terhubung ke version control, buat catatan singkat: apa yang berubah dan kenapa. Catatan itu menolong kamu minggu depan saat halaman terasa aneh.</p><p class=\"mb-4\">Jangan menumpuk dua puluh perubahan dalam satu simpan raksasa. Potongan kecil lebih mudah ditelusuri dan lebih aman dibatalkan. Terminal dan riwayat versi di ruang kerja Clinqoo ada untuk mendukung pola ini, bukan menggantikannya.</p><p class=\"mb-4\">Kalau ragu apakah file sudah aman, buka ulang dari file explorer. Yang muncul di tab baru adalah versi tersimpan. Kalau isinya sudah sesuai, baru pindah perangkat atau deploy.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
+          source2: "Git Documentation", sourceUrl2: "https://git-scm.com/doc", sourceSnippet2: "Dokumentasi Git",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Save Files and Keep a Change History in the Editor",
+          desc: "The Clinqoo editor writes your work into the project. Pair frequent saves with short change notes so you can roll back easily.",
+          content: "<p class=\"mb-4\">A comfortable editor can still hide a risk: unsaved changes live only in the tab. Close the browser, switch devices, or drop the connection — and what was not saved does not follow you.</p><p class=\"mb-4\">Treat save as the end of every work block, not a ritual before bed. After that, if the project is tied to version control, write a short note: what changed and why. That note helps you next week when the page feels off.</p><p class=\"mb-4\">Do not pile twenty changes into one giant save. Small slices are easier to trace and safer to undo. The terminal and version history in the Clinqoo workspace exist to support this habit, not replace it.</p><p class=\"mb-4\">If you are unsure a file is safe, reopen it from the file explorer. What appears in the new tab is the saved version. If that matches what you expect, then switch devices or deploy.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Clinqoo editor",
+          source2: "Git Documentation", sourceUrl2: "https://git-scm.com/doc", sourceSnippet2: "Git documentation",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Web development reference"
+        }
+      }
     }
   ]
 };
