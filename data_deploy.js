@@ -90,6 +90,111 @@ window.countryDataFiles["deploy"] = {
           source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Web best practices"
         }
       }
+    },
+    {
+      id: "https-otomatis-setelah-deploy",
+      langs: {
+        "id": {
+          title: "HTTPS Otomatis Setelah Deploy: Gembok di Bilah Alamat",
+          desc: "Situs yang terbit dari Clinqoo memakai HTTPS. Ini artinya bagi pengunjung dan kenapa gembok itu penting.",
+          content: "<p class=\"mb-4\">Setelah deploy di Clinqoo, buka URL publik dan lihat bilah alamat. Gembok atau tanda koneksi aman menandakan halaman dikirim lewat HTTPS — data antara pengunjung dan situs tidak telanjang di jaringan biasa.</p><p class=\"mb-4\">Untuk situs statis, ini melindungi integritas halaman: orang di Wi-Fi publik lebih sulit menyisipkan iklan palsu ke HTML-mu. Formulir kontak juga lebih pantas dikirim saat koneksi terenkripsi, meski kamu belum punya backend rumit.</p><p class=\"mb-4\">Jangan bagikan tautan http:// kalau browser sudah mengarahkan ke https://. Salin alamat setelah halaman selesai dimuat. Kalau suatu saat kamu pasang domain sendiri, pastikan pengalihan ke HTTPS ikut aktif supaya pengunjung lama tidak tersesat.</p><p class=\"mb-4\">Gembok bukan jaminan situs bebas bug. Ia hanya jaminan saluran. Tetap cek pratinjau, tautan, dan halaman 404. Tapi mulai dari saluran yang aman adalah fondasi yang tidak perlu kamu rakit manual di Clinqoo.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/ssl/", sourceSnippet2: "SSL dan HTTPS",
+          source3: "web.dev", sourceUrl3: "https://web.dev/why-https-matters/", sourceSnippet3: "Mengapa HTTPS penting"
+        },
+        "en": {
+          title: "Automatic HTTPS After Deploy: The Lock in the Address Bar",
+          desc: "A site published from Clinqoo uses HTTPS. Here is what that means for visitors and why the lock matters.",
+          content: "<p class=\"mb-4\">After you deploy in Clinqoo, open the public URL and look at the address bar. A lock or secure-connection mark means the page is sent over HTTPS — traffic between the visitor and your site is not sitting in the clear on a casual network.</p><p class=\"mb-4\">For a static site, this protects page integrity: someone on public Wi-Fi has a harder time injecting fake ads into your HTML. Contact forms are also more appropriate to submit over an encrypted connection, even before you have a complex backend.</p><p class=\"mb-4\">Do not share an http:// link if the browser already redirects to https://. Copy the address after the page finishes loading. If you later attach your own domain, keep the HTTPS redirect on so old visitors are not stranded.</p><p class=\"mb-4\">The lock is not a promise the site is bug-free. It only promises the channel. Still check preview, links, and the 404 page. Starting from a safe channel is a foundation you do not have to assemble by hand in Clinqoo.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/ssl/", sourceSnippet2: "SSL dan HTTPS",
+          source3: "web.dev", sourceUrl3: "https://web.dev/why-https-matters/", sourceSnippet3: "Mengapa HTTPS penting"
+        }
+      }
+    },
+    {
+      id: "checklist-aset-sebelum-deploy",
+      langs: {
+        "id": {
+          title: "Checklist Aset: Gambar dan File yang Sering Hilang Saat Deploy",
+          desc: "Deploy berhasil tapi gambar pecah biasanya karena path salah atau file belum masuk proyek. Cek ini dulu.",
+          content: "<p class=\"mb-4\">Halaman bisa terlihat utuh di pratinjau editor Clinqoo lalu pecah di URL publik. Penyebab tersering: gambar, font, atau CSS yang path-nya mengarah ke folder yang tidak ikut terbit, atau nama file yang berbeda huruf besar-kecilnya.</p><p class=\"mb-4\">Sebelum menekan Deploy, buka file explorer. Pastikan setiap gambar yang kamu pakai benar-benar ada di proyek, bukan hanya di unduhan laptop. Ganti spasi pada nama file. Tautan relatif seperti ./gambar/hero.jpg lebih aman daripada path absolut milik komputermu.</p><p class=\"mb-4\">Di pratinjau, klik kanan gambar yang mencurigakan dan lihat alamatnya. Kalau alamat itu tidak ada di pohon berkas, perbaiki sebelum terbitkan. Satu file CSS yang tidak terhubung juga membuat situs live terasa belum selesai.</p><p class=\"mb-4\">Simpan, pratinjau ulang, baru deploy. Setelah live, hard refresh sekali. Kalau aset masih hilang, masalahnya di path, bukan di tombol terbitkan.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "File explorer Clinqoo",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files", sourceSnippet2: "Path dan berkas web",
+          source3: "web.dev", sourceUrl3: "https://web.dev/learn/images/", sourceSnippet3: "Gambar di web"
+        },
+        "en": {
+          title: "Asset Checklist: Images and Files That Often Go Missing After Deploy",
+          desc: "A successful deploy with broken images usually means a bad path or a file that never entered the project. Check this first.",
+          content: "<p class=\"mb-4\">A page can look whole in the Clinqoo editor preview and then break on the public URL. The usual cause: an image, font, or stylesheet whose path points outside the published project, or a filename whose capitalization does not match.</p><p class=\"mb-4\">Before you hit Deploy, open the file explorer. Confirm every image you use actually lives in the project, not only in your laptop Downloads folder. Remove spaces from filenames. Relative links like ./images/hero.jpg are safer than an absolute path from your computer.</p><p class=\"mb-4\">In preview, right-click a suspicious image and inspect its address. If that address is not in the file tree, fix it before publishing. One disconnected CSS file also makes the live site feel unfinished.</p><p class=\"mb-4\">Save, preview again, then deploy. After it is live, hard-refresh once. If assets are still missing, the problem is the path, not the publish button.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "File explorer Clinqoo",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files", sourceSnippet2: "Path dan berkas web",
+          source3: "web.dev", sourceUrl3: "https://web.dev/learn/images/", sourceSnippet3: "Gambar di web"
+        }
+      }
+    },
+    {
+      id: "deploy-saat-koneksi-tidak-stabil",
+      langs: {
+        "id": {
+          title: "Deploy Saat Koneksi Tidak Stabil: Simpan Dulu, Terbitkan Kemudian",
+          desc: "Jaringan putus di tengah jalan tidak harus merusak situs. Urutkan simpan, cek, lalu deploy ulang dengan tenang.",
+          content: "<p class=\"mb-4\">Clinqoo jalan di browser, jadi deploy bergantung pada koneksi saat kamu menekan terbitkan. Kalau Wi-Fi goyah, jangan panik menutup tab. Pastikan berkas sudah tersimpan di proyek — itu fondasi yang tidak boleh kalah dengan tombol publish.</p><p class=\"mb-4\">Jika proses deploy gagal atau terasa menggantung, buka kembali menu Deploy beberapa menit kemudian. Situs publik biasanya tetap menampilkan versi terakhir yang sukses. Kamu tidak kehilangan rumah hanya karena satu percobaan gagal.</p><p class=\"mb-4\">Di koneksi hemat kuota, tutup tab berat lain, simpan semua file, lalu deploy sekali. Setelah dapat URL, uji di HP lewat data seluler. Itu memisahkan masalah jaringanmu dengan masalah berkas.</p><p class=\"mb-4\">Catat jam deploy dan hasilnya. Pola gagal hanya di jam sibuk mengajari kamu kapan harus mengantri, bukan merombak kode yang sebenarnya sudah benar.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/pages/", sourceSnippet2: "Hosting situs statis",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web"
+        },
+        "en": {
+          title: "Deploying on an Unstable Connection: Save First, Publish Second",
+          desc: "A dropped network does not have to wreck the site. Save, check, then redeploy calmly.",
+          content: "<p class=\"mb-4\">Clinqoo runs in the browser, so deploy depends on the connection at the moment you publish. If Wi-Fi wobbles, do not slam the tab shut. Make sure files are saved in the project — that foundation must outrank the publish button.</p><p class=\"mb-4\">If deploy fails or hangs, open the Deploy menu again a few minutes later. The public site usually still shows the last successful version. You do not lose the house because one attempt failed.</p><p class=\"mb-4\">On a metered connection, close other heavy tabs, save every file, then deploy once. After you have the URL, test on a phone over cellular data. That separates your network problem from a file problem.</p><p class=\"mb-4\">Note the time and the result. A pattern of failing only at busy hours teaches you when to wait, not to rip apart code that was already fine.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "Cloudflare Docs", sourceUrl2: "https://developers.cloudflare.com/pages/", sourceSnippet2: "Hosting situs statis",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web"
+        }
+      }
+    },
+    {
+      id: "pratinjau-bukan-url-publik",
+      langs: {
+        "id": {
+          title: "Pratinjau Editor Bukan URL Publik: Jangan Tertukar Saat Membagikan",
+          desc: "Pratinjau hanya untuk kamu. Yang dibagikan ke klien adalah alamat setelah Deploy berhasil.",
+          content: "<p class=\"mb-4\">Di Clinqoo ada dua tampilan hidup yang mudah tertukar. Pratinjau editor membaca berkas kerja di ruang kamu. URL publik adalah hasil proses Deploy yang bisa dibuka siapa saja tanpa masuk akun.</p><p class=\"mb-4\">Bagikan hanya alamat yang muncul setelah terbitkan — biasanya disalin dari bilah browser pada situs live, atau dari ringkasan menu Deploy. Tautan pratinjau bisa gagal di perangkat orang lain, atau menampilkan perubahan yang belum kamu maksudkan untuk tayang.</p><p class=\"mb-4\">Kalau klien bilang tidak bisa buka, tanya apakah mereka login Clinqoo. Jika tidak, mereka harus memakai URL publik. Uji sendiri: buka tautan itu di jendela penyamaran.</p><p class=\"mb-4\">Tulis di catatan proyek: URL pratinjau untuk kerja, URL publik untuk pamer. Kebiasaan ini menghemat malu dan tiket bantuan yang sebenarnya hanya salah salin tautan.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Pratinjau editor",
+          source2: "Clinqoo", sourceUrl2: "https://clinqoo.pages.dev/", sourceSnippet2: "Menu Deploy Clinqoo",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi web"
+        },
+        "en": {
+          title: "Editor Preview Is Not the Public URL: Do Not Mix Them Up When Sharing",
+          desc: "Preview is for you. What you send a client is the address after a successful Deploy.",
+          content: "<p class=\"mb-4\">Clinqoo has two live-looking views that are easy to mix up. Editor preview reads the working files in your workspace. The public URL is the output of Deploy that anyone can open without signing in.</p><p class=\"mb-4\">Share only the address that appears after publishing — usually copied from the live site's address bar, or from the Deploy menu summary. A preview link can fail on someone else's device, or show changes you did not mean to release.</p><p class=\"mb-4\">If a client says they cannot open it, ask whether they are logged into Clinqoo. If not, they need the public URL. Test it yourself: open that link in a private window.</p><p class=\"mb-4\">Write it in the project notes: preview URL for work, public URL for showing off. The habit saves embarrassment and support tickets that were only a copied wrong link.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Pratinjau editor",
+          source2: "Clinqoo", sourceUrl2: "https://clinqoo.pages.dev/", sourceSnippet2: "Menu Deploy Clinqoo",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi web"
+        }
+      }
+    },
+    {
+      id: "satu-halaman-satu-deploy-kecil",
+      langs: {
+        "id": {
+          title: "Satu Halaman, Satu Deploy Kecil: Jangan Tunggu Sempurna",
+          desc: "Lebih aman menerbitkan satu perubahan yang sudah dicek daripada menumpuk seminggu kerja lalu berharap beruntung.",
+          content: "<p class=\"mb-4\">Pemula sering menahan tombol Deploy sampai seluruh situs terasa sempurna. Akibatnya, seminggu perubahan ditayangkan sekaligus — dan saat ada yang rusak, sulit tahu penyebabnya.</p><p class=\"mb-4\">Di Clinqoo, pecah kerja menjadi deploy kecil: hari ini beranda, besok kontak, lusa perbaikan CSS menu HP. Setiap terbitan punya pratinjau sendiri dan URL publik yang sama, jadi pengunjung selalu melihat langkah terakhir yang kamu izinkan.</p><p class=\"mb-4\">Setelah tiap deploy, catat satu kalimat: apa yang berubah. Kalau halaman tiba-tiba aneh, kamu punya jejak. Gabungkan dengan hard refresh agar cache tidak menipu penilaianmu.</p><p class=\"mb-4\">Situs yang hidup adalah situs yang sering diterbitkan dalam porsi aman. Sempurna bisa menyusul. Yang tidak bisa menyusul adalah kepercayaan yang hilang karena rilis raksasa yang belum sempat kamu lihat di HP.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "Cloudflare Docs", sourceUrl3: "https://developers.cloudflare.com/pages/", sourceSnippet3: "Pembaruan situs statis"
+        },
+        "en": {
+          title: "One Page, One Small Deploy: Do Not Wait for Perfect",
+          desc: "It is safer to publish one checked change than to pile up a week of work and hope you get lucky.",
+          content: "<p class=\"mb-4\">Beginners often hold the Deploy button until the whole site feels perfect. Then a week of changes goes live at once — and when something breaks, the cause is hard to spot.</p><p class=\"mb-4\">In Clinqoo, split the work into small deploys: home today, contact tomorrow, a phone-menu CSS fix the day after. Each publish has its own preview and the same public URL, so visitors always see the last step you allowed out.</p><p class=\"mb-4\">After each deploy, write one sentence: what changed. If the page suddenly looks odd, you have a trail. Pair it with a hard refresh so cache does not fool your judgment.</p><p class=\"mb-4\">A living site is one that ships in safe portions. Perfect can follow. What cannot follow is trust lost to a giant release you never even opened on a phone.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Menu Deploy Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "Cloudflare Docs", sourceUrl3: "https://developers.cloudflare.com/pages/", sourceSnippet3: "Pembaruan situs statis"
+        }
+      }
     }
   ]
 };
