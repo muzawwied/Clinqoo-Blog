@@ -41,7 +41,7 @@ window.countryDataFiles["tips"] = {
         },
         "en": {
           title: "Keyboard Shortcuts That Will Speed Up Your Editor Work",
-          desc: "Save, open files, and close tabs without touching the mouse — five shortcuts that give time back to your day.",
+          desc: "Save, open files, and close tabs without touching the mouse — five shortcut that give time back to your day.",
           content: "<p class=\"mb-4\">Saving through the menu is slow. Ctrl+S (or Cmd+S on Mac) saves a file in a fraction of a second — and saving often is the single best guard against losing work.</p><p class=\"mb-4\">Follow up with Ctrl+Z to undo a mistake — and do not forget Ctrl+Shift+Z to redo what you just undid. Ctrl+S, Ctrl+Z, and Enter when asking the Clinqoo AI: that combination alone covers most of your daily actions.</p><p class=\"mb-4\">Close tabs quickly with Ctrl+W, and search inside a file with Ctrl+F. If you forget all of this, remember just one thing: the Ctrl (or Cmd) key is the doorway to every shortcut.</p><p class=\"mb-4\">Train one shortcut per week until it becomes reflex, not five at once until they blur together. Within a month your hands will work far faster than the mouse ever allowed.</p>",
           source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
           source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/", sourceSnippet2: "Referensi pengembangan",
@@ -88,6 +88,27 @@ window.countryDataFiles["tips"] = {
           source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo platform",
           source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Web best practices",
           source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Web development reference"
+        }
+      }
+    },
+    {
+      id: "kerja-dalam-blok-waktu-pendek",
+      langs: {
+        "id": {
+          title: "Kerjakan Situs dalam Blok Waktu Pendek, Bukan Maraton Semalam",
+          desc: "Dua puluh lima menit fokus di editor Clinqoo sering mengalahkan tiga jam yang penuh distraksi.",
+          content: "<p class=\"mb-4\">Situs pemula sering macet karena dikerjakan hanya saat mood besar datang. Mood itu jarang. Lebih andal: buka editor Clinqoo, pilih satu target kecil — ganti teks hero, perbaiki menu HP, atau rapikan satu file CSS — lalu kerjakan dua puluh lima menit.</p><p class=\"mb-4\">Blok pendek memaksa keputusan. Kamu tidak sempat merombak seluruh desain. Kamu menyelesaikan satu hal yang bisa dilihat di pratinjau. Selesai satu blok, simpan. Kalau masih ada tenaga, ambil blok kedua dengan target baru.</p><p class=\"mb-4\">Catat target di catatan atau di komentar HTML supaya sesi berikutnya tidak dimulai dari bingung. Clinqoo mengikuti akunmu; yang tidak mengikuti adalah niat yang tidak ditulis.</p><p class=\"mb-4\">Maraton semalam terasa produktif sampai keesokan harinya kamu lupa kenapa tombol itu dipindah. Blok pendek meninggalkan jejak yang bisa dilanjutkan. Itu cara situs benar-benar selesai, bukan hanya sempat dibuka.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Build Your Site in Short Time Blocks, Not Overnight Marathons",
+          desc: "Twenty-five focused minutes in the Clinqoo editor often beat three distracted hours.",
+          content: "<p class=\"mb-4\">Beginner sites stall because they only get attention when a huge mood arrives. That mood is rare. More reliable: open the Clinqoo editor, pick one small target — swap hero copy, fix the phone menu, or tidy one CSS file — and work for twenty-five minutes.</p><p class=\"mb-4\">Short blocks force decisions. You do not have time to rebuild the whole design. You finish one thing you can see in preview. When the block ends, save. If you still have energy, take a second block with a new target.</p><p class=\"mb-4\">Write the target in a note or an HTML comment so the next session does not start in confusion. Clinqoo follows your account; what does not follow is an intention you never wrote down.</p><p class=\"mb-4\">An overnight marathon feels productive until the next morning you forget why that button moved. Short blocks leave a trail you can continue. That is how a site actually gets finished, not merely opened.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
         }
       }
     }
