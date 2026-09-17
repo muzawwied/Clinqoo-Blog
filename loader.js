@@ -1,18 +1,26 @@
-// Loader: muat semua file data kategori Clinqoo Blog, lalu app.js
+// Loader: muat semua file data kategori Clinqoo Blog secara PARALEL, lalu app.js
+// (sebelumnya sequential satu-satu — jauh lebih lambat karena menunggu tiap file selesai
+// sebelum mulai file berikutnya, padahal file-file data ini independen satu sama lain)
 (function() {
   var files = ["data_panduan.js", "data_editor.js", "data_ai.js", "data_deploy.js", "data_tips.js"];
-  var i = 0;
-  function loadNext() {
-    if (i >= files.length) { loadApp(); return; }
-    var s = document.createElement('script');
-    s.src = files[i];
-    s.onload = function() { i++; loadNext(); };
-    document.body.appendChild(s);
+  var loaded = 0;
+
+  function onFileDone() {
+    loaded++;
+    if (loaded >= files.length) loadApp();
   }
+
   function loadApp() {
     var s = document.createElement('script');
     s.src = 'app.js';
     document.body.appendChild(s);
   }
-  loadNext();
+
+  files.forEach(function(file) {
+    var s = document.createElement('script');
+    s.src = file;
+    s.onload = onFileDone;
+    s.onerror = onFileDone; // tetap lanjut walau satu file gagal, jangan sampai app.js tidak pernah dimuat
+    document.body.appendChild(s);
+  });
 })();
