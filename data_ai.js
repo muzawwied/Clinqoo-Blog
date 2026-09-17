@@ -90,6 +90,111 @@ window.countryDataFiles["ai"] = {
           source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web modern"
         }
       }
+    },
+    {
+      id: "ai-tempel-error-lengkap",
+      langs: {
+        "id": {
+          title: "Tempel Pesan Error Lengkap ke AI, Jangan Cuma Bilang 'Rusak'",
+          desc: "AI Clinqoo jauh lebih akurat kalau kamu tempel error utuh, nama file, dan langkah yang sudah dicoba.",
+          content: "<p class=\"mb-4\">Kalau chat AI hanya menerima kalimat 'kodenya rusak', jawabannya terpaksa menebak. Di editor Clinqoo, salin pesan error utuh dari terminal atau konsol — termasuk nama file dan nomor baris — lalu tempel ke percakapan.</p><p class=\"mb-4\">Tambahkan tiga konteks singkat: file mana yang baru kamu ubah, apa yang kamu harapkan terjadi, dan apa yang muncul di pratinjau. Tiga kalimat itu biasanya lebih berharga daripada sepuluh baris spekulasi.</p><p class=\"mb-4\">Kalau errornya panjang, jangan dipotong di tengah jejak tumpukan. Bagian bawah sering menunjuk penyebab; bagian atas menunjuk gejala. Biarkan AI membaca keduanya, lalu minta ia jelaskan urutan kejadian dengan bahasa pemula.</p><p class=\"mb-4\">Setelah dapat saran, uji satu perubahan dulu di editor dan simpan. Kalau masih error, kirim error yang baru — bukan error lama. Percakapan yang mengikuti jejak nyata jauh lebih tajam daripada obrolan yang mengulang tebakan.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Paste the Full Error Message into the AI, Don't Just Say 'It's Broken'",
+          desc: "Clinqoo AI is far more accurate when you paste the full error, the file name, and the steps you already tried.",
+          content: "<p class=\"mb-4\">If the AI chat only gets 'the code is broken', the answer has to guess. In the Clinqoo editor, copy the full error from the terminal or console — including the file name and line number — and paste it into the conversation.</p><p class=\"mb-4\">Add three short bits of context: which file you just changed, what you expected to happen, and what the preview actually shows. Those three sentences usually beat ten lines of speculation.</p><p class=\"mb-4\">If the error is long, do not crop the stack in the middle. The bottom often points to the cause; the top points to the symptom. Let the AI read both, then ask it to explain the sequence in beginner language.</p><p class=\"mb-4\">After you get a suggestion, test one change in the editor and save. If it still errors, send the new error — not the old one. A thread that follows the real trail is sharper than a chat that repeats guesses.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
+    },
+    {
+      id: "ai-contoh-dulu-baru-ubah",
+      langs: {
+        "id": {
+          title: "Minta Contoh ke AI Dulu, Baru Izinkan Ia Mengubah File",
+          desc: "Minta potongan contoh dan alasan singkat sebelum AI menyentuh berkas proyekmu di Clinqoo.",
+          content: "<p class=\"mb-4\">Asisten AI Clinqoo bisa mengusulkan perubahan cepat. Tahan dulu. Minta contoh terpisah: 'tunjukkan versi mini lima baris dan jelaskan kenapa pendekatan ini lebih aman daripada yang sekarang.'</p><p class=\"mb-4\">Contoh mini membuatmu melihat ide tanpa merombak halaman yang sudah hampir rapi. Kalau contohnya masuk akal di pratinjau mentalmu, baru minta AI menyesuaikan file yang kamu sebut secara eksplisit.</p><p class=\"mb-4\">Sebut batasan: jangan ganti warna merek, jangan hapus kelas yang dipakai di halaman lain, jangan menulis ulang seluruh file. Batasan membuat saran tetap lokal dan mudah di-undo.</p><p class=\"mb-4\">Setelah file berubah, buka pratinjau desktop dan HP. AI mempercepat draf; matamu yang memutuskan apakah situs masih terasa milikmu.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Ask the AI for an Example First, Then Let It Change a File",
+          desc: "Request a small example and a short why before the AI touches your Clinqoo project files.",
+          content: "<p class=\"mb-4\">The Clinqoo AI assistant can propose a fast change. Hold on. Ask for a separate example: 'show a five-line mini version and explain why this approach is safer than what I have now.'</p><p class=\"mb-4\">A mini example lets you see the idea without tearing apart a page that is almost tidy. If the example makes sense in your head, then ask the AI to adjust the file you name explicitly.</p><p class=\"mb-4\">State limits: do not change brand colors, do not delete classes used on other pages, do not rewrite the whole file. Limits keep the advice local and easy to undo.</p><p class=\"mb-4\">After the file changes, open desktop and phone preview. The AI speeds up the draft; your eyes decide whether the site still feels like yours.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
+    },
+    {
+      id: "ai-satu-file-satu-permintaan",
+      langs: {
+        "id": {
+          title: "Satu File, Satu Permintaan: Cara Menjaga AI Tetap Fokus",
+          desc: "Jangan minta AI memperbaiki HTML, CSS, dan skrip sekaligus. Satu berkas per pesan membuat saran lebih mudah diuji.",
+          content: "<p class=\"mb-4\">Obrolan yang meminta 'perbaiki semuanya' menghasilkan daftar panjang yang sulit dicek. Di Clinqoo, buka satu file di tab editor, sebut namanya di chat, dan minta satu jenis bantuan: struktur, gaya, atau perilaku.</p><p class=\"mb-4\">Setelah saran masuk, terapkan di file itu saja, simpan, lalu pratinjau. Kalau halaman sudah lebih baik, baru buka file berikutnya. Jejak perubahannya jelas dan kamu tahu penyebabnya jika sesuatu pecah.</p><p class=\"mb-4\">Kalau dua file memang terkait — misalnya index.html dan style.css — tetap pecah jadi dua pesan. Pesan pertama untuk markup, pesan kedua untuk kelas yang baru saja kamu tambahkan.</p><p class=\"mb-4\">Fokus bukan berarti pelan. Ini cara menyelesaikan lima perbaikan kecil yang benar, bukan satu perbaikan besar yang tidak bisa kamu jelaskan ulang.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "One File, One Request: How to Keep the AI Focused",
+          desc: "Do not ask the AI to fix HTML, CSS, and scripts at once. One file per message makes advice easier to test.",
+          content: "<p class=\"mb-4\">A chat that asks 'fix everything' produces a long list that is hard to verify. In Clinqoo, open one file in an editor tab, name it in chat, and ask for one kind of help: structure, style, or behavior.</p><p class=\"mb-4\">After a suggestion lands, apply it in that file only, save, then preview. If the page is better, open the next file. The change trail stays clear and you know the cause if something breaks.</p><p class=\"mb-4\">If two files truly connect — index.html and style.css, for example — still split them into two messages. First message for markup, second for the classes you just added.</p><p class=\"mb-4\">Focus does not mean slow. It is how you finish five small correct fixes instead of one giant fix you cannot explain again.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
+    },
+    {
+      id: "ai-cek-kontras-dan-teks-alt",
+      langs: {
+        "id": {
+          title: "Minta AI Mengecek Kontras Warna dan Teks Alternatif Gambar",
+          desc: "Sebelum bagikan situs, minta asisten AI Clinqoo meninjau keterbacaan teks dan atribut alt pada gambar.",
+          content: "<p class=\"mb-4\">Situs yang rapi di layar laptop bisa sulit dibaca di HP siang hari. Di chat AI Clinqoo, minta tinjauan akses dasar: kontras teks terhadap latar, ukuran heading, dan apakah setiap gambar penting punya teks alternatif.</p><p class=\"mb-4\">Tempel potongan HTML gambar atau sebut nama kelas warna di CSS. Semakin konkret cuplikannya, semakin mudah AI menandai teks yang hampir menyatu dengan latar atau alt yang masih berbunyi 'image1'.</p><p class=\"mb-4\">Perbaikan biasanya kecil: gelapkan teks, terangin latar, atau tulis alt yang menjelaskan isi gambar — bukan nama file. Uji lagi di pratinjau setelah setiap perubahan.</p><p class=\"mb-4\">Ini bukan audit formal. Ini kebiasaan lima menit agar pengunjung pertama — termasuk yang membaca cepat atau memakai pembaca layar sederhana — tidak tersandung di halaman beranda.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Ask the AI to Check Color Contrast and Image Alt Text",
+          desc: "Before you share a site, ask the Clinqoo AI assistant to review text readability and image alt attributes.",
+          content: "<p class=\"mb-4\">A site that looks tidy on a laptop can be hard to read on a phone at noon. In Clinqoo AI chat, ask for a basic access review: text contrast against the background, heading size, and whether every important image has alternative text.</p><p class=\"mb-4\">Paste the image HTML snippet or name the color classes in CSS. The more concrete the excerpt, the easier it is for the AI to flag text that almost blends into the background or alt text that still says 'image1'.</p><p class=\"mb-4\">Fixes are usually small: darken the text, lighten the background, or write alt text that describes the image — not the file name. Preview again after each change.</p><p class=\"mb-4\">This is not a formal audit. It is a five-minute habit so first visitors — including people who skim or use a simple screen reader — do not stumble on the home page.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
+    },
+    {
+      id: "ai-rapikan-nama-kelas-css",
+      langs: {
+        "id": {
+          title: "Pakai AI untuk Merapikan Nama Kelas CSS tanpa Mengubah Tampilan",
+          desc: "Nama kelas yang berantakan membingungkan. Minta AI memetakan kelas, usulkan nama yang jelas, lalu ganti bertahap.",
+          content: "<p class=\"mb-4\">Setelah beberapa malam mengedit, file CSS sering penuh kelas seperti box2 dan baru3. Di editor Clinqoo, tempel daftar kelas ke AI dan minta peta: kelas mana yang masih dipakai di HTML, mana yang duplikat, mana yang aman diganti namanya.</p><p class=\"mb-4\">Minta usulan nama yang menggambarkan peran, bukan urutan pembuatan — misalnya nav-link atau hero-title. Jangan ganti semuanya sekaligus. Pilih satu kelompok, ganti di CSS dan HTML, simpan, lalu pratinjau.</p><p class=\"mb-4\">Tolak usulan yang merombak tata letak. Tujuan langkah ini adalah kejelasan, bukan desain baru. Kalau AI menawarkan grid baru, simpan ide itu untuk percakapan terpisah.</p><p class=\"mb-4\">Kelas yang bisa kamu baca membuat sesi berikutnya lebih cepat, baik saat kamu sendiri yang menyunting maupun saat AI diminta menyesuaikan satu komponen.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Use the AI to Tidy CSS Class Names without Changing the Look",
+          desc: "Messy class names confuse you later. Ask the AI to map classes, suggest clear names, then rename in small steps.",
+          content: "<p class=\"mb-4\">After a few late-night edits, a CSS file often fills with classes like box2 dan baru3. In the Clinqoo editor, paste the class list into the AI and ask for a map: which classes HTML still uses, which are duplicates, and which are safe to rename.</p><p class=\"mb-4\">Ask for names that describe the role, not the order you invented them — nav-link or hero-title, for example. Do not rename everything at once. Pick one group, change CSS and HTML, save, then preview.</p><p class=\"mb-4\">Reject suggestions that rebuild the layout. The goal is clarity, not a new design. If the AI offers a new grid, save that idea for a separate conversation.</p><p class=\"mb-4\">Class names you can read make the next session faster, whether you edit yourself or ask the AI to adjust a single component.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Chat asisten AI di editor",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
     }
   ]
 };
