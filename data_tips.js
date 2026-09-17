@@ -48,6 +48,27 @@ window.countryDataFiles["tips"] = {
           source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik terbaik web"
         }
       }
+    },
+    {
+      id: "simpan-sering-sebelum-pindah-perangkat",
+      langs: {
+        "id": {
+          title: "Simpan Sering Sebelum Pindah dari Laptop ke HP",
+          desc: "Proyek Clinqoo mengikuti akunmu, tapi hanya perubahan yang sudah disimpan. Biasakan Ctrl+S sebelum menutup tab.",
+          content: "<p class=\"mb-4\">Salah satu kekuatan Clinqoo adalah kamu bisa mulai di laptop lalu lanjut mengecek dari HP. Syaratnya sederhana dan mudah dilupakan: simpan dulu. Perubahan yang masih mengambang di tab editor belum tentu sampai ke sesi berikutnya.</p><p class=\"mb-4\">Jadikan Ctrl+S (atau Cmd+S) reflex setiap kali kamu selesai satu blok kerja — setelah menulis paragraf, setelah mengubah warna, setelah menata ulang menu. Jangan menunggu sampai akan menutup laptop.</p><p class=\"mb-4\">Sebelum pindah perangkat, buka kembali file yang baru kamu ubah dan pastikan isinya sudah sesuai. Baru kemudian buka Clinqoo di HP, idealnya lewat ikon PWA di layar utama, untuk pratinjau cepat atau edit teks kecil.</p><p class=\"mb-4\">Kebiasaan kecil ini menghilangkan drama \"kok perubahanku hilang?\". Bukan karena sistem pelupa, biasanya karena kita menutup tab lebih cepat daripada menyimpan.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/pwa/", sourceSnippet2: "PWA dan akses lintas perangkat",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "Save Often Before You Switch from Laptop to Phone",
+          desc: "Your Clinqoo project follows your account, but only the changes you have saved. Make Ctrl+S a habit before you close the tab.",
+          content: "<p class=\"mb-4\">One of Clinqoo's strengths is starting on a laptop and continuing from a phone. The condition is simple and easy to forget: save first. Edits still floating in an editor tab may not reach the next session.</p><p class=\"mb-4\">Make Ctrl+S (or Cmd+S) a reflex after every block of work — after a paragraph, after a color change, after rearranging a menu. Do not wait until you are about to close the laptop.</p><p class=\"mb-4\">Before switching devices, reopen the file you just changed and confirm the contents look right. Then open Clinqoo on your phone, ideally from the PWA icon on the home screen, for a quick preview or a small text edit.</p><p class=\"mb-4\">That small habit removes the \"why did my changes vanish?\" drama. It is usually not a forgetful system; it is us closing the tab faster than we save.</p>",
+          source: "Clinqoo Editor", sourceUrl: "https://clinqoo.pages.dev/editor/", sourceSnippet: "Editor Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/pwa/", sourceSnippet2: "PWA dan akses lintas perangkat",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        }
+      }
     }
   ]
 };
