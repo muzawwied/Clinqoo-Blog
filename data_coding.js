@@ -69,6 +69,27 @@ window.countryDataFiles["coding"] = {
           source3: "Clinqoo Deploy", sourceUrl3: "https://clinqoo.pages.dev/deploy/", sourceSnippet3: "Menerbitkan proyek latihan ke internet"
         }
       }
+    },
+    {
+      id: "mengenal-git-dan-version-control-untuk-pemula",
+      langs: {
+        "id": {
+          title: "Mengenal Git dan Version Control: Kenapa Programmer Pemula Wajib Tahu Ini",
+          desc: "Git sering dianggap ribet padahal ide dasarnya sederhana: mesin waktu untuk kode. Ini konsep intinya tanpa istilah yang membingungkan.",
+          content: "<p class=\"mb-4\">Salah satu momen yang bikin pemula frustrasi adalah ketika kode yang tadinya jalan tiba-tiba rusak setelah diubah, dan tidak ada cara untuk kembali ke versi sebelumnya. Di sinilah version control — dan Git sebagai yang paling populer — jadi penyelamat. Sederhananya, Git seperti mesin waktu untuk kode: setiap perubahan penting disimpan sebagai 'titik aman' yang bisa dikembalikan kapan saja.</p><p class=\"mb-4\">Tiga istilah dasar yang perlu dipahami: repository (folder proyek yang dilacak oleh Git), commit (titik aman yang menyimpan perubahan beserta catatan singkat tentang apa yang diubah), dan branch (jalur pengembangan terpisah, berguna untuk mencoba fitur baru tanpa merusak versi utama). Tidak perlu menghafal semua perintah Git sekaligus — cukup biasakan tiga alur ini dulu: ubah kode, commit, ulangi.</p><p class=\"mb-4\">Kebiasaan yang baik adalah commit sesering mungkin dengan pesan yang jelas, misalnya 'tambah tombol hapus di to-do list', bukan sekadar 'update'. Kebiasaan ini terasa sepele saat proyek masih kecil, tapi jadi sangat berharga begitu proyek bertambah besar atau dikerjakan bareng orang lain — riwayat perubahan jadi mudah dilacak dan kesalahan gampang dikembalikan.</p><p class=\"mb-4\">GitHub sendiri adalah tempat menyimpan repository Git secara online, sekaligus tempat berkolaborasi lewat fitur seperti pull request dan issue. Menghubungkan akun GitHub sejak awal belajar — seperti yang bisa dilakukan lewat integrasi akun di Clinqoo — membiasakan diri dengan alur kerja yang dipakai hampir semua tim software sungguhan, bukan cuma latihan yang berhenti di laptop sendiri.</p>",
+          source: "Git Documentation", sourceUrl: "https://git-scm.com/doc", sourceSnippet: "Dokumentasi resmi Git",
+          source2: "GitHub Docs", sourceUrl2: "https://docs.github.com/", sourceSnippet2: "Panduan resmi GitHub",
+          source3: "Clinqoo Akun", sourceUrl3: "https://clinqoo.pages.dev/akun/", sourceSnippet3: "Menghubungkan akun GitHub di Clinqoo"
+        },
+        "en": {
+          title: "Understanding Git and Version Control: Why Beginner Programmers Need to Know This",
+          desc: "Git is often seen as complicated, but the core idea is simple: a time machine for code. Here are the essentials without the confusing jargon.",
+          content: "<p class=\"mb-4\">One of the most frustrating moments for beginners is when working code suddenly breaks after a change, with no way back to the previous version. This is where version control — and Git as the most popular one — becomes a lifesaver. Simply put, Git works like a time machine for code: every meaningful change gets saved as a 'safe point' that can be restored at any time.</p><p class=\"mb-4\">Three basic terms worth understanding: repository (the project folder tracked by Git), commit (a safe point that saves changes along with a short note about what changed), and branch (a separate line of development, useful for trying new features without breaking the main version). There's no need to memorize every Git command at once — just get comfortable with this one flow first: change code, commit, repeat.</p><p class=\"mb-4\">A good habit is committing as often as possible with clear messages, like 'add delete button to to-do list' instead of just 'update'. This habit feels trivial when a project is small, but becomes invaluable once the project grows or is worked on with others — the history of changes becomes easy to trace and mistakes become easy to undo.</p><p class=\"mb-4\">GitHub itself is a place to store Git repositories online, and also a place to collaborate through features like pull requests and issues. Connecting a GitHub account from the very start of learning — something that can be done through account integration in Clinqoo — builds familiarity with the workflow used by almost every real software team, not just practice that stays stuck on a personal laptop.</p>",
+          source: "Git Documentation", sourceUrl: "https://git-scm.com/doc", sourceSnippet: "Dokumentasi resmi Git",
+          source2: "GitHub Docs", sourceUrl2: "https://docs.github.com/", sourceSnippet2: "Panduan resmi GitHub",
+          source3: "Clinqoo Akun", sourceUrl3: "https://clinqoo.pages.dev/akun/", sourceSnippet3: "Menghubungkan akun GitHub di Clinqoo"
+        }
+      }
     }
   ]
 };
