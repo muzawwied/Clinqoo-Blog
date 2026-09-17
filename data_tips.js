@@ -69,6 +69,27 @@ window.countryDataFiles["tips"] = {
           source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
         }
       }
+    },
+    {
+      id: "checklist-sebelum-bagikan-tautan",
+      langs: {
+        "id": {
+          title: "Checklist 60 Detik Sebelum Kamu Bagikan Tautan Situs",
+          desc: "Sebelum mengirim URL ke teman atau klien, cek lima hal kecil ini supaya kesan pertama tidak retak.",
+          content: "<p class=\"mb-4\">Tautan yang baru saja dideploy sering langsung dikirim. Tahan sejenak. Enam puluh detik pengecekan menyelamatkanmu dari typo di judul, gambar yang pecah, dan halaman yang masih bertuliskan teks template.</p><p class=\"mb-4\">Cek judul tab browser, heading utama, dan satu paragraf pertama. Pastikan logo atau nama usahamu muncul. Buka situs di HP — atau sempitkan jendela — lalu klik menu dan tombol utama. Kalau ada formulir, kirim data uji sekali.</p><p class=\"mb-4\">Lihat juga alamat yang kamu bagikan: salin dari bilah alamat setelah deploy, bukan dari pratinjau editor. Pratinjau untuk kamu; URL publik untuk orang lain.</p><p class=\"mb-4\">Simpan daftar ini di catatan. Semakin sering dipakai, semakin cepat. Orang yang menerima tautan tidak melihat prosesmu — mereka hanya melihat hasil yang kamu izinkan keluar.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Platform Clinqoo",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Praktik terbaik web",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Referensi pengembangan web"
+        },
+        "en": {
+          title: "A 60-Second Checklist Before You Share the Site Link",
+          desc: "Before you send the URL to a friend or client, check these five small things so the first impression does not crack.",
+          content: "<p class=\"mb-4\">A freshly deployed link often gets sent immediately. Pause. Sixty seconds of checking saves you from a typo in the title, a broken image, and a page that still shows template copy.</p><p class=\"mb-4\">Check the browser tab title, the main heading, and the first paragraph. Make sure your logo or business name appears. Open the site on a phone — or shrink the window — then tap the menu and primary button. If there is a form, submit a test once.</p><p class=\"mb-4\">Also look at the address you share: copy it from the address bar after deploy, not from editor preview. Preview is for you; the public URL is for everyone else.</p><p class=\"mb-4\">Keep this list in a note. The more you use it, the faster it gets. People who receive the link never see your process — they only see the result you allowed out the door.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo platform",
+          source2: "web.dev", sourceUrl2: "https://web.dev/", sourceSnippet2: "Web best practices",
+          source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "Web development reference"
+        }
+      }
     }
   ]
 };
