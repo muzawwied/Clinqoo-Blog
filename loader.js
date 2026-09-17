@@ -2,7 +2,7 @@
 // (sebelumnya sequential satu-satu — jauh lebih lambat karena menunggu tiap file selesai
 // sebelum mulai file berikutnya, padahal file-file data ini independen satu sama lain)
 (function() {
-  var files = ["data_panduan.js", "data_editor.js", "data_ai.js", "data_deploy.js", "data_tips.js", "data_coding.js"];
+  var files = ["data_panduan.js", "data_editor.js", "data_ai.js", "data_deploy.js", "data_tips.js", "data_coding.js", "data_legal.js"];
   var loaded = 0;
 
   function onFileDone() {
