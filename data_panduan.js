@@ -1,4 +1,4 @@
-// Clinqoo Blog — Data kategori: panduan
+// Clinqoo Blog â Data kategori: panduan
 // File ini di-generate otomatis. Jangan edit manual.
 
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -109,6 +109,27 @@ window.countryDataFiles["panduan"] = {
           source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo",
           source2: "Clinqoo Editor", sourceUrl2: "https://clinqoo.pages.dev/editor/", sourceSnippet2: "Clinqoo Editor",
           source3: "MDN Web Docs", sourceUrl3: "https://developer.mozilla.org/", sourceSnippet3: "MDN Web Docs"
+        }
+      }
+    },
+    {
+      id: "cara-lengkap-daftar-sampai-deploy",
+      langs: {
+        "id": {
+          title: "Cara Lengkap Pakai Clinqoo: Dari Daftar sampai Dapat Link Publik Deployment",
+          desc: "Panduan menyeluruh langkah demi langkah: bikin akun, kerja di editor, sampai situsmu online dan punya link yang bisa dibagikan ke siapa saja.",
+          content: "<p class=\"mb-4\"><strong>1. Daftar akun.</strong> Buka clinqoo.pages.dev, klik tombol masuk, lalu pilih masuk dengan Google atau GitHub. Setujui izin akses yang diminta, dan dalam beberapa detik kamu sudah masuk ke akun Clinqoo-mu sendiri. Tidak ada formulir panjang, tidak ada verifikasi email manual \u2014 akun langsung aktif dan siap dipakai.</p><p class=\"mb-4\"><strong>2. Buat proyek baru.</strong> Dari halaman utama editor, klik opsi buat proyek baru. Kamu bisa mulai dari proyek kosong, pilih salah satu template siap pakai (misalnya landing page, portofolio, atau toko sederhana), atau impor langsung dari repository GitHub yang sudah kamu punya. Beri nama proyekmu, dan workspace langsung terbuka.</p><p class=\"mb-4\"><strong>3. Kerja di editor.</strong> Di sinilah kamu menulis dan mengedit kode \u2014 HTML, CSS, JavaScript, atau bahasa lain yang didukung. File explorer di kiri membantu kamu berpindah antar berkas, dan terminal di bagian bawah bisa dipakai untuk menjalankan perintah kalau proyekmu butuh proses build. Kalau bingung harus mulai dari mana atau menemukan error, buka chat AI \u2014 tanyakan langsung, dan AI akan menjelaskan atau menyarankan perbaikan kode.</p><p class=\"mb-4\"><strong>4. Simpan dan pratinjau.</strong> Setiap perubahan bisa disimpan langsung dari editor. Sebelum publish, buka mode pratinjau untuk melihat tampilan situsmu persis seperti yang akan dilihat pengunjung \u2014 termasuk di ukuran layar HP. Ulangi proses edit dan pratinjau sampai kamu puas dengan hasilnya.</p><p class=\"mb-4\"><strong>5. Deploy ke internet.</strong> Kalau sudah siap, buka menu Deploy dari dalam proyekmu dan klik terbitkan. Clinqoo akan memproses dan menerbitkan situsmu dalam hitungan detik hingga menit tergantung ukuran proyek. Setelah selesai, kamu akan mendapat link publik \u2014 alamat unik yang bisa langsung dibuka dan dibagikan ke siapa saja, tanpa mereka perlu punya akun Clinqoo.</p><p class=\"mb-4\"><strong>6. Update kapan saja.</strong> Situs yang sudah online bukan berarti selesai selamanya. Kembali ke editor, ubah apa yang perlu diubah, lalu deploy ulang \u2014 link publikmu tetap sama, hanya isinya yang diperbarui. Begitu siklus kerja di Clinqoo: edit, pratinjau, deploy, ulangi.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Beranda Clinqoo",
+          source2: "Clinqoo Editor", sourceUrl2: "https://clinqoo.pages.dev/editor/", sourceSnippet2: "Editor kode layar penuh Clinqoo",
+          source3: "Clinqoo Landing", sourceUrl3: "https://clinqoo.pages.dev/landing/", sourceSnippet3: "Halaman utama Clinqoo"
+        },
+        "en": {
+          title: "The Complete Way to Use Clinqoo: From Sign-Up to a Public Deployment Link",
+          desc: "A full step-by-step walkthrough: create an account, work in the editor, and get your site online with a link you can share with anyone.",
+          content: "<p class=\"mb-4\"><strong>1. Sign up.</strong> Open clinqoo.pages.dev, click sign in, then choose Google or GitHub. Approve the requested permissions, and within seconds you are inside your own Clinqoo account. No long forms, no manual email verification \u2014 the account is active and ready right away.</p><p class=\"mb-4\"><strong>2. Create a new project.</strong> From the editor home screen, click the new project option. You can start from a blank project, pick one of the ready-made templates (a landing page, portfolio, or simple store, for example), or import directly from a GitHub repository you already own. Name your project, and the workspace opens instantly.</p><p class=\"mb-4\"><strong>3. Work in the editor.</strong> This is where you write and edit code \u2014 HTML, CSS, JavaScript, or any other supported language. The file explorer on the left helps you move between files, and the terminal at the bottom can run commands if your project needs a build step. If you are stuck on where to start or hit an error, open the AI chat \u2014 ask directly, and it will explain or suggest a fix.</p><p class=\"mb-4\"><strong>4. Save and preview.</strong> Every change can be saved right from the editor. Before publishing, open preview mode to see your site exactly as visitors will \u2014 including at phone screen size. Repeat editing and previewing until you are happy with the result.</p><p class=\"mb-4\"><strong>5. Deploy to the internet.</strong> Once ready, open the Deploy menu inside your project and click publish. Clinqoo processes and publishes your site within seconds to minutes depending on project size. When it is done, you get a public link \u2014 a unique address anyone can open and you can share, with no Clinqoo account required on their end.</p><p class=\"mb-4\"><strong>6. Update anytime.</strong> A site going live does not mean it is finished forever. Head back to the editor, change what needs changing, then deploy again \u2014 your public link stays the same, only the content updates. That is the Clinqoo workflow: edit, preview, deploy, repeat.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Beranda Clinqoo",
+          source2: "Clinqoo Editor", sourceUrl2: "https://clinqoo.pages.dev/editor/", sourceSnippet2: "Editor kode layar penuh Clinqoo",
+          source3: "Clinqoo Landing", sourceUrl3: "https://clinqoo.pages.dev/landing/", sourceSnippet3: "Halaman utama Clinqoo"
         }
       }
     }
