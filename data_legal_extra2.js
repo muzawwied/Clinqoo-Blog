@@ -19,6 +19,44 @@
           source2: "Clinqoo Legal", sourceUrl2: "https://clinqoo.pages.dev/", sourceSnippet2: "Clinqoo policies"
         }
       }
+    },
+    {
+      id: "kebijakan-retensi-data-dan-log-teknis",
+      langs: {
+        "id": {
+          title: "Kebijakan Retensi Data dan Log Teknis Clinqoo",
+          desc: "Berapa lama Clinqoo menyimpan data akun, log teknis, dan jejak transaksi — plus kapan data dihapus atau dianonimkan.",
+          content: "<p class=\"mb-4\">Retensi merinci berapa lama data tinggal di infrastruktur Clinqoo. Tanpa batas waktu, log teknis menumpuk tanpa tujuan. Terakhir diperbarui: 18 September 2026.</p><h2>Data akun aktif</h2><p class=\"mb-4\">Selama akun hidup, data profil, proyek, dan preferensi disimpan agar kamu bisa masuk kembali dari perangkat lain. Menghapus akun memicu penghapusan data pribadi dalam waktu paling lama 30 hari, kecuali catatan transaksi yang wajib disimpan regulasi.</p><h2>Log teknis</h2><p class=\"mb-4\">Log akses, kesalahan server, dan sinyal keamanan disimpan dalam jangka pendek untuk mendiagnosis gangguan. Log ini bukan umpan iklan dan tidak dijual.</p><h2>Transaksi</h2><p class=\"mb-4\">Status top-up dan nominal disimpan sesuai kewajiban pencatatan keuangan. Kredensial pembayaran QRIS tidak disimpan Clinqoo.</p><h2>Meminta penjelasan</h2><p class=\"mb-4\">Pertanyaan retensi kirim ke <a href=\"mailto:muzawwied@gmail.com\">muzawwied@gmail.com</a>. Kami merujuk kebijakan privasi jika ada irisan hak subjek data.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Platform Clinqoo",
+          source2: "Clinqoo Blog", sourceUrl2: "https://clinqoo.pages.dev/blog/", sourceSnippet2: "Clinqoo Blog"
+        },
+        "en": {
+          title: "Clinqoo Data Retention and Technical Log Policy",
+          desc: "How long Clinqoo keeps account data, technical logs, and payment traces — and when data is deleted or anonymized.",
+          content: "<p class=\"mb-4\">Retention spells out how long data stays on Clinqoo infrastructure. Without a time box, technical logs pile up with no purpose. Last updated: 18 September 2026.</p><h2>Active account data</h2><p class=\"mb-4\">While an account is alive, profile, project, and preference data stay so you can sign in from another device. Deleting the account triggers personal-data removal within 30 days, except transaction records required by regulation.</p><h2>Technical logs</h2><p class=\"mb-4\">Access logs, server errors, and security signals are kept for a short window to diagnose incidents. They are not an ad feed and are not sold.</p><h2>Transactions</h2><p class=\"mb-4\">Top-up status and amounts are kept to meet financial record duties. QRIS payment credentials are not stored by Clinqoo.</p><h2>Asking for an explanation</h2><p class=\"mb-4\">Retention questions go to <a href=\"mailto:muzawwied@gmail.com\">muzawwied@gmail.com</a>. We point to the privacy policy when subject-data rights overlap.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo platform",
+          source2: "Clinqoo Blog", sourceUrl2: "https://clinqoo.pages.dev/blog/", sourceSnippet2: "Clinqoo Blog"
+        }
+      }
+    },
+    {
+      id: "kebijakan-sengketa-akun-dan-proyek",
+      langs: {
+        "id": {
+          title: "Kebijakan Sengketa Akun dan Proyek di Clinqoo",
+          desc: "Langkah jika dua pihak mengklaim akun atau proyek yang sama: bukti yang diminta, pembekuan sementara, dan saluran resmi.",
+          content: "<p class=\"mb-4\">Sengketa akun jarang, tapi merugikan jika proyek tayang dikuasai pihak yang salah. Kebijakan ini menjelaskan urutan kerja, bukan sidang. Terakhir diperbarui: 18 September 2026.</p><h2>Saluran resmi</h2><p class=\"mb-4\">Laporkan lewat <a href=\"mailto:muzawwied@gmail.com\">muzawwied@gmail.com</a> dari alamat yang terkait akun. Jelaskan kronologi singkat dan lampirkan bukti kepemilikan (email daftar, riwayat commit, atau kuitansi top-up).</p><h2>Pembekuan sementara</h2><p class=\"mb-4\">Jika risiko penyalahgunaan tinggi, kami dapat membekukan deploy atau login sementara agar tidak ada pihak yang mengosongkan proyek. Pembekuan bukan vonis.</p><h2>Yang tidak kami putuskan</h2><p class=\"mb-4\">Perselisihan bisnis antar klien dan freelancer di luar platform tetap urusan para pihak. Clinqoo menjaga akses teknis, bukan kontrak kerja kalian.</p><h2>Hukum yang berlaku</h2><p class=\"mb-4\">Sengketa layanan tunduk pada hukum Indonesia sebagaimana Syarat Ketentuan. Kami dapat meminta putusan atau kesepakatan tertulis sebelum mengembalikan kendali penuh.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Platform Clinqoo",
+          source2: "Clinqoo Blog", sourceUrl2: "https://clinqoo.pages.dev/blog/", sourceSnippet2: "Clinqoo Blog"
+        },
+        "en": {
+          title: "Clinqoo Account and Project Dispute Policy",
+          desc: "Steps when two parties claim the same account or project: evidence we ask for, temporary freezes, and the official channel.",
+          content: "<p class=\"mb-4\">Account disputes are rare, but costly if a live project is controlled by the wrong party. This policy explains the workflow, not a trial. Last updated: 18 September 2026.</p><h2>Official channel</h2><p class=\"mb-4\">Report via <a href=\"mailto:muzawwied@gmail.com\">muzawwied@gmail.com</a> from an address tied to the account. Give a short timeline and attach ownership proof (signup email, commit history, or top-up receipt).</p><h2>Temporary freeze</h2><p class=\"mb-4\">If abuse risk is high, we may freeze deploy or login briefly so nobody empties the project. A freeze is not a verdict.</p><h2>What we do not decide</h2><p class=\"mb-4\">Business disputes between a client and a freelancer outside the platform stay theirs. Clinqoo guards technical access, not your work contract.</p><h2>Governing law</h2><p class=\"mb-4\">Service disputes follow Indonesian law as in the Terms of Service. We may ask for a written settlement or order before restoring full control.</p>",
+          source: "Clinqoo", sourceUrl: "https://clinqoo.pages.dev/", sourceSnippet: "Clinqoo platform",
+          source2: "Clinqoo Blog", sourceUrl2: "https://clinqoo.pages.dev/blog/", sourceSnippet2: "Clinqoo Blog"
+        }
+      }
     }
   ];
   function merge(){
