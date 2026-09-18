@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTTPS and Clinqoo Subdomains: What Is Already Safe, What Is Still Yours — Clinqoo Blog</title>
+<meta name="description" content="Deploying to Cloudflare Pages gives you HTTPS. Page content, forms, and third-party scripts remain the site owner's job.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://clinqoo.pages.dev/blog/security/security-https-dan-subdomain-clinqoo/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTPS and Clinqoo Subdomains: What Is Already Safe, What Is Still Yours">
+<meta property="og:description" content="Deploying to Cloudflare Pages gives you HTTPS. Page content, forms, and third-party scripts remain the site owner's job.">
+<meta property="og:image" content="https://clinqoo.pages.dev/blog/logo.png">
+<meta property="og:site_name" content="Clinqoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://clinqoo.pages.dev/blog/security/"><img src="../../logo.png" alt="Clinqoo"><b>Clinqoo Blog</b></a>
+  <div class="crumb">🔒 Security</div><h1>HTTPS and Clinqoo Subdomains: What Is Already Safe, What Is Still Yours</h1><p class="desc">Deploying to Cloudflare Pages gives you HTTPS. Page content, forms, and third-party scripts remain the site owner's job.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">When you deploy from Clinqoo to Cloudflare Pages, visitors usually open the site over HTTPS. The browser padlock means the channel is encrypted, not that every line of text, form field, or script is automatically safe.</p><p class="mb-4">A <code>.clinqoo.biz.id</code> subdomain makes URLs easy to share. Do not send sensitive data in query strings that end up in history, logs, or screenshots. A contact form only needs a name and a message; avoid asking for identity numbers or other accounts' passwords.</p><p class="mb-4">Check internal links too. If a button still points to <code>http://</code> or to a local file that never deployed, visitors lose the safe context they just saw on the home page.</p><p class="mb-4">The AI assistant may draft a fetch example. Re-read it: is the URL HTTPS, are credentials in the query, are raw errors shown to visitors? Fix it in the editor before you redeploy.</p><p class="mb-4">HTTPS from Clinqoo's infrastructure is the foundation. What you collect and what you load from elsewhere remains your decision.</p></div><div class="src"><h2>Information Source</h2><a href="https://clinqoo.pages.dev/" target="_blank" rel="noopener">Clinqoo<span class="d">clinqoo.pages.dev</span></a></div>
+  <a class="back" href="https://clinqoo.pages.dev/blog/security/">← Back to Clinqoo Blog</a>
+</div>
+</body>
+</html>
