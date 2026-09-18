@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaga Kunci API di Luar File Proyek Clinqoo — Clinqoo Blog</title>
+<meta name="description" content="Mengapa token, kunci API, dan kata sandi tidak boleh ikut tersimpan di index.html atau skrip yang ikut ter-deploy.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://clinqoo.pages.dev/blog/security/security-jaga-kunci-api-di-luar-proyek/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jaga Kunci API di Luar File Proyek Clinqoo">
+<meta property="og:description" content="Mengapa token, kunci API, dan kata sandi tidak boleh ikut tersimpan di index.html atau skrip yang ikut ter-deploy.">
+<meta property="og:image" content="https://clinqoo.pages.dev/blog/logo.png">
+<meta property="og:site_name" content="Clinqoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://clinqoo.pages.dev/blog/security/"><img src="../../logo.png" alt="Clinqoo"><b>Clinqoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Jaga Kunci API di Luar File Proyek Clinqoo</h1><p class="desc">Mengapa token, kunci API, dan kata sandi tidak boleh ikut tersimpan di index.html atau skrip yang ikut ter-deploy.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clinqoo memudahkan kamu menulis kode lalu men-deploy ke subdomain <code>.clinqoo.biz.id</code>. Itu juga berarti file yang kamu simpan bisa dibuka siapa pun yang punya URL. Kunci API, token webhook, atau kata sandi layanan pihak ketiga tidak boleh duduk di <code>index.html</code>, file JavaScript, atau komentar HTML.</p><p class="mb-4">Kalau asisten AI menyarankan menempel kunci di kode supaya form atau fetch "langsung jalan", tolak dulu. Minta alternatif: endpoint yang kamu kendalikan, layanan tanpa kunci di klien, atau placeholder yang jelas tidak aktif. Pratinjau di editor bukan tempat menyembunyikan rahasia — pratinjau hanya meniru apa yang nanti publik.</p><p class="mb-4">Praktik yang aman: simpan rahasia di luar proyek statis. Situs Clinqoo pada dasarnya adalah file statis. Jangan harap file <code>.env</code> tersembunyi setelah deploy. Jika suatu fitur butuh kunci, pindahkan ke backend terpisah atau layanan yang memang dirancang untuk itu.</p><p class="mb-4">Sebelum rilis, cari kata <code>api_key</code>, <code>secret</code>, <code>token</code>, dan <code>password</code> di seluruh workspace. Hapus yang tidak sengaja tertinggal, termasuk di file cadangan. Setelah itu baru deploy.</p><p class="mb-4">Keamanan di Clinqoo dimulai dari kebiasaan kecil: yang publik boleh dilihat, yang rahasia tidak ikut ter-upload. Platform-nya mempercepat rilis; kamu yang menjaga isi file tetap bersih.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://clinqoo.pages.dev/" target="_blank" rel="noopener">Clinqoo<span class="d">clinqoo.pages.dev</span></a></div>
+  <a class="back" href="https://clinqoo.pages.dev/blog/security/">← Kembali ke Clinqoo Blog</a>
+</div>
+</body>
+</html>
