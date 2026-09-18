@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change the Favicon, Logo, and Site Name in Clinqoo — Clinqoo Blog</title>
+<meta name="description" content="A safe order for replacing the tab icon, header logo, and brand text in a Clinqoo template without breaking image links.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://clinqoo.pages.dev/blog/panduan/ganti-favicon-logo-dan-nama-situs/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Change the Favicon, Logo, and Site Name in Clinqoo">
+<meta property="og:description" content="A safe order for replacing the tab icon, header logo, and brand text in a Clinqoo template without breaking image links.">
+<meta property="og:image" content="https://clinqoo.pages.dev/blog/logo.png">
+<meta property="og:site_name" content="Clinqoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://clinqoo.pages.dev/blog/panduan/"><img src="../../logo.png" alt="Clinqoo"><b>Clinqoo Blog</b></a>
+  <div class="crumb">📘 Guides</div><h1>Change the Favicon, Logo, and Site Name in Clinqoo</h1><p class="desc">A safe order for replacing the tab icon, header logo, and brand text in a Clinqoo template without breaking image links.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clinqoo templates almost always still use a sample logo. Replacing it is safer if you go in order: files first, then HTML links, then preview.</p><p class="mb-4">Prepare two files: a header logo (PNG or SVG) and a small favicon, ideally 32×32 or 64×64 pixels. Use simple filenames without spaces, for example <code>logo.png</code> and <code>favicon.png</code>. Put them in the same folder as the HTML or in <code>assets</code> if the template already uses that folder.</p><p class="mb-4">Find <code>&lt;link rel="icon"</code> in <code>&lt;head&gt;</code> and point it at the new favicon. Then find the header <code>&lt;img&gt;</code> logo. Change the <code>src</code> and <code>alt</code> attributes. A good alt is the brand name, not "logo".</p><p class="mb-4">Update the site name in the header, footer, and tab title so they match. If one place still shows the template name, visitors will wonder who owns the site.</p><p class="mb-4">Preview on desktop and phone. Favicons sometimes stick in the browser cache; open a private window if the old icon remains. When it looks right, deploy.</p></div>
+  <a class="back" href="https://clinqoo.pages.dev/blog/">← Kembali ke Clinqoo Blog</a>
+</div>
+</body>
+</html>
