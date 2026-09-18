@@ -1,7 +1,7 @@
 {
-  "name": "Clinqoo Blog",
-  "short_name": "Clinqoo Blog",
-  "description": "Blog resmi Clinqoo: panduan lengkap editor kode, asisten AI, template, terminal terintegrasi, dan cara deploy situs ke internet — ditulis dalam bahasa yang mudah dipahami.",
+  "name": "Clincoo Blog",
+  "short_name": "Clincoo Blog",
+  "description": "Blog resmi Clincoo: panduan lengkap editor kode, asisten AI, template, terminal terintegrasi, dan cara deploy situs ke internet — ditulis dalam bahasa yang mudah dipahami.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",

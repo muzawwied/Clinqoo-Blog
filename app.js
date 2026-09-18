@@ -338,24 +338,24 @@ function renderAbout(skipPush) {
   
   // Konten panjang 5 Paragraf mengenai visi misi global & sharing
   const contentId = `
-    <p class="mb-4"><strong>Clinqoo Blog</strong> adalah rumah resmi untuk artikel, panduan, dan tips seputar Clinqoo — ruang kerja web lengkap dengan editor kode, template siap pakai, terminal terintegrasi, dan deploy dalam satu tempat. Blog ini hadir agar setiap fitur Clinqoo punya panduan yang mudah diikuti siapa pun.</p>
+    <p class="mb-4"><strong>Clincoo Blog</strong> adalah rumah resmi untuk artikel, panduan, dan tips seputar Clincoo — ruang kerja web lengkap dengan editor kode, template siap pakai, terminal terintegrasi, dan deploy dalam satu tempat. Blog ini hadir agar setiap fitur Clincoo punya panduan yang mudah diikuti siapa pun.</p>
     <p class="mb-4">Kami percaya membuat website seharusnya tidak butuh gelar komputer. Karena itu setiap artikel di sini ditulis dengan bahasa sederhana, langkah yang jelas, dan contoh nyata — dari memulai akun pertama sampai menerbitkan situs ke seluruh dunia.</p>
-    <p class="mb-4">AI di Clinqoo adalah asisten: ia membantu menjelaskan, menyarankan, dan mempercepat pekerjaanmu — kamu tetap pemegang kendali. Blog ini mengikuti prinsip yang sama: kami menemani, bukan menggantikanmu.</p>
+    <p class="mb-4">AI di Clincoo adalah asisten: ia membantu menjelaskan, menyarankan, dan mempercepat pekerjaanmu — kamu tetap pemegang kendali. Blog ini mengikuti prinsip yang sama: kami menemani, bukan menggantikanmu.</p>
     <p class="mb-4">Semua panduan disusun per kategori — Panduan, Editor, Asisten AI, Deploy, dan Tips — supaya kamu cepat menemukan yang dicari, baik dalam bahasa Indonesia maupun Inggris.</p>
     <p class="mb-4">Selamat berkarya. Mulai dari artikel mana pun, dan jangan lupa buka clinqoo.pages.dev untuk langsung mencoba.</p>
   `;
 
   // Terapkan konten yang sama untuk mencegah error bahasa, bisa diterjemahkan nanti
   const aboutContent = {
-    id: { title: 'Tentang Clinqoo Blog', body: contentId },
-    en: { title: 'About Clinqoo Blog', body: contentId }
+    id: { title: 'Tentang Clincoo Blog', body: contentId },
+    en: { title: 'About Clincoo Blog', body: contentId }
   };
   
   const d = aboutContent[currentLang] || aboutContent['id'];
 
-  const wikybookLogo = '<img src="logo.png" width="50" height="50" alt="Clinqoo" style="border-radius:0.6rem">';
+  const wikybookLogo = '<img src="logo.png" width="50" height="50" alt="Clincoo" style="border-radius:0.6rem">';
 
-  const socialIcons = '<div class="mt-6"><a href="https://clinqoo.pages.dev/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-700 transition-colors">Buka Aplikasi Clinqoo</a></div>';
+  const socialIcons = '<div class="mt-6"><a href="https://clinqoo.pages.dev/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-700 transition-colors">Buka Aplikasi Clincoo</a></div>';
 
   appContainer().innerHTML =
     makeHeader('renderHome()', u.back) +
@@ -367,8 +367,8 @@ function renderAbout(skipPush) {
     '<div class="prose prose-gray max-w-none text-gray-800 leading-loose text-justify space-y-4">' + d.body + '</div>' +
     '<div class="mt-12 border-t border-gray-200 pt-8 flex flex-col items-center">' +
     '<div class="text-gray-900 mb-3">' + wikybookLogo + '</div>' +
-    '<h3 class="text-lg font-bold text-gray-900 tracking-tight">Clinqoo Blog</h3>' +
-    '<p class="text-sm text-gray-500 mt-1">Artikel, Panduan & Tips Clinqoo</p>' +
+    '<h3 class="text-lg font-bold text-gray-900 tracking-tight">Clincoo Blog</h3>' +
+    '<p class="text-sm text-gray-500 mt-1">Artikel, Panduan & Tips Clincoo</p>' +
     socialIcons +
     '</div>' +
     '</article>';
