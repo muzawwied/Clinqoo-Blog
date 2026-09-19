@@ -111,6 +111,111 @@ window.countryDataFiles["seo"] = {
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "seo-canonical-satu-url-halaman",
+      langs: {
+        "id": {
+          title: "Pasang Canonical agar Satu URL per Halaman Clincoo",
+          desc: "Jika halaman bisa dibuka lewat beberapa path, pilih satu URL kanonik sebelum dibagikan.",
+          content: "<p class=\"mb-4\">Setelah deploy Clincoo, halaman yang sama kadang terbuka di path dengan dan tanpa index.html. Mesin telusur bisa menganggap itu dua dokumen.</p><p class=\"mb-4\">Tambahkan link rel=canonical di head yang menunjuk URL yang ingin kamu promosikan. Samakan dengan tautan yang kamu kirim ke klien.</p><p class=\"mb-4\">Jangan biarkan AI menambahkan canonical ke domain contoh atau ke halaman lain. Sebut file dan URL lengkap.</p><p class=\"mb-4\">Setelah rilis, buka sumber halaman di subdomain. Canonical harus https dan tanpa parameter acak.</p><p class=\"mb-4\">Clincoo tidak menulis canonical otomatis. Satu URL per konten adalah keputusanmu.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Set a Canonical so Each Clincoo Page Has One URL",
+          desc: "If a page opens at several paths, pick one canonical URL before you share it.",
+          content: "<p class=\"mb-4\">After a Clincoo deploy, the same page may open with and without index.html. Search engines can treat those as two documents.</p><p class=\"mb-4\">Add a rel=canonical link in the head that points at the URL you want to promote. Match the link you send to clients.</p><p class=\"mb-4\">Do not let the AI add a canonical to an example domain or another page. Name the file and the full URL.</p><p class=\"mb-4\">After release, view page source on the subdomain. The canonical should be https and free of random query parameters.</p><p class=\"mb-4\">Clincoo does not write canonicals for you. One URL per piece of content is your decision.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
+    },
+    {
+      id: "seo-og-title-saat-dibagikan",
+      langs: {
+        "id": {
+          title: "Isi Open Graph agar Tautan Clincoo Terlihat Rapi",
+          desc: "Saat tautan dibagikan di chat, pratinjau memakai og:title dan og:description. Isi keduanya.",
+          content: "<p class=\"mb-4\">Banyak halaman Clincoo hanya punya title biasa. Aplikasi chat lalu menampilkan nama file atau domain kosong.</p><p class=\"mb-4\">Tambahkan og:title, og:description, og:url, dan og:image jika kamu punya logo. Teksnya boleh sama dengan title halaman, asal spesifik.</p><p class=\"mb-4\">Minta AI menyisipkan meta Open Graph di satu file. Tolak rewrite layout atau penambahan skrip berbagi.</p><p class=\"mb-4\">Uji dengan menempel URL deploy di chat pribadi. Jika kartu masih salah, cek cache aplikasi chat, bukan hanya file.</p><p class=\"mb-4\">Clincoo menayangkan meta apa adanya. Kartu tautan yang rapi adalah pekerjaan sebelum rilis.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Fill Open Graph so Shared Clincoo Links Look Clean",
+          desc: "When a link is shared in chat, the preview uses og:title and og:description. Fill both.",
+          content: "<p class=\"mb-4\">Many Clincoo pages only have a plain title. Chat apps then show a filename or a blank domain.</p><p class=\"mb-4\">Add og:title, og:description, og:url, and og:image if you have a logo. The text may match the page title if it is specific.</p><p class=\"mb-4\">Ask the AI to insert Open Graph meta in one file. Refuse a layout rewrite or extra share scripts.</p><p class=\"mb-4\">Test by pasting the deploy URL in a private chat. If the card is still wrong, check the chat app cache, not only the file.</p><p class=\"mb-4\">Clincoo ships the meta as written. A clean link card is work you do before release.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
+    },
+    {
+      id: "seo-daftar-halaman-publik",
+      langs: {
+        "id": {
+          title: "Daftar Halaman Publik agar Mudah Ditemukan",
+          desc: "Mesin telusur merayapi tautan. Sediakan daftar halaman di beranda atau halaman peta situs sederhana.",
+          content: "<p class=\"mb-4\">Proyek Clincoo dengan banyak HTML sering menyembunyikan halaman di folder tanpa tautan dari beranda.</p><p class=\"mb-4\">Buat daftar tautan relatif ke setiap halaman yang boleh diindeks. Boleh di footer beranda atau file peta-situs.html biasa.</p><p class=\"mb-4\">Jangan unggah sitemap XML palsu ke domain yang bukan milikmu. Untuk subdomain Clincoo, tautan HTML sudah cukup untuk merayap awal.</p><p class=\"mb-4\">Jika AI diminta membuat peta situs, batasi ke daftar tautan. Tolak skrip yang menulis XML setiap detik.</p><p class=\"mb-4\">Halaman yang tidak tertaut dari mana pun hampir tidak akan ditemukan setelah deploy.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "List Public Pages so They Can Be Found",
+          desc: "Search engines follow links. Provide a page list on the home page or a simple sitemap page.",
+          content: "<p class=\"mb-4\">Clincoo projects with many HTML files often hide pages in folders with no link from home.</p><p class=\"mb-4\">Make a list of relative links to every page you want indexed. It can live in the home footer or a plain peta-situs.html file.</p><p class=\"mb-4\">Do not upload a fake XML sitemap to a domain you do not own. On a Clincoo subdomain, HTML links are enough for a first crawl.</p><p class=\"mb-4\">If you ask the AI for a sitemap, limit it to a link list. Refuse a script that rewrites XML every second.</p><p class=\"mb-4\">A page that links from nowhere will barely be found after deploy.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
+    },
+    {
+      id: "seo-atribut-lang-dan-teks-utama",
+      langs: {
+        "id": {
+          title: "Setel lang HTML sesuai Bahasa Isi Clincoo",
+          desc: "Atribut lang di elemen html membantu pembaca layar dan mesin telusur. Samakan dengan bahasa teks.",
+          content: "<p class=\"mb-4\">Template sering menyisakan lang=en padahal seluruh salinan berbahasa Indonesia, atau sebaliknya.</p><p class=\"mb-4\">Ubah atribut lang di file halaman yang kamu rilis. Jika ada versi Inggris terpisah, file itu memakai lang=en.</p><p class=\"mb-4\">Jangan campur paragraf panjang dua bahasa tanpa penanda. Pembaca dan perayap butuh bahasa utama yang jelas.</p><p class=\"mb-4\">Minta AI hanya mengganti lang dan mengecek title. Jangan biarkan ia menerjemahkan seluruh situs tanpa diminta.</p><p class=\"mb-4\">Clincoo tidak mendeteksi bahasa otomatis saat deploy. Markup mengikuti apa yang kamu simpan.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Set the HTML lang to Match Clincoo Page Copy",
+          desc: "The lang attribute on the html element helps screen readers and search engines. Match it to the text.",
+          content: "<p class=\"mb-4\">Templates often leave lang=en while the copy is Indonesian, or the reverse.</p><p class=\"mb-4\">Change the lang attribute on the page you release. If you keep a separate English file, that file uses lang=en.</p><p class=\"mb-4\">Do not mix long passages of two languages with no marker. Readers and crawlers need a clear primary language.</p><p class=\"mb-4\">Ask the AI only to change lang and check the title. Do not let it translate the whole site unasked.</p><p class=\"mb-4\">Clincoo does not detect language at deploy. Markup follows what you save.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
+    },
+    {
+      id: "seo-teks-terlihat-sebelum-skrip",
+      langs: {
+        "id": {
+          title: "Pastikan Teks Utama Ada di HTML Clincoo",
+          desc: "Mesin telusur membaca markup. Jangan andalkan JavaScript saja untuk menampilkan judul dan isi.",
+          content: "<p class=\"mb-4\">Beberapa template memuat hero lewat skrip. Jika skrip gagal, halaman kosong bagi pengunjung dan perayap.</p><p class=\"mb-4\">Tulis heading dan paragraf penting langsung di HTML. Skrip boleh menambah interaktivitas, bukan mengganti seluruh teks.</p><p class=\"mb-4\">Cek dengan mematikan JavaScript di pratinjau atau melihat sumber. Kalau teks utama hilang, SEO ikut lemah.</p><p class=\"mb-4\">Minta AI mengembalikan teks ke markup, bukan menambah framework. Satu file, satu permintaan.</p><p class=\"mb-4\">Clincoo men-deploy file statis. Konten yang hanya hidup di memori browser sulit diindeks.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Keep Main Copy in the Clincoo HTML",
+          desc: "Search engines read markup. Do not rely on JavaScript alone to show the title and body.",
+          content: "<p class=\"mb-4\">Some templates inject the hero with a script. If the script fails, the page is empty for visitors and crawlers.</p><p class=\"mb-4\">Put important headings and paragraphs in the HTML. Scripts may add interaction; they should not replace all copy.</p><p class=\"mb-4\">Check by turning JavaScript off in preview or by viewing source. If the main text vanishes, SEO suffers with it.</p><p class=\"mb-4\">Ask the AI to move copy back into markup, not to add a framework. One file, one request.</p><p class=\"mb-4\">Clincoo deploys static files. Content that lives only in browser memory is hard to index.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ]
 };
