@@ -342,7 +342,7 @@ function renderAbout(skipPush) {
     <p class="mb-4">Kami percaya membuat website seharusnya tidak butuh gelar komputer. Karena itu setiap artikel di sini ditulis dengan bahasa sederhana, langkah yang jelas, dan contoh nyata — dari memulai akun pertama sampai menerbitkan situs ke seluruh dunia.</p>
     <p class="mb-4">AI di Clincoo adalah asisten: ia membantu menjelaskan, menyarankan, dan mempercepat pekerjaanmu — kamu tetap pemegang kendali. Blog ini mengikuti prinsip yang sama: kami menemani, bukan menggantikanmu.</p>
     <p class="mb-4">Semua panduan disusun per kategori — Panduan, Editor, Asisten AI, Deploy, dan Tips — supaya kamu cepat menemukan yang dicari, baik dalam bahasa Indonesia maupun Inggris.</p>
-    <p class="mb-4">Selamat berkarya. Mulai dari artikel mana pun, dan jangan lupa buka clinqoo.pages.dev untuk langsung mencoba.</p>
+    <p class="mb-4">Selamat berkarya. Mulai dari artikel mana pun, dan jangan lupa buka blog.clincoo.buzz untuk langsung mencoba.</p>
   `;
 
   // Terapkan konten yang sama untuk mencegah error bahasa, bisa diterjemahkan nanti
@@ -355,7 +355,7 @@ function renderAbout(skipPush) {
 
   const wikybookLogo = '<img src="logo.png" width="50" height="50" alt="Clincoo" style="border-radius:0.6rem">';
 
-  const socialIcons = '<div class="mt-6"><a href="https://clinqoo.pages.dev/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-700 transition-colors">Buka Aplikasi Clincoo</a></div>';
+  const socialIcons = '<div class="mt-6"><a href="https://app.clincoo.buzz/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-700 transition-colors">Buka Aplikasi Clincoo</a></div>';
 
   appContainer().innerHTML =
     makeHeader('renderHome()', u.back) +
