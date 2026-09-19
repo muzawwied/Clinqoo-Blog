@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avoid Embedding Admin Panels or Unknown Iframes on Clincoo — Clincoo Blog</title>
+<meta name="description" content="An iframe to a dashboard, an unverified checkout, or someone else's login page breaks visitor trust.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-embed-admin-dan-iframe-asing/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Avoid Embedding Admin Panels or Unknown Iframes on Clincoo">
+<meta property="og:description" content="An iframe to a dashboard, an unverified checkout, or someone else's login page breaks visitor trust.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Security</div><h1>Avoid Embedding Admin Panels or Unknown Iframes on Clincoo</h1><p class="desc">An iframe to a dashboard, an unverified checkout, or someone else's login page breaks visitor trust.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">It is easy to paste an <code>iframe</code> so a form or chart "just works". Risk appears when the source is an admin panel, an HTTP sandbox, or a domain you do not recognize.</p><p class="mb-4">Check every <code>src</code> in the editor. If the AI adds an analytics or chat iframe you did not ask for, delete it before deploy.</p><p class="mb-4">For payments or login, send people to the official page in a new tab — do not wrap a third-party dashboard inside a Clincoo layout.</p><p class="mb-4">Add <code>sandbox</code> when an embed is truly required, and limit which features it may use.</p><p class="mb-4">A static page can still deceive if it loads someone else's UI. Clincoo ships your files; you keep the iframe boundary.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
