@@ -21,6 +21,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "mobile-uji-form-keyboard-ponsel",
+      langs: {
+        "id": {
+          title: "Uji Form dengan Keyboard Ponsel sebelum Deploy",
+          desc: "Keyboard virtual menutupi tombol kirim. Cek inputmode, type, dan posisi CTA di pratinjau HP Clincoo.",
+          content: "<p class=\"mb-4\">Form yang rapi di desktop sering gagal di ponsel karena keyboard menutupi tombol kirim atau field berikutnya.</p><p class=\"mb-4\">Pakai type yang tepat: email, tel, number. Tambah inputmode jika perlu. Label tetap terlihat saat field aktif.</p><p class=\"mb-4\">Gulir pratinjau HP sampai keyboard terbuka. Pastikan tombol kirim masih bisa diketuk dan tidak tertutup navbar tetap.</p><p class=\"mb-4\">Minta AI hanya mengubah type dan inputmode pada satu form. Jangan izinkan pustaka mask angka yang berat.</p><p class=\"mb-4\">Clincoo tidak menyesuaikan keyboard otomatis. Uji ketuk nyata di ponsel sebelum subdomain dianggap selesai.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Test the Form with a Phone Keyboard before You Deploy",
+          desc: "The virtual keyboard covers the submit button. Check inputmode, type, and CTA position in the Clincoo phone preview.",
+          content: "<p class=\"mb-4\">A form that looks tidy on desktop often fails on a phone because the keyboard covers the submit button or the next field.</p><p class=\"mb-4\">Use the right type: email, tel, number. Add inputmode when it helps. Keep the label visible while the field is focused.</p><p class=\"mb-4\">Scroll the phone preview with the keyboard open. Make sure submit is still tappable and not hidden by a fixed navbar.</p><p class=\"mb-4\">Ask the AI only to change type and inputmode on one form. Do not allow a heavy number-mask library.</p><p class=\"mb-4\">Clincoo does not adapt the keyboard for you. Do a real tap test on a phone before the subdomain is treated as done.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
