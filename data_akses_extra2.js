@@ -21,6 +21,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "akses-nama-tautan-bukan-klik-disini",
+      langs: {
+        "id": {
+          title: "Beri Nama Tautan yang Bermakna, Bukan Klik di Sini",
+          desc: "Teks tautan harus menjelaskan tujuan. Pembaca layar dan pratinjau daftar tautan butuh kata yang spesifik di halaman Clincoo.",
+          content: "<p class=\"mb-4\">Klik di sini dan selengkapnya tidak menjelaskan tujuan. Daftar tautan di pembaca layar jadi deretan kata yang sama.</p><p class=\"mb-4\">Tulis tujuan: Lihat paket harga, Unduh brosur PDF, Hubungi lewat WhatsApp. Kata kerja plus objek lebih jelas daripada instruksi kosong.</p><p class=\"mb-4\">Jika desain memaksa teks pendek, tambah aria-label yang lebih lengkap, tetap jaga teks terlihat agar orang yang zoom juga paham.</p><p class=\"mb-4\">Minta AI hanya mengganti teks tautan di satu section. Tolak rewrite seluruh navigasi.</p><p class=\"mb-4\">Clincoo menayangkan markup yang kamu simpan. Nama tautan adalah akses, bukan slogan dekoratif.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Name Links by Destination, Not Click Here",
+          desc: "Link text should say where it goes. Screen readers and link lists need specific words on a Clincoo page.",
+          content: "<p class=\"mb-4\">Click here and read more do not name a destination. A screen reader link list becomes a row of the same words.</p><p class=\"mb-4\">Write the destination: View pricing plans, Download the PDF brochure, Contact us on WhatsApp. A verb plus an object is clearer than an empty instruction.</p><p class=\"mb-4\">If the design forces short visible text, add a fuller aria-label, but keep visible text clear for people who zoom.</p><p class=\"mb-4\">Ask the AI only to change link text in one section. Refuse a full navigation rewrite.</p><p class=\"mb-4\">Clincoo ships the markup you save. Link names are access work, not decorative slogans.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
