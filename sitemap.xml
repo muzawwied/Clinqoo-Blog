@@ -1,1 +1,33 @@
-see-file
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://blog.clincoo.buzz/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ai/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/coding/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/deploy/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/editor/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/legal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/panduan/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/tips/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cerita/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/security/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/template/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/mobile/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/performa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/komunitas/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/seo/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/akses/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-baca-console-sebelum-ubah-kode/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-network-404-gambar-css/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-matikan-css-sementara-untuk-isolasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-bandingkan-computed-style/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-uji-ulang-di-jendela-privat/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-console-log-nilai-sebelum-ubah/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-cari-overflow-tersembunyi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-pasang-breakpoint-event-klik/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-typo-selektor-css/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-tunggu-domcontentloaded/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-z-index-dan-overlay/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-repro-langkah-minimal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-fetch-gagal-di-network/</loc></url>
+</urlset>
