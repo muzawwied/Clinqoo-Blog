@@ -21,6 +21,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "komunitas-tulis-langkah-repro-bug",
+      langs: {
+        "id": {
+          title: "Tulis Langkah Repro saat Melapor Bug ke Tim",
+          desc: "Tangkapapan tanpa urutan langkah membuat reviewer Clincoo mengulang tebakan. Cantumkan URL, lebar layar, dan apa yang kamu klik.",
+          content: "<p class=\"mb-4\">Pesan \"tombolnya rusak\" tidak bisa ditindak. Orang lain tidak tahu halaman, lebar layar, atau langkah sebelum error.</p><p class=\"mb-4\">Tulis urutan: buka URL pratinjau, lebar ponsel, ketuk menu, lalu tombol kirim. Tambah teks error konsol jika ada.</p><p class=\"mb-4\">Satu bug satu utas. Jangan campur permintaan warna hero di laporan form yang gagal.</p><p class=\"mb-4\">Minta AI merapikan catatan repro, bukan menebak perbaikan di banyak file.</p><p class=\"mb-4\">Clincoo menampilkan apa yang ada di workspace. Tim hanya bisa memperbaiki apa yang bisa mereka ulangi.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Write Repro Steps When You Report a Bug to the Team",
+          desc: "A screenshot with no steps makes Clincoo reviewers guess. Include the URL, viewport width, and what you clicked.",
+          content: "<p class=\"mb-4\">A note that says \"the button is broken\" cannot be acted on. Other people do not know the page, the width, or the steps before the error.</p><p class=\"mb-4\">Write the sequence: open the preview URL, phone width, tap the menu, then the submit button. Add the console error text if you have it.</p><p class=\"mb-4\">One bug per thread. Do not mix a hero color request into a failed-form report.</p><p class=\"mb-4\">Ask the AI to tidy the repro notes, not to guess fixes across many files.</p><p class=\"mb-4\">Clincoo shows what is in the workspace. The team can only fix what they can repeat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
