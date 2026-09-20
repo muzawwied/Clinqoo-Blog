@@ -67,6 +67,111 @@ window.countryDataFiles["struktur"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "struktur-readme-peta-folder",
+      langs: {
+        "id": {
+          title: "Tulis README Clincoo sebagai Peta Folder, Bukan Essay",
+          desc: "Satu halaman yang menjelaskan css/, js/, dan pages/ menghemat waktu onboarding.",
+          content: "<p class=\"mb-4\">Workspace Clincoo tanpa peta folder memaksa setiap kontributor menebak di mana hero.webp atau script checkout tinggal.</p><p class=\"mb-4\">Buat README.md pendek: daftar folder, peran masing-masing, dan contoh path yang boleh diubah. Hindari esai sejarah proyek.</p><p class=\"mb-4\">Tulis satu baris aturan path: aset bersama di root, halaman di folder sendiri, draf di folder _draft yang tidak di-deploy.</p><p class=\"mb-4\">Minta AI memperbarui README hanya setelah struktur folder berubah. Tolak generate dokumentasi sepuluh halaman.</p><p class=\"mb-4\">Clincoo merender file sesuai path. README adalah peta, bukan dekorasi repo.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Write a Clincoo README as a Folder Map, Not an Essay",
+          desc: "One page that explains css/, js/, and pages/ saves onboarding time.",
+          content: "<p class=\"mb-4\">A Clincoo workspace without a folder map forces every contributor to guess where hero.webp or the checkout script lives.</p><p class=\"mb-4\">Write a short README.md: list folders, their roles, and example paths that may change. Skip project-history essays.</p><p class=\"mb-4\">Add one path rule: shared assets at the root, pages in their own folders, drafts in a _draft folder that is not deployed.</p><p class=\"mb-4\">Ask the AI to update the README only after the folder structure changes. Refuse a ten-page documentation dump.</p><p class=\"mb-4\">Clincoo renders files by path. The README is a map, not repo decoration.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "struktur-folder-draf-terpisah",
+      langs: {
+        "id": {
+          title: "Simpan Draf Clincoo di Folder Terpisah dari Halaman Tayang",
+          desc: "File percobaan di root mudah ikut ter-deploy. Pisahkan draf dari produksi.",
+          content: "<p class=\"mb-4\">Folder root Clincoo yang penuh uji-hero-v4.html dan copy-lama.html membuat sitemap dan deploy ikut mengirim sampah.</p><p class=\"mb-4\">Buat folder draf/, sandbox/, atau _wip/. Jangan tautkan folder itu dari navigasi publik. Hapus atau arsipkan sebelum rilis.</p><p class=\"mb-4\">Samakan nama draf dengan tugas: draf/harga-q3.html, bukan newnew2.html. Setelah selesai, pindahkan ke folder halaman resmi.</p><p class=\"mb-4\">Minta AI menandai file yang tidak tertaut dari index. Tolak menghapus massal tanpa daftar path.</p><p class=\"mb-4\">Clincoo menayangkan apa yang ada di repo publik. Struktur draf yang terpisah menjaga rilis tetap bersih.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Keep Clincoo Drafts in a Folder Separate from Live Pages",
+          desc: "Experiment files at the root often ship by accident. Split drafts from production.",
+          content: "<p class=\"mb-4\">A Clincoo root packed with uji-hero-v4.html and copy-lama.html lets sitemap and deploy ship junk.</p><p class=\"mb-4\">Make a drafts/, sandbox/, or _wip/ folder. Do not link that folder from public navigation. Delete or archive it before release.</p><p class=\"mb-4\">Name drafts after the task: drafts/pricing-q3.html, not newnew2.html. When done, move them into the official page folder.</p><p class=\"mb-4\">Ask the AI to list files that are not linked from index. Refuse a mass delete without a path list.</p><p class=\"mb-4\">Clincoo serves whatever sits in the public repo. Separate draft structure keeps a release clean.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
+    },
+    {
+      id: "struktur-satu-sumber-navigasi",
+      langs: {
+        "id": {
+          title: "Jaga Navigasi Clincoo di Satu Sumber, Bukan di Setiap Halaman",
+          desc: "Menu yang disalin ke lima file cepat drift. Satu potongan nav mengurangi 404 internal.",
+          content: "<p class=\"mb-4\">Situs Clincoo dengan header disalin ke about, harga, dan blog membuat tautan baru terlupakan di satu halaman.</p><p class=\"mb-4\">Simpan markup nav di satu file yang Anda salin sadar, atau satu blok yang selalu Anda sunting dulu. Daftar tautan harus identik di setiap halaman publik.</p><p class=\"mb-4\">Setelah menambah halaman, perbarui nav lalu cek setiap href di pratinjau. Jangan andalkan ingatan.</p><p class=\"mb-4\">Minta AI menampilkan daftar tautan nav sebelum mengedit. Tolak rewrite seluruh layout hanya untuk menambah satu menu.</p><p class=\"mb-4\">Clincoo tidak merakit nav ajaib. Satu sumber navigasi adalah struktur, bukan selera desain.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Keep Clincoo Navigation in One Source, Not on Every Page",
+          desc: "A menu copied across five files drifts fast. One nav snippet cuts internal 404s.",
+          content: "<p class=\"mb-4\">A Clincoo site with the header copied into about, pricing, and blog leaves a new link missing on one page.</p><p class=\"mb-4\">Keep nav markup in one file you copy on purpose, or one block you always edit first. The link list must match on every public page.</p><p class=\"mb-4\">After adding a page, update nav then check every href in preview. Do not trust memory.</p><p class=\"mb-4\">Ask the AI to show the nav link list before editing. Refuse a full layout rewrite just to add one menu item.</p><p class=\"mb-4\">Clincoo does not assemble nav by magic. One navigation source is structure, not design taste.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "struktur-path-relatif-satu-pola",
+      langs: {
+        "id": {
+          title: "Pilih Satu Pola Path Relatif Clincoo dan Patuhi di Semua Halaman",
+          desc: "Campuran /css/style.css dan ../css/style.css memicu 404 diam-diam.",
+          content: "<p class=\"mb-4\">Halaman Clincoo di folder bersarang yang memakai href=\"/css/style.css\" bisa gagal di pratinjau lokal, sementara ../css/style.css gagal jika folder dipindah.</p><p class=\"mb-4\">Pilih satu pola: path relatif dari file pemanggil (../css/style.css) atau path dari root situs. Tuliskan pilihan itu di README.</p><p class=\"mb-4\">Setelah memindahkan halaman ke folder lebih dalam, hitung ulang setiap ../. Cek Network sampai CSS, JS, dan gambar 200.</p><p class=\"mb-4\">Minta AI memperbaiki path di satu folder dulu. Tolak penggantian global tanpa daftar file yang berubah.</p><p class=\"mb-4\">Clincoo memuat aset sesuai string path. Satu pola relatif memotong debug 404 yang berulang.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Pick One Clincoo Relative-Path Pattern and Keep It on Every Page",
+          desc: "Mixing /css/style.css and ../css/style.css silently causes 404s.",
+          content: "<p class=\"mb-4\">A nested Clincoo page that uses href=\"/css/style.css\" can fail in local preview, while ../css/style.css fails if the folder moves.</p><p class=\"mb-4\">Pick one pattern: relative from the calling file (../css/style.css) or from the site root. Write that choice in the README.</p><p class=\"mb-4\">After moving a page deeper, recount every ../. Check Network until CSS, JS, and images return 200.</p><p class=\"mb-4\">Ask the AI to fix paths in one folder first. Refuse a global replace without a list of changed files.</p><p class=\"mb-4\">Clincoo loads assets from the path string. One relative-path pattern cuts repeated 404 debugging.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "struktur-batas-kedalaman-folder",
+      langs: {
+        "id": {
+          title: "Batasi Kedalaman Folder Clincoo sampai Tiga Tingkat",
+          desc: "css/tema/gelap/komponen/tombol.css sulit dilacak. Datar lebih mudah di-debug.",
+          content: "<p class=\"mb-4\">Pohon folder Clincoo yang dalam membuat path ../../../../assets mudah salah hitung dan diff AI menjadi berisik.</p><p class=\"mb-4\">Batasi tiga tingkat dari root: css/components/button.css atau images/tim/foto.webp. Jika butuh tingkat keempat, pertimbangkan nama file yang lebih jelas.</p><p class=\"mb-4\">Gabungkan folder yang hanya berisi satu file. Pecah folder hanya ketika isinya benar-benar berbeda peran.</p><p class=\"mb-4\">Minta AI mengusulkan pohon baru dalam daftar path, bukan mengeksekusi pindah massal. Tinjau dulu di pratinjau.</p><p class=\"mb-4\">Clincoo tidak membutuhkan hierarki framework. Folder dangkal adalah peta yang bisa diingat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Cap Clincoo Folder Depth at Three Levels",
+          desc: "css/theme/dark/components/button.css is hard to trace. Flatter trees debug faster.",
+          content: "<p class=\"mb-4\">A deep Clincoo folder tree makes paths like ../../../../assets easy to miscount and makes AI diffs noisy.</p><p class=\"mb-4\">Cap depth at three levels from root: css/components/button.css or images/team/photo.webp. If you need a fourth level, consider a clearer filename instead.</p><p class=\"mb-4\">Merge folders that hold a single file. Split a folder only when the contents serve different roles.</p><p class=\"mb-4\">Ask the AI to propose a new tree as a path list, not to run a mass move. Review it in preview first.</p><p class=\"mb-4\">Clincoo does not need a framework hierarchy. A shallow folder tree is a map you can remember.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ]
 };
