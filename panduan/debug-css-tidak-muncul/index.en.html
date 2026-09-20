@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Not Showing Up? The Debug Checklist Developers Actually Use — Clincoo Blog</title>
+<meta name="description" content="Styles refuse to change even after you save. Here is the practical checklist developers run before giving up.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/panduan/debug-css-tidak-muncul/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS Not Showing Up? The Debug Checklist Developers Actually Use">
+<meta property="og:description" content="Styles refuse to change even after you save. Here is the practical checklist developers run before giving up.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/panduan/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📘 Guides</div>
+  <h1>CSS Not Showing Up? The Debug Checklist Developers Actually Use</h1>
+  <p class="desc">Styles refuse to change even after you save. Here is the practical checklist developers run before giving up.</p>
+  <div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div>
+  <div class="body"><p class="mb-4">You change a color in CSS, save, preview — nothing moves. Do not panic. Almost always the cause is one of four: the stylesheet is not linked, a class name is mistyped, a selector loses specificity, or the browser is caching.</p><p class="mb-4">Start simple. In the HTML, confirm the link stylesheet points to the right file with a relative path. Open preview, right-click → Inspect → Network tab, filter CSS, and check that the file loads with status 200.</p><p class="mb-4">If the file is loading, check class spelling. Case matters. Then in Inspect, select the problem element: look in the Styles panel whether your rule is crossed out. If it is, another selector is stronger.</p><p class="mb-4">Finally, hard refresh (Ctrl+Shift+R). In the Clincoo editor, save both files, open preview again. Nine out of ten "CSS does nothing" cases end with these steps.</p></div>
+  <div class="src"><h2>Information Sources</h2><a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/panduan/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
