@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check the Element Exists before classList in Clincoo Scripts — Clincoo Blog</title>
+<meta name="description" content="A page without a mobile menu must not break the home page. Guard null before classList.toggle.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-cek-elemen-sebelum-classlist/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Check the Element Exists before classList in Clincoo Scripts">
+<meta property="og:description" content="A page without a mobile menu must not break the home page. Guard null before classList.toggle.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚡ JavaScript</div><h1>Check the Element Exists before classList in Clincoo Scripts</h1><p class="desc">A page without a mobile menu must not break the home page. Guard null before classList.toggle.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">One script.js is reused across Clincoo pages. The contact page may not have #nav-toggle. Without a guard, the error breaks other scripts on that page.</p><p class="mb-4">Store querySelector in a variable. If it is null, return. Only then call classList or addEventListener.</p><p class="mb-4">Do not wrap the whole file in a silent try/catch. Swallowed errors make Console debugging harder.</p><p class="mb-4">Ask the AI to add one if (!el) return on the failing function. Refuse a new framework.</p><p class="mb-4">Clincoo ships scripts as stored. A null guard is courtesy between pages.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN JavaScript<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

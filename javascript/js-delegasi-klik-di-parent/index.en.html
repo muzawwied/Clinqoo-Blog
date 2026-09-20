@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delegate Clicks to a Parent when a Clincoo List Grows — Clincoo Blog</title>
+<meta name="description" content="Per-item listeners vanish when innerHTML is replaced. One listener on the ul survives.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-delegasi-klik-di-parent/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Delegate Clicks to a Parent when a Clincoo List Grows">
+<meta property="og:description" content="Per-item listeners vanish when innerHTML is replaced. One listener on the ul survives.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚡ JavaScript</div><h1>Delegate Clicks to a Parent when a Clincoo List Grows</h1><p class="desc">Per-item listeners vanish when innerHTML is replaced. One listener on the ul survives.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Reloaded product cards often lose the 'detail' button because old listeners sat on nodes that were thrown away.</p><p class="mb-4">Attach one addEventListener on the parent ul or section. In the handler, check event.target.closest('.js-detail'). If it exists, handle that item.</p><p class="mb-4">Test in preview: add one new card via script, click its button. If nothing happens, the listener is still on the old children.</p><p class="mb-4">Ask the AI to move one listener to the parent. Refuse inline onclick on every card.</p><p class="mb-4">Clincoo renders the dynamic HTML you write. Event delegation follows new nodes without ceremony.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN JavaScript<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
