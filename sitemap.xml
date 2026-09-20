@@ -27,6 +27,7 @@
   <url><loc>https://blog.clincoo.buzz/seo/seo-daftar-halaman-publik/</loc></url>
   <url><loc>https://blog.clincoo.buzz/seo/seo-atribut-lang-dan-teks-utama/</loc></url>
   <url><loc>https://blog.clincoo.buzz/seo/seo-teks-terlihat-sebelum-skrip/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/seo/seo-robots-txt-sederhana/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ai/ai-tetapkan-batas-sebelum-generate/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ai/ai-uji-saran-di-pratinjau-dulu/</loc></url>
   <url><loc>https://blog.clincoo.buzz/deploy/deploy-catat-url-sebelum-ubah-domain/</loc></url>
@@ -123,6 +124,7 @@
   <url><loc>https://blog.clincoo.buzz/mobile/mobile-form-input-jangan-zoom-saat-fokus/</loc></url>
   <url><loc>https://blog.clincoo.buzz/mobile/mobile-jangan-andalkan-hover-di-ponsel/</loc></url>
   <url><loc>https://blog.clincoo.buzz/mobile/mobile-uji-portrait-dan-landscape/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/mobile/mobile-safe-area-notch-padding/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-ukur-berat-halaman-sebelum-deploy/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-tunda-skrip-yang-tidak-mendesak/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-satu-css-bukan-banyak-import/</loc></url>
@@ -133,6 +135,7 @@
   <url><loc>https://blog.clincoo.buzz/performa/performa-hindari-video-autoplay-hero/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-hard-refresh-setelah-rilis/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-lcp-teks-terlihat-dulu/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/performa/performa-lazy-load-gambar-bawah/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-bagikan-url-pratinjau-bukan-zip/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-minta-masukan-satu-halaman/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-dokumentasikan-keputusan-desain/</loc></url>
@@ -143,6 +146,7 @@
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-satu-kanal-satu-proyek/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-undang-orang-nonteknis-lebih-awal/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-arsipkan-masukan-yang-ditolak/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/komunitas/komunitas-tandai-versi-pratinjau/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/akses-kontras-teks-dan-latar/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/akses-label-pada-setiap-input/</loc></url>
@@ -154,4 +158,5 @@
   <url><loc>https://blog.clincoo.buzz/akses/akses-skip-link-ke-konten-utama/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/akses-tombol-asli-bukan-div/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/akses-jangan-kunci-zoom-teks/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/akses/akses-pesan-error-form-jelas/</loc></url>
 </urlset>
