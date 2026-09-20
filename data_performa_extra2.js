@@ -21,6 +21,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "performa-preload-hanya-aset-hero",
+      langs: {
+        "id": {
+          title: "Preload Hanya Aset Hero, Bukan Semua Font Clincoo",
+          desc: "link rel=preload untuk setiap woff2 menunda halaman. Tandai satu file yang benar-benar di hero.",
+          content: "<p class=\"mb-4\">Template Clincoo kadang memasang preload untuk tiga keluarga font plus gambar galeri. Browser mengantri byte yang tidak terlihat di viewport pertama.</p><p class=\"mb-4\">Pakai preload hanya untuk font atau gambar yang muncul di hero. Sisanya biarkan dimuat biasa atau lazy.</p><p class=\"mb-4\">Jika AI menambah banyak tag link preload di head, hapus yang bukan LCP. Satu preload salah bisa menendang CSS utama.</p><p class=\"mb-4\">Cek di tab Network pratinjau: urutan unduhan harus HTML, CSS, aset hero — bukan sepuluh font sekaligus.</p><p class=\"mb-4\">Clincoo mengirim head apa adanya. Preload yang hemat membuat teks hero tampil lebih cepat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Preload Only Hero Assets, Not Every Clincoo Font",
+          desc: "link rel=preload on every woff2 delays the page. Mark one file that is actually in the hero.",
+          content: "<p class=\"mb-4\">Clincoo templates sometimes preload three font families plus gallery images. The browser queues bytes that are not in the first viewport.</p><p class=\"mb-4\">Use preload only for the font or image that appears in the hero. Let the rest load normally or lazily.</p><p class=\"mb-4\">If the AI adds many preload link tags in the head, delete the ones that are not LCP. One wrong preload can bump the main CSS.</p><p class=\"mb-4\">Check the Network tab in preview: the download order should be HTML, CSS, hero asset — not ten fonts at once.</p><p class=\"mb-4\">Clincoo ships the head as written. A spare preload lets hero text appear sooner.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
