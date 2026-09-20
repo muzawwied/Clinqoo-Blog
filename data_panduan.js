@@ -5,7 +5,7 @@ if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {}
 
 window.countryDataFiles["panduan"] = {
   names: { "id": "Panduan", "en": "Guides" },
-  flag: "\ud83d\udcd8",
+  flag: "📘",
   articles: [
     {
       id: "memulai-dengan-clinqoo",
@@ -116,6 +116,69 @@ window.countryDataFiles["panduan"] = {
           content: "<p class=\"mb-4\">After deploy, do not send the link immediately. Open the URL in a private window, on a phone, and if possible in another browser. You are hunting broken links, empty images, and a tab title that still says Untitled.</p><p class=\"mb-4\">Write a short note for the client: what they should look at first, and what is still a draft. Clear expectations cut random revision requests.</p><p class=\"mb-4\">Save the URL in the project notes. The next deploy may change small details; notes help you explain what is new.</p><p class=\"mb-4\">Clincoo makes publishing easy. What you control is whether the link is ready. Send a URL you have already opened twice yourself.</p>",
           source: "Clincoo Deploy", sourceUrl: "https://app.clincoo.buzz/deploy/", sourceSnippet: "Publishing a Clincoo site",
           source2: "Clincoo", sourceUrl2: "https://app.clincoo.buzz/", sourceSnippet2: "Clincoo workspace"
+        }
+      }
+    },
+    {
+      id: "debug-css-tidak-muncul",
+      langs: {
+        "id": {
+          title: "CSS Tidak Muncul? Cara Debug yang Biasa Dipakai Developer",
+          desc: "Gaya tidak berubah meski sudah disimpan. Ini checklist praktis yang dipakai developer sebelum menyerah.",
+          content: "<p class=\"mb-4\">Kamu mengubah warna di CSS, simpan, pratinjau — tetap sama. Jangan panik dulu. Hampir selalu penyebabnya salah satu dari empat: file CSS tidak terhubung, nama kelas salah ketik, selector kalah spesifisitas, atau cache browser.</p><p class=\"mb-4\">Mulai dari yang paling sederhana. Di HTML, pastikan tag <code><link rel=\"stylesheet\" href=\"...\"></code> mengarah ke file yang benar dan path-nya relatif dari lokasi HTML. Buka pratinjau, klik kanan → Inspect → tab Network, filter CSS, lihat apakah file berhasil dimuat (status 200).</p><p class=\"mb-4\">Kalau file sudah masuk, cek ejaan kelas. <code>.tombol</code> di CSS tidak akan menyentuh <code>class=\"Tombol\"</code> di HTML. Huruf besar-kecil penting. Lalu di Inspect, pilih elemen yang bermasalah: lihat di panel Styles apakah aturanmu dicoret. Kalau dicoret, ada selector lain yang lebih kuat — naikkan spesifisitas atau pindahkan aturan ke bawah.</p><p class=\"mb-4\">Terakhir, hard refresh (Ctrl+Shift+R). Di editor Clincoo, simpan kedua file (HTML + CSS), buka pratinjau lagi, dan ulangi. Sembilan dari sepuluh kasus CSS \"tidak jalan\" selesai di langkah-langkah ini tanpa perlu menulis ulang semuanya.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance", sourceSnippet: "Cascade dan spesifisitas CSS",
+          source2: "Clincoo Editor", sourceUrl2: "https://editor.clincoo.buzz/", sourceSnippet2: "Pratinjau dan Inspect di editor",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik debug CSS"
+        },
+        "en": {
+          title: "CSS Not Showing Up? The Debug Checklist Developers Actually Use",
+          desc: "Styles refuse to change even after you save. Here is the practical checklist developers run before giving up.",
+          content: "<p class=\"mb-4\">You change a color in CSS, save, preview — nothing moves. Do not panic. Almost always the cause is one of four: the stylesheet is not linked, a class name is mistyped, a selector loses specificity, or the browser is caching.</p><p class=\"mb-4\">Start simple. In the HTML, confirm the <code><link rel=\"stylesheet\" href=\"...\"></code> points to the right file with a relative path from the HTML location. Open preview, right-click → Inspect → Network tab, filter CSS, and check that the file loads with status 200.</p><p class=\"mb-4\">If the file is loading, check class spelling. <code>.button</code> in CSS will not touch <code>class=\"Button\"</code> in HTML. Case matters. Then in Inspect, select the problem element: look in the Styles panel whether your rule is crossed out. If it is, another selector is stronger — raise specificity or move the rule lower.</p><p class=\"mb-4\">Finally, hard refresh (Ctrl+Shift+R). In the Clincoo editor, save both files (HTML + CSS), open preview again, and repeat. Nine out of ten \"CSS does nothing\" cases end with these steps without rewriting everything.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance", sourceSnippet: "CSS cascade and specificity",
+          source2: "Clincoo Editor", sourceUrl2: "https://editor.clincoo.buzz/", sourceSnippet2: "Preview and Inspect in the editor",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "CSS debugging practices"
+        }
+      }
+    },
+    {
+      id: "membaca-error-console-browser",
+      langs: {
+        "id": {
+          title: "Cara Membaca Error di Console Browser (Supaya Tidak Panik)",
+          desc: "Pesan merah di console bukan musuh. Ini cara developer membaca dan menindaklanjutinya langkah demi langkah.",
+          content: "<p class=\"mb-4\">Console browser (F12 → tab Console) adalah tempat error JavaScript dan peringatan muncul. Kalau ada tulisan merah, jangan langsung tutup. Baca dari atas: biasanya ada nama error, file, dan nomor baris.</p><p class=\"mb-4\">Contoh umum: <code>Uncaught TypeError: Cannot read properties of null</code> berarti kamu mencoba mengakses elemen yang belum ada di halaman — sering karena skrip jalan sebelum HTML selesai dimuat, atau ID/kelas salah ketik. Salin pesan utuh, buka file yang disebut, loncat ke baris tersebut.</p><p class=\"mb-4\">Di editor Clincoo, tempel error lengkap ke chat AI beserta nama file. Minta penjelasan \"kenapa terjadi\" dan \"satu perbaikan kecil dulu\". Uji satu perubahan, simpan, pratinjau, lihat console lagi. Jangan ubah lima tempat sekaligus.</p><p class=\"mb-4\">Error yang sama berulang biasanya menunjuk satu akar. Setelah console bersih, baru lanjut fitur baru. Developer berpengalaman juga masih membuka console setiap hari — bedanya mereka membacanya, bukan menghindarinya.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Web/API/console", sourceSnippet: "Console API dan debugging",
+          source2: "Clincoo Editor", sourceUrl2: "https://editor.clincoo.buzz/", sourceSnippet2: "Editor dan chat AI Clincoo",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Praktik debugging web"
+        },
+        "en": {
+          title: "How to Read Browser Console Errors (So You Stop Panicking)",
+          desc: "The red messages in the console are not the enemy. Here is how developers read and act on them step by step.",
+          content: "<p class=\"mb-4\">The browser console (F12 → Console tab) is where JavaScript errors and warnings appear. When something is red, do not close it. Read from the top: there is usually an error name, a file, and a line number.</p><p class=\"mb-4\">A common one: <code>Uncaught TypeError: Cannot read properties of null</code> means you tried to use an element that is not on the page yet — often because the script ran before the HTML finished loading, or an ID/class is mistyped. Copy the full message, open the named file, jump to that line.</p><p class=\"mb-4\">In the Clincoo editor, paste the full error into the AI chat together with the file name. Ask for \"why it happened\" and \"one small fix first\". Test one change, save, preview, check the console again. Do not change five places at once.</p><p class=\"mb-4\">The same error repeating usually points to one root cause. Once the console is clean, only then add new features. Experienced developers still open the console every day — the difference is they read it instead of avoiding it.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Web/API/console", sourceSnippet: "Console API and debugging",
+          source2: "Clincoo Editor", sourceUrl2: "https://editor.clincoo.buzz/", sourceSnippet2: "Clincoo editor and AI chat",
+          source3: "web.dev", sourceUrl3: "https://web.dev/", sourceSnippet3: "Web debugging practices"
+        }
+      }
+    },
+    {
+      id: "flexbox-layout-praktis-untuk-pemula",
+      langs: {
+        "id": {
+          title: "Flexbox Praktis: Susun Baris dan Kolom tanpa Pusing",
+          desc: "Tiga properti Flexbox yang paling sering dipakai developer untuk header, kartu, dan menu responsif.",
+          content: "<p class=\"mb-4\">Flexbox adalah cara modern menata elemen dalam satu baris atau kolom. Di CSS, cukup beri parent <code>display: flex</code>. Anak-anaknya langsung bisa diatur arah, jarak, dan rata.</p><p class=\"mb-4\">Tiga properti yang paling sering dipakai: <code>flex-direction</code> (row atau column), <code>justify-content</code> (mengatur sumbu utama: space-between, center, dll.), dan <code>align-items</code> (mengatur sumbu silang). Untuk header dengan logo kiri dan menu kanan, biasanya <code>display: flex; justify-content: space-between; align-items: center</code>.</p><p class=\"mb-4\">Di layar kecil, ganti arah jadi column atau bungkus dengan <code>flex-wrap: wrap</code>. Uji di pratinjau mobile Clincoo. Kalau kartu terlalu sempit, biarkan mereka turun baris daripada memaksa tetap sejajar.</p><p class=\"mb-4\">Jangan hafalkan semua nilai sekaligus. Mulai dari satu container, ubah satu properti, lihat hasilnya. Flexbox terasa sulit hanya saat dicoba semua fitur dalam satu malam. Satu container rapi lebih berharga daripada layout yang \"hampir\" bekerja di mana-mana.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Learn/CSS/CSS_layout/Flexbox", sourceSnippet: "Panduan Flexbox MDN",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/css/flexbox/", sourceSnippet2: "Belajar Flexbox di web.dev",
+          source3: "Clincoo Editor", sourceUrl3: "https://editor.clincoo.buzz/", sourceSnippet3: "Uji layout di pratinjau Clincoo"
+        },
+        "en": {
+          title: "Practical Flexbox: Arrange Rows and Columns without the Headache",
+          desc: "The three Flexbox properties developers use most for headers, cards, and responsive menus.",
+          content: "<p class=\"mb-4\">Flexbox is the modern way to arrange elements in a row or a column. In CSS, give the parent <code>display: flex</code>. Its children can then be controlled for direction, spacing, and alignment.</p><p class=\"mb-4\">The three properties used most often: <code>flex-direction</code> (row or column), <code>justify-content</code> (main axis: space-between, center, etc.), and <code>align-items</code> (cross axis). For a header with logo left and menu right, you usually want <code>display: flex; justify-content: space-between; align-items: center</code>.</p><p class=\"mb-4\">On small screens, switch direction to column or allow wrapping with <code>flex-wrap: wrap</code>. Test in Clincoo mobile preview. If cards get too narrow, let them drop to the next line instead of forcing them to stay side by side.</p><p class=\"mb-4\">Do not memorize every value at once. Start with one container, change one property, watch the result. Flexbox only feels hard when every feature is tried in a single night. One tidy container is worth more than a layout that \"almost\" works everywhere.</p>",
+          source: "MDN Web Docs", sourceUrl: "https://developer.mozilla.org/docs/Learn/CSS/CSS_layout/Flexbox", sourceSnippet: "MDN Flexbox guide",
+          source2: "web.dev", sourceUrl2: "https://web.dev/learn/css/flexbox/", sourceSnippet2: "Learn Flexbox on web.dev",
+          source3: "Clincoo Editor", sourceUrl3: "https://editor.clincoo.buzz/", sourceSnippet3: "Test layout in Clincoo preview"
         }
       }
     }
