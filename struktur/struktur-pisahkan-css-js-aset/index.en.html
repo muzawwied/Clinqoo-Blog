@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Clincoo CSS, JS, and Assets out of index.html — Clincoo Blog</title>
+<meta name="description" content="One giant file is hard to debug. css, js, and images folders keep paths obvious.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/struktur/struktur-pisahkan-css-js-aset/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Split Clincoo CSS, JS, and Assets out of index.html">
+<meta property="og:description" content="One giant file is hard to debug. css, js, and images folders keep paths obvious.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/struktur/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🗂️ Struktur</div><h1>Split Clincoo CSS, JS, and Assets out of index.html</h1><p class="desc">One giant file is hard to debug. css, js, and images folders keep paths obvious.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo workspace that dumps styles and scripts inside index.html makes noisy diffs and hard-to-trace errors.</p><p class="mb-4">Move styles to css/style.css, scripts to js/main.js, images to images/. Link them with relative paths from the page that uses the asset.</p><p class="mb-4">Do not nest folders seven levels deep. Two or three levels are enough for a static site.</p><p class="mb-4">Ask the AI to move one asset type first. Refuse a full project regenerate.</p><p class="mb-4">Clincoo renders files by path. Folder structure is a map, not repo decoration.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/struktur/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
