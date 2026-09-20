@@ -21,6 +21,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "seo-sitemap-xml-setelah-halaman-baru",
+      langs: {
+        "id": {
+          title: "Perbarui sitemap.xml setelah Halaman Clincoo Baru",
+          desc: "Mesin telusur menemukan URL lewat tautan dan peta situs. Tambahkan path halaman baru ke sitemap.xml.",
+          content: "<p class=\"mb-4\">Halaman layanan yang baru sering hanya hidup di navigasi. Jika tautan internal belum lengkap, perayap butuh daftar URL di sitemap.xml.</p><p class=\"mb-4\">Tambahkan satu baris loc ke file sitemap di akar proyek setiap kali folder halaman baru di-deploy. Samakan path dengan URL publik subdomain Clincoo.</p><p class=\"mb-4\">Jangan masukkan halaman pratinjau, thank-you, atau file uji. Sitemap yang kotor membuat perayap membuang kuota ke URL yang tidak ingin diindeks.</p><p class=\"mb-4\">Minta AI hanya menambah URL yang kamu sebut. Tolak generate sitemap otomatis yang memasukkan setiap aset CSS.</p><p class=\"mb-4\">Clincoo men-deploy file statis apa adanya. sitemap.xml yang kamu simpan adalah peta yang dilihat mesin telusur.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Update sitemap.xml after a New Clincoo Page",
+          desc: "Crawlers find URLs through links and a sitemap. Add the new page path to sitemap.xml.",
+          content: "<p class=\"mb-4\">A new service page often lives only in the nav. If internal links are incomplete, crawlers need a URL list in sitemap.xml.</p><p class=\"mb-4\">Add one loc line to the sitemap at the project root each time a new page folder is deployed. Match the path to the public Clincoo subdomain URL.</p><p class=\"mb-4\">Do not include preview pages, thank-you screens, or test files. A dirty sitemap wastes crawl budget on URLs you do not want indexed.</p><p class=\"mb-4\">Ask the AI only to add the URLs you name. Refuse an auto sitemap that lists every CSS asset.</p><p class=\"mb-4\">Clincoo deploys static files as saved. The sitemap.xml you keep is the map crawlers see.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
