@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Track Clincoo Editor Preview Pages — Clincoo Blog</title>
+<meta name="description" content="Hits from editor.clincoo.buzz pollute the report. Block the preview host before the analytics script runs.">
+<link rel="canonical" href="https://blog.clincoo.buzz/analytics/analytics-jangan-lacak-pratinjau-editor/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/analytics/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📊 Analytics</div><h1>Do Not Track Clincoo Editor Preview Pages</h1><p class="desc">Hits from editor.clincoo.buzz pollute the report. Block the preview host before the analytics script runs.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Preview on editor.clincoo.buzz reloads the page every time you save. If the analytics script runs there, the dashboard fills with fake visits.</p><p class="mb-4">Add one guard in the script: if the hostname contains editor or a preview pages.dev host, skip tracker init.</p><p class="mb-4">Ask the AI to touch one measurement file. Do not let it plant a pixel in every HTML file.</p><p class="mb-4">Test two hosts: preview (no analytics request) and the production domain on app.clincoo.buzz (one request after consent).</p><p class="mb-4">Clincoo deploys files as saved. Separating preview from production keeps the numbers honest.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/analytics/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
