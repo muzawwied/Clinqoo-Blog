@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep the Measurement ID in One Config File — Clincoo Blog</title>
+<meta name="description" content="Pixel IDs scattered across HTML are hard to change. One config file prevents the wrong account.">
+<link rel="canonical" href="https://blog.clincoo.buzz/analytics/analytics-id-pengukuran-satu-file/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/analytics/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📊 Analytics</div><h1>Keep the Measurement ID in One Config File</h1><p class="desc">Pixel IDs scattered across HTML are hard to change. One config file prevents the wrong account.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo templates often paste a Google or Meta ID on every page. Changing accounts then means editing dozens of files.</p><p class="mb-4">Move the ID into one file, for example analytics-config.js. Other pages only load that file.</p><p class="mb-4">If the AI pastes a full snippet into index, ask it to extract the ID. Do not let three different values live at once.</p><p class="mb-4">After deploy on app.clincoo.buzz, check Network: every page should use the same ID.</p><p class="mb-4">Clincoo does not store analytics secrets. One ID source keeps the report as one project.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/analytics/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
