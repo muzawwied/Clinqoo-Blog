@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Listeners when a Clincoo Component Is Gone — Clincoo Blog</title>
+<meta name="description" content="addEventListener without removeEventListener stacks up when a page is swapped via innerHTML.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-hapus-listener-saat-tidak-dipakai/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Remove Listeners when a Clincoo Component Is Gone">
+<meta property="og:description" content="addEventListener without removeEventListener stacks up when a page is swapped via innerHTML.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚡ JavaScript</div><h1>Remove Listeners when a Clincoo Component Is Gone</h1><p class="desc">addEventListener without removeEventListener stacks up when a page is swapped via innerHTML.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo modal opened repeatedly often fires twice because old listeners stay after markup is replaced.</p><p class="mb-4">Keep a named handler reference; do not use an anonymous function if you plan to remove it. Call removeEventListener with the same function before you drop the node.</p><p class="mb-4">In Console, count how many logs appear per click. If the count rises each open-close, listeners are stacking.</p><p class="mb-4">Ask the AI to add a matching remove in the close-modal function. Refuse a confusing global flag patch.</p><p class="mb-4">Clincoo does not clean listeners for you. You attach them, you remove them.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo App<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN JavaScript<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

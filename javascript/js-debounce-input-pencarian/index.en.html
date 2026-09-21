@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debounce Search Input on a Clincoo Page — Clincoo Blog</title>
+<meta name="description" content="Every keystroke that runs a heavy filter stalls the UI. Wait a short pause before you run it.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-debounce-input-pencarian/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debounce Search Input on a Clincoo Page">
+<meta property="og:description" content="Every keystroke that runs a heavy filter stalls the UI. Wait a short pause before you run it.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚡ JavaScript</div><h1>Debounce Search Input on a Clincoo Page</h1><p class="desc">Every keystroke that runs a heavy filter stalls the UI. Wait a short pause before you run it.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo product search that filters hundreds of cards on every keyup makes typing feel heavy. The machine is fine — the handler runs too often.</p><p class="mb-4">Keep a timer. On input, clearTimeout then setTimeout 200–300 ms before calling the filter. Fast typing runs once after you pause.</p><p class="mb-4">Test in the editor.clincoo.buzz preview: type five letters quickly. The filter should run once at the end, not five times in Console.</p><p class="mb-4">Ask the AI to add one debounce function on the input listener. Refuse a new library just for a pause.</p><p class="mb-4">Clincoo runs the scripts you save. A small delay keeps the page responsive.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN JavaScript<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
