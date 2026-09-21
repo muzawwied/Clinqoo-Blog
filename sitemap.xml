@@ -17,93 +17,16 @@
   <url><loc>https://blog.clincoo.buzz/seo/</loc></url>
   <url><loc>https://blog.clincoo.buzz/debug/</loc></url>
   <url><loc>https://blog.clincoo.buzz/akses/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-baca-console-sebelum-ubah-kode/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-network-404-gambar-css/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-matikan-css-sementara-untuk-isolasi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-bandingkan-computed-style/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-uji-ulang-di-jendela-privat/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-console-log-nilai-sebelum-ubah/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-cari-overflow-tersembunyi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-pasang-breakpoint-event-klik/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-typo-selektor-css/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-tunggu-domcontentloaded/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-z-index-dan-overlay/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-repro-langkah-minimal/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/debug/debug-cek-fetch-gagal-di-network/</loc></url>
   <url><loc>https://blog.clincoo.buzz/git/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-baca-diff-sebelum-commit/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-satu-tugas-satu-commit/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-pesan-commit-yang-bisa-dicari/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-jangan-commit-kunci-dan-env/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-uji-di-cabang-sebelum-gabung/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-checkout-file-tunggal/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-gitignore-file-sementara/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-stash-perubahan-setengah-jadi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-bandingkan-dua-commit/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-tag-rilis-situs-stabil/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-log-cari-perubahan-lama/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/git/git-jangan-force-push-utama/</loc></url>
   <url><loc>https://blog.clincoo.buzz/form/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-label-setiap-input/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-cek-required-sebelum-submit/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-jaga-nilai-saat-error/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-autocomplete-nama-dan-email/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-tipe-input-sesuai-data/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-pesan-sukses-setelah-kirim/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-jangan-blokir-tempel-sandi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-fieldset-untuk-pilihan-grup/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-disabled-tombol-saat-kirim/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-name-unik-setiap-field/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-maxlength-sesuai-kebutuhan/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/form/form-error-di-dekat-field/</loc></url>
   <url><loc>https://blog.clincoo.buzz/css/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-satu-sumber-spacing/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-debug-flexbox-anak-tidak-sejajar/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-grid-dua-kolom-tanpa-tumpuk/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-hindari-important-kecuali-darurat/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-object-fit-gambar-hero/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-variabel-warna-satu-sumber/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-clamp-teks-fluid/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-gap-ganti-margin-baris/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-min-width-nol-flex-anak/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-mobile-first-media-query/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-aspect-ratio-thumbnail/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/css/css-sticky-header-jaga-offset/</loc></url>
   <url><loc>https://blog.clincoo.buzz/html/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-satu-h1-per-halaman/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-landmark-header-main-footer/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-lebar-tinggi-pada-img/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-tautan-teks-deskriptif/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-button-bukan-div-klik/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-daftar-ul-ol-bukan-div/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-alt-gambar-bermakna/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-skip-link-ke-konten/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-tabel-untuk-data/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-viewport-dan-charset/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-title-halaman-unik/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/html/html-heading-berurutan/</loc></url>
   <url><loc>https://blog.clincoo.buzz/struktur/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-pisahkan-css-js-aset/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-satu-halaman-satu-folder/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-nama-file-konsisten/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-readme-peta-folder/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-folder-draf-terpisah/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-satu-sumber-navigasi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-path-relatif-satu-pola/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-batas-kedalaman-folder/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-index-hanya-di-root/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-font-di-folder-fonts/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-vendor-terpisah-dari-kode/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/struktur/struktur-hapus-file-tak-tertaut/</loc></url>
   <url><loc>https://blog.clincoo.buzz/javascript/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-tunggu-domcontentloaded/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-cek-elemen-sebelum-classlist/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-delegasi-klik-di-parent/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-satu-listener-satu-tugas/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-hindari-eval-dan-inline-handler/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-debounce-input-pencarian/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-hapus-listener-saat-tidak-dipakai/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-jangan-innerhtml-dari-input-user/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-async-await-fetch-dengan-pesan-error/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/javascript/js-localstorage-try-catch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/gambar/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/javascript/js-abort-fetch-saat-pindah-halaman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/javascript/js-dataset-bukan-id-global/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/gambar/gambar-webp-sebelum-png-berat/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/gambar/gambar-lebar-tinggi-cegah-layout-shift/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/gambar/gambar-srcset-dua-ukuran-hero/</loc></url>
 </urlset>
