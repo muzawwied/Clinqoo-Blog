@@ -1,1 +1,21 @@
-placeholder
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://blog.clincoo.buzz/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-manifest-nama-ikon/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-service-worker-cache-hati-hati/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-https-wajib-sebelum-install/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-tombol-install-jangan-maksa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-offline-halaman-cadangan/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-display-standalone-bukan-fullscreen/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-versi-nama-cache-saat-update/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-ikon-maskable-aman-dipotong/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-start-url-dan-scope-selaras/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-theme-color-status-bar/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-jangan-cache-permintaan-form/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/pwa/pwa-beri-tahu-jika-ada-versi-baru/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/animasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/animasi/animasi-hormati-prefers-reduced-motion/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/animasi/animasi-jangan-blokir-tombol/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/animasi/animasi-css-cukup-tanpa-pustaka-berat/</loc></url>
+</urlset>
