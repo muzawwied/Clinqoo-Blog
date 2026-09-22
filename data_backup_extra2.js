@@ -105,6 +105,27 @@
           sourceSnippet: "Official Clincoo platform"
         }
       }
+    },
+    {
+      id: "backup-uji-pulih-folder-sementara",
+      langs: {
+        "id": {
+          title: "Uji Pulih ZIP Clincoo ke Folder Sementara",
+          desc: "ZIP yang bisa dibuka belum tentu lengkap. Ekstrak ke folder uji sebelum menimpa proyek.",
+          content: "<p class=\"mb-4\">Developer membuka ZIP, melihat index.html, lalu menimpa folder live. File CSS atau gambar ternyata hilang.</p><p class=\"mb-4\">Ekstrak arsip dari app.clincoo.buzz ke folder _uji-pulih. Buka index.html lokal dan cek tautan aset.</p><p class=\"mb-4\">Bandingkan jumlah file dengan catatan cadangan. Selisih besar berarti unduhan terpotong.</p><p class=\"mb-4\">Jangan minta AI menimpa workspace sebelum uji folder sementara lolos pratinjau.</p><p class=\"mb-4\">Clincoo menayangkan file yang kamu unggah ulang. Uji pulih mencegah cadangan palsu masuk produksi.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Platform resmi Clincoo"
+        },
+        "en": {
+          title: "Test a Clincoo ZIP Restore into a Temporary Folder",
+          desc: "A ZIP that opens is not always complete. Extract into a test folder before overwriting the project.",
+          content: "<p class=\"mb-4\">Developers open the ZIP, see index.html, then overwrite the live folder. CSS or images turn out missing.</p><p class=\"mb-4\">Extract the archive from app.clincoo.buzz into a _uji-pulih folder. Open index.html locally and check asset links.</p><p class=\"mb-4\">Compare the file count with your backup note. A large gap means the download was truncated.</p><p class=\"mb-4\">Do not ask the AI to overwrite the workspace until the temporary folder preview passes.</p><p class=\"mb-4\">Clincoo serves the files you upload again. A restore test keeps a fake backup out of production.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://app.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo platform"
+        }
+      }
     }
   ];
   function merge(){
