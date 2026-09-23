@@ -153,4 +153,9 @@
   <url><loc>https://blog.clincoo.buzz/api/api-retry-hanya-5xx-bukan-4xx/</loc></url>
   <url><loc>https://blog.clincoo.buzz/api/api-jangan-simpan-kunci-di-javascript/</loc></url>
   <url><loc>https://blog.clincoo.buzz/api/api-indikator-loading-saat-menunggu-respons/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-cek-tab-network-sebelum-salahkan-js/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-tangani-json-parse-yang-gagal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-query-string-untuk-get-bukan-body/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-debounce-fetch-pada-kolom-cari/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-satu-basis-url-bukan-hardcode-host/</loc></url>
 </urlset>
