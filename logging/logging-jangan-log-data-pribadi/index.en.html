@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Log Private Form Data on a Clincoo Site — Clincoo Blog</title>
+<meta name="description" content="Passwords, emails, and message bodies in the Console are visible to anyone who opens DevTools.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-jangan-log-data-pribadi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Log Private Form Data on a Clincoo Site">
+<meta property="og:description" content="Passwords, emails, and message bodies in the Console are visible to anyone who opens DevTools.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Do Not Log Private Form Data on a Clincoo Site</h1><p class="desc">Passwords, emails, and message bodies in the Console are visible to anyone who opens DevTools.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo debug scripts often print event.target.value whole. In a cafe or on a shared screen that data is exposed.</p><p class="mb-4">Log only the field name and value length, or a short hash. Never console.log a password or token.</p><p class="mb-4">Filter the logger: if a key contains pass, token, otp, or email, replace the value with "[redacted]".</p><p class="mb-4">Ask the AI to audit one script file for log leaks, then submit dummy data in editor.clincoo.buzz with the Console open.</p><p class="mb-4">Clincoo does not hide the visitor Console. Redacting logs is part of protecting other people's data.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
