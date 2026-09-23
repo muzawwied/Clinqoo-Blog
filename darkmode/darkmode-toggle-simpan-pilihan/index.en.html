@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persist the Clincoo Dark Toggle without a White Flash — Clincoo Blog</title>
+<meta name="description" content="A switch read after CSS loads causes a blink. Apply the class as early as you can.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/darkmode/darkmode-toggle-simpan-pilihan/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Persist the Clincoo Dark Toggle without a White Flash">
+<meta property="og:description" content="A switch read after CSS loads causes a blink. Apply the class as early as you can.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/darkmode/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Dark mode</div><h1>Persist the Clincoo Dark Toggle without a White Flash</h1><p class="desc">A switch read after CSS loads causes a blink. Apply the class as early as you can.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A footer toggle on app.clincoo.buzz often writes localStorage, but the script runs after first paint. The light page flashes first.</p><p class="mb-4">Read the theme key in a tiny head script before heavy stylesheets. Set the class on documentElement; do not wait for a late DOMContentLoaded.</p><p class="mb-4">Honor prefers-color-scheme if the key is missing. Do not default every new visitor to dark.</p><p class="mb-4">Test a reload in editor.clincoo.buzz. Ask AI to move one short script, not a theme library.</p><p class="mb-4">Clincoo does not hold the flash. The script order you choose decides whether the theme feels instant.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/darkmode/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
