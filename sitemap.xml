@@ -121,4 +121,9 @@
   <url><loc>https://blog.clincoo.buzz/cookie/cookie-path-sempit-bukan-seluruh-situs/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cache/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cache/cache-jangan-cache-html-terlalu-lama/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-nama-file-berhash-untuk-aset/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-disable-cache-devtools-saat-debug/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-revalidate-html-setelah-deploy/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-jangan-cache-respons-form/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-precache-hanya-aset-kritis/</loc></url>
 </urlset>
