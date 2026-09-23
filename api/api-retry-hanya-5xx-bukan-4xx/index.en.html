@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retry Fetch only on 5xx on a Clincoo Site — Clincoo Blog</title>
+<meta name="description" content="Repeating 400 or 401 does not fix input. Retry only temporary failures.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/api/api-retry-hanya-5xx-bukan-4xx/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Retry Fetch only on 5xx on a Clincoo Site">
+<meta property="og:description" content="Repeating 400 or 401 does not fix input. Retry only temporary failures.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/api/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">API</div><h1>Retry Fetch only on 5xx on a Clincoo Site</h1><p class="desc">Repeating 400 or 401 does not fix input. Retry only temporary failures.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A submit button on app.clincoo.buzz hits the API three times on a 422 validation. The server still rejects it.</p><p class="mb-4">In editor.clincoo.buzz limit retries to 429, 502, 503, or a dropped network. Do not retry other 4xx.</p><p class="mb-4">Use increasing delay (backoff) so you do not flood the API during recovery.</p><p class="mb-4">Show the retry count to the user so the spinner does not feel stuck.</p><p class="mb-4">Clincoo does not retry fetch for you. Selective retry protects quota and visitor patience.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/api/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
