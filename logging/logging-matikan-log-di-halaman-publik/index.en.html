@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn Off Production Logs on a Public Clincoo Domain — Clincoo Blog</title>
+<meta name="description" content="Live console.log leaks internal flow and slows weaker devices.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-matikan-log-di-halaman-publik/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turn Off Production Logs on a Public Clincoo Domain">
+<meta property="og:description" content="Live console.log leaks internal flow and slows weaker devices.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Turn Off Production Logs on a Public Clincoo Domain</h1><p class="desc">Live console.log leaks internal flow and slows weaker devices.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pages published through Clincoo often still carry debug traces from the editor session. Visitors can see payloads and logic branches.</p><p class="mb-4">Detect the host: allow logs only on localhost or editor.clincoo.buzz. On app.clincoo.buzz and custom domains the logger must be a no-op.</p><p class="mb-4">Do not comment out logs one by one. A single flag on a logger object is safer when you add features later.</p><p class="mb-4">Ask the AI to wrap console.debug, warn, and error behind isDev. Test by overriding the hostname in DevTools if needed.</p><p class="mb-4">Clincoo ships files as written. Silent production logs protect flow details and keep the visitor Console clean.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
