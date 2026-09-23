@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honor prefers-color-scheme before a Clincoo Dark Toggle — Clincoo Blog</title>
+<meta name="description" content="The OS already has a preference. Respect the media query first, then add a switch.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/darkmode/darkmode-prefers-color-scheme/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Honor prefers-color-scheme before a Clincoo Dark Toggle">
+<meta property="og:description" content="The OS already has a preference. Respect the media query first, then add a switch.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/darkmode/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Dark mode</div><h1>Honor prefers-color-scheme before a Clincoo Dark Toggle</h1><p class="desc">The OS already has a preference. Respect the media query first, then add a switch.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Many Clincoo templates force dark theme with a body class. Visitors who set light in the OS still get a black overlay.</p><p class="mb-4">Add @media (prefers-color-scheme: dark) in editor.clincoo.buzz CSS for background, text, and border tokens. Keep light as the default without a class.</p><p class="mb-4">A manual switch can follow, but the initial value should match the media query so the page does not flash.</p><p class="mb-4">Test in DevTools Rendering: emulate prefers-color-scheme. Ask AI only to add the media block, not to rewrite the palette.</p><p class="mb-4">Clincoo does not read the OS preference for you. One media query lets the theme follow the device.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/darkmode/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
