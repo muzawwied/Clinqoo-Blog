@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelompokkan Jejak Debug dengan console.group di Skrip Clincoo — Clincoo Blog</title>
+<meta name="description" content="console.group dan groupEnd merapikan ratusan baris log menjadi pohon yang bisa dilipat di DevTools.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-kelompokkan-pesan-dengan-console-group/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kelompokkan Jejak Debug dengan console.group di Skrip Clincoo">
+<meta property="og:description" content="console.group dan groupEnd merapikan ratusan baris log menjadi pohon yang bisa dilipat di DevTools.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Kelompokkan Jejak Debug dengan console.group di Skrip Clincoo</h1><p class="desc">console.group dan groupEnd merapikan ratusan baris log menjadi pohon yang bisa dilipat di DevTools.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Skrip Clincoo yang mencetak setiap langkah formulir, fetch, dan render dalam satu aliran datar membuat tab Console sulit dibaca.</p><p class="mb-4">Bungkus satu alur dengan console.group atau console.groupCollapsed, lalu groupEnd di finally agar kelompok tetap tertutup meski ada error.</p><p class="mb-4">Beri label kelompok nama fungsi plus id elemen, misalnya group("submit #kontak"). Jangan nest lebih dari dua tingkat.</p><p class="mb-4">Minta AI satu helper group yang hanya aktif di editor.clincoo.buzz. Uji lipat-buka di DevTools sebelum deploy ke app.clincoo.buzz.</p><p class="mb-4">Clincoo menayangkan skrip apa adanya. Log berkelompok mempercepat debug tanpa menumpuk noise di halaman publik.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
