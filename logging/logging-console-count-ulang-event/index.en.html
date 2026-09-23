@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count How Often an Event Fires with console.count in Clincoo — Clincoo Blog</title>
+<meta name="description" content="console.count shows how often a handler runs without dumping random log lines.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-console-count-ulang-event/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Count How Often an Event Fires with console.count in Clincoo">
+<meta property="og:description" content="console.count shows how often a handler runs without dumping random log lines.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Count How Often an Event Fires with console.count in Clincoo</h1><p class="desc">console.count shows how often a handler runs without dumping random log lines.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A click or input handler on a Clincoo page is sometimes attached twice. You see a double effect, but ordinary logs hide the frequency.</p><p class="mb-4">Call console.count('submit') inside the handler. The same label increments. Reset with console.countReset after the test.</p><p class="mb-4">Do not count inside requestAnimationFrame without a guard. The number explodes and DevTools becomes noisy.</p><p class="mb-4">Ask the AI to add count on a suspected duplicate addEventListener, then test it in editor.clincoo.buzz.</p><p class="mb-4">Clincoo runs page scripts as written. A tidy count proves whether an event fires once or many times.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
