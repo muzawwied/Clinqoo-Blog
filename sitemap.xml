@@ -126,4 +126,9 @@
   <url><loc>https://blog.clincoo.buzz/cache/cache-revalidate-html-setelah-deploy/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cache/cache-jangan-cache-respons-form/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cache/cache-precache-hanya-aset-kritis/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-hapus-service-worker-lama/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-stale-while-revalidate-css/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-header-immutable-font/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-network-first-dokumen/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-ukur-cache-storage-devtools/</loc></url>
 </urlset>
