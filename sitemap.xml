@@ -148,4 +148,9 @@
   <url><loc>https://blog.clincoo.buzz/api/</loc></url>
   <url><loc>https://blog.clincoo.buzz/api/api-baca-status-http-sebelum-json/</loc></url>
   <url><loc>https://blog.clincoo.buzz/api/api-timeout-abortcontroller-fetch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-header-content-type-saat-kirim-json/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-cors-bukan-bug-css/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-retry-hanya-5xx-bukan-4xx/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-jangan-simpan-kunci-di-javascript/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-indikator-loading-saat-menunggu-respons/</loc></url>
 </urlset>
