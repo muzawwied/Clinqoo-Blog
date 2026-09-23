@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Console Levels not alert when Debugging a Clincoo Script — Clincoo Blog</title>
+<meta name="description" content="alert freezes the UI. console.debug, info, warn, and error can be filtered in DevTools.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-console-level-bukan-alert/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Console Levels not alert when Debugging a Clincoo Script">
+<meta property="og:description" content="alert freezes the UI. console.debug, info, warn, and error can be filtered in DevTools.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Use Console Levels not alert when Debugging a Clincoo Script</h1><p class="desc">alert freezes the UI. console.debug, info, warn, and error can be filtered in DevTools.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo script that calls alert on every debug step stops the page. Visitors cannot continue, and you lose the stack.</p><p class="mb-4">Replace alert with console.debug for routine traces, console.warn for odd states, and console.error for real failures.</p><p class="mb-4">Do not leave production console.log flooding the tab. Wrap a small logger that stays off unless the host is editor.clincoo.buzz or localhost.</p><p class="mb-4">Test level filters in DevTools. Ask the AI for one logger object, not a log sprinkle in every function.</p><p class="mb-4">Clincoo ships the script as written. Clean console levels make debug fast without blocking users.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
