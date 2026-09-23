@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cegah addEventListener Dipasang Dua Kali di Skrip Clincoo — Clincoo Blog</title>
+<meta name="description" content="Listener ganda membuat tombol submit dua kali dan form terkirim dobel.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/lint/lint-hindari-listener-ganda/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cegah addEventListener Dipasang Dua Kali di Skrip Clincoo">
+<meta property="og:description" content="Listener ganda membuat tombol submit dua kali dan form terkirim dobel.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/lint/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Lint</div><h1>Cegah addEventListener Dipasang Dua Kali di Skrip Clincoo</h1><p class="desc">Listener ganda membuat tombol submit dua kali dan form terkirim dobel.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Skrip halaman Clincoo kadang dijalankan ulang saat pratinjau hot-reload atau saat blok disalin. addEventListener menumpuk tanpa menghapus yang lama.</p><p class="mb-4">Pakai { once: true } untuk aksi sekali. Atau simpan flag window.__clincooBound sebelum memasang listener.</p><p class="mb-4">Uji dengan mengklik tombol berkali-kali di editor.clincoo.buzz sambil melihat console.count pada handler.</p><p class="mb-4">Minta AI mencari addEventListener tanpa penjaga. Gabungkan inisialisasi ke satu fungsi yang aman dipanggil ulang.</p><p class="mb-4">Clincoo tidak mengelola siklus listener untukmu. Lint ini mencegah aksi dobel setelah deploy ke app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/lint/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

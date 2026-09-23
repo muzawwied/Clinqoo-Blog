@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop addEventListener from Binding Twice in Clincoo Scripts — Clincoo Blog</title>
+<meta name="description" content="Duplicate listeners make a submit button fire twice and send the form twice.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/lint/lint-hindari-listener-ganda/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stop addEventListener from Binding Twice in Clincoo Scripts">
+<meta property="og:description" content="Duplicate listeners make a submit button fire twice and send the form twice.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/lint/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Lint</div><h1>Stop addEventListener from Binding Twice in Clincoo Scripts</h1><p class="desc">Duplicate listeners make a submit button fire twice and send the form twice.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo page script sometimes runs again on preview hot-reload or when a block is copied. addEventListener stacks without removing the old one.</p><p class="mb-4">Use { once: true } for one-shot actions. Or set a window.__clincooBound flag before attaching the listener.</p><p class="mb-4">Test by clicking the button several times in editor.clincoo.buzz while watching console.count on the handler.</p><p class="mb-4">Ask the AI to find addEventListener calls without a guard. Fold init into one function that is safe to call again.</p><p class="mb-4">Clincoo does not manage listener lifecycle for you. This lint prevents double actions after you deploy to app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/lint/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
