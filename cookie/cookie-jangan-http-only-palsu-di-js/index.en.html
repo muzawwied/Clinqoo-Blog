@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Rely on document.cookie for Sensitive Clincoo Data — Clincoo Blog</title>
+<meta name="description" content="Cookies written from JavaScript can be read by other scripts. Keep secrets on a server, not in the browser.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cookie/cookie-jangan-http-only-palsu-di-js/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Rely on document.cookie for Sensitive Clincoo Data">
+<meta property="og:description" content="Cookies written from JavaScript can be read by other scripts. Keep secrets on a server, not in the browser.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cookie/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cookies</div><h1>Do Not Rely on document.cookie for Sensitive Clincoo Data</h1><p class="desc">Cookies written from JavaScript can be read by other scripts. Keep secrets on a server, not in the browser.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo forms sometimes put a token or email in document.cookie to stay signed in. A third-party script on the same page can read it.</p><p class="mb-4">Use localStorage only for non-secret preferences. Do not store passwords, API keys, or session tokens in JS-written cookies.</p><p class="mb-4">If you need a session, rely on a backend that sets an HttpOnly cookie. A static Clincoo page usually does not need one.</p><p class="mb-4">Audit document.cookie strings in editor.clincoo.buzz. Ask AI to find those uses, then delete what you do not need.</p><p class="mb-4">Clincoo runs the scripts you paste. A JS cookie is not a vault; treat its contents as readable.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cookie/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
