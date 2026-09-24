@@ -67,6 +67,111 @@ window.countryDataFiles["preview"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "preview-cek-font-dan-gambar-terload",
+      langs: {
+        "id": {
+          title: "Cek Font dan Gambar Benar-benar Termuat di Pratinjau Clincoo",
+          desc: "Pratinjau bisa menipu jika font fallback dan gambar rusak tidak terlihat segera.",
+          content: "<p class=\"mb-4\">Halaman Clincoo sering terlihat \u201champir benar\u201d karena browser memakai font sistem sementara gambar 404 tampil sebagai ikon rusak kecil.</p><p class=\"mb-4\">Di pratinjau editor.clincoo.buzz, buka tab Jaringan. Pastikan file font dan gambar berstatus 200, bukan 404 atau diblokir mixed content.</p><p class=\"mb-4\">Periksa alt pada gambar rusak dan fallback font-family. Jika heading bergeser setelah font kustom termuat, atur ukuran cadangan yang dekat.</p><p class=\"mb-4\">Minta AI hanya memperbaiki path aset yang gagal, bukan menulis ulang seluruh CSS. Tempel URL yang 404 sebagai konteks.</p><p class=\"mb-4\">Clincoo menayangkan aset yang kamu tautkan. Cek muat font dan gambar di pratinjau sebelum rilis ke app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Confirm Fonts and Images Actually Load in the Clincoo Preview",
+          desc: "Preview can lie if fallback fonts and broken images are not spotted quickly.",
+          content: "<p class=\"mb-4\">Clincoo pages often look \u201calmost right\u201d because the browser uses a system font while a 404 image shows as a tiny broken icon.</p><p class=\"mb-4\">In the editor.clincoo.buzz preview, open the Network tab. Confirm font and image files return 200, not 404 or mixed-content blocks.</p><p class=\"mb-4\">Check alt text on broken images and the font-family fallback. If headings shift after a custom font loads, set a close fallback size.</p><p class=\"mb-4\">Ask AI only to fix the failing asset paths, not to rewrite all CSS. Paste the 404 URL as context.</p><p class=\"mb-4\">Clincoo ships the assets you link. Check font and image loading in preview before you release to app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "preview-scrollbar-overflow-tersembunyi",
+      langs: {
+        "id": {
+          title: "Cari Overflow Tersembunyi dan Scrollbar Tak Diinginkan di Pratinjau",
+          desc: "Konten yang melebihi wadah sering hanya terlihat setelah kamu menggeser pratinjau.",
+          content: "<p class=\"mb-4\">Banyak bug layout Clincoo bukan tombol pecah, melainkan scrollbar horizontal 8px yang muncul di HP.</p><p class=\"mb-4\">Di editor.clincoo.buzz, geser pratinjau ke kiri-kanan. Jika ada geseran, cari elemen dengan width tetap, padding besar, atau 100vw plus padding.</p><p class=\"mb-4\">Periksa juga overflow:hidden yang memotong fokus atau dropdown. Sembunyikan scrollbar bukan berarti konten muat.</p><p class=\"mb-4\">Minta AI menandai aturan width dan overflow pada satu file. Jangan minta rewrite grid seluruh halaman.</p><p class=\"mb-4\">Clincoo merender CSS apa adanya. Membersihkan overflow di pratinjau menghemat keluhan pengunjung dari blog.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Hunt Hidden Overflow and Unwanted Scrollbars in Preview",
+          desc: "Content that overflows a box often shows only after you drag the preview.",
+          content: "<p class=\"mb-4\">Many Clincoo layout bugs are not broken buttons, but an 8px horizontal scrollbar on a phone.</p><p class=\"mb-4\">In editor.clincoo.buzz, nudge the preview left and right. If it shifts, hunt fixed widths, large padding, or 100vw plus padding.</p><p class=\"mb-4\">Also check overflow:hidden that clips focus or dropdowns. Hiding the scrollbar does not mean the content fits.</p><p class=\"mb-4\">Ask AI to mark width and overflow rules in one file. Do not ask for a full-page grid rewrite.</p><p class=\"mb-4\">Clincoo renders the CSS as saved. Cleaning overflow in preview saves visitor complaints from blog.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "preview-urutan-tab-keyboard",
+      langs: {
+        "id": {
+          title: "Uji Urutan Tab Keyboard di Pratinjau Clincoo",
+          desc: "Fokus yang loncat acak lolos jika pratinjau hanya dicek dengan mouse.",
+          content: "<p class=\"mb-4\">Pengunjung Clincoo yang memakai keyboard menemukan tautan tersembunyi, urutan tab terbalik, dan trap di modal.</p><p class=\"mb-4\">Di pratinjau editor.clincoo.buzz, tekan Tab dari logo sampai footer. Catat elemen yang dilewati atau yang mendapat fokus dua kali.</p><p class=\"mb-4\">Periksa tabindex positif yang mengacak urutan. Hapus tabindex kecuali kamu benar-benar mengatur dialog.</p><p class=\"mb-4\">Minta AI mendaftar elemen yang bisa difokus pada satu file. Kamu yang menekan Tab, bukan AI.</p><p class=\"mb-4\">Clincoo tidak memperbaiki urutan fokus otomatis. Uji keyboard di pratinjau sebelum deploy ke app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Test Keyboard Tab Order in the Clincoo Preview",
+          desc: "Focus that jumps around ships if preview is only checked with a mouse.",
+          content: "<p class=\"mb-4\">Clincoo visitors who use a keyboard find hidden links, reversed tab order, and traps inside modals.</p><p class=\"mb-4\">In the editor.clincoo.buzz preview, press Tab from the logo to the footer. Note elements skipped or focused twice.</p><p class=\"mb-4\">Watch for positive tabindex values that scramble order. Remove tabindex unless you truly manage a dialog.</p><p class=\"mb-4\">Ask AI to list focusable elements in one file. You press Tab, not the AI.</p><p class=\"mb-4\">Clincoo does not fix focus order for you. Test the keyboard in preview before deploy to app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "preview-zoom-teks-125",
+      langs: {
+        "id": {
+          title: "Uji Pratinjau Clincoo saat Teks Diperbesar 125 Persen",
+          desc: "Layout yang rapat pecah saat pengunjung membesarkan teks, bukan hanya saat lebar berubah.",
+          content: "<p class=\"mb-4\">Banyak halaman Clincoo lolos uji lebar 360px tetapi tombol terpotong saat zoom teks 125%.</p><p class=\"mb-4\">Di pratinjau, perbesar teks halaman. Cek heading yang overflow, label form yang menumpuk, dan kartu dengan tinggi tetap.</p><p class=\"mb-4\">Hindari tinggi tetap pada blok teks. Pakai min-height jika perlu ruang, biarkan konten mendorong wadah.</p><p class=\"mb-4\">Minta AI hanya mengubah wadah yang terpotong. Tempel cuplikan setelah zoom sebagai konteks.</p><p class=\"mb-4\">Clincoo mengikuti CSS yang kamu simpan. Uji zoom di editor.clincoo.buzz sebelum rilis.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Test the Clincoo Preview when Text is Zoomed to 125 Percent",
+          desc: "Tight layouts break when visitors enlarge text, not only when width changes.",
+          content: "<p class=\"mb-4\">Many Clincoo pages pass a 360px width test, then buttons clip when text zoom is 125%.</p><p class=\"mb-4\">In preview, enlarge page text. Check overflowing headings, stacked form labels, and cards with a fixed height.</p><p class=\"mb-4\">Avoid fixed heights on text blocks. Use min-height if you need space and let content push the box.</p><p class=\"mb-4\">Ask AI only to change the clipped container. Paste the zoomed snippet as context.</p><p class=\"mb-4\">Clincoo follows the CSS you save. Test zoom in editor.clincoo.buzz before release.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "preview-konsol-error-saat-buka",
+      langs: {
+        "id": {
+          title: "Baca Konsol Error saat Membuka Pratinjau Clincoo",
+          desc: "Halaman terlihat diam-diam rusak jika skrip gagal dan kamu tidak membuka konsol.",
+          content: "<p class=\"mb-4\">Pratinjau Clincoo bisa tampil rapi sementara addEventListener gagal karena elemen belum ada.</p><p class=\"mb-4\">Setiap kali membuka editor.clincoo.buzz, buka konsol. Catat TypeError, 404 skrip, dan peringatan mixed content.</p><p class=\"mb-4\">Perbaiki satu error dulu. Jangan minta AI merapikan seluruh file JavaScript karena satu null reference.</p><p class=\"mb-4\">Tempel jejak error lengkap, termasuk baris dan file, saat minta bantuan AI.</p><p class=\"mb-4\">Clincoo menjalankan skrip yang kamu simpan. Konsol di pratinjau adalah filter terakhir sebelum app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Read Console Errors when You Open the Clincoo Preview",
+          desc: "A page can look fine while scripts fail if you never open the console.",
+          content: "<p class=\"mb-4\">The Clincoo preview can look tidy while addEventListener fails because the element is missing.</p><p class=\"mb-4\">Each time you open editor.clincoo.buzz, open the console. Note TypeError, script 404s, and mixed-content warnings.</p><p class=\"mb-4\">Fix one error first. Do not ask AI to tidy the whole JavaScript file for one null reference.</p><p class=\"mb-4\">Paste the full error trace, including line and file, when you ask AI for help.</p><p class=\"mb-4\">Clincoo runs the scripts you save. The preview console is the last filter before app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ]
 };
