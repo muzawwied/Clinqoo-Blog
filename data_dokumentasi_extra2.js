@@ -108,11 +108,11 @@
     }
   ];
   function merge(){
-    if (!window.countryDataFiles || !window.countryDataFiles[\"dokumentasi\"]) {
+    if (!window.countryDataFiles || !window.countryDataFiles["dokumentasi"]) {
       setTimeout(merge, 30);
       return;
     }
-    var arr = window.countryDataFiles[\"dokumentasi\"].articles;
+    var arr = window.countryDataFiles["dokumentasi"].articles;
     var have = {};
     for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
     for (var j = 0; j < extra.length; j++) {
