@@ -1,6 +1,5 @@
-// Clincoo Blog — Data extra kategori: flexbox
-if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
-(function () {
+// Clincoo Blog — artikel flexbox tambahan 2026-09-24
+(function(){
   var extra = [
     {
       id: "flexbox-overflow-auto-daftar-chip",
@@ -24,10 +23,17 @@ if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {}
       }
     }
   ];
-  var pack = window.countryDataFiles["flexbox"];
-  if (!pack) {
-    window.countryDataFiles["flexbox"] = { names: { id: "Flexbox", en: "Flexbox" }, flag: "\ud83e\uddf1", articles: extra };
-    return;
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["flexbox"]) {
+      setTimeout(merge, 30);
+      return;
+    }
+    var arr = window.countryDataFiles["flexbox"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) {
+      if (!have[extra[j].id]) arr.push(extra[j]);
+    }
   }
-  pack.articles = (pack.articles || []).concat(extra);
+  merge();
 })();
