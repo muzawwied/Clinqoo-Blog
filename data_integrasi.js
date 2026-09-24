@@ -109,6 +109,111 @@ window.countryDataFiles["integrasi"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "integrasi-embed-video-youtube",
+      langs: {
+        "id": {
+          title: "Sisipkan Video YouTube di Clincoo tanpa Menggeser Grid",
+          desc: "Iframe video tanpa rasio aspek merusak kartu. Kunci 16:9, lazy-load, dan judul yang jelas.",
+          content: "<p class=\"mb-4\">Halaman Clincoo yang menempel iframe YouTube mentah sering pecah di mobile: tinggi meloncat setelah thumbnail muncul.</p><p class=\"mb-4\">Bungkus iframe dalam wadah aspect-ratio 16/9, width 100%, loading lazy, dan allow fullscreen yang memang kamu butuhkan. Isi title iframe dengan nama video, bukan kata embed.</p><p class=\"mb-4\">Jangan autoplay bersuara. Hormati pengunjung dan hemat kuota. Satu video per bagian lebih aman daripada playlist berat.</p><p class=\"mb-4\">Simpan di editor.clincoo.buzz, cek HP dan desktop. Minta AI hanya menambah wadah video, bukan mengganti hero.</p><p class=\"mb-4\">Clincoo merender HTML yang kamu tempel. Wadah rasio tetap menjaga footer tidak terdorong.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Embed a YouTube Video in Clincoo without Shifting the Grid",
+          desc: "A video iframe with no aspect ratio breaks cards. Lock 16:9, lazy-load, and use a clear title.",
+          content: "<p class=\"mb-4\">A Clincoo page that pastes a raw YouTube iframe often breaks on phones: height jumps after the thumbnail appears.</p><p class=\"mb-4\">Wrap the iframe in a 16/9 aspect-ratio box, width 100%, loading lazy, and only the fullscreen allow you need. Set the iframe title to the video name, not the word embed.</p><p class=\"mb-4\">Do not autoplay with sound. Respect visitors and save data. One video per section is safer than a heavy playlist.</p><p class=\"mb-4\">Save in editor.clincoo.buzz and check phone and desktop. Ask AI only to add the video wrapper, not to replace the hero.</p><p class=\"mb-4\">Clincoo renders the HTML you paste. A locked ratio keeps the footer from being shoved down.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "integrasi-font-pihak-ketiga",
+      langs: {
+        "id": {
+          title: "Pasang Font Pihak Ketiga di Clincoo tanpa Menahan Teks",
+          desc: "Tautan font sinkron menunda First Paint. Pakai display swap dan batasi keluarga huruf.",
+          content: "<p class=\"mb-4\">Proyek Clincoo yang memuat lima file font di head sering menampilkan teks kosong lalu loncat saat file selesai.</p><p class=\"mb-4\">Pilih satu keluarga untuk isi dan satu untuk judul. Tambah font-display swap atau tautan yang sudah memuat parameter display=swap. Preconnect hanya ke host font yang benar.</p><p class=\"mb-4\">Jangan unduh seluruh set bobot 100 sampai 900. Regular dan bold biasanya cukup untuk situs UMKM.</p><p class=\"mb-4\">Uji di editor.clincoo.buzz dengan jaringan lambat. Minta AI menambah satu tautan font, bukan menyalin tema Google Fonts utuh.</p><p class=\"mb-4\">Clincoo tidak menyertakan font berbayar. Sistem fallback sans-serif menjaga halaman tetap terbaca jika CDN gagal.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Load Third-Party Fonts in Clincoo without Holding Text",
+          desc: "A synchronous font link delays First Paint. Use display swap and limit families.",
+          content: "<p class=\"mb-4\">A Clincoo project that loads five font files in head often shows blank text, then jumps when the files arrive.</p><p class=\"mb-4\">Pick one family for body and one for headings. Add font-display swap or a link that already has display=swap. Preconnect only to the real font host.</p><p class=\"mb-4\">Do not download every weight from 100 to 900. Regular and bold are usually enough for a small-business site.</p><p class=\"mb-4\">Test in editor.clincoo.buzz on a slow network. Ask AI to add one font link, not to copy a full Google Fonts theme.</p><p class=\"mb-4\">Clincoo does not ship paid fonts. A system sans-serif fallback keeps the page readable if the CDN fails.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "integrasi-webhook-form-sederhana",
+      langs: {
+        "id": {
+          title: "Arahkan Form Clincoo ke Webhook tanpa Membocorkan Rahasia",
+          desc: "URL webhook di HTML publik bisa disalahgunakan. Pakai endpoint publik terbatas dan honeypot.",
+          content: "<p class=\"mb-4\">Beberapa layanan menerima POST form lalu meneruskan ke email atau chat. Menempel URL webhook mentah di atribut action memudahkan bot menembak endpoint.</p><p class=\"mb-4\">Gunakan URL yang hanya menerima field yang kamu tentukan, method post, dan honeypot tersembunyi. Jangan taruh token tulis penuh di halaman Clincoo.</p><p class=\"mb-4\">Uji kirim sah dan kirim kosong dari editor.clincoo.buzz. Cek apakah layanan menolak field tak dikenal.</p><p class=\"mb-4\">Minta AI hanya mengisi action dan name field, bukan menambah skrip fetch dengan kunci di client.</p><p class=\"mb-4\">Clincoo tidak menyembunyikan webhook. Batas di sisi layanan yang melindungi kotak masuk kamu.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Point a Clincoo Form at a Webhook without Leaking Secrets",
+          desc: "A webhook URL in public HTML can be abused. Use a tight public endpoint and a honeypot.",
+          content: "<p class=\"mb-4\">Some services accept a form POST and forward it to email or chat. Pasting a raw webhook URL in action makes it easy for bots to hit the endpoint.</p><p class=\"mb-4\">Use a URL that only accepts the fields you named, method post, and a hidden honeypot. Do not put a full write token on the Clincoo page.</p><p class=\"mb-4\">Test a valid submit and an empty submit from editor.clincoo.buzz. Check that the service rejects unknown fields.</p><p class=\"mb-4\">Ask AI only to fill action and field names, not to add a client fetch that embeds a key.</p><p class=\"mb-4\">Clincoo does not hide webhooks. Limits on the service side protect your inbox.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "integrasi-tombol-bagikan-sosial",
+      langs: {
+        "id": {
+          title: "Tambah Tombol Bagikan di Clincoo tanpa Skrip Berat",
+          desc: "SDK sosial menahan halaman. Pakai tautan intent resmi dan teks yang bisa disalin.",
+          content: "<p class=\"mb-4\">Banyak template menempel SDK Facebook atau X hanya untuk satu tombol Bagikan. File itu lebih besar dari konten artikel.</p><p class=\"mb-4\">Gunakan tautan intent resmi: URL encode judul dan alamat halaman. Tambah tombol Salin tautan sebagai cadangan jika popup diblokir.</p><p class=\"mb-4\">Jangan memuat SDK di semua halaman. Cukup artikel atau produk yang memang ingin dibagikan.</p><p class=\"mb-4\">Uji di pratinjau editor.clincoo.buzz pada HP. Minta AI menambah tautan, bukan widget berbagi pihak ketiga.</p><p class=\"mb-4\">Clincoo tidak memasang tombol sosial default. Tautan intent menjaga privasi pengunjung dan waktu muat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Add Share Buttons on Clincoo without Heavy Scripts",
+          desc: "Social SDKs stall the page. Use official intent links and copyable text.",
+          content: "<p class=\"mb-4\">Many templates drop a Facebook or X SDK just for one Share button. That file is larger than the article.</p><p class=\"mb-4\">Use official intent links: URL-encode the title and page address. Add a Copy link button as fallback if popups are blocked.</p><p class=\"mb-4\">Do not load the SDK on every page. Keep it on articles or products people actually share.</p><p class=\"mb-4\">Test the editor.clincoo.buzz preview on a phone. Ask AI to add links, not a third-party share widget.</p><p class=\"mb-4\">Clincoo does not install social buttons by default. Intent links protect visitor privacy and load time.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "integrasi-chat-widget-ringan",
+      langs: {
+        "id": {
+          title: "Pasang Widget Chat Ringan di Clincoo tanpa Menutup Form",
+          desc: "Bubble chat menutup CTA mobile. Tunda muat skrip dan sisakan ruang footer.",
+          content: "<p class=\"mb-4\">Widget chat pihak ketiga sering dimuat di semua halaman Clincoo lalu menutup tombol Kirim di HP.</p><p class=\"mb-4\">Tunda skrip sampai idle atau setelah interaksi. Atur posisi bubble di atas footer, bukan menimpa field terakhir. Sediakan tautan email jika widget diblokir.</p><p class=\"mb-4\">Jangan pasang dua vendor chat sekaligus. Satu saluran yang kamu jawab lebih berguna.</p><p class=\"mb-4\">Cek pratinjau editor.clincoo.buzz dalam mode sempit. Minta AI menempatkan satu cuplikan, bukan menyalin tema vendor.</p><p class=\"mb-4\">Clincoo tidak menyediakan chat bawaan. Widget yang ditunda menjaga First Paint tetap cepat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Add a Light Chat Widget on Clincoo without Covering Forms",
+          desc: "Chat bubbles hide mobile CTAs. Defer the script and leave footer space.",
+          content: "<p class=\"mb-4\">Third-party chat widgets often load on every Clincoo page and then cover the Submit button on phones.</p><p class=\"mb-4\">Defer the script until idle or after interaction. Place the bubble above the footer, not over the last field. Offer an email link if the widget is blocked.</p><p class=\"mb-4\">Do not install two chat vendors at once. One channel you actually answer is more useful.</p><p class=\"mb-4\">Check the editor.clincoo.buzz preview in a narrow view. Ask AI to place one snippet, not to copy the vendor theme.</p><p class=\"mb-4\">Clincoo does not ship built-in chat. A deferred widget keeps First Paint fast.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ]
 };
