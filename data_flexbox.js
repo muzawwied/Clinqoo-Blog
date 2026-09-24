@@ -130,6 +130,111 @@ window.countryDataFiles["flexbox"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "flexbox-justify-content-bukan-margin-auto",
+      langs: {
+        "id": {
+          title: "Pakai justify-content, Bukan margin:auto di Setiap Anak Flex Clincoo",
+          desc: "margin:auto pada banyak anak flex merusak jarak saat jumlah item berubah.",
+          content: "<p class=\"mb-4\">Baris tombol Clincoo sering memakai margin-left:auto pada setiap anak supaya menyebar. Saat jumlah tombol berubah, jarak jadi acak.</p><p class=\"mb-4\">Set justify-content:space-between atau space-around pada wadah flex di editor.clincoo.buzz. Biarkan anak tanpa margin horizontal.</p><p class=\"mb-4\">margin-left:auto hanya masuk akal pada satu anak, misalnya logo kiri dan menu kanan. Jangan tempel ke semua anak.</p><p class=\"mb-4\">Minta AI mengubah satu aturan wadah. Tempel HTML baris flex sebagai konteks agar ia tidak menambah margin baru.</p><p class=\"mb-4\">Clincoo merender CSS yang kamu simpan. justify-content menjaga jarak rapi di pratinjau dan app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use justify-content, Not margin:auto on Every Flex Child in Clincoo",
+          desc: "margin:auto on many flex children breaks spacing when the item count changes.",
+          content: "<p class=\"mb-4\">Clincoo button rows often put margin-left:auto on every child to spread them. When the count changes, gaps look random.</p><p class=\"mb-4\">Set justify-content:space-between or space-around on the flex container in editor.clincoo.buzz. Leave children without horizontal margin.</p><p class=\"mb-4\">margin-left:auto only makes sense on one child, such as a left logo and a right menu. Do not paste it on every child.</p><p class=\"mb-4\">Ask AI to change one container rule. Paste the flex row HTML as context so it does not add new margins.</p><p class=\"mb-4\">Clincoo renders the CSS you save. justify-content keeps spacing tidy in preview and on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "flexbox-flex-basis-bukan-width-tetap",
+      langs: {
+        "id": {
+          title: "Pakai flex-basis, Bukan width Tetap, untuk Kolom Flex Clincoo",
+          desc: "width tetap pada anak flex menolak menyusut dan memicu overflow di layar sempit.",
+          content: "<p class=\"mb-4\">Kartu harga Clincoo sering memakai width:320px pada setiap kolom flex. Di layar sempit kolom tidak mau berbagi ruang.</p><p class=\"mb-4\">Ganti width tetap dengan flex:1 1 280px atau flex-basis:280px di editor.clincoo.buzz. Basis adalah lebar ideal, bukan kunci keras.</p><p class=\"mb-4\">Jika satu kolom harus lebih lebar, naikkan flex-grow-nya saja. Jangan campur width dan flex-basis tanpa niat.</p><p class=\"mb-4\">Minta AI hanya mengubah aturan anak flex. Tolak rewrite seluruh grid jika yang bermasalah hanya width.</p><p class=\"mb-4\">Clincoo tidak menambahkan breakpoint ajaib. flex-basis yang jujur membuat app.clincoo.buzz tetap bisa di-scroll tanpa potong teks.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use flex-basis, Not Fixed width, for Clincoo Flex Columns",
+          desc: "A fixed width on flex children refuses to shrink and causes overflow on narrow screens.",
+          content: "<p class=\"mb-4\">Clincoo pricing cards often use width:320px on every flex column. On a narrow screen the columns will not share space.</p><p class=\"mb-4\">Replace fixed width with flex:1 1 280px or flex-basis:280px in editor.clincoo.buzz. Basis is the ideal width, not a hard lock.</p><p class=\"mb-4\">If one column must be wider, raise only its flex-grow. Do not mix width and flex-basis without intent.</p><p class=\"mb-4\">Ask AI to change only the flex child rule. Reject a full grid rewrite if width is the only problem.</p><p class=\"mb-4\">Clincoo does not invent breakpoints. Honest flex-basis keeps app.clincoo.buzz scrollable without clipping text.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "flexbox-align-self-satu-item",
+      langs: {
+        "id": {
+          title: "Pakai align-self untuk Satu Item, Bukan Padding Palsu di Flex Clincoo",
+          desc: "Menggeser satu anak flex dengan padding besar merusak tinggi baris yang lain.",
+          content: "<p class=\"mb-4\">Badge atau ikon di baris flex Clincoo sering didorong dengan padding-top besar supaya terlihat di tengah visual.</p><p class=\"mb-4\">Set align-items pada wadah, lalu override satu anak dengan align-self:center atau flex-end di editor.clincoo.buzz.</p><p class=\"mb-4\">Jangan menambahkan wrapper kosong hanya untuk mendorong item. align-self bekerja pada anak langsung.</p><p class=\"mb-4\">Minta AI menambahkan satu deklarasi align-self. Tempel kelas item yang sudah ada agar ia tidak mengganti seluruh baris.</p><p class=\"mb-4\">Clincoo merender alignment CSS apa adanya. align-self menjaga tinggi kartu tetap stabil di blog.clincoo.buzz dan app.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use align-self for One Item, Not Fake Padding in Clincoo Flex",
+          desc: "Shifting one flex child with large padding wrecks the height of the rest of the row.",
+          content: "<p class=\"mb-4\">A badge or icon in a Clincoo flex row is often pushed with large padding-top so it looks visually centered.</p><p class=\"mb-4\">Set align-items on the container, then override one child with align-self:center or flex-end in editor.clincoo.buzz.</p><p class=\"mb-4\">Do not add an empty wrapper just to push the item. align-self works on a direct child.</p><p class=\"mb-4\">Ask AI to add one align-self declaration. Paste the existing item class so it does not rewrite the whole row.</p><p class=\"mb-4\">Clincoo renders alignment CSS as saved. align-self keeps card height stable on blog.clincoo.buzz and the app.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "flexbox-direction-column-stack-mobile",
+      langs: {
+        "id": {
+          title: "Ubah flex-direction jadi column di Mobile, Jangan Sembunyikan Kolom Clincoo",
+          desc: "Menyembunyikan kolom samping di mobile membuang konten; tumpuk dengan flex-direction.",
+          content: "<p class=\"mb-4\">Sidebar Clincoo sering di-display:none di media query sempit. Pengunjung HP kehilangan navigasi atau CTA.</p><p class=\"mb-4\">Pada breakpoint yang sama, set flex-direction:column pada wadah di editor.clincoo.buzz. Biarkan sidebar pindah ke bawah atau atas.</p><p class=\"mb-4\">Atur urutan visual dengan posisi HTML, bukan order acak. Tes tinggi gulir setelah stack.</p><p class=\"mb-4\">Minta AI menambah satu aturan @media untuk wadah itu. Jangan biarkan ia menghapus markup sidebar.</p><p class=\"mb-4\">Clincoo menyimpan media query yang kamu tulis. Stack jujur menjaga konten tetap ada di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Switch flex-direction to column on Mobile, Do Not Hide Clincoo Columns",
+          desc: "Hiding a side column on mobile throws content away; stack it with flex-direction instead.",
+          content: "<p class=\"mb-4\">Clincoo sidebars are often set to display:none in a narrow media query. Phone visitors lose nav or a CTA.</p><p class=\"mb-4\">At the same breakpoint, set flex-direction:column on the container in editor.clincoo.buzz. Let the sidebar move below or above.</p><p class=\"mb-4\">Control visual order with HTML position, not random order. Test scroll height after the stack.</p><p class=\"mb-4\">Ask AI to add one @media rule for that container. Do not let it delete the sidebar markup.</p><p class=\"mb-4\">Clincoo stores the media query you write. An honest stack keeps content available on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "flexbox-flex-grow-kolom-sama-rata",
+      langs: {
+        "id": {
+          title: "Rapikan Kolom Sama Lebar dengan flex-grow di Clincoo",
+          desc: "Kolom flex tanpa flex-grow mengikuti isi dan terlihat timpang saat teks berbeda panjang.",
+          content: "<p class=\"mb-4\">Tiga kartu fitur Clincoo terlihat beda lebar karena satu judul lebih panjang. Wadah sudah display:flex, anak belum grow.</p><p class=\"mb-4\">Tambah flex:1 1 0 pada setiap kartu di editor.clincoo.buzz agar mereka berbagi sisa ruang secara merata.</p><p class=\"mb-4\">flex-basis:0 membuat pembagian mengabaikan lebar konten awal. Tetap pakai min-width:0 jika teks panjang overflow.</p><p class=\"mb-4\">Minta AI hanya menambah shorthand flex pada kelas kartu. Tolak perubahan warna atau copy.</p><p class=\"mb-4\">Clincoo tidak meratakan kolom sendiri. flex-grow yang sadar membuat baris kartu rapi di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Even Flex Columns with flex-grow in Clincoo",
+          desc: "Flex columns without flex-grow follow their content and look uneven when text lengths differ.",
+          content: "<p class=\"mb-4\">Three Clincoo feature cards look different widths because one title is longer. The container is already display:flex; children do not grow.</p><p class=\"mb-4\">Add flex:1 1 0 on every card in editor.clincoo.buzz so they share leftover space evenly.</p><p class=\"mb-4\">flex-basis:0 makes the split ignore initial content width. Keep min-width:0 if long text overflows.</p><p class=\"mb-4\">Ask AI to add only the flex shorthand on the card class. Reject color or copy changes.</p><p class=\"mb-4\">Clincoo does not even columns by itself. Intentional flex-grow keeps the card row tidy on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ]
 };
