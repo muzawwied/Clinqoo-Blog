@@ -151,6 +151,111 @@ window.countryDataFiles["svg"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "svg-stroke-lebar-konsisten",
+      langs: {
+        "id": {
+          title: "Samakan stroke-width Ikon SVG di Satu Set Clincoo",
+          desc: "Stroke berbeda membuat set ikon terlihat tidak seragam di toolbar.",
+          content: "<p class=\"mb-4\">Satu ikon Clincoo memakai stroke 1.5, ikon sebelahnya 2.5. Di toolbar kecil perbedaannya mencolok.</p><p class=\"mb-4\">Samakan stroke-width di seluruh set di editor.clincoo.buzz. Pakai satuan yang sama, biasanya 1.5 atau 2.</p><p class=\"mb-4\">Jangan campur ikon filled dan outlined tanpa aturan. Satu gaya per toolbar cukup.</p><p class=\"mb-4\">Minta AI hanya menormalkan stroke-width. Tempel dua ikon yang tidak cocok.</p><p class=\"mb-4\">Clincoo merender path apa adanya. Stroke seragam menjaga toolbar rapi di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Keep SVG Icon stroke-width Consistent in One Clincoo Set",
+          desc: "Uneven strokes make an icon set look messy in the toolbar.",
+          content: "<p class=\"mb-4\">One Clincoo icon uses stroke 1.5, the next uses 2.5. On a small toolbar the mismatch is obvious.</p><p class=\"mb-4\">Normalize stroke-width across the set in editor.clincoo.buzz. Use one unit, usually 1.5 or 2.</p><p class=\"mb-4\">Do not mix filled and outlined icons without a rule. One style per toolbar is enough.</p><p class=\"mb-4\">Ask AI to normalize stroke-width only. Paste the two mismatched icons.</p><p class=\"mb-4\">Clincoo renders paths as-is. Even strokes keep the toolbar tidy on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "svg-fokus-outline-tombol-ikon",
+      langs: {
+        "id": {
+          title: "Jangan Hilangkan Outline Fokus pada Tombol Ikon SVG",
+          desc: "outline:none tanpa pengganti membuat keyboard tidak punya petunjuk fokus.",
+          content: "<p class=\"mb-4\">Tombol ikon Clincoo memakai outline:none. Pengguna keyboard tidak tahu tombol mana yang aktif.</p><p class=\"mb-4\">Ganti outline:none dengan :focus-visible di editor.clincoo.buzz. Pakai ring 2px yang kontras.</p><p class=\"mb-4\">Jangan andalkan hover saja. Sentuh dan keyboard tidak punya hover yang sama.</p><p class=\"mb-4\">Minta AI hanya menambah :focus-visible. Tempel CSS tombol yang menghapus outline.</p><p class=\"mb-4\">Clincoo tidak menambah ring fokus sendiri. Petunjuk fokus jelas membantu navigasi di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Do Not Drop Focus Outline on SVG Icon Buttons",
+          desc: "outline:none with no replacement leaves keyboard users without a focus cue.",
+          content: "<p class=\"mb-4\">Clincoo icon buttons use outline:none. Keyboard users cannot tell which button is active.</p><p class=\"mb-4\">Replace outline:none with :focus-visible in editor.clincoo.buzz. Use a 2px high-contrast ring.</p><p class=\"mb-4\">Do not rely on hover alone. Touch and keyboard do not share the same hover.</p><p class=\"mb-4\">Ask AI to add :focus-visible only. Paste the button CSS that removes outline.</p><p class=\"mb-4\">Clincoo does not add a focus ring for you. A clear cue helps navigation on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "svg-symbol-sprite-satu-berkas",
+      langs: {
+        "id": {
+          title: "Pakai symbol dan use untuk Sprite SVG di Clincoo",
+          desc: "Menyalin path yang sama ke banyak tombol membesarkan HTML dan sulit diubah.",
+          content: "<p class=\"mb-4\">Setiap tombol Clincoo menyalin markup SVG penuh. Mengganti satu path berarti menyentuh sepuluh tempat.</p><p class=\"mb-4\">Simpan ikon sekali sebagai symbol di sprite, lalu rujuk dengan use href di editor.clincoo.buzz.</p><p class=\"mb-4\">Beri id unik per symbol. Jangan bentrok dengan id CSS lain di halaman.</p><p class=\"mb-4\">Minta AI mengubah salinan berulang jadi satu sprite plus use. Tempel tiga tombol yang sama.</p><p class=\"mb-4\">Clincoo merender use seperti SVG biasa. Sprite menjaga HTML ringkas di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use symbol and use for an SVG Sprite in Clincoo",
+          desc: "Copying the same path into many buttons bloats HTML and is hard to change.",
+          content: "<p class=\"mb-4\">Each Clincoo button copies full SVG markup. Changing one path means touching ten places.</p><p class=\"mb-4\">Store the icon once as a symbol in a sprite, then point to it with use href in editor.clincoo.buzz.</p><p class=\"mb-4\">Give each symbol a unique id. Do not clash with other CSS ids on the page.</p><p class=\"mb-4\">Ask AI to turn repeated copies into one sprite plus use. Paste three identical buttons.</p><p class=\"mb-4\">Clincoo renders use like regular SVG. A sprite keeps HTML lean on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "svg-hindari-filter-berat",
+      langs: {
+        "id": {
+          title: "Hindari Filter SVG Berat pada Ikon Kecil Clincoo",
+          desc: "feGaussianBlur dan drop-shadow kompleks memperlambat scroll di halaman padat.",
+          content: "<p class=\"mb-4\">Ikon Clincoo memakai filter blur dan bayangan berlapis. Di daftar panjang, scroll terasa berat.</p><p class=\"mb-4\">Ganti filter SVG dengan box-shadow CSS sederhana di editor.clincoo.buzz jika efek hanya dekorasi.</p><p class=\"mb-4\">Jika filter wajib, terapkan pada satu elemen besar, bukan setiap ikon 16px.</p><p class=\"mb-4\">Minta AI menghapus filter SVG dan mengganti dengan CSS. Tempel markup yang mengandung filter.</p><p class=\"mb-4\">Clincoo merender filter apa adanya. Ikon tanpa filter berat tetap ringan di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Avoid Heavy SVG Filters on Small Clincoo Icons",
+          desc: "feGaussianBlur and complex drop-shadows slow scroll on dense pages.",
+          content: "<p class=\"mb-4\">Clincoo icons use stacked blur and shadow filters. On a long list, scroll feels heavy.</p><p class=\"mb-4\">Replace SVG filters with a simple CSS box-shadow in editor.clincoo.buzz when the effect is only decoration.</p><p class=\"mb-4\">If a filter is required, apply it to one large element, not every 16px icon.</p><p class=\"mb-4\">Ask AI to drop SVG filters and switch to CSS. Paste the markup that contains the filter.</p><p class=\"mb-4\">Clincoo renders filters as-is. Icons without heavy filters stay light on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "svg-preserveaspectratio-tengah",
+      langs: {
+        "id": {
+          title: "Set preserveAspectRatio agar SVG Tidak gepencet di Clincoo",
+          desc: "Tanpa preserveAspectRatio yang tepat, logo merentang saat wadah berubah rasio.",
+          content: "<p class=\"mb-4\">Logo Clincoo merentang lebar di banner tinggi. viewBox ada, tetapi rasio wadah berbeda.</p><p class=\"mb-4\">Tambah preserveAspectRatio=\"xMidYMid meet\" di editor.clincoo.buzz agar SVG tetap di tengah dan tidak terpotong kasar.</p><p class=\"mb-4\">Pakai slice hanya jika kamu sengaja ingin mengisi wadah dan menerima potongan.</p><p class=\"mb-4\">Minta AI menambah preserveAspectRatio saja. Tempel SVG logo dan CSS wadah.</p><p class=\"mb-4\">Clincoo tidak menebak rasio tampilan. preserveAspectRatio menjaga logo utuh di app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Set preserveAspectRatio so SVG Does Not Stretch in Clincoo",
+          desc: "Without the right preserveAspectRatio, a logo stretches when the box ratio changes.",
+          content: "<p class=\"mb-4\">A Clincoo logo stretches wide in a tall banner. viewBox exists, but the box ratio differs.</p><p class=\"mb-4\">Add preserveAspectRatio=\"xMidYMid meet\" in editor.clincoo.buzz so the SVG stays centered and is not cropped harshly.</p><p class=\"mb-4\">Use slice only when you mean to fill the box and accept cropping.</p><p class=\"mb-4\">Ask AI to add preserveAspectRatio only. Paste the logo SVG and the box CSS.</p><p class=\"mb-4\">Clincoo does not guess display ratio. preserveAspectRatio keeps the logo intact on app.clincoo.buzz.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ]
 };
