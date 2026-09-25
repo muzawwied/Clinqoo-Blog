@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check the Permissions API before Copying to the Clincoo Clipboard — Clincoo Blog</title>
+<meta name="description" content="writeText can be denied with no message. Query clipboard-write first so a Clincoo copy button has a clear fallback.">
+<link rel="canonical" href="https://blog.clincoo.buzz/clipboard/clipboard-permissions-query/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/clipboard/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Clipboard</div><h1>Check the Permissions API before Copying to the Clincoo Clipboard</h1><p class="desc">writeText can be denied with no message. Query clipboard-write first so a Clincoo copy button has a clear fallback.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Copy code button on a Clincoo page sometimes stays silent. Visitors think the script is broken, while clipboard-write is denied or still prompting.</p><p class="mb-4">Call navigator.permissions.query({name:'clipboard-write'}) when the browser supports it. If the state is not granted, show a select-the-text instruction.</p><p class="mb-4">Still wrap navigator.clipboard.writeText in try/catch. A granted permission can fail outside a user gesture.</p><p class="mb-4">Do not ask the AI to disable native Ctrl+C. The fallback should add to system behavior, not replace it.</p><p class="mb-4">Test on HTTPS at app.clincoo.buzz and in local preview. Permission behavior differs between a secure context and file://.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API" target="_blank" rel="noopener">MDN Permissions API<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API" target="_blank" rel="noopener">MDN Clipboard API<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/clipboard/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
