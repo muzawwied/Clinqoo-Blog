@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retry Clincoo Actions with Background Sync when the Network Returns — Clincoo Blog</title>
+<meta name="description" content="Do not discard a form that failed offline. Queue it with Background Sync and retry automatically when online.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-background-sync-saat-online/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Retry Clincoo Actions with Background Sync when the Network Returns">
+<meta property="og:description" content="Do not discard a form that failed offline. Queue it with Background Sync and retry automatically when online.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Retry Clincoo Actions with Background Sync when the Network Returns</h1><p class="desc">Do not discard a form that failed offline. Queue it with Background Sync and retry automatically when online.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A user fills a contact form on a Clincoo site in a cafe with flaky Wi-Fi. The fetch fails, the data vanishes, and they have to type again. That is a common reason people leave the page.</p><p class="mb-4">Save the payload to IndexedDB when fetch fails, then call registration.sync.register with a clear tag such as clincoo-form-queue. The service worker listens for the sync event and drains the queue.</p><p class="mb-4">Check API support: Background Sync is not everywhere. Provide a fallback: a Retry button when the online event fires. Do not rely on sync alone.</p><p class="mb-4">Test in DevTools Application then throttle Offline. Submit the form, restore the network, and confirm the request in the Network tab. Ask Clincoo AI to add the sync handler without changing form markup.</p><p class="mb-4">Clincoo does not queue requests for you. Background Sync in editor.clincoo.buzz keeps user actions safe until app.clincoo.buzz is online again.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API" target="_blank" rel="noopener">MDN Background Synchronization API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/offline-cookbook" target="_blank" rel="noopener">web.dev Offline Cookbook<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
