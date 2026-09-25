@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check HTTP Status before Assuming a Clincoo Fetch Succeeded — Clincoo Blog</title>
+<meta name="description" content="fetch does not throw on 404 or 500. Check response.ok or status before parsing JSON in a Clincoo project.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/error/error-cek-status-http-sebelum-asumsikan-sukses/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Check HTTP Status before Assuming a Clincoo Fetch Succeeded">
+<meta property="og:description" content="fetch does not throw on 404 or 500. Check response.ok or status before parsing JSON in a Clincoo project.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/error/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Error</div><h1>Check HTTP Status before Assuming a Clincoo Fetch Succeeded</h1><p class="desc">fetch does not throw on 404 or 500. Check response.ok or status before parsing JSON in a Clincoo project.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">In the Clincoo editor, many forms and data lists use fetch. The fetch promise only rejects on a network failure. A 404, 401, or 500 still lands in then, so response.json() may parse an HTML error page.</p><p class="mb-4">Keep the Response object first. If !response.ok, show the status and a short message, then return. Do not call json() immediately. This matches Fetch API docs: ok means status 200–299.</p><p class="mb-4">Separate network errors from application errors. Network failures hit catch. HTTP statuses appear after a Response arrives. Visitor copy should differ: try again later versus fix the fields or sign in again.</p><p class="mb-4">Test in Clincoo preview with a wrong URL and with an endpoint that returns 500. Open the Network tab: check status, Content-Type, and body. Do not rely on the console alone.</p><p class="mb-4">A status guard stops one broken endpoint from taking down the page. Only after the status is safe should you parse JSON and fill the DOM. Clincoo does not wrap fetch for you; this check stays in page script.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener">MDN Using Fetch<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/introduction-to-fetch" target="_blank" rel="noopener">web.dev Introduction to fetch<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/error/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
