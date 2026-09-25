@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai clamp untuk Lebar dan Ukuran Hero Clincoo, Bukan px Mati — Clincoo Blog</title>
+<meta name="description" content="Hero 1200px atau font 64px pecah di HP. clamp() menyesuaikan tanpa media query bertingkat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/layout/layout-clamp-lebar-hero-bukan-px-mati/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai clamp untuk Lebar dan Ukuran Hero Clincoo, Bukan px Mati">
+<meta property="og:description" content="Hero 1200px atau font 64px pecah di HP. clamp() menyesuaikan tanpa media query bertingkat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/layout//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Layout</div><h1>Pakai clamp untuk Lebar dan Ukuran Hero Clincoo, Bukan px Mati</h1><p class="desc">Hero 1200px atau font 64px pecah di HP. clamp() menyesuaikan tanpa media query bertingkat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Hero situs Clincoo sering ditulis dengan lebar dan ukuran font tetap karena terlihat pas di laptop editor. Di ponsel, 64px memaksa judul turun tiga baris dan tombol CTA terdorong keluar lipatan. Angka mati memindahkan pekerjaan ke media query yang mudah terlupa.</p><p class="mb-4">Fungsi CSS clamp(min, preferred, max) memberi batas bawah, nilai yang tumbuh dengan viewport, dan batas atas. Contoh: font-size: clamp(1.5rem, 4vw + 1rem, 3rem) menjaga judul terbaca di HP tanpa meraksasa di monitor lebar.</p><p class="mb-4">Terapkan pola yang sama pada padding hero dan max-width konten di dalamnya. Jangan mengunci height hero ke piksel. Biarkan tinggi mengikuti teks, tombol, dan jarak, lalu batasi hanya jika desain benar-benar butuh lantai minimum.</p><p class="mb-4">Uji di tiga lebar: 360px, 768px, dan 1280px. Jika judul, subjudul, dan satu CTA tetap dalam satu pandangan tanpa scroll horizontal, clamp sudah bekerja. Jika masih pecah, turunkan nilai max, bukan menambah breakpoint baru.</p><p class="mb-4">Simpan nilai clamp di variabel CSS agar hero, kartu, dan section memakai tangga yang sama. Konsistensi token lebih mudah diaudit daripada sepuluh angka acak di berkas style.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener">MDN: clamp()<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/min-max-clamp" target="_blank" rel="noopener">web.dev: min max clamp<span class="d">web.dev</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/layout//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
