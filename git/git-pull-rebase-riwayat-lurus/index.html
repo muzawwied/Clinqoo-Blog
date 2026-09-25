@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai pull --rebase agar Riwayat Git Clincoo Tetap Lurus — Clincoo Blog</title>
+<meta name="description" content="Merge commit dari pull biasa mengaburkan urutan kerja. Rebase menempelkan commit lokal di atas cabang remote.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-pull-rebase-riwayat-lurus/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai pull --rebase agar Riwayat Git Clincoo Tetap Lurus">
+<meta property="og:description" content="Merge commit dari pull biasa mengaburkan urutan kerja. Rebase menempelkan commit lokal di atas cabang remote.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/git/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Git</div><h1>Pakai pull --rebase agar Riwayat Git Clincoo Tetap Lurus</h1><p class="desc">Merge commit dari pull biasa mengaburkan urutan kerja. Rebase menempelkan commit lokal di atas cabang remote.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah sehari mengedit template Clincoo, git pull sering menambahkan commit Merge branch yang tidak menjelaskan apa yang berubah.</p><p class="mb-4">Jalankan git pull --rebase pada cabang kerja. Commit lokal digeser ke puncak remote sehingga log tetap satu garis.</p><p class="mb-4">Jika konflik muncul, selesaikan file di editor.clincoo.buzz, lalu git add dan git rebase --continue. Jangan rebase cabang yang sudah di-push bersama tim tanpa kesepakatan.</p><p class="mb-4">Set pull.rebase true di repo proyek pribadi agar kebiasaan konsisten. Tetap baca diff sebelum push.</p><p class="mb-4">Minta AI menjelaskan konflik rebase baris demi baris, bukan menulis ulang seluruh file. Uji situs di pratinjau setelah rebase selesai.</p><p class="mb-4">Riwayat lurus memudahkan git log dan revert satu tugas. Clincoo tidak mengatur strategi pull; pilih rebase secara sadar.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/get-started/using-git/about-git-rebase" target="_blank" rel="noopener">GitHub Docs: About Git rebase<span class="d">docs.github.com</span></a><a href="https://git-scm.com/docs/git-pull" target="_blank" rel="noopener">git-scm git-pull<span class="d">git-scm.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/git/">← Kembali ke git</a>
+</div>
+</body>
+</html>
