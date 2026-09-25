@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record an Interaction in the DevTools Performance Panel before Blaming CSS — Clincoo Blog</title>
+<meta name="description" content="A page that feels heavy is not always the images. A Performance recording shows scripts and layout that eat frames.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/devtools/devtools-performance-rekam-interaksi/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record an Interaction in the DevTools Performance Panel before Blaming CSS">
+<meta property="og:description" content="A page that feels heavy is not always the images. A Performance recording shows scripts and layout that eat frames.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/devtools/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">devtools</div><h1>Record an Interaction in the DevTools Performance Panel before Blaming CSS</h1><p class="desc">A page that feels heavy is not always the images. A Performance recording shows scripts and layout that eat frames.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">When a Clincoo preview stutters on scroll, people shrink images first. Often the culprit is a script that forces layout on every scroll, not JPEG size.</p><p class="mb-4">Open DevTools → Performance. Hit Record, scroll from the hero to the footer, then Stop. Look for long blocks on the Main thread: Evaluate Script, Recalculate Style, and Layout. Function names in the stack point to the file you should trim.</p><p class="mb-4">Do not delete an entire stylesheet because one frame is red. Isolate first: disable one scroll listener in editor.clincoo.buzz, record again, compare duration. A fix that does not change the flame chart only adds debt.</p><p class="mb-4">Paste a recording snippet or function name to AI, not the sentence "the page is slow". Ask for one change per file. Test the preview again before you export to app.clincoo.buzz.</p><p class="mb-4">The Performance panel is evidence, not opinion. One five-second recording saves a night of guessing selectors.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.chrome.com/docs/devtools/performance" target="_blank" rel="noopener">Chrome DevTools: Performance panel<span class="d">developer.chrome.com</span></a><a href="https://web.dev/articles/evaluate-javascript" target="_blank" rel="noopener">web.dev: Evaluate JavaScript<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/devtools/">← Back to devtools</a>
+</div>
+</body>
+</html>
