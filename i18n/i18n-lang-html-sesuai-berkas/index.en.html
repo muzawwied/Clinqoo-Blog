@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match the HTML lang Attribute to the index or index.en File — Clincoo Blog</title>
+<meta name="description" content="The Indonesian file uses lang=id. The English file uses lang=en. Do not copy one value into both files.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/i18n/i18n-lang-html-sesuai-berkas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Match the HTML lang Attribute to the index or index.en File">
+<meta property="og:description" content="The Indonesian file uses lang=id. The English file uses lang=en. Do not copy one value into both files.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/i18n//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">i18n</div><h1>Match the HTML lang Attribute to the index or index.en File</h1><p class="desc">The Indonesian file uses lang=id. The English file uses lang=en. Do not copy one value into both files.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Bilingual pages in a Clincoo project usually live as a pair of index.html and index.en.html files. Search engines and screen readers read the lang attribute on the html element, not the folder name. If both files still say lang="id", assistive technology treats the English version as Indonesian.</p><p class="mb-4">Check the first line after the DOCTYPE. The Indonesian file must use lang="id". The English file must use lang="en". Do not rely on the language switcher alone: it only guides people to another URL, while crawlers open each file on its own.</p><p class="mb-4">The lang attribute also affects hyphenation, quotation marks, and pronunciation. This small mistake often survives a visual preview because the design does not change. Open both URLs, view source, and confirm the lang values differ.</p><p class="mb-4">If you add a third locale later, repeat the same pattern: one file, one honest BCP 47 language code. Do not stack several lang values on one document unless a short quotation uses lang on an inline element.</p><p class="mb-4">After changing lang, test the switcher, hreflang, and the tab title. Consistency among the file, metadata, and cross-language links matters more than adding flags in the header.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener">MDN: lang<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/International/questions/qa-html-language-declarations" target="_blank" rel="noopener">W3C: Language declarations<span class="d">www.w3.org</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/i18n//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
