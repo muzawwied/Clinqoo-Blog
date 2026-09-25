@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesan Sukses Clincoo Boleh Hilang Sendiri, Error Jangan — Clincoo Blog</title>
+<meta name="description" content="Toast sukses singkat boleh menghilang. Pesan error harus tetap sampai pengguna menutupnya.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/notifikasi/notifikasi-sukses-boleh-auto-hilang/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pesan Sukses Clincoo Boleh Hilang Sendiri, Error Jangan">
+<meta property="og:description" content="Toast sukses singkat boleh menghilang. Pesan error harus tetap sampai pengguna menutupnya.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/notifikasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Notifikasi</div><h1>Pesan Sukses Clincoo Boleh Hilang Sendiri, Error Jangan</h1><p class="desc">Toast sukses singkat boleh menghilang. Pesan error harus tetap sampai pengguna menutupnya.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di proyek Clincoo, banyak template memakai satu timer untuk semua toast. Akibatnya pesan gagal kirim form ikut lenyap dalam tiga detik, sama seperti “Tersimpan”.</p><p class="mb-4">Pisahkan dua jenis umpan balik di editor.clincoo.buzz. Status sukses memakai aria-live polite dan boleh hilang setelah pengguna sempat membacanya. Error memakai tombol tutup eksplisit.</p><p class="mb-4">Jangan andalkan durasi tetap. Pembaca layar dan pengguna yang memperbesar teks butuh waktu lebih lama. Jika timer dipakai, berikan cara menghentikannya saat kursor atau fokus ada di pesan.</p><p class="mb-4">Minta AI hanya menambah cabang if sukses versus error. Tempel handler submit yang sekarang. Jangan biarkan model menulis ulang seluruh form.</p><p class="mb-4">Uji di pratinjau: kirim form valid, pastikan toast sukses tidak menutupi CTA. Kirim form kosong, pastikan error tetap terlihat sampai ditutup.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" target="_blank" rel="noopener">MDN ARIA Live Regions<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/alert/" target="_blank" rel="noopener">WAI-ARIA APG Alert<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/notifikasi/">← Kembali ke notifikasi</a>
+</div>
+</body>
+</html>
