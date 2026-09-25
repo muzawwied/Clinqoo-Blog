@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset lastIndex after a Global Regex in Clincoo — Clincoo Blog</title>
+<meta name="description" content="A g flag makes test() skip ahead. Set lastIndex to 0 before the next string.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-reset-lastindex-flag-g/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reset lastIndex after a Global Regex in Clincoo">
+<meta property="og:description" content="A g flag makes test() skip ahead. Set lastIndex to 0 before the next string.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Regex</div><h1>Reset lastIndex after a Global Regex in Clincoo</h1><p class="desc">A g flag makes test() skip ahead. Set lastIndex to 0 before the next string.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo check passes once, then fails on the same input. lastIndex lingered because of the g flag.</p><p class="mb-4">In editor.clincoo.buzz, after test() or exec() with /g, set pattern.lastIndex = 0 before a new string.</p><p class="mb-4">Safer: make a new RegExp per check, or use String.prototype.match instead of reusing one object.</p><p class="mb-4">Ask AI to mark every test() that uses a global pattern. Paste the current validator.</p><p class="mb-4">Clincoo does not reset regex for you. A clean lastIndex keeps the form honest on app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Back to regex</a>
+</div>
+</body>
+</html>
