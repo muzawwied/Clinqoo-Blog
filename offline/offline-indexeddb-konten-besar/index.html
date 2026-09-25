@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simpan Konten Besar Clincoo di IndexedDB, Bukan localStorage — Clincoo Blog</title>
+<meta name="description" content="localStorage cepat penuh dan memblokir tab. IndexedDB lebih cocok untuk draf panjang dan antrean offline Clincoo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-indexeddb-konten-besar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simpan Konten Besar Clincoo di IndexedDB, Bukan localStorage">
+<meta property="og:description" content="localStorage cepat penuh dan memblokir tab. IndexedDB lebih cocok untuk draf panjang dan antrean offline Clincoo.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Simpan Konten Besar Clincoo di IndexedDB, Bukan localStorage</h1><p class="desc">localStorage cepat penuh dan memblokir tab. IndexedDB lebih cocok untuk draf panjang dan antrean offline Clincoo.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Artikel yang sudah ada menyarankan localStorage untuk draf. Itu cukup untuk judul pendek. Isi halaman utuh, gambar base64, atau antrean formulir akan menabrak kuota dan membekukan tab.</p><p class="mb-4">Buka database IndexedDB bernama clincoo-offline dengan object store drafts. Simpan objek {id, updatedAt, body}. Operasi asynchronous tidak memblokir UI di editor.clincoo.buzz.</p><p class="mb-4">Tangani kuota: jika request gagal dengan QuotaExceededError, hapus draf terlama atau minta pengguna mengekspor. Jangan diam-diam membuang data terbaru.</p><p class="mb-4">Uji dengan Application > IndexedDB di DevTools. Minta AI Clincoo menulis pembungkus put/get saja, bukan mengganti seluruh alur simpan yang sudah jalan.</p><p class="mb-4">Clincoo tidak menyediakan database klien bawaan. IndexedDB membuat draf di app.clincoo.buzz selamat saat jaringan putus jauh lebih lama daripada sesi localStorage.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" target="_blank" rel="noopener">MDN IndexedDB API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/indexeddb" target="_blank" rel="noopener">web.dev IndexedDB<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>
