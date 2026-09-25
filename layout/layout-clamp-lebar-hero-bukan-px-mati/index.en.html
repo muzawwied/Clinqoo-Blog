@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use clamp for Clincoo Hero Width and Type, Not Dead Pixels — Clincoo Blog</title>
+<meta name="description" content="A 1200px hero or 64px type breaks on phones. clamp() adapts without stacked media queries.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/layout/layout-clamp-lebar-hero-bukan-px-mati/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use clamp for Clincoo Hero Width and Type, Not Dead Pixels">
+<meta property="og:description" content="A 1200px hero or 64px type breaks on phones. clamp() adapts without stacked media queries.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/layout//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Layout</div><h1>Use clamp for Clincoo Hero Width and Type, Not Dead Pixels</h1><p class="desc">A 1200px hero or 64px type breaks on phones. clamp() adapts without stacked media queries.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo heroes are often written with fixed width and font sizes because they look right on the editor laptop. On a phone, 64px forces the title onto three lines and pushes the CTA below the fold. Dead numbers move the work into media queries that are easy to forget.</p><p class="mb-4">The CSS clamp(min, preferred, max) function sets a floor, a viewport-growing value, and a ceiling. Example: font-size: clamp(1.5rem, 4vw + 1rem, 3rem) keeps the title readable on phones without becoming huge on a wide monitor.</p><p class="mb-4">Apply the same pattern to hero padding and the max-width of the content inside it. Do not lock hero height to pixels. Let height follow the text, buttons, and spacing, and only add a minimum when the design truly needs a floor.</p><p class="mb-4">Test three widths: 360px, 768px, and 1280px. If the title, subtitle, and one CTA stay in view without horizontal scroll, clamp is doing its job. If it still breaks, lower the max value instead of adding another breakpoint.</p><p class="mb-4">Store clamp values in CSS variables so the hero, cards, and sections share one scale. Token consistency is easier to audit than ten ad-hoc numbers in the stylesheet.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener">MDN: clamp()<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/min-max-clamp" target="_blank" rel="noopener">web.dev: min max clamp<span class="d">web.dev</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/layout//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
