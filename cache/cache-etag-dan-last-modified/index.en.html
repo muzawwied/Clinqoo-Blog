@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use ETag and Last-Modified, Not Only max-age, on a Clincoo Site — Clincoo Blog</title>
+<meta name="description" content="A long max-age keeps stale HTML. ETag and Last-Modified let the CDN ask for a version without a full download.">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-etag-dan-last-modified/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Use ETag and Last-Modified, Not Only max-age, on a Clincoo Site</h1><p class="desc">A long max-age keeps stale HTML. ETag and Last-Modified let the CDN ask for a version without a full download.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">After a deploy from editor.clincoo.buzz, visitors still see yesterday's home page. The cause is often an aggressive Cache-Control header on HTML documents.</p><p class="mb-4">Set HTML to must-revalidate or a short max-age. Let CSS and fonts use hashed filenames plus immutable.</p><p class="mb-4">ETag or Last-Modified enables conditional requests. If the file did not change, the server answers 304 and saves bandwidth.</p><p class="mb-4">Do not ask the AI to add a site-wide service worker precache just to feel fast. Validate HTTP cache first in the DevTools Network tab.</p><p class="mb-4">Clincoo on app.clincoo.buzz ships static files. The right headers make a new release visible without a hard refresh on every device.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ETag" target="_blank" rel="noopener">MDN ETag<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev HTTP cache<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
