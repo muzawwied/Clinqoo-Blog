@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sediakan Halaman Fallback Offline di Service Worker Situs Clincoo — Clincoo Blog</title>
+<meta name="description" content="Saat navigasi gagal karena jaringan putus, tampilkan halaman fallback yang sudah di-cache, bukan error browser kosong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-halaman-fallback-service-worker/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sediakan Halaman Fallback Offline di Service Worker Situs Clincoo">
+<meta property="og:description" content="Saat navigasi gagal karena jaringan putus, tampilkan halaman fallback yang sudah di-cache, bukan error browser kosong.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Sediakan Halaman Fallback Offline di Service Worker Situs Clincoo</h1><p class="desc">Saat navigasi gagal karena jaringan putus, tampilkan halaman fallback yang sudah di-cache, bukan error browser kosong.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengunjung situs Clincoo yang membuka tautan dalam saat sinyal putus sering melihat halaman error bawaan browser. Itu terasa seperti situs rusak, padahal yang hilang hanya jaringan.</p><p class="mb-4">Buat file offline.html sederhana di workspace editor.clincoo.buzz: judul jelas, satu paragraf penjelasan, dan tautan kembali ke beranda. Cache file itu saat service worker terpasang.</p><p class="mb-4">Di event fetch, jika permintaan adalah navigasi dan fetch jaringan gagal, kembalikan cache offline.html. Jangan pakai fallback ini untuk aset CSS atau gambar agar halaman yang sudah ter-cache tetap utuh.</p><p class="mb-4">Uji di DevTools dengan mode Offline. Buka URL yang belum di-cache: fallback harus muncul. Buka halaman yang sudah di-cache: konten asli harus tetap tampil.</p><p class="mb-4">Minta AI Clincoo menambah handler fetch navigasi saja, bukan menulis ulang seluruh worker. Fallback yang sopan menjaga kepercayaan di app.clincoo.buzz saat kereta masuk terowongan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank" rel="noopener">MDN Service Worker API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/pwa/service-workers" target="_blank" rel="noopener">web.dev Service workers<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>
