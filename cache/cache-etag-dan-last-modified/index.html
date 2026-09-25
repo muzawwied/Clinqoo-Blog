@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai ETag dan Last-Modified, Bukan Hanya max-age, pada Situs Clincoo — Clincoo Blog</title>
+<meta name="description" content="max-age panjang menahan HTML lama. ETag dan Last-Modified membiarkan CDN menanyakan versi tanpa memaksa unduh penuh.">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-etag-dan-last-modified/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Pakai ETag dan Last-Modified, Bukan Hanya max-age, pada Situs Clincoo</h1><p class="desc">max-age panjang menahan HTML lama. ETag dan Last-Modified membiarkan CDN menanyakan versi tanpa memaksa unduh penuh.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah deploy dari editor.clincoo.buzz, pengunjung masih melihat beranda kemarin. Penyebabnya sering header Cache-Control yang terlalu agresif pada dokumen HTML.</p><p class="mb-4">Setel HTML ke must-revalidate atau max-age pendek. Biarkan aset CSS dan font memakai hash di nama file plus immutable.</p><p class="mb-4">ETag atau Last-Modified membuat permintaan bersyarat. Jika file tidak berubah, server menjawab 304 dan hemat bandwidth.</p><p class="mb-4">Jangan minta AI menambahkan service worker precache untuk seluruh situs hanya agar halaman terasa cepat. Validasi cache HTTP dulu di DevTools tab Network.</p><p class="mb-4">Clincoo di app.clincoo.buzz merilis file statis. Header yang tepat membuat rilis baru terlihat tanpa hard refresh di setiap perangkat.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ETag" target="_blank" rel="noopener">MDN ETag<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev HTTP cache<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
