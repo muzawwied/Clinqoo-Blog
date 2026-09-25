@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Regex Capture Groups Only When You Need the Text in Clincoo — Clincoo Blog</title>
+<meta name="description" content="Plain parentheses store text you may never use. Prefer a non-capturing group when you only need to group a pattern.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-grup-tangkap-hanya-jika-perlu/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Regex Capture Groups Only When You Need the Text in Clincoo">
+<meta property="og:description" content="Plain parentheses store text you may never use. Prefer a non-capturing group when you only need to group a pattern.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Regex</div><h1>Use Regex Capture Groups Only When You Need the Text in Clincoo</h1><p class="desc">Plain parentheses store text you may never use. Prefer a non-capturing group when you only need to group a pattern.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form and search patterns in a Clincoo workspace often use parentheses to group alternatives. Every pair of plain parentheses becomes a capture group. Group numbers shift quietly when you insert another pair in the middle.</p><p class="mb-4">If you only need grouping, write (?:...) instead of (...). A non-capturing group never lands in match[1] and will not scramble a replace that uses $1. That matters when AI pastes a new pattern into a small script in editor.clincoo.buzz.</p><p class="mb-4">Keep a capturing group only for text you actually extract: a postal code, a country code, or a slug. Name it with (?&lt;name&gt;...) when the preview JavaScript engine supports it so the replace stays readable.</p><p class="mb-4">Test in the console: run exec() on a valid string and a near-valid string. Compare the result array length. Empty entries you did not expect mean leftover capturing parentheses.</p><p class="mb-4">Clincoo will not tidy the regex for you. A pattern with fewer groups is easier to review before you ship to app.clincoo.buzz, and it survives the next extra alternative you add next week.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences" target="_blank" rel="noopener">MDN Groups and backreferences<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group" target="_blank" rel="noopener">MDN Non-capturing group<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Back to regex</a>
+</div>
+</body>
+</html>

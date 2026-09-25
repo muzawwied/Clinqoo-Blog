@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set width and height on Clincoo Images so the Layout Does Not Jump — Clincoo Blog</title>
+<meta name="description" content="Images without reserved size hurt CLS. Write the intrinsic width and height before you upload to the workspace.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/performa/performa-width-height-gambar-cegah-cls/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set width and height on Clincoo Images so the Layout Does Not Jump">
+<meta property="og:description" content="Images without reserved size hurt CLS. Write the intrinsic width and height before you upload to the workspace.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/performa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Performa</div><h1>Set width and height on Clincoo Images so the Layout Does Not Jump</h1><p class="desc">Images without reserved size hurt CLS. Write the intrinsic width and height before you upload to the workspace.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Hero and product photos on a Clincoo site often arrive after the text. With no reserved space, headings and buttons slide down when the file finishes loading. A visitor about to tap a CTA hits another link instead.</p><p class="mb-4">Set width and height to the file's real pixels. The browser computes the aspect ratio and keeps an empty box. CSS may still use max-width: 100% and height: auto; the ratio from the attributes remains in force.</p><p class="mb-4">Do not rely on a guessed min-height alone. A wrong value still causes a jump. Check the file properties before the asset enters the workspace, then paste the same numbers into markup in editor.clincoo.buzz.</p><p class="mb-4">Decorative images below the fold may lazy-load, but they still need size attributes. Lazy loading without width and height delays the jump; it does not remove it. Prioritize a hero LCP image that already has a reserved box.</p><p class="mb-4">After you ship, open the phone preview and hard-refresh. If text does not shift when the image appears, the attributes are doing their job. A calm page feels faster even when the file weight stays the same.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://web.dev/articles/cls" target="_blank" rel="noopener">web.dev Cumulative Layout Shift<span class="d">web.dev</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#height" target="_blank" rel="noopener">MDN img width and height<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/performa/">← Back to performa</a>
+</div>
+</body>
+</html>

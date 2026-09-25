@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Grup Tangkap Regex Hanya jika Hasilnya Dipakai di Clincoo — Clincoo Blog</title>
+<meta name="description" content="Kurung biasa menyimpan teks yang tidak kamu butuhkan. Pakai grup non-capturing jika hanya ingin mengelompokkan pola.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-grup-tangkap-hanya-jika-perlu/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Grup Tangkap Regex Hanya jika Hasilnya Dipakai di Clincoo">
+<meta property="og:description" content="Kurung biasa menyimpan teks yang tidak kamu butuhkan. Pakai grup non-capturing jika hanya ingin mengelompokkan pola.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Regex</div><h1>Pakai Grup Tangkap Regex Hanya jika Hasilnya Dipakai di Clincoo</h1><p class="desc">Kurung biasa menyimpan teks yang tidak kamu butuhkan. Pakai grup non-capturing jika hanya ingin mengelompokkan pola.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pola form atau pencarian di workspace Clincoo sering memakai kurung untuk mengelompokkan alternatif. Setiap pasangan kurung biasa menjadi grup tangkap. Nomor grup bergeser diam-diam saat kamu menambah kurung di tengah pola.</p><p class="mb-4">Jika kamu hanya butuh pengelompokan, tulis (?:...) bukan (...). Grup non-capturing tidak masuk match[1] dan tidak mengacaukan replace dengan $1. Ini penting saat AI menempel pola baru ke skrip kecil di editor.clincoo.buzz.</p><p class="mb-4">Simpan grup tangkap hanya untuk bagian yang benar-benar diambil: kode pos, kode negara, atau slug. Beri nama dengan (?&lt;nama&gt;...) jika mesin JavaScript di pratinjau mendukungnya, supaya replace tetap terbaca manusia.</p><p class="mb-4">Uji di console: jalankan exec() pada string sah dan string hampir-sah. Bandingkan panjang array hasil. Jika ada entri kosong yang tidak kamu harapkan, kurung berlebih masih menangkap.</p><p class="mb-4">Clincoo tidak merapikan regex untukmu. Pola yang hemat grup lebih mudah di-review sebelum rilis ke app.clincoo.buzz, dan lebih tahan saat kamu menambah satu alternatif baru minggu depan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences" target="_blank" rel="noopener">MDN Groups and backreferences<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group" target="_blank" rel="noopener">MDN Non-capturing group<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Kembali ke regex</a>
+</div>
+</body>
+</html>

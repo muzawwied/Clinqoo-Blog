@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep the Clincoo PWA Manifest id Stable — Clincoo Blog</title>
+<meta name="description" content="Changing the manifest id or start_url makes the browser treat the app as new. Visitors lose the icon they already installed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/pwa/pwa-id-manifest-stabil-jangan-ganti/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keep the Clincoo PWA Manifest id Stable">
+<meta property="og:description" content="Changing the manifest id or start_url makes the browser treat the app as new. Visitors lose the icon they already installed.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pwa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">pwa</div><h1>Keep the Clincoo PWA Manifest id Stable</h1><p class="desc">Changing the manifest id or start_url makes the browser treat the app as new. Visitors lose the icon they already installed.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Once a Clincoo site is installed on the home screen, the browser binds that install to the manifest identity. The id field, or if it is missing the mix of start_url and scope, is that key. Changing the start_url slug for a short rebrand creates a second icon.</p><p class="mb-4">Set an explicit id in manifest.json, for example an absolute path you will not move. Change name and short_name when the brand changes. Icons and theme_color may change; the id should not.</p><p class="mb-4">Keep scope and start_url aligned with the public folder on the Clincoo subdomain. A scope narrower than start_url opens the app outside the cached area. Check the file in editor.clincoo.buzz before you deploy.</p><p class="mb-4">If you must move the path, plan a two-icon period and tell users. Do not trust AI that rewrites the whole manifest on every generate. Review the id field in the diff by hand.</p><p class="mb-4">Test the install in Chrome over HTTPS. Remove the old install only on a test device, not on a client device. A stable identity makes the PWA feel like an app instead of a link that keeps changing names.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/id" target="_blank" rel="noopener">MDN Web App Manifest id<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/add-manifest" target="_blank" rel="noopener">web.dev Add a web app manifest<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pwa/">← Back to pwa</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use One nav Landmark for the Main Menu on a Clincoo Site — Clincoo Blog</title>
+<meta name="description" content="Several unnamed nav elements confuse screen readers. One labeled main menu is enough for most sites.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/navigasi/nav-landmark-nav-satu-menu-utama/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use One nav Landmark for the Main Menu on a Clincoo Site">
+<meta property="og:description" content="Several unnamed nav elements confuse screen readers. One labeled main menu is enough for most sites.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/navigasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Navigasi</div><h1>Use One nav Landmark for the Main Menu on a Clincoo Site</h1><p class="desc">Several unnamed nav elements confuse screen readers. One labeled main menu is enough for most sites.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo templates sometimes wrap the header, footer, and sidebar in &lt;nav&gt; elements. A screen reader then offers three landmarks with the same name. Visitors cannot tell which one is the main menu.</p><p class="mb-4">Keep a single &lt;nav aria-label="Main menu"&gt; in the header. Footer links can stay inside &lt;footer&gt; without a second nav, or use a second nav with a different aria-label such as "Footer links". Never leave two unnamed navs.</p><p class="mb-4">Landmarks help keyboard jumps. A skip link to #main is still needed, but a short landmark list is easier to remember than a row of anonymous navs. Check tab order in the editor.clincoo.buzz preview.</p><p class="mb-4">If AI adds a nav inside a card or a slider, remove that landmark. A list of links in a &lt;ul&gt; is enough. The navigation role belongs only to blocks that actually navigate the site.</p><p class="mb-4">Before you ship a subdomain, open a screen reader or the DevTools accessibility pane. Confirm that only the landmarks you planned appear. Clear HTML structure lasts longer than a CSS class that only changes looks.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank" rel="noopener">MDN nav element<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/navigation.html" target="_blank" rel="noopener">WAI-ARIA APG Navigation landmark<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/navigasi/">← Back to navigasi</a>
+</div>
+</body>
+</html>

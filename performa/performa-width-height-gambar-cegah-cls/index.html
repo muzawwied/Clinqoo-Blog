@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isi width dan height Gambar Clincoo supaya Layout Tidak Loncat — Clincoo Blog</title>
+<meta name="description" content="Gambar tanpa ukuran cadangan merusak CLS. Tulis width dan height intrinsik sebelum unggah ke workspace.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/performa/performa-width-height-gambar-cegah-cls/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Isi width dan height Gambar Clincoo supaya Layout Tidak Loncat">
+<meta property="og:description" content="Gambar tanpa ukuran cadangan merusak CLS. Tulis width dan height intrinsik sebelum unggah ke workspace.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/performa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Performa</div><h1>Isi width dan height Gambar Clincoo supaya Layout Tidak Loncat</h1><p class="desc">Gambar tanpa ukuran cadangan merusak CLS. Tulis width dan height intrinsik sebelum unggah ke workspace.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Hero dan foto produk di situs Clincoo sering muncul setelah teks. Tanpa cadangan ruang, judul dan tombol terdorong ke bawah saat file selesai dimuat. Pengunjung yang hampir menekan CTA malah mengenai tautan lain.</p><p class="mb-4">Tulis atribut width dan height sesuai piksel asli file. Browser menghitung rasio aspek dan menyiapkan kotak kosong. CSS boleh men-set max-width: 100% dan height: auto; rasio dari atribut tetap dipakai.</p><p class="mb-4">Jangan andalkan hanya min-height tebakan. Nilai yang salah tetap membuat loncatan. Cek dimensi di properti file sebelum masuk workspace, lalu tempel angka yang sama ke markup di editor.clincoo.buzz.</p><p class="mb-4">Gambar dekoratif di bawah lipatan boleh lazy-load, tetapi tetap butuh ukuran. Lazy tanpa width/height menunda loncatan, bukan menghapusnya. Utamakan LCP hero yang sudah punya kotak cadangan.</p><p class="mb-4">Setelah rilis, buka pratinjau HP dan hard refresh. Jika teks tidak bergeser saat gambar muncul, atribut sudah bekerja. Halaman yang tenang terasa lebih cepat meski berat file sama.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://web.dev/articles/cls" target="_blank" rel="noopener">web.dev Cumulative Layout Shift<span class="d">web.dev</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#height" target="_blank" rel="noopener">MDN img width and height<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/performa/">← Kembali ke performa</a>
+</div>
+</body>
+</html>

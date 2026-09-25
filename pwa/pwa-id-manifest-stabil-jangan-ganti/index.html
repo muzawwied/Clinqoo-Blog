@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaga id Manifest PWA Clincoo Tetap Stabil — Clincoo Blog</title>
+<meta name="description" content="Mengganti id atau start_url manifest membuat browser menganggap aplikasi baru. Pengunjung kehilangan ikon yang sudah dipasang.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/pwa/pwa-id-manifest-stabil-jangan-ganti/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jaga id Manifest PWA Clincoo Tetap Stabil">
+<meta property="og:description" content="Mengganti id atau start_url manifest membuat browser menganggap aplikasi baru. Pengunjung kehilangan ikon yang sudah dipasang.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pwa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">pwa</div><h1>Jaga id Manifest PWA Clincoo Tetap Stabil</h1><p class="desc">Mengganti id atau start_url manifest membuat browser menganggap aplikasi baru. Pengunjung kehilangan ikon yang sudah dipasang.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah situs Clincoo dipasang ke layar beranda, browser mengikat instalasi ke identitas manifest. Field id, atau jika kosong gabungan start_url dan scope, menjadi kunci itu. Mengganti slug start_url karena rebrand singkat memunculkan ikon kedua.</p><p class="mb-4">Tetapkan id eksplisit di manifest.json, misalnya path absolut yang tidak akan kamu pindah. Ubah name dan short_name sesuka merek baru. Ikon dan theme_color boleh diganti; id jangan.</p><p class="mb-4">Selaraskan scope dan start_url dengan folder publik di subdomain Clincoo. Scope yang lebih sempit dari start_url membuat aplikasi terbuka di luar area cache. Cek file di editor.clincoo.buzz sebelum deploy.</p><p class="mb-4">Jika kamu harus pindah path, rencanakan periode dua ikon dan beri tahu pengguna. Jangan andalkan AI yang menulis ulang seluruh manifest setiap generate. Tinjau diff field id secara manual.</p><p class="mb-4">Uji instal di Chrome pada HTTPS. Hapus instalasi lama hanya di perangkat uji, bukan di perangkat klien. Identitas yang stabil menjaga PWA terasa seperti aplikasi, bukan tautan yang terus berganti nama.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/id" target="_blank" rel="noopener">MDN Web App Manifest id<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/add-manifest" target="_blank" rel="noopener">web.dev Add a web app manifest<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pwa/">← Kembali ke pwa</a>
+</div>
+</body>
+</html>
