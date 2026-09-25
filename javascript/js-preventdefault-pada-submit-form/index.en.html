@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call preventDefault on Clincoo Form Submit before Fetch — Clincoo Blog</title>
+<meta name="description" content="Without preventDefault the browser submits the form and reloads the page before fetch finishes.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-preventdefault-pada-submit-form/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Call preventDefault on Clincoo Form Submit before Fetch">
+<meta property="og:description" content="Without preventDefault the browser submits the form and reloads the page before fetch finishes.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JavaScript</div><h1>Call preventDefault on Clincoo Form Submit before Fetch</h1><p class="desc">Without preventDefault the browser submits the form and reloads the page before fetch finishes.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Contact forms in a Clincoo project are often sent with fetch so a success message can appear without leaving the page. If the submit listener forgets event.preventDefault(), the browser still runs the default action: navigate to the action URL or reload. The fetch response loses the race to that reload.</p><p class="mb-4">Bind the listener on the form element, not only on the button. A type="submit" button can be fired with Enter from any field. A button-only listener misses keyboard submission.</p><p class="mb-4">After preventDefault, disable the send button until fetch finishes so double-clicks do not stack requests. Show status text near the form, not only in the console. If fetch fails, enable the button again and explain what to retry.</p><p class="mb-4">Do not mix action="#" with an inconsistent handler. If JavaScript is turned off, the form still needs a sensible action or at least a message that sending requires script. Progressive enhancement keeps the form from feeling broken.</p><p class="mb-4">Test three paths: click the button, press Enter in an input, and submit with the network cut. All three should stay on the same page and give readable feedback.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank" rel="noopener">MDN: Event.preventDefault<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" target="_blank" rel="noopener">MDN: HTMLFormElement submit event<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/forms" target="_blank" rel="noopener">web.dev: forms<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
