@@ -34,4 +34,9 @@
   <url><loc>https://blog.clincoo.buzz/env/</loc></url>
   <url><loc>https://blog.clincoo.buzz/env/env-jangan-commit-file-dotenv/</loc></url>
   <url><loc>https://blog.clincoo.buzz/env/env-beda-dev-dan-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-jangan-cetak-secret-di-console/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-prefix-public-bukan-rahasia/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-cek-variabel-wajib-saat-boot/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-jangan-simpan-secret-di-localstorage/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-dokumentasikan-contoh-tanpa-nilai/</loc></url>
 </urlset>
