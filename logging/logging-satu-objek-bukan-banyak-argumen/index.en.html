@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log One Context Object, Not Loose Arguments, in Clincoo — Clincoo Blog</title>
+<meta name="description" content="A named object in console.log is easier to filter and export from DevTools.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-satu-objek-bukan-banyak-argumen/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Log One Context Object, Not Loose Arguments, in Clincoo">
+<meta property="og:description" content="A named object in console.log is easier to filter and export from DevTools.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Log One Context Object, Not Loose Arguments, in Clincoo</h1><p class="desc">A named object in console.log is easier to filter and export from DevTools.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo page scripts that call console.log with many loose arguments become noisy when events stack. Fold them into one named object on console.info.</p><p class="mb-4">DevTools can filter by level and preview object properties. MDN recommends info, warn, and error by severity instead of dumping everything into log.</p><p class="mb-4">Never put passwords, tokens, or form values in logs. User data must not leak into a public page console.</p><p class="mb-4">Ask AI to replace a chain of console.log calls with one object-based call in a single file. Test in the editor.clincoo.buzz preview, then strip logs before release.</p><p class="mb-4">A tidy trail speeds up form and navigation fixes on app.clincoo.buzz without polluting visitor consoles.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/console" target="_blank" rel="noopener">MDN: console<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to logging</a>
+</div>
+</body>
+</html>

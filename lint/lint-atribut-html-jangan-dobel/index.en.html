@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Duplicate HTML Attributes before You Deploy a Clincoo Page — Clincoo Blog</title>
+<meta name="description" content="An attribute written twice makes the browser pick an unexpected value. Clean it first.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/lint/lint-atribut-html-jangan-dobel/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stop Duplicate HTML Attributes before You Deploy a Clincoo Page">
+<meta property="og:description" content="An attribute written twice makes the browser pick an unexpected value. Clean it first.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/lint/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Lint</div><h1>Stop Duplicate HTML Attributes before You Deploy a Clincoo Page</h1><p class="desc">An attribute written twice makes the browser pick an unexpected value. Clean it first.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">When you paste an AI snippet into the Clincoo editor, class or id often appears twice on one tag. The HTML parser keeps the last value; preview can look fine while a CSS selector still targets the first.</p><p class="mb-4">Open DevTools, select the element, and read the Elements panel. If you see a doubled class or style, merge the values into one attribute. Never leave two ids on the same element.</p><p class="mb-4">The W3C validator flags duplicate attributes as errors. Run that check on exported HTML before publishing a subdomain. MDN states that id must be unique in the document.</p><p class="mb-4">Ask AI to tidy one file: remove duplicate attributes, merge classes, do not change other markup. Paste the result into preview, then lint links and headings.</p><p class="mb-4">Pages on app.clincoo.buzz are easier to debug when each tag has a single source of truth for class, id, and aria-label.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" target="_blank" rel="noopener">MDN: id attribute<span class="d">developer.mozilla.org</span></a><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Markup Validation Service<span class="d">validator.w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/lint/">← Back to lint</a>
+</div>
+</body>
+</html>
