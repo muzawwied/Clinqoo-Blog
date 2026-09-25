@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Cache Respons POST di Service Worker Clincoo — Clincoo Blog</title>
+<meta name="description" content="Menyimpan jawaban POST membuat data usang dan ganda. Cache hanya GET aset statis.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-jangan-cache-respons-post/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Cache Respons POST di Service Worker Clincoo">
+<meta property="og:description" content="Menyimpan jawaban POST membuat data usang dan ganda. Cache hanya GET aset statis.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Jangan Cache Respons POST di Service Worker Clincoo</h1><p class="desc">Menyimpan jawaban POST membuat data usang dan ganda. Cache hanya GET aset statis.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Service worker Clincoo menyimpan hasil Simpan. Pengguna melihat sukses palsu saat jaringan putus, lalu data dobel saat online.</p><p class="mb-4">Di editor.clincoo.buzz, batasi Cache API pada GET untuk HTML, CSS, dan gambar. Lewatkan POST, PUT, dan DELETE ke jaringan atau antrean.</p><p class="mb-4">Jika harus antre, simpan body permintaan, bukan respons palsu 200.</p><p class="mb-4">Minta AI menandai fetch.method selain GET di listener fetch. Tempel service worker yang ada.</p><p class="mb-4">Clincoo tidak membedakan metode HTTP untukmu. Aturan cache yang ketat menjaga data jujur di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>

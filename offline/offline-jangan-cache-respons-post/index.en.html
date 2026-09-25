@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Cache POST Responses in a Clincoo Service Worker — Clincoo Blog</title>
+<meta name="description" content="Storing POST replies creates stale and duplicate data. Cache GET static assets only.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-jangan-cache-respons-post/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Cache POST Responses in a Clincoo Service Worker">
+<meta property="og:description" content="Storing POST replies creates stale and duplicate data. Cache GET static assets only.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Do Not Cache POST Responses in a Clincoo Service Worker</h1><p class="desc">Storing POST replies creates stale and duplicate data. Cache GET static assets only.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo service worker stores Save results. The user sees a fake success while offline, then duplicate data when back online.</p><p class="mb-4">In editor.clincoo.buzz, limit Cache API to GET for HTML, CSS, and images. Send POST, PUT, and DELETE to the network or a queue.</p><p class="mb-4">If you must queue, store the request body, not a fake 200 response.</p><p class="mb-4">Ask AI to flag fetch.method values other than GET in the fetch listener. Paste the current service worker.</p><p class="mb-4">Clincoo does not split HTTP methods for you. A strict cache rule keeps data honest on app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
