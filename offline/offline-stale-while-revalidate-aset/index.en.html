@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Stale-While-Revalidate so Clincoo Assets Stay Fast when Almost Offline — Clincoo Blog</title>
+<meta name="description" content="Serve cache first, refresh in the background. This strategy keeps Clincoo CSS and images visible on a slow network.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-stale-while-revalidate-aset/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Stale-While-Revalidate so Clincoo Assets Stay Fast when Almost Offline">
+<meta property="og:description" content="Serve cache first, refresh in the background. This strategy keeps Clincoo CSS and images visible on a slow network.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Use Stale-While-Revalidate so Clincoo Assets Stay Fast when Almost Offline</h1><p class="desc">Serve cache first, refresh in the background. This strategy keeps Clincoo CSS and images visible on a slow network.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Waiting on the network before showing CSS makes a Clincoo site look empty. When the signal is about to drop, an existing cache is more useful than a spinner.</p><p class="mb-4">In the service worker, for stylesheet, font, and image requests: if a cache hit exists, return it immediately. In the background, fetch the network and rewrite the cache. That is stale-while-revalidate.</p><p class="mb-4">Do not apply this pattern to HTML pages that change often and have no version. For documents, network-first plus an offline fallback is safer.</p><p class="mb-4">Name caches with a version, for example clincoo-static-v2, so a new worker can delete old caches on activate. Ask Clincoo AI to change only the static-asset fetch branch.</p><p class="mb-4">Clincoo does not pick a cache strategy for you. Stale-while-revalidate in editor.clincoo.buzz keeps app.clincoo.buzz feeling fast even as the network wobbles.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" target="_blank" rel="noopener">MDN Cache API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/offline-cookbook" target="_blank" rel="noopener">web.dev Offline Cookbook<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
