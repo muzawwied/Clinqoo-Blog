@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set Clincoo Image sizes to Match Container Width — Clincoo Blog</title>
+<meta name="description" content="srcset without sizes makes the browser guess display width. Write sizes so hero and cards download the right file.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-sizes-sesuai-lebar-kontainer/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Clincoo Image sizes to Match Container Width">
+<meta property="og:description" content="srcset without sizes makes the browser guess display width. Write sizes so hero and cards download the right file.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/gambar/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Gambar</div><h1>Set Clincoo Image sizes to Match Container Width</h1><p class="desc">srcset without sizes makes the browser guess display width. Write sizes so hero and cards download the right file.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo hero with three files in srcset still downloads the largest one when sizes is empty. Phones pay for unused bandwidth.</p><p class="mb-4">Write sizes to match layout: 100vw for a full-bleed hero, (min-width: 48rem) 33vw for three-column cards. That number tells the browser the slot width before layout finishes.</p><p class="mb-4">Align srcset filenames with real widths, such as 800w and 1600w. Do not claim 2400w for a 900px photo.</p><p class="mb-4">Test in editor.clincoo.buzz with network throttle. In the Network tab, confirm a narrow device picks the smaller source.</p><p class="mb-4">Ask AI only to add sizes and tidy srcset, not to rewrite the whole image markup. Preview LCP after the change.</p><p class="mb-4">Clincoo does not compute sizes for you. An attribute that matches the container cuts downloads without softening sharpness.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#sizes" target="_blank" rel="noopener">MDN img sizes<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/design/responsive-images/" target="_blank" rel="noopener">web.dev Responsive images<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/gambar/">← Back to gambar</a>
+</div>
+</body>
+</html>
