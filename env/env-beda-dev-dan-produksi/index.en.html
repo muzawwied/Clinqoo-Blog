@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Clincoo Dev and Production Environment Variables — Clincoo Blog</title>
+<meta name="description" content="A local API URL must not ship to production. One file per environment, not an if in code.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-beda-dev-dan-produksi/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Split Clincoo Dev and Production Environment Variables">
+<meta property="og:description" content="A local API URL must not ship to production. One file per environment, not an if in code.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Split Clincoo Dev and Production Environment Variables</h1><p class="desc">A local API URL must not ship to production. One file per environment, not an if in code.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo preview calls localhost because a dev value stayed in the production bundle.</p><p class="mb-4">In editor.clincoo.buzz, use .env.development and .env.production. Do not hardcode the host in a script.</p><p class="mb-4">Check embedded values before deploy. Log the host in a local build, then remove the log before release.</p><p class="mb-4">Ask AI to turn one host constant into an environment variable. Paste the config file.</p><p class="mb-4">Clincoo has app.clincoo.buzz and editor.clincoo.buzz. Separate environments keep traffic on the right host.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Back to env</a>
+</div>
+</body>
+</html>
