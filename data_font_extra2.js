@@ -105,6 +105,27 @@
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "font-ukuran-rem-bukan-px-ketat",
+      langs: {
+        "id": {
+          title: "Pakai rem untuk Ukuran Font Clincoo, Bukan Hanya Pixel Ketat",
+          desc: "Pixel tetap tidak mengikuti zoom teks pengunjung dan merusak hierarki saat root berubah.",
+          content: "<p class=\"mb-4\">Banyak template Clincoo menulis font-size: 18px pada judul dan 14px pada label. Saat pengunjung memperbesar teks di browser, hierarki tidak ikut naik merata.</p><p class=\"mb-4\">Di editor.clincoo.buzz, set html atau body ke 100% lalu pakai rem pada h1 sampai small. 1.25rem lebih mudah diskalakan daripada 20px tersebar.</p><p class=\"mb-4\">Jangan mencampur rem dan px pada satu blok judul. Pilih satu skala agar AI tidak menimpa nilai acak.</p><p class=\"mb-4\">Minta AI mengubah font-size judul dan paragraf ke rem. Tempel CSS tipografi, tolak ganti keluarga font.</p><p class=\"mb-4\">Clincoo tidak mengonversi satuan sendiri. rem membuat app.clincoo.buzz tetap terbaca saat zoom.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use rem for Clincoo Font Sizes, Not Only Rigid Pixels",
+          desc: "Fixed pixels ignore visitor text zoom and break hierarchy when the root size changes.",
+          content: "<p class=\"mb-4\">Many Clincoo templates set headings to 18px and labels to 14px. When a visitor zooms text in the browser, the hierarchy does not scale evenly.</p><p class=\"mb-4\">In editor.clincoo.buzz, set html or body to 100% and use rem on h1 through small. 1.25rem is easier to scale than scattered 20px values.</p><p class=\"mb-4\">Do not mix rem and px in one heading block. Pick one scale so AI does not overwrite random values.</p><p class=\"mb-4\">Ask AI to convert heading and paragraph font-size to rem. Paste the type CSS and reject a family change.</p><p class=\"mb-4\">Clincoo does not convert units on its own. rem keeps app.clincoo.buzz readable under zoom.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ];
   function merge(){
