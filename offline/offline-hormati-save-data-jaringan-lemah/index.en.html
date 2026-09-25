@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respect Save-Data and Weak Networks on a Clincoo Site — Clincoo Blog</title>
+<meta name="description" content="Before a full offline drop, many Clincoo users sit on 2G. Detect saveData and effectiveType, then defer heavy assets.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-hormati-save-data-jaringan-lemah/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Respect Save-Data and Weak Networks on a Clincoo Site">
+<meta property="og:description" content="Before a full offline drop, many Clincoo users sit on 2G. Detect saveData and effectiveType, then defer heavy assets.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Respect Save-Data and Weak Networks on a Clincoo Site</h1><p class="desc">Before a full offline drop, many Clincoo users sit on 2G. Detect saveData and effectiveType, then defer heavy assets.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Offline mode often starts as a network that is only almost dead. Hero video and large galleries on a Clincoo site hang the tab before an offline banner can appear.</p><p class="mb-4">Read navigator.connection when it exists. If saveData is true or effectiveType is slow-2g or 2g, skip video autoplay and do not prefetch below-the-fold images.</p><p class="mb-4">This API is not standard in every browser. Wrap it in a feature check. Do not assume connection always exists in editor.clincoo.buzz.</p><p class="mb-4">Test with DevTools Network throttling. Ask AI to add one small helper that marks the body with a save-data class, then CSS disables the video background.</p><p class="mb-4">Clincoo does not adapt payloads by network. Respecting Save-Data keeps a site on app.clincoo.buzz readable before it goes fully offline.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API" target="_blank" rel="noopener">MDN Network Information API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-lcp-data-save-mode" target="_blank" rel="noopener">web.dev Optimize for data saver mode<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
