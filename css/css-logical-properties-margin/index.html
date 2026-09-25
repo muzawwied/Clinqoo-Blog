@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Margin Logis CSS, Bukan Hanya kiri-kanan, di Clincoo — Clincoo Blog</title>
+<meta name="description" content="margin-left pecah saat halaman berbahasa RTL. margin-inline-start mengikuti arah teks.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/css/css-logical-properties-margin/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Margin Logis CSS, Bukan Hanya kiri-kanan, di Clincoo">
+<meta property="og:description" content="margin-left pecah saat halaman berbahasa RTL. margin-inline-start mengikuti arah teks.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/css/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">CSS</div><h1>Pakai Margin Logis CSS, Bukan Hanya kiri-kanan, di Clincoo</h1><p class="desc">margin-left pecah saat halaman berbahasa RTL. margin-inline-start mengikuti arah teks.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak template Clincoo menulis margin-left: 1rem pada ikon di samping judul. Itu benar untuk Indonesia, tetapi terbalik jika suatu halaman memakai dir="rtl" atau atribut lang yang memicu arah sebaliknya.</p><p class="mb-4">Ganti pasangan kiri-kanan dengan margin-inline-start dan margin-inline-end. Untuk atas-bawah yang mengikuti alur blok, pakai margin-block-start. Properti logis mengikuti writing-mode, bukan koordinat layar.</p><p class="mb-4">Di editor.clincoo.buzz, uji dengan menambahkan dir="rtl" sementara pada <html> lalu buka pratinjau. Ikon, badge, dan padding kartu harus tetap menempel di sisi "awal" teks, bukan tertukar ke tepi fisik kiri.</p><p class="mb-4">Minta AI hanya mengganti properti fisik yang sudah ada, jangan menulis ulang seluruh stylesheet. Tempel satu komponen navigasi sebagai contoh agar perubahan terukur.</p><p class="mb-4">Logical properties membuat i18n lebih murah nanti. Halaman yang sudah rapi di app.clincoo.buzz tidak perlu patch kiri-kanan saat kamu menambah versi bahasa.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values" target="_blank" rel="noopener">MDN: CSS logical properties<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/css/logical-properties/" target="_blank" rel="noopener">web.dev: Logical properties<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/css/">← Kembali ke css</a>
+</div>
+</body>
+</html>
