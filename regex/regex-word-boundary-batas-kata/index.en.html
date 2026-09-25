@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Use Word Boundaries so Clincoo Regex Does Not Swallow Neighbor Words — Clincoo Blog</title>
-<meta name="description" content="A word boundary keeps replacements from damaging look-alike words.">
+<title>Use Word Boundaries so a Clincoo Regex Does Not Swallow Neighbor Words — Clincoo Blog</title>
+<meta name="description" content="Word boundaries keep a replace from damaging words that only look similar.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-word-boundary-batas-kata/index.en.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Use Word Boundaries so Clincoo Regex Does Not Swallow Neighbor Words">
-<meta property="og:description" content="A word boundary keeps replacements from damaging look-alike words.">
+<meta property="og:title" content="Use Word Boundaries so a Clincoo Regex Does Not Swallow Neighbor Words">
+<meta property="og:description" content="Word boundaries keep a replace from damaging words that only look similar.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">Regex</div><h1>Use Word Boundaries so Clincoo Regex Does Not Swallow Neighbor Words</h1><p class="desc">A word boundary keeps replacements from damaging look-alike words.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Find-and-replace scripts in Clincoo often start from a raw string. Without a word boundary, replacing 'id' also rewrites 'valid' or 'grid' in CSS class names.</p><p class="mb-4">In editor.clincoo.buzz, test a word-boundary pattern in the console before pasting it into a pattern attribute or new RegExp. Compare results on dummy text that includes whole words and fragments.</p><p class="mb-4">MDN describes the word boundary as the position between a word character and a non-word character. That is enough for class names, ids, and button labels. Skip complex lookaheads when the job is a safe replace.</p><p class="mb-4">Ask AI to add a word boundary to one pattern only. Paste the current snippet, name the test strings that must stay intact, then check preview.</p><p class="mb-4">Clincoo does not run your regex on the public server. A bad pattern only breaks your page. Test first, then save it in the app.clincoo.buzz workspace.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank" rel="noopener">MDN: Regular expressions<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion" target="_blank" rel="noopener">MDN: Word boundary<span class="d">developer.mozilla.org</span></a></div>
+  <div class="crumb">Regex</div><h1>Use Word Boundaries so a Clincoo Regex Does Not Swallow Neighbor Words</h1><p class="desc">Word boundaries keep a replace from damaging words that only look similar.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo replace changes "form" inside "format" and "information". The copy falls apart.</p><p class="mb-4">In editor.clincoo.buzz, wrap the token with \\b on both sides. A word boundary rejects letters that stick to it.</p><p class="mb-4">Test "form", "format", and "perform" in the console. Only the whole word should match.</p><p class="mb-4">Ask AI to add \\b on one replace that touches page text. Paste the old pattern.</p><p class="mb-4">Clincoo renders user copy. A boundary keeps neighbor words intact on app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/regex/">← Back to regex</a>
 </div>
 </body>
