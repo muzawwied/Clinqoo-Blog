@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Stale-While-Revalidate agar Aset Clincoo Cepat saat Hampir Offline — Clincoo Blog</title>
+<meta name="description" content="Tampilkan cache dulu, perbarui di belakang. Strategi ini menjaga CSS dan gambar Clincoo tetap tampil saat jaringan lambat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-stale-while-revalidate-aset/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Stale-While-Revalidate agar Aset Clincoo Cepat saat Hampir Offline">
+<meta property="og:description" content="Tampilkan cache dulu, perbarui di belakang. Strategi ini menjaga CSS dan gambar Clincoo tetap tampil saat jaringan lambat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Pakai Stale-While-Revalidate agar Aset Clincoo Cepat saat Hampir Offline</h1><p class="desc">Tampilkan cache dulu, perbarui di belakang. Strategi ini menjaga CSS dan gambar Clincoo tetap tampil saat jaringan lambat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Menunggu jaringan sebelum menampilkan CSS membuat situs Clincoo terlihat kosong. Saat sinyal hampir putus, cache yang sudah ada lebih berguna daripada spinner.</p><p class="mb-4">Di service worker, untuk request stylesheet, font, dan gambar: jika cache ada, kembalikan segera. Di belakang, fetch jaringan dan tulis ulang cache. Itu pola stale-while-revalidate.</p><p class="mb-4">Jangan terapkan pola ini pada HTML halaman yang sering berubah tanpa versi. Untuk dokumen, network-first plus fallback offline lebih aman.</p><p class="mb-4">Beri nama cache dengan versi, misalnya clincoo-static-v2, agar aktivasi worker baru bisa menghapus cache lama. Minta AI Clincoo hanya mengubah cabang fetch aset statis.</p><p class="mb-4">Clincoo tidak memilih strategi cache untukmu. Stale-while-revalidate di editor.clincoo.buzz membuat app.clincoo.buzz terasa cepat meski jaringan mulai goyah.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" target="_blank" rel="noopener">MDN Cache API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/offline-cookbook" target="_blank" rel="noopener">web.dev Offline Cookbook<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>
