@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store a Checksum for Clincoo ZIP Backups so Files Do Not Silently Rot — Clincoo Blog</title>
+<meta name="description" content="A ZIP that finished downloading is not always intact. Record a checksum so a Clincoo backup can be verified before restore.">
+<link rel="canonical" href="https://blog.clincoo.buzz/backup/backup-simpan-checksum-zip/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/backup/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">💾 Backup</div><h1>Store a Checksum for Clincoo ZIP Backups so Files Do Not Silently Rot</h1><p class="desc">A ZIP that finished downloading is not always intact. Record a checksum so a Clincoo backup can be verified before restore.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">After an export from app.clincoo.buzz, the ZIP often lands in Downloads. In an emergency that archive may already be truncated or overwritten with no error message.</p><p class="mb-4">Compute a SHA-256 hash as soon as the download finishes. Keep the value in a sibling text file, for example proyek-2026-09-25.zip.sha256. Do not rely on file size alone.</p><p class="mb-4">Before you restore a workspace, recompute the hash and compare. If they differ, download again from a remaining source or use the second copy in the cloud.</p><p class="mb-4">Ask the AI only for verification steps, not to name or overwrite the ZIP. Backup decisions stay yours.</p><p class="mb-4">Clincoo does not keep file-integrity history. A checksum is simple proof that the archive you open is the one you stored.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest" target="_blank" rel="noopener">MDN SubtleCrypto.digest<span class="d">developer.mozilla.org</span></a><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/checking-for-compromised-passwords" target="_blank" rel="noopener">GitHub Docs account security<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/backup/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
