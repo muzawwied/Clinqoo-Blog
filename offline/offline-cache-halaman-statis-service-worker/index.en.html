@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cache Static Clincoo Pages so They Still Open Offline — Clincoo Blog</title>
+<meta name="description" content="A service worker that caches HTML, CSS, and core assets keeps a Clincoo site readable when the network drops.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-cache-halaman-statis-service-worker/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cache Static Clincoo Pages so They Still Open Offline">
+<meta property="og:description" content="A service worker that caches HTML, CSS, and core assets keeps a Clincoo site readable when the network drops.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Cache Static Clincoo Pages so They Still Open Offline</h1><p class="desc">A service worker that caches HTML, CSS, and core assets keeps a Clincoo site readable when the network drops.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo site that only talks to the network goes blank when a train enters a tunnel. Visitors think the page is broken even though the files already downloaded once.</p><p class="mb-4">Register a service worker from editor.clincoo.buzz with cache-first for index.html, the stylesheet, and the logo. Do not cache APIs or form POST requests.</p><p class="mb-4">Version the cache name. When CSS changes, open a new cache and delete the old one in activate so visitors do not see stale styles.</p><p class="mb-4">Test in DevTools: set Offline, reload, and confirm the home page and CSS still appear. If only HTML is stored, the layout will break.</p><p class="mb-4">Ask AI to write a narrow worker: precache a file list, fetch with a cache fallback, and leave payment scripts alone. Preview first on app.clincoo.buzz.</p><p class="mb-4">Clincoo does not install a service worker for you. A deliberate static cache keeps pages useful offline without storing sensitive data.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank" rel="noopener">MDN Service Worker API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/pwa/service-workers/" target="_blank" rel="noopener">web.dev Service workers<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
