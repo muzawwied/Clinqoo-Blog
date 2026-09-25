@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirim Ulang Aksi Clincoo dengan Background Sync saat Jaringan Kembali — Clincoo Blog</title>
+<meta name="description" content="Jangan buang formulir yang gagal saat offline. Antrikan dengan Background Sync lalu kirim ulang otomatis saat online.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-background-sync-saat-online/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kirim Ulang Aksi Clincoo dengan Background Sync saat Jaringan Kembali">
+<meta property="og:description" content="Jangan buang formulir yang gagal saat offline. Antrikan dengan Background Sync lalu kirim ulang otomatis saat online.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Kirim Ulang Aksi Clincoo dengan Background Sync saat Jaringan Kembali</h1><p class="desc">Jangan buang formulir yang gagal saat offline. Antrikan dengan Background Sync lalu kirim ulang otomatis saat online.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengguna mengisi formulir kontak di situs Clincoo di kafe yang Wi-Fi-nya putus-nyambung. Fetch gagal, data hilang, mereka harus mengetik ulang. Itu alasan paling umum orang meninggalkan halaman.</p><p class="mb-4">Simpan payload ke IndexedDB saat fetch gagal, lalu panggil registration.sync.register dengan tag jelas seperti clincoo-form-queue. Service worker mendengarkan event sync dan mengirim antrean.</p><p class="mb-4">Periksa dukungan API: Background Sync tidak ada di semua browser. Sediakan cadangan: tombol Kirim ulang saat event online muncul. Jangan andalkan sync saja tanpa fallback.</p><p class="mb-4">Uji dengan DevTools Application lalu throttle Offline. Kirim formulir, hidupkan jaringan, pastikan request muncul di tab Network. Minta AI Clincoo menambah handler sync tanpa mengubah markup formulir.</p><p class="mb-4">Clincoo tidak mengantrikan request secara bawaan. Background Sync di editor.clincoo.buzz membuat aksi pengguna selamat sampai app.clincoo.buzz kembali online.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API" target="_blank" rel="noopener">MDN Background Synchronization API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/offline-cookbook" target="_blank" rel="noopener">web.dev Offline Cookbook<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>
