@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set the Secure Attribute on Clincoo Cookies that Only Work over HTTPS — Clincoo Blog</title>
+<meta name="description" content="A cookie without Secure can leak on HTTP. Add Secure, HttpOnly when possible, and a context-aware SameSite value.">
+<link rel="canonical" href="https://blog.clincoo.buzz/cookie/cookie-atribut-secure-https/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cookie/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cookie</div><h1>Set the Secure Attribute on Clincoo Cookies that Only Work over HTTPS</h1><p class="desc">A cookie without Secure can leak on HTTP. Add Secure, HttpOnly when possible, and a context-aware SameSite value.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo site already on HTTPS sometimes still writes preferences through document.cookie with no Secure flag. On a public network that value can ride along with an unencrypted request.</p><p class="mb-4">For non-secret preferences such as theme, consider localStorage. If you keep a cookie, add Secure and SameSite=Lax.</p><p class="mb-4">Do not fake HttpOnly from JavaScript. That flag is only effective from a Set-Cookie header. Auth session cookies must not be written on the client.</p><p class="mb-4">Check the Application tab in DevTools after deploy. Confirm domain, path, and expiry match the pages that actually need the cookie.</p><p class="mb-4">Clincoo on app.clincoo.buzz uses HTTPS. Match cookie attributes to that secure context so the consent banner and analytics do not collide.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/samesite-cookies-explained" target="_blank" rel="noopener">web.dev SameSite cookies<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cookie/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
