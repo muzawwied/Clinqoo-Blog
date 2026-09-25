@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setel Atribut Secure pada Cookie Clincoo yang Hanya Jalan di HTTPS — Clincoo Blog</title>
+<meta name="description" content="Cookie tanpa Secure bisa bocor di HTTP. Pasang Secure, HttpOnly jika memungkinkan, dan SameSite yang sadar konteks.">
+<link rel="canonical" href="https://blog.clincoo.buzz/cookie/cookie-atribut-secure-https/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cookie/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cookie</div><h1>Setel Atribut Secure pada Cookie Clincoo yang Hanya Jalan di HTTPS</h1><p class="desc">Cookie tanpa Secure bisa bocor di HTTP. Pasang Secure, HttpOnly jika memungkinkan, dan SameSite yang sadar konteks.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Situs Clincoo yang sudah di domain HTTPS kadang masih menulis preferensi lewat document.cookie tanpa flag Secure. Di jaringan publik nilai itu bisa ikut permintaan tidak terenkripsi.</p><p class="mb-4">Untuk preferensi non-rahasia seperti tema, pertimbangkan localStorage. Jika tetap cookie, tambahkan Secure dan SameSite=Lax.</p><p class="mb-4">Jangan meniru HttpOnly dari JavaScript. Flag itu hanya efektif dari header Set-Cookie server. Cookie sesi otentikasi tidak boleh ditulis di klien.</p><p class="mb-4">Cek tab Application di DevTools setelah deploy. Pastikan domain, path, dan kedaluwarsa sesuai halaman yang benar-benar memerlukannya.</p><p class="mb-4">Clincoo di app.clincoo.buzz memakai HTTPS. Samakan atribut cookie dengan konteks aman itu agar banner izin dan analitik tidak saling bertabrakan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/samesite-cookies-explained" target="_blank" rel="noopener">web.dev SameSite cookies<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cookie/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
