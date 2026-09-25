@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai preventDefault pada Submit Form Clincoo sebelum Fetch — Clincoo Blog</title>
+<meta name="description" content="Tanpa preventDefault, browser mengirim form dan me-reload halaman sebelum fetch selesai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/javascript/js-preventdefault-pada-submit-form/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai preventDefault pada Submit Form Clincoo sebelum Fetch">
+<meta property="og:description" content="Tanpa preventDefault, browser mengirim form dan me-reload halaman sebelum fetch selesai.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/javascript//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JavaScript</div><h1>Pakai preventDefault pada Submit Form Clincoo sebelum Fetch</h1><p class="desc">Tanpa preventDefault, browser mengirim form dan me-reload halaman sebelum fetch selesai.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form kontak di proyek Clincoo sering dikirim lewat fetch agar pesan sukses tampil tanpa pindah halaman. Jika listener submit lupa event.preventDefault(), browser tetap menjalankan aksi bawaan: navigasi ke action atau reload. Respons fetch kalah cepat dari reload itu.</p><p class="mb-4">Ikat listener pada elemen form, bukan hanya pada tombol. Tombol type="submit" bisa diketik Enter dari field mana pun. Listener di tombol saja melewatkan pengiriman lewat keyboard.</p><p class="mb-4">Setelah preventDefault, nonaktifkan tombol kirim sampai fetch selesai agar ganda-klik tidak menumpuk permintaan. Tampilkan teks status di dekat form, bukan hanya di console. Jika fetch gagal, aktifkan lagi tombol dan jelaskan apa yang harus diulang.</p><p class="mb-4">Jangan campur action="#" dengan handler yang tidak konsisten. Kalau JavaScript dimatikan, form tetap butuh action yang masuk akal atau setidaknya pesan bahwa pengiriman membutuhkan skrip. Progressive enhancement menjaga formulir tidak terasa rusak.</p><p class="mb-4">Uji tiga jalur: klik tombol, tekan Enter di input, dan kirim saat jaringan diputus. Ketiganya harus tetap di halaman yang sama dan memberi umpan balik yang bisa dibaca.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank" rel="noopener">MDN: Event.preventDefault<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" target="_blank" rel="noopener">MDN: HTMLFormElement submit event<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/forms" target="_blank" rel="noopener">web.dev: forms<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/javascript//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
