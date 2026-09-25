@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Large Clincoo Content in IndexedDB, Not localStorage — Clincoo Blog</title>
+<meta name="description" content="localStorage fills up fast and blocks the tab. IndexedDB is a better fit for long drafts and Clincoo offline queues.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-indexeddb-konten-besar/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Store Large Clincoo Content in IndexedDB, Not localStorage">
+<meta property="og:description" content="localStorage fills up fast and blocks the tab. IndexedDB is a better fit for long drafts and Clincoo offline queues.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Store Large Clincoo Content in IndexedDB, Not localStorage</h1><p class="desc">localStorage fills up fast and blocks the tab. IndexedDB is a better fit for long drafts and Clincoo offline queues.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">An existing article suggests localStorage for drafts. That is enough for a short title. A full page body, base64 images, or a form queue will hit the quota and freeze the tab.</p><p class="mb-4">Open an IndexedDB database named clincoo-offline with a drafts object store. Save objects {id, updatedAt, body}. Asynchronous work does not block the UI in editor.clincoo.buzz.</p><p class="mb-4">Handle quota: if a request fails with QuotaExceededError, delete the oldest draft or ask the user to export. Do not silently drop the newest data.</p><p class="mb-4">Test under Application > IndexedDB in DevTools. Ask Clincoo AI to write only a put/get wrapper, not replace a save flow that already works.</p><p class="mb-4">Clincoo does not ship a client database. IndexedDB keeps drafts on app.clincoo.buzz alive through a much longer outage than a localStorage session.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" target="_blank" rel="noopener">MDN IndexedDB API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/indexeddb" target="_blank" rel="noopener">web.dev IndexedDB<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
