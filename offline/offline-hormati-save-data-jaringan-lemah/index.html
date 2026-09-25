@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hormati Save-Data dan Jaringan Lemah di Situs Clincoo — Clincoo Blog</title>
+<meta name="description" content="Sebelum offline total, banyak pengguna Clincoo berada di 2G. Deteksi saveData dan effectiveType lalu tunda aset berat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-hormati-save-data-jaringan-lemah/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hormati Save-Data dan Jaringan Lemah di Situs Clincoo">
+<meta property="og:description" content="Sebelum offline total, banyak pengguna Clincoo berada di 2G. Deteksi saveData dan effectiveType lalu tunda aset berat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Hormati Save-Data dan Jaringan Lemah di Situs Clincoo</h1><p class="desc">Sebelum offline total, banyak pengguna Clincoo berada di 2G. Deteksi saveData dan effectiveType lalu tunda aset berat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Mode offline sering dimulai dari jaringan yang hanya hampir mati. Hero video dan galeri besar di situs Clincoo membuat tab hang sebelum banner offline sempat tampil.</p><p class="mb-4">Baca navigator.connection jika ada. Jika saveData bernilai true atau effectiveType adalah slow-2g atau 2g, jangan autoplay video dan jangan prefetch gambar di bawah fold.</p><p class="mb-4">API ini tidak standar di semua browser. Bungkus dalam pemeriksaan fitur. Jangan anggap connection selalu ada di editor.clincoo.buzz.</p><p class="mb-4">Uji dengan DevTools Network throttling. Minta AI menambah satu helper kecil yang menandai body dengan kelas hemat-data, lalu CSS menonaktifkan latar video.</p><p class="mb-4">Clincoo tidak menyesuaikan payload menurut jaringan. Menghormati Save-Data menjaga situs di app.clincoo.buzz tetap bisa dibaca sebelum benar-benar offline.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API" target="_blank" rel="noopener">MDN Network Information API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-lcp-data-save-mode" target="_blank" rel="noopener">web.dev Optimize for data saver mode<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Kembali ke offline</a>
+</div>
+</body>
+</html>
