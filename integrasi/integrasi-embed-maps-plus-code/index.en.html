@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embed a Map with a Text Address and a Plus Code Fallback — Clincoo Blog</title>
+<meta name="description" content="Map iframes can fail on strict networks. Include a written address and an open-in-maps link.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/integrasi/integrasi-embed-maps-plus-code/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Embed a Map with a Text Address and a Plus Code Fallback">
+<meta property="og:description" content="Map iframes can fail on strict networks. Include a written address and an open-in-maps link.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/integrasi//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Integrations</div><h1>Embed a Map with a Text Address and a Plus Code Fallback</h1><p class="desc">Map iframes can fail on strict networks. Include a written address and an open-in-maps link.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A map embed on a Clincoo site helps visitors find a location. But iframes from map providers are often blocked by extensions, data-saver modes, or referrer policies. If the only clue is a gray box, the appointment falls apart.</p><p class="mb-4">Write the full address next to or under the embed: place name, street, city, and postal code. Add a link that opens the map in a new tab with the same query. Visitors who reject third-party scripts can still copy the address.</p><p class="mb-4">A Plus Code or a maps.app.goo.gl link helps when the street name is not unique. Do not rely on a pin without text. Screen readers and search engines cannot feel gestures on an interactive map.</p><p class="mb-4">Lock the iframe aspect ratio (for example 16:9 or 4:3) so the layout does not jump when the map finishes loading. Use loading="lazy" and an iframe title that describes the place, not just the word "map".</p><p class="mb-4">Test the page without third-party network access: disable the map script in preview. If the address and fallback link remain readable, the integration is sturdy enough for Clincoo production.</p></div><div class="src"><h2>Information Source</h2><a href="https://developers.google.com/maps/documentation/embed/get-started" target="_blank" rel="noopener">Google Maps Embed API<span class="d">developers.google.com</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">MDN: iframe<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/iframe-lazy-loading" target="_blank" rel="noopener">web.dev: lazy loading<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/integrasi//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
