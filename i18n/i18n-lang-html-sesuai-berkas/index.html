@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samakan Atribut lang HTML dengan Berkas index atau index.en — Clincoo Blog</title>
+<meta name="description" content="File Indonesia memakai lang=id. File Inggris memakai lang=en. Jangan salin satu nilai ke kedua berkas.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/i18n/i18n-lang-html-sesuai-berkas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Samakan Atribut lang HTML dengan Berkas index atau index.en">
+<meta property="og:description" content="File Indonesia memakai lang=id. File Inggris memakai lang=en. Jangan salin satu nilai ke kedua berkas.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/i18n//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">i18n</div><h1>Samakan Atribut lang HTML dengan Berkas index atau index.en</h1><p class="desc">File Indonesia memakai lang=id. File Inggris memakai lang=en. Jangan salin satu nilai ke kedua berkas.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman dua bahasa di proyek Clincoo biasanya hidup sebagai pasangan index.html dan index.en.html. Mesin telusur dan pembaca layar membaca atribut lang pada elemen html, bukan nama folder. Jika kedua berkas masih bertuliskan lang="id", versi Inggris terdengar seperti Indonesia bagi teknologi bantu.</p><p class="mb-4">Periksa baris pertama setelah DOCTYPE. Berkas Indonesia harus lang="id". Berkas Inggris harus lang="en". Jangan andalkan switcher saja: switcher hanya menuntun manusia ke URL lain, sementara crawler membuka tiap file secara terpisah.</p><p class="mb-4">Atribut lang juga memengaruhi hyphenation, kutipan, dan pengucapan. Kesalahan kecil ini sering lolos pratinjau visual karena desain tidak berubah. Buka kedua URL, lihat source, dan pastikan nilai lang berbeda.</p><p class="mb-4">Jika kamu menambah locale ketiga nanti, ulangi pola yang sama: satu berkas, satu kode bahasa BCP 47 yang jujur. Jangan menumpuk beberapa lang di satu dokumen kecuali kutipan singkat memakai lang pada elemen inline.</p><p class="mb-4">Setelah mengubah lang, uji switcher, hreflang, dan judul tab. Konsistensi antara berkas, meta, dan tautan antar-bahasa lebih penting daripada menambah bendera di header.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener">MDN: lang<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/International/questions/qa-html-language-declarations" target="_blank" rel="noopener">W3C: Language declarations<span class="d">www.w3.org</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/i18n//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
