@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use pull --rebase so Clincoo Git History Stays Linear — Clincoo Blog</title>
+<meta name="description" content="Merge commits from a plain pull blur the work order. Rebase replays local commits on top of the remote branch.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-pull-rebase-riwayat-lurus/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use pull --rebase so Clincoo Git History Stays Linear">
+<meta property="og:description" content="Merge commits from a plain pull blur the work order. Rebase replays local commits on top of the remote branch.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/git/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Git</div><h1>Use pull --rebase so Clincoo Git History Stays Linear</h1><p class="desc">Merge commits from a plain pull blur the work order. Rebase replays local commits on top of the remote branch.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">After a day of editing a Clincoo template, git pull often adds a Merge branch commit that explains nothing about what changed.</p><p class="mb-4">Run git pull --rebase on the working branch. Local commits move to the tip of remote so the log stays a single line.</p><p class="mb-4">If conflicts appear, resolve the files in editor.clincoo.buzz, then git add and git rebase --continue. Do not rebase a branch already shared with the team unless everyone agrees.</p><p class="mb-4">Set pull.rebase true in a personal project repo so the habit stays consistent. Still read the diff before you push.</p><p class="mb-4">Ask AI to explain rebase conflicts line by line, not to rewrite the whole file. Preview the site after the rebase finishes.</p><p class="mb-4">A linear history makes git log and single-task reverts easier. Clincoo does not set your pull strategy; choose rebase on purpose.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/get-started/using-git/about-git-rebase" target="_blank" rel="noopener">GitHub Docs: About Git rebase<span class="d">docs.github.com</span></a><a href="https://git-scm.com/docs/git-pull" target="_blank" rel="noopener">git-scm git-pull<span class="d">git-scm.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/git/">← Back to git</a>
+</div>
+</body>
+</html>
