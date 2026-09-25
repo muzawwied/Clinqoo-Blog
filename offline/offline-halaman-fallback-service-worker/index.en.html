@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provide an Offline Fallback Page in a Clincoo Site Service Worker — Clincoo Blog</title>
+<meta name="description" content="When navigation fails because the network dropped, serve a cached fallback page instead of a blank browser error.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-halaman-fallback-service-worker/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Provide an Offline Fallback Page in a Clincoo Site Service Worker">
+<meta property="og:description" content="When navigation fails because the network dropped, serve a cached fallback page instead of a blank browser error.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Offline</div><h1>Provide an Offline Fallback Page in a Clincoo Site Service Worker</h1><p class="desc">When navigation fails because the network dropped, serve a cached fallback page instead of a blank browser error.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo visitor who opens an inner link while the signal drops often sees the browser default error page. That feels like a broken site when only the network is gone.</p><p class="mb-4">Create a simple offline.html in the editor.clincoo.buzz workspace: a clear title, one explanation paragraph, and a link back home. Cache that file when the service worker installs.</p><p class="mb-4">In the fetch event, if the request is a navigation and the network fetch fails, return the cached offline.html. Do not use this fallback for CSS or images so already-cached pages stay intact.</p><p class="mb-4">Test in DevTools Offline mode. Open a URL that is not cached: the fallback should appear. Open a cached page: the original content should still show.</p><p class="mb-4">Ask Clincoo AI to add only the navigation fetch handler, not rewrite the whole worker. A polite fallback keeps trust on app.clincoo.buzz when the train enters a tunnel.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank" rel="noopener">MDN Service Worker API<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/pwa/service-workers" target="_blank" rel="noopener">web.dev Service workers<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to offline</a>
+</div>
+</body>
+</html>
