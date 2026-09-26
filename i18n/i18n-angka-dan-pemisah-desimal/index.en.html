@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Format Numbers and Decimal Separators to Match the Page Locale — Clincoo Blog</title>
+<meta name="description" content="Dots and commas swap meaning across languages. Use Intl.NumberFormat instead of hardcoded separators.">
+<link rel="canonical" href="https://blog.clincoo.buzz/i18n/i18n-angka-dan-pemisah-desimal/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/i18n/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🌐 i18n</div><h1>Format Numbers and Decimal Separators to Match the Page Locale</h1><p class="desc">Dots and commas swap meaning across languages. Use Intl.NumberFormat instead of hardcoded separators.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Indonesian readers treat 1.250 as one thousand two hundred fifty; English readers treat it as a fraction. Sharing raw digits across ID and EN pages invites price and stats mistakes.</p><p class="mb-4">Use Intl.NumberFormat with the page locale: id-ID for comma decimals and dot thousands, en-US for the inverse. Do not hardcode separators in a Clincoo template.</p><p class="mb-4">Keep the formatter locale aligned with the html lang attribute. index.html uses id-ID; index.en.html uses en-US. Do not paste one call into both files.</p><p class="mb-4">Test three cases: a large integer, a two-digit fraction, and zero. Preview both languages before deploy so price cards stay honest.</p><p class="mb-4">Clincoo serves static HTML. Format numbers in the copy source or with a small script that reads document lang, not by editor guesswork.</p></div><div class="src"><h2>Information Source</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat" target="_blank" rel="noopener">MDN Intl.NumberFormat<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener">MDN lang<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/i18n/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

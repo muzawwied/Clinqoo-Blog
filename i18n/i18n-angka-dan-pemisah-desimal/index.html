@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Format Angka dan Pemisah Desimal Sesuai Locale Halaman — Clincoo Blog</title>
+<meta name="description" content="Titik dan koma saling tertukar antar bahasa. Pakai Intl.NumberFormat, jangan hardcode pemisah.">
+<link rel="canonical" href="https://blog.clincoo.buzz/i18n/i18n-angka-dan-pemisah-desimal/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/i18n/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🌐 i18n</div><h1>Format Angka dan Pemisah Desimal Sesuai Locale Halaman</h1><p class="desc">Titik dan koma saling tertukar antar bahasa. Pakai Intl.NumberFormat, jangan hardcode pemisah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pembaca Indonesia membaca 1.250 sebagai seribu dua ratus lima puluh, sedangkan pembaca Inggris melihatnya sebagai pecahan. Jika halaman ID dan EN memakai angka yang sama mentah, harga dan statistik mudah disalahartikan.</p><p class="mb-4">Pakai Intl.NumberFormat dengan locale halaman: id-ID untuk koma desimal dan titik ribuan, en-US untuk pola sebaliknya. Jangan menulis pemisah secara manual di template Clincoo.</p><p class="mb-4">Samakan locale formatter dengan atribut lang pada html. File index.html memakai id-ID; index.en.html memakai en-US. Jangan salin satu pemanggilan ke kedua berkas.</p><p class="mb-4">Uji tiga kasus: bilangan bulat besar, pecahan dua digit, dan nilai nol. Cek pratinjau kedua bahasa sebelum deploy agar kartu harga tidak menyesatkan.</p><p class="mb-4">Clincoo menayangkan HTML statis. Format angka di sumber salinan atau lewat skrip kecil yang membaca lang dokumen, bukan lewat tebakan editor.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat" target="_blank" rel="noopener">MDN Intl.NumberFormat<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener">MDN lang<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/i18n/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
