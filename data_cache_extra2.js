@@ -1,21 +1,21 @@
-// Clincoo Blog — artikel cache tambahan 2026-09-26 WIB
+// Clincoo Blog — artikel cache tambahan 2026-09-23 sore
 (function(){
   var extra = [
     {
-      id: "cache-vary-accept-encoding",
+      id: "cache-bypass-query-saat-uji-rilis",
       langs: {
         "id": {
-          title: "Setel Vary Accept-Encoding pada Aset Clincoo yang Dikompres",
-          desc: "Cache tanpa Vary bisa memberi gzip ke klien yang minta brotli atau sebaliknya. Header Vary memisahkan varian.",
-          content: "<p class=\"mb-4\">CDN situs Clincoo kadang menyimpan satu salinan terkompresi lalu membaginya ke semua browser. Hasilnya encoding salah atau file rusak.</p><p class=\"mb-4\">Tandai respons CSS dan JS dengan Vary: Accept-Encoding. Pastikan nama file atau etag beda per encoding.</p><p class=\"mb-4\">Jangan menonaktifkan kompresi hanya karena takut cache. Perbaiki kunci cache, bukan membuang gzip.</p><p class=\"mb-4\">Uji dua UA berbeda di Network setelah publish dari app.clincoo.buzz. Minta AI hanya menambah header Vary di konfigurasi yang ada.</p><p class=\"mb-4\">Clincoo tidak menulis header CDN. Vary yang benar menjaga aset terkompresi aman.</p>",
+          title: "Tambah Query String saat Menguji Rilis Cache Clincoo",
+          desc: "Cache CDN menahan berkas lama. Query unik memaksa unduhan baru tanpa menunggu TTL habis.",
+          content: "<p class=\"mb-4\">Setelah publish dari app.clincoo.buzz, pratinjau masih menampilkan CSS kemarin karena CDN mengabaikan isi baru dengan URL sama.</p><p class=\"mb-4\">Tambahkan ?v=tanggal atau hash pendek pada tautan stylesheet dan skrip hanya saat uji. Jangan biarkan query itu di produksi tanpa strategi versi.</p><p class=\"mb-4\">Cara lebih bersih: ubah nama file berhash di editor.clincoo.buzz agar cache lama tidak pernah dipakai lagi.</p><p class=\"mb-4\">Bandingkan Network DevTools sebelum dan sesudah query. Status 200 dari jaringan, bukan 304 dari cache, menandai uji berhasil.</p><p class=\"mb-4\">Clincoo tidak menambahkan query otomatis. Bypass sadar membantu memastikan rilis benar sebelum pengunjung umum datang.</p>",
           source: "Clincoo",
           sourceUrl: "https://editor.clincoo.buzz/",
           sourceSnippet: "Editor resmi Clincoo"
         },
         "en": {
-          title: "Set Vary Accept-Encoding on Compressed Clincoo Assets",
-          desc: "A cache without Vary can serve gzip to a client that asked for brotli or the reverse. Vary splits the variants.",
-          content: "<p class=\"mb-4\">A Clincoo site CDN sometimes stores one compressed copy and shares it with every browser. The result is the wrong encoding or a broken file.</p><p class=\"mb-4\">Mark CSS and JS responses with Vary: Accept-Encoding. Keep a different filename or etag per encoding.</p><p class=\"mb-4\">Do not turn compression off just because cache feels scary. Fix the cache key instead of dropping gzip.</p><p class=\"mb-4\">Test two different UAs in Network after a publish from app.clincoo.buzz. Ask AI only to add the Vary header in the current config.</p><p class=\"mb-4\">Clincoo does not write CDN headers. A correct Vary keeps compressed assets safe.</p>",
+          title: "Add a Query String when Testing a Clincoo Cache Release",
+          desc: "A CDN cache holds the old file. A unique query forces a fresh download without waiting for TTL.",
+          content: "<p class=\"mb-4\">After a publish from app.clincoo.buzz, preview still shows yesterday’s CSS because the CDN ignores new bytes at the same URL.</p><p class=\"mb-4\">Add ?v=date or a short hash to stylesheet and script links only while testing. Do not leave that query in production without a version plan.</p><p class=\"mb-4\">A cleaner way: change hashed filenames in editor.clincoo.buzz so the old cache is never reused.</p><p class=\"mb-4\">Compare Network in DevTools before and after the query. A network 200, not a cached 304, marks a successful test.</p><p class=\"mb-4\">Clincoo does not append queries for you. A deliberate bypass confirms the release before the public sees it.</p>",
           source: "Clincoo",
           sourceUrl: "https://editor.clincoo.buzz/",
           sourceSnippet: "Official Clincoo editor"
