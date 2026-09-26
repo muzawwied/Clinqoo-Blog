@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check the Network Tab, Not Only the Console, on Clincoo Errors — Clincoo Blog</title>
+<meta name="description" content="Many fetch errors never appear as Exceptions. Open the Network tab in DevTools to see status, headers, and the response body.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/error/error-cek-network-tab-bukan-hanya-console/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/error/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Error</div><h1>Check the Network Tab, Not Only the Console, on Clincoo Errors</h1><p class="desc">Many fetch errors never appear as Exceptions. Open the Network tab in DevTools to see status, headers, and the response body.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo scripts that call an API often stay quiet in the console. fetch does not throw on 404 or 500, so you only see empty data or a failed JSON.parse.</p><p class="mb-4">Open preview, press F12, pick Network, then repeat the action. Filter XHR or Fetch. Click the red row and read status, Content-Type, and Preview.</p><p class="mb-4">If status is 200 but the body is HTML, the endpoint is wrong or a redirect hit a login page. Status 0 is usually CORS, mixed content, or a dropped network — not a CSS bug.</p><p class="mb-4">Ask AI to log response.status and a text() snippet before parse. Paste the fetch function that currently runs JSON.parse(response) at once.</p><p class="mb-4">Clincoo runs the code you save. The Network tab narrows guesses before you change files in editor.clincoo.buzz.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener">MDN Using Fetch<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/network" target="_blank" rel="noopener">Chrome DevTools Network<span class="d">developer.chrome.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/error/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
