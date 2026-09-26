@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simpan Kata Kunci Cari Clincoo di Parameter URL — Clincoo Blog</title>
+<meta name="description" content="Hasil cari yang hanya hidup di memori hilang saat dibagikan. Tulis q= di URL agar tautan bisa dibuka ulang.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/search/search-simpan-query-di-url/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simpan Kata Kunci Cari Clincoo di Parameter URL">
+<meta property="og:description" content="Hasil cari yang hanya hidup di memori hilang saat dibagikan. Tulis q= di URL agar tautan bisa dibuka ulang.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/search/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Pencarian</div><h1>Simpan Kata Kunci Cari Clincoo di Parameter URL</h1><p class="desc">Hasil cari yang hanya hidup di memori hilang saat dibagikan. Tulis q= di URL agar tautan bisa dibuka ulang.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak template Clincoo menyimpan query hanya di variabel JavaScript. Saat pengunjung menyalin URL, penerima melihat halaman cari kosong.</p><p class="mb-4">Di editor.clincoo.buzz, setelah debounce selesai, panggil history.replaceState dengan ?q= plus encodeURIComponent. Saat halaman dimuat, baca URLSearchParams dan isi ulang kotak plus jalankan pencarian.</p><p class="mb-4">Jangan pushState setiap huruf. replaceState menjaga tombol kembali tetap ke halaman sebelumnya, bukan ke setiap ketikan. Hapus parameter jika query dikosongkan.</p><p class="mb-4">Minta AI menambah sinkronisasi q di URL pada handler input dan pada DOMContentLoaded. Tempel fungsi cari yang sekarang tidak membaca location.search.</p><p class="mb-4">Clincoo menjalankan skrip yang kamu simpan. Query di URL membuat hasil cari di app.clincoo.buzz bisa dibagikan dan diuji ulang.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState" target="_blank" rel="noopener">MDN: history.replaceState<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams" target="_blank" rel="noopener">MDN: URLSearchParams<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/search/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus the Clincoo Search Box with the Slash Key — Clincoo Blog</title>
+<meta name="description" content="Keyboard visitors want to jump to search without a mouse. Catch / outside fields, then focus the search input.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/search/search-pintasan-garis-miring/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/search/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Search</div><h1>Focus the Clincoo Search Box with the Slash Key</h1><p class="desc">Keyboard visitors want to jump to search without a mouse. Catch / outside fields, then focus the search input.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Docs sites often use / to focus search. Clincoo templates frequently skip this shortcut, so users tab a long way.</p><p class="mb-4">In editor.clincoo.buzz, attach keydown on document. If the key is / or k plus a modifier you choose, and the target is not an input, textarea, or contenteditable, preventDefault and focus input[type=search].</p><p class="mb-4">Do not steal / while someone is typing in a contact form. Escape should return focus to the body so the keyboard flow stays predictable.</p><p class="mb-4">Ask AI to add the shortcut listener plus field exceptions. Paste the header that has a search input and no keyboard handler.</p><p class="mb-4">Clincoo runs the script you save. One key makes search on app.clincoo.buzz feel like a tool, not decoration.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event" target="_blank" rel="noopener">MDN: keydown event<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html" target="_blank" rel="noopener">WCAG: Character key shortcuts<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/search/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

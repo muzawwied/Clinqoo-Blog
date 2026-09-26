@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limit How Many Clincoo Search Hits Render at Once — Clincoo Blog</title>
+<meta name="description" content="Rendering hundreds of rows at once makes the page heavy. Slice the list, state the remainder, and offer show all.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/search/search-batasi-jumlah-hasil/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/search/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Search</div><h1>Limit How Many Clincoo Search Hits Render at Once</h1><p class="desc">Rendering hundreds of rows at once makes the page heavy. Slice the list, state the remainder, and offer show all.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A static Clincoo index can hold hundreds of titles. A client-side filter that appends every match to the DOM overwhelms scroll and screen readers.</p><p class="mb-4">In editor.clincoo.buzz, after filtering, slice the array to 8–12 items. Show There are N results, showing the first M plus a show all button that renders the rest without another fetch.</p><p class="mb-4">Skip complex pagination when the data is already in memory. One cap plus a button is easier to test. Rank exact title matches before body snippets.</p><p class="mb-4">Ask AI to slice results before innerHTML. Paste the loop that currently appends every item. Test with a one-letter query that hits many pages.</p><p class="mb-4">Clincoo runs the script you save. A short list keeps preview and app.clincoo.buzz fast.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://web.dev/articles/dom-size-and-interactivity" target="_blank" rel="noopener">web.dev: DOM size<span class="d">web.dev</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" rel="noopener">MDN: Array.prototype.slice<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/search/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
