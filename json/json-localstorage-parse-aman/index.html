@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parse JSON dari localStorage Clincoo dengan Cadangan Objek Kosong — Clincoo Blog</title>
+<meta name="description" content="Nilai localStorage bisa rusak atau diubah pengguna. Parse tanpa cadangan membuat init meledak.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-localstorage-parse-aman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parse JSON dari localStorage Clincoo dengan Cadangan Objek Kosong">
+<meta property="og:description" content="Nilai localStorage bisa rusak atau diubah pengguna. Parse tanpa cadangan membuat init meledak.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Parse JSON dari localStorage Clincoo dengan Cadangan Objek Kosong</h1><p class="desc">Nilai localStorage bisa rusak atau diubah pengguna. Parse tanpa cadangan membuat init meledak.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengaturan tema Clincoo yang disimpan sebagai JSON di localStorage kadang terpotong setelah kuota penuh.</p><p class="mb-4">Di editor.clincoo.buzz, baca string, parse di try/catch, dan jatuh ke objek default jika gagal. Jangan menulis ulang storage sampai parse sukses.</p><p class="mb-4">Jangan percaya tipe hasil. Pastikan yang kembali adalah object atau array sebelum mengakses kunci.</p><p class="mb-4">Minta AI menulis satu fungsi readJsonKey. Tempel pemakaian localStorage.getItem yang ada.</p><p class="mb-4">Clincoo tidak memvalidasi storage. Parse dengan cadangan menjaga app.clincoo.buzz tetap bisa dibuka.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Kembali ke json</a>
+</div>
+</body>
+</html>
