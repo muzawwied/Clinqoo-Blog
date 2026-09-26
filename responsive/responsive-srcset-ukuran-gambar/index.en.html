@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use srcset on Clincoo Images so Phones Do Not Download the Desktop File — Clincoo Blog</title>
+<meta name="description" content="A single 2400px hero hurts phones. srcset and sizes pick a width that matches the screen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/responsive/responsive-srcset-ukuran-gambar/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use srcset on Clincoo Images so Phones Do Not Download the Desktop File">
+<meta property="og:description" content="A single 2400px hero hurts phones. srcset and sizes pick a width that matches the screen.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/responsive/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Responsive</div><h1>Use srcset on Clincoo Images so Phones Do Not Download the Desktop File</h1><p class="desc">A single 2400px hero hurts phones. srcset and sizes pick a width that matches the screen.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo heroes often use one wide JPEG. On a phone the browser still downloads that file even if only 360px is shown. The page feels slow even when CSS already sets max-width 100%.</p><p class="mb-4">In editor.clincoo.buzz, prepare two or three widths (for example 640, 1280, 1920) and write srcset with w descriptors. Add sizes so the browser knows display width, not only screen resolution.</p><p class="mb-4">Do not rely on srcset without sizes. Without sizes the browser assumes the image is as wide as the viewport and may still pick the largest file.</p><p class="mb-4">Ask AI to change only the hero img tag. Paste the existing markup; do not regenerate the whole gallery.</p><p class="mb-4">Test with DevTools throttling. Clincoo that picks a matching file keeps app.clincoo.buzz light on mobile networks.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Multimedia/Responsive_images" target="_blank" rel="noopener">MDN Responsive images<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/design/responsive-images/" target="_blank" rel="noopener">web.dev Responsive images<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/responsive/">← Back to responsive</a>
+</div>
+</body>
+</html>
