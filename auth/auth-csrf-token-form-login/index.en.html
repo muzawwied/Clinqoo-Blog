@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Include a CSRF Token on the Clincoo Login Form — Clincoo Blog</title>
+<meta name="description" content="A login POST without a CSRF token can be triggered from another site. A hidden field plus SameSite stops cross-site requests.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-csrf-token-form-login/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Include a CSRF Token on the Clincoo Login Form">
+<meta property="og:description" content="A login POST without a CSRF token can be triggered from another site. A hidden field plus SameSite stops cross-site requests.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Include a CSRF Token on the Clincoo Login Form</h1><p class="desc">A login POST without a CSRF token can be triggered from another site. A hidden field plus SameSite stops cross-site requests.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A sign-in form on app.clincoo.buzz that only posts email and password can be forged by another page. Browsers still send SameSite=Lax cookies on some GET navigations, and older POST flows still leak through.</p><p class="mb-4">Generate a random token on the server, store it in the session, and put it in a hidden input named csrf. On POST, compare the body value with the session. If they differ, reject with 403 and no token detail.</p><p class="mb-4">Do not put the CSRF token in the query URL. Rotate it after a successful login. Keep the session cookie HttpOnly; the form token may be readable by first-party script.</p><p class="mb-4">Test in editor.clincoo.buzz: POST without the csrf field and confirm a reject. Then submit the official login page and confirm success.</p><p class="mb-4">Ask AI only to add the hidden input to the markup you paste. Do not let it replace the whole server handler.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSRF" target="_blank" rel="noopener">MDN CSRF glossary<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/samesite-cookies-explained" target="_blank" rel="noopener">web.dev SameSite cookies<span class="d">web.dev</span></a><a href="https://owasp.org/www-community/attacks/csrf" target="_blank" rel="noopener">OWASP CSRF<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
