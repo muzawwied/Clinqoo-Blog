@@ -88,4 +88,9 @@
   <url><loc>https://blog.clincoo.buzz/webhook/webhook-verifikasi-signature-hmac/</loc></url>
   <url><loc>https://blog.clincoo.buzz/webhook/webhook-retry-harus-idempoten/</loc></url>
   <url><loc>https://blog.clincoo.buzz/webhook/webhook-timeout-pendek-lalu-antrian/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-cek-content-type-json/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-tolak-method-selain-post/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-log-tanpa-secret/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-rate-limit-sumber/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-simpan-payload-mentah/</loc></url>
 </urlset>
