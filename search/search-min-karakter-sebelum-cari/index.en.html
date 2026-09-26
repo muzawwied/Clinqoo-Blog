@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wait for at Least Two Characters before Clincoo Search — Clincoo Blog</title>
+<meta name="description" content="A one-letter query floods results and the API. Set a two- or three-character minimum before fetch in a Clincoo search box.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/search/search-min-karakter-sebelum-cari/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/search/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Search</div><h1>Wait for at Least Two Characters before Clincoo Search</h1><p class="desc">A one-letter query floods results and the API. Set a two- or three-character minimum before fetch in a Clincoo search box.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo search box that fetches on the first letter produces a list that is too wide. The letter “a” or “s” almost always matches dozens of titles.</p><p class="mb-4">In editor.clincoo.buzz, check the trimmed string length. If it is under two characters, abort the request and clear the list. Do not leave stale results on screen.</p><p class="mb-4">Combine this limit with debounce. Fast typists should not fire two short requests. Enter may still search at once if the query already meets the minimum.</p><p class="mb-4">Ask AI to add if (q.length < 2) return on the input handler. Paste the fetch function that currently runs on every keyup.</p><p class="mb-4">Clincoo runs the script you save. A small character threshold keeps app.clincoo.buzz responsive without changing the search box design.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN AbortController<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-input-delay" target="_blank" rel="noopener">web.dev Optimize input delay<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/search/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
