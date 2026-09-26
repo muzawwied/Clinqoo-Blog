@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disable DevTools Cache while Testing Clincoo Assets — Clincoo Blog</title>
+<meta name="description" content="Old CSS or images in cache mimic bugs you already fixed. Disable cache while DevTools is open.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/devtools/devtools-disable-cache-saat-uji-aset/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Disable DevTools Cache while Testing Clincoo Assets">
+<meta property="og:description" content="Old CSS or images in cache mimic bugs you already fixed. Disable cache while DevTools is open.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/devtools/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">DevTools</div><h1>Disable DevTools Cache while Testing Clincoo Assets</h1><p class="desc">Old CSS or images in cache mimic bugs you already fixed. Disable cache while DevTools is open.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">You already changed style.css in the Clincoo editor, but the preview still uses the old margin. Often the browser serves a cached copy, not the file you just saved.</p><p class="mb-4">Open DevTools, Network tab, check Disable cache. Leave the panel open while you refresh. Without that, many browsers keep using cache even after F5.</p><p class="mb-4">Watch the Size column: “disk cache” or “memory cache” means the file was not downloaded again. A network 200 confirms the path is correct and the new bytes arrived.</p><p class="mb-4">Do not treat a random query string on every asset as a permanent fix. Cache-busting helps in production; while debugging, Disable cache is more honest.</p><p class="mb-4">Once the fix is visible, close DevTools so ordinary visitors still get a healthy cache. Test production separately from a debug session.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.chrome.com/docs/devtools/network/reference/#disable-cache" target="_blank" rel="noopener">Chrome: Disable cache<span class="d">developer.chrome.com</span></a><a href="https://web.dev/learn/performance/http-caching" target="_blank" rel="noopener">web.dev: HTTP caching<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/devtools/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
