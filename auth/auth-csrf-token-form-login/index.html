@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sertakan Token CSRF pada Form Login Clincoo — Clincoo Blog</title>
+<meta name="description" content="POST login tanpa token CSRF bisa dipicu dari situs lain. Hidden field plus SameSite menahan permintaan silang.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-csrf-token-form-login/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sertakan Token CSRF pada Form Login Clincoo">
+<meta property="og:description" content="POST login tanpa token CSRF bisa dipicu dari situs lain. Hidden field plus SameSite menahan permintaan silang.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Sertakan Token CSRF pada Form Login Clincoo</h1><p class="desc">POST login tanpa token CSRF bisa dipicu dari situs lain. Hidden field plus SameSite menahan permintaan silang.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form masuk di app.clincoo.buzz yang hanya mengirim email dan sandi rentan dipalsukan halaman lain. Peramban tetap mengirim cookie SameSite=Lax pada navigasi GET, dan beberapa alur POST lama masih lolos.</p><p class="mb-4">Generate token acak di server, simpan di sesi, lalu taruh di input hidden name=csrf. Saat POST, bandingkan nilai body dengan sesi. Jika beda, tolak dengan 403 tanpa menyebut detail token.</p><p class="mb-4">Jangan taruh token CSRF di query URL. Rotasi token setelah login berhasil. Cookie sesi tetap HttpOnly; token form boleh terbaca skrip halaman sendiri.</p><p class="mb-4">Uji di editor.clincoo.buzz: kirim POST tanpa field csrf dan pastikan ditolak. Lalu kirim form utuh dari halaman login resmi dan pastikan diterima.</p><p class="mb-4">Minta AI hanya menambahkan hidden input pada markup form yang kamu tempel. Jangan biarkan ia mengganti seluruh handler server.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSRF" target="_blank" rel="noopener">MDN CSRF glossary<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/samesite-cookies-explained" target="_blank" rel="noopener">web.dev SameSite cookies<span class="d">web.dev</span></a><a href="https://owasp.org/www-community/attacks/csrf" target="_blank" rel="noopener">OWASP CSRF<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
