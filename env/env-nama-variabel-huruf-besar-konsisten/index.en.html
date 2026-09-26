@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep Clincoo Env Variable Names Consistently Uppercase — Clincoo Blog</title>
+<meta name="description" content="API_URL and api_url are two different keys. Consistent uppercase spelling prevents silent undefined values.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-nama-variabel-huruf-besar-konsisten/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keep Clincoo Env Variable Names Consistently Uppercase">
+<meta property="og:description" content="API_URL and api_url are two different keys. Consistent uppercase spelling prevents silent undefined values.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Keep Clincoo Env Variable Names Consistently Uppercase</h1><p class="desc">API_URL and api_url are two different keys. Consistent uppercase spelling prevents silent undefined values.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">POSIX environments treat variable names as case-sensitive. A .env file that mixes Api_Url and API_URL makes fetch use an empty string with no parse error.</p><p class="mb-4">Pick one style: UPPER_SNAKE_CASE. Record that name in .env.example without secret values. Code and the deploy dashboard must copy the same spelling.</p><p class="mb-4">At boot, check required keys. If one is undefined, fail fast with the expected name. Do not continue with a silent localhost fallback in production.</p><p class="mb-4">Do not print secret values while debugging a misspelled name. Log only whether the key exists. A token printed in the Console or a CI log is already leaked.</p><p class="mb-4">Clincoo and the build script only see the strings you set. Clean spelling is cheaper than hunting a typo after release.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions" target="_blank" rel="noopener">GitHub: Secrets in Actions<span class="d">docs.github.com</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" target="_blank" rel="noopener">MDN: undefined<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
