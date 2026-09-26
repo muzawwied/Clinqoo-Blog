@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use console.assert on Clincoo to Flag Conditions That Must Stay True — Clincoo Blog</title>
+<meta name="description" content="assert only shouts when a condition fails. It fits data checks before render.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-assert-untuk-syarat-wajib/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use console.assert on Clincoo to Flag Conditions That Must Stay True">
+<meta property="og:description" content="assert only shouts when a condition fails. It fits data checks before render.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Console</div><h1>Use console.assert on Clincoo to Flag Conditions That Must Stay True</h1><p class="desc">assert only shouts when a condition fails. It fits data checks before render.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo pages on app.clincoo.buzz often render before data is ready. Regular logs do not mark a broken precondition.</p><p class="mb-4">Write console.assert(Array.isArray(items), "items must be an array") in editor.clincoo.buzz. The message appears only when the check fails.</p><p class="mb-4">Do not replace user-facing validation with assert. assert is a debug signal, not a UI error.</p><p class="mb-4">Ask the AI to add assert in one parse function. Refuse assert on every loop line.</p><p class="mb-4">Clincoo ships the script as saved. Sparse asserts keep the console quiet until data is actually wrong.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Back to console</a>
+</div>
+</body>
+</html>
