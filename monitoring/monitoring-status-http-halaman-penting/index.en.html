@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check HTTP Status Codes of Important Clincoo Pages after Deploy — Clincoo Blog</title>
+<meta name="description" content="A page that looks fine in the editor can 404 in production if a path or redirect is wrong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-status-http-halaman-penting/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Check HTTP Status Codes of Important Clincoo Pages after Deploy">
+<meta property="og:description" content="A page that looks fine in the editor can 404 in production if a path or redirect is wrong.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📡 Pemantauan</div><h1>Check HTTP Status Codes of Important Clincoo Pages after Deploy</h1><p class="desc">A page that looks fine in the editor can 404 in production if a path or redirect is wrong.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Editor preview opens a local file. Production uses a public URL. A missing slash, a case change, or an unpublished folder can send a menu to 404.</p><p class="mb-4">After deploy, open the Network tab on home, about, and one CTA. Record the main document status, not only images. 200 is safe. 301 or 302 must land on the URL you want. 404 and 5xx must be fixed first.</p><p class="mb-4">Do not trust your eyes alone. A short HEAD or GET from DevTools or curl confirms the server answer. If redirects chain, shorten them in host config or internal links.</p><p class="mb-4">Fix the path in Clincoo HTML, publish again, then check the same status. A short list of important URLs in the README keeps quiet pages from staying unclicked in the editor.</p><p class="mb-4">Clincoo serves the folder structure you save. HTTP status codes prove that visitors on app.clincoo.buzz actually reach the page you meant.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status" target="_blank" rel="noopener">MDN HTTP status codes<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Redirections" target="_blank" rel="noopener">MDN HTTP redirections<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

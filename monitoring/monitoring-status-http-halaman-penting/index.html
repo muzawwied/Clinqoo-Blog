@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periksa Kode Status HTTP Halaman Penting Clincoo setelah Deploy — Clincoo Blog</title>
+<meta name="description" content="Halaman yang terlihat di editor bisa 404 di produksi jika path atau redirect salah.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-status-http-halaman-penting/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Periksa Kode Status HTTP Halaman Penting Clincoo setelah Deploy">
+<meta property="og:description" content="Halaman yang terlihat di editor bisa 404 di produksi jika path atau redirect salah.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📡 Pemantauan</div><h1>Periksa Kode Status HTTP Halaman Penting Clincoo setelah Deploy</h1><p class="desc">Halaman yang terlihat di editor bisa 404 di produksi jika path atau redirect salah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pratinjau editor membuka file lokal. Produksi memakai URL publik. Perbedaan slash, huruf besar, atau folder yang belum terbit membuat menu mengarah ke 404.</p><p class="mb-4">Setelah deploy, buka tab Jaringan pada beranda, tentang, dan satu CTA. Catat status dokumen utama, bukan hanya gambar. 200 berarti aman. 301 atau 302 harus mengarah ke URL yang kamu inginkan. 404 dan 5xx wajib diperbaiki dulu.</p><p class="mb-4">Jangan andalkan mata saja. Permintaan HEAD atau GET singkat dari DevTools atau curl memastikan server menjawab. Jika redirect berantai, persingkat di konfigurasi host atau tautan internal.</p><p class="mb-4">Perbaiki path di HTML Clincoo, terbitkan ulang, lalu cek status yang sama. Satu daftar URL penting di README mencegah halaman sunyi yang tidak pernah diklik dari editor.</p><p class="mb-4">Clincoo menayangkan struktur folder yang kamu simpan. Kode status HTTP adalah bukti bahwa pengunjung app.clincoo.buzz benar-benar tiba di halaman yang kamu maksud.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status" target="_blank" rel="noopener">MDN HTTP status codes<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Redirections" target="_blank" rel="noopener">MDN HTTP redirections<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch Uptime on a Public Clincoo Page with a Simple Request — Clincoo Blog</title>
-<meta name="description" content="DNS or the host can fail without you opening the site. One periodic HTTP check is enough to start.">
+<title>Watch Uptime of a Public Clincoo Page with a Simple Request — Clincoo Blog</title>
+<meta name="description" content="DNS or the host can fail while you never open the site. One periodic HTTP check is enough to start.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-uptime-halaman-publik/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Watch Uptime on a Public Clincoo Page with a Simple Request">
-<meta property="og:description" content="DNS or the host can fail without you opening the site. One periodic HTTP check is enough to start.">
+<meta property="og:title" content="Watch Uptime of a Public Clincoo Page with a Simple Request">
+<meta property="og:description" content="DNS or the host can fail while you never open the site. One periodic HTTP check is enough to start.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">📡 Pemantauan</div><h1>Watch Uptime on a Public Clincoo Page with a Simple Request</h1><p class="desc">DNS or the host can fail without you opening the site. One periodic HTTP check is enough to start.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo site looks healthy on your laptop, then visitors get a timeout from another region.</p><p class="mb-4">Use an uptime monitor that requests the home page and one inner page over https. Expect status 200, not only a ping.</p><p class="mb-4">Do not rely on opening app.clincoo.buzz when you happen to remember. Record downtime with a timestamp.</p><p class="mb-4">If the check fails, verify DNS and the host before asking AI to change code. Code is rarely the cause of a total timeout.</p><p class="mb-4">Clincoo serves the files on the host. Uptime is the public path, not the editor.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">📡 Pemantauan</div><h1>Watch Uptime of a Public Clincoo Page with a Simple Request</h1><p class="desc">DNS or the host can fail while you never open the site. One periodic HTTP check is enough to start.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A published Clincoo site often feels safe while the editor tab stays open. DNS, certificates, or the host can still fail when you are not looking.</p><p class="mb-4">Start with one GET request to the main public URL. Record a 200 status and the response time. If you see 404, 5xx, or a timeout, check deploy and domain before adding features.</p><p class="mb-4">Schedule a periodic check with a simple uptime service or a fetch script. Do not watch dozens of paths on day one. Home plus one critical page such as contact or checkout is enough.</p><p class="mb-4">When an alert fires, open the Network tab and the console on the same URL. Separate host failure from asset 404s. A fix in editor.clincoo.buzz only helps after you know which layer broke.</p><p class="mb-4">Clincoo serves the project you publish. Uptime is a coarse signal that visitors on app.clincoo.buzz can still open the door, not a substitute for auditing page content.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status" target="_blank" rel="noopener">MDN HTTP response status codes<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/performance/why-speed-matters" target="_blank" rel="noopener">Why speed matters — web.dev<span class="d">web.dev</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>

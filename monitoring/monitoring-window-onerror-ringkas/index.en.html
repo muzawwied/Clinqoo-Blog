@@ -4,12 +4,12 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Add a Lean window.onerror to Watch Clincoo Script Failures — Clincoo Blog</title>
+<title>Add a Small window.onerror Listener to Watch Clincoo Script Failures — Clincoo Blog</title>
 <meta name="description" content="Errors that exist only on a visitor device vanish without a safe global listener.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-window-onerror-ringkas/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Add a Lean window.onerror to Watch Clincoo Script Failures">
+<meta property="og:title" content="Add a Small window.onerror Listener to Watch Clincoo Script Failures">
 <meta property="og:description" content="Errors that exist only on a visitor device vanish without a safe global listener.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">📡 Pemantauan</div><h1>Add a Lean window.onerror to Watch Clincoo Script Failures</h1><p class="desc">Errors that exist only on a visitor device vanish without a safe global listener.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo projects only rely on local console.log. Visitors close the tab before they can report.</p><p class="mb-4">In editor.clincoo.buzz, attach window.onerror and unhandledrejection. Send message, file, and line to an endpoint you own.</p><p class="mb-4">Do not send form fields or tokens. Truncate the stack. Honor DNT if you add analytics.</p><p class="mb-4">Ask AI to add the listener plus a sensitive-data guard. Paste the boot script that now has no monitoring.</p><p class="mb-4">Clincoo does not collect errors for you. A lean listener makes failures on app.clincoo.buzz actionable.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">📡 Pemantauan</div><h1>Add a Small window.onerror Listener to Watch Clincoo Script Failures</h1><p class="desc">Errors that exist only on a visitor device vanish without a safe global listener.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">The console on your laptop does not see errors on a visitor phone. Without a global listener, a production TypeError disappears when they close the tab.</p><p class="mb-4">Add <code>window.onerror</code> or <code>window.addEventListener('error')</code> in one script file. Send the message, file, and line number to an endpoint you control. Do not send form fields or tokens.</p><p class="mb-4">Test the listener in the editor.clincoo.buzz preview with one intentional bad line, then delete that line. Make sure the page still works if the log request fails.</p><p class="mb-4">Read the log once a day, not every minute. Group identical errors. Fix one full stack trace before adding more JavaScript features.</p><p class="mb-4">Clincoo runs the scripts you save. A small listener is a safety net, not a reason to skip the post-deploy console check.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" target="_blank" rel="noopener">MDN Window error event<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/unhandledrejection_event" target="_blank" rel="noopener">MDN unhandledrejection<span class="d">developer.mozilla.org</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>
