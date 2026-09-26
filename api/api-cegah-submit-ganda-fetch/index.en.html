@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prevent Double Submit on Clincoo Form Fetch — Clincoo Blog</title>
+<meta name="description" content="A second click on Send fires two POSTs. Disable the button until the response arrives or is aborted.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/api/api-cegah-submit-ganda-fetch/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prevent Double Submit on Clincoo Form Fetch">
+<meta property="og:description" content="A second click on Send fires two POSTs. Disable the button until the response arrives or is aborted.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/api/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">API</div><h1>Prevent Double Submit on Clincoo Form Fetch</h1><p class="desc">A second click on Send fires two POSTs. Disable the button until the response arrives or is aborted.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo contact forms that use fetch are easy to send twice: the user sees no indicator and presses again. The server gets two identical tickets.</p><p class="mb-4">On submit, disable the button and set the label to Sending. Keep an AbortController if the user leaves. Do not rely on debounce alone.</p><p class="mb-4">After the response, re-enable the button only on failure that may be retried. On success, replace the form with an aria-live message so Enter cannot resend.</p><p class="mb-4">Check the Network tab in preview. Two POST requests with the same body are a bug, not delivery insurance.</p><p class="mb-4">Ask Clincoo AI to add a submitting guard in the existing form script. Do not rewrite the page into a framework just for one double-submit lock.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener">MDN: fetch<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN: AbortController<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/api/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
