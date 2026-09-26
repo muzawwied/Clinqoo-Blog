@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai JSON.stringify dengan Spasi saat Debug Clincoo, Lalu Hapus sebelum Rilis — Clincoo Blog</title>
+<meta name="description" content="Objek yang di-log tanpa indent sulit dibaca. Pretty-print di konsol, ringkas di produksi.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-stringify-pretty-debug/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai JSON.stringify dengan Spasi saat Debug Clincoo, Lalu Hapus sebelum Rilis">
+<meta property="og:description" content="Objek yang di-log tanpa indent sulit dibaca. Pretty-print di konsol, ringkas di produksi.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Pakai JSON.stringify dengan Spasi saat Debug Clincoo, Lalu Hapus sebelum Rilis</h1><p class="desc">Objek yang di-log tanpa indent sulit dibaca. Pretty-print di konsol, ringkas di produksi.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Debug Clincoo sering menampilkan [object Object] atau satu baris JSON tanpa indent. Membaca kunci jadi lambat.</p><p class="mb-4">Di editor.clincoo.buzz, pakai JSON.stringify(data, null, 2) saat men-debug. Jangan stringify nilai yang memuat secret.</p><p class="mb-4">Hapus log pretty-print sebelum deploy. String besar di konsol produksi membocorkan struktur dan memperlambat tab.</p><p class="mb-4">Minta AI menandai console.log yang men-stringify objek besar. Tempel file skrip terkait.</p><p class="mb-4">Clincoo tidak merapikan log sendiri. Pretty-print sementara mempercepat debug di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Kembali ke json</a>
+</div>
+</body>
+</html>
