@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace Silent Spinners with Announced Clincoo Skeletons — Clincoo Blog</title>
+<meta name="description" content="A spinning circle with no status text feels stuck. Use a content skeleton, aria-busy, and a short done message.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-skeleton-bukan-spinner-diam/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Replace Silent Spinners with Announced Clincoo Skeletons</h1><p class="desc">A spinning circle with no status text feels stuck. Use a content skeleton, aria-busy, and a short done message.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo list cards often show a centered spinner during fetch. The layout jumps when data arrives. Keyboard users cannot tell which region is busy, and the animation keeps running even when prefers-reduced-motion is on.</p><p class="mb-4">Draw a skeleton that matches real card height: title, two lines, button. Mark the container aria-busy="true" while loading. When data is ready, swap the skeleton, set busy false, and announce through a status region if the list matters.</p><p class="mb-4">Do not let the skeleton shimmer forever. Cap the shine or turn it off when the user prefers reduced motion. A timeout should show an empty state or failure message, not an eternal frame.</p><p class="mb-4">Ask AI to swap the spinner for skeleton markup plus two classes. Test in editor.clincoo.buzz with a slowed network. Confirm focus does not jump onto newly inserted nodes without a reason.</p><p class="mb-4">An announced skeleton keeps layout and expectation intact. Deploy to app.clincoo.buzz after loading cards no longer shove the CTA below them.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-busy" target="_blank" rel="noopener">MDN aria-busy<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/accessible-loading-indicators" target="_blank" rel="noopener">web.dev accessible loading indicators<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
