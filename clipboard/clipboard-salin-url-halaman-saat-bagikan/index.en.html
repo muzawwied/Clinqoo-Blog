@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy the Clincoo Page URL with a Clear Share Button — Clincoo Blog</title>
+<meta name="description" content="A share button without a URL fallback fails on desktop. Use navigator.share when present, then writeText.">
+<link rel="canonical" href="https://blog.clincoo.buzz/clipboard/clipboard-salin-url-halaman-saat-bagikan/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/clipboard/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Clipboard</div><h1>Copy the Clincoo Page URL with a Clear Share Button</h1><p class="desc">A share button without a URL fallback fails on desktop. Use navigator.share when present, then writeText.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo pages ship a share icon that only calls navigator.share. On desktop Chrome without a native sheet, the click feels dead. Visitors never get the URL.</p><p class="mb-4">Detect canShare first. If it exists, send the title and location.href. Otherwise call navigator.clipboard.writeText with the canonical URL. Remember: the Clipboard API needs a secure HTTPS context such as app.clincoo.buzz.</p><p class="mb-4">After a successful copy, change the button label to Copied for two seconds. Do not swallow errors; show a short message if permission is denied.</p><p class="mb-4">Ask AI to add only the writeText fallback. Paste the existing share button in editor.clincoo.buzz. Do not override the browser Ctrl+C shortcut.</p><p class="mb-4">One share path plus one copy path covers desktop and phone. Test in a local HTTP preview so you see the failure message before deploy.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText" target="_blank" rel="noopener">MDN clipboard.writeText<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" target="_blank" rel="noopener">MDN Navigator.share<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/clipboard/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
