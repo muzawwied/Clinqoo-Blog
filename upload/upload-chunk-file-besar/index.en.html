@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split a Large File into Chunks during a Clincoo Upload — Clincoo Blog</title>
+<meta name="description" content="A single 80 MB request times out easily. Small chunks plus an index let the upload resume.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-chunk-file-besar/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Split a Large File into Chunks during a Clincoo Upload</h1><p class="desc">A single 80 MB request times out easily. Small chunks plus an index let the upload resume.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo form that posts a whole video in one FormData often drops in the second minute. The server gets an incomplete body.</p><p class="mb-4">In editor.clincoo.buzz, slice the file into parts, for example 2 MB each. Send the part index and the total. Join them on the server before marking done.</p><p class="mb-4">Do not fire every chunk at once. Cap parallelism, store which parts succeeded, and resume the ones that failed.</p><p class="mb-4">Ask AI to add only a slice helper plus a queue. Paste the upload handler that now sends the whole file.</p><p class="mb-4">Clincoo does not chunk files for you. Chunks keep a large upload alive through to app.clincoo.buzz.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob/slice" target="_blank" rel="noopener">MDN Blob.slice<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/patterns/files/drag-and-drop-files" target="_blank" rel="noopener">web.dev Upload<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
