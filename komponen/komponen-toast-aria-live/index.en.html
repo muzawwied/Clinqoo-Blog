@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Announce Clincoo Toasts with aria-live, Not Animation Alone — Clincoo Blog</title>
+<meta name="description" content="Corner notices that only animate stay silent. Use a status live region, a close button, and do not steal focus.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-toast-aria-live/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Announce Clincoo Toasts with aria-live, Not Animation Alone</h1><p class="desc">Corner notices that only animate stay silent. Use a status live region, a close button, and do not steal focus.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo toasts are often a sliding div after a successful form. The animation is visible, but screen reader users stay on the submit button. The important message never gets spoken.</p><p class="mb-4">Keep a role="status" or aria-live="polite" container in the DOM. When a new message arrives, write the text into that container. Do not move focus to the toast unless an action is required. Critical errors may be assertive; ordinary confirmations should stay polite.</p><p class="mb-4">Give a clearly labeled close button and enough time on screen. Honor prefers-reduced-motion so the toast does not bounce. Do not stack five toasts; one message per action is easier to read.</p><p class="mb-4">Ask AI to add only the live region and a showToast(text) helper. Paste sample success and failure copy. Test in the editor.clincoo.buzz preview with a screen reader or accessibility monitor, and keep focus on the form.</p><p class="mb-4">A toast that speaks through a live region feels like feedback, not decoration. Deploy to app.clincoo.buzz after you confirm the message does not cover the primary button on a narrow screen.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live" target="_blank" rel="noopener">MDN aria-live<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html" target="_blank" rel="noopener">WCAG Status Messages<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
