@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validasi URL API dari Env saat Boot Proyek Clincoo — Clincoo Blog</title>
+<meta name="description" content="String kosong atau localhost di produksi merusak fetch. Cek format URL sebelum aplikasi jalan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-validasi-url-api-saat-boot/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Validasi URL API dari Env saat Boot Proyek Clincoo">
+<meta property="og:description" content="String kosong atau localhost di produksi merusak fetch. Cek format URL sebelum aplikasi jalan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Validasi URL API dari Env saat Boot Proyek Clincoo</h1><p class="desc">String kosong atau localhost di produksi merusak fetch. Cek format URL sebelum aplikasi jalan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak proyek Clincoo membaca API_URL lalu langsung fetch. Jika nilainya kosong, browser memanggil path relatif yang 404. Jika nilainya http://localhost, produksi memanggil mesin pengunjung.</p><p class="mb-4">Saat boot, buat URL lewat konstruktor URL. Jika melempar, tampilkan nama variabel yang salah. Tolak skema selain https di lingkungan produksi.</p><p class="mb-4">Jangan gabungkan validasi ini dengan cetak secret. Cukup log host yang terparsed. Token query di URL env harus diperlakukan seperti kunci.</p><p class="mb-4">Dokumentasikan contoh di .env.example: API_URL=https://api.contoh.test tanpa kredensial. Anggota baru meniru bentuk itu, bukan menebak.</p><p class="mb-4">Gagal cepat di awal lebih murah daripada form yang “terikirim” ke endpoint kosong. Clincoo menjalankan skrip yang kamu simpan; cek env adalah pagar pertama.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" target="_blank" rel="noopener">MDN: URL constructor<span class="d">developer.mozilla.org</span></a><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions" target="_blank" rel="noopener">GitHub: Secrets in Actions<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
