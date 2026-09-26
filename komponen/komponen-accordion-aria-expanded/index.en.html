@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Clincoo Accordions with Honest aria-expanded — Clincoo Blog</title>
+<meta name="description" content="FAQ panels that only toggle a CSS class are invisible to screen readers. Sync aria-expanded and panel ids.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-accordion-aria-expanded/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Mark Clincoo Accordions with Honest aria-expanded</h1><p class="desc">FAQ panels that only toggle a CSS class are invisible to screen readers. Sync aria-expanded and panel ids.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo accordions are often a clicked heading plus a hidden div. The open class changes, but the control has no aria-expanded. Screen readers cannot tell whether a panel is open.</p><p class="mb-4">Use a real button, not a clickable div. Each button has aria-controls pointing at the panel id. When open, aria-expanded is true; when closed, false. Do not duplicate ids when copying blocks in editor.clincoo.buzz.</p><p class="mb-4">Decide whether only one panel stays open. If so, close the others and update their attributes in one function. Escape may close the active panel so the pattern matches modals.</p><p class="mb-4">Ask AI to add only the attributes and toggle handler. Paste one FAQ item as the example. Test with the keyboard: Enter and Space must open the same panel as a click.</p><p class="mb-4">An accordion that tells assistive tech the truth feels like a component, not decoration. Deploy to app.clincoo.buzz after preview confirms no panel stays open without a label.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded" target="_blank" rel="noopener">MDN aria-expanded<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Accordion<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
