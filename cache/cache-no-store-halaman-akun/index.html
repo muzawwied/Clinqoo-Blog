@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Cache-Control no-store pada Halaman Akun Clincoo — Clincoo Blog</title>
+<meta name="description" content="HTML akun yang di-cache menampilkan data orang lain setelah tombol kembali. no-store mencegah salinan di CDN dan browser.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-no-store-halaman-akun/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Cache-Control no-store pada Halaman Akun Clincoo">
+<meta property="og:description" content="HTML akun yang di-cache menampilkan data orang lain setelah tombol kembali. no-store mencegah salinan di CDN dan browser.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Pakai Cache-Control no-store pada Halaman Akun Clincoo</h1><p class="desc">HTML akun yang di-cache menampilkan data orang lain setelah tombol kembali. no-store mencegah salinan di CDN dan browser.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman profil, keranjang, dan hasil form sering ikut header cache aset statis. Pengunjung menekan kembali dan melihat email atau token yang bukan miliknya.</p><p class="mb-4">Setel Cache-Control: no-store, no-cache, must-revalidate pada dokumen yang berisi data sesi. Biarkan CSS, font, dan gambar tetap immutable.</p><p class="mb-4">Di pratinjau editor.clincoo.buzz, uji dengan Disable cache mati lalu tombol Back. Konten akun harus diminta ulang ke origin, bukan diambil dari disk.</p><p class="mb-4">Jangan andalkan meta tag Pragma di HTML. Header respons dari host deploy atau _headers Cloudflare yang dipatuhi CDN.</p><p class="mb-4">Minta AI hanya menambah aturan header untuk path /akun atau /app. Jangan ubah max-age font yang sudah benar.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" target="_blank" rel="noopener">MDN Cache-Control<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev: HTTP Cache<span class="d">web.dev</span></a><a href="https://docs.github.com/en/pages/getting-started-with-github-pages" target="_blank" rel="noopener">GitHub Pages docs<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
