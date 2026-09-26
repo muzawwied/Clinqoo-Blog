@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setel Cookie Sesi Clincoo HttpOnly dan SameSite — Clincoo Blog</title>
+<meta name="description" content="Cookie sesi yang bisa dibaca skrip rentan XSS. HttpOnly, Secure, dan SameSite=Lax menahan token.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-cookie-httponly-samesite/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setel Cookie Sesi Clincoo HttpOnly dan SameSite">
+<meta property="og:description" content="Cookie sesi yang bisa dibaca skrip rentan XSS. HttpOnly, Secure, dan SameSite=Lax menahan token.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Setel Cookie Sesi Clincoo HttpOnly dan SameSite</h1><p class="desc">Cookie sesi yang bisa dibaca skrip rentan XSS. HttpOnly, Secure, dan SameSite=Lax menahan token.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Token login yang disimpan di localStorage atau cookie tanpa HttpOnly bisa dicuri skrip pihak ketiga di halaman Clincoo. Satu XSS kecil cukup untuk menyalin document.cookie.</p><p class="mb-4">Setel Set-Cookie dengan HttpOnly; Secure; SameSite=Lax; Path=/ pada domain app.clincoo.buzz. HttpOnly menutup akses JavaScript. Secure memaksa HTTPS. SameSite=Lax menahan kiriman silang situs pada POST berbahaya.</p><p class="mb-4">Jangan taruh token di query string atau di header yang dicatat log publik. Jika butuh nilai di klien, buat cookie kedua non-HttpOnly hanya untuk preferensi, bukan untuk sesi.</p><p class="mb-4">Di editor.clincoo.buzz, cek DevTools Application → Cookies. Pastikan kolom HttpOnly dan Secure tercentang setelah login. Jika tidak, perbaiki header server, bukan menambah polyfill di halaman.</p><p class="mb-4">Minta AI merangkum atribut cookie yang ada. Tempel cuplikan Set-Cookie asli, jangan minta rewrite seluruh middleware auth.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">MDN HTTP Cookies<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/samesite-cookies-explained" target="_blank" rel="noopener">web.dev SameSite cookies<span class="d">web.dev</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
