@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baca Kunci JSON Opsional Clincoo dengan Nilai Cadangan, Jangan Asumsi Selalu Ada — Clincoo Blog</title>
+<meta name="description" content="Parse sukses bukan jaminan setiap field ada. Ambil kunci opsional lewat cadangan agar UI tidak menampilkan undefined.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-kunci-opsional-nilai-cadangan/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Baca Kunci JSON Opsional Clincoo dengan Nilai Cadangan, Jangan Asumsi Selalu Ada">
+<meta property="og:description" content="Parse sukses bukan jaminan setiap field ada. Ambil kunci opsional lewat cadangan agar UI tidak menampilkan undefined.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Baca Kunci JSON Opsional Clincoo dengan Nilai Cadangan, Jangan Asumsi Selalu Ada</h1><p class="desc">Parse sukses bukan jaminan setiap field ada. Ambil kunci opsional lewat cadangan agar UI tidak menampilkan undefined.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">API dan berkas data.json di proyek Clincoo sering menambah field baru secara bertahap. Kode yang langsung menulis data.author.email akan pecah jika author belum dikirim. JSON.parse berhasil, tapi bentuk objek tidak lengkap.</p><p class="mb-4">Setelah parse dan cek tipe objek, baca kunci opsional dengan cadangan yang kamu pilih: const nama = (obj &amp;&amp; typeof obj.nama === 'string') ? obj.nama : 'Tanpa nama'. Jangan mengandalkan || semata jika nilai sah bisa 0 atau string kosong.</p><p class="mb-4">Untuk objek bersarang, naik bertahap. Cek obj.author dulu, baru obj.author.email. Optional chaining (obj.author?.email) membantu, tetap sediakan string cadangan sebelum menempel ke DOM.</p><p class="mb-4">Jangan tampilkan kata undefined atau null di halaman. Pengunjung mengira situs rusak. Nilai cadangan yang manusiawi lebih baik daripada memaksa field yang API belum jamin.</p><p class="mb-4">Dokumentasikan kontrak: field wajib versus opsional. Kalau kamu yang menulis JSON, lebih baik kirim null eksplisit daripada menghapus kunci, supaya pembaca tahu field itu memang kosong, bukan terlupa.</p><p class="mb-4">Uji dengan tiga payload di pratinjau Clincoo: lengkap, tanpa kunci opsional, dan kunci bernilai null. Ketiganya harus merender tanpa error konsol.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank" rel="noopener">MDN: JSON.parse<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" target="_blank" rel="noopener">MDN: optional chaining<span class="d">developer.mozilla.org</span></a><a href="https://www.json.org/json-en.html" target="_blank" rel="noopener">JSON.org<span class="d">json.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

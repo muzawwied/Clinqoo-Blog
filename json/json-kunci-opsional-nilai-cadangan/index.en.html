@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read Optional Clincoo JSON Keys with Fallbacks, Do Not Assume They Exist — Clincoo Blog</title>
+<meta name="description" content="A successful parse does not mean every field is present. Read optional keys with a fallback so the UI never shows undefined.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-kunci-opsional-nilai-cadangan/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Read Optional Clincoo JSON Keys with Fallbacks, Do Not Assume They Exist">
+<meta property="og:description" content="A successful parse does not mean every field is present. Read optional keys with a fallback so the UI never shows undefined.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Read Optional Clincoo JSON Keys with Fallbacks, Do Not Assume They Exist</h1><p class="desc">A successful parse does not mean every field is present. Read optional keys with a fallback so the UI never shows undefined.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">APIs and data.json files in a Clincoo project often grow fields over time. Code that writes data.author.email breaks when author is missing. JSON.parse succeeds, but the object shape is incomplete.</p><p class="mb-4">After parse and an object-type check, read optional keys with a fallback you choose: const name = (obj &amp;&amp; typeof obj.name === 'string') ? obj.name : 'Untitled'. Do not rely on || alone when 0 or an empty string is valid.</p><p class="mb-4">For nested objects, walk one level at a time. Check obj.author first, then obj.author.email. Optional chaining (obj.author?.email) helps; still provide a human fallback before you touch the DOM.</p><p class="mb-4">Never render the words undefined or null. Visitors think the site is broken. A plain fallback is better than forcing a field the API does not guarantee.</p><p class="mb-4">Document the contract: required versus optional fields. If you author the JSON, prefer an explicit null over deleting the key, so readers know the field is empty rather than forgotten.</p><p class="mb-4">Test three payloads in Clincoo preview: complete, missing optional keys, and keys set to null. All three should render with a clean console.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank" rel="noopener">MDN: JSON.parse<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" target="_blank" rel="noopener">MDN: optional chaining<span class="d">developer.mozilla.org</span></a><a href="https://www.json.org/json-en.html" target="_blank" rel="noopener">JSON.org<span class="d">json.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json//">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
