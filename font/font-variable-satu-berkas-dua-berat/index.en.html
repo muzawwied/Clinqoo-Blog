@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use One Variable Font File for Two Clincoo Weights — Clincoo Blog</title>
+<meta name="description" content="Two separate woff2 files for regular and bold delay text. One variable font is often smaller.">
+<link rel="canonical" href="https://blog.clincoo.buzz/font/font-variable-satu-berkas-dua-berat/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/font/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Font</div><h1>Use One Variable Font File for Two Clincoo Weights</h1><p class="desc">Two separate woff2 files for regular and bold delay text. One variable font is often smaller.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo page that loads regular.woff2 and bold.woff2 waits for two network rounds. Bold headings arrive late and the layout shifts.</p><p class="mb-4">A single variable font carries a wght axis. You still set font-weight 400 and 700, but the browser downloads one file. Keep font-display swap as in the other articles in this category.</p><p class="mb-4">Self-host the file in the assets folder in editor.clincoo.buzz. Do not pull an entire family from a CDN if you only use two weights. A latin subset is enough for Indonesian and English pages.</p><p class="mb-4">Ask AI to change @font-face to one variable source only. Paste the current font rules. Compare file size in the Network panel before and after.</p><p class="mb-4">One variable file plus two weights keeps the brand without delaying first text. Deploy to app.clincoo.buzz after a slow-network reload in preview.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide" target="_blank" rel="noopener">MDN variable fonts<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/variable-fonts" target="_blank" rel="noopener">web.dev variable fonts<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/font/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
