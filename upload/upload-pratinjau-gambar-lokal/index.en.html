@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show a Local Image Preview before Clincoo Upload — Clincoo Blog</title>
+<meta name="description" content="Users only notice the wrong file after waiting for the upload. An object URL gives an instant preview.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-pratinjau-gambar-lokal/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Show a Local Image Preview before Clincoo Upload</h1><p class="desc">Users only notice the wrong file after waiting for the upload. An object URL gives an instant preview.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">In editor.clincoo.buzz, uploading a logo without a preview often sends the wrong aspect ratio. Visitors notice only after the page is live on app.clincoo.buzz.</p><p class="mb-4">Use URL.createObjectURL on the File from the input. Show it in an img next to the form before FormData is sent.</p><p class="mb-4">When the preview is no longer needed, call URL.revokeObjectURL so memory does not pile up when the user picks again.</p><p class="mb-4">Limit the thumbnail to image/*. For PDF or ZIP, show the name and size instead of a fake thumbnail.</p><p class="mb-4">Ask Clincoo AI to add only the change handler and one preview img. Do not let it rewrite the whole upload form.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL_static" target="_blank" rel="noopener">MDN createObjectURL<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/browser-storage" target="_blank" rel="noopener">web.dev browser storage<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
