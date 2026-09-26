@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batasi Percobaan Login Clincoo per Alamat — Clincoo Blog</title>
+<meta name="description" content="Form login tanpa batas percobaan memudahkan tebak sandi. Rate limit dan jeda progresif menahan brute force.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-rate-limit-form-login/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Batasi Percobaan Login Clincoo per Alamat">
+<meta property="og:description" content="Form login tanpa batas percobaan memudahkan tebak sandi. Rate limit dan jeda progresif menahan brute force.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Batasi Percobaan Login Clincoo per Alamat</h1><p class="desc">Form login tanpa batas percobaan memudahkan tebak sandi. Rate limit dan jeda progresif menahan brute force.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman masuk app.clincoo.buzz yang menerima POST tanpa batas membuat skrip bisa mencoba ribuan sandi per menit. Pembatasan hanya di klien mudah dilewati.</p><p class="mb-4">Catat gagal login per IP dan per email di server. Setelah lima gagal dalam sepuluh menit, kembalikan 429 plus Retry-After. Pesan di UI tetap umum: terlalu banyak percobaan, coba lagi nanti.</p><p class="mb-4">Jangan sebut berapa sisa percobaan jika itu membantu penyerang menyesuaikan laju. Simpan hitungan di penyimpanan server, bukan di cookie yang bisa dihapus pengguna.</p><p class="mb-4">Sediakan jalur reset sandi yang juga dibatasi. CAPTCHA boleh muncul setelah ambang, tetapi jangan jadi satu-satunya kontrol.</p><p class="mb-4">Di editor.clincoo.buzz, uji alur dengan lima submit salah lalu pastikan tombol Kirim dinonaktifkan sampai waktu Retry-After. Minta AI merapikan teks 429 saja, bukan logika hitungannya.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429" target="_blank" rel="noopener">MDN 429 Too Many Requests<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After" target="_blank" rel="noopener">MDN Retry-After<span class="d">developer.mozilla.org</span></a><a href="https://owasp.org/www-community/controls/Blocking_Brute_Force_Attacks" target="_blank" rel="noopener">OWASP Blocking Brute Force<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
