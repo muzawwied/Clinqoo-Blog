@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ID dan Nominal Besar Clincoo Jangan Disimpan sebagai Number JSON — Clincoo Blog</title>
+<meta name="description" content="Number JavaScript kehilangan presisi di atas 2^53-1. ID order jadi salah setelah parse.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-angka-besar-bukan-number/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ID dan Nominal Besar Clincoo Jangan Disimpan sebagai Number JSON">
+<meta property="og:description" content="Number JavaScript kehilangan presisi di atas 2^53-1. ID order jadi salah setelah parse.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>ID dan Nominal Besar Clincoo Jangan Disimpan sebagai Number JSON</h1><p class="desc">Number JavaScript kehilangan presisi di atas 2^53-1. ID order jadi salah setelah parse.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">API sering mengirim id 19 digit. JSON.parse mengubahnya jadi Number dan digit terakhir berubah diam-diam.</p><p class="mb-4">Di editor.clincoo.buzz, perlakukan id sebagai string sejak kontrak. Jika backend mengirim angka, minta string atau pakai reviver terbatas.</p><p class="mb-4">Jangan hitung uang pecahan dengan Number jika butuh presisi sen. Simpan sen sebagai integer atau string desimal.</p><p class="mb-4">Minta AI menandai field id sebagai string pada satu payload contoh. Tolak polyfill BigInt di seluruh app.</p><p class="mb-4">Clincoo menampilkan id yang kamu render. Presisi yang hilang membuat tautan detail menunjuk rekaman salah.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Kembali ke json</a>
+</div>
+</body>
+</html>
