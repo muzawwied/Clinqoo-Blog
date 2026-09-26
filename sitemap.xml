@@ -77,4 +77,9 @@
   <url><loc>https://blog.clincoo.buzz/auth/auth-pesan-error-login-umum/</loc></url>
   <url><loc>https://blog.clincoo.buzz/auth/auth-timeout-sesi-peringatan/</loc></url>
   <url><loc>https://blog.clincoo.buzz/auth/auth-tombol-lihat-sandi-aman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-jangan-simpan-jwt-localstorage/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-fokus-pesan-error-login/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-reset-sandi-tautan-kedaluwarsa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-kode-cadangan-2fa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-remember-me-bukan-simpan-sandi/</loc></url>
 </urlset>
