@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Password Length Rules on Clincoo Forms — Clincoo Blog</title>
+<meta name="description" content="Password checks that fail only after submit make people guess the rules. Use minlength and help text before submit.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-minlength-sandi-jelas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Show Password Length Rules on Clincoo Forms">
+<meta property="og:description" content="Password checks that fail only after submit make people guess the rules. Use minlength and help text before submit.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Show Password Length Rules on Clincoo Forms</h1><p class="desc">Password checks that fail only after submit make people guess the rules. Use minlength and help text before submit.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Sign-up forms on app.clincoo.buzz often reject a short password after a full reload. People do not learn the rule until a failed attempt.</p><p class="mb-4">Add minlength and maxlength on the password input. Put help under the field: at least 12 characters. Wire it with aria-describedby so screen readers announce it.</p><p class="mb-4">Skip complex patterns that force a special character. NIST prefers length and a leaked-password check over composition rules. The server must still validate; HTML attributes are only a hint.</p><p class="mb-4">Test in editor.clincoo.buzz with an 8-character password. The browser should block submit and show a native or custom message that matches the server rule.</p><p class="mb-4">Ask AI to tidy only the help text and attributes. Paste the current password input so it does not add an unsolicited color checklist.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength" target="_blank" rel="noopener">MDN minlength<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password" target="_blank" rel="noopener">MDN input password<span class="d">developer.mozilla.org</span></a><a href="https://pages.nist.gov/800-63-3/sp800-63b.html" target="_blank" rel="noopener">NIST SP 800-63B<span class="d">pages.nist.gov</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
