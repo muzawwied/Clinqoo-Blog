@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>After Clincoo JSON.parse, Check Object Shape before Reading Properties — Clincoo Blog</title>
+<meta name="description" content="A successful parse does not mean the data is correct. An array where you expected an object breaks .map and .id.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-validasi-bentuk-setelah-parse/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="After Clincoo JSON.parse, Check Object Shape before Reading Properties">
+<meta property="og:description" content="A successful parse does not mean the data is correct. An array where you expected an object breaks .map and .id.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>After Clincoo JSON.parse, Check Object Shape before Reading Properties</h1><p class="desc">A successful parse does not mean the data is correct. An array where you expected an object breaks .map and .id.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo response can be 200 with {"error":true} or []. Code that immediately reads .items then explodes without a clear trail.</p><p class="mb-4">In editor.clincoo.buzz, after parseSafe, assert the value is an object or array matching the contract. Reject null — JSON null is valid but not page data.</p><p class="mb-4">Write one guard: if (!data || typeof data !== 'object') return. Only then read required keys.</p><p class="mb-4">Ask AI to add a guard on one fetch. Do not request a full schema validator for a three-field endpoint.</p><p class="mb-4">Clincoo runs your assumptions. Shape checks keep the app.clincoo.buzz UI intact when the API changes.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Back to json</a>
+</div>
+</body>
+</html>

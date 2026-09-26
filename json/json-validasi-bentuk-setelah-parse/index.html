@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setelah JSON.parse Clincoo, Cek Bentuk Objek sebelum Membaca Properti — Clincoo Blog</title>
+<meta name="description" content="Parse sukses bukan jaminan data benar. Array yang diharapkan objek merusak .map dan .id.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-validasi-bentuk-setelah-parse/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setelah JSON.parse Clincoo, Cek Bentuk Objek sebelum Membaca Properti">
+<meta property="og:description" content="Parse sukses bukan jaminan data benar. Array yang diharapkan objek merusak .map dan .id.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Setelah JSON.parse Clincoo, Cek Bentuk Objek sebelum Membaca Properti</h1><p class="desc">Parse sukses bukan jaminan data benar. Array yang diharapkan objek merusak .map dan .id.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Respons Clincoo bisa 200 dengan body {"error":true} atau []. Kode yang langsung membaca .items meledak tanpa jejak jelas.</p><p class="mb-4">Di editor.clincoo.buzz, setelah parseSafe, pastikan nilai adalah objek atau array sesuai kontrak. Tolak null — JSON null valid tapi bukan data halaman.</p><p class="mb-4">Tulis satu guard: if (!data || typeof data !== 'object') return. Baru baca kunci yang wajib.</p><p class="mb-4">Minta AI menambah guard pada satu fetch. Jangan minta schema validator utuh jika endpoint hanya tiga field.</p><p class="mb-4">Clincoo mengeksekusi asumsi kamu. Validasi bentuk menjaga UI app.clincoo.buzz tetap utuh saat API berubah.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Kembali ke json</a>
+</div>
+</body>
+</html>
