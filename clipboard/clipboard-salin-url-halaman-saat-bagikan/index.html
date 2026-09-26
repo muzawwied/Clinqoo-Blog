@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salin URL Halaman Clincoo lewat Tombol Bagikan yang Jelas — Clincoo Blog</title>
+<meta name="description" content="Tombol bagikan tanpa salin URL gagal di desktop. Pakai navigator.share jika ada, lalu writeText sebagai cadangan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/clipboard/clipboard-salin-url-halaman-saat-bagikan/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/clipboard/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Papan klip</div><h1>Salin URL Halaman Clincoo lewat Tombol Bagikan yang Jelas</h1><p class="desc">Tombol bagikan tanpa salin URL gagal di desktop. Pakai navigator.share jika ada, lalu writeText sebagai cadangan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak halaman Clincoo memasang ikon bagikan yang hanya memanggil navigator.share. Di desktop Chrome tanpa menu native, klik terasa mati. Pengunjung tidak mendapat URL.</p><p class="mb-4">Deteksi dulu canShare. Jika tersedia, kirim title dan location.href. Jika tidak, panggil navigator.clipboard.writeText pada URL kanonis. Ingat: Clipboard API butuh konteks aman HTTPS seperti app.clincoo.buzz.</p><p class="mb-4">Setelah salin berhasil, ganti label tombol menjadi Tersalin selama dua detik. Jangan menelan error diam-diam; tampilkan teks singkat jika izin ditolak.</p><p class="mb-4">Minta AI menambah cadangan writeText saja. Tempel tombol bagikan yang ada di editor.clincoo.buzz. Jangan timpa Ctrl+C bawaan browser.</p><p class="mb-4">Satu jalur bagikan plus satu jalur salin menutup celah desktop dan ponsel. Uji di pratinjau HTTP lokal agar kamu melihat pesan gagal sebelum deploy.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText" target="_blank" rel="noopener">MDN clipboard.writeText<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" target="_blank" rel="noopener">MDN Navigator.share<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/clipboard/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
