@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep Folder Structure when Exporting a Clincoo Project — Clincoo Blog</title>
+<meta name="description" content="Lifting files out of subfolders breaks relative CSS, JS, and image paths. Unzip and upload the Clincoo tree intact.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/export/export-pertahankan-struktur-folder/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/export/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Export</div><h1>Keep Folder Structure when Exporting a Clincoo Project</h1><p class="desc">Lifting files out of subfolders breaks relative CSS, JS, and image paths. Unzip and upload the Clincoo tree intact.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo export zip usually has index.html at the root plus an assets folder. If you move HTML to the host root without that folder, stylesheets and the logo break.</p><p class="mb-4">After download from editor.clincoo.buzz, extract into one working folder. Do not flatten every file to one level. Paths like ../assets/seo.css depend on folder depth.</p><p class="mb-4">Test locally: open index.html in the browser from the unzipped folder. If CSS is missing, check href and src before you change hosts.</p><p class="mb-4">Ask AI to review relative links in index.html and inner pages. Paste the zip file list so AI does not suggest absolute paths on your machine.</p><p class="mb-4">Clincoo does not rewrite paths when you move hosts. The same folder tree as the export is the safest path to app.clincoo.buzz or other static hosting.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL" target="_blank" rel="noopener">MDN What is a URL<span class="d">developer.mozilla.org</span></a><a href="https://docs.github.com/en/pages/getting-started-with-github-pages" target="_blank" rel="noopener">GitHub Pages docs<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/export/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
