@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wrap Long Clincoo Debug Traces with console.group so the Flow Stays Readable — Clincoo Blog</title>
+<meta name="description" content="Dozens of flat logs are hard to follow. group and groupEnd tidy one init path.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-group-untuk-debug-panjang/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wrap Long Clincoo Debug Traces with console.group so the Flow Stays Readable">
+<meta property="og:description" content="Dozens of flat logs are hard to follow. group and groupEnd tidy one init path.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Console</div><h1>Wrap Long Clincoo Debug Traces with console.group so the Flow Stays Readable</h1><p class="desc">Dozens of flat logs are hard to follow. group and groupEnd tidy one init path.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo page init calls fetch, parse, and render. Flat logs mix the three stages.</p><p class="mb-4">In editor.clincoo.buzz, open console.group("init hero") before the steps and close with groupEnd when done.</p><p class="mb-4">Use groupCollapsed for details you rarely open. Do not leave a group without End; the console tree breaks.</p><p class="mb-4">Ask the AI to add groups only in the boot function. Do not paste them into every click handler.</p><p class="mb-4">Clincoo runs in the visitor browser. Console groups are a debug tool; strip or gate them before public release.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Back to console</a>
+</div>
+</body>
+</html>
