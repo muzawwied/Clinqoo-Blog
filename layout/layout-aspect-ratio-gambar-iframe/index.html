@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunci aspect-ratio Gambar dan Iframe Clincoo agar Layout Tidak Loncat — Clincoo Blog</title>
+<meta name="description" content="Media tanpa rasio membuat kartu meloncat saat file selesai dimuat. Cadangkan kotak dengan aspect-ratio sebelum src tiba.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/layout/layout-aspect-ratio-gambar-iframe/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kunci aspect-ratio Gambar dan Iframe Clincoo agar Layout Tidak Loncat">
+<meta property="og:description" content="Media tanpa rasio membuat kartu meloncat saat file selesai dimuat. Cadangkan kotak dengan aspect-ratio sebelum src tiba.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/layout//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Layout</div><h1>Kunci aspect-ratio Gambar dan Iframe Clincoo agar Layout Tidak Loncat</h1><p class="desc">Media tanpa rasio membuat kartu meloncat saat file selesai dimuat. Cadangkan kotak dengan aspect-ratio sebelum src tiba.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Loncatan layout di halaman Clincoo sering berasal dari gambar atau iframe yang belum punya ukuran. Browser belum tahu tinggi media, jadi teks di bawahnya naik, lalu tiba-tiba turun ketika file selesai.</p><p class="mb-4">Properti CSS aspect-ratio memberi kotak cadangan. Untuk foto 3:2 tulis aspect-ratio: 3 / 2 pada bungkus atau pada img. Untuk video 16:9, bungkus iframe dengan rasio itu dan biarkan iframe absolute mengisi kotak.</p><p class="mb-4">Kalau kamu tahu lebar-tinggi asli, atribut width dan height pada img juga membantu browser menghitung rasio sebelum CSS tiba. Kombinasikan dengan width: 100%; height: auto agar tetap responsif.</p><p class="mb-4">Jangan mengunci tinggi dengan px mati pada media yang harus mengecil di HP. px mati memotong gambar atau meninggalkan celah besar. Rasio menjaga bentuk; lebar mengikuti kolom.</p><p class="mb-4">Lazy-load tidak meniadakan kebutuhan rasio. Justru saat loading="lazy", kotak cadangan lebih penting karena media muncul belakangan. Tanpa rasio, lazy-load terasa seperti halaman yang terus bergeser.</p><p class="mb-4">Uji di pratinjau Clincoo: matikan cache, muat ulang, dan perhatikan judul serta tombol di bawah hero. Jika mereka tidak bergeser saat gambar datang, rasio sudah bekerja.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" target="_blank" rel="noopener">MDN: aspect-ratio<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-cls" target="_blank" rel="noopener">web.dev: optimize CLS<span class="d">web.dev</span></a><a href="https://web.dev/articles/iframe-lazy-loading" target="_blank" rel="noopener">web.dev: iframe lazy loading<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/layout//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
