@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kompres Gambar di Klien sebelum Unggah Clincoo — Clincoo Blog</title>
+<meta name="description" content="Foto kamera 8 MB memperlambat form. Canvas atau createImageBitmap merampingkan berkas sebelum dikirim.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-kompres-gambar-klien/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kompres Gambar di Klien sebelum Unggah Clincoo">
+<meta property="og:description" content="Foto kamera 8 MB memperlambat form. Canvas atau createImageBitmap merampingkan berkas sebelum dikirim.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Unggah</div><h1>Kompres Gambar di Klien sebelum Unggah Clincoo</h1><p class="desc">Foto kamera 8 MB memperlambat form. Canvas atau createImageBitmap merampingkan berkas sebelum dikirim.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak pengguna mengunggah foto asli dari ponsel ke form di editor.clincoo.buzz. Tanpa kompresi, progress bar lama dan kuota hosting cepat habis.</p><p class="mb-4">Gambar file ke bitmap, gambar ulang ke canvas dengan lebar maksimal yang masuk akal, lalu canvas.toBlob dengan quality 0.8. Ganti File asli di FormData dengan blob hasil.</p><p class="mb-4">Jaga rasio aspek. Jangan paksa kotak jika produk butuh foto landscape. Simpan nama file asal agar log server tetap terbaca.</p><p class="mb-4">Tampilkan ukuran sebelum dan sesudah di pratinjau. Pengguna lebih rela menunggu kompres singkat daripada gagal di tengah unggah.</p><p class="mb-4">Minta AI memakai createImageBitmap plus canvas, bukan library besar. Tolak saran yang mengunggah file asli bersamaan dengan versi kompres.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob" target="_blank" rel="noopener">MDN canvas toBlob<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/canvas-performance" target="_blank" rel="noopener">web.dev canvas performance<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

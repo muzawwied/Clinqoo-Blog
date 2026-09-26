@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compress Images on the Client before Clincoo Upload — Clincoo Blog</title>
+<meta name="description" content="An 8 MB camera photo slows the form. Canvas or createImageBitmap slims the file before it is sent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-kompres-gambar-klien/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Compress Images on the Client before Clincoo Upload</h1><p class="desc">An 8 MB camera photo slows the form. Canvas or createImageBitmap slims the file before it is sent.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many people upload raw phone photos to a form in editor.clincoo.buzz. Without compression the progress bar drags and hosting quota vanishes.</p><p class="mb-4">Draw the file to a bitmap, redraw it on a canvas at a sensible max width, then canvas.toBlob at quality 0.8. Replace the original File in FormData with the resulting blob.</p><p class="mb-4">Keep the aspect ratio. Do not force a square if the product needs a landscape shot. Keep the original filename so server logs stay readable.</p><p class="mb-4">Show before and after sizes on the preview. People will wait for a short compress more readily than fail mid-upload.</p><p class="mb-4">Ask the AI to use createImageBitmap plus canvas, not a large library. Reject suggestions that upload the original file together with the compressed version.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob" target="_blank" rel="noopener">MDN canvas toBlob<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/canvas-performance" target="_blank" rel="noopener">web.dev canvas performance<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

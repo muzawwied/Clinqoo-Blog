@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revoke Object URLs after Clincoo Upload Previews — Clincoo Blog</title>
+<meta name="description" content="URL.createObjectURL keeps the blob in memory. Revoke the old URL when the file changes so the tab does not swell.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-cabut-object-url/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Revoke Object URLs after Clincoo Upload Previews</h1><p class="desc">URL.createObjectURL keeps the blob in memory. Revoke the old URL when the file changes so the tab does not swell.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Local previews in a Clincoo form usually call URL.createObjectURL. Each call leaves a reference that does not go away on its own.</p><p class="mb-4">Store the active URL in a variable. When the user picks a new file or clears the preview, call URL.revokeObjectURL before creating the next one.</p><p class="mb-4">If you use FileReader.readAsDataURL instead, the blob is not held via an object URL, but the base64 string is heavier in the DOM. Pick one pattern and stick to it.</p><p class="mb-4">Also revoke when the page is hidden or the form is reset. A small leak shows up after dozens of upload attempts in one session.</p><p class="mb-4">Ask the AI to add revoke in the change and reset handlers only. Do not let it create object URLs inside a loop with no list to clean.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL_static" target="_blank" rel="noopener">MDN createObjectURL<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL_static" target="_blank" rel="noopener">MDN revokeObjectURL<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

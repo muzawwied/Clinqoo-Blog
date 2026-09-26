@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use accept and capture on Clincoo Upload Inputs — Clincoo Blog</title>
+<meta name="description" content="A file picker with no hint lists every file. The accept and capture attributes steer the camera or gallery.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-input-accept-capture/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Use accept and capture on Clincoo Upload Inputs</h1><p class="desc">A file picker with no hint lists every file. The accept and capture attributes steer the camera or gallery.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A bare file input in a Clincoo form opens every type. People then pick a PDF for a photo slot. accept="image/jpeg,image/png,image/webp" trims the list on many systems.</p><p class="mb-4">accept is not security. Still check type and magic bytes on the client and the server. Some browsers ignore the filter or keep an All files option.</p><p class="mb-4">On phones, capture="environment" or capture="user" can open the camera at once. Use this only when the flow needs a new photo, not a gallery upload.</p><p class="mb-4">Write a matching label: "Product photo (JPG or PNG)". Do not rely on the system dialog alone to explain the rule.</p><p class="mb-4">Ask the AI to add accept that matches the page. Reject capture on an input also used on desktop if that confuses people.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept" target="_blank" rel="noopener">MDN accept attribute<span class="d">developer.mozilla.org</span></a><a href="https://html.spec.whatwg.org/multipage/input.html#attr-input-accept" target="_blank" rel="noopener">HTML Standard accept<span class="d">html.spec.whatwg.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

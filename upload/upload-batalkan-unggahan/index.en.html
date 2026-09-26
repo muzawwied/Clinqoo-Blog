@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cancel an In-Flight Clincoo Upload — Clincoo Blog</title>
+<meta name="description" content="A wrong file already halfway sent still burns quota. AbortController gives a real cancel button.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-batalkan-unggahan/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Cancel an In-Flight Clincoo Upload</h1><p class="desc">A wrong file already halfway sent still burns quota. AbortController gives a real cancel button.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo form progress bar with no cancel button forces people to wait out the wrong file. Modern fetch accepts a signal from AbortController.</p><p class="mb-4">Create a new controller each time an upload starts. The Cancel button calls abort(). Catch AbortError so it does not look like a scary network failure.</p><p class="mb-4">Reset progress, re-enable the file input, and say "Upload canceled". Do not leave a loading state behind.</p><p class="mb-4">If you still use XMLHttpRequest, xhr.abort() is the equivalent. Pick one API so the AI does not mix two patterns in the same file.</p><p class="mb-4">Ask the AI to keep the controller in the upload function scope, not global. Reject suggestions that ignore abort when the user leaves the page.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN AbortController<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/fetch-api" target="_blank" rel="noopener">web.dev Fetch API<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

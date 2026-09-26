@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limit How Many Files a Clincoo Form Accepts — Clincoo Blog</title>
+<meta name="description" content="An unbounded multiple input floods the upload queue. Set a client-side file quota before the request is sent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-batasi-jumlah-file/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Limit How Many Files a Clincoo Form Accepts</h1><p class="desc">An unbounded multiple input floods the upload queue. Set a client-side file quota before the request is sent.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">The multiple attribute on a file input in editor.clincoo.buzz is convenient, but without a quota people can drop dozens of files at once. The server then rejects or times out without a clear message.</p><p class="mb-4">After change or drop, read FileList.length. If it exceeds the cap — say five product photos — trim the list or reject the batch and explain the quota in the error text.</p><p class="mb-4">Do not rely on server checks alone. A client check saves bandwidth and keeps previews light.</p><p class="mb-4">Show remaining quota next to the drop zone: "2 of 5 files". That number is easier to trust than a warning after failure.</p><p class="mb-4">Ask the AI to add a MAX_FILES constant in one form script. Do not let it remove multiple if the product truly needs several files.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" target="_blank" rel="noopener">MDN input type file<span class="d">developer.mozilla.org</span></a><a href="https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file)" target="_blank" rel="noopener">HTML Standard file upload state<span class="d">html.spec.whatwg.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
