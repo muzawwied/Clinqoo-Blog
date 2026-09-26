@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Navigation Timing after a Clincoo Release — Clincoo Blog</title>
+<meta name="description" content="Load times from PerformanceTiming flag a slow page without guesswork.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-catat-navigation-timing/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record Navigation Timing after a Clincoo Release">
+<meta property="og:description" content="Load times from PerformanceTiming flag a slow page without guesswork.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📡 Pemantauan</div><h1>Record Navigation Timing after a Clincoo Release</h1><p class="desc">Load times from PerformanceTiming flag a slow page without guesswork.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">After a deploy from editor.clincoo.buzz, many people only “feel” that a page is slow. Numbers from Performance Navigation Timing are more honest than impressions.</p><p class="mb-4">Open DevTools, the Performance tab, or type performance.getEntriesByType('navigation') in the console. Note DNS, TTFB, DOMContentLoaded, and loadEventEnd.</p><p class="mb-4">Compare the editor preview with the public domain. A large gap often comes from a hero image, fonts, or a redirect.</p><p class="mb-4">Ask AI to parse only the one metric that is off. Paste the navigation timing JSON, not the whole project.</p><p class="mb-4">Clincoo does not measure load time for you. Navigation timing numbers keep app.clincoo.buzz feeling light.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
