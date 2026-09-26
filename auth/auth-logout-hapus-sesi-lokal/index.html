@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logout Clincoo Harus Hapus Sesi di Klien dan Server — Clincoo Blog</title>
+<meta name="description" content="Menyembunyikan UI login belum cukup. Hapus cookie, token memori, dan sesi server saat keluar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-logout-hapus-sesi-lokal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Logout Clincoo Harus Hapus Sesi di Klien dan Server">
+<meta property="og:description" content="Menyembunyikan UI login belum cukup. Hapus cookie, token memori, dan sesi server saat keluar.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Logout Clincoo Harus Hapus Sesi di Klien dan Server</h1><p class="desc">Menyembunyikan UI login belum cukup. Hapus cookie, token memori, dan sesi server saat keluar.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak template hanya mengarahkan ke /login saat tombol Keluar diklik. Cookie sesi app.clincoo.buzz masih hidup, jadi tombol Kembali di peramban membuka editor lagi.</p><p class="mb-4">Kirim permintaan logout ke server yang menghapus sid di penyimpanan sesi, lalu Set-Cookie dengan Max-Age=0 untuk nama cookie yang sama, Path=/ , dan Secure. Tanpa itu, klien hanya pura-pura keluar.</p><p class="mb-4">Di klien, kosongkan variabel token di memori, hapus kunci localStorage yang terkait akun, dan ganti halaman dengan location.replace agar riwayat tidak menyimpan URL terlindungi.</p><p class="mb-4">Uji di editor.clincoo.buzz: masuk, buka halaman privat, logout, lalu tekan Kembali. Halaman harus minta login ulang, bukan menampilkan draf lama.</p><p class="mb-4">Minta AI meninjau handler klik Keluar saja. Tempel fungsi logout sekarang plus nama cookie agar saran tidak menghapus preferensi tema yang tidak terkait sesi.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">MDN HTTP Cookies<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/replace" target="_blank" rel="noopener">MDN location.replace<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
