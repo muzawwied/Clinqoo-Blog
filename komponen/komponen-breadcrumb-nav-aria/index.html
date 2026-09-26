@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tandai Breadcrumb Clincoo sebagai Navigasi dengan aria-current — Clincoo Blog</title>
+<meta name="description" content="Jejak halaman yang hanya teks tidak membantu pembaca layar. Bungkus breadcrumb dalam nav, daftar tautan, dan aria-current pada halaman aktif.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-breadcrumb-nav-aria/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tandai Breadcrumb Clincoo sebagai Navigasi dengan aria-current">
+<meta property="og:description" content="Jejak halaman yang hanya teks tidak membantu pembaca layar. Bungkus breadcrumb dalam nav, daftar tautan, dan aria-current pada halaman aktif.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Tandai Breadcrumb Clincoo sebagai Navigasi dengan aria-current</h1><p class="desc">Jejak halaman yang hanya teks tidak membantu pembaca layar. Bungkus breadcrumb dalam nav, daftar tautan, dan aria-current pada halaman aktif.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak template Clincoo menampilkan Home / Kategori / Halaman sebagai span biasa. Pengguna melihat jejak, tetapi teknologi bantu tidak tahu itu navigasi hierarki. Halaman aktif juga masih berupa tautan yang bisa diklik ulang tanpa alasan.</p><p class="mb-4">Bungkus jejak dalam elemen nav dengan aria-label Breadcrumb. Isi dengan ol atau daftar tautan. Item terakhir memakai aria-current="page" dan boleh berupa teks, bukan tautan. Pemisah visual sebaiknya aria-hidden agar tidak dibaca sebagai karakter aneh.</p><p class="mb-4">Jaga urutan tetap dari akar situs ke halaman sekarang. Jangan sisipkan tautan ke draf atau folder rahasia di editor.clincoo.buzz. Jika breadcrumb digenerate AI, minta hanya struktur nav plus tautan yang sudah ada di sitemap publik.</p><p class="mb-4">Uji dengan Tab: setiap tingkat kecuali halaman aktif harus bisa difokus. Pembaca layar harus mengumumkan navigasi, lalu daftar, lalu halaman sekarang. Jika ada dua nav di halaman, label harus berbeda agar tidak bentrok dengan menu utama.</p><p class="mb-4">Breadcrumb yang jujur mempersingkat jalan kembali tanpa mengganti menu. Deploy ke app.clincoo.buzz setelah pratinjau memastikan jejak tidak memotong judul atau menumpuk di layar sempit.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current" target="_blank" rel="noopener">MDN aria-current<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Breadcrumb<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
