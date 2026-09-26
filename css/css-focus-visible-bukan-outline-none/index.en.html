@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use :focus-visible, Do Not Remove Outline in Clincoo — Clincoo Blog</title>
+<meta name="description" content="outline: none on every :focus hides the keyboard path. :focus-visible keeps a focus ring only when it matters.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/css/css-focus-visible-bukan-outline-none/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/css/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">CSS</div><h1>Use :focus-visible, Do Not Remove Outline in Clincoo</h1><p class="desc">outline: none on every :focus hides the keyboard path. :focus-visible keeps a focus ring only when it matters.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Templates often set a:focus { outline: none } so mouse clicks look clean. Keyboard users then press Tab and cannot see where the caret is.</p><p class="mb-4">Replace that rule with :focus-visible. Set outline or box-shadow from brand color tokens so the ring works in light and dark mode.</p><p class="mb-4">Do not rely on color alone. A 2px thickness plus offset keeps contrast on primary buttons.</p><p class="mb-4">Test in editor.clincoo.buzz preview: a mouse click does not have to show the ring, but Tab must show it on links, inputs, and buttons.</p><p class="mb-4">Ask the AI to remove global outline: none and add :focus-visible on the open CSS file. Do not let it change layout.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" target="_blank" rel="noopener">MDN :focus-visible<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/focus" target="_blank" rel="noopener">web.dev: Keyboard focus<span class="d">web.dev</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html" target="_blank" rel="noopener">W3C WCAG Focus Visible<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/css/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
