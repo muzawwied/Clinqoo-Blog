@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uji Kirim Form Clincoo dengan Tombol Enter, Bukan Hanya Klik — Clincoo Blog</title>
+<meta name="description" content="Banyak pengunjung menekan Enter di field terakhir. Form yang hanya hidup saat diklik tombol akan gagal diam-diam.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/testing/testing-submit-form-dengan-enter/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Uji Kirim Form Clincoo dengan Tombol Enter, Bukan Hanya Klik">
+<meta property="og:description" content="Banyak pengunjung menekan Enter di field terakhir. Form yang hanya hidup saat diklik tombol akan gagal diam-diam.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/testing/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🧪 Pengujian</div><h1>Uji Kirim Form Clincoo dengan Tombol Enter, Bukan Hanya Klik</h1><p class="desc">Banyak pengunjung menekan Enter di field terakhir. Form yang hanya hidup saat diklik tombol akan gagal diam-diam.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengujian form di Clincoo sering berhenti pada klik tombol Kirim. Di lapangan, orang menekan Enter setelah mengisi email. Jika handler hanya terpasang di click tombol, permintaan tidak pernah jalan atau halaman reload tanpa pesan.</p><p class="mb-4">Di pratinjau editor.clincoo.buzz, isi form dengan data valid lalu tekan Enter dari field terakhir. Ulangi dari field pertama. Catat apakah request terkirim, apakah validasi muncul, dan apakah URL berubah jadi query string yang tidak kamu inginkan.</p><p class="mb-4">Form HTML native sudah mengirim saat Enter jika ada tombol submit. Masalah muncul saat template memakai div bertema tombol atau type="button" tanpa listener yang tepat. Kembalikan ke button type="submit" di dalam form jika memungkinkan.</p><p class="mb-4">Uji juga Enter saat field masih kosong. Pesan error harus sama dengan klik tombol. Jangan biarkan Enter melewati required hanya karena skrip custom tidak mendengarkan event submit.</p><p class="mb-4">Clincoo menampilkan perilaku browser apa adanya. Form yang lulus klik dan Enter di tiga lebar layar siap dirilis.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data" target="_blank" rel="noopener">MDN: Form submission<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/forms/" target="_blank" rel="noopener">web.dev: Learn forms<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/testing/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
