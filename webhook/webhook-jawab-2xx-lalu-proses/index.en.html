@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reply 2xx on Clincoo Webhooks before Heavy Work — Clincoo Blog</title>
+<meta name="description" content="Senders retry when they do not get a fast 2xx. Store the event, reply success, then process.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-jawab-2xx-lalu-proses/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reply 2xx on Clincoo Webhooks before Heavy Work">
+<meta property="og:description" content="Senders retry when they do not get a fast 2xx. Store the event, reply success, then process.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Reply 2xx on Clincoo Webhooks before Heavy Work</h1><p class="desc">Senders retry when they do not get a fast 2xx. Store the event, reply success, then process.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Webhook senders cap wait time. If a Clincoo page renders images or calls another API before it answers, the sender assumes failure and retries.</p><p class="mb-4">Safe order: verify the signature, store the event id, send 200 or 202, then run slow work. The queue can be a list in local JSON processed later.</p><p class="mb-4">Do not reply 200 when verification fails. 401 or 400 stops useless retries. Use 5xx only when storing the event truly failed, because 5xx triggers retry.</p><p class="mb-4">Ask AI to split receive and process into two functions. One file, two functions, no template rewrite.</p><p class="mb-4">Test in editor.clincoo.buzz by delaying the process step. Confirm the 2xx status appears first. Deploy to app.clincoo.buzz after that.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/webhooks" target="_blank" rel="noopener">GitHub Docs — Webhooks<span class="d">docs.github.com</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

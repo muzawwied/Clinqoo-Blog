@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tolak Replay Webhook Clincoo dengan Stempel Waktu — Clincoo Blog</title>
+<meta name="description" content="Signature valid bisa dikirim ulang berjam-jam kemudian. Bandingkan timestamp payload dengan jam server.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-timestamp-anti-replay/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tolak Replay Webhook Clincoo dengan Stempel Waktu">
+<meta property="og:description" content="Signature valid bisa dikirim ulang berjam-jam kemudian. Bandingkan timestamp payload dengan jam server.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Tolak Replay Webhook Clincoo dengan Stempel Waktu</h1><p class="desc">Signature valid bisa dikirim ulang berjam-jam kemudian. Bandingkan timestamp payload dengan jam server.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">HMAC menjaga isi tidak diubah, tetapi tidak menjaga event tidak diulang. Penyerang yang menyalin permintaan lama masih lolos jika kamu hanya cek tanda tangan.</p><p class="mb-4">Wajibkan field waktu di header atau body, misalnya Unix detik. Tolak jika selisih lebih dari lima menit terhadap jam yang kamu percaya.</p><p class="mb-4">Gabungkan cek waktu dengan event id idempoten. Event yang sama dalam jendela waktu tetap diproses sekali.</p><p class="mb-4">Minta AI hanya menambah perbandingan timestamp. Tempel handler plus contoh header dari penyedia webhook.</p><p class="mb-4">Uji tiga kasus di editor.clincoo.buzz: waktu sekarang, waktu kemarin, dan tanpa field waktu. Hanya yang pertama boleh menulis data di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/webhooks" target="_blank" rel="noopener">GitHub Docs — Webhooks<span class="d">docs.github.com</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jawab 2xx Webhook Clincoo sebelum Kerja Berat — Clincoo Blog</title>
+<meta name="description" content="Pengirim mengulang jika tidak menerima 2xx cepat. Simpan event, balas sukses, baru olah data.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-jawab-2xx-lalu-proses/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jawab 2xx Webhook Clincoo sebelum Kerja Berat">
+<meta property="og:description" content="Pengirim mengulang jika tidak menerima 2xx cepat. Simpan event, balas sukses, baru olah data.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Jawab 2xx Webhook Clincoo sebelum Kerja Berat</h1><p class="desc">Pengirim mengulang jika tidak menerima 2xx cepat. Simpan event, balas sukses, baru olah data.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengirim webhook membatasi waktu tunggu. Jika halaman Clincoo merender gambar atau memanggil API lain sebelum menjawab, pengirim mengira gagal dan mengirim ulang.</p><p class="mb-4">Urutan aman: verifikasi signature, simpan event id, kirim 200 atau 202, baru jalankan kerja lambat. Antrian bisa berupa daftar di JSON lokal yang diproses belakangan.</p><p class="mb-4">Jangan balas 200 jika verifikasi gagal. 401 atau 400 menghentikan ulang yang sia-sia. 5xx memicu retry, jadi pakai hanya saat penyimpanan event benar-benar gagal.</p><p class="mb-4">Minta AI memisahkan fungsi terima dan fungsi olah. Satu file, dua fungsi, tanpa rewrite template.</p><p class="mb-4">Uji di editor.clincoo.buzz dengan menunda kerja olah. Pastikan status 2xx muncul dulu. Setelah yakin, deploy ke app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/webhooks" target="_blank" rel="noopener">GitHub Docs — Webhooks<span class="d">docs.github.com</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Check JSON Content-Type on Clincoo Webhooks — Clincoo Blog</title>
-<meta name="description" content="A non-JSON webhook body breaks the parser. Reject the wrong type before you parse.">
+<title>Reject Clincoo Webhooks that Are Not JSON — Clincoo Blog</title>
+<meta name="description" content="Plain text or form-urlencoded bodies break the parser. Check Content-Type before JSON.parse.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-cek-content-type-json/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Check JSON Content-Type on Clincoo Webhooks">
-<meta property="og:description" content="A non-JSON webhook body breaks the parser. Reject the wrong type before you parse.">
+<meta property="og:title" content="Reject Clincoo Webhooks that Are Not JSON">
+<meta property="og:description" content="Plain text or form-urlencoded bodies break the parser. Check Content-Type before JSON.parse.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">Webhook</div><h1>Check JSON Content-Type on Clincoo Webhooks</h1><p class="desc">A non-JSON webhook body breaks the parser. Reject the wrong type before you parse.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo page accepts a POST then calls JSON.parse at once. The sender posts form-urlencoded and the parser throws.</p><p class="mb-4">Read the Content-Type header. Allow application/json only in editor.clincoo.buzz. Return 415 if it differs.</p><p class="mb-4">Do not guess the format from the first character. A wrong type is a signal, not a puzzle.</p><p class="mb-4">Ask AI to add the Content-Type check only. Paste the webhook handler.</p><p class="mb-4">Clincoo renders the script you paste. A clear type keeps the parser safe on app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">Webhook</div><h1>Reject Clincoo Webhooks that Are Not JSON</h1><p class="desc">Plain text or form-urlencoded bodies break the parser. Check Content-Type before JSON.parse.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Many Clincoo handlers call JSON.parse on request.body at once. A sender with the wrong header or a bot posting HTML makes parse fail and the event vanish without a clear status.</p><p class="mb-4">Read the Content-Type header at the start of the handler. Accept only application/json or application/json with a charset. Reply 415 for any other type, then stop.</p><p class="mb-4">After the type is correct, cap the text size before parse. Catch SyntaxError and reply 400 with the event id when present.</p><p class="mb-4">Ask AI to add the header check only. Paste the webhook handler snippet; do not ask it to regenerate the whole site.</p><p class="mb-4">Preview in editor.clincoo.buzz with two requests: valid JSON and plain text. Confirm the second one never writes data.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank" rel="noopener">MDN — HTTP headers<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/" target="_blank" rel="noopener">web.dev<span class="d">web.dev</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/webhook/">← Back to Clincoo Blog</a>
 </div>
 </body>
