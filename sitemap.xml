@@ -82,4 +82,10 @@
   <url><loc>https://blog.clincoo.buzz/auth/auth-reset-sandi-tautan-kedaluwarsa/</loc></url>
   <url><loc>https://blog.clincoo.buzz/auth/auth-kode-cadangan-2fa/</loc></url>
   <url><loc>https://blog.clincoo.buzz/auth/auth-remember-me-bukan-simpan-sandi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-lockout-sementara-bukan-permanen/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-verifikasi-email-sebelum-aksi-sensitif/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-verifikasi-signature-hmac/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-retry-harus-idempoten/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/webhook/webhook-timeout-pendek-lalu-antrian/</loc></url>
 </urlset>
