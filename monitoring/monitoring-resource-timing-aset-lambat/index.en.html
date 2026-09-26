@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Slow Clincoo Assets with Resource Timing — Clincoo Blog</title>
+<meta name="description" content="The Network tab is easy to miss. Resource Timing records each file after the production page loads.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-resource-timing-aset-lambat/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Find Slow Clincoo Assets with Resource Timing">
+<meta property="og:description" content="The Network tab is easy to miss. Resource Timing records each file after the production page loads.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Find Slow Clincoo Assets with Resource Timing</h1><p class="desc">The Network tab is easy to miss. Resource Timing records each file after the production page loads.</p><div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">After you deploy a Clincoo project, a page can feel slow even when a lab Lighthouse run looks green. The cause is often one font, analytics script, or hero image with a long transfer on the visitor network. The Resource Timing API records startTime, responseEnd, and transferSize per URL without recapturing the Network tab.</p><p class="mb-4">Open the production page, then in the console run performance.getEntriesByType("resource"). Sort by duration. Files over 500 ms deserve suspicion: a heavy format, a cache miss, or a cold third-party origin.</p><p class="mb-4">Do not measure only in the editor preview. Production CDN and cache differ. Repeat on a phone with 4G throttling so the numbers resemble real visitors.</p><p class="mb-4">After you find the URL, fix one asset: compress the image, defer a non-critical script, or preload the font. Measure duration again. Monitoring only helps when it turns into an action, not an ignored list.</p><p class="mb-4">Keep a timing snapshot in the release notes. If LCP rises next week, you have an objective baseline instead of a vague feeling that the site is slower.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" target="_blank" rel="noopener">MDN PerformanceResourceTiming<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/custom-metrics" target="_blank" rel="noopener">web.dev custom metrics<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Back to monitoring</a>
+</div>
+</body>
+</html>

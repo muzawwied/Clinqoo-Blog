@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temukan Aset Lambat Clincoo dengan Resource Timing — Clincoo Blog</title>
+<meta name="description" content="Konsol Network mudah terlewat. Resource Timing mencatat durasi setiap file setelah halaman produksi terbuka.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-resource-timing-aset-lambat/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Temukan Aset Lambat Clincoo dengan Resource Timing">
+<meta property="og:description" content="Konsol Network mudah terlewat. Resource Timing mencatat durasi setiap file setelah halaman produksi terbuka.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Pemantauan</div><h1>Temukan Aset Lambat Clincoo dengan Resource Timing</h1><p class="desc">Konsol Network mudah terlewat. Resource Timing mencatat durasi setiap file setelah halaman produksi terbuka.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah deploy proyek Clincoo, halaman bisa terasa lambat meski Lighthouse lab tampak hijau. Penyebabnya sering satu font, skrip analitik, atau gambar hero yang transfer-nya panjang di jaringan pengunjung. Resource Timing API mencatat startTime, responseEnd, dan transferSize per URL tanpa harus merekam ulang tab Network.</p><p class="mb-4">Buka halaman produksi, lalu di konsol jalankan performance.getEntriesByType("resource"). Urutkan berdasarkan duration. File di atas 500 ms patut dicurigai: format terlalu berat, cache miss, atau domain pihak ketiga yang cold-start.</p><p class="mb-4">Jangan ukur di pratinjau editor saja. CDN dan cache produksi berbeda. Ulangi di perangkat HP dengan throttling 4G agar angka mendekati pengunjung nyata.</p><p class="mb-4">Setelah menemukan URL bermasalah, perbaiki satu aset: kompres gambar, tunda skrip non-kritis, atau pindahkan font ke preload. Ukur ulang duration. Monitoring berguna jika berubah menjadi tindakan, bukan daftar panjang yang dibiarkan.</p><p class="mb-4">Simpan cuplikan timing di catatan rilis. Kalau LCP naik minggu depan, kamu punya pembanding objektif, bukan perasaan “kayaknya lebih lambat”.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" target="_blank" rel="noopener">MDN PerformanceResourceTiming<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/custom-metrics" target="_blank" rel="noopener">web.dev custom metrics<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke monitoring</a>
+</div>
+</body>
+</html>
