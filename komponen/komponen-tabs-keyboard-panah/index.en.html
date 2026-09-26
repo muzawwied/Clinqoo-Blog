@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigate Clincoo Tab Components with Arrow Keys — Clincoo Blog</title>
+<meta name="description" content="Tabs that only respond to clicks confuse keyboard users. Use arrows, aria-selected, and linked panels.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-tabs-keyboard-panah/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Navigate Clincoo Tab Components with Arrow Keys">
+<meta property="og:description" content="Tabs that only respond to clicks confuse keyboard users. Use arrows, aria-selected, and linked panels.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Navigate Clincoo Tab Components with Arrow Keys</h1><p class="desc">Tabs that only respond to clicks confuse keyboard users. Use arrows, aria-selected, and linked panels.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo templates place three buttons in a row and hide panels with a CSS class. Mouse clicks work, but Tab stops on the first button and arrows never change the panel.</p><p class="mb-4">The official tabs pattern uses tablist, tab, and tabpanel roles. The active tab has aria-selected true and tabindex 0; the others use tabindex -1. Panels connect through aria-controls and unique ids in editor.clincoo.buzz.</p><p class="mb-4">Add a keydown listener on the tablist: ArrowRight and ArrowLeft move focus and activate the tab. Home and End jump to the ends. Do not rely on click alone.</p><p class="mb-4">Ask AI to add only ARIA roles and the arrow handler. Paste the existing tab markup; refuse a full-page rewrite. Test in preview with the keyboard before deploy on app.clincoo.buzz.</p><p class="mb-4">Tabs that work without a mouse match Escape-closable modals. This small component makes the site feel complete for keyboard and screen-reader users.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role" target="_blank" rel="noopener">MDN tab role<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabs/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Tabs<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
