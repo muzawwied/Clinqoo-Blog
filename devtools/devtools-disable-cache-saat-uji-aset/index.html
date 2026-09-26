@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matikan Cache DevTools saat Menguji Aset Clincoo — Clincoo Blog</title>
+<meta name="description" content="CSS atau gambar lama di cache meniru bug yang sudah kamu perbaiki. Disable cache saat DevTools terbuka.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/devtools/devtools-disable-cache-saat-uji-aset/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matikan Cache DevTools saat Menguji Aset Clincoo">
+<meta property="og:description" content="CSS atau gambar lama di cache meniru bug yang sudah kamu perbaiki. Disable cache saat DevTools terbuka.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/devtools/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">DevTools</div><h1>Matikan Cache DevTools saat Menguji Aset Clincoo</h1><p class="desc">CSS atau gambar lama di cache meniru bug yang sudah kamu perbaiki. Disable cache saat DevTools terbuka.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Kamu sudah mengganti style.css di editor Clincoo, tetapi pratinjau masih memakai margin lama. Sering kali browser menyajikan salinan cache, bukan file yang baru disimpan.</p><p class="mb-4">Buka DevTools, tab Network, centang Disable cache. Biarkan panel terbuka saat me-refresh. Tanpa itu, banyak browser tetap memakai cache meskipun kamu menekan F5.</p><p class="mb-4">Lihat kolom Size: “disk cache” atau “memory cache” berarti file tidak diunduh ulang. Status 200 dari jaringan memastikan path benar dan isi baru sampai.</p><p class="mb-4">Jangan andalkan query string acak di setiap aset sebagai solusi tetap. Cache-busting berguna di produksi; saat debug, Disable cache lebih jujur.</p><p class="mb-4">Setelah yakin perbaikan tampil, tutup DevTools agar pengunjung biasa tetap mendapat cache yang sehat. Uji produksi terpisah dari sesi debug.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.chrome.com/docs/devtools/network/reference/#disable-cache" target="_blank" rel="noopener">Chrome: Disable cache<span class="d">developer.chrome.com</span></a><a href="https://web.dev/learn/performance/http-caching" target="_blank" rel="noopener">web.dev: HTTP caching<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/devtools/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
