@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a Drag-and-Drop Zone to Clincoo Uploads — Clincoo Blog</title>
+<meta name="description" content="A tiny file input is hard to use on desktop. A drop zone that still keeps a hidden input is kinder.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-drag-drop-area/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Add a Drag-and-Drop Zone to Clincoo Uploads</h1><p class="desc">A tiny file input is hard to use on desktop. A drop zone that still keeps a hidden input is kinder.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Choose file button in editor.clincoo.buzz is fine on a phone, but on desktop people often want to drag a file from a folder.</p><p class="mb-4">Handle dragover with preventDefault so the drop does not open the file in a new tab. Read dataTransfer.files and run the same type checks.</p><p class="mb-4">Do not remove input type=file. The drop zone is extra; keyboard and screen reader users still use the real input.</p><p class="mb-4">Change the zone border on dragenter and restore it on dragleave so state is visible without color alone.</p><p class="mb-4">Ask the AI to add drop listeners on one wrapper div. Do not let it delete the existing input label.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop" target="_blank" rel="noopener">MDN file drag and drop<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html" target="_blank" rel="noopener">WCAG name role value<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
