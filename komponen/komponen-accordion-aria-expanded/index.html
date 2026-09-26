@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tandai Accordion Clincoo dengan aria-expanded yang Jujur — Clincoo Blog</title>
+<meta name="description" content="Panel FAQ yang hanya di-toggle kelas CSS tidak dibaca pembaca layar. Sinkronkan aria-expanded dan id panel.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-accordion-aria-expanded/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tandai Accordion Clincoo dengan aria-expanded yang Jujur">
+<meta property="og:description" content="Panel FAQ yang hanya di-toggle kelas CSS tidak dibaca pembaca layar. Sinkronkan aria-expanded dan id panel.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Tandai Accordion Clincoo dengan aria-expanded yang Jujur</h1><p class="desc">Panel FAQ yang hanya di-toggle kelas CSS tidak dibaca pembaca layar. Sinkronkan aria-expanded dan id panel.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Accordion Clincoo sering berupa judul yang diklik lalu div tersembunyi. Kelas open berubah, tetapi tombol tidak punya aria-expanded. Pembaca layar tidak tahu panel terbuka atau tertutup.</p><p class="mb-4">Pakai tombol asli, bukan div klik. Setiap tombol punya aria-controls ke id panel. Saat terbuka, aria-expanded true; saat tertutup, false. Jangan duplikat id saat menyalin blok di editor.clincoo.buzz.</p><p class="mb-4">Putuskan apakah satu panel saja yang terbuka. Jika ya, tutup panel lain dan perbarui atributnya dalam satu fungsi. Escape boleh menutup panel aktif agar pola sama dengan modal.</p><p class="mb-4">Minta AI hanya menambah atribut dan handler toggle. Tempel satu item FAQ sebagai contoh. Uji dengan keyboard: Enter dan Spasi harus membuka panel yang sama seperti klik.</p><p class="mb-4">Accordion yang jujur ke teknologi bantu terasa seperti komponen, bukan dekorasi. Deploy ke app.clincoo.buzz setelah pratinjau memastikan panel tidak tertinggal terbuka tanpa label.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded" target="_blank" rel="noopener">MDN aria-expanded<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Accordion<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
