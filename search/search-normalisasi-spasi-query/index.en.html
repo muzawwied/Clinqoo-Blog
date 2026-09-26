@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Normalize Spaces in a Clincoo Search Query — Clincoo Blog</title>
+<meta name="description" content="Double spaces and a missed trim make the same query look different. Clean whitespace before fetch.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/search/search-normalisasi-spasi-query/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/search/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Search</div><h1>Normalize Spaces in a Clincoo Search Query</h1><p class="desc">Double spaces and a missed trim make the same query look different. Clean whitespace before fetch.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo visitor types two spaces in the middle of a word. The API treats it as a new query and results look odd.</p><p class="mb-4">In editor.clincoo.buzz, trim the ends and collapse repeated spaces to one before debounce or fetch.</p><p class="mb-4">Do not rewrite letters inside the word. Only tidy whitespace. Keep the raw text in the input so the caret does not jump.</p><p class="mb-4">Ask AI to add a normalizeQuery helper. Paste the fetch call that now uses the raw value.</p><p class="mb-4">Clincoo sends the string you build. A tidy query keeps results on app.clincoo.buzz consistent.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C WAI<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/search/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
