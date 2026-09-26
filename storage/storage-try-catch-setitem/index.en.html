@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wrap Clincoo localStorage.setItem in try/catch, a Full Quota Must Not Kill the Page — Clincoo Blog</title>
+<meta name="description" content="setItem throws QuotaExceededError. Without try/catch, saving a draft breaks the rest of the page script.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/storage/storage-try-catch-setitem/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wrap Clincoo localStorage.setItem in try/catch, a Full Quota Must Not Kill the Page">
+<meta property="og:description" content="setItem throws QuotaExceededError. Without try/catch, saving a draft breaks the rest of the page script.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/storage/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">storage</div><h1>Wrap Clincoo localStorage.setItem in try/catch, a Full Quota Must Not Kill the Page</h1><p class="desc">setItem throws QuotaExceededError. Without try/catch, saving a draft breaks the rest of the page script.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo form that saves drafts to localStorage looks safe until the origin quota is full or private mode blocks storage. setItem then throws and the rest of init never runs.</p><p class="mb-4">In editor.clincoo.buzz, wrap setItem and getItem in try/catch. If it fails, continue without a draft and show one status line, not a repeating alert.</p><p class="mb-4">Do not store image blobs as base64 strings in localStorage. The quota fills fast. Keep short text and a key version so a new release does not read a broken draft.</p><p class="mb-4">Ask AI to add a saveDraft helper that already has try/catch. Paste the existing setItem calls, not the whole app.</p><p class="mb-4">Clincoo runs the script you save. Storage that fails quietly keeps app.clincoo.buzz submittable even when the draft cannot be stored.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN localStorage<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/storage-for-the-web" target="_blank" rel="noopener">web.dev Storage for the web<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/storage/">← Back to storage</a>
+</div>
+</body>
+</html>
