@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanitize Upload Filenames in Clincoo — Clincoo Blog</title>
+<meta name="description" content="Filenames from user devices can include spaces, unicode, or paths. Normalize them before you store anything.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-nama-file-aman/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Sanitize Upload Filenames in Clincoo</h1><p class="desc">Filenames from user devices can include spaces, unicode, or paths. Normalize them before you store anything.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A file named Foto from phone (1).JPG breaks asset URLs after deploy to app.clincoo.buzz. Spaces and parentheses are unfriendly to CDNs.</p><p class="mb-4">In editor.clincoo.buzz, lowercase the name, turn spaces into hyphens, and drop characters outside a-z 0-9 dot and dash.</p><p class="mb-4">Do not trust a path inside file.name. Keep only the basename so ../ never reaches the public folder.</p><p class="mb-4">Add a timestamp or short hash when two uploads share a name so the older file is not silently overwritten.</p><p class="mb-4">Ask the AI to write only a name-sanitize function. Paste the line that currently reads file.name.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/File/name" target="_blank" rel="noopener">MDN File.name<span class="d">developer.mozilla.org</span></a><a href="https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload" target="_blank" rel="noopener">OWASP unrestricted upload<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
