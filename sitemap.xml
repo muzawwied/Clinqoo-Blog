@@ -50,4 +50,9 @@
   <url><loc>https://blog.clincoo.buzz/json/json-jangan-eval-string/</loc></url>
   <url><loc>https://blog.clincoo.buzz/json/json-cek-content-type-sebelum-parse/</loc></url>
   <url><loc>https://blog.clincoo.buzz/json/json-localstorage-parse-aman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/json/json-replacer-sembunyikan-secret/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/json/json-jangan-clone-dengan-stringify/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/json/json-validasi-bentuk-setelah-parse/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/json/json-angka-besar-bukan-number/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/json/json-reviver-tanggal-iso/</loc></url>
 </urlset>
