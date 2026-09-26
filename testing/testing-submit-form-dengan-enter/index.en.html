@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Clincoo Form Submit with Enter, Not Only a Click — Clincoo Blog</title>
+<meta name="description" content="Many visitors press Enter in the last field. A form that only lives on a button click fails quietly.">
+<link rel="canonical" href="https://blog.clincoo.buzz/testing/testing-submit-form-dengan-enter/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test Clincoo Form Submit with Enter, Not Only a Click">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/testing/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🧪 Testing</div><h1>Test Clincoo Form Submit with Enter, Not Only a Click</h1><p class="desc">Many visitors press Enter in the last field. A form that only lives on a button click fails quietly.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Form testing in Clincoo often stops at a click on Send. In the field, people press Enter after typing an email. If the handler is bound only to the button click, the request never runs or the page reloads with no message.</p><p class="mb-4">In the editor.clincoo.buzz preview, fill the form with valid data and press Enter from the last field. Repeat from the first field. Note whether the request fires, whether validation appears, and whether the URL turns into a query string you did not want.</p><p class="mb-4">Native HTML forms already submit on Enter when a submit button exists. Trouble starts when a template uses a styled div or type="button" without a proper listener. Prefer button type="submit" inside a real form.</p><p class="mb-4">Also press Enter while fields are empty. The error should match a button click. Do not let Enter skip required checks because custom script listens only to click.</p><p class="mb-4">Clincoo shows real browser behavior. A form that passes both click and Enter on three viewport widths is ready to ship.</p></div>
+  <a class="back" href="https://blog.clincoo.buzz/testing/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
