@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Postal Codes Loosely, Not with a Perfect Pattern — Clincoo Blog</title>
+<meta name="description" content="Postal codes differ in length by country. Reject the impossible; do not force one format.">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-validasi-kode-pos-longgar/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔤 Regex</div><h1>Validate Postal Codes Loosely, Not with a Perfect Pattern</h1><p class="desc">Postal codes differ in length by country. Reject the impossible; do not force one format.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo form that demands five digits rejects valid codes that use spaces or letters. Visitors then blank the field or invent numbers.</p><p class="mb-4">Use a loose pattern: length 3–10, letters or digits, spaces and hyphens allowed. Country-strict checks only after a country field is chosen.</p><p class="mb-4">Do not parse a full address with one regex. Split postal code from city. Test valid and invalid strings in the console before pasting the pattern into oninput.</p><p class="mb-4">Error text should describe the accepted format, not just invalid. Include an example that matches the page locale.</p><p class="mb-4">Clincoo ships form scripts as written. A loose pattern plus a human check is safer than a regex that blocks checkout.</p></div><div class="src"><h2>Information Source</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern" target="_blank" rel="noopener">MDN input pattern<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank" rel="noopener">MDN Regular expressions<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

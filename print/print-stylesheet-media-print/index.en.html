@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep Print Rules in a media=print Stylesheet — Clincoo Blog</title>
+<meta name="description" content="Mixing screen and paper rules breaks both. A print file or @media print block is safer.">
+<link rel="canonical" href="https://blog.clincoo.buzz/print/print-stylesheet-media-print/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/print/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖨 Cetak</div><h1>Keep Print Rules in a media=print Stylesheet</h1><p class="desc">Mixing screen and paper rules breaks both. A print file or @media print block is safer.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo page that only ships screen CSS often prints navbars, buttons, and dark backgrounds that waste ink. Print rules must live apart from monitor styles.</p><p class="mb-4">Add a print.css link with media=print or an @media print block. Hide nav, enlarge type, and reset background color.</p><p class="mb-4">Do not trust the screen preview. Open the browser print dialog and check headers, margins, and table splits. Chrome and Firefox can differ on page-break.</p><p class="mb-4">One print.css file is easier for an AI to review than a dozen scattered rules. Ask the model to edit only that file when you tidy print layout.</p><p class="mb-4">Clincoo serves raw CSS. media=print is the cheapest way to keep invoices and articles readable on paper.</p></div><div class="src"><h2>Information Source</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media" target="_blank" rel="noopener">MDN @media print<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/print-on-the-web" target="_blank" rel="noopener">web.dev print<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/print/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
