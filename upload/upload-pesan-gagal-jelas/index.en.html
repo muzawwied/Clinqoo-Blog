@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write Clear Upload Failure Messages in Clincoo — Clincoo Blog</title>
+<meta name="description" content="A red error with no reason makes users retry blindly. Name the limit, type, or network issue.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-pesan-gagal-jelas/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Write Clear Upload Failure Messages in Clincoo</h1><p class="desc">A red error with no reason makes users retry blindly. Name the limit, type, or network issue.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">An upload form in editor.clincoo.buzz that only says Failed does not help. Users resend the same file again and again.</p><p class="mb-4">Split three causes: size over the limit, type not accepted, and a dropped network. Each cause gets one actionable sentence.</p><p class="mb-4">Put role=alert on the message box so screen readers hear the failure without hunting for red text.</p><p class="mb-4">Do not surface raw HTTP status. Translate 413 into File max 2 MB and 415 into JPG, PNG, or WebP only.</p><p class="mb-4">Ask the AI to add one message element and three if branches. Paste the fetch handler that is open in the editor.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank" rel="noopener">MDN HTTP status<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html" target="_blank" rel="noopener">WCAG error identification<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
