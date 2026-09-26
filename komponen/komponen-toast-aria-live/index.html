@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umumkan Toast Clincoo lewat aria-live, Bukan Hanya Animasi — Clincoo Blog</title>
+<meta name="description" content="Notifikasi pojok yang hanya muncul visual tidak terdengar. Pakai status live region, tombol tutup, dan jangan curi fokus.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-toast-aria-live/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Umumkan Toast Clincoo lewat aria-live, Bukan Hanya Animasi">
+<meta property="og:description" content="Notifikasi pojok yang hanya muncul visual tidak terdengar. Pakai status live region, tombol tutup, dan jangan curi fokus.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Umumkan Toast Clincoo lewat aria-live, Bukan Hanya Animasi</h1><p class="desc">Notifikasi pojok yang hanya muncul visual tidak terdengar. Pakai status live region, tombol tutup, dan jangan curi fokus.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Toast di situs Clincoo sering berupa div yang slide dari bawah setelah form sukses. Animasi terlihat, tetapi pengguna pembaca layar tetap diam di tombol kirim. Pesan penting hilang tanpa diumumkan.</p><p class="mb-4">Siapkan wadah role="status" atau aria-live="polite" yang sudah ada di DOM. Saat pesan baru datang, isi teks ke wadah itu. Jangan pindahkan fokus ke toast kecuali ada aksi wajib. Error kritis boleh assertive, konfirmasi biasa cukup polite.</p><p class="mb-4">Beri tombol tutup berlabel jelas dan batas waktu yang cukup. Hormati prefers-reduced-motion agar toast tidak bergoyang. Jangan tumpuk lima toast sekaligus; satu pesan per aksi lebih mudah dibaca.</p><p class="mb-4">Minta AI hanya menambah live region dan fungsi showToast(teks). Tempel contoh pesan sukses dan gagal. Uji di pratinjau editor.clincoo.buzz dengan pembaca layar atau monitor aksesibilitas, lalu pastikan fokus tetap di form.</p><p class="mb-4">Toast yang berbicara lewat live region terasa sebagai umpan balik, bukan hiasan. Deploy ke app.clincoo.buzz setelah memastikan pesan tidak menutupi tombol primer di layar sempit.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live" target="_blank" rel="noopener">MDN aria-live<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html" target="_blank" rel="noopener">WCAG Status Messages<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
