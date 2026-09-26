@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Clincoo Breadcrumbs as Navigation with aria-current — Clincoo Blog</title>
+<meta name="description" content="Plain-text trails do not help screen readers. Wrap breadcrumbs in nav, list links, and set aria-current on the active page.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-breadcrumb-nav-aria/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Mark Clincoo Breadcrumbs as Navigation with aria-current</h1><p class="desc">Plain-text trails do not help screen readers. Wrap breadcrumbs in nav, list links, and set aria-current on the active page.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo templates render Home / Category / Page as plain spans. Users see a trail, but assistive tech does not know it is hierarchical navigation. The current page is often still a clickable link with no purpose.</p><p class="mb-4">Wrap the trail in a nav with aria-label Breadcrumb. Fill it with an ordered list of links. The last item uses aria-current="page" and may be text instead of a link. Hide visual separators from the accessibility tree so they are not spoken as odd characters.</p><p class="mb-4">Keep the order from the site root to the current page. Do not expose draft or private folders from editor.clincoo.buzz. If AI generates the trail, ask only for the nav structure plus public sitemap links.</p><p class="mb-4">Test with Tab: every level except the current page must be focusable. A screen reader should announce navigation, then the list, then the current page. If the page has two nav regions, their labels must differ from the main menu.</p><p class="mb-4">An honest breadcrumb shortens the path back without replacing the menu. Deploy to app.clincoo.buzz after preview confirms the trail does not clip the title or stack poorly on a narrow screen.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current" target="_blank" rel="noopener">MDN aria-current<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Breadcrumb<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
