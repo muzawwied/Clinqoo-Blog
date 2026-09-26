@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setel Vary Accept-Encoding pada Aset Clincoo yang Dikompres — Clincoo Blog</title>
+<meta name="description" content="Cache tanpa Vary bisa memberi gzip ke klien yang minta brotli atau sebaliknya. Header Vary memisahkan varian.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-vary-accept-encoding/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setel Vary Accept-Encoding pada Aset Clincoo yang Dikompres">
+<meta property="og:description" content="Cache tanpa Vary bisa memberi gzip ke klien yang minta brotli atau sebaliknya. Header Vary memisahkan varian.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Setel Vary Accept-Encoding pada Aset Clincoo yang Dikompres</h1><p class="desc">Cache tanpa Vary bisa memberi gzip ke klien yang minta brotli atau sebaliknya. Header Vary memisahkan varian.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">CDN situs Clincoo kadang menyimpan satu salinan terkompresi lalu membaginya ke semua browser. Hasilnya encoding salah atau file rusak.</p><p class="mb-4">Tandai respons CSS dan JS dengan Vary: Accept-Encoding. Pastikan nama file atau etag beda per encoding.</p><p class="mb-4">Jangan menonaktifkan kompresi hanya karena takut cache. Perbaiki kunci cache, bukan membuang gzip.</p><p class="mb-4">Uji dua UA berbeda di Network setelah publish dari app.clincoo.buzz. Minta AI hanya menambah header Vary di konfigurasi yang ada.</p><p class="mb-4">Clincoo tidak menulis header CDN. Vary yang benar menjaga aset terkompresi aman.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary" target="_blank" rel="noopener">MDN Vary<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev HTTP cache<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

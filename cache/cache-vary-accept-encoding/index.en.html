@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set Vary Accept-Encoding on Compressed Clincoo Assets — Clincoo Blog</title>
+<meta name="description" content="A cache without Vary can serve gzip to a client that asked for brotli or the reverse. Vary splits the variants.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-vary-accept-encoding/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Set Vary Accept-Encoding on Compressed Clincoo Assets</h1><p class="desc">A cache without Vary can serve gzip to a client that asked for brotli or the reverse. Vary splits the variants.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo site CDN sometimes stores one compressed copy and shares it with every browser. The result is the wrong encoding or a broken file.</p><p class="mb-4">Mark CSS and JS responses with Vary: Accept-Encoding. Keep a different filename or etag per encoding.</p><p class="mb-4">Do not turn compression off just because cache feels scary. Fix the cache key instead of dropping gzip.</p><p class="mb-4">Test two different UAs in Network after a publish from app.clincoo.buzz. Ask AI only to add the Vary header in the current config.</p><p class="mb-4">Clincoo does not write CDN headers. A correct Vary keeps compressed assets safe.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary" target="_blank" rel="noopener">MDN Vary<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev HTTP cache<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
