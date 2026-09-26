@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate the API URL from Env when a Clincoo Project Boots — Clincoo Blog</title>
+<meta name="description" content="An empty string or localhost in production breaks fetch. Check URL shape before the app runs.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-validasi-url-api-saat-boot/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Validate the API URL from Env when a Clincoo Project Boots">
+<meta property="og:description" content="An empty string or localhost in production breaks fetch. Check URL shape before the app runs.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Validate the API URL from Env when a Clincoo Project Boots</h1><p class="desc">An empty string or localhost in production breaks fetch. Check URL shape before the app runs.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo projects read API_URL and fetch immediately. If the value is empty, the browser hits a relative path that 404s. If it is http://localhost, production calls the visitor’s machine.</p><p class="mb-4">At boot, construct a URL with the URL constructor. If it throws, show the expected variable name. Reject non-https schemes in production.</p><p class="mb-4">Do not mix this check with printing secrets. Log only the parsed host. A token in an env URL is still a secret.</p><p class="mb-4">Document the shape in .env.example: API_URL=https://api.example.test with no credentials. New teammates copy that form instead of guessing.</p><p class="mb-4">Failing fast at startup is cheaper than a form that “sends” to an empty endpoint. Clincoo runs the scripts you save; env checks are the first fence.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" target="_blank" rel="noopener">MDN: URL constructor<span class="d">developer.mozilla.org</span></a><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions" target="_blank" rel="noopener">GitHub: Secrets in Actions<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
