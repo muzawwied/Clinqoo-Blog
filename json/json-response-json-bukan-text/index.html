@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai response.json() Clincoo, Jangan Parse Teks Mentah tanpa Cek Status — Clincoo Blog</title>
+<meta name="description" content="fetch().then(r => r.text()) lalu JSON.parse menyembunyikan status HTTP. Pakai response.json setelah cek ok.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/json/json-response-json-bukan-text/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai response.json() Clincoo, Jangan Parse Teks Mentah tanpa Cek Status">
+<meta property="og:description" content="fetch().then(r => r.text()) lalu JSON.parse menyembunyikan status HTTP. Pakai response.json setelah cek ok.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/json/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">JSON</div><h1>Pakai response.json() Clincoo, Jangan Parse Teks Mentah tanpa Cek Status</h1><p class="desc">fetch().then(r => r.text()) lalu JSON.parse menyembunyikan status HTTP. Pakai response.json setelah cek ok.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo yang memanggil API sering menulis r.text() kemudian JSON.parse. Jika server mengembalikan 500 berupa HTML, parse meledak dan pesan error tidak menjelaskan status.</p><p class="mb-4">Di editor.clincoo.buzz, cek response.ok dulu. Baru panggil response.json(). JSON.parse tetap bisa dipakai untuk string dari localStorage, bukan untuk body fetch yang sudah bertipe Response.</p><p class="mb-4">response.json() juga melempar jika body bukan JSON. Tetap bungkus di try/catch, dan tampilkan status plus cuplikan content-type agar debug cepat.</p><p class="mb-4">Jangan minta AI menulis ulang seluruh fetch. Tempel satu fungsi loadJson(url) yang mengembalikan objek atau null, lalu ganti pemanggilan yang ada.</p><p class="mb-4">Clincoo menjalankan skrip yang kamu simpan. Fetch yang memeriksa status menjaga app.clincoo.buzz tetap hidup saat API sedang down.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json" target="_blank" rel="noopener">MDN Response.json()<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener">MDN Using Fetch<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/json/">← Kembali ke json</a>
+</div>
+</body>
+</html>
