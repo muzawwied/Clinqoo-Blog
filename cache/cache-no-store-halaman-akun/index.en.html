@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Cache-Control no-store on Clincoo Account Pages — Clincoo Blog</title>
+<meta name="description" content="Cached account HTML can show someone else's data after Back. no-store stops copies in the CDN and browser.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cache/cache-no-store-halaman-akun/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cache/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cache</div><h1>Use Cache-Control no-store on Clincoo Account Pages</h1><p class="desc">Cached account HTML can show someone else's data after Back. no-store stops copies in the CDN and browser.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Profile, cart, and form-result pages often inherit static-asset cache headers. A visitor hits Back and sees an email or token that is not theirs.</p><p class="mb-4">Set Cache-Control: no-store, no-cache, must-revalidate on documents that hold session data. Keep CSS, fonts, and images immutable.</p><p class="mb-4">In editor.clincoo.buzz preview, test with Disable cache off, then use Back. Account content must be requested again from origin, not read from disk.</p><p class="mb-4">Do not rely on a Pragma meta tag in HTML. CDNs honor response headers from your host or a Cloudflare _headers file.</p><p class="mb-4">Ask the AI to add header rules only for /akun or /app paths. Do not change font max-age that is already correct.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" target="_blank" rel="noopener">MDN Cache-Control<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/http-cache" target="_blank" rel="noopener">web.dev: HTTP Cache<span class="d">web.dev</span></a><a href="https://docs.github.com/en/pages/getting-started-with-github-pages" target="_blank" rel="noopener">GitHub Pages docs<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cache/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
