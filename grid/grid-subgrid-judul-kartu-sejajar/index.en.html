@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Align Clincoo Card Titles with subgrid — Clincoo Blog</title>
+<meta name="description" content="Independent nested grids make card titles and buttons miss the same line. subgrid reuses the parent tracks.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/grid/grid-subgrid-judul-kartu-sejajar/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Align Clincoo Card Titles with subgrid">
+<meta property="og:description" content="Independent nested grids make card titles and buttons miss the same line. subgrid reuses the parent tracks.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/grid/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Align Clincoo Card Titles with subgrid</h1><p class="desc">Independent nested grids make card titles and buttons miss the same line. subgrid reuses the parent tracks.</p><div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Service card lists on Clincoo pages often use display:grid on the container and again on each card. Without subgrid, title heights differ so the Learn buttons land at random. Visitors scan a broken row.</p><p class="mb-4">subgrid lets a card borrow parent rows: one for the image, one for the title, one for the summary, one for the action. A two-line title compresses the summary instead of pushing only that card’s button down.</p><p class="mb-4">Set grid-template-rows: subgrid on the card and make every card span the same number of parent rows. Support exists in modern Chromium and Firefox; keep a stacked fallback inside @supports.</p><p class="mb-4">Test in desktop preview first, then narrow to one column. Subgrid does not replace a one-column media query on phones; it only tidies cells while cards sit side by side.</p><p class="mb-4">If older browsers are a client requirement, limit subgrid to new marketing pages and leave older templates on a fixed min-card height.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid" target="_blank" rel="noopener">MDN CSS subgrid<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/css-subgrid" target="_blank" rel="noopener">web.dev CSS subgrid<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/grid/">← Back to grid</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect Clincoo Form Labels to Inputs with for and id — Clincoo Blog</title>
+<meta name="description" content="A placeholder is not a label. Without for/id, screen readers and text clicks do not focus the field.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/html/html-label-terhubung-ke-input/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Connect Clincoo Form Labels to Inputs with for and id">
+<meta property="og:description" content="A placeholder is not a label. Without for/id, screen readers and text clicks do not focus the field.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/html/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Connect Clincoo Form Labels to Inputs with for and id</h1><p class="desc">A placeholder is not a label. Without for/id, screen readers and text clicks do not focus the field.</p><div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Contact forms in Clincoo templates often put copy in the placeholder and leave the input without an id. The placeholder disappears while typing, and clicking the word Email next to the field does not move focus. That fails access and UX.</p><p class="mb-4">The correct pattern: one label whose for matches the input id. You may also wrap the input in the label when layout allows, but for/id survives when CSS separates the text from the field.</p><p class="mb-4">Do not treat title or aria-label as the first substitute. A visible label helps everyone, including people who enlarge text. aria-labelledby is for complex widgets, not a replacement for a normal label.</p><p class="mb-4">Test with Tab and by clicking the label text. Focus must enter the control. In Clincoo preview, zoom text to 200 percent: the label must not clip or cover the input.</p><p class="mb-4">Use the same pattern on every form — newsletter, checkout, and search. Consistency makes the next access review faster.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank" rel="noopener">MDN label element<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/tutorials/forms/labels/" target="_blank" rel="noopener">W3C WAI form labels<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/html/">← Back to html</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sejajarkan Judul Kartu Clincoo dengan subgrid — Clincoo Blog</title>
+<meta name="description" content="Grid anak yang independen membuat judul dan tombol kartu tidak satu garis. subgrid meminjam trek induk.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/grid/grid-subgrid-judul-kartu-sejajar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sejajarkan Judul Kartu Clincoo dengan subgrid">
+<meta property="og:description" content="Grid anak yang independen membuat judul dan tombol kartu tidak satu garis. subgrid meminjam trek induk.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/grid/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Grid</div><h1>Sejajarkan Judul Kartu Clincoo dengan subgrid</h1><p class="desc">Grid anak yang independen membuat judul dan tombol kartu tidak satu garis. subgrid meminjam trek induk.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Daftar kartu layanan di halaman Clincoo sering memakai display:grid pada kontainer dan lagi pada tiap kartu. Tanpa subgrid, tinggi judul berbeda-beda sehingga tombol “Pelajari” jatuh di posisi acak. Pengunjung memindai baris yang patah.</p><p class="mb-4">subgrid membuat kartu meminjam baris induk: satu baris untuk gambar, satu untuk judul, satu untuk ringkasan, satu untuk aksi. Kartu dengan judul dua baris tetap menekan ringkasan, bukan mendorong tombol ke bawah sendirian.</p><p class="mb-4">Tulis grid-template-rows: subgrid pada kartu dan pastikan kartu menempati jumlah baris induk yang sama. Dukungannya sudah ada di mesin Chromium dan Firefox modern; siapkan cadangan stacking biasa di dalam @supports.</p><p class="mb-4">Uji di pratinjau lebar desktop dulu, lalu sempitkan sampai satu kolom. Subgrid tidak menggantikan media query satu kolom di ponsel; ia hanya merapikan sel di dalam kartu saat kartu masih berdampingan.</p><p class="mb-4">Jika browser lama menjadi syarat klien, batasi subgrid pada halaman pemasaran baru dan biarkan template lama memakai tinggi min-card yang tetap.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid" target="_blank" rel="noopener">MDN CSS subgrid<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/css-subgrid" target="_blank" rel="noopener">web.dev CSS subgrid<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/grid/">← Kembali ke grid</a>
+</div>
+</body>
+</html>
