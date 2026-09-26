@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganti Spinner Diam dengan Skeleton Komponen yang Diumumkan — Clincoo Blog</title>
+<meta name="description" content="Lingkaran berputar tanpa teks status terasa macet. Pakai kerangka isi, aria-busy, dan pesan selesai yang singkat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-skeleton-bukan-spinner-diam/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ganti Spinner Diam dengan Skeleton Komponen yang Diumumkan">
+<meta property="og:description" content="Lingkaran berputar tanpa teks status terasa macet. Pakai kerangka isi, aria-busy, dan pesan selesai yang singkat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Ganti Spinner Diam dengan Skeleton Komponen yang Diumumkan</h1><p class="desc">Lingkaran berputar tanpa teks status terasa macet. Pakai kerangka isi, aria-busy, dan pesan selesai yang singkat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Kartu daftar Clincoo sering menampilkan spinner di tengah saat fetch. Layout loncat saat data datang. Pengguna keyboard tidak tahu wilayah mana yang sibuk, dan animasi terus berjalan meski prefers-reduced-motion aktif.</p><p class="mb-4">Gambar kerangka yang meniru tinggi kartu sungguhan: judul, dua baris teks, tombol. Tandai wadah aria-busy="true" selama muat. Saat data siap, ganti kerangka, set busy false, dan umumkan lewat status live jika daftar penting.</p><p class="mb-4">Jangan biarkan skeleton berkilau tanpa henti. Batasi durasi kilau atau matikan jika pengguna meminta gerak berkurang. Timeout harus menampilkan state kosong atau pesan gagal, bukan kerangka abadi.</p><p class="mb-4">Minta AI menukar spinner menjadi markup skeleton plus dua kelas. Uji di editor.clincoo.buzz dengan jaringan diperlambat. Pastikan fokus tidak loncat ke elemen yang baru dimasukkan tanpa alasan.</p><p class="mb-4">Skeleton yang diumumkan menjaga tata letak dan harapan. Deploy ke app.clincoo.buzz setelah kartu muat tidak menggeser CTA di bawahnya.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-busy" target="_blank" rel="noopener">MDN aria-busy<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/accessible-loading-indicators" target="_blank" rel="noopener">web.dev accessible loading indicators<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
