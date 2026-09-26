@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limit Image Width and Height before Clincoo Upload — Clincoo Blog</title>
+<meta name="description" content="A small file can still be heavy at 6000 pixels. Check naturalWidth and naturalHeight before sending FormData.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-max-dimensi-gambar/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Limit Image Width and Height before Clincoo Upload</h1><p class="desc">A small file can still be heavy at 6000 pixels. Check naturalWidth and naturalHeight before sending FormData.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Byte-size checks are not enough. A 400 KB photo that is 8000 pixels wide still breaks preview and forces a huge canvas in editor.clincoo.buzz.</p><p class="mb-4">Create an Image from an Object URL and read naturalWidth and naturalHeight after load. Reject the file if either side exceeds the limit you show in the UI, such as 2400 pixels.</p><p class="mb-4">If the image is too large but still usable, offer a client-side resize with canvas or createImageBitmap. Do not upload raw camera resolution to app.clincoo.buzz.</p><p class="mb-4">Write an error that names the actual dimensions and the limit so users can crop on their device.</p><p class="mb-4">Ask the AI to add only a dimension check on the existing file input. Do not let it overwrite compression or drag-and-drop that already works.</p><p class="mb-4">A dimension cap keeps the tab memory low and makes Clincoo galleries feel fast after deploy.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/naturalWidth" target="_blank" rel="noopener">MDN HTMLImageElement.naturalWidth<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/compress-images" target="_blank" rel="noopener">web.dev: Compress images<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
