@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Picu Reveal Clincoo Sekali dengan Intersection Observer — Clincoo Blog</title>
+<meta name="description" content="Animasi scroll yang mengulang setiap masuk-keluar viewport membuat pengguna pusing. Amati sekali, lalu lepas observer.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/animasi/animasi-intersection-observer-sekali-masuk/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Picu Reveal Clincoo Sekali dengan Intersection Observer">
+<meta property="og:description" content="Animasi scroll yang mengulang setiap masuk-keluar viewport membuat pengguna pusing. Amati sekali, lalu lepas observer.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/animasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">animasi</div><h1>Picu Reveal Clincoo Sekali dengan Intersection Observer</h1><p class="desc">Animasi scroll yang mengulang setiap masuk-keluar viewport membuat pengguna pusing. Amati sekali, lalu lepas observer.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Kartu layanan di landing Clincoo sering memakai kelas masuk dari bawah yang diulang tiap kali elemen keluar viewport. Di ponsel dengan scroll patah-patah, kartu berkedip terus.</p><p class="mb-4">Pakai Intersection Observer dengan threshold rendah. Saat elemen terlihat, tambah kelas is-in lalu observer.unobserve(el) atau disconnect jika semua item sudah tampil.</p><p class="mb-4">Hormati prefers-reduced-motion: jika pengguna meminta gerak berkurang, langsung pasang kelas akhir tanpa observer. Jangan animasikan left atau top; cukup opacity dan transform.</p><p class="mb-4">Uji di pratinjau ponsel editor.clincoo.buzz. Scroll naik-turun cepat. Jika kartu masih berkedip, observer belum dilepas.</p><p class="mb-4">Minta AI menambah observer kecil di satu berkas JS. Situs statis Clincoo tidak butuh library 30KB untuk fade empat kartu.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank" rel="noopener">MDN: Intersection Observer<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/intersectionobserver-v2" target="_blank" rel="noopener">web.dev: intersection observer<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/animasi/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
