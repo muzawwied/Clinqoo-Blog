@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate-Limit Clincoo Login Attempts per Address — Clincoo Blog</title>
+<meta name="description" content="An unbounded login form invites password guessing. Rate limits and progressive delays stop brute force.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-rate-limit-form-login/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rate-Limit Clincoo Login Attempts per Address">
+<meta property="og:description" content="An unbounded login form invites password guessing. Rate limits and progressive delays stop brute force.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Rate-Limit Clincoo Login Attempts per Address</h1><p class="desc">An unbounded login form invites password guessing. Rate limits and progressive delays stop brute force.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A sign-in page on app.clincoo.buzz that accepts unlimited POSTs lets a script try thousands of passwords per minute. Client-only throttles are easy to skip.</p><p class="mb-4">Record failed logins per IP and per email on the server. After five failures in ten minutes, return 429 plus Retry-After. Keep the UI copy generic: too many attempts, try again later.</p><p class="mb-4">Do not announce remaining attempts if that helps an attacker pace the guesses. Store the counter in server storage, not in a cookie the user can delete.</p><p class="mb-4">Rate-limit the password-reset path as well. A CAPTCHA may appear after the threshold, but it must not be the only control.</p><p class="mb-4">In editor.clincoo.buzz, fail five submits and confirm Kirim stays disabled until Retry-After elapses. Ask AI to tidy the 429 copy only, not the counting logic.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429" target="_blank" rel="noopener">MDN 429 Too Many Requests<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After" target="_blank" rel="noopener">MDN Retry-After<span class="d">developer.mozilla.org</span></a><a href="https://owasp.org/www-community/controls/Blocking_Brute_Force_Attacks" target="_blank" rel="noopener">OWASP Blocking Brute Force<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
