@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kembalikan File Staging Clincoo dengan restore, Bukan reset --hard — Clincoo Blog</title>
+<meta name="description" content="reset --hard membuang kerja yang belum tersimpan. git restore --staged hanya menurunkan file dari antrian commit.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-restore-staged-bukan-reset-hard/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kembalikan File Staging Clincoo dengan restore, Bukan reset --hard">
+<meta property="og:description" content="reset --hard membuang kerja yang belum tersimpan. git restore --staged hanya menurunkan file dari antrian commit.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/git/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Git</div><h1>Kembalikan File Staging Clincoo dengan restore, Bukan reset --hard</h1><p class="desc">reset --hard membuang kerja yang belum tersimpan. git restore --staged hanya menurunkan file dari antrian commit.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Saat menyiapkan commit proyek Clincoo, mudah kelebihan add: file .env, hasil build, atau percobaan CSS masuk staged. Refleks reset --hard menghapus juga perubahan di working tree. Itu kehilangan teks yang belum sempat disalin.</p><p class="mb-4">Perintah yang aman untuk batal-staging adalah git restore --staged &lt;file&gt;. Isi file tetap di editor; hanya status index yang mundur. Kalau kamu juga ingin membuang suntingan di working tree, git restore &lt;file&gt; tanpa --staged — tetap lebih sempit daripada reset keras ke HEAD.</p><p class="mb-4">Biasakan git status dan git diff --staged sebelum commit. Jika ada path yang tidak relevan, restore satu per satu. Jangan biasakan wildcard kecuali kamu benar-benar melihat daftarnya.</p><p class="mb-4">reset --hard hanya untuk situasi yang kamu sadari: working tree kotor dan kamu rela kehilangan semuanya. Di situs statis Clincoo, kehilangan hero yang baru ditulis lebih mahal daripada satu perintah ekstra.</p><p class="mb-4">Catat perintah restore di README tim agar anggota baru tidak meniru tutorial lama yang masih mengajarkan reset sebagai alat sehari-hari.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://git-scm.com/docs/git-restore" target="_blank" rel="noopener">Git restore documentation<span class="d">git-scm.com</span></a><a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank" rel="noopener">GitHub docs about Git<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/git/">← Kembali ke git</a>
+</div>
+</body>
+</html>

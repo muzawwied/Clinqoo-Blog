@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unstage Clincoo Files with restore, Not reset --hard — Clincoo Blog</title>
+<meta name="description" content="reset --hard throws away unsaved work. git restore --staged only drops a file from the commit queue.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-restore-staged-bukan-reset-hard/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unstage Clincoo Files with restore, Not reset --hard">
+<meta property="og:description" content="reset --hard throws away unsaved work. git restore --staged only drops a file from the commit queue.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/git/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Unstage Clincoo Files with restore, Not reset --hard</h1><p class="desc">reset --hard throws away unsaved work. git restore --staged only drops a file from the commit queue.</p><div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">When preparing a Clincoo commit it is easy to over-add: a .env file, a build artifact, or a CSS experiment lands in staged. A reflex reset --hard also wipes the working tree. That loses copy you never backed up.</p><p class="mb-4">The safe unstage command is git restore --staged &lt;file&gt;. File contents stay in the editor; only the index moves back. If you also want to discard working-tree edits, git restore &lt;file&gt; without --staged — still narrower than a hard reset to HEAD.</p><p class="mb-4">Make git status and git diff --staged a habit before every commit. If a path does not belong, restore it one by one. Avoid wildcards unless you have read the list.</p><p class="mb-4">Use reset --hard only when you accept losing everything dirty. On a Clincoo static site, a newly written hero costs more than one extra command.</p><p class="mb-4">Document restore in the team README so new members do not copy old tutorials that still treat reset as a daily tool.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://git-scm.com/docs/git-restore" target="_blank" rel="noopener">Git restore documentation<span class="d">git-scm.com</span></a><a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank" rel="noopener">GitHub docs about Git<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/git/">← Back to git</a>
+</div>
+</body>
+</html>
