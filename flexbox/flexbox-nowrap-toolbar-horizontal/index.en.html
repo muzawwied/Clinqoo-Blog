@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use flex-wrap: nowrap on a Horizontal Clincoo Toolbar — Clincoo Blog</title>
+<meta name="description" content="An icon toolbar that wraps onto two rows breaks header height. Nowrap plus overflow-x auto keeps one line in Clincoo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/flexbox/flexbox-nowrap-toolbar-horizontal/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/flexbox/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Flexbox</div><h1>Use flex-wrap: nowrap on a Horizontal Clincoo Toolbar</h1><p class="desc">An icon toolbar that wraps onto two rows breaks header height. Nowrap plus overflow-x auto keeps one line in Clincoo.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Button rows in a Clincoo project header often use display:flex. If wrap is on, icons drop to a second row on a narrow screen and the header doubles in height.</p><p class="mb-4">In editor.clincoo.buzz, set flex-wrap: nowrap on the toolbar container. Add overflow-x: auto so extra buttons scroll instead of shrinking until they are unreadable.</p><p class="mb-4">Do not mix nowrap with flex-shrink: 1 on long labels. Labels shrink to an ellipsis without a usable tap target. Set min-width on primary buttons.</p><p class="mb-4">Ask AI to split toolbar rules from cards that should wrap. Paste the header CSS that currently uses flex-wrap: wrap.</p><p class="mb-4">Clincoo renders the CSS you save. A single-line toolbar is easier to use on a phone without changing the page grid.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank" rel="noopener">MDN flex-wrap<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/css/flexbox" target="_blank" rel="noopener">web.dev Learn Flexbox<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/flexbox/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
