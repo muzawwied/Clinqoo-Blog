@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track How Often a Clincoo Handler Runs with console.count — Clincoo Blog</title>
+<meta name="description" content="Double listeners fire extra fetches. count shows frequency without a global variable.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-count-lacak-pemanggilan/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Track How Often a Clincoo Handler Runs with console.count">
+<meta property="og:description" content="Double listeners fire extra fetches. count shows frequency without a global variable.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Console</div><h1>Track How Often a Clincoo Handler Runs with console.count</h1><p class="desc">Double listeners fire extra fetches. count shows frequency without a global variable.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo pages that bind clicks inside a render function often attach the listener twice. Symptom: one click fires two requests.</p><p class="mb-4">Insert console.count('save-click') at the start of the handler. The same label increments on every call.</p><p class="mb-4">Reset with console.countReset('save-click') after one test scenario. Do not let the number pile up across SPA views.</p><p class="mb-4">If the number jumps on scroll, suspect an event that was never removed. Fix one listener first, not the whole file.</p><p class="mb-4">Remove count before publish. This trail helps debug in editor.clincoo.buzz, not live visitors.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/count_static" target="_blank" rel="noopener">MDN console.count<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console/api#count" target="_blank" rel="noopener">Chrome DevTools console.count<span class="d">developer.chrome.com</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Back to console</a>
+</div>
+</body>
+</html>

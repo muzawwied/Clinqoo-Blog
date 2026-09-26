@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ukur Fungsi Lambat di Clincoo dengan console.time dan timeEnd — Clincoo Blog</title>
+<meta name="description" content="Jangan tebak bottleneck. Pasang pasangan time/timeEnd di satu fungsi yang dicurigai lambat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-time-ukur-fungsi-lambat/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ukur Fungsi Lambat di Clincoo dengan console.time dan timeEnd">
+<meta property="og:description" content="Jangan tebak bottleneck. Pasang pasangan time/timeEnd di satu fungsi yang dicurigai lambat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Konsol</div><h1>Ukur Fungsi Lambat di Clincoo dengan console.time dan timeEnd</h1><p class="desc">Jangan tebak bottleneck. Pasang pasangan time/timeEnd di satu fungsi yang dicurigai lambat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Preview Clincoo di app.clincoo.buzz terasa berat, tapi log biasa tidak memberi angka. console.time memberi label durasi yang bisa dibandingkan antar revisi.</p><p class="mb-4">Panggil console.time('render-kartu') sebelum loop, lalu console.timeEnd('render-kartu') setelahnya. Label harus sama persis agar pasangan tertutup.</p><p class="mb-4">Ukur satu fungsi dulu. Jangan menanam timer di setiap event listener; hasilnya berisik dan label bentrok.</p><p class="mb-4">Bandingkan angka di Chrome DevTools Performance jika durasi masih kabur. Timer konsol cukup untuk memutuskan apakah filter atau render yang mahal.</p><p class="mb-4">Hapus atau bungkus timer sebelum deploy publik. Clincoo menayangkan skrip apa adanya; jejak debug tidak boleh ikut ke pengunjung.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/time_static" target="_blank" rel="noopener">MDN console.time<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console/api#time" target="_blank" rel="noopener">Chrome DevTools console API<span class="d">developer.chrome.com</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

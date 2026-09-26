@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cari Siapa yang Memanggil Fungsi Clincoo dengan console.trace — Clincoo Blog</title>
+<meta name="description" content="Fungsi utilitas dipanggil dari banyak tempat. trace menampilkan tumpukan pemanggil saat itu juga.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-trace-cari-asal-pemanggil/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cari Siapa yang Memanggil Fungsi Clincoo dengan console.trace">
+<meta property="og:description" content="Fungsi utilitas dipanggil dari banyak tempat. trace menampilkan tumpukan pemanggil saat itu juga.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Konsol</div><h1>Cari Siapa yang Memanggil Fungsi Clincoo dengan console.trace</h1><p class="desc">Fungsi utilitas dipanggil dari banyak tempat. trace menampilkan tumpukan pemanggil saat itu juga.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Helper simpan di proyek Clincoo tiba-tiba jalan dua kali. log isi argumen tidak menjelaskan siapa pemanggilnya.</p><p class="mb-4">Tambahkan console.trace('simpan') di awal helper. DevTools menampilkan stack yang bisa diklik ke baris sumber.</p><p class="mb-4">Pakai trace hanya saat gejala muncul. Menaruhnya di requestAnimationFrame menghasilkan banjir stack.</p><p class="mb-4">Jika stack menunjuk event dobel, cabut listener lama sebelum mengikat yang baru. Perbaiki satu cabang, lalu uji preview.</p><p class="mb-4">Cabut trace sebelum deploy. Stack debug tidak bermanfaat di situs publik dan memperbesar kebisingan konsol.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/trace_static" target="_blank" rel="noopener">MDN console.trace<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console/api#trace" target="_blank" rel="noopener">Chrome DevTools console.trace<span class="d">developer.chrome.com</span></a><a href="https://web.dev/learn/devtools/console/" target="_blank" rel="noopener">web.dev DevTools console<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

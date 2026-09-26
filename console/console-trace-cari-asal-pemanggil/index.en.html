@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Who Calls a Clincoo Function with console.trace — Clincoo Blog</title>
+<meta name="description" content="Utility functions are called from many places. trace prints the caller stack right now.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/console/console-trace-cari-asal-pemanggil/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Find Who Calls a Clincoo Function with console.trace">
+<meta property="og:description" content="Utility functions are called from many places. trace prints the caller stack right now.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/console/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🖥️ Console</div><h1>Find Who Calls a Clincoo Function with console.trace</h1><p class="desc">Utility functions are called from many places. trace prints the caller stack right now.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A save helper in a Clincoo project suddenly runs twice. Logging arguments does not show who called it.</p><p class="mb-4">Add console.trace('save') at the start of the helper. DevTools prints a stack you can click through to the source line.</p><p class="mb-4">Use trace only while the symptom is present. Leaving it in requestAnimationFrame floods the stack.</p><p class="mb-4">If the stack points to a double event, remove the old listener before binding a new one. Fix one branch, then retest preview.</p><p class="mb-4">Pull trace before deploy. A debug stack does not help a public site and only adds console noise.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/trace_static" target="_blank" rel="noopener">MDN console.trace<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console/api#trace" target="_blank" rel="noopener">Chrome DevTools console.trace<span class="d">developer.chrome.com</span></a><a href="https://web.dev/learn/devtools/console/" target="_blank" rel="noopener">web.dev DevTools console<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/console/">← Back to console</a>
+</div>
+</body>
+</html>
