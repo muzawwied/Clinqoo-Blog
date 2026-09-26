@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark the Active Page in Clincoo Pagination with aria-current — Clincoo Blog</title>
+<meta name="description" content="Bare page numbers without a nav or current marker confuse keyboards. Wrap pagination, name the links, and mark the current page.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-pagination-aria-current/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Mark the Active Page in Clincoo Pagination with aria-current</h1><p class="desc">Bare page numbers without a nav or current marker confuse keyboards. Wrap pagination, name the links, and mark the current page.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo article lists often end with bare 1 2 3 links. Users see a bold number, but screen readers only hear "three" repeatedly. The current page stays clickable and rel prev/next is missing.</p><p class="mb-4">Wrap the controls in nav aria-label="Pagination". Each link needs full text such as Page 2, not a lone digit. The active item uses aria-current="page". Previous and next are disabled at the ends of the list, not silently removed.</p><p class="mb-4">Keep shareable URLs: ?page=2 or /page/2. Do not rely on a hash if the list should be indexed. When AI writes markup, paste one pagination block and forbid copying ids from the cards above it.</p><p class="mb-4">Keyboard-test from the last card link into pagination. Focus must be visible. In the editor.clincoo.buzz phone preview, numbers must not wrap into two rows without touch spacing.</p><p class="mb-4">Pagination that states the current page helps people and machines. Deploy to app.clincoo.buzz after the list, title, and numbers agree.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current" target="_blank" rel="noopener">MDN aria-current<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/pagination/" target="_blank" rel="noopener">WAI-ARIA Pagination Pattern<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
