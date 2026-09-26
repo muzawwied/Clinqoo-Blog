@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedakan console.debug, warn, dan error di Skrip Clincoo — Clincoo Blog</title>
+<meta name="description" content="Semua pesan lewat console.log sulit disaring. Pakai level yang sesuai tingkat masalah.">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-bedakan-debug-warn-error/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📋 Logging</div><h1>Bedakan console.debug, warn, dan error di Skrip Clincoo</h1><p class="desc">Semua pesan lewat console.log sulit disaring. Pakai level yang sesuai tingkat masalah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Saat debug form Clincoo, log sukses, peringatan validasi, dan kegagalan jaringan sering tercampur di satu console.log. DevTools lalu tidak bisa menyembunyikan noise.</p><p class="mb-4">Pakai console.debug untuk jejak langkah, console.warn untuk input yang masih bisa dilanjutkan, dan console.error untuk kegagalan yang memutus alur. Jangan pakai alert.</p><p class="mb-4">Filter level di DevTools saat pratinjau. Jika halaman publik, matikan debug atau bungkus di flag yang hanya hidup di editor.</p><p class="mb-4">Jangan log data pribadi: email, token, isi form lengkap. Satu objek konteks tanpa rahasia lebih aman dan lebih mudah diekspor.</p><p class="mb-4">Clincoo menayangkan skrip apa adanya. Level console yang jujur mempercepat perbaikan tanpa mengotori konsol pengunjung.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/console" target="_blank" rel="noopener">MDN console<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console" target="_blank" rel="noopener">Chrome DevTools console<span class="d">developer.chrome.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

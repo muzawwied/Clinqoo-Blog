@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Separate console.debug, warn, and error in Clincoo Scripts — Clincoo Blog</title>
+<meta name="description" content="Routing every message through console.log makes filtering hard. Match the level to the problem.">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-bedakan-debug-warn-error/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📋 Logging</div><h1>Separate console.debug, warn, and error in Clincoo Scripts</h1><p class="desc">Routing every message through console.log makes filtering hard. Match the level to the problem.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">When debugging a Clincoo form, success traces, validation warnings, and network failures often share one console.log. DevTools then cannot hide the noise.</p><p class="mb-4">Use console.debug for step traces, console.warn for recoverable input issues, and console.error for flow-breaking failures. Skip alert.</p><p class="mb-4">Filter by level in DevTools during preview. On public pages, disable debug or gate it behind an editor-only flag.</p><p class="mb-4">Do not log personal data: emails, tokens, or full form bodies. One context object without secrets is safer and easier to export.</p><p class="mb-4">Clincoo ships scripts as written. Honest console levels speed fixes without polluting visitor consoles.</p></div><div class="src"><h2>Information Source</h2><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">blog.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/console" target="_blank" rel="noopener">MDN console<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/devtools/console" target="_blank" rel="noopener">Chrome DevTools console<span class="d">developer.chrome.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
