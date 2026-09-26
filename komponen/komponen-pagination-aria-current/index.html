@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tandai Halaman Aktif pada Paginasi Clincoo dengan aria-current — Clincoo Blog</title>
+<meta name="description" content="Deretan nomor tanpa nav dan tanpa halaman aktif membingungkan keyboard. Bungkus paginasi, beri nama tautan, dan tandai halaman sekarang.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-pagination-aria-current/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tandai Halaman Aktif pada Paginasi Clincoo dengan aria-current">
+<meta property="og:description" content="Deretan nomor tanpa nav dan tanpa halaman aktif membingungkan keyboard. Bungkus paginasi, beri nama tautan, dan tandai halaman sekarang.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Tandai Halaman Aktif pada Paginasi Clincoo dengan aria-current</h1><p class="desc">Deretan nomor tanpa nav dan tanpa halaman aktif membingungkan keyboard. Bungkus paginasi, beri nama tautan, dan tandai halaman sekarang.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Daftar artikel Clincoo sering diakhiri angka 1 2 3 sebagai tautan telanjang. Pengguna melihat nomor tebal, tetapi pembaca layar hanya mendengar "tiga" berulang. Halaman aktif masih bisa diklik dan rel prev/next hilang.</p><p class="mb-4">Bungkus kontrol dalam nav aria-label="Paginasi". Setiap tautan punya teks lengkap seperti Halaman 2, bukan hanya angka. Item aktif memakai aria-current="page". Tombol sebelumnya dan berikutnya dinonaktifkan di ujung daftar, bukan dihilangkan diam-diam.</p><p class="mb-4">Jaga URL tetap dapat dibagikan: ?page=2 atau path /halaman/2. Jangan andalkan hash saja jika daftar harus diindeks. Saat AI menulis markup, tempel satu blok paginasi dan larang meniru id dari kartu di atasnya.</p><p class="mb-4">Uji keyboard dari tautan terakhir kartu ke paginasi. Fokus harus terlihat. Pastikan di editor.clincoo.buzz pratinjau ponsel nomor tidak pecah menjadi dua baris tanpa jarak sentuh.</p><p class="mb-4">Paginasi yang menyatakan halaman sekarang membantu manusia dan mesin. Deploy ke app.clincoo.buzz setelah daftar, judul, dan nomor saling konsisten.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current" target="_blank" rel="noopener">MDN aria-current<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/pagination/" target="_blank" rel="noopener">WAI-ARIA Pagination Pattern<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
