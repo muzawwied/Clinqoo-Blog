@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lock the Submit Button while a Clincoo Upload Runs — Clincoo Blog</title>
+<meta name="description" content="A double click on Send duplicates the request. Disable the button until finish or cancel.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-kunci-submit-saat-proses/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Upload</div><h1>Lock the Submit Button while a Clincoo Upload Runs</h1><p class="desc">A double click on Send duplicates the request. Disable the button until finish or cancel.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Clincoo visitors click Send twice because progress is slow. The server receives two copies of the same file.</p><p class="mb-4">In editor.clincoo.buzz, set disabled on the button when fetch starts. Restore it on success, failure, or abort.</p><p class="mb-4">Do not rely on CSS pointer-events alone. The keyboard can still fire a button that only looks dead.</p><p class="mb-4">Ask AI to add an isUploading flag on the handler. Paste the submit button that is always enabled.</p><p class="mb-4">Clincoo runs the script you save. A locked button prevents duplicate uploads on app.clincoo.buzz.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C WAI<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
