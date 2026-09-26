@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use picture so Clincoo Heroes Have WebP plus JPEG Fallback — Clincoo Blog</title>
+<meta name="description" content="A single src forces every browser to download the same format. picture serves WebP first and JPEG when needed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-picture-sumber-webp-jpeg/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use picture so Clincoo Heroes Have WebP plus JPEG Fallback">
+<meta property="og:description" content="A single src forces every browser to download the same format. picture serves WebP first and JPEG when needed.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/gambar/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Use picture so Clincoo Heroes Have WebP plus JPEG Fallback</h1><p class="desc">A single src forces every browser to download the same format. picture serves WebP first and JPEG when needed.</p><div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Many Clincoo pages still use one src on the hero. Older browsers or clients that copy HTML do not always understand WebP. The picture element stacks a source type="image/webp" above a JPEG img so modern visitors save bytes without breaking fallback.</p><p class="mb-4">Write sources from the most efficient format to the fallback. The browser picks the first supported source. Do not put JPEG above WebP — that cancels the compression win.</p><p class="mb-4">Keep width and height on the inner img so the slot does not jump. sizes and srcset still apply per source when you have several widths.</p><p class="mb-4">Test in Clincoo preview and then on the production Network tab: the downloaded MIME type should match the browser. If Chrome still fetches JPEG, check the source path or server headers.</p><p class="mb-4">Store both files in the same assets folder so relative paths stay intact when you copy a page.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank" rel="noopener">MDN picture element<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/serve-images-webp" target="_blank" rel="noopener">web.dev serve images WebP<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/gambar/">← Back to gambar</a>
+</div>
+</body>
+</html>

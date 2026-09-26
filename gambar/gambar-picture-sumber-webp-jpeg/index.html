@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai picture agar Hero Clincoo Punya WebP dan Cadangan JPEG — Clincoo Blog</title>
+<meta name="description" content="src tunggal memaksa semua browser mengunduh format yang sama. picture memberi WebP dulu, JPEG jika tidak didukung.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-picture-sumber-webp-jpeg/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai picture agar Hero Clincoo Punya WebP dan Cadangan JPEG">
+<meta property="og:description" content="src tunggal memaksa semua browser mengunduh format yang sama. picture memberi WebP dulu, JPEG jika tidak didukung.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/gambar/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Gambar</div><h1>Pakai picture agar Hero Clincoo Punya WebP dan Cadangan JPEG</h1><p class="desc">src tunggal memaksa semua browser mengunduh format yang sama. picture memberi WebP dulu, JPEG jika tidak didukung.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak halaman Clincoo masih memakai satu atribut src pada hero. Browser lama atau klien email yang menyalin HTML tidak selalu mengerti WebP. Elemen picture menumpuk source type="image/webp" di atas img JPEG sehingga pengunjung modern hemat byte tanpa merusak cadangan.</p><p class="mb-4">Tulis urutan dari format paling efisien ke cadangan. Browser memilih source pertama yang didukung. Jangan menaruh JPEG di atas WebP — itu meniadakan manfaat kompresi.</p><p class="mb-4">Sertakan width dan height pada img di dalam picture agar slot tidak loncat. sizes dan srcset tetap berlaku per source jika kamu punya beberapa lebar.</p><p class="mb-4">Uji di pratinjau Clincoo lalu di tab Network produksi: pastikan tipe MIME yang terunduh sesuai browser. Jika yang muncul tetap JPEG di Chrome, cek path source atau header server.</p><p class="mb-4">Simpan kedua file di folder assets yang sama agar path relatif tidak pecah saat kamu salin halaman.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank" rel="noopener">MDN picture element<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/serve-images-webp" target="_blank" rel="noopener">web.dev serve images WebP<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/gambar/">← Kembali ke gambar</a>
+</div>
+</body>
+</html>
