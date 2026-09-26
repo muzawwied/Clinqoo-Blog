@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bungkus localStorage.setItem Clincoo di try/catch, Kuota Penuh Jangan Menghentikan Halaman — Clincoo Blog</title>
+<meta name="description" content="setItem melempar QuotaExceededError. Tanpa try/catch, menyimpan draf merusak seluruh skrip halaman.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/storage/storage-try-catch-setitem/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bungkus localStorage.setItem Clincoo di try/catch, Kuota Penuh Jangan Menghentikan Halaman">
+<meta property="og:description" content="setItem melempar QuotaExceededError. Tanpa try/catch, menyimpan draf merusak seluruh skrip halaman.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/storage/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">storage</div><h1>Bungkus localStorage.setItem Clincoo di try/catch, Kuota Penuh Jangan Menghentikan Halaman</h1><p class="desc">setItem melempar QuotaExceededError. Tanpa try/catch, menyimpan draf merusak seluruh skrip halaman.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form Clincoo yang menyimpan draf ke localStorage terlihat aman sampai kuota origin penuh atau mode pribadi memblokir penyimpanan. setItem lalu melempar dan sisa init tidak jalan.</p><p class="mb-4">Di editor.clincoo.buzz, bungkus setItem dan getItem di try/catch. Jika gagal, lanjutkan tanpa draf dan tampilkan satu baris status, bukan alert berulang.</p><p class="mb-4">Jangan simpan blob gambar sebagai string base64 di localStorage. Kuota cepat habis. Simpan teks pendek dan versi kunci agar rilis baru tidak membaca draf rusak.</p><p class="mb-4">Minta AI menambah helper saveDraft yang sudah ada try/catch. Tempel pemanggilan setItem yang ada, bukan seluruh app.</p><p class="mb-4">Clincoo menjalankan skrip yang kamu simpan. Storage yang gagal secara tenang menjaga app.clincoo.buzz tetap bisa dikirim meski draf tidak tersimpan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN localStorage<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/storage-for-the-web" target="_blank" rel="noopener">web.dev Storage for the web<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/storage/">← Kembali ke storage</a>
+</div>
+</body>
+</html>
