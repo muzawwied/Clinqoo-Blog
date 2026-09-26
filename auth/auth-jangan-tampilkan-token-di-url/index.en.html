@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Put Auth Tokens in Clincoo URL Query Strings — Clincoo Blog</title>
+<meta name="description" content="Tokens in URLs leak through history, referrers, and logs. Use a header or HttpOnly cookie.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-jangan-tampilkan-token-di-url/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Put Auth Tokens in Clincoo URL Query Strings">
+<meta property="og:description" content="Tokens in URLs leak through history, referrers, and logs. Use a header or HttpOnly cookie.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Do Not Put Auth Tokens in Clincoo URL Query Strings</h1><p class="desc">Tokens in URLs leak through history, referrers, and logs. Use a header or HttpOnly cookie.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo page uses ?token= on a preview link. The token shows in browser history and sometimes in server logs.</p><p class="mb-4">Move the token to an Authorization header or an HttpOnly Secure cookie in the app.clincoo.buzz flow. Do not paste secrets in the query.</p><p class="mb-4">If you need a one-time link, use a short expiring single-use token, not a long JWT.</p><p class="mb-4">Ask AI to remove the token from the URL only. Paste the fetch or link snippet.</p><p class="mb-4">Clincoo does not hide query strings for you. Tokens outside the URL stay safer on app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
