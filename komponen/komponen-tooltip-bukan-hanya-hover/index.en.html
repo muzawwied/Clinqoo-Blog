@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Rely on Hover Alone for Clincoo Tooltips — Clincoo Blog</title>
+<meta name="description" content="Native title tooltips vanish on touch and keyboard. Use a focusable trigger, the tooltip role, and Escape to dismiss.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-tooltip-bukan-hanya-hover/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Components</div><h1>Do Not Rely on Hover Alone for Clincoo Tooltips</h1><p class="desc">Native title tooltips vanish on touch and keyboard. Use a focusable trigger, the tooltip role, and Escape to dismiss.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Help icons on Clincoo forms often only have a title attribute. On desktop the tip flashes briefly. On phones and when tabbing, the hint is gone. Users never learn why a field is required or why a button is disabled.</p><p class="mb-4">Use a focusable button or link. Point it at a role="tooltip" panel with aria-describedby. Show the panel on focus or click, and close it with Escape. Do not hide required rules only in the tooltip; repeat them in always-visible help text when you can.</p><p class="mb-4">Avoid cursor-following tips that cover the input. On a narrow screen the panel can sit under the icon. Ask AI to add focus and Escape handlers only, not a heavy overlay library.</p><p class="mb-4">Test in editor.clincoo.buzz: Tab to the icon, hear the description, press Escape, and confirm focus stays put. Tap once to open, tap again or outside to close. Check tooltip contrast against the threshold.</p><p class="mb-4">A tooltip that opens without hover is a component, not a guess. Deploy to app.clincoo.buzz after the hint no longer covers the field label.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role" target="_blank" rel="noopener">MDN tooltip role<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/" target="_blank" rel="noopener">WAI-ARIA Authoring Practices: Tooltip<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
