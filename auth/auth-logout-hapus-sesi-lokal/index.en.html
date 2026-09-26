@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clincoo Logout Must Clear Client and Server Session — Clincoo Blog</title>
+<meta name="description" content="Hiding the logged-in UI is not enough. Clear the cookie, in-memory token, and server session on sign-out.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-logout-hapus-sesi-lokal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Clincoo Logout Must Clear Client and Server Session">
+<meta property="og:description" content="Hiding the logged-in UI is not enough. Clear the cookie, in-memory token, and server session on sign-out.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Auth</div><h1>Clincoo Logout Must Clear Client and Server Session</h1><p class="desc">Hiding the logged-in UI is not enough. Clear the cookie, in-memory token, and server session on sign-out.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Many templates only send people to /login when they click Keluar. The app.clincoo.buzz session cookie still lives, so the Back button opens the editor again.</p><p class="mb-4">Send a logout request that deletes the sid in session storage, then Set-Cookie with Max-Age=0 for the same cookie name, Path=/, and Secure. Without that, the client only pretends to leave.</p><p class="mb-4">On the client, drop in-memory tokens, remove account keys from localStorage, and navigate with location.replace so history does not keep a protected URL.</p><p class="mb-4">Test in editor.clincoo.buzz: sign in, open a private page, log out, then press Back. The page must ask for login again instead of showing the old draft.</p><p class="mb-4">Ask AI to review only the Keluar click handler. Paste the current logout function and the cookie name so the suggestion does not wipe theme prefs that are unrelated to the session.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">MDN HTTP Cookies<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/replace" target="_blank" rel="noopener">MDN location.replace<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
