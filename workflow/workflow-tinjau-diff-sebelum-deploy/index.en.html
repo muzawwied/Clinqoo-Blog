@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review the Diff before Deploying a Clincoo Project — Clincoo Blog</title>
+<meta name="description" content="Deploying without reading the diff ships AI edits in files you never asked for. Review first, then publish.">
+<link rel="canonical" href="https://blog.clincoo.buzz/workflow/workflow-tinjau-diff-sebelum-deploy/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/workflow/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Alur Kerja</div><h1>Review the Diff before Deploying a Clincoo Project</h1><p class="desc">Deploying without reading the diff ships AI edits in files you never asked for. Review first, then publish.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">After the AI tidies one page, a global CSS file or layout.html often changes too. A blind deploy then ships that side effect to the subdomain.</p><p class="mb-4">Open the diff in editor.clincoo.buzz. Confirm only the files named in the task changed. Reject hunks that rewrite brand tokens or navigation links.</p><p class="mb-4">GitHub Docs explains how to read a pull request diff. The same pattern applies before a push: file names, line counts, and a reason for each hunk.</p><p class="mb-4">If the diff is long, split it into two commits. One for copy, one for behavior. web.dev notes on source order help catch layout regressions.</p><p class="mb-4">Clincoo ships the repo as-is. A read diff is the last gate before production.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews" target="_blank" rel="noopener">GitHub Docs Reviews<span class="d">docs.github.com</span></a><a href="https://web.dev/articles/source-order" target="_blank" rel="noopener">web.dev source order<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/workflow/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

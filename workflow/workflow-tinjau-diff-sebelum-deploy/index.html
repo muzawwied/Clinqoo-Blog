@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tinjau Diff sebelum Deploy Proyek Clincoo — Clincoo Blog</title>
+<meta name="description" content="Deploy tanpa membaca diff membawa perubahan AI di file yang tidak kamu minta. Tinjau dulu, baru tayangkan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/workflow/workflow-tinjau-diff-sebelum-deploy/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tinjau Diff sebelum Deploy Proyek Clincoo">
+<meta property="og:description" content="Deploy tanpa membaca diff membawa perubahan AI di file yang tidak kamu minta. Tinjau dulu, baru tayangkan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/workflow/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Alur Kerja</div><h1>Tinjau Diff sebelum Deploy Proyek Clincoo</h1><p class="desc">Deploy tanpa membaca diff membawa perubahan AI di file yang tidak kamu minta. Tinjau dulu, baru tayangkan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah AI merapikan satu halaman, file CSS global atau layout.html ikut berubah. Deploy langsung menayangkan efek samping itu ke subdomain.</p><p class="mb-4">Buka diff di editor.clincoo.buzz. Pastikan hanya berkas yang disebut di tugas yang berubah. Tolak hunk yang mengganti token merek atau tautan navigasi.</p><p class="mb-4">GitHub Docs menjelaskan cara membaca diff pull request. Pola yang sama berlaku sebelum push: nama file, jumlah baris, dan alasan setiap hunk.</p><p class="mb-4">Jika diff panjang, pecah jadi dua commit. Satu untuk salinan, satu untuk perilaku. Pratinjau web.dev tentang review perubahan membantu menjaga regresi.</p><p class="mb-4">Clincoo menayangkan repo apa adanya. Diff yang sudah dibaca adalah gerbang terakhir sebelum produksi.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews" target="_blank" rel="noopener">GitHub Docs Reviews<span class="d">docs.github.com</span></a><a href="https://web.dev/articles/source-order" target="_blank" rel="noopener">web.dev source order<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/workflow/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

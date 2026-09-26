@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Clincoo Gradients from Brand Tokens, Not Random Hex — Clincoo Blog</title>
+<meta name="description" content="A hero gradient with stray hex breaks when the brand changes. Build linear-gradient from existing tokens.">
+<link rel="canonical" href="https://blog.clincoo.buzz/warna/warna-gradien-dari-token-merek/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/warna/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🎨 warna</div><h1>Build Clincoo Gradients from Brand Tokens, Not Random Hex</h1><p class="desc">A hero gradient with stray hex breaks when the brand changes. Build linear-gradient from existing tokens.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">AI often writes background: linear-gradient(#4F46E5, #06B6D4) on the hero. Those two hex values are not in the palette, so a brand swap leaves a foreign stripe.</p><p class="mb-4">Build the gradient from var(--warna-merek) and var(--warna-merek-lembut). One :root edit then updates the hero, card overlays, and badges together.</p><p class="mb-4">Keep text contrast on top of the gradient. Test white titles and dark titles in preview. MDN documents gradient functions; web.dev covers readability over color and images.</p><p class="mb-4">Reject AI suggestions that add a third color stop without a reason. A tight palette is easier to keep in editor.clincoo.buzz.</p><p class="mb-4">Clincoo ships the CSS you save. Token-based gradients keep the brand intact after deploy.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient" target="_blank" rel="noopener">MDN linear-gradient<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/design/color-schemes/" target="_blank" rel="noopener">web.dev Color schemes<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/warna/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

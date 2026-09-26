@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Clincoo Webhook Secrets in Env, Not in Code — Clincoo Blog</title>
+<meta name="description" content="An HMAC secret written in an HTML file ships with the export. Move it to environment variables before deploy.">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-secret-di-env-bukan-kode/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Store Clincoo Webhook Secrets in Env, Not in Code</h1><p class="desc">An HMAC secret written in an HTML file ships with the export. Move it to environment variables before deploy.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Webhook handlers in Clincoo projects often contain const SECRET = "sk_demo". That file then lands in the zip export and in Git history.</p><p class="mb-4">Read the secret from env on the server or function side. Do not paste the value into a script the browser downloads. GitHub Docs covers storing secrets per environment.</p><p class="mb-4">Rotate the secret after a leak. The old endpoint should reject signatures made with the old key after a short window.</p><p class="mb-4">Ask the AI to point to the secret location, not rewrite the whole webhook. Check the diff so the raw string does not return.</p><p class="mb-4">Clincoo ships the files you save. Secrets in env keep HMAC valid without exposing the key.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo App<span class="d">app.clincoo.buzz</span></a><a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions" target="_blank" rel="noopener">GitHub Docs Secrets<span class="d">docs.github.com</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP" target="_blank" rel="noopener">MDN web security notes<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

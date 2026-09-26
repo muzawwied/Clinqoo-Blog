@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wajibkan Header Event-Id pada Webhook Clincoo — Clincoo Blog</title>
+<meta name="description" content="Tanpa id event di header, retry dan log campur aduk. Tolak POST yang tidak membawa pengenal unik.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-header-event-id-wajib/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wajibkan Header Event-Id pada Webhook Clincoo">
+<meta property="og:description" content="Tanpa id event di header, retry dan log campur aduk. Tolak POST yang tidak membawa pengenal unik.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Wajibkan Header Event-Id pada Webhook Clincoo</h1><p class="desc">Tanpa id event di header, retry dan log campur aduk. Tolak POST yang tidak membawa pengenal unik.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pengirim webhook mengulang POST saat timeout. Tanpa X-Event-Id atau Delivery-Id, handler Clincoo memproses event yang sama dua kali.</p><p class="mb-4">Baca header dulu. Jika kosong atau bukan UUID, jawab 400. Jangan andalkan hanya field id di dalam JSON yang bisa diubah.</p><p class="mb-4">Simpan id yang sudah sukses. Permintaan ulang dengan id yang sama harus menjawab 2xx tanpa menulis data baru. MDN merinci cara membaca header; GitHub Docs memakai X-GitHub-Delivery sebagai pola serupa.</p><p class="mb-4">Minta AI menambah satu cabang validasi header. Jangan biarkan ia mengubah parser body.</p><p class="mb-4">Uji di app.clincoo.buzz dengan dua POST identik. Log harus menunjukkan satu proses dan satu abaikan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo App<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Headers" target="_blank" rel="noopener">MDN Headers<span class="d">developer.mozilla.org</span></a><a href="https://docs.github.com/en/webhooks/webhook-events-and-payloads" target="_blank" rel="noopener">GitHub Webhook payloads<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
