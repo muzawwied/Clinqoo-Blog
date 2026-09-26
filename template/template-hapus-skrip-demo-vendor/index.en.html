@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Vendor Demo Scripts from a Clincoo Template before Release — Clincoo Blog</title>
+<meta name="description" content="Templates often ship sliders, dummy chat, and sample analytics. Pull what you do not use.">
+<link rel="canonical" href="https://blog.clincoo.buzz/template/template-hapus-skrip-demo-vendor/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Remove Vendor Demo Scripts from a Clincoo Template before Release">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/template/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🧩 Template</div><h1>Remove Vendor Demo Scripts from a Clincoo Template before Release</h1><p class="desc">Templates often ship sliders, dummy chat, and sample analytics. Pull what you do not use.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo templates include vendor JS for sliders, newsletter popups, or demo ad pixels. Those files still download in preview even after you delete the matching HTML blocks.</p><p class="mb-4">Open the assets or js folder in editor.clincoo.buzz. Look for names like vendor.js, slider.min.js, or analytics.example.js. Remove the script tags that point to them from index.html and other pages, then delete the files.</p><p class="mb-4">Check the console after removal. An undefined object error means another file still initializes the widget. Fix that one call. Do not add a new polyfill just to silence the error.</p><p class="mb-4">Ask AI to list every script tag and explain what it does. Do not allow a full JS cleanup. You need a list of what is safe to drop and what the mobile menu still needs.</p><p class="mb-4">Clincoo serves every request still written in your HTML. A template without demo vendors is faster, safer, and will not send data to a foreign domain by accident.</p></div>
+  <a class="back" href="https://blog.clincoo.buzz/template/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
