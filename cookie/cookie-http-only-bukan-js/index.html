@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simpan Sesi Clincoo di Cookie HttpOnly bukan JavaScript — Clincoo Blog</title>
+<meta name="description" content="Token di localStorage dibaca skrip pihak ketiga. HttpOnly menahan sesi dari document.cookie.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cookie/cookie-http-only-bukan-js/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simpan Sesi Clincoo di Cookie HttpOnly bukan JavaScript">
+<meta property="og:description" content="Token di localStorage dibaca skrip pihak ketiga. HttpOnly menahan sesi dari document.cookie.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cookie/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cookie</div><h1>Simpan Sesi Clincoo di Cookie HttpOnly bukan JavaScript</h1><p class="desc">Token di localStorage dibaca skrip pihak ketiga. HttpOnly menahan sesi dari document.cookie.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Template Clincoo yang menyimpan JWT di localStorage memudahkan XSS merampas sesi. Satu skrip injeksi cukup.</p><p class="mb-4">Jika backend kamu menulis Set-Cookie, pasang HttpOnly; Secure; SameSite=Lax. Jangan expose token ke window.</p><p class="mb-4">Kode di editor.clincoo.buzz hanya perlu fetch dengan credentials. Jangan salin token ke variabel global.</p><p class="mb-4">Minta AI menghapus penulisan token ke localStorage. Tempel helper auth yang sekarang memakai getItem.</p><p class="mb-4">Clincoo tidak menyimpan sesi untukmu. HttpOnly menjaga akun lebih aman di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie<span class="d">developer.mozilla.org</span></a><a href="https://owasp.org/www-community/HttpOnly" target="_blank" rel="noopener">OWASP HttpOnly<span class="d">owasp.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cookie/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
