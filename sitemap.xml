@@ -36,4 +36,10 @@
   <url><loc>https://blog.clincoo.buzz/schema/schema-website-searchaction/</loc></url>
   <url><loc>https://blog.clincoo.buzz/schema/schema-logo-imageobject/</loc></url>
   <url><loc>https://blog.clincoo.buzz/schema/schema-graph-satu-script/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/schema/schema-howto-hanya-langkah-nyata/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/schema/schema-sameas-profil-resmi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/audit/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/audit/audit-lighthouse-satu-halaman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/audit/audit-cek-tautan-rusak-sebelum-rilis/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/audit/audit-daftar-aset-tak-terpakai/</loc></url>
 </urlset>
