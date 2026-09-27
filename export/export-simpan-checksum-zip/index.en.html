@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save a Checksum of the Clincoo Export Zip before Moving Hosts — Clincoo Blog</title>
+<meta name="description" content="A truncated export zip often shows up only after DNS moves. Record a checksum before you upload to the new host.">
+<link rel="canonical" href="https://blog.clincoo.buzz/export/export-simpan-checksum-zip/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Save a Checksum of the Clincoo Export Zip before Moving Hosts">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/export/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <h1>Save a Checksum of the Clincoo Export Zip before Moving Hosts</h1>
+  <p class="desc">A truncated export zip often shows up only after DNS moves. Record a checksum before you upload to the new host.</p>
+  <div class="langlinks"><a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div>
+  <div class="body">
+    <p class="mb-4">After you export from Clincoo, the zip can truncate on a slow network or be saved twice under similar names. Without a fingerprint you upload the wrong copy and only notice when CSS or images 404.</p>
+    <p class="mb-4">Compute SHA-256 locally as soon as the download finishes. On macOS or Linux: <code>shasum -a 256 project.zip</code>. In Windows PowerShell: <code>Get-FileHash project.zip -Algorithm SHA256</code>. Paste the digest into the project README or a release note.</p>
+    <p class="mb-4">Before you unzip on the server or into a backup folder, hash again. If it differs, download again from the Clincoo editor. Do not patch a broken zip by copying files from an older dump: relative paths get mixed.</p>
+    <p class="mb-4">Store the export date and project title on the same line as the hash. A teammate moving hosts a week later should not guess which zip was "the last good one".</p>
+    <p class="mb-4">Test the zip locally: open index.html via a simple static server, check favicon, robots, and relative assets. Then upload. A checksum plus a local smoke test is cheaper than rolling back DNS.</p>
+  </div>
+  <div class="src"><h2>Sources</h2>
+    <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure" target="_blank" rel="noopener">GitHub Docs: account and data security<span class="d">docs.github.com</span></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Security" target="_blank" rel="noopener">MDN Web Security<span class="d">developer.mozilla.org</span></a>
+    <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a>
+  </div>
+  <a class="back" href="https://blog.clincoo.buzz/export/">← Back to Export</a>
+</div>
+</body>
+</html>
