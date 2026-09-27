@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy HTML and Plain Text Together from a Clincoo Button — Clincoo Blog</title>
+<meta name="description" content="ClipboardItem supports text/html plus text/plain. Keep a writeText fallback.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/clipboard/clipboard-write-html-dan-plain/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Copy HTML and Plain Text Together from a Clincoo Button">
+<meta property="og:description" content="ClipboardItem supports text/html plus text/plain. Keep a writeText fallback.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/clipboard/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Clipboard</div><h1>Copy HTML and Plain Text Together from a Clincoo Button</h1><p class="desc">ClipboardItem supports text/html plus text/plain. Keep a writeText fallback.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A copy button on a Clincoo page often sends only plain text. That is safe, but some visitors paste into documents that need light formatting.</p><p class="mb-4">ClipboardItem lets write send several MIME types at once: text/plain and text/html. Supporting browsers pick the type that fits the destination app.</p><p class="mb-4">Do not copy raw HTML from an entire card. Limit the payload to a snippet you control, with no hidden scripts or handlers.</p><p class="mb-4">If ClipboardItem is missing, fall back to navigator.clipboard.writeText. Keep the same button feedback so the flow in editor.clincoo.buzz stays intact.</p><p class="mb-4">Test paste into notepad and into a rich-text editor. Those two results prove both the plain fallback and the HTML path work.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem" target="_blank" rel="noopener">MDN ClipboardItem<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" target="_blank" rel="noopener">MDN Clipboard.write<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/clipboard/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
