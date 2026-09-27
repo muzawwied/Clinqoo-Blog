@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Put .env.local in the Clincoo Project .gitignore — Clincoo Blog</title>
+<meta name="description" content="Ignoring only .env is not enough. An .env.* pattern keeps local keys on the machine.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-abaikan-dotenv-local/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Put .env.local in the Clincoo Project .gitignore">
+<meta property="og:description" content="Ignoring only .env is not enough. An .env.* pattern keeps local keys on the machine.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Put .env.local in the Clincoo Project .gitignore</h1><p class="desc">Ignoring only .env is not enough. An .env.* pattern keeps local keys on the machine.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A .env.local file often slips into Git because .gitignore only lists .env. Local keys then travel with every teammate clone.</p><p class="mb-4">Ignore .env and .env.*, and keep an exception for .env.example. That pattern protects a public sample without exporting machine values.</p><p class="mb-4">GitHub can detect secrets after they are pushed, but a .gitignore rule is cheaper than an emergency key rotation.</p><p class="mb-4">After adding the pattern, check git status. A file that was already tracked must be untracked or it still goes out.</p><p class="mb-4">On a Clincoo project, separate local editor values from variables that belong on the deploy host. Do not treat them as the same list.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://docs.github.com/en/get-started/git-basics/ignoring-files" target="_blank" rel="noopener">GitHub ignoring files<span class="d">docs.github.com</span></a><a href="https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning" target="_blank" rel="noopener">GitHub secret scanning<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

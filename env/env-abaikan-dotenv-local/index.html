@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masukkan .env.local ke .gitignore Proyek Clincoo — Clincoo Blog</title>
+<meta name="description" content="Mengabaikan hanya .env tidak cukup. Pola .env.* menjaga kunci lokal tetap di mesin.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/env/env-abaikan-dotenv-local/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Masukkan .env.local ke .gitignore Proyek Clincoo">
+<meta property="og:description" content="Mengabaikan hanya .env tidak cukup. Pola .env.* menjaga kunci lokal tetap di mesin.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/env/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Env</div><h1>Masukkan .env.local ke .gitignore Proyek Clincoo</h1><p class="desc">Mengabaikan hanya .env tidak cukup. Pola .env.* menjaga kunci lokal tetap di mesin.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">File .env.local sering lolos ke Git karena .gitignore hanya menyebut .env. Kunci lokal lalu ikut ke clone rekan.</p><p class="mb-4">Cantumkan .env, .env.*, dan kecualikan .env.example. Pola itu menjaga contoh publik tanpa mengekspor nilai mesin kamu.</p><p class="mb-4">GitHub mendeteksi secret yang sudah ter-push, tapi pencegahan di .gitignore lebih murah daripada rotasi kunci darurat.</p><p class="mb-4">Setelah menambah pola, cek git status. File yang pernah ter-track harus di-untrack dulu atau dia tetap terkirim.</p><p class="mb-4">Di proyek Clincoo, pisahkan nilai editor lokal dari variabel yang memang boleh ada di host deploy. Jangan samakan keduanya.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://docs.github.com/en/get-started/git-basics/ignoring-files" target="_blank" rel="noopener">GitHub ignoring files<span class="d">docs.github.com</span></a><a href="https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning" target="_blank" rel="noopener">GitHub secret scanning<span class="d">docs.github.com</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/env/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
