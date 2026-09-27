@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunci Iframe Pihak Ketiga di Clincoo dengan sandbox dan referrerpolicy — Clincoo Blog</title>
+<meta name="description" content="Embed peta, video, atau formulir luar butuh sandbox. Batasi izin iframe supaya halaman Clincoo tidak ikut terbuka.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/integrasi/integrasi-iframe-sandbox-aman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kunci Iframe Pihak Ketiga di Clincoo dengan sandbox dan referrerpolicy">
+<meta property="og:description" content="Embed peta, video, atau formulir luar butuh sandbox. Batasi izin iframe supaya halaman Clincoo tidak ikut terbuka.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/integrasi//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Integrasi</div><h1>Kunci Iframe Pihak Ketiga di Clincoo dengan sandbox dan referrerpolicy</h1><p class="desc">Embed peta, video, atau formulir luar butuh sandbox. Batasi izin iframe supaya halaman Clincoo tidak ikut terbuka.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Iframe adalah cara paling cepat menempelkan peta, pemutar, atau formulir janji ke situs Clincoo. Tanpa batasan, dokumen di dalam iframe bisa meminta izin, membuka popup, atau membaca referrer lengkap URL pratinjau kamu. Itu beban keamanan yang tidak sebanding dengan kenyamanan tempel kode.</p><p class="mb-4">Tambahkan atribut sandbox. Mulai dari nilai ketat, lalu izinkan hanya yang benar-benar dibutuhkan: allow-scripts jika pemutar wajib jalan, allow-same-origin hanya jika dokumentasi resmi memintanya. Jangan menumpuk semua token “supaya aman tidak rusak”. Setiap token adalah izin.</p><p class="mb-4">Pasang referrerpolicy="strict-origin-when-cross-origin" atau no-referrer jika layanan tidak butuh URL penuh. Loading lazy menjaga First Paint. Kunci rasio aspek di CSS agar kartu tidak melonjak saat iframe selesai dimuat.</p><p class="mb-4">Sediakan tautan cadangan di luar iframe: “Buka di peta” atau “Tonton di YouTube”. Jaringan ketat dan ekstensi privasi sering memblokir embed. Pengunjung tetap bisa menyelesaikan tugas tanpa widget.</p><p class="mb-4">Uji di pratinjau Clincoo dengan konsol terbuka. Jika iframe menolak dimuat setelah sandbox, longgarkan satu token saja, lalu uji lagi. Catat kombinasi yang berhasil di komentar HTML agar kolaborator tidak menghapus perlindungan.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">MDN: iframe<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/iframe-lazy-loading" target="_blank" rel="noopener">web.dev: lazy iframes<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/integrasi//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
