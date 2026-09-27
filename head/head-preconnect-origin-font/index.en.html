@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add preconnect for Font Origins in the Clincoo Head — Clincoo Blog</title>
+<meta name="description" content="Fonts from another origin wait on a TLS handshake. preconnect shortens the blank-text gap.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/head/head-preconnect-origin-font/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Add preconnect for Font Origins in the Clincoo Head">
+<meta property="og:description" content="Fonts from another origin wait on a TLS handshake. preconnect shortens the blank-text gap.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/head/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Head</div><h1>Add preconnect for Font Origins in the Clincoo Head</h1><p class="desc">Fonts from another origin wait on a TLS handshake. preconnect shortens the blank-text gap.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">When a Clincoo project loads fonts from fonts.googleapis.com or another CDN, the browser must DNS-lookup and complete TLS before the download starts. Text flashes in a fallback face.</p><p class="mb-4">Add <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> and a preconnect to the font CSS origin in the head, before the font stylesheet.</p><p class="mb-4">Do not preconnect dozens of domains. web.dev says hint only origins the page actually uses. Extra preconnects steal sockets.</p><p class="mb-4">MDN documents rel=preconnect and the required crossorigin attribute on font requests because they use anonymous CORS.</p><p class="mb-4">Test in the Clincoo preview with Network throttling. If fonts already live in the project folder, skip preconnect and link those files from editor.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz/</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect" target="_blank" rel="noopener">MDN: rel=preconnect<span class="d">developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect</span></a><a href="https://web.dev/learn/performance/resource-hints/" target="_blank" rel="noopener">web.dev: Preconnect and prefetch<span class="d">web.dev/learn/performance/resource-hints/</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/head/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
