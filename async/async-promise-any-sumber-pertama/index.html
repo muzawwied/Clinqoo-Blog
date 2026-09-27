@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambil Sumber Clincoo Pertama yang Sukses dengan Promise.any — Clincoo Blog</title>
+<meta name="description" content="Promise.all menunggu semua. Promise.any memakai hasil pertama yang resolve agar pratinjau tidak menunggu CDN lambat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-promise-any-sumber-pertama/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ambil Sumber Clincoo Pertama yang Sukses dengan Promise.any">
+<meta property="og:description" content="Promise.all menunggu semua. Promise.any memakai hasil pertama yang resolve agar pratinjau tidak menunggu CDN lambat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Ambil Sumber Clincoo Pertama yang Sukses dengan Promise.any</h1><p class="desc">Promise.all menunggu semua. Promise.any memakai hasil pertama yang resolve agar pratinjau tidak menunggu CDN lambat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Skrip Clincoo kadang memanggil dua URL cadangan: CDN proyek dan salinan di folder assets. Promise.all baru selesai setelah keduanya merespons, jadi satu CDN lambat menahan seluruh kartu.</p><p class="mb-4">Pakai Promise.any([fetch(primer), fetch(cadangan)]). Nilai yang dikembalikan adalah Response pertama yang resolve. Jika semua reject, tangkap AggregateError lalu tampilkan pesan satu baris di pratinjau.</p><p class="mb-4">Jangan campur Promise.any dengan Promise.race tanpa batas waktu. race juga menerima reject pertama; any mengabaikan kegagalan sampai tidak ada yang tersisa. Itu yang kamu butuhkan saat satu host 404 dan yang lain sehat.</p><p class="mb-4">Uji di editor.clincoo.buzz: buat URL primer yang salah dan cadangan yang benar. Kartu harus terisi dari cadangan tanpa reload. Cek Network di DevTools agar request yang kalah tidak menimpa DOM.</p><p class="mb-4">Clincoo menjalankan JS yang kamu simpan. Promise.any menjaga app.clincoo.buzz tetap merespons saat satu sumber gagal, tanpa mengubah alur await di fungsi lain.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" target="_blank" rel="noopener">MDN Promise.any<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/promises" target="_blank" rel="noopener">web.dev Promises<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

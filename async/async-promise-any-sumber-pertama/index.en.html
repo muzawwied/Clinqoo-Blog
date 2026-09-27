@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Take the First Successful Clincoo Source with Promise.any — Clincoo Blog</title>
+<meta name="description" content="Promise.all waits for every request. Promise.any uses the first resolve so the preview does not wait on a slow CDN.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-promise-any-sumber-pertama/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Take the First Successful Clincoo Source with Promise.any">
+<meta property="og:description" content="Promise.all waits for every request. Promise.any uses the first resolve so the preview does not wait on a slow CDN.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Take the First Successful Clincoo Source with Promise.any</h1><p class="desc">Promise.all waits for every request. Promise.any uses the first resolve so the preview does not wait on a slow CDN.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo scripts often hit a primary CDN and a local assets copy. Promise.all only finishes after both respond, so one slow host blocks the whole card.</p><p class="mb-4">Use Promise.any([fetch(primary), fetch(fallback)]). The value is the first Response that fulfills. If every request rejects, catch AggregateError and show one line in the preview.</p><p class="mb-4">Do not mix Promise.any with an unbounded Promise.race. race also settles on the first reject; any ignores failures until nothing remains. That is what you want when one host 404s and the other is healthy.</p><p class="mb-4">Test in editor.clincoo.buzz with a bad primary URL and a good fallback. The card must fill from the fallback without a reload. Check Network so the losing request does not overwrite the DOM.</p><p class="mb-4">Clincoo runs the JS you save. Promise.any keeps app.clincoo.buzz responsive when one source fails, without changing await flow elsewhere.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" target="_blank" rel="noopener">MDN Promise.any<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/promises" target="_blank" rel="noopener">web.dev Promises<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
