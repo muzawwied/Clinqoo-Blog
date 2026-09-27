@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulangi Fetch Clincoo yang Gagal Sementara, dengan Batas Jelas — Clincoo Blog</title>
+<meta name="description" content="Status 429 atau jaringan putus sekejap bukan alasan loop tanpa henti. Batasi 2–3 percobaan dan tampilkan pesan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/api/api-retry-gagal-sementara-dengan-batas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ulangi Fetch Clincoo yang Gagal Sementara, dengan Batas Jelas">
+<meta property="og:description" content="Status 429 atau jaringan putus sekejap bukan alasan loop tanpa henti. Batasi 2–3 percobaan dan tampilkan pesan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/api//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">API</div><h1>Ulangi Fetch Clincoo yang Gagal Sementara, dengan Batas Jelas</h1><p class="desc">Status 429 atau jaringan putus sekejap bukan alasan loop tanpa henti. Batasi 2–3 percobaan dan tampilkan pesan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Fetch ke API form atau daftar artikel kadang gagal karena jaringan goyah atau server menolak sementara. Mengulang sekali atau dua kali masuk akal. Mengulang tanpa batas membuat tombol menggantung dan menumpuk permintaan.</p><p class="mb-4">Bedakan error. 400 dan 401 jangan diulang: isi atau izin yang salah tidak sembuh dengan retry. 429, 503, atau TypeError jaringan boleh dicoba lagi setelah jeda singkat.</p><p class="mb-4">Pakai AbortController agar percobaan lama tidak menimpa yang baru. Nonaktifkan tombol Kirim selama rangkaian retry. Tampilkan “mencoba lagi…” lalu pesan gagal jika batas tercapai.</p><p class="mb-4">Di pratinjau Clincoo, uji dengan tab Network set Offline lalu Online. Pengunjung harus melihat status, bukan error merah di konsol. Jangan simpan kunci API di berkas JavaScript halaman.</p><p class="mb-4">Catat kode status di log internal jika kamu punya endpoint sendiri. Tanpa status, tim mengira CSS yang rusak padahal API menolak.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch" target="_blank" rel="noopener">MDN: fetch()<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN: AbortController<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank" rel="noopener">MDN: HTTP response status codes<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/api//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
