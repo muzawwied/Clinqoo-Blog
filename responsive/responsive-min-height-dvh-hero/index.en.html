@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use min-height dvh for Clincoo Heroes, Not 100vh That Clips on Phones — Clincoo Blog</title>
+<meta name="description" content="100vh on iOS is often taller than the visible screen. dvh follows the dynamic viewport as the address bar moves.">
+<link rel="canonical" href="https://blog.clincoo.buzz/responsive/responsive-min-height-dvh-hero/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use min-height dvh for Clincoo Heroes, Not 100vh That Clips on Phones">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/responsive/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Responsive</div><h1>Use min-height dvh for Clincoo Heroes, Not 100vh That Clips on Phones</h1><p class="desc">100vh on iOS is often taller than the visible screen. dvh follows the dynamic viewport as the address bar moves.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo hero set to height 100vh often overshoots on iPhone: the main button sits under Safari’s address bar. Visitors must scroll just to see the primary call to action.</p><p class="mb-4">Switch to min-height: 100dvh or 100svh. Dynamic units follow the viewport as browser chrome shows or hides. min-height is safer than a fixed height so tall hero copy is not clipped.</p><p class="mb-4">Still test in DevTools and on a real phone. Rotate the screen, open Clincoo preview, and keep title, subtitle, and button on the first screen without covering the navbar.</p><p class="mb-4">If the hero uses a background image, pair object-fit: cover with inner padding. Do not lock overflow hidden on the body just to hide leftover bad vh.</p><p class="mb-4">Modern viewport units work in current browsers. Keep a min-height: 100vh fallback above the dvh rule if you still support older engines.</p></div>
+  <a class="back" href="https://blog.clincoo.buzz/responsive/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

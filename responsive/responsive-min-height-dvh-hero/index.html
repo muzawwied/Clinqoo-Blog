@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai min-height dvh pada Hero Clincoo, Bukan 100vh yang Terpotong di HP — Clincoo Blog</title>
+<meta name="description" content="100vh di iOS sering lebih tinggi dari layar terlihat. dvh mengikuti viewport dinamis saat bilah alamat berubah.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/responsive/responsive-min-height-dvh-hero/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai min-height dvh pada Hero Clincoo, Bukan 100vh yang Terpotong di HP">
+<meta property="og:description" content="100vh di iOS sering lebih tinggi dari layar terlihat. dvh mengikuti viewport dinamis saat bilah alamat berubah.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/responsive/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Responsif</div><h1>Pakai min-height dvh pada Hero Clincoo, Bukan 100vh yang Terpotong di HP</h1><p class="desc">100vh di iOS sering lebih tinggi dari layar terlihat. dvh mengikuti viewport dinamis saat bilah alamat berubah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Hero yang memakai height 100vh di proyek Clincoo sering terasa kebablasan di iPhone: tombol utama jatuh di bawah bilah alamat Safari. Pengunjung harus menggulir hanya untuk melihat ajakan utama.</p><p class="mb-4">Ganti ke min-height: 100dvh atau 100svh. Satuan dinamis mengikuti tinggi viewport saat UI browser muncul atau hilang. min-height lebih aman daripada height tetap, karena isi hero yang panjang tidak terpotong.</p><p class="mb-4">Tetap uji di DevTools dan di ponsel sungguhan. Putar layar, buka pratinjau Clincoo, pastikan judul, subjudul, dan tombol tetap dalam satu layar pertama tanpa menimpa navbar.</p><p class="mb-4">Jika hero berisi gambar latar, padukan object-fit cover dengan padding dalam. Jangan mengunci overflow hidden pada body hanya untuk menutupi sisa vh yang salah.</p><p class="mb-4">Satuan viewport modern sudah didukung browser utama. Pakai fallback min-height 100vh di atas aturan dvh jika kamu masih menargetkan browser lama.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#viewport-percentage_lengths" target="_blank" rel="noopener">MDN — Viewport-percentage lengths<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/blog/viewport-units/" target="_blank" rel="noopener">web.dev — Viewport units<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/responsive/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
