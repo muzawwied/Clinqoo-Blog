@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antrikan Tugas Async Clincoo agar Hanya Satu yang Jalan — Clincoo Blog</title>
+<meta name="description" content="Dua unggahan paralel menimpa file yang sama. Antrian serial menjaga urutan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-antrian-satu-tugas-sekali/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Antrikan Tugas Async Clincoo agar Hanya Satu yang Jalan">
+<meta property="og:description" content="Dua unggahan paralel menimpa file yang sama. Antrian serial menjaga urutan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Antrikan Tugas Async Clincoo agar Hanya Satu yang Jalan</h1><p class="desc">Dua unggahan paralel menimpa file yang sama. Antrian serial menjaga urutan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body">
+<p class="mb-4">Fitur simpan otomatis dan unggah gambar di situs Clincoo bisa jalan bersamaan dan menimpa versi file.</p><p class="mb-4">Buat queue sederhana: array janji dan fungsi enqueue(fn) yang menunggu job sebelumnya selesai sebelum menjalankan fn.</p><p class="mb-4">Jangan pakai Promise.all untuk menulis file yang sama. all cocok untuk baca paralel, bukan tulis yang saling bergantung.</p><p class="mb-4">Jika job baru membuat job lama tidak relevan, batalkan yang lama dengan AbortController, lalu enqueue yang baru.</p><p class="mb-4">Uji di editor.clincoo.buzz: picu simpan dua kali beruntun. Log harus menunjukkan job kedua mulai setelah yang pertama selesai.</p><p class="mb-4">Clincoo menjalankan JS yang kamu simpan. Antrian serial menjaga pratinjau app.clincoo.buzz tidak korup karena balapan tulis.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">MDN — Promise<span class="d">developer.mozilla.org</span></a><a href="https://javascript.info/promise-chaining" target="_blank" rel="noopener">JavaScript.info — Promises chaining<span class="d">javascript.info</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

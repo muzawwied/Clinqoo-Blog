@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queue Clincoo Async Jobs so Only One Runs at a Time — Clincoo Blog</title>
+<meta name="description" content="Two parallel uploads overwrite the same file. A serial queue keeps order.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-antrian-satu-tugas-sekali/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Queue Clincoo Async Jobs so Only One Runs at a Time">
+<meta property="og:description" content="Two parallel uploads overwrite the same file. A serial queue keeps order.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Queue Clincoo Async Jobs so Only One Runs at a Time</h1><p class="desc">Two parallel uploads overwrite the same file. A serial queue keeps order.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body">
+<p class="mb-4">Autosave and image upload on a Clincoo site can run together and overwrite a file version.</p><p class="mb-4">Build a small queue: an array of promises and enqueue(fn) that waits for the previous job before running fn.</p><p class="mb-4">Do not use Promise.all to write the same file. all is fine for parallel reads, not for dependent writes.</p><p class="mb-4">If a new job makes the old one irrelevant, abort the old one with AbortController, then enqueue the new job.</p><p class="mb-4">Test in editor.clincoo.buzz: trigger save twice in a row. Logs should show the second job starting after the first finishes.</p><p class="mb-4">Clincoo runs the JS you save. A serial queue keeps the app.clincoo.buzz preview from corrupting due to a write race.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">MDN — Promise<span class="d">developer.mozilla.org</span></a><a href="https://javascript.info/promise-chaining" target="_blank" rel="noopener">JavaScript.info — Promises chaining<span class="d">javascript.info</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
