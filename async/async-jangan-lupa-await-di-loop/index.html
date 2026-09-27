@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Lupa await di dalam Loop pada Skrip Clincoo — Clincoo Blog</title>
+<meta name="description" content="for tanpa await menembak semua request sekaligus. Urutan dan batas rate rusak.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-jangan-lupa-await-di-loop/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Lupa await di dalam Loop pada Skrip Clincoo">
+<meta property="og:description" content="for tanpa await menembak semua request sekaligus. Urutan dan batas rate rusak.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Jangan Lupa await di dalam Loop pada Skrip Clincoo</h1><p class="desc">for tanpa await menembak semua request sekaligus. Urutan dan batas rate rusak.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">AI sering menulis for (const id of ids) { fetch('/item/' + id) } tanpa await. Server menerima ledakan paralel.</p><p class="mb-4">Jika urutan penting, tulis for ... { const r = await fetch(...) }. Jika paralel aman, kumpulkan Promise lalu allSettled.</p><p class="mb-4">Jangan await di dalam forEach; forEach tidak menunggu async callback.</p><p class="mb-4">Minta AI menandai loop mana yang wajib berurutan. Satu perubahan per permintaan.</p><p class="mb-4">Clincoo menjalankan loop di browser pengguna. await yang sadar menjaga kuota dan urutan data.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
