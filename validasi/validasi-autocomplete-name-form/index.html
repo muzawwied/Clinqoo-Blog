@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isi autocomplete dan name Form Clincoo agar Browser Bisa Mengisi Otomatis — Clincoo Blog</title>
+<meta name="description" content="Tanpa autocomplete dan name yang tepat, browser dan pengelola sandi tidak bisa mengisi form Clincoo. Pakai token standar HTML.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/validasi/validasi-autocomplete-name-form/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Isi autocomplete dan name Form Clincoo agar Browser Bisa Mengisi Otomatis">
+<meta property="og:description" content="Tanpa autocomplete dan name yang tepat, browser dan pengelola sandi tidak bisa mengisi form Clincoo. Pakai token standar HTML.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/validasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Validasi</div><h1>Isi autocomplete dan name Form Clincoo agar Browser Bisa Mengisi Otomatis</h1><p class="desc">Tanpa autocomplete dan name yang tepat, browser dan pengelola sandi tidak bisa mengisi form Clincoo. Pakai token standar HTML.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Validasi format saja tidak cukup jika pengunjung harus mengetik ulang nama, email, dan alamat setiap kali. Atribut autocomplete dan name yang konsisten memberi petunjuk pada browser dan pengelola sandi agar nilai tersimpan bisa diisi otomatis. Di editor Clincoo, cek setiap input kontak sebelum menayangkan form.</p><p class="mb-4">Pakai token yang dikenali HTML, bukan label bebas. Email memakai autocomplete="email", nama lengkap name="name" plus autocomplete="name", telepon autocomplete="tel". Untuk alamat, pecah menjadi street-address, postal-code, dan country. Token yang salah membuat saran browser tampil di field yang tidak relevan.</p><p class="mb-4">Name juga dipakai saat data dikirim. Hindari name yang digandakan antar field kecuali radio dengan nilai berbeda. Jika dua input memakai name yang sama, nilai terakhir menimpa yang pertama dan validasi sisi klien terlihat lolos padahal payload rusak.</p><p class="mb-4">Setelah atribut terpasang, uji di pratinjau: klik field dan pastikan saran browser muncul. Lalu kirim form dan cek Network bahwa pasangan name-value sesuai harapan. Kombinasi autocomplete yang benar, name unik, dan pesan error spesifik membuat form Clincoo cepat diisi sekaligus aman divalidasi.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" target="_blank" rel="noopener">MDN autocomplete<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/forms/autofill/" target="_blank" rel="noopener">web.dev Autofill<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/validasi/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
