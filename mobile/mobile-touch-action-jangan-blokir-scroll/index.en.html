@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Block Phone Scrolling with touch-action on Clincoo Sites — Clincoo Blog</title>
+<meta name="description" content="touch-action: none on a large wrapper freezes scroll. Limit it to the swipe control that actually needs it.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/mobile/mobile-touch-action-jangan-blokir-scroll/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Block Phone Scrolling with touch-action on Clincoo Sites">
+<meta property="og:description" content="touch-action: none on a large wrapper freezes scroll. Limit it to the swipe control that actually needs it.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/mobile/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Mobile</div><h1>Do Not Block Phone Scrolling with touch-action on Clincoo Sites</h1><p class="desc">touch-action: none on a large wrapper freezes scroll. Limit it to the swipe control that actually needs it.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Sliders, maps, or carousels in Clincoo templates often get touch-action: none so a horizontal swipe does not scroll the page. If that property sits on a full section, phone visitors cannot scroll.</p><p class="mb-4">Apply touch-action only on the narrow control element. Leave body and article on the browser default scroll behavior.</p><p class="mb-4">Test in iOS Safari and Android Chrome from the editor.clincoo.buzz preview. A one-finger up-down gesture must still move the page.</p><p class="mb-4">If you use a swipe library, read its official touch-action option. Do not paste CSS that disables manipulation on * or .wrap.</p><p class="mb-4">After the subdomain deploy, thumb-scroll from hero to footer. If the page feels stuck, remove touch-action from the outer wrapper.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action" target="_blank" rel="noopener">MDN: touch-action<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/event-best-practices" target="_blank" rel="noopener">web.dev: touch-action<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/mobile/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
