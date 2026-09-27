@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preload Font Kritis Judul di Situs Clincoo — Clincoo Blog</title>
+<meta name="description" content="Font judul yang terlambat membuat LCP tertahan. Preload satu file woff2 yang benar-benar dipakai hero Clincoo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/performa/performa-preload-font-kritis/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Preload Font Kritis Judul di Situs Clincoo">
+<meta property="og:description" content="Font judul yang terlambat membuat LCP tertahan. Preload satu file woff2 yang benar-benar dipakai hero Clincoo.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/performa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Performa</div><h1>Preload Font Kritis Judul di Situs Clincoo</h1><p class="desc">Font judul yang terlambat membuat LCP tertahan. Preload satu file woff2 yang benar-benar dipakai hero Clincoo.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Judul hero sering jadi elemen LCP. Kalau keluarga font masih diunduh setelah CSS selesai, teks tampil dengan fallback dulu lalu loncat. Di workspace Clincoo, simpan satu berkas woff2 untuk bobot yang dipakai judul, bukan seluruh keluarga.</p><p class="mb-4">Tambahkan tautan preload di head halaman yang memakai judul itu: rel="preload" as="font" type="font/woff2" crossorigin, lalu href ke file di folder assets. Tanpa crossorigin, browser bisa mengunduh font dua kali. Jangan preload italic, extra-bold, atau file yang tidak muncul di lipatan pertama.</p><p class="mb-4">Pasangkan dengan @font-face yang memakai font-display: swap dan src lokal. Preload tanpa @font-face yang cocok hanya membuang bandwidth. Cek di Network pratinjau bahwa permintaan font dimulai sebelum gambar hero besar.</p><p class="mb-4">Setelah deploy subdomain Clincoo, ukur lagi di HP. Kalau LCP tetap gambar, preload font tidak merugikan asalkan hanya satu file. Kalau LCP teks judul, preload yang tepat memangkas jeda fallback.</p><p class="mb-4">Hapus preload yang tidak terpakai saat kamu ganti merek atau turunkan judul ke sistem font. Preload usang tetap dihitung sebagai sumber prioritas dan bisa menunda CSS.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://web.dev/articles/preload-critical-assets" target="_blank" rel="noopener">web.dev: Preload critical assets<span class="d">web.dev</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload" target="_blank" rel="noopener">MDN: rel=preload<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/font-best-practices" target="_blank" rel="noopener">web.dev: Font best practices<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/performa/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
