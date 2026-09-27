@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang Satu Listener pada Induk Daftar Clincoo, Bukan di Setiap Item — Clincoo Blog</title>
+<meta name="description" content="Item yang ditambah kemudian tidak punya handler. Delegasi event di induk tetap menangkap klik baru.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/dom/dom-delegasi-event-pada-daftar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang Satu Listener pada Induk Daftar Clincoo, Bukan di Setiap Item">
+<meta property="og:description" content="Item yang ditambah kemudian tidak punya handler. Delegasi event di induk tetap menangkap klik baru.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/dom/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">DOM</div><h1>Pasang Satu Listener pada Induk Daftar Clincoo, Bukan di Setiap Item</h1><p class="desc">Item yang ditambah kemudian tidak punya handler. Delegasi event di induk tetap menangkap klik baru.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Daftar kartu Clincoo mengikat click di setiap artikel saat load. Kartu yang di-render AI kemudian diam.</p><p class="mb-4">Di editor.clincoo.buzz, pasang satu listener pada ul atau grid induk. Baca event.target.closest('[data-id]').</p><p class="mb-4">Jangan mengikat ulang seluruh daftar setiap kali item baru masuk. Itu menumpuk listener.</p><p class="mb-4">Minta AI menulis delegasi. Tempel loop forEach addEventListener pada tiap kartu.</p><p class="mb-4">Clincoo menayangkan skrip yang kamu simpan. Delegasi membuat daftar dinamis di app.clincoo.buzz tetap hidup.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/dom/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
