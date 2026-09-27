@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://blog.clincoo.buzz/lint/lint-hapus-console-log-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dokumentasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/integrasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/preview/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/flexbox/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/grid/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/svg/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/layout/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/shortcut/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/font/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/tabel/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/email/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/redirect/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/export/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/onboarding/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/branding/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/notifikasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/offline/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/regex/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/monitoring/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/schema/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/audit/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/minify/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/modal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dom/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/validasi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/head/</loc></url>
   <url><loc>https://blog.clincoo.buzz/async/</loc></url>
   <url><loc>https://blog.clincoo.buzz/async/async-await-try-catch-satu-fetch/</loc></url>
   <url><loc>https://blog.clincoo.buzz/async/async-allsettled-bukan-all-gagal-satu/</loc></url>
