@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Move Focus to the First Control when a Clincoo Modal Opens — Clincoo Blog</title>
+<meta name="description" content="A modal without initial focus leaves the keyboard on the page behind. Move focus to the title or first control inside the dialog.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modal/modal-fokus-awal-ke-kontrol-pertama/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Move Focus to the First Control when a Clincoo Modal Opens">
+<meta property="og:description" content="A modal without initial focus leaves the keyboard on the page behind. Move focus to the title or first control inside the dialog.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modal/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modal</div><h1>Move Focus to the First Control when a Clincoo Modal Opens</h1><p class="desc">A modal without initial focus leaves the keyboard on the page behind. Move focus to the title or first control inside the dialog.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo dialog opens, but Tab still walks the page menu. Screen readers never announce the modal title.</p><p class="mb-4">As soon as the overlay appears, call focus() on the first sensible element: a heading with tabindex="-1", or the first input if the dialog is a form.</p><p class="mb-4">Do not focus the close button if the visitor must fill a field. Tab order should follow the task, not random markup order.</p><p class="mb-4">The native dialog element moves focus for you. If you use a custom div in editor.clincoo.buzz, you must move focus yourself.</p><p class="mb-4">Test with the keyboard only in preview. This pattern pairs with restoring focus to the trigger button after the dialog closes.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" target="_blank" rel="noopener">WAI-ARIA APG Dialog<span class="d">w3.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/focus" target="_blank" rel="noopener">MDN Element.focus()<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modal/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
