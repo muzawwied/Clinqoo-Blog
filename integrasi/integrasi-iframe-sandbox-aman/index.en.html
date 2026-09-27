@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lock Third-Party Iframes in Clincoo with sandbox and referrerpolicy — Clincoo Blog</title>
+<meta name="description" content="Map, video, or booking embeds need a sandbox. Limit iframe permissions so your Clincoo page stays closed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/integrasi/integrasi-iframe-sandbox-aman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lock Third-Party Iframes in Clincoo with sandbox and referrerpolicy">
+<meta property="og:description" content="Map, video, or booking embeds need a sandbox. Limit iframe permissions so your Clincoo page stays closed.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/integrasi//"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Integrasi</div><h1>Lock Third-Party Iframes in Clincoo with sandbox and referrerpolicy</h1><p class="desc">Map, video, or booking embeds need a sandbox. Limit iframe permissions so your Clincoo page stays closed.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">An iframe is the fastest way to drop a map, player, or booking form onto a Clincoo site. Without limits, the framed document can request permissions, open popups, or read the full referrer of your preview URL. That security cost is not worth a paste-and-forget embed.</p><p class="mb-4">Add a sandbox attribute. Start strict, then allow only what the widget truly needs: allow-scripts if the player must run, allow-same-origin only when official docs require it. Do not stack every token “so it does not break”. Each token is a permission.</p><p class="mb-4">Set referrerpolicy to strict-origin-when-cross-origin, or no-referrer if the service does not need the full URL. Lazy loading protects First Paint. Lock the aspect ratio in CSS so the card does not jump when the iframe finishes loading.</p><p class="mb-4">Keep a fallback link outside the iframe: “Open in maps” or “Watch on YouTube”. Strict networks and privacy extensions often block embeds. Visitors should still finish the task without the widget.</p><p class="mb-4">Test in Clincoo preview with the console open. If the iframe refuses to load after sandboxing, loosen one token only, then test again. Note the working combination in an HTML comment so collaborators do not strip the protection.</p></div><div class="src"><h2>Information Source</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">MDN: iframe<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/iframe-lazy-loading" target="_blank" rel="noopener">web.dev: lazy iframes<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/integrasi//">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
