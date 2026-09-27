@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wrap One Clincoo Fetch in async/await and try/catch — Clincoo Blog</title>
+<meta name="description" content="A Promise without catch leaves the spinner spinning. One async function makes failure visible.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-await-try-catch-satu-fetch/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wrap One Clincoo Fetch in async/await and try/catch">
+<meta property="og:description" content="A Promise without catch leaves the spinner spinning. One async function makes failure visible.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Wrap One Clincoo Fetch in async/await and try/catch</h1><p class="desc">A Promise without catch leaves the spinner spinning. One async function makes failure visible.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo scripts often call fetch then stack .then. If the network fails, the button stays disabled.</p><p class="mb-4">Write async function load() { try { const r = await fetch(url); if (!r.ok) throw new Error(r.status); const data = await r.json(); } catch (e) { show a message; } finally { enable the button; } }</p><p class="mb-4">Do not mix .then and await in the same function. Pick one style so the AI does not pile chains.</p><p class="mb-4">Test in editor.clincoo.buzz with one bad URL. The error message must appear without a reload.</p><p class="mb-4">Clincoo runs the JS you save. try/catch on one fetch keeps the app.clincoo.buzz preview usable.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
