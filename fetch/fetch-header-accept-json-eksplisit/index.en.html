@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set an Accept: application/json Header on Clincoo Fetch — Clincoo Blog</title>
+<meta name="description" content="Without Accept, a server may return an HTML error page. JSON parsing then fails quietly.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-header-accept-json-eksplisit/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set an Accept: application/json Header on Clincoo Fetch">
+<meta property="og:description" content="Without Accept, a server may return an HTML error page. JSON parsing then fails quietly.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Set an Accept: application/json Header on Clincoo Fetch</h1><p class="desc">Without Accept, a server may return an HTML error page. JSON parsing then fails quietly.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo fetch to an API endpoint sends no Accept. On 404 the body is an HTML page and res.json() throws.</p><p class="mb-4">In editor.clincoo.buzz, add headers: { Accept: 'application/json' } together with Content-Type on POST.</p><p class="mb-4">Still check res.ok and the response Content-Type before parsing. Do not assume every body is JSON.</p><p class="mb-4">Paste the fetch call into the AI. Ask for an Accept header plus a branch when the response is not JSON.</p><p class="mb-4">Clincoo does not add headers for you. A clear Accept keeps app.clincoo.buzz showing the API error, not a parse stack.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
