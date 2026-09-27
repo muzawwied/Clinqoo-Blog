@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pahami Preflight CORS sebelum Fetch Clincoo ke Domain Lain — Clincoo Blog</title>
+<meta name="description" content="Header Authorization atau Content-Type JSON memicu OPTIONS. Tanpa Access-Control-Allow-* yang cocok, fetch Clincoo gagal diam-diam.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-mode-cors-dan-preflight/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pahami Preflight CORS sebelum Fetch Clincoo ke Domain Lain">
+<meta property="og:description" content="Header Authorization atau Content-Type JSON memicu OPTIONS. Tanpa Access-Control-Allow-* yang cocok, fetch Clincoo gagal diam-diam.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Pahami Preflight CORS sebelum Fetch Clincoo ke Domain Lain</h1><p class="desc">Header Authorization atau Content-Type JSON memicu OPTIONS. Tanpa Access-Control-Allow-* yang cocok, fetch Clincoo gagal diam-diam.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Situs yang di-deploy dari Clincoo memanggil API di domain berbeda. Konsol menampilkan blocked by CORS policy meski endpoint hidup saat dibuka di tab baru.</p><p class="mb-4">MDN CORS menjelaskan preflight OPTIONS untuk request non-sederhana. Content-Type application/json dan header Authorization hampir selalu memicu preflight.</p><p class="mb-4">web.dev merinci header balasan yang wajib: Allow-Origin, Allow-Methods, Allow-Headers. Jangan setel mode no-cors hanya untuk menyembunyikan error; body menjadi opaque dan tidak bisa di-parse.</p><p class="mb-4">Di editor.clincoo.buzz, uji dulu GET tanpa header kustom. Jika itu lolos, tambahkan header satu per satu sampai preflight muncul. Perbaiki server atau pakai proxy same-origin.</p><p class="mb-4">Clincoo tidak menonaktifkan kebijakan browser. Memahami preflight menghemat jam debugging di app.clincoo.buzz sebelum menuduh fetch rusak.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noopener">MDN CORS<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/cross-origin-resource-sharing" target="_blank" rel="noopener">web.dev CORS<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

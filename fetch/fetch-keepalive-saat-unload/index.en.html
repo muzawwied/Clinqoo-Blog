@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use keepalive on Clincoo Fetch When the Page Unloads — Clincoo Blog</title>
+<meta name="description" content="A normal fetch is canceled on unload. The keepalive option lets short analytics beacons and draft saves still leave.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-keepalive-saat-unload/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use keepalive on Clincoo Fetch When the Page Unloads">
+<meta property="og:description" content="A normal fetch is canceled on unload. The keepalive option lets short analytics beacons and draft saves still leave.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Use keepalive on Clincoo Fetch When the Page Unloads</h1><p class="desc">A normal fetch is canceled on unload. The keepalive option lets short analytics beacons and draft saves still leave.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A visitor closes the tab before fetch finishes. Analytics or draft-save requests on Clincoo vanish because the document context is already gone.</p><p class="mb-4">Add keepalive: true on fetch calls triggered by visibilitychange or pagehide. MDN documents a small body size limit; do not use this option for large uploads.</p><p class="mb-4">web.dev suggests fetch keepalive or sendBeacon for short data when the page leaves. Pick one path so you do not double-hit.</p><p class="mb-4">In editor.clincoo.buzz, split telemetry from the main form save. The main form still awaits a response; a beacon can be fire-and-forget.</p><p class="mb-4">Test by closing preview right after the action. The server should still receive the small POST. This keeps metrics on app.clincoo.buzz stable without blocking navigation.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/keepalive" target="_blank" rel="noopener">MDN Request keepalive<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/fetch-api" target="_blank" rel="noopener">web.dev Fetch API<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
