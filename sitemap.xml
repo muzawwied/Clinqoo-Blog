@@ -85,4 +85,10 @@
   <url><loc>https://blog.clincoo.buzz/dom/dom-classlist-bukan-classname/</loc></url>
   <url><loc>https://blog.clincoo.buzz/dom/dom-fragment-sisip-banyak/</loc></url>
   <url><loc>https://blog.clincoo.buzz/dom/dom-dataset-atribut-data/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-cek-response-ok-sebelum-json/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-tangani-jaringan-putus/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-jangan-asumsi-body-json/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-abortcontroller-batal-stale/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-set-content-type-saat-post/</loc></url>
 </urlset>
