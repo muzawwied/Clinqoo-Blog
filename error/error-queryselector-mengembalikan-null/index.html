@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tangani querySelector Null sebelum Menyentuh Properti di Clincoo — Clincoo Blog</title>
+<meta name="description" content="querySelector mengembalikan null jika selektor salah atau skrip jalan terlalu awal. Cek hasilnya sebelum classList atau textContent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/error/error-queryselector-mengembalikan-null/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tangani querySelector Null sebelum Menyentuh Properti di Clincoo">
+<meta property="og:description" content="querySelector mengembalikan null jika selektor salah atau skrip jalan terlalu awal. Cek hasilnya sebelum classList atau textContent.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/error/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Error</div><h1>Tangani querySelector Null sebelum Menyentuh Properti di Clincoo</h1><p class="desc">querySelector mengembalikan null jika selektor salah atau skrip jalan terlalu awal. Cek hasilnya sebelum classList atau textContent.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pesan <code>Uncaught TypeError: Cannot read properties of null</code> di pratinjau Clincoo hampir selalu berasal dari <code>document.querySelector(...).classList</code> saat elemen belum ada. Selektor salah satu huruf, id berubah, atau skrip di <code><head></code> tanpa <code>defer</code>.</p><p class="mb-4">MDN menyatakan querySelector mengembalikan elemen atau null — bukan error. Tanggung jawabmu adalah cabang: <code>const el = document.querySelector('#cta'); if (!el) return;</code> lalu baru sentuh properti. Optional chaining <code>el?.classList.add('siap')</code> mencegah tab meresah, tetapi tetap log alasan di konsol agar bug selektor tidak sembunyi.</p><p class="mb-4">Urutan perbaikan: buka konsol, salin selektor, tempel di Elements dengan Ctrl+F. Jika tidak ketemu, perbaiki string. Jika ketemu, pindahkan skrip ke akhir <code>body</code> atau pasang listener <code>DOMContentLoaded</code>.</p><p class="mb-4">Jangan bungkus seluruh berkas dalam try/catch kosong. Itu menyembunyikan error lain. Tangani null di titik query, biarkan error sungguhan tetap merah.</p><p class="mb-4">Setelah perbaikan, refresh keras pratinjau. Jika TypeError hilang tetapi tombol tidak berubah, masalahnya sudah pindah ke CSS atau listener — itu kemajuan, bukan regresi.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank" rel="noopener">MDN: Document.querySelector()<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" target="_blank" rel="noopener">MDN: optional chaining<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event" target="_blank" rel="noopener">MDN: DOMContentLoaded<span class="d">developer.mozilla.org</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/error/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
