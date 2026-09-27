@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use fr, Not Percent, for Clincoo Grid Columns That Share Leftover Space — Clincoo Blog</title>
+<meta name="description" content="Percentages in grid-template-columns ignore gap. The fr unit shares leftover space after gap in a Clincoo layout.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/grid/grid-fr-bukan-persen-kolom/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use fr, Not Percent, for Clincoo Grid Columns That Share Leftover Space">
+<meta property="og:description" content="Percentages in grid-template-columns ignore gap. The fr unit shares leftover space after gap in a Clincoo layout.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/grid/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Grid</div><h1>Use fr, Not Percent, for Clincoo Grid Columns That Share Leftover Space</h1><p class="desc">Percentages in grid-template-columns ignore gap. The fr unit shares leftover space after gap in a Clincoo layout.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many Clincoo templates use two or three card columns. Writing 50% 50% or 33% 33% 33% looks tidy, but percentages are taken from the container width before gap. The columns then overflow or force horizontal scroll when you raise the gap.</p><p class="mb-4">The fr unit divides space that remains after fixed sizes and gap are taken. 1fr 1fr gives two equal columns. 2fr 1fr makes a narrower sidebar without a calculator. MDN describes fr as a flexible share of free space, not a percentage of total width.</p><p class="mb-4">Mix fr with minmax when cards need a minimum width. Example: repeat(auto-fit, minmax(16rem, 1fr)). Percentages still help inside a cell, not on grid tracks that must respect gap.</p><p class="mb-4">Test in preview by widening the window and increasing gap. If cards still fit without overflow, the tracks already use fr. Replace percentages in grid-template-columns before adding another media query.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout" target="_blank" rel="noopener">MDN Grid basic concepts<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/css/grid/" target="_blank" rel="noopener">web.dev Learn CSS Grid<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/grid/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
