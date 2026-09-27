@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fill Clincoo Text with textContent, Not innerText or innerHTML — Clincoo Blog</title>
+<meta name="description" content="innerText forces layout. innerHTML parses markup. textContent writes the string as-is.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/dom/dom-textcontent-bukan-innertext/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fill Clincoo Text with textContent, Not innerText or innerHTML">
+<meta property="og:description" content="innerText forces layout. innerHTML parses markup. textContent writes the string as-is.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/dom/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">DOM</div><h1>Fill Clincoo Text with textContent, Not innerText or innerHTML</h1><p class="desc">innerText forces layout. innerHTML parses markup. textContent writes the string as-is.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo scripts that fill a price via innerHTML parse unexpected characters. innerText forces the browser to compute hidden styles first.</p><p class="mb-4">In editor.clincoo.buzz, set el.textContent = value. The string appears as-is. No new tags, no extra reflow just to read.</p><p class="mb-4">Use innerHTML only when you assemble markup you fully control. Do not mix visitor data into it. For labels, headings, and status, textContent is enough.</p><p class="mb-4">Ask AI to replace innerText/innerHTML on pure text updates. Paste the status render function plus a sample string that contains <promo>.</p><p class="mb-4">Clincoo keeps pages light. textContent keeps scripts on app.clincoo.buzz fast and safe when updating numbers, names, or messages.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent" target="_blank" rel="noopener">MDN Node.textContent<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText" target="_blank" rel="noopener">MDN HTMLElement.innerText<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/dom/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
