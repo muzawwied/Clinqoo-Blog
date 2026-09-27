@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Debounce Clincoo Input Before Triggering Fetch — Clincoo Blog</title>
-<meta name="description" content="Every keystroke that fetches immediately floods the network. Debounce adds a conscious pause.">
+<title>Debounce Clincoo Search Input before Fetch — Clincoo Blog</title>
+<meta name="description" content="Every keystroke firing fetch piles up responses. Wait a short pause before a new request.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/async/async-debounce-input-sebelum-fetch/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Debounce Clincoo Input Before Triggering Fetch">
-<meta property="og:description" content="Every keystroke that fetches immediately floods the network. Debounce adds a conscious pause.">
+<meta property="og:title" content="Debounce Clincoo Search Input before Fetch">
+<meta property="og:description" content="Every keystroke firing fetch piles up responses. Wait a short pause before a new request.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,8 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">⏳ Async</div><h1>Debounce Clincoo Input Before Triggering Fetch</h1><p class="desc">Every keystroke that fetches immediately floods the network. Debounce adds a conscious pause.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A search field on a Clincoo site calls the API on every keyup. Five letters become five racing requests.</p><p class="mb-4">Keep a timer. On input, clearTimeout then setTimeout 300–400ms before fetch. Only the last pause runs.</p><p class="mb-4">Abort the old fetch with AbortController if the user types again before the response arrives.</p><p class="mb-4">Do not debounce a form submit button. Debounce typing, not an explicit action.</p><p class="mb-4">Clincoo runs the script in the visitor browser. Debounce protects quota and keeps the editor.clincoo.buzz preview calm.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">⏳ Async</div><h1>Debounce Clincoo Search Input before Fetch</h1><p class="desc">Every keystroke firing fetch piles up responses. Wait a short pause before a new request.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body">
+<p class="mb-4">In the Clincoo editor, a search field that fetches on every input event clogs the network and shows results out of order.</p><p class="mb-4">Keep a timer outside the handler. On input, clearTimeout then setTimeout 250–400 ms that finally calls the async search function.</p><p class="mb-4">Combine debounce with AbortController: when a new timer starts, abort the previous fetch so a stale response cannot overwrite the list.</p><p class="mb-4">Do not debounce a submit button click. Debounce typing only; a click should fetch immediately with a loading flag.</p><p class="mb-4">Test in editor.clincoo.buzz: type five letters quickly. Only the last request should finish and render results.</p><p class="mb-4">Clincoo runs the JS you save. Debounce keeps the app.clincoo.buzz preview responsive while the user types.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout" target="_blank" rel="noopener">MDN — setTimeout<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN — AbortController<span class="d">developer.mozilla.org</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>
