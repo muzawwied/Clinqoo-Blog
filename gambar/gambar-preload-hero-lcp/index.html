@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preload Gambar Hero Clincoo agar LCP Tidak Tertahan CSS — Clincoo Blog</title>
+<meta name="description" content="Hero yang baru ditemukan setelah CSS selesai menahan LCP. Preload file hero di head halaman Clincoo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-preload-hero-lcp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Preload Gambar Hero Clincoo agar LCP Tidak Tertahan CSS">
+<meta property="og:description" content="Hero yang baru ditemukan setelah CSS selesai menahan LCP. Preload file hero di head halaman Clincoo.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/gambar/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Gambar</div><h1>Preload Gambar Hero Clincoo agar LCP Tidak Tertahan CSS</h1><p class="desc">Hero yang baru ditemukan setelah CSS selesai menahan LCP. Preload file hero di head halaman Clincoo.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Gambar hero sering menjadi elemen LCP. Jika browser baru melihat src setelah stylesheet selesai, unduhan hero terlambat. Di halaman Clincoo yang menonjolkan foto besar, tambahkan tautan preload di head agar permintaan hero mulai bersama HTML.</p><p class="mb-4">Tulis <link rel="preload" as="image" href="..."> dengan URL yang sama persis seperti src gambar hero. Jika kamu memakai srcset, sertakan imagesrcset dan imagesizes agar browser memilih kandidat yang sama. Preload ke file yang berbeda dari yang ditampilkan justru membuang bandwidth.</p><p class="mb-4">Jangan preload semua gambar. Cukup satu kandidat LCP per halaman. Preload berlebih bersaing dengan CSS dan font. Pasangkan dengan fetchpriority="high" pada img hero dan loading="eager", sementara gambar di bawah lipat tetap lazy.</p><p class="mb-4">Ukur ulang di pratinjau dan Lighthouse setelah deploy. LCP yang turun tanpa CLS naik berarti preload mengenai file yang tepat. Jika LCP tetap tinggi, cek kompresi WebP dan atribut width-height sebelum menambah preload lain.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload" target="_blank" rel="noopener">MDN preload<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-lcp" target="_blank" rel="noopener">web.dev Optimize LCP<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/gambar/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
