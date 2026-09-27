@@ -96,4 +96,9 @@
   <url><loc>https://blog.clincoo.buzz/fetch/fetch-cache-no-store-data-segar/</loc></url>
   <url><loc>https://blog.clincoo.buzz/fetch/fetch-loading-lalu-reset-tombol/</loc></url>
   <url><loc>https://blog.clincoo.buzz/fetch/fetch-retry-hanya-idempotent/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dom/dom-textcontent-bukan-innertext/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dom/dom-createelement-bukan-string-html/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dom/dom-mutationobserver-satu-target/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/dom/dom-lepas-listener-saat-ganti-node/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-header-accept-json-eksplisit/</loc></url>
 </urlset>
