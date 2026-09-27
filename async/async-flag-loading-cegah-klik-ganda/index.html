@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang Flag Loading agar Klik Ganda Tidak Mengirim Dua Kali — Clincoo Blog</title>
+<meta name="description" content="Tanpa flag, event handler async menerima klik kedua sebelum await selesai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-flag-loading-cegah-klik-ganda/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang Flag Loading agar Klik Ganda Tidak Mengirim Dua Kali">
+<meta property="og:description" content="Tanpa flag, event handler async menerima klik kedua sebelum await selesai.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Pasang Flag Loading agar Klik Ganda Tidak Mengirim Dua Kali</h1><p class="desc">Tanpa flag, event handler async menerima klik kedua sebelum await selesai.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Tombol Kirim di formulir Clincoo menembak dua POST karena pengguna tidak sabar. Dua baris data muncul.</p><p class="mb-4">Di awal handler: if (loading) return; loading = true. Di finally: loading = false. Nonaktifkan tombol di UI juga.</p><p class="mb-4">Flag harus hidup di luar fungsi jika handler dibuat ulang tiap render.</p><p class="mb-4">Jangan hanya mengandalkan atribut disabled jika skrip lain mengikat event di document.</p><p class="mb-4">Clincoo menjalankan handler yang kamu tulis. Flag loading menjaga editor.clincoo.buzz tidak menduplikasi aksi.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
