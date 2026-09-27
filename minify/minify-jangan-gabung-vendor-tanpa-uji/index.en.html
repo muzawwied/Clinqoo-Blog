@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Bundle Vendor Scripts while Minifying Clincoo without Tests — Clincoo Blog</title>
+<meta name="description" content="Merging third-party libraries into one file often breaks load order. Test clicks and forms first.">
+<link rel="canonical" href="https://blog.clincoo.buzz/minify/minify-jangan-gabung-vendor-tanpa-uji/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Bundle Vendor Scripts while Minifying Clincoo without Tests">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/minify/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Minify</div><h1>Do Not Bundle Vendor Scripts while Minifying Clincoo without Tests</h1><p class="desc">Merging third-party libraries into one file often breaks load order. Test clicks and forms first.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">AI sometimes proposes merging several JS files to cut network requests. On a Clincoo site, vendor scripts often must load before page scripts. The wrong order breaks sliders, forms, or analytics.</p><p class="mb-4">MDN explains that defer and type=module change when a script runs. Combining files that use different patterns can run code before the DOM is ready.</p><p class="mb-4">web.dev separates bundling from minify. Minifying one file is safe. Bundling without a dependency map is not. In editor.clincoo.buzz, minify existing files; do not merge vendors until every interaction is tested.</p><p class="mb-4">After the change, open preview: submit a dummy form, open the menu, run the gallery. If the console shows undefined, restore separate files.</p><p class="mb-4">One fewer request is not worth a silent button. Minify contents, keep vendor boundaries until tests pass.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank" rel="noopener">MDN: script element<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/reduce-javascript-payloads-with-code-splitting" target="_blank" rel="noopener">web.dev: reduce JavaScript payloads<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/minify/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
