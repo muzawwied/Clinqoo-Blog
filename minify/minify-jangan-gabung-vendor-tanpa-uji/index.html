@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Gabungkan Skrip Vendor saat Minify Clincoo tanpa Uji — Clincoo Blog</title>
+<meta name="description" content="Menggabungkan library pihak ketiga ke satu berkas sering memutus urutan muat. Uji klik dan form dulu.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/minify/minify-jangan-gabung-vendor-tanpa-uji/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Gabungkan Skrip Vendor saat Minify Clincoo tanpa Uji">
+<meta property="og:description" content="Menggabungkan library pihak ketiga ke satu berkas sering memutus urutan muat. Uji klik dan form dulu.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/minify/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Minify</div><h1>Jangan Gabungkan Skrip Vendor saat Minify Clincoo tanpa Uji</h1><p class="desc">Menggabungkan library pihak ketiga ke satu berkas sering memutus urutan muat. Uji klik dan form dulu.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">AI kadang mengusulkan menggabungkan beberapa file JS agar permintaan jaringan berkurang. Di situs Clincoo, skrip vendor sering harus dimuat sebelum skrip halaman. Urutan yang salah memutus slider, form, atau analitik.</p><p class="mb-4">MDN menjelaskan defer dan type=module mengubah kapan skrip berjalan. Menggabungkan file yang memakai pola berbeda bisa menjalankan kode sebelum DOM siap.</p><p class="mb-4">web.dev membedakan bundling dan minify. Minify satu file aman. Bundling tanpa peta ketergantungan tidak aman. Di editor.clincoo.buzz, minify file yang sudah ada; jangan satukan vendor kecuali kamu menguji setiap interaksi.</p><p class="mb-4">Setelah perubahan, buka pratinjau: kirim form dummy, buka menu, putar galeri. Jika konsol menampilkan undefined, kembalikan file terpisah.</p><p class="mb-4">Satu permintaan lebih sedikit tidak sebanding dengan tombol yang diam. Minify isi, jaga batas antar berkas vendor sampai uji lulus.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank" rel="noopener">MDN: script element<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/reduce-javascript-payloads-with-code-splitting" target="_blank" rel="noopener">web.dev: reduce JavaScript payloads<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/minify/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
