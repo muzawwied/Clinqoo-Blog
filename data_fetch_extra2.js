@@ -21,6 +21,29 @@
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "fetch-tangani-status-204-tanpa-body",
+      langs: {
+        "id": {
+          title: "Tangani Status 204 Fetch Clincoo tanpa Memanggil json()",
+          desc: "Respons No Content tidak punya body. json() pada 204 melempar atau mengembalikan null yang merusak UI.",
+          content: "<p class=\"mb-4\">Endpoint hapus draf Clincoo mengembalikan 204. Skrip tetap memanggil response.json() lalu catch menampilkan error palsu.</p><p class=\"mb-4\">Di editor.clincoo.buzz, cabangkan status 204 dan 205 sebelum parse. Anggap sukses tanpa data, lalu perbarui UI lokal.</p><p class=\"mb-4\">Jangan pakai text() lalu JSON.parse pada body kosong. String kosong bukan objek.</p><p class=\"mb-4\">Tempel fungsi fetch hapus ke AI. Minta cabang khusus 204 plus reset daftar tanpa membaca body.</p><p class=\"mb-4\">Clincoo menjalankan skrip yang kamu simpan. Status tanpa body tetap sukses di app.clincoo.buzz jika UI tidak memaksa parse.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/", sourceSnippet2: "Referensi HTML, CSS, JS"
+        },
+        "en": {
+          title: "Handle a Clincoo Fetch 204 Status without Calling json()",
+          desc: "No Content has no body. json() on 204 throws or returns null that breaks the UI.",
+          content: "<p class=\"mb-4\">A Clincoo draft-delete endpoint returns 204. The script still calls response.json() and the catch shows a fake error.</p><p class=\"mb-4\">In editor.clincoo.buzz, branch on status 204 and 205 before parsing. Treat them as success with no data, then update local UI.</p><p class=\"mb-4\">Do not call text() then JSON.parse on an empty body. An empty string is not an object.</p><p class=\"mb-4\">Paste the delete fetch into the AI. Ask for a 204 branch plus a list reset that does not read the body.</p><p class=\"mb-4\">Clincoo runs the script you save. A no-body status stays a success on app.clincoo.buzz if the UI does not force a parse.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor",
+          source2: "MDN Web Docs", sourceUrl2: "https://developer.mozilla.org/", sourceSnippet2: "HTML, CSS, JS reference"
+        }
+      }
     }
   ];
   function merge(){
