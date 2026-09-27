@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build New Clincoo Items with createElement, Not HTML Strings — Clincoo Blog</title>
+<meta name="description" content="Pasted HTML strings invite injection and are hard to test. createElement plus textContent is safer.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/dom/dom-createelement-bukan-string-html/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build New Clincoo Items with createElement, Not HTML Strings">
+<meta property="og:description" content="Pasted HTML strings invite injection and are hard to test. createElement plus textContent is safer.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/dom/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">DOM</div><h1>Build New Clincoo Items with createElement, Not HTML Strings</h1><p class="desc">Pasted HTML strings invite injection and are hard to test. createElement plus textContent is safer.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo scripts that add cards via innerHTML plus a template string break when a product name contains quotes or tags.</p><p class="mb-4">In editor.clincoo.buzz, create an li with document.createElement('li'), set textContent and the needed class, then appendChild to the list. The node is born complete without an HTML parser.</p><p class="mb-4">Keep data and markup apart. textContent rejects hidden HTML. If you need a link, setAttribute('href', url) after validating an http or https scheme.</p><p class="mb-4">Ask AI to replace dynamic innerHTML with createElement. Paste the add-item function plus sample input that contains < and &.</p><p class="mb-4">Clincoo ships static sites, but client scripts still run. createElement keeps dynamic lists on app.clincoo.buzz clean.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement" target="_blank" rel="noopener">MDN Document.createElement<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/trusted-types" target="_blank" rel="noopener">web.dev Trusted Types<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/dom/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
