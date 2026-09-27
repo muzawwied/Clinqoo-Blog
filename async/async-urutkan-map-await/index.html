@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganti forEach+await dengan map lalu await Promise.all di Clincoo — Clincoo Blog</title>
+<meta name="description" content="forEach tidak menunggu Promise. Daftar item selesai acak dan error tertelan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-urutkan-map-await/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ganti forEach+await dengan map lalu await Promise.all di Clincoo">
+<meta property="og:description" content="forEach tidak menunggu Promise. Daftar item selesai acak dan error tertelan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Ganti forEach+await dengan map lalu await Promise.all di Clincoo</h1><p class="desc">forEach tidak menunggu Promise. Daftar item selesai acak dan error tertelan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Skrip Clincoo memanggil items.forEach(async item => await fetch(item)). Loop selesai sebelum fetch pertama kembali.</p><p class="mb-4">Pakai const jobs = items.map(item => fetch(item)); lalu const hasil = await Promise.all(jobs); atau allSettled jika satu gagal boleh dilanjut.</p><p class="mb-4">Jika urutan dan batas rate penting, tetap for...of dengan await di dalam loop, bukan forEach.</p><p class="mb-4">Tempel loop ke AI. Minta ganti forEach menjadi map plus satu await di luar. Jangan rewrite modul.</p><p class="mb-4">Clincoo menjalankan JS di peramban pengunjung. Pola map-then-all menjaga pratinjau editor.clincoo.buzz prediktif.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
