@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abaikan Shortcut Clincoo saat IME Masih composing — Clincoo Blog</title>
+<meta name="description" content="Enter atau Esc saat IME terbuka mengirim karakter setengah jadi. Cek event.isComposing sebelum menjalankan pintasan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/shortcut/shortcut-abaikan-ime-composing/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Abaikan Shortcut Clincoo saat IME Masih composing">
+<meta property="og:description" content="Enter atau Esc saat IME terbuka mengirim karakter setengah jadi. Cek event.isComposing sebelum menjalankan pintasan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/shortcut/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⌨️ Shortcut</div><h1>Abaikan Shortcut Clincoo saat IME Masih composing</h1><p class="desc">Enter atau Esc saat IME terbuka mengirim karakter setengah jadi. Cek event.isComposing sebelum menjalankan pintasan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Editor Clincoo menerima bahasa yang memakai IME: Jepang, Korea, Cina, atau aksen Latin. Pintasan Enter untuk kirim form sering menelan kandidat IME sebelum pengguna memilih huruf.</p><p class="mb-4">Di keydown, keluar awal jika event.isComposing atau event.keyCode === 229. Baru setelah IME menutup, jalankan simpan, cari, atau tutup modal. Jangan preventDefault selama composing.</p><p class="mb-4">Uji dengan keyboard IME di editor.clincoo.buzz: ketik satu suku kata, tekan Enter untuk konfirmasi, lalu Enter lagi untuk aksi. Aksi hanya boleh jalan pada tekanan kedua.</p><p class="mb-4">Dokumentasikan perilaku ini di halaman bantuan shortcut. Pengguna yang mengetik bahasa non-Latin perlu tahu kenapa Enter pertama tidak mengirim form.</p><p class="mb-4">Clincoo menjalankan listener yang kamu simpan. Menghormati IME menjaga input di app.clincoo.buzz tetap utuh tanpa mematikan pintasan untuk pengguna lain.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/isComposing" target="_blank" rel="noopener">MDN KeyboardEvent.isComposing<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/TR/uievents/#event-type-compositionstart" target="_blank" rel="noopener">W3C UI Events composition<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/shortcut/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

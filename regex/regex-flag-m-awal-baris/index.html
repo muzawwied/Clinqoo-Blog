@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Flag m agar Anker Regex Clincoo Mengikuti Awal Setiap Baris — Clincoo Blog</title>
+<meta name="description" content="Tanpa flag m, ^ dan $ hanya mengikat seluruh string. Flag m membuat daftar markdown dan catatan berbaris bisa dicocokkan per baris.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-flag-m-awal-baris/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Flag m agar Anker Regex Clincoo Mengikuti Awal Setiap Baris">
+<meta property="og:description" content="Tanpa flag m, ^ dan $ hanya mengikat seluruh string. Flag m membuat daftar markdown dan catatan berbaris bisa dicocokkan per baris.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔍 Regex</div><h1>Pakai Flag m agar Anker Regex Clincoo Mengikuti Awal Setiap Baris</h1><p class="desc">Tanpa flag m, ^ dan $ hanya mengikat seluruh string. Flag m membuat daftar markdown dan catatan berbaris bisa dicocokkan per baris.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form Clincoo sering menerima catatan multi-baris: daftar tugas, alamat, atau cuplikan markdown. Pola /^[-*] / hanya menangkap baris pertama jika flag m tidak aktif.</p><p class="mb-4">Buat new RegExp('^[-*]\\s+', 'gm') lalu pakai matchAll. Flag m memindahkan arti ^ dan $ ke batas baris; flag g menelusuri semua kemunculan. Jangan mengandalkan String.match jika kamu butuh indeks tiap baris.</p><p class="mb-4">Uji tiga dummy: satu baris, tiga baris dengan tanda hubung, dan baris kosong di tengah. Pola harus menandai item daftar tanpa menelan teks paragraf di baris berikutnya.</p><p class="mb-4">Coba di console editor.clincoo.buzz sebelum menempel ke skrip validasi. Pola yang salah bisa mengunci tombol kirim karena test() mengembalikan false pada string yang tampak sah.</p><p class="mb-4">Clincoo menjalankan regex di JS yang kamu simpan. Flag m menjaga pemrosesan catatan tetap prediktif di app.clincoo.buzz tanpa mem-parse HTML.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank" rel="noopener">MDN Regular expressions<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" target="_blank" rel="noopener">MDN RegExp<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
