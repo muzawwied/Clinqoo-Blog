@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use cache: no-store on Clincoo Fetch Calls that Must Stay Fresh — Clincoo Blog</title>
+<meta name="description" content="The browser may serve old JSON. Cart and login status must not come from the HTTP cache.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-cache-no-store-data-segar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use cache: no-store on Clincoo Fetch Calls that Must Stay Fresh">
+<meta property="og:description" content="The browser may serve old JSON. Cart and login status must not come from the HTTP cache.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Use cache: no-store on Clincoo Fetch Calls that Must Stay Fresh</h1><p class="desc">The browser may serve old JSON. Cart and login status must not come from the HTTP cache.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo account page fetches /me and shows an old name because the response was cached. The user already changed the profile.</p><p class="mb-4">In editor.clincoo.buzz, set cache: 'no-store' on fetches for user data, cart, and status. Leave the default cache for static assets.</p><p class="mb-4">Do not pile on ?t=Date.now() when cache headers are already clear. That clutters server logs.</p><p class="mb-4">Ask AI to add cache no-store on one call. Paste the stale profile fetch.</p><p class="mb-4">Clincoo ships your page script. Uncached fetch keeps app.clincoo.buzz showing current data.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
