@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaga Atribut Boolean HTML saat Minify Clincoo — Clincoo Blog</title>
+<meta name="description" content="disabled, required, defer, dan async tidak boleh dipotong asal. Satu atribut hilang memutus form atau skrip.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/minify/minify-html-jaga-atribut-boolean/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jaga Atribut Boolean HTML saat Minify Clincoo">
+<meta property="og:description" content="disabled, required, defer, dan async tidak boleh dipotong asal. Satu atribut hilang memutus form atau skrip.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/minify/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Minify</div><h1>Jaga Atribut Boolean HTML saat Minify Clincoo</h1><p class="desc">disabled, required, defer, dan async tidak boleh dipotong asal. Satu atribut hilang memutus form atau skrip.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Minify HTML yang agresif kadang menghapus nilai atribut atau merapikan boolean secara salah. Di form Clincoo, required dan disabled menentukan apakah pengunjung bisa mengirim data.</p><p class="mb-4">HTML Living Standard memperbolehkan atribut boolean tanpa nilai. Yang tidak boleh terjadi adalah menghapus atribut itu sama sekali, atau mengubah defer menjadi string kosong yang membingungkan parser lama.</p><p class="mb-4">MDN mendaftar defer, async, required, checked, dan hidden sebagai sinyal perilaku, bukan hiasan. Setelah minify di editor.clincoo.buzz, periksa sumber: atribut itu masih ada di tag form, input, dan script.</p><p class="mb-4">Uji pratinjau: kirim form kosong harus ditahan browser, tombol disabled tidak bisa diklik, skrip dengan defer tidak menimpa DOM terlalu awal.</p><p class="mb-4">Minta AI hanya menghapus komentar dan spasi antar tag. Tolak rewrite atribut. File lebih pendek yang kehilangan required lebih berbahaya daripada HTML yang masih bisa dibaca.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" target="_blank" rel="noopener">HTML Living Standard: boolean attributes<span class="d">html.spec.whatwg.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean/HTML" target="_blank" rel="noopener">MDN: Boolean attributes<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/minify/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
