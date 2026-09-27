@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn Off the Clincoo Spinner in finally, Not Only in then — Clincoo Blog</title>
+<meta name="description" content="A spinner that hides only on the success path will hang when the Promise rejects.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/async/async-finally-selalu-matikan-spinner/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turn Off the Clincoo Spinner in finally, Not Only in then">
+<meta property="og:description" content="A spinner that hides only on the success path will hang when the Promise rejects.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/async/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⏳ Async</div><h1>Turn Off the Clincoo Spinner in finally, Not Only in then</h1><p class="desc">A spinner that hides only on the success path will hang when the Promise rejects.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo preview shows a loading overlay. The fetch fails, the overlay stays, the page is locked.</p><p class="mb-4">Put hideSpinner() in the finally block after try/catch. Success and failure both clear the UI.</p><p class="mb-4">If you use .then/.catch, add .finally with the same function. Do not duplicate hide in two branches.</p><p class="mb-4">Test by going offline in DevTools. The spinner must vanish and the error message must show.</p><p class="mb-4">Clincoo does not close the overlay for you. finally in your script keeps app.clincoo.buzz clickable again.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/async/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
