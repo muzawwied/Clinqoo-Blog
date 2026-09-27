@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match type and inputmode on Clincoo Form Fields — Clincoo Blog</title>
+<meta name="description" content="type drives validation and some keyboards. inputmode drives the keypad without changing the value. Use both on purpose.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/validasi/validasi-type-dan-inputmode/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Match type and inputmode on Clincoo Form Fields">
+<meta property="og:description" content="type drives validation and some keyboards. inputmode drives the keypad without changing the value. Use both on purpose.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/validasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Validation</div><h1>Match type and inputmode on Clincoo Form Fields</h1><p class="desc">type drives validation and some keyboards. inputmode drives the keypad without changing the value. Use both on purpose.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A phone field with type=text forces a letter keyboard on phones. A numeric field with type=number rejects plus signs and spaces that real numbers often include.</p><p class="mb-4">In editor.clincoo.buzz, pick type by meaning: email, url, tel, text. For order numbers or postal codes, type=text plus inputmode=numeric keeps the value a string and opens a number pad.</p><p class="mb-4">Do not use type=number just because the content is digits. Number strips leading zeros, rejects separators, and shows steppers that codes rarely want.</p><p class="mb-4">inputmode does not validate. It only hints the keyboard. Validation still comes from pattern, minlength, or script. They complement each other; one does not replace the other.</p><p class="mb-4">Test on a phone preview: focus email, tel, and a code field. The keyboards should differ. Clincoo does not pick inputmode for you. That attribute is the form author's job.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inputmode" target="_blank" rel="noopener">MDN inputmode<span class="d">developer.mozilla.org</span></a><a href="https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute" target="_blank" rel="noopener">WHATWG inputmode<span class="d">html.spec.whatwg.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/validasi/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

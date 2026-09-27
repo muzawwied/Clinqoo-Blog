@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pakai novalidate jika Form Clincoo Punya Pesan Kustom — Clincoo Blog</title>
-<meta name="description" content="Tooltip native menimpa teks error kamu. novalidate memberi kendali penuh pada pesan.">
+<title>Pakai novalidate plus Pesan Kustom pada Form Clincoo — Clincoo Blog</title>
+<meta name="description" content="Tooltip native browser hilang saat klik di luar. novalidate plus teks di bawah field lebih bisa diandalkan.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/validasi/validasi-novalidate-pesan-kustom/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pakai novalidate jika Form Clincoo Punya Pesan Kustom">
-<meta property="og:description" content="Tooltip native menimpa teks error kamu. novalidate memberi kendali penuh pada pesan.">
+<meta property="og:title" content="Pakai novalidate plus Pesan Kustom pada Form Clincoo">
+<meta property="og:description" content="Tooltip native browser hilang saat klik di luar. novalidate plus teks di bawah field lebih bisa diandalkan.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/validasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">Validasi</div><h1>Pakai novalidate jika Form Clincoo Punya Pesan Kustom</h1><p class="desc">Tooltip native menimpa teks error kamu. novalidate memberi kendali penuh pada pesan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form Clincoo punya teks error di bawah field, tetapi browser menampilkan balloon native yang menutupinya.</p><p class="mb-4">Di editor.clincoo.buzz, set novalidate pada form. Jalankan checkValidity per field lalu tulis pesan sendiri.</p><p class="mb-4">Tetap pakai required, type, dan minlength di markup. novalidate hanya menonaktifkan UI native, bukan API validasi.</p><p class="mb-4">Minta AI memindahkan reportValidity ke elemen pesan kustom. Tempel form yang masih menampilkan balloon.</p><p class="mb-4">Clincoo merender HTML yang kamu tulis. Pesan kustom yang konsisten lebih jelas di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <div class="crumb">Validasi</div><h1>Pakai novalidate plus Pesan Kustom pada Form Clincoo</h1><p class="desc">Tooltip native browser hilang saat klik di luar. novalidate plus teks di bawah field lebih bisa diandalkan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Validasi bawaan browser menampilkan bubble singkat. Bubble itu beda di setiap mesin, tidak bisa distyling, dan hilang saat pengguna klik di luar field.</p><p class="mb-4">Tambahkan atribut novalidate pada form di editor.clincoo.buzz. Tetap pakai required, type, minlength, dan pattern sebagai sumber kebenaran. Skrip yang baca validity, bukan yang menulis ulang semua aturan.</p><p class="mb-4">Pada submit, panggil form.checkValidity(). Jika gagal, preventDefault, lalu tulis teks ke elemen di bawah input. setCustomValidity membantu jika kamu tetap ingin API native.</p><p class="mb-4">Jangan buang constraint HTML hanya karena kamu menulis JS. Tanpa atribut native, field tanpa skrip jadi liar. novalidate menahan bubble, bukan menahan aturan.</p><p class="mb-4">Uji dengan JS dimatikan di pratinjau jika memungkinkan. Form masih harus menolak kirim kosong lewat atribut. Clincoo men-deploy HTML statis; validasi klien tetap perlu cadangan server.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form#novalidate" target="_blank" rel="noopener">MDN form novalidate<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/forms/validation/" target="_blank" rel="noopener">web.dev form validation<span class="d">web.dev</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/validasi/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>

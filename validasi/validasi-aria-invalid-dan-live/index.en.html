@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Failed Fields with aria-invalid on Clincoo Forms — Clincoo Blog</title>
+<meta name="description" content="Red color alone is not enough. aria-invalid, aria-describedby, and a live region tell screen readers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/validasi/validasi-aria-invalid-dan-live/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mark Failed Fields with aria-invalid on Clincoo Forms">
+<meta property="og:description" content="Red color alone is not enough. aria-invalid, aria-describedby, and a live region tell screen readers.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/validasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Validation</div><h1>Mark Failed Fields with aria-invalid on Clincoo Forms</h1><p class="desc">Red color alone is not enough. aria-invalid, aria-describedby, and a live region tell screen readers.</p><div class="langlinks">This article is also available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A red border on a failed input is invisible to some visitors. A screen reader does not announce color. Without attributes, the error is decoration.</p><p class="mb-4">In editor.clincoo.buzz, when validation fails set aria-invalid="true" on the field. Wire the message with aria-describedby to the error text id. Remove the attribute or set false when the field is valid again.</p><p class="mb-4">For a summary at the top of the form, use role="alert" or aria-live="polite" on the message container. Do not announce on every keystroke; announce on submit or blur.</p><p class="mb-4">Move focus to the first failed field after submit. That is faster than forcing the user to tab from the logo down to the error.</p><p class="mb-4">Clincoo does not attach ARIA automatically on custom forms. Those attributes are part of the HTML you write. Test with a keyboard and, if you can, a short screen-reader pass.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid" target="_blank" rel="noopener">MDN aria-invalid<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html" target="_blank" rel="noopener">WCAG Error Identification<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/validasi/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
