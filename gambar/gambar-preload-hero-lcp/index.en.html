@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preload the Clincoo Hero Image so LCP Is Not Blocked by CSS — Clincoo Blog</title>
+<meta name="description" content="A hero discovered only after CSS finishes delays LCP. Preload the hero file in the Clincoo page head.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-preload-hero-lcp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Preload the Clincoo Hero Image so LCP Is Not Blocked by CSS">
+<meta property="og:description" content="A hero discovered only after CSS finishes delays LCP. Preload the hero file in the Clincoo page head.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/gambar/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Images</div><h1>Preload the Clincoo Hero Image so LCP Is Not Blocked by CSS</h1><p class="desc">A hero discovered only after CSS finishes delays LCP. Preload the hero file in the Clincoo page head.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">The hero image is often the LCP element. If the browser only sees its src after the stylesheet finishes, the download starts late. On Clincoo pages that lead with a large photo, add a preload link in the head so the hero request begins with the HTML.</p><p class="mb-4">Write a preload link with as="image" and the exact same URL as the hero src. If you use srcset, include imagesrcset and imagesizes so the browser picks the same candidate. Preloading a different file than the one you display wastes bandwidth.</p><p class="mb-4">Do not preload every image. One LCP candidate per page is enough. Extra preloads compete with CSS and fonts. Pair the preload with fetchpriority="high" and loading="eager" on the hero img, and keep below-the-fold images lazy.</p><p class="mb-4">Measure again in preview and Lighthouse after deploy. If LCP drops without CLS rising, the preload hit the right file. If LCP stays high, check WebP compression and width-height attributes before adding more preloads.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload" target="_blank" rel="noopener">MDN preload<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-lcp" target="_blank" rel="noopener">web.dev Optimize LCP<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/gambar/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
