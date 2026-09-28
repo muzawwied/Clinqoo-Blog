@@ -115,4 +115,9 @@
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-sri-skrip-pihak-ketiga/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-gambar-ukuran-dan-format/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-preconnect-host-aset/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-fallback-origin-saat-edge-gagal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-jangan-cache-html-berisi-token/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-stale-while-revalidate-aset/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-host-khusus-vs-same-origin/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-compress-brotli-gzip-header/</loc></url>
 </urlset>
