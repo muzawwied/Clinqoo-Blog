@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebSocket — Clincoo Blog</title>
+<meta name="description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, dan heartbeat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/websocket/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WebSocket">
+<meta property="og:description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, dan heartbeat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="stylesheet" href="../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/"><img src="../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Kategori</div><h1>WebSocket</h1>
+  <div class="body"><a class="card" href="./websocket-cek-protokol-wss-bukan-ws/"><h2>Sambungkan Clincoo lewat wss://, Jangan ws:// di Produksi</h2><p>Halaman HTTPS menolak WebSocket tidak aman. Pakai wss agar pratinjau live tidak putus.</p></a><a class="card" href="./websocket-tutup-saat-pindah-halaman/"><h2>Tutup WebSocket Clincoo Saat Pengunjung Pindah Halaman</h2><p>Soket yang tidak di-close tetap menerima pesan dan menulis DOM yang sudah diganti.</p></a><a class="card" href="./websocket-reconnect-terbatas-bukan-loop/"><h2>Sambungkan Ulang WebSocket Clincoo, Tapi Batasi Percobaan</h2><p>Loop reconnect tanpa jeda membanjiri server. Pakai backoff dan batas maksimum.</p></a><a class="card" href="./websocket-pesan-json-validasi-dulu/"><h2>Validasi JSON dari WebSocket Clincoo Sebelum Menyentuh DOM</h2><p>Pesan rusak atau asing merusak pratinjau. Parse aman, cek tipe, baru render.</p></a><a class="card" href="./websocket-heartbeat-ping-agar-tidak-putus/"><h2>Kirim Heartbeat WebSocket Clincoo agar Proxy Tidak Memutus Diam</h2><p>Soket tanpa lalu lintas dipotong load balancer. Ping berkala menjaga saluran hidup.</p></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
