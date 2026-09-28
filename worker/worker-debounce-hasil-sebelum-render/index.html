@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debounce Hasil Worker Clincoo sebelum Render DOM — Clincoo Blog</title>
+<meta name="description" content="onmessage yang langsung menulis DOM pada setiap tick membuat layout bergelombang. Satukan hasil, lalu render sekali.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/worker/worker-debounce-hasil-sebelum-render/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debounce Hasil Worker Clincoo sebelum Render DOM">
+<meta property="og:description" content="onmessage yang langsung menulis DOM pada setiap tick membuat layout bergelombang. Satukan hasil, lalu render sekali.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/worker/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚙️ Worker</div><h1>Debounce Hasil Worker Clincoo sebelum Render DOM</h1><p class="desc">onmessage yang langsung menulis DOM pada setiap tick membuat layout bergelombang. Satukan hasil, lalu render sekali.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Worker Clincoo mengirim progress tiap 50 baris. Handler utama menulis innerHTML daftar lengkap setiap pesan, sehingga scroll meloncat.</p><p class="mb-4">Di editor.clincoo.buzz simpan hasil terakhir di variabel. Pakai requestAnimationFrame atau timeout pendek untuk menggambar sekali per bingkai, bukan per pesan.</p><p class="mb-4">Progress persen cukup mengubah teks satu elemen. Jangan membangun ulang tabel sampai status selesai atau pengguna meminta cuplikan.</p><p class="mb-4">Uji dengan data besar di pratinjau. FPS harus tetap terasa lancar; jika daftar berkedip, debounce belum cukup.</p><p class="mb-4">Thread utama Clincoo tetap bertanggung jawab pada DOM. Worker menghitung; halaman merender dengan hemat agar app.clincoo.buzz terasa tenang.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame" target="_blank" rel="noopener">MDN requestAnimationFrame<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-long-tasks" target="_blank" rel="noopener">web.dev optimize long tasks<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/worker/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
