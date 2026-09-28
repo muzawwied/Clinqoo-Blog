@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Overflow Scroll in Clincoo Containers — Clincoo Blog</title>
+<meta name="description" content="Two scroll axes confuse users. Set overflow-x and overflow-y on purpose, plus overscroll-behavior so gestures do not leak to the page.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/scroll/scroll-overflow-kontainer/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Control Overflow Scroll in Clincoo Containers">
+<meta property="og:description" content="Two scroll axes confuse users. Set overflow-x and overflow-y on purpose, plus overscroll-behavior so gestures do not leak to the page.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/scroll/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Scroll</div><h1>Control Overflow Scroll in Clincoo Containers</h1><p class="desc">Two scroll axes confuse users. Set overflow-x and overflow-y on purpose, plus overscroll-behavior so gestures do not leak to the page.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Modals, tables, and sidebars on Clincoo sites often have a fixed height. If overflow stays auto on both axes, users drag diagonally and lose rows.</p><p class="mb-4">Pick one axis. Wide tables: <code>overflow-x: auto; overflow-y: hidden</code>. Tall lists: the reverse. Keep keyboard focus inside the scrollable container.</p><p class="mb-4">Add <code>overscroll-behavior: contain</code> on the panel. Without it, a gesture at the end of the list pulls the page behind the modal.</p><p class="mb-4">Do not set overflow hidden on body when a modal opens if you can lock scroll with a class on html. Hidden on body wrecks position when the modal closes.</p><p class="mb-4">Ask AI to touch only the offending container CSS. Paste the panel markup and current overflow rules so the fix does not leak into global layout.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank" rel="noopener">MDN overflow<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior" target="_blank" rel="noopener">MDN overscroll-behavior<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/scroll/">← Back to scroll</a>
+</div>
+</body>
+</html>
