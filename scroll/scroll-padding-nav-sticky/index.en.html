@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use scroll-padding with a Sticky Nav on Clincoo — Clincoo Blog</title>
+<meta name="description" content="scroll-margin fixes a single target. scroll-padding on html or an overflow container fixes the global offset for hash navigation on a Clincoo site.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/scroll/scroll-padding-nav-sticky/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use scroll-padding with a Sticky Nav on Clincoo">
+<meta property="og:description" content="scroll-margin fixes a single target. scroll-padding on html or an overflow container fixes the global offset for hash navigation on a Clincoo site.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/scroll/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Scroll</div><h1>Use scroll-padding with a Sticky Nav on Clincoo</h1><p class="desc">scroll-margin fixes a single target. scroll-padding on html or an overflow container fixes the global offset for hash navigation on a Clincoo site.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A sticky header in editor.clincoo.buzz often covers a section title when a visitor clicks a #id link. Many people patch each heading with scroll-margin-top. That works, but new headings are easy to miss.</p><p class="mb-4">Add <code>html { scroll-padding-top: 4.5rem; }</code> or a value matching the header height. This property pads the document scrollport so the browser places the target below the nav, not at the viewport edge.</p><p class="mb-4">If a panel scrolls instead of the window, put scroll-padding on that container. MDN distinguishes scroll-padding (container) from scroll-margin (item). Do not mix them without a preview test.</p><p class="mb-4">Keep the padding value in sync with header height on the phone breakpoint. A shorter header on small screens needs a smaller value so you do not leave a large empty gap.</p><p class="mb-4">Jump to several headings, including ones near the footer. Make sure keyboard focus and skip links honor the same offset.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding" target="_blank" rel="noopener">MDN scroll-padding<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin" target="_blank" rel="noopener">MDN scroll-margin<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/css/overflow/" target="_blank" rel="noopener">web.dev CSS overflow<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/scroll/">← Back to scroll</a>
+</div>
+</body>
+</html>

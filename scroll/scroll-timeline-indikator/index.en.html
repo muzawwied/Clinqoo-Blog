@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Progress with Scroll-Driven Animations on Clincoo — Clincoo Blog</title>
+<meta name="description" content="A per-pixel scroll listener taxes long articles. animation-timeline: scroll() drives a reading bar with CSS in supporting browsers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/scroll/scroll-timeline-indikator/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reading Progress with Scroll-Driven Animations on Clincoo">
+<meta property="og:description" content="A per-pixel scroll listener taxes long articles. animation-timeline: scroll() drives a reading bar with CSS in supporting browsers.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/scroll/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Scroll</div><h1>Reading Progress with Scroll-Driven Animations on Clincoo</h1><p class="desc">A per-pixel scroll listener taxes long articles. animation-timeline: scroll() drives a reading bar with CSS in supporting browsers.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A progress bar on a Clincoo article is usually computed from scrollY. Without throttling, layout and paint run too often, especially on phones.</p><p class="mb-4">In editor.clincoo.buzz, try a CSS approach: the indicator uses <code>animation-timeline: scroll()</code> and scaleX from 0 to 1. Supporting browsers bind the animation to scroll position without script on the critical path.</p><p class="mb-4">Provide a fallback. Wrap the new rules in <code>@supports (animation-timeline: scroll())</code>. Older browsers can keep a cheap listener or hide the bar.</p><p class="mb-4">Respect prefers-reduced-motion. A static indicator or no animation is safer for users who request reduced motion.</p><p class="mb-4">Measure in preview before adding this to every template. Support is still growing; do not make it the only way to mark reading progress.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank" rel="noopener">MDN animation-timeline<span class="d">developer.mozilla.org</span></a><a href="https://developer.chrome.com/docs/css-ui/scroll-driven-animations" target="_blank" rel="noopener">Chrome scroll-driven animations<span class="d">developer.chrome.com</span></a><a href="https://web.dev/articles/scroll-driven-animations" target="_blank" rel="noopener">web.dev scroll-driven animations<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/scroll/">← Back to scroll</a>
+</div>
+</body>
+</html>

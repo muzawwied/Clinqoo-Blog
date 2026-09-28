@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tandai Nav Aktif dari Hash dan Posisi Scroll Clincoo — Clincoo Blog</title>
+<meta name="description" content="Daftar isi yang tidak mengikuti posisi baca membingungkan. Intersection Observer plus hashchange menjaga tautan aktif tanpa hitung offset manual setiap frame.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/scroll/scroll-hashchange-aktif-nav/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tandai Nav Aktif dari Hash dan Posisi Scroll Clincoo">
+<meta property="og:description" content="Daftar isi yang tidak mengikuti posisi baca membingungkan. Intersection Observer plus hashchange menjaga tautan aktif tanpa hitung offset manual setiap frame.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/scroll/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Scroll</div><h1>Tandai Nav Aktif dari Hash dan Posisi Scroll Clincoo</h1><p class="desc">Daftar isi yang tidak mengikuti posisi baca membingungkan. Intersection Observer plus hashchange menjaga tautan aktif tanpa hitung offset manual setiap frame.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman panjang di Clincoo sering punya daftar isi samping. Jika tautan aktif hanya berubah saat diklik, scroll manual membuat penanda salah.</p><p class="mb-4">Amati heading dengan Intersection Observer dan rootMargin yang memperhitungkan header sticky. Saat sebuah heading masuk zona, tambahkan kelas aktif pada tautan terkait.</p><p class="mb-4">Sinkronkan URL lewat history.replaceState, bukan location.hash berulang, agar riwayat browser tidak penuh. Dengarkan hashchange untuk klik daftar isi.</p><p class="mb-4">Jangan pakai scroll listener yang memanggil getBoundingClientRect pada semua heading. Observer lebih hemat dan cukup untuk editor.clincoo.buzz.</p><p class="mb-4">Uji lompat hash dari luar, refresh di tengah artikel, dan scroll cepat. Penanda harus stabil, tidak kedip antar dua heading tetangga.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank" rel="noopener">MDN Intersection Observer<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event" target="_blank" rel="noopener">MDN hashchange<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/intersectionobserver-v2" target="_blank" rel="noopener">web.dev Intersection Observer<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/scroll/">← Kembali ke scroll</a>
+</div>
+</body>
+</html>
