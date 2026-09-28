@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Subresource Integrity for Third-Party CDN Scripts — Clincoo Blog</title>
+<meta name="description" content="A CDN script can change without notice. The integrity attribute rejects a file whose hash does not match.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cdn/cdn-sri-skrip-pihak-ketiga/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Subresource Integrity for Third-Party CDN Scripts">
+<meta property="og:description" content="A CDN script can change without notice. The integrity attribute rejects a file whose hash does not match.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cdn/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cdn</div><h1>Use Subresource Integrity for Third-Party CDN Scripts</h1><p class="desc">A CDN script can change without notice. The integrity attribute rejects a file whose hash does not match.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo page loads a library from a public CDN. If the hosted file is swapped, visitors run code that is not yours.</p><p class="mb-4">Add integrity="sha384-..." and crossorigin="anonymous" on the script or link tag. Generate the hash from the file you pinned.</p><p class="mb-4">When the CDN ships a new version, the old hash fails on purpose. That is a cue to bump the version, not to drop SRI.</p><p class="mb-4">Ask AI to compute SRI from the file bytes. Do not paste a hash from a random article without checking the file.</p><p class="mb-4">Record the library version in the editor.clincoo.buzz project notes. app.clincoo.buzz must load the same hash.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cdn/">← Back to cdn</a>
+</div>
+</body>
+</html>
