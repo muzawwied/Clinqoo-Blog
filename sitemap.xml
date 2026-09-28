@@ -163,4 +163,10 @@
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-antre-pesan-saat-connecting/</loc></url>
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-tampilkan-status-koneksi-ui/</loc></url>
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-jangan-kirim-token-di-query/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-baca-kode-close-bukan-diam/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-satu-instans-per-halaman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/sourcemap/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-hidup-saat-debug-mati-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-baca-stack-asli-di-devtools/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-path-sumber-jangan-bocor-lokal/</loc></url>
 </urlset>
