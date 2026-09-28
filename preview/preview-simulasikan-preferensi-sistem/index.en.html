@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulate System Preferences in the Clincoo Preview — Clincoo Blog</title>
+<meta name="description" content="Test prefers-color-scheme and prefers-reduced-motion in preview before you ship a Clincoo page.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/preview/preview-simulasikan-preferensi-sistem/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simulate System Preferences in the Clincoo Preview">
+<meta property="og:description" content="Test prefers-color-scheme and prefers-reduced-motion in preview before you ship a Clincoo page.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/preview/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Preview</div><h1>Simulate System Preferences in the Clincoo Preview</h1><p class="desc">Test prefers-color-scheme and prefers-reduced-motion in preview before you ship a Clincoo page.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A light-theme preview on your laptop does not represent visitors who use OS dark mode or who turn motion off. Contrast and motion that look fine locally can fail on their devices.</p><p class="mb-4">In editor.clincoo.buzz, open preview and emulate prefers-color-scheme: dark and prefers-reduced-motion: reduce via DevTools Rendering. Check buttons, forms, and overlays that suddenly lose contrast.</p><p class="mb-4">If the hero animation still runs when reduced-motion is on, disable looping transforms. MDN treats these media queries as accessibility signals, not cosmetic options.</p><p class="mb-4">Ask AI to summarize existing @media rules. Paste the CSS and ask which parts still ignore system preferences.</p><p class="mb-4">Clincoo docs and the web.dev prefers-color-scheme guide require this check before you ship to app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank" rel="noopener">MDN prefers-reduced-motion<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/prefers-color-scheme" target="_blank" rel="noopener">web.dev color scheme<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/preview/">← Back to preview</a>
+</div>
+</body>
+</html>
