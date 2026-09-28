@@ -4,12 +4,12 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catch Clincoo Worker Errors with onerror; Do Not Stay Silent — Clincoo Blog</title>
+<title>Catch Clincoo Worker Errors with onerror, Do Not Stay Silent — Clincoo Blog</title>
 <meta name="description" content="A worker that throws without a handler looks hung. The UI waits for a result that never arrives.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/worker/worker-onerror-tangkap-gagal/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Catch Clincoo Worker Errors with onerror; Do Not Stay Silent">
+<meta property="og:title" content="Catch Clincoo Worker Errors with onerror, Do Not Stay Silent">
 <meta property="og:description" content="A worker that throws without a handler looks hung. The UI waits for a result that never arrives.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/worker/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">⚙️ Worker</div><h1>Catch Clincoo Worker Errors with onerror; Do Not Stay Silent</h1><p class="desc">A worker that throws without a handler looks hung. The UI waits for a result that never arrives.</p><div class="langlinks">This article is available in: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo script sends broken JSON to a worker. The worker throws; the main thread keeps the spinner.</p><p class="mb-4">Attach worker.onerror and worker.onmessageerror. Show a message in preview, stop the spinner, log filename and lineno.</p><p class="mb-4">Inside the worker wrap heavy work in try/catch then postMessage({ error: String(e) }).</p><p class="mb-4">Paste the stack into the AI in editor.clincoo.buzz. Ask only for an onerror handler, not a full worker rewrite.</p><p class="mb-4">Clincoo does not surface worker errors for you. A handler in your script keeps app.clincoo.buzz from hanging.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">⚙️ Worker</div><h1>Catch Clincoo Worker Errors with onerror, Do Not Stay Silent</h1><p class="desc">A worker that throws without a handler looks hung. The UI waits for a result that never arrives.</p><div class="langlinks">This article is available in: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">In editor.clincoo.buzz a Calculate button starts a worker and shows a spinner. If the worker throws on bad data, the spinner never leaves. Visitors think app.clincoo.buzz froze even though the main thread is fine.</p><p class="mb-4">Attach worker.onerror and worker.onmessageerror before the first postMessage. In onerror, log filename, lineno, and message, then send a failed status to the UI. Do not rely only on try/catch inside the worker — an unwrapped exception still surfaces as an event on the main thread.</p><p class="mb-4">Also set self.onerror inside worker.js. postMessage an object {ok:false, reason} so the page can show a human-readable line instead of silently terminating the worker.</p><p class="mb-4">Test in Clincoo preview by sending an empty payload on purpose. The spinner must become “Calculation failed, try again” within a second. If it does not, the handler is missing.</p><p class="mb-4">A static Clincoo site has no server log. The only worker error trail is what you render on the page. Catch first, then terminate.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/error_event" target="_blank" rel="noopener">MDN Worker error event<span class="d">developer.mozilla.org</span></a><a href="https://html.spec.whatwg.org/multipage/workers.html" target="_blank" rel="noopener">WHATWG HTML Workers<span class="d">html.spec.whatwg.org</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/worker/">← Back to Clincoo Blog</a>
 </div>
 </body>

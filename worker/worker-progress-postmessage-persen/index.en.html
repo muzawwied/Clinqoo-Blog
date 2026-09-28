@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Send Percent Progress from a Clincoo Worker with postMessage — Clincoo Blog</title>
-<meta name="description" content="A long job with no feedback looks frozen. Progress makes the preview feel alive.">
+<title>Send Percent Progress from a Clincoo Worker via postMessage — Clincoo Blog</title>
+<meta name="description" content="A long job with no feedback looks stuck. Progress makes the preview feel alive.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/worker/worker-progress-postmessage-persen/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Send Percent Progress from a Clincoo Worker with postMessage">
-<meta property="og:description" content="A long job with no feedback looks frozen. Progress makes the preview feel alive.">
+<meta property="og:title" content="Send Percent Progress from a Clincoo Worker via postMessage">
+<meta property="og:description" content="A long job with no feedback looks stuck. Progress makes the preview feel alive.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/worker/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">⚙️ Worker</div><h1>Send Percent Progress from a Clincoo Worker with postMessage</h1><p class="desc">A long job with no feedback looks frozen. Progress makes the preview feel alive.</p><div class="langlinks">This article is available in: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo worker processes 5,000 rows. Visitors think the tab froze because there is no number.</p><p class="mb-4">Every N items, postMessage({ type: 'progress', pct }). The main thread fills a meter or percent text.</p><p class="mb-4">Do not send progress on every item. Cap at 10–20 updates so messaging is not heavier than the work.</p><p class="mb-4">Test in the editor.clincoo.buzz preview. The number must climb; inputs must stay typable.</p><p class="mb-4">Clincoo has no built-in worker progress. Periodic messages in your script keep app.clincoo.buzz feeling responsive.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <div class="crumb">⚙️ Worker</div><h1>Send Percent Progress from a Clincoo Worker via postMessage</h1><p class="desc">A long job with no feedback looks stuck. Progress makes the preview feel alive.</p><div class="langlinks">This article is available in: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A worker that processes thousands of rows on a Clincoo site can run for seconds. With no signal, visitors click again and stack workers. Preview in editor.clincoo.buzz feels dead while the CPU is busy.</p><p class="mb-4">Inside the worker loop, every N iterations postMessage({type:'progress', pct}). On the page, onmessage tells progress apart from done. Update an output element or the value on a progress bar. Do not send every iteration — a flood of messages costs more than the work itself.</p><p class="mb-4">Pick N so about 10–20 messages appear per job. For 10,000 items, N = 500 is enough. Include a short line such as “Sorting 4,000 of 10,000” so a screen reader gets context.</p><p class="mb-4">Test on a phone: progress must move while scroll stays smooth. If the UI stutters, send fewer messages or wrap DOM updates in requestAnimationFrame.</p><p class="mb-4">Clincoo has no backend queue. Worker progress is the only honest way to say “still working” on a static page.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage" target="_blank" rel="noopener">MDN Worker.postMessage<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank" rel="noopener">MDN progress element<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/off-main-thread" target="_blank" rel="noopener">web.dev Off the main thread<span class="d">web.dev</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/worker/">← Back to Clincoo Blog</a>
 </div>
 </body>
