@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai setTimeout Berantai untuk Polling Clincoo, Bukan setInterval Tetap — Clincoo Blog</title>
+<meta name="description" content="setInterval menumpuk jika pekerjaan lebih lama dari interval. Jadwalkan tick berikutnya setelah yang lama selesai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/timeout/timeout-settimeout-bukan-setinterval-polling/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai setTimeout Berantai untuk Polling Clincoo, Bukan setInterval Tetap">
+<meta property="og:description" content="setInterval menumpuk jika pekerjaan lebih lama dari interval. Jadwalkan tick berikutnya setelah yang lama selesai.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/timeout/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Timeout</div><h1>Pakai setTimeout Berantai untuk Polling Clincoo, Bukan setInterval Tetap</h1><p class="desc">setInterval menumpuk jika pekerjaan lebih lama dari interval. Jadwalkan tick berikutnya setelah yang lama selesai.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Dashboard Clincoo memanggil API tiap 2 detik dengan setInterval. Saat jaringan lambat, tiga request jalan bersamaan.</p><p class="mb-4">Ganti dengan fungsi tick yang fetch, lalu setTimeout(tick, jeda) hanya di finally. Jangan jadwalkan tick baru sebelum yang lama selesai.</p><p class="mb-4">Tambah AbortController per tick dan batas total polling. Hentikan saat tab tersembunyi atau pengguna logout.</p><p class="mb-4">Minta AI mengubah satu setInterval jadi rantai setTimeout. Tempel loop dari editor.clincoo.buzz.</p><p class="mb-4">Polling di app.clincoo.buzz tidak lagi menumpuk request saat API lambat.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/timeout/">← Kembali ke timeout</a>
+</div>
+</body>
+</html>
