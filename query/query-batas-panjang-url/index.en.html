@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cap Clincoo Query String Length so Proxies Do Not Truncate the URL — Clincoo Blog</title>
+<meta name="description" content="An oversized filter URL is silently cut by proxies or bookmarks. Drop default keys before writing history.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-batas-panjang-url/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cap Clincoo Query String Length so Proxies Do Not Truncate the URL">
+<meta property="og:description" content="An oversized filter URL is silently cut by proxies or bookmarks. Drop default keys before writing history.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Cap Clincoo Query String Length so Proxies Do Not Truncate the URL</h1><p class="desc">An oversized filter URL is silently cut by proxies or bookmarks. Drop default keys before writing history.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo filters pile many keys into location.search. Some proxies and chat apps cut URLs around two thousand characters.</p><p class="mb-4">In editor.clincoo.buzz, measure URLSearchParams.toString() before replaceState. If it is too long, delete keys whose values are defaults.</p><p class="mb-4">Do not send the whole app state through the query. Keep only what must be shared: page, sort, and the main filter.</p><p class="mb-4">Ask AI only to write a helper that rejects a URL above the limit you set. Paste the query reader, not the whole app file.</p><p class="mb-4">Clincoo serves the link the visitor opened. A short URL on app.clincoo.buzz is easier to copy and test.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Back to query</a>
+</div>
+</body>
+</html>
