@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beri Namespace pada Kunci localStorage per Proyek Clincoo — Clincoo Blog</title>
+<meta name="description" content="Jangan pakai kunci generik seperti draft. Awali dengan slug proyek agar data tidak saling menimpa antar situs.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/storage/storage-namespace-kunci-per-proyek/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beri Namespace pada Kunci localStorage per Proyek Clincoo">
+<meta property="og:description" content="Jangan pakai kunci generik seperti draft. Awali dengan slug proyek agar data tidak saling menimpa antar situs.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/storage/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Storage</div><h1>Beri Namespace pada Kunci localStorage per Proyek Clincoo</h1><p class="desc">Jangan pakai kunci generik seperti draft. Awali dengan slug proyek agar data tidak saling menimpa antar situs.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">localStorage terikat ke origin, bukan ke folder proyek. Kalau dua situs Clincoo kebetulan diuji di origin yang sama, atau kamu menyalin skrip antar template, kunci bernama <code>draft</code> atau <code>theme</code> akan saling menimpa.</p><p class="mb-4">Pakai prefiks tetap: slug proyek, lalu nama data. Contoh: <code>toko-budi:form-kontak</code>. Saat rilis versi baru, kamu bisa membersihkan hanya kunci dengan prefiks itu tanpa menyentuh data situs lain.</p><p class="mb-4">Tulis helper kecil <code>key(nama)</code> di satu file agar semua <code>setItem</code> dan <code>getItem</code> lewat fungsi yang sama. Jangan hardcode string di sepuluh tempat; satu typo sudah membuat draf “hilang”.</p><p class="mb-4">Uji dengan membuka dua pratinjau. Isi form di situs A, buka situs B. Data A tidak boleh muncul di B. Kalau muncul, namespace belum cukup ketat.</p><p class="mb-4">Namespace bukan keamanan. Itu hanya isolasi. Rahasia tetap tidak boleh masuk penyimpanan browser.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN: Window.localStorage<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/storage-for-the-web" target="_blank" rel="noopener">web.dev: Storage for the web<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/storage/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
