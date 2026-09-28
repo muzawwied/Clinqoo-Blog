@@ -105,6 +105,69 @@
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "cors-authorization-header-preflight",
+      langs: {
+        "id": {
+          title: "Izinkan Header Authorization pada Preflight CORS Clincoo",
+          desc: "Bearer token memicu preflight. Allow-Headers harus menyebut Authorization.",
+          content: "<p class=\"mb-4\">Fetch Clincoo menambah Authorization: Bearer. OPTIONS gagal karena header itu tidak diizinkan.</p><p class=\"mb-4\">Tambah Authorization ke Access-Control-Allow-Headers. Jangan gabungkan dengan wildcard origin plus kredensial.</p><p class=\"mb-4\">Uji token kadaluarsa terpisah dari gagal CORS. Pesan 401 bukan blocked by CORS policy.</p><p class=\"mb-4\">Minta AI memetakan header auth vs preflight. Tempel Network dari editor.clincoo.buzz.</p><p class=\"mb-4\">Setelah header cocok, sesi di app.clincoo.buzz bisa membaca API terlindungi.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Allow the Authorization Header on a Clincoo CORS Preflight",
+          desc: "A Bearer token triggers preflight. Allow-Headers must name Authorization.",
+          content: "<p class=\"mb-4\">A Clincoo fetch adds Authorization: Bearer. OPTIONS fails because that header is not allowed.</p><p class=\"mb-4\">Add Authorization to Access-Control-Allow-Headers. Do not mix a wildcard origin with credentials.</p><p class=\"mb-4\">Test an expired token separately from a CORS failure. A 401 is not blocked by CORS policy.</p><p class=\"mb-4\">Ask AI to map auth headers to preflight. Paste Network from editor.clincoo.buzz.</p><p class=\"mb-4\">Once headers match, a session on app.clincoo.buzz can read a protected API.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "cors-redirect-pecah-preflight",
+      langs: {
+        "id": {
+          title: "Hindari Redirect yang Memecah Preflight CORS Clincoo",
+          desc: "HTTP ke HTTPS atau slash ekstra membatalkan preflight. Samakan URL akhir dengan origin yang diizinkan.",
+          content: "<p class=\"mb-4\">Fetch Clincoo ke http://api... diarahkan ke https. Browser membatalkan karena redirect silang pada preflight.</p><p class=\"mb-4\">Pakai URL akhir yang benar di skrip. Matikan redirect 301 pada endpoint OPTIONS jika bisa.</p><p class=\"mb-4\">Cek Location di tab Network. Origin setelah redirect harus ada di daftar Allow-Origin.</p><p class=\"mb-4\">Minta AI membandingkan URL fetch vs URL akhir. Tempel dari editor.clincoo.buzz.</p><p class=\"mb-4\">Tanpa redirect tersembunyi, preflight di app.clincoo.buzz selesai di hop pertama.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Avoid Redirects that Break a Clincoo CORS Preflight",
+          desc: "HTTP to HTTPS or an extra slash cancels preflight. Match the final URL to an allowed origin.",
+          content: "<p class=\"mb-4\">A Clincoo fetch to http://api... redirects to https. The browser cancels because of a cross-origin redirect on preflight.</p><p class=\"mb-4\">Use the final URL in the script. Disable a 301 on the OPTIONS endpoint when you can.</p><p class=\"mb-4\">Check Location in the Network tab. The origin after redirect must be on the Allow-Origin list.</p><p class=\"mb-4\">Ask AI to compare the fetch URL with the final URL. Paste from editor.clincoo.buzz.</p><p class=\"mb-4\">Without a hidden redirect, preflight on app.clincoo.buzz finishes on the first hop.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "cors-vary-origin-cache-bersama",
+      langs: {
+        "id": {
+          title: "Tambah Vary Origin pada Respons CORS Clincoo",
+          desc: "Cache bersama tanpa Vary: Origin bisa menyajikan header milik situs lain.",
+          content: "<p class=\"mb-4\">API Clincoo mengizinkan dua origin. CDN menyimpan Allow-Origin pertama dan memberikannya ke origin kedua.</p><p class=\"mb-4\">Set Vary: Origin pada respons API. Cache memisahkan salinan per origin.</p><p class=\"mb-4\">Jangan cache respons berkredensial di tepi publik. Token tidak boleh tertukar antar situs.</p><p class=\"mb-4\">Minta AI meninjau header cache. Tempel respons dari editor.clincoo.buzz.</p><p class=\"mb-4\">Setelah Vary benar, app.clincoo.buzz menerima Allow-Origin miliknya sendiri.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Add Vary Origin on Clincoo CORS Responses",
+          desc: "A shared cache without Vary: Origin can serve another site's headers.",
+          content: "<p class=\"mb-4\">A Clincoo API allows two origins. The CDN stores the first Allow-Origin and serves it to the second origin.</p><p class=\"mb-4\">Set Vary: Origin on the API response. The cache keeps a copy per origin.</p><p class=\"mb-4\">Do not cache credentialed responses at a public edge. Tokens must not leak across sites.</p><p class=\"mb-4\">Ask AI to review cache headers. Paste the response from editor.clincoo.buzz.</p><p class=\"mb-4\">Once Vary is correct, app.clincoo.buzz receives its own Allow-Origin.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ];
   function merge(){
