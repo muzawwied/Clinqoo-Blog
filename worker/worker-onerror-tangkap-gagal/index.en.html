@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catch Clincoo Worker Errors with onerror; Do Not Stay Silent — Clincoo Blog</title>
+<meta name="description" content="A worker that throws without a handler looks hung. The UI waits for a result that never arrives.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/worker/worker-onerror-tangkap-gagal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Catch Clincoo Worker Errors with onerror; Do Not Stay Silent">
+<meta property="og:description" content="A worker that throws without a handler looks hung. The UI waits for a result that never arrives.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/worker/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">⚙️ Worker</div><h1>Catch Clincoo Worker Errors with onerror; Do Not Stay Silent</h1><p class="desc">A worker that throws without a handler looks hung. The UI waits for a result that never arrives.</p><div class="langlinks">This article is available in: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo script sends broken JSON to a worker. The worker throws; the main thread keeps the spinner.</p><p class="mb-4">Attach worker.onerror and worker.onmessageerror. Show a message in preview, stop the spinner, log filename and lineno.</p><p class="mb-4">Inside the worker wrap heavy work in try/catch then postMessage({ error: String(e) }).</p><p class="mb-4">Paste the stack into the AI in editor.clincoo.buzz. Ask only for an onerror handler, not a full worker rewrite.</p><p class="mb-4">Clincoo does not surface worker errors for you. A handler in your script keeps app.clincoo.buzz from hanging.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/worker/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
