@@ -151,6 +151,111 @@ window.countryDataFiles["timeout"] = {
           sourceSnippet: "Official Clincoo editor"
         }
       }
+    },
+    {
+      id: "timeout-settimeout-bukan-setinterval-polling",
+      langs: {
+        "id": {
+          title: "Pakai setTimeout Berantai untuk Polling Clincoo, Bukan setInterval Tetap",
+          desc: "setInterval menumpuk jika pekerjaan lebih lama dari interval. Jadwalkan tick berikutnya setelah yang lama selesai.",
+          content: "<p class=\"mb-4\">Dashboard Clincoo memanggil API tiap 2 detik dengan setInterval. Saat jaringan lambat, tiga request jalan bersamaan.</p><p class=\"mb-4\">Ganti dengan fungsi tick yang fetch, lalu setTimeout(tick, jeda) hanya di finally. Jangan jadwalkan tick baru sebelum yang lama selesai.</p><p class=\"mb-4\">Tambah AbortController per tick dan batas total polling. Hentikan saat tab tersembunyi atau pengguna logout.</p><p class=\"mb-4\">Minta AI mengubah satu setInterval jadi rantai setTimeout. Tempel loop dari editor.clincoo.buzz.</p><p class=\"mb-4\">Polling di app.clincoo.buzz tidak lagi menumpuk request saat API lambat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Chain setTimeout for Clincoo Polling, Not a Fixed setInterval",
+          desc: "setInterval stacks work if a job lasts longer than the interval. Schedule the next tick after the last one finishes.",
+          content: "<p class=\"mb-4\">A Clincoo dashboard hits the API every 2 seconds with setInterval. When the network is slow, three requests run at once.</p><p class=\"mb-4\">Replace it with a tick function that fetches, then setTimeout(tick, delay) only in finally. Do not schedule the next tick before the last one ends.</p><p class=\"mb-4\">Add an AbortController per tick and a total polling cap. Stop when the tab is hidden or the user logs out.</p><p class=\"mb-4\">Ask AI to turn one setInterval into a setTimeout chain. Paste the loop from editor.clincoo.buzz.</p><p class=\"mb-4\">Polling on app.clincoo.buzz no longer stacks requests when the API is slow.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "timeout-visibilitychange-jeda-timer",
+      langs: {
+        "id": {
+          title: "Jeda Timer Timeout Clincoo saat Tab Tidak Terlihat",
+          desc: "Timer tetap jalan di tab latar dan menembak alert di halaman yang sudah ditinggalkan. Hormati visibilitychange.",
+          content: "<p class=\"mb-4\">Pengunjung Clincoo pindah tab. setTimeout tetap meng-abort fetch dan menampilkan toast di tab yang tidak dilihat.</p><p class=\"mb-4\">Pasang document.visibilitychange. Jika hidden, clearTimeout dan abort. Jika visible lagi, mulai ulang timer dari awal.</p><p class=\"mb-4\">Jangan mengandalkan angka sisa yang sudah berjalan di latar. Waktu di latar bukan waktu pengguna.</p><p class=\"mb-4\">Minta AI menambah listener visibilitychange pada satu timer. Tempel skrip dari editor.clincoo.buzz.</p><p class=\"mb-4\">Tab app.clincoo.buzz yang tersembunyi tidak lagi memicu timeout palsu.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Pause Clincoo Timeout Timers When the Tab Is Hidden",
+          desc: "Timers keep running in a background tab and fire alerts on a page the visitor left. Honor visibilitychange.",
+          content: "<p class=\"mb-4\">A Clincoo visitor switches tabs. setTimeout still aborts the fetch and shows a toast on a tab they are not watching.</p><p class=\"mb-4\">Listen to document.visibilitychange. If hidden, clearTimeout and abort. If visible again, restart the timer from zero.</p><p class=\"mb-4\">Do not trust leftover milliseconds from the background. Background time is not user time.</p><p class=\"mb-4\">Ask AI to add a visibilitychange listener on one timer. Paste the script from editor.clincoo.buzz.</p><p class=\"mb-4\">A hidden app.clincoo.buzz tab no longer fires a false timeout.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "timeout-ux-countdown-sisa-detik",
+      langs: {
+        "id": {
+          title: "Tampilkan Hitungan Mundur Timeout Clincoo, Jangan Diam Saja",
+          desc: "Pengunjung tidak tahu berapa lama sistem masih menunggu. Angka detik membuat spinner terasa jujur.",
+          content: "<p class=\"mb-4\">Form Clincoo memutar ikon 12 detik tanpa angka. Pengunjung mengira halaman beku dan menekan ulang.</p><p class=\"mb-4\">Simpan deadline Date.now()+ms. Tiap 250–500 ms perbarui teks sisa detik di pratinjau editor.clincoo.buzz.</p><p class=\"mb-4\">Saat sisa 0, abort dan ganti teks jadi habis waktu. Hapus interval di finally agar tidak bocor.</p><p class=\"mb-4\">Minta AI menulis countdown terikat AbortController. Tempel markup spinner saja.</p><p class=\"mb-4\">Hitungan mundur di app.clincoo.buzz menahan klik ganda karena pengguna melihat sisa waktu.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Show a Clincoo Timeout Countdown; Do Not Stay Silent",
+          desc: "Visitors cannot tell how long the system will wait. A second count makes the spinner feel honest.",
+          content: "<p class=\"mb-4\">A Clincoo form spins an icon for 12 seconds with no number. Visitors think the page froze and click again.</p><p class=\"mb-4\">Store a deadline Date.now()+ms. Every 250–500 ms update remaining seconds in the editor.clincoo.buzz preview.</p><p class=\"mb-4\">At 0, abort and swap the text to timed out. Clear the interval in finally so it does not leak.</p><p class=\"mb-4\">Ask AI for a countdown tied to AbortController. Paste the spinner markup only.</p><p class=\"mb-4\">A countdown on app.clincoo.buzz cuts double clicks because people see time left.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "timeout-jangan-timeout-aksi-lokal",
+      langs: {
+        "id": {
+          title: "Jangan Pasang Timeout pada Aksi Lokal Clincoo yang Sudah Selesai",
+          desc: "Validasi form dan tulis localStorage tidak butuh abort 8 detik. Timeout hanya untuk I/O yang bisa menggantung.",
+          content: "<p class=\"mb-4\">Tombol simpan Clincoo memulai timer 10 detik meski hanya menulis localStorage. Alert timeout muncul setelah sukses.</p><p class=\"mb-4\">Batasi AbortController dan Promise.race pada fetch, unggah, dan worker. Aksi sinkron selesai tanpa timer.</p><p class=\"mb-4\">Jika campuran lokal plus API, timeout hanya cabang jaringan. Cabang lokal langsung tutup spinner.</p><p class=\"mb-4\">Minta AI memisahkan path lokal dan fetch. Tempel handler tombol dari editor.clincoo.buzz.</p><p class=\"mb-4\">app.clincoo.buzz tidak lagi menampilkan habis waktu pada aksi yang sudah selesai di perangkat.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Do Not Put a Timeout on Local Clincoo Actions That Already Finished",
+          desc: "Form validation and localStorage writes do not need an 8 second abort. Timeouts are for I/O that can hang.",
+          content: "<p class=\"mb-4\">A Clincoo save button starts a 10 second timer even though it only writes localStorage. A timeout alert appears after success.</p><p class=\"mb-4\">Limit AbortController and Promise.race to fetch, upload, and workers. Sync work finishes with no timer.</p><p class=\"mb-4\">If local work mixes with an API call, timeout only the network branch. The local branch should hide the spinner at once.</p><p class=\"mb-4\">Ask AI to split the local path from fetch. Paste the button handler from editor.clincoo.buzz.</p><p class=\"mb-4\">app.clincoo.buzz no longer shows timed out on work that already finished on the device.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
+    },
+    {
+      id: "timeout-satu-batas-per-jenis-request",
+      langs: {
+        "id": {
+          title: "Samakan Batas Waktu per Jenis Request Clincoo, Jangan Acak",
+          desc: "Cari 3 detik dan unggah 3 detik membuat unggah sering gagal. Satu kebijakan per jenis I/O.",
+          content: "<p class=\"mb-4\">Proyek Clincoo memakai 3000 ms untuk semua fetch. Unggah gambar selalu habis waktu, pencarian terasa lambat dibatalkan.</p><p class=\"mb-4\">Tetapkan peta: cari 8 detik, simpan 15 detik, unggah 30–60 detik. Simpan angka di satu modul, bukan tersebar.</p><p class=\"mb-4\">Tampilkan jenis request di pesan timeout agar debug di editor.clincoo.buzz cepat.</p><p class=\"mb-4\">Minta AI mengekstrak konstanta timeout per jenis. Tempel tiga pemanggilan fetch.</p><p class=\"mb-4\">Kebijakan seragam di app.clincoo.buzz mengurangi gagal semu pada unggah besar.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Editor resmi Clincoo"
+        },
+        "en": {
+          title: "Use One Time Limit per Clincoo Request Type, Not Random Numbers",
+          desc: "Search at 3 seconds and upload at 3 seconds makes uploads fail often. One policy per I/O type.",
+          content: "<p class=\"mb-4\">A Clincoo project uses 3000 ms for every fetch. Image uploads always time out; search feels cancelled too soon.</p><p class=\"mb-4\">Set a map: search 8 seconds, save 15 seconds, upload 30–60 seconds. Keep the numbers in one module, not scattered.</p><p class=\"mb-4\">Show the request type in the timeout message so debug in editor.clincoo.buzz is fast.</p><p class=\"mb-4\">Ask AI to extract timeout constants per type. Paste three fetch calls.</p><p class=\"mb-4\">A shared policy on app.clincoo.buzz cuts false failures on large uploads.</p>",
+          source: "Clincoo",
+          sourceUrl: "https://editor.clincoo.buzz/",
+          sourceSnippet: "Official Clincoo editor"
+        }
+      }
     }
   ]
 };
