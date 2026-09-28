@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Clincoo WebSocket Instance per Page; Do Not Double It on Hot Reload — Clincoo Blog</title>
+<meta name="description" content="Hot reload or a double click opens two sockets. Keep one global reference.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/websocket/websocket-satu-instans-per-halaman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="One Clincoo WebSocket Instance per Page; Do Not Double It on Hot Reload">
+<meta property="og:description" content="Hot reload or a double click opens two sockets. Keep one global reference.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/websocket/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">WebSocket</div><h1>One Clincoo WebSocket Instance per Page; Do Not Double It on Hot Reload</h1><p class="desc">Hot reload or a double click opens two sockets. Keep one global reference.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">The Clincoo editor on localhost creates a new socket on every file save. The server sees two clients.</p>
+<p class="mb-4">Store ws on a module variable. If the old instance is still CONNECTING or OPEN, close it before new WebSocket.</p>
+<p class="mb-4">Drop the old onmessage. Do not let two handlers write the DOM at once.</p>
+<p class="mb-4">Ask AI for a singleton guard. Paste the constructor from editor.clincoo.buzz.</p>
+<p class="mb-4">The app.clincoo.buzz preview keeps one live channel per tab.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/websocket/">← Back to websocket</a>
+</div>
+</body>
+</html>

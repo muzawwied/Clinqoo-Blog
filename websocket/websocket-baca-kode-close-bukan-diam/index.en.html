@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read the Clincoo WebSocket Close Code; Do Not Treat Every Drop the Same — Clincoo Blog</title>
+<meta name="description" content="1000, 1001, and 1006 need different responses. Log the code before reconnect.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/websocket/websocket-baca-kode-close-bukan-diam/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Read the Clincoo WebSocket Close Code; Do Not Treat Every Drop the Same">
+<meta property="og:description" content="1000, 1001, and 1006 need different responses. Log the code before reconnect.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/websocket/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">WebSocket</div><h1>Read the Clincoo WebSocket Close Code; Do Not Treat Every Drop the Same</h1><p class="desc">1000, 1001, and 1006 need different responses. Log the code before reconnect.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo preview reconnects on every onclose. A 1000 from logout opens a new socket too.</p>
+<p class="mb-4">Read ev.code and ev.reason. 1000 or 1001 from you: do not reconnect. 1006 abnormal: retry with backoff.</p>
+<p class="mb-4">Do not show a raw reason to visitors if it contains an internal host. Log it with console.error only.</p>
+<p class="mb-4">Ask AI for a close-code to action map. Paste onclose from editor.clincoo.buzz.</p>
+<p class="mb-4">app.clincoo.buzz tells a deliberate leave from a network drop.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/websocket/">← Back to websocket</a>
+</div>
+</body>
+</html>
