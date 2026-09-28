@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Clincoo Query Keys with has(), Do Not Rely on get() Alone — Clincoo Blog</title>
+<meta name="description" content="get() returns an empty string when a key exists without a value. has() distinguishes a missing key from an empty one.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-has-cek-kunci-ada/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Check Clincoo Query Keys with has(), Do Not Rely on get() Alone">
+<meta property="og:description" content="get() returns an empty string when a key exists without a value. has() distinguishes a missing key from an empty one.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Check Clincoo Query Keys with has(), Do Not Rely on get() Alone</h1><p class="desc">get() returns an empty string when a key exists without a value. has() distinguishes a missing key from an empty one.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Many Clincoo scripts use params.get('sort') || 'baru'. If the URL contains ?sort= with no value, get() yields an empty string and the fallback does not run as you expect.</p><p class="mb-4">In editor.clincoo.buzz, call params.has('sort') first. has() is true when the key exists, even if its value is empty. Only then apply a default.</p><p class="mb-4">Practical flow: if has('sort') is false, use the project default. If true, read get('sort') and validate against an allowlist. Do not accept arbitrary visitor strings.</p><p class="mb-4">Ask AI to replace only the query reader. Paste the has/get helper, not the whole router. Test three URLs: missing key, empty key, and a real value.</p><p class="mb-4">Filters on app.clincoo.buzz must be shareable. Distinguishing has() from get() keeps filter links predictable after deploy.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/has" target="_blank" rel="noopener">MDN URLSearchParams.has()<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/get" target="_blank" rel="noopener">MDN URLSearchParams.get()<span class="d">developer.mozilla.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Back to query</a>
+</div>
+</body>
+</html>
