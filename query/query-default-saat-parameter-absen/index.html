@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetapkan Default Query Clincoo saat Parameter Absen, Jangan Anggap String Kosong — Clincoo Blog</title>
+<meta name="description" content="get() mengembalikan null jika kunci tidak ada. Bedakan absen, kosong, dan nilai default agar filter tidak salah arah.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-default-saat-parameter-absen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tetapkan Default Query Clincoo saat Parameter Absen, Jangan Anggap String Kosong">
+<meta property="og:description" content="get() mengembalikan null jika kunci tidak ada. Bedakan absen, kosong, dan nilai default agar filter tidak salah arah.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Tetapkan Default Query Clincoo saat Parameter Absen, Jangan Anggap String Kosong</h1><p class="desc">get() mengembalikan null jika kunci tidak ada. Bedakan absen, kosong, dan nilai default agar filter tidak salah arah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">`params.get('page')` mengembalikan `null` jika kunci tidak ada, dan string kosong jika kuncinya ada tanpa nilai. Banyak skrip Clincoo menulis `page || 1`, yang menyamakan keduanya dan menyembunyikan niat pengunjung.</p><p class="mb-4">Tulis helper: jika `get` null, pakai default; jika string kosong, putuskan secara sadar apakah itu berarti reset atau halaman pertama. Jangan andalkan truthiness semata.</p><p class="mb-4">Untuk angka, parse setelah cek null. `Number('')` adalah 0, yang bisa lolos validasi halaman padahal pengunjung tidak memilih apa pun.</p><p class="mb-4">Uji tiga URL di pratinjau: tanpa `page`, dengan `page=`, dan dengan `page=2`. Ketiganya harus menghasilkan perilaku yang kamu dokumentasikan, bukan tebakan.</p><p class="mb-4">Minta AI menambahkan helper baca query beserta tes mental tiga kasus itu. Jangan biarkan default tersebar di lima berkas.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/get" target="_blank" rel="noopener">MDN URLSearchParams.get<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" rel="noopener">MDN Number<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/url-parts" target="_blank" rel="noopener">web.dev URL parts<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Kembali ke query</a>
+</div>
+</body>
+</html>
