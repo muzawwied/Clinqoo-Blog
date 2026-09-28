@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang Listener Passive untuk Sentuh dan Scroll Clincoo — Clincoo Blog</title>
+<meta name="description" content="Listener touchmove yang memanggil preventDefault membuat scroll Clincoo terasa macet. Tandai passive jika kamu tidak mencegat gestur.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-passive-listener-untuk-sentuh/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang Listener Passive untuk Sentuh dan Scroll Clincoo">
+<meta property="og:description" content="Listener touchmove yang memanggil preventDefault membuat scroll Clincoo terasa macet. Tandai passive jika kamu tidak mencegat gestur.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Pasang Listener Passive untuk Sentuh dan Scroll Clincoo</h1><p class="desc">Listener touchmove yang memanggil preventDefault membuat scroll Clincoo terasa macet. Tandai passive jika kamu tidak mencegat gestur.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo di HP terasa berat saat skrip mendengarkan touchstart atau wheel tanpa opsi. Peramban menunggu apakah preventDefault akan dipanggil sebelum menggulir.</p><p class="mb-4">Di editor.clincoo.buzz, tulis addEventListener('touchmove', handler, { passive: true }) jika handler hanya mencatat posisi atau analitik. Scroll bisa jalan segera.</p><p class="mb-4">Kalau kamu memang perlu mencegat gestur, misalnya carousel yang menyerap geser horizontal, jangan passive. Batasi listener pada elemen itu saja, bukan pada document.</p><p class="mb-4">Peramban modern menandai listener sentuh di akar dokumen sebagai passive secara default. Jangan andalkan itu; tulis opsi secara eksplisit agar AI dan rekan tahu niatmu.</p><p class="mb-4">Uji di pratinjau HP: gulir cepat, lalu geser kartu. Kalau halaman tersendat, cek DevTools untuk peringatan non-passive.</p><p class="mb-4">Performa scroll adalah event, bukan CSS. Clincoo merender file yang kamu simpan; opsi passive menjaga sentuhan tetap mulus di app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive" target="_blank" rel="noopener">MDN addEventListener passive<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/passive-event-listeners" target="_blank" rel="noopener">web.dev Passive event listeners<span class="d">web.dev</span></a><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Kembali ke event</a>
+</div>
+</body>
+</html>
