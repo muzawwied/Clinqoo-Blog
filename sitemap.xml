@@ -125,4 +125,10 @@
   <url><loc>https://blog.clincoo.buzz/logging/logging-pisahkan-warn-dan-error/</loc></url>
   <url><loc>https://blog.clincoo.buzz/logging/logging-hapus-debugger-sebelum-rilis/</loc></url>
   <url><loc>https://blog.clincoo.buzz/logging/logging-bungkus-satu-modul-logger/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cdn/cdn-vary-header-accept-encoding/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cors/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cors/cors-preflight-options-sebelum-fetch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cors/cors-kredensial-bukan-wildcard-origin/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cors/cors-expose-header-untuk-baca-respons/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cors/cors-uji-origin-produksi-bukan-hanya-lokal/</loc></url>
 </urlset>
