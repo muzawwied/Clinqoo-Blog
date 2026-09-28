@@ -158,4 +158,9 @@
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-reconnect-terbatas-bukan-loop/</loc></url>
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-pesan-json-validasi-dulu/</loc></url>
   <url><loc>https://blog.clincoo.buzz/websocket/websocket-heartbeat-ping-agar-tidak-putus/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-cek-readystate-sebelum-kirim/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-binarytype-arraybuffer/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-antre-pesan-saat-connecting/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-tampilkan-status-koneksi-ui/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/websocket/websocket-jangan-kirim-token-di-query/</loc></url>
 </urlset>
