@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debounce the Search Input Event in Clincoo — Clincoo Blog</title>
+<meta name="description" content="Every keystroke in a Clincoo search field fires the filter. Wait for a pause in typing before you search.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-debounce-input-pencarian/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debounce the Search Input Event in Clincoo">
+<meta property="og:description" content="Every keystroke in a Clincoo search field fires the filter. Wait for a pause in typing before you search.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Debounce the Search Input Event in Clincoo</h1><p class="desc">Every keystroke in a Clincoo search field fires the filter. Wait for a pause in typing before you search.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">The input event on a Clincoo search field fires on every character. A list filter or network request on each key makes typing feel broken.</p><p class="mb-4">In editor.clincoo.buzz, wrap the handler in a timer. clearTimeout, then setTimeout for 200–300 ms. Run the filter only after the user pauses.</p><p class="mb-4">Do not debounce input that must update at once, such as a character counter. Debounce expensive work: filtering, fetch, or writing storage.</p><p class="mb-4">Abort the previous request if you use fetch. Debounce without abort still stacks responses that arrive out of order.</p><p class="mb-4">Ask AI to write a small debounce helper in the same file as the input. Test in preview: type quickly and confirm the result changes once at the end.</p><p class="mb-4">Clincoo renders the scripts you save. The input event is cheap; the work behind it is expensive, so delay that work.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event" target="_blank" rel="noopener">MDN input event<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout" target="_blank" rel="noopener">MDN setTimeout<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/optimize-long-tasks" target="_blank" rel="noopener">web.dev Optimize long tasks<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Back to event</a>
+</div>
+</body>
+</html>
