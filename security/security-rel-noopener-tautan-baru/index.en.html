@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add rel=noopener to Clincoo Links that Use target=_blank — Clincoo Blog</title>
+<meta name="description" content="A new tab without noopener gives the destination access to window.opener. One attribute closes the tabnabbing gap.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-rel-noopener-tautan-baru/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Add rel=noopener to Clincoo Links that Use target=_blank">
+<meta property="og:description" content="A new tab without noopener gives the destination access to window.opener. One attribute closes the tabnabbing gap.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Keamanan</div><h1>Add rel=noopener to Clincoo Links that Use target=_blank</h1><p class="desc">A new tab without noopener gives the destination access to window.opener. One attribute closes the tabnabbing gap.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo links to docs, marketplaces, or chat often use target="_blank". Without rel="noopener", the destination can write window.opener.location and send your original tab to a fake site.</p><p class="mb-4">Add rel="noopener noreferrer" on every external link that opens a new tab. noopener drops the window reference. noreferrer also hides Referer if you do not want the destination to see your page path.</p><p class="mb-4">Modern browsers add implicit noopener on target=_blank, but do not rely on that in old markup or WebViews. Write the attribute explicitly in the HTML you deploy.</p><p class="mb-4">Ask AI to find target="_blank" in the project and add rel only on those links. Do not let AI rewrite internal blog category links.</p><p class="mb-4">Test in the editor.clincoo.buzz preview: click an outbound link and confirm the original tab stays on the Clincoo page. This audit is fast and blocks tabnabbing before release.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target" target="_blank" rel="noopener">MDN target=_blank + noopener<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/target-blank" target="_blank" rel="noopener">web.dev opener / tabnabbing<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Back to security</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang rel=noopener pada Tautan target=_blank di Clincoo — Clincoo Blog</title>
+<meta name="description" content="Tab baru tanpa noopener memberi halaman tujuan akses ke window.opener. Satu atribut menutup celah tabnabbing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-rel-noopener-tautan-baru/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang rel=noopener pada Tautan target=_blank di Clincoo">
+<meta property="og:description" content="Tab baru tanpa noopener memberi halaman tujuan akses ke window.opener. Satu atribut menutup celah tabnabbing.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Keamanan</div><h1>Pasang rel=noopener pada Tautan target=_blank di Clincoo</h1><p class="desc">Tab baru tanpa noopener memberi halaman tujuan akses ke window.opener. Satu atribut menutup celah tabnabbing.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Tautan Clincoo ke dokumentasi, marketplace, atau chat sering memakai target="_blank". Tanpa rel="noopener", halaman tujuan bisa menulis window.opener.location dan mengarahkan tab aslimu ke situs palsu.</p><p class="mb-4">Tambah rel="noopener noreferrer" pada setiap tautan eksternal yang membuka tab baru. noopener memutus referensi window. noreferrer juga menyembunyikan Referer jika kamu tidak ingin domain tujuan melihat path halaman.</p><p class="mb-4">Browser modern menambahkan noopener implisit pada target=_blank, tetapi jangan andalkan itu di markup lama atau WebView. Tulis atribut secara eksplisit di HTML yang kamu deploy.</p><p class="mb-4">Minta AI mencari target="_blank" di proyek dan menambahkan rel hanya pada tautan itu. Jangan biarkan AI mengubah tautan internal kategori blog.</p><p class="mb-4">Uji di pratinjau editor.clincoo.buzz: klik tautan keluar, pastikan tab asal tetap di halaman Clincoo. Audit ini cepat dan mencegah tabnabbing sebelum rilis.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target" target="_blank" rel="noopener">MDN target=_blank + noopener<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/target-blank" target="_blank" rel="noopener">web.dev opener / tabnabbing<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Kembali ke security</a>
+</div>
+</body>
+</html>

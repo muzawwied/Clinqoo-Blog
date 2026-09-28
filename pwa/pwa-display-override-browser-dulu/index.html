@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isi display_override di Manifest PWA Clincoo, Jangan Andalkan display Saja — Clincoo Blog</title>
+<meta name="description" content="display_override memberi urutan fallback tampilan. Browser yang belum mendukung mode baru tetap membuka situs dengan aman.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/pwa/pwa-display-override-browser-dulu/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Isi display_override di Manifest PWA Clincoo, Jangan Andalkan display Saja">
+<meta property="og:description" content="display_override memberi urutan fallback tampilan. Browser yang belum mendukung mode baru tetap membuka situs dengan aman.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pwa/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">pwa</div><h1>Isi display_override di Manifest PWA Clincoo, Jangan Andalkan display Saja</h1><p class="desc">display_override memberi urutan fallback tampilan. Browser yang belum mendukung mode baru tetap membuka situs dengan aman.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Manifest Clincoo yang hanya berisi "display": "standalone" cukup untuk banyak kasus. Saat kamu mencoba mode baru seperti minimal-ui atau window-controls-overlay, browser lama bisa mengabaikan seluruh field.</p><p class="mb-4">Tambah display_override sebagai array berurutan, misalnya ["standalone", "browser"]. Browser memakai entri pertama yang dikenali. Field display tetap ada sebagai cadangan.</p><p class="mb-4">Jangan set fullscreen kecuali aplikasi benar-benar butuh kanvas penuh. Fullscreen menyembunyikan kontrol sistem dan mempersulit keluar bagi pengunjung baru.</p><p class="mb-4">Minta AI hanya menyunting manifest.json. Tempel objek display dan display_override, lalu pratinjau di editor.clincoo.buzz sebelum deploy.</p><p class="mb-4">Setelah rilis di app.clincoo.buzz, pasang ulang ikon hanya jika id dan start_url tidak berubah. Perubahan tampilan tidak boleh mereset aplikasi yang sudah terpasang.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/Manifest/display" target="_blank" rel="noopener">MDN Web app manifest display<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/pwa/detection" target="_blank" rel="noopener">web.dev display-override<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pwa/">← Kembali ke pwa</a>
+</div>
+</body>
+</html>
