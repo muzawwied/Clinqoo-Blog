@@ -120,4 +120,9 @@
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-stale-while-revalidate-aset/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-host-khusus-vs-same-origin/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cdn/cdn-compress-brotli-gzip-header/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/logging/logging-jangan-log-nilai-form/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/logging/logging-console-dir-elemen/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/logging/logging-pisahkan-warn-dan-error/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/logging/logging-hapus-debugger-sebelum-rilis/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/logging/logging-bungkus-satu-modul-logger/</loc></url>
 </urlset>
