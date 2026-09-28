@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use stopPropagation Sparingly on Clincoo Events — Clincoo Blog</title>
+<meta name="description" content="stopPropagation on every click breaks Clincoo delegation and analytics. Stop bubbling only when child and parent truly conflict.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-stoppropagation-hemat/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use stopPropagation Sparingly on Clincoo Events">
+<meta property="og:description" content="stopPropagation on every click breaks Clincoo delegation and analytics. Stop bubbling only when child and parent truly conflict.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Use stopPropagation Sparingly on Clincoo Events</h1><p class="desc">stopPropagation on every click breaks Clincoo delegation and analytics. Stop bubbling only when child and parent truly conflict.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo templates often attach stopPropagation on a button inside a card. The click never reaches the parent, so delegation and CTA tracking stay silent.</p><p class="mb-4">Let the event rise. In the parent handler, read event.target.closest() to tell a button, a link, or the card surface apart. One listener is enough.</p><p class="mb-4">Call stopPropagation only when two handlers on the same path do opposite work, for example a card that opens details while a button opens a menu.</p><p class="mb-4">Do not mix in stopImmediatePropagation unless you own every script on the page. Analytics added later will never see the click.</p><p class="mb-4">Ask AI to delete unexplained stopPropagation calls. Paste the handler snippet, not the whole interactive file.</p><p class="mb-4">Clincoo renders static HTML plus the scripts you save. Bubbling is a feature; stop it only when there is a real conflict.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation" target="_blank" rel="noopener">MDN Event.stopPropagation<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/target" target="_blank" rel="noopener">MDN Event.target<span class="d">developer.mozilla.org</span></a><a href="https://javascript.info/bubbling-and-capturing" target="_blank" rel="noopener">javascript.info Bubbling and capturing<span class="d">javascript.info</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Back to event</a>
+</div>
+</body>
+</html>
