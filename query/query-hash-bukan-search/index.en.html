@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Mix location.hash with a Clincoo Query String — Clincoo Blog</title>
+<meta name="description" content="A hash is not sent to the server and URLSearchParams will not read it. An anchor is not a filter.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-hash-bukan-search/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Mix location.hash with a Clincoo Query String">
+<meta property="og:description" content="A hash is not sent to the server and URLSearchParams will not read it. An anchor is not a filter.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Do Not Mix location.hash with a Clincoo Query String</h1><p class="desc">A hash is not sent to the server and URLSearchParams will not read it. An anchor is not a filter.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo script writes #q=hero then reads location.search. The value never appears. The filter looks empty.</p><p class="mb-4">Store filters in search (?q=). Use a hash only to jump to a page id, such as #contact, in editor.clincoo.buzz.</p><p class="mb-4">When you replace the query with replaceState, keep the existing hash so the section scroll is not lost.</p><p class="mb-4">Ask AI to split the search parser from the hash parser. Paste two short functions, not the whole popstate listener.</p><p class="mb-4">Clincoo is a static site. Search keeps the filter; hash keeps position. Mixing them confuses app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Back to query</a>
+</div>
+</body>
+</html>
