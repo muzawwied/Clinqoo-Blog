@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pisahkan thead dan tbody pada Tabel Clincoo — Clincoo Blog</title>
+<meta name="description" content="Jangan taruh semua baris di satu tumpukan tr. thead dan tbody membuat header, sticky, dan pembaca layar bekerja.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/tabel/tabel-thead-tbody-terpisah/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pisahkan thead dan tbody pada Tabel Clincoo">
+<meta property="og:description" content="Jangan taruh semua baris di satu tumpukan tr. thead dan tbody membuat header, sticky, dan pembaca layar bekerja.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/tabel/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Tabel</div><h1>Pisahkan thead dan tbody pada Tabel Clincoo</h1><p class="desc">Jangan taruh semua baris di satu tumpukan tr. thead dan tbody membuat header, sticky, dan pembaca layar bekerja.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak template menempelkan baris judul dan baris data dalam satu deretan <code>tr</code> tanpa <code>thead</code>. Browser masih menggambar tabel, tetapi sticky header, pengurutan, dan pembaca layar kehilangan batas yang jelas.</p><p class="mb-4">Bungkus baris judul di <code><thead></code> dengan <code>th</code>, bungkus data di <code><tbody></code> dengan <code>td</code>. Kalau ada total, taruh di <code><tfoot></code> satu baris, bukan di tengah data.</p><p class="mb-4">CSS menjadi lebih aman. <code>thead th { position: sticky; top: 0; }</code> hanya menempelkan judul. Zebra <code>tbody tr:nth-child(even)</code> tidak mewarnai header.</p><p class="mb-4">Saat mengisi tabel dari template Clincoo, periksa dulu apakah file contoh sudah memisahkan bagian ini. Jangan menambahkan paket harga sebagai baris tebal di atas data tanpa <code>thead</code>.</p><p class="mb-4">Uji dengan gulir panjang di pratinjau. Judul kolom harus tetap terbaca. Kalau ikut hilang, struktur HTML belum dipisah.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank" rel="noopener">MDN: thead<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/tutorials/tables/" target="_blank" rel="noopener">WAI: Tables tutorial<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/tabel/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
