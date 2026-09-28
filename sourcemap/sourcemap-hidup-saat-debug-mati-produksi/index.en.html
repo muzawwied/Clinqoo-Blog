@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn Clincoo Source Maps On for Debug, Off in the Public Production Bundle — Clincoo Blog</title>
+<meta name="description" content="A map in production leaks original sources. Use it only in local preview.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/sourcemap/sourcemap-hidup-saat-debug-mati-produksi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turn Clincoo Source Maps On for Debug, Off in the Public Production Bundle">
+<meta property="og:description" content="A map in production leaks original sources. Use it only in local preview.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/sourcemap/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Source Map</div><h1>Turn Clincoo Source Maps On for Debug, Off in the Public Production Bundle</h1><p class="desc">A map in production leaks original sources. Use it only in local preview.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo bundle on Pages ships .map files. Anyone can see the raw editor folder.</p>
+<p class="mb-4">In dev, set devtool or sourcemap true. In a public production build, turn it off or upload maps to a private host.</p>
+<p class="mb-4">Check Network: if a .map file or SourceMap header exists, visitors can download sources.</p>
+<p class="mb-4">Ask AI to split the sourcemap flag for dev vs prod. Paste config from editor.clincoo.buzz.</p>
+<p class="mb-4">app.clincoo.buzz stays debuggable locally without opening the bundle to the public.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/sourcemap/">← Back to sourcemap</a>
+</div>
+</body>
+</html>
