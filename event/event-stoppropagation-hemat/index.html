@@ -4,13 +4,13 @@
 <script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pakai stopPropagation Hemat pada Event Clincoo — Clincoo Blog</title>
-<meta name="description" content="stopPropagation di setiap klik memutus delegasi dan analitik Clincoo. Hentikan gelembung hanya saat anak dan induk benar-benar bentrok.">
+<title>Pakai stopPropagation Hemat di Event Clincoo — Clincoo Blog</title>
+<meta name="description" content="Menghentikan gelembung di setiap klik merusak delegasi induk dan analitik.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/event/event-stoppropagation-hemat/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pakai stopPropagation Hemat pada Event Clincoo">
-<meta property="og:description" content="stopPropagation di setiap klik memutus delegasi dan analitik Clincoo. Hentikan gelembung hanya saat anak dan induk benar-benar bentrok.">
+<meta property="og:title" content="Pakai stopPropagation Hemat di Event Clincoo">
+<meta property="og:description" content="Menghentikan gelembung di setiap klik merusak delegasi induk dan analitik.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
-  <div class="crumb">Event</div><h1>Pakai stopPropagation Hemat pada Event Clincoo</h1><p class="desc">stopPropagation di setiap klik memutus delegasi dan analitik Clincoo. Hentikan gelembung hanya saat anak dan induk benar-benar bentrok.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Template Clincoo sering menempel stopPropagation pada tombol di dalam kartu. Klik tombol tidak sampai ke induk, sehingga delegasi dan pelacak CTA diam.</p><p class="mb-4">Biarkan event naik. Di handler induk, baca event.target.closest() untuk membedakan tombol, tautan, atau area kartu. Satu listener cukup.</p><p class="mb-4">Panggil stopPropagation hanya jika dua handler pada jalur yang sama melakukan aksi berlawanan, misalnya kartu membuka detail sementara tombol membuka menu.</p><p class="mb-4">Jangan campur dengan stopImmediatePropagation kecuali kamu mengendalikan semua skrip di halaman. Plugin analitik yang terpasang belakangan tidak akan melihat klik.</p><p class="mb-4">Minta AI menghapus stopPropagation yang tidak dijelaskan. Tempel potongan handler, bukan seluruh berkas interaktif.</p><p class="mb-4">Clincoo merender HTML statis plus skrip yang kamu simpan. Gelembung event adalah fitur; hentikan hanya saat bentrok nyata.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation" target="_blank" rel="noopener">MDN Event.stopPropagation<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/target" target="_blank" rel="noopener">MDN Event.target<span class="d">developer.mozilla.org</span></a><a href="https://javascript.info/bubbling-and-capturing" target="_blank" rel="noopener">javascript.info Bubbling and capturing<span class="d">javascript.info</span></a></div>
+  <div class="crumb">Event</div><h1>Pakai stopPropagation Hemat di Event Clincoo</h1><p class="desc">Menghentikan gelembung di setiap klik merusak delegasi induk dan analitik.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Tombol di kartu Clincoo memanggil stopPropagation. Induk tidak pernah tahu item mana yang diklik.</p><p class="mb-4">Biarkan event naik kecuali overlay atau dropdown yang harus isolasi. Di editor.clincoo.buzz, dokumentasikan kenapa gelembung dipotong.</p><p class="mb-4">Jangan stopPropagation hanya untuk mencegah handler global yang salah. Perbaiki handler global itu.</p><p class="mb-4">Minta AI menghapus stopPropagation yang tidak perlu pada satu tombol. Tempel rantai handler.</p><p class="mb-4">Clincoo tidak mengatur gelembung otomatis. Gelembung yang jujur menjaga delegasi di app.clincoo.buzz tetap hidup.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
   <a class="back" href="https://blog.clincoo.buzz/event/">← Kembali ke event</a>
 </div>
 </body>

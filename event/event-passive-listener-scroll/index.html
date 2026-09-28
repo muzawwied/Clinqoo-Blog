@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tandai Listener Scroll Clincoo sebagai Passive — Clincoo Blog</title>
+<meta name="description" content="touchstart dan wheel tanpa passive menunda scroll. Browser menunggu preventDefault yang tidak datang.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-passive-listener-scroll/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tandai Listener Scroll Clincoo sebagai Passive">
+<meta property="og:description" content="touchstart dan wheel tanpa passive menunda scroll. Browser menunggu preventDefault yang tidak datang.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Tandai Listener Scroll Clincoo sebagai Passive</h1><p class="desc">touchstart dan wheel tanpa passive menunda scroll. Browser menunggu preventDefault yang tidak datang.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo terasa berat saat digulir karena listener touchmove memanggil preventDefault tanpa perlu.</p><p class="mb-4">Pasang addEventListener('touchmove', fn, { passive: true }) di editor.clincoo.buzz kecuali kamu benar-benar mencegah scroll.</p><p class="mb-4">Jangan menandai passive lalu tetap preventDefault. Konsol akan memperingatkan dan perilaku jadi tidak pasti.</p><p class="mb-4">Minta AI menandai satu listener scroll sebagai passive. Tempel handler gulir saja.</p><p class="mb-4">Clincoo merender skrip yang kamu simpan. Listener passive menjaga gulir di app.clincoo.buzz tetap halus.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Kembali ke event</a>
+</div>
+</body>
+</html>
