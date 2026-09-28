@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lepas Banyak Listener Clincoo dengan AbortController — Clincoo Blog</title>
+<meta name="description" content="Menghapus listener satu per satu mudah terlewat. Satu AbortController melepas seluruh event halaman Clincoo saat pindah.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-abortcontroller-lepas-listener/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lepas Banyak Listener Clincoo dengan AbortController">
+<meta property="og:description" content="Menghapus listener satu per satu mudah terlewat. Satu AbortController melepas seluruh event halaman Clincoo saat pindah.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Lepas Banyak Listener Clincoo dengan AbortController</h1><p class="desc">Menghapus listener satu per satu mudah terlewat. Satu AbortController melepas seluruh event halaman Clincoo saat pindah.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo yang memasang resize, keydown, dan scroll pada window menumpuk listener tiap kali skrip dijalankan ulang di editor.</p><p class="mb-4">Buat const ac = new AbortController() di awal modul. Kirim { signal: ac.signal } ke setiap addEventListener. Saat halaman atau overlay ditutup, panggil ac.abort().</p><p class="mb-4">Satu abort melepas semua listener yang memakai sinyal itu. Kamu tidak perlu menyimpan referensi fungsi hanya untuk removeEventListener.</p><p class="mb-4">Sinyal yang sama bisa membatalkan fetch. Samakan siklus hidup event UI dan permintaan data agar tidak ada respons yang menulis DOM yang sudah hilang.</p><p class="mb-4">Minta AI menambahkan opsi signal, bukan menulis ulang seluruh berkas. Uji dengan buka-tutup overlay berkali-kali lalu cek jumlah listener di DevTools.</p><p class="mb-4">Clincoo merender ulang pratinjau. AbortController menjaga event window tidak hidup lebih lama dari halaman yang memakainya.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">MDN AbortController<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#signal" target="_blank" rel="noopener">MDN addEventListener signal<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/articles/abortcontroller-abortsignal" target="_blank" rel="noopener">web.dev AbortController<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Kembali ke event</a>
+</div>
+</body>
+</html>
