@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split thead and tbody in Clincoo Tables — Clincoo Blog</title>
+<meta name="description" content="Do not dump every row into one stack of tr elements. thead and tbody make headers, sticky rows, and screen readers work.">
+<link rel="canonical" href="https://blog.clincoo.buzz/tabel/tabel-thead-tbody-terpisah/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Split thead and tbody in Clincoo Tables">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/tabel/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Tables</div><h1>Split thead and tbody in Clincoo Tables</h1><p class="desc">Do not dump every row into one stack of tr elements. thead and tbody make headers, sticky rows, and screen readers work.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Many templates glue heading rows and data rows into one run of <code>tr</code> with no <code>thead</code>. The table still draws, but sticky headers, sorting, and screen readers lose a clear boundary.</p><p class="mb-4">Wrap the heading row in <code><thead></code> with <code>th</code>, wrap data in <code><tbody></code> with <code>td</code>. Put totals in a single <code><tfoot></code> row, not in the middle of the data.</p><p class="mb-4">CSS gets safer. <code>thead th { position: sticky; top: 0; }</code> sticks only titles. Zebra striping on <code>tbody tr</code> will not paint the header.</p><p class="mb-4">When you fill a Clincoo template table, check that the sample already splits these parts. Do not add pricing as a bold row above the data with no <code>thead</code>.</p><p class="mb-4">Scroll a long table in preview. Column titles must stay readable. If they vanish, the HTML is not split yet.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank" rel="noopener">MDN: thead<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/tutorials/tables/" target="_blank" rel="noopener">WAI: Tables tutorial<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/tabel/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
