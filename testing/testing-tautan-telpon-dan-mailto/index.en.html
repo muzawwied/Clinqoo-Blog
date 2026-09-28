@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test tel: and mailto: Links in Clincoo Preview before Release — Clincoo Blog</title>
+<meta name="description" content="Phone and email links often look correct while the href is still a sample. Tap them on a phone before you deploy.">
+<link rel="canonical" href="https://blog.clincoo.buzz/testing/testing-tautan-telpon-dan-mailto/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test tel: and mailto: Links in Clincoo Preview before Release">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/testing/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Testing</div><h1>Test tel: and mailto: Links in Clincoo Preview before Release</h1><p class="desc">Phone and email links often look correct while the href is still a sample. Tap them on a phone before you deploy.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Visible “0812-xxx” text does not mean the link works. Many templates render the number as plain text or bind <code>href="#"</code>. Phone visitors expect a tap to open the dialer.</p><p class="mb-4">The pattern is simple: <code>href="tel:+62812..."</code> with no spaces, and <code>href="mailto:name@domain"</code>. Include the country code. Local numbers without a plus often fail on devices with another locale.</p><p class="mb-4">Test three places: header, footer, and contact card. One page can hold three copies that drift after a quick edit.</p><p class="mb-4">On desktop preview, a <code>tel:</code> link may show an empty dialog. That is not proof of failure. Repeat on a real phone or DevTools device mode and confirm the number matches yours.</p><p class="mb-4">Log the result on the Clincoo release checklist next to internal links. A wrong contact burns trust faster than a slightly off color.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href" target="_blank" rel="noopener">MDN: a href<span class="d">developer.mozilla.org</span></a><a href="https://web.dev/learn/html/links" target="_blank" rel="noopener">web.dev: Links<span class="d">web.dev</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/testing/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
