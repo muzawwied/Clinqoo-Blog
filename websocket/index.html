@@ -5,12 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WebSocket — Clincoo Blog</title>
-<meta name="description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, dan heartbeat.">
+<meta name="description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, heartbeat, dan status koneksi.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://blog.clincoo.buzz/websocket/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WebSocket">
-<meta property="og:description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, dan heartbeat.">
+<meta property="og:description" content="Kategori artikel WebSocket di Clincoo Blog — wss, reconnect, validasi pesan, heartbeat, dan status koneksi.">
 <meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
 <meta property="og:site_name" content="Clincoo Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +21,7 @@
 <div class="wrap">
   <a class="top" href="https://blog.clincoo.buzz/"><img src="../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
   <div class="crumb">Kategori</div><h1>WebSocket</h1>
-  <div class="body"><a class="card" href="./websocket-cek-protokol-wss-bukan-ws/"><h2>Sambungkan Clincoo lewat wss://, Jangan ws:// di Produksi</h2><p>Halaman HTTPS menolak WebSocket tidak aman. Pakai wss agar pratinjau live tidak putus.</p></a><a class="card" href="./websocket-tutup-saat-pindah-halaman/"><h2>Tutup WebSocket Clincoo Saat Pengunjung Pindah Halaman</h2><p>Soket yang tidak di-close tetap menerima pesan dan menulis DOM yang sudah diganti.</p></a><a class="card" href="./websocket-reconnect-terbatas-bukan-loop/"><h2>Sambungkan Ulang WebSocket Clincoo, Tapi Batasi Percobaan</h2><p>Loop reconnect tanpa jeda membanjiri server. Pakai backoff dan batas maksimum.</p></a><a class="card" href="./websocket-pesan-json-validasi-dulu/"><h2>Validasi JSON dari WebSocket Clincoo Sebelum Menyentuh DOM</h2><p>Pesan rusak atau asing merusak pratinjau. Parse aman, cek tipe, baru render.</p></a><a class="card" href="./websocket-heartbeat-ping-agar-tidak-putus/"><h2>Kirim Heartbeat WebSocket Clincoo agar Proxy Tidak Memutus Diam</h2><p>Soket tanpa lalu lintas dipotong load balancer. Ping berkala menjaga saluran hidup.</p></a></div>
+  <div class="body"><a class="card" href="./websocket-cek-protokol-wss-bukan-ws/"><h2>Sambungkan Clincoo lewat wss://, Jangan ws:// di Produksi</h2><p>Halaman HTTPS menolak WebSocket tidak aman. Pakai wss agar pratinjau live tidak putus.</p></a><a class="card" href="./websocket-tutup-saat-pindah-halaman/"><h2>Tutup WebSocket Clincoo Saat Pengunjung Pindah Halaman</h2><p>Soket yang tidak di-close tetap menerima pesan dan menulis DOM yang sudah diganti.</p></a><a class="card" href="./websocket-reconnect-terbatas-bukan-loop/"><h2>Sambungkan Ulang WebSocket Clincoo, Tapi Batasi Percobaan</h2><p>Loop reconnect tanpa jeda membanjiri server. Pakai backoff dan batas maksimum.</p></a><a class="card" href="./websocket-pesan-json-validasi-dulu/"><h2>Validasi JSON dari WebSocket Clincoo Sebelum Menyentuh DOM</h2><p>Pesan rusak atau asing merusak pratinjau. Parse aman, cek tipe, baru render.</p></a><a class="card" href="./websocket-heartbeat-ping-agar-tidak-putus/"><h2>Kirim Heartbeat WebSocket Clincoo agar Proxy Tidak Memutus Diam</h2><p>Soket tanpa lalu lintas dipotong load balancer. Ping berkala menjaga saluran hidup.</p></a><a class="card" href="./websocket-cek-readystate-sebelum-kirim/"><h2>Cek readyState WebSocket Clincoo sebelum send, Jangan Asumsi OPEN</h2><p>send saat CONNECTING atau CLOSED melempar. Cek angka 1 dulu.</p></a><a class="card" href="./websocket-binarytype-arraybuffer/"><h2>Set binaryType ArrayBuffer pada WebSocket Clincoo sebelum Blob Mengejutkan</h2><p>Default blob membuat handler mengira buffer. Samakan tipe sebelum onmessage.</p></a><a class="card" href="./websocket-antre-pesan-saat-connecting/"><h2>Antre Pesan WebSocket Clincoo saat Masih CONNECTING</h2><p>Ketikan awal hilang jika dikirim sebelum OPEN. Simpan antrean lalu flush.</p></a><a class="card" href="./websocket-tampilkan-status-koneksi-ui/"><h2>Tampilkan Status Koneksi WebSocket Clincoo di UI, Jangan Diam</h2><p>Soket putus tanpa badge membuat pengguna mengetik ke saluran mati.</p></a><a class="card" href="./websocket-jangan-kirim-token-di-query/"><h2>Jangan Kirim Token Clincoo di Query URL WebSocket</h2><p>wss://host?token= tampil di log proxy dan riwayat. Pakai subprotokol atau pesan auth pertama.</p></a></div>
   <a class="back" href="https://blog.clincoo.buzz/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>
