@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handle Escape keydown to Close a Clincoo Dialog — Clincoo Blog</title>
+<meta name="description" content="A Clincoo dialog with only a close icon is hard to dismiss. Listen for Escape on the document while it is open.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-keydown-escape-tutup-dialog/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Handle Escape keydown to Close a Clincoo Dialog">
+<meta property="og:description" content="A Clincoo dialog with only a close icon is hard to dismiss. Listen for Escape on the document while it is open.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Handle Escape keydown to Close a Clincoo Dialog</h1><p class="desc">A Clincoo dialog with only a close icon is hard to dismiss. Listen for Escape on the document while it is open.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Clincoo visitors often close overlays with Escape. If the script only listens for a click on the close icon, keyboard and screen-reader users stall.</p><p class="mb-4">In editor.clincoo.buzz, attach a keydown listener on document when the dialog opens. Check event.key === 'Escape', then call the same close function as the icon.</p><p class="mb-4">Remove the listener as soon as the dialog closes. A leftover global listener will close the next overlay or interrupt input on the next page.</p><p class="mb-4">If you use the native dialog element, close() already responds to Escape. Do not double-handle unless the overlay is custom.</p><p class="mb-4">Ask AI to paste a separate Escape handler instead of rewriting the whole modal. Test in preview with Tab, then Escape.</p><p class="mb-4">The WAI-ARIA dialog pattern requires Escape. Clincoo renders the HTML you save; keyboard events are part of the product, not decoration.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key" target="_blank" rel="noopener">MDN KeyboardEvent.key<span class="d">developer.mozilla.org</span></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank" rel="noopener">MDN HTML dialog<span class="d">developer.mozilla.org</span></a><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" target="_blank" rel="noopener">WAI-ARIA Dialog Pattern<span class="d">w3.org</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Back to event</a>
+</div>
+</body>
+</html>
