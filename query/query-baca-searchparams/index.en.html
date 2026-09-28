@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read Clincoo URL Params with URLSearchParams, Not a Manual split — Clincoo Blog</title>
+<meta name="description" content="Cutting location.search with split breaks on encoding. URLSearchParams already handles plus and percent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-baca-searchparams/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Read Clincoo URL Params with URLSearchParams, Not a Manual split">
+<meta property="og:description" content="Cutting location.search with split breaks on encoding. URLSearchParams already handles plus and percent.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Read Clincoo URL Params with URLSearchParams, Not a Manual split</h1><p class="desc">Cutting location.search with split breaks on encoding. URLSearchParams already handles plus and percent.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A Clincoo script uses location.search.split('=')[1]. A value with &amp; or a space is silently truncated.</p><p class="mb-4">In editor.clincoo.buzz, use new URLSearchParams(location.search).get('q'). Decoding is included.</p><p class="mb-4">Check for null when the param is missing. Do not treat an empty string as a missing key.</p><p class="mb-4">Ask AI only to replace the split parser with URLSearchParams. Paste the query reader, not the whole app.</p><p class="mb-4">Clincoo serves the URL the visitor opened. The official parser keeps filters intact on app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Back to query</a>
+</div>
+</body>
+</html>
