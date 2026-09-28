@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cache Preflight CORS Clincoo dengan Max-Age yang Masuk Akal — Clincoo Blog</title>
+<meta name="description" content="Setiap klik memicu OPTIONS berulang. Access-Control-Max-Age mengurangi kebisingan Network.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/cors/cors-max-age-cache-preflight/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cache Preflight CORS Clincoo dengan Max-Age yang Masuk Akal">
+<meta property="og:description" content="Setiap klik memicu OPTIONS berulang. Access-Control-Max-Age mengurangi kebisingan Network.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/cors/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Cors</div><h1>Cache Preflight CORS Clincoo dengan Max-Age yang Masuk Akal</h1><p class="desc">Setiap klik memicu OPTIONS berulang. Access-Control-Max-Age mengurangi kebisingan Network.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo memanggil API berkali-kali. Tanpa Max-Age, setiap fetch menunggu OPTIONS baru.</p><p class="mb-4">Set Access-Control-Max-Age sekitar 600–7200 detik pada respons OPTIONS. Browser menyimpan hasil preflight.</p><p class="mb-4">Jangan set Max-Age terlalu panjang saat daftar origin masih berubah. Cache lama menolak origin baru.</p><p class="mb-4">Minta AI menghitung interval uji. Tempel rangkaian OPTIONS dari editor.clincoo.buzz.</p><p class="mb-4">Setelah Max-Age aktif, app.clincoo.buzz hanya preflight sekali per sesi singkat.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/cors/">← Kembali ke cors</a>
+</div>
+</body>
+</html>
