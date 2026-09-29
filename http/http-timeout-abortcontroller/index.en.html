@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limit Clincoo Fetch Time with AbortController — Clincoo Blog</title>
+<meta name="description" content="Fetch without a timeout can freeze the UI. AbortController cancels a request that takes too long.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/http/http-timeout-abortcontroller/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Limit Clincoo Fetch Time with AbortController">
+<meta property="og:description" content="Fetch without a timeout can freeze the UI. AbortController cancels a request that takes too long.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/http/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">HTTP</div><h1>Limit Clincoo Fetch Time with AbortController</h1><p class="desc">Fetch without a timeout can freeze the UI. AbortController cancels a request that takes too long.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Requests to app.clincoo.buzz sometimes never finish on a slow network. Without a timeout, the save button on editor.clincoo.buzz stays disabled.</p><p class="mb-4">Create an AbortController, pass its signal to fetch, then setTimeout to call controller.abort() after 8–15 seconds. Catch AbortError separately from network errors.</p><p class="mb-4">Do not abort the same request twice. Clear the timeout when the response arrives so you do not abort after success.</p><p class="mb-4">Paste the AbortError name to AI. Do not ask AI for a complex request queue before you cap a single fetch.</p><p class="mb-4">Clincoo on blog.clincoo.buzz uses static pages; in the app, a timeout is still required so drafts are not stuck.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/http/">← Back to http</a>
+</div>
+</body>
+</html>
