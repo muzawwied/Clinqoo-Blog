@@ -196,4 +196,9 @@
   <url><loc>https://blog.clincoo.buzz/favicon/</loc></url>
   <url><loc>https://blog.clincoo.buzz/favicon/favicon-png-32-dan-ico-bersamaan/</loc></url>
   <url><loc>https://blog.clincoo.buzz/favicon/favicon-apple-touch-icon-180/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-jangan-hardcode-host-api/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-pisahkan-kunci-preview-dan-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/env/env-cek-missing-env-di-pratinjau/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/svg/svg-fokusable-false-pada-path/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/svg/svg-minify-path-sebelum-inline/</loc></url>
 </urlset>
