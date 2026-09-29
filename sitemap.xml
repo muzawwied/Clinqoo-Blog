@@ -55,6 +55,11 @@
   <url><loc>https://blog.clincoo.buzz/worker/worker-path-sama-origin/</loc></url>
   <url><loc>https://blog.clincoo.buzz/worker/worker-satu-tugas-satu-instans/</loc></url>
   <url><loc>https://blog.clincoo.buzz/worker/worker-offscreencanvas-resize/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/worker/worker-unhandledrejection-di-dalam-worker/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/worker/worker-jangan-akses-window-localstorage/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/worker/worker-revoke-objecturl-setelah-terminate/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/worker/worker-ping-heartbeat-agar-tahu-hidup/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/worker/worker-cek-dedicated-bukan-service-worker/</loc></url>
   <url><loc>https://blog.clincoo.buzz/kolaborasi/</loc></url>
   <url><loc>https://blog.clincoo.buzz/kolaborasi/kolaborasi-satu-orang-satu-file/</loc></url>
   <url><loc>https://blog.clincoo.buzz/kolaborasi/kolaborasi-komentar-pada-baris/</loc></url>
