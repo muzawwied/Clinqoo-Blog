@@ -1,0 +1,12 @@
+// Clincoo Blog — artikel ssl 2026-09-30
+(function(){
+  var extra = [{"id": "ssl-mixed-content-aset-http", "langs": {"id": {"title": "Perbaiki Mixed Content: Aset HTTP di Halaman HTTPS Clincoo", "desc": "Gambar atau skrip http:// di halaman https:// diblokir browser. Pratinjau pecah diam-diam.", "content": "<p class=\"mb-4\">Halaman di editor.clincoo.buzz yang dipublish ke HTTPS tetap gagal jika logo atau font masih http://. Konsol menampilkan Mixed Content.</p><p class=\"mb-4\">Ganti semua URL aset ke https:// atau path relatif. Jangan andalkan upgrade-insecure-requests sebagai satu-satunya perbaikan.</p><p class=\"mb-4\">Cek tab Network filter blocked. Screenshot error mixed content, bukan hanya \"gambar hilang\".</p><p class=\"mb-4\">Tempel URL aset plus pesan konsol ke AI. Jangan minta AI mematikan HTTPS di app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz sudah HTTPS; campur protokol merusak gembok dan clipboard API.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Fix Mixed Content: HTTP Assets on a HTTPS Clincoo Page", "desc": "An http:// image or script on an https:// page is blocked. Preview breaks quietly.", "content": "<p class=\"mb-4\">A page on editor.clincoo.buzz published to HTTPS still fails if the logo or font stays on http://. The console shows Mixed Content.</p><p class=\"mb-4\">Change every asset URL to https:// or a relative path. Do not rely on upgrade-insecure-requests as the only fix.</p><p class=\"mb-4\">Check the Network tab with the blocked filter. Screenshot the mixed-content error, not only a missing image.</p><p class=\"mb-4\">Paste the asset URL plus the console message to AI. Do not ask AI to turn off HTTPS on app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz is already HTTPS; mixed protocols break the lock icon and the clipboard API.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["ssl"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["ssl"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
