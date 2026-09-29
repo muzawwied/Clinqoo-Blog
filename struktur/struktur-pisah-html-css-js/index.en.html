@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split HTML, CSS, and JS in a Clincoo Project Folder — Clincoo Blog</title>
+<meta name="description" content="A giant single file is hard to debug. Split markup, styles, and scripts from the start.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/struktur/struktur-pisah-html-css-js/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Split HTML, CSS, and JS in a Clincoo Project Folder">
+<meta property="og:description" content="A giant single file is hard to debug. Split markup, styles, and scripts from the start.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/struktur/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Struktur</div><h1>Split HTML, CSS, and JS in a Clincoo Project Folder</h1><p class="desc">A giant single file is hard to debug. Split markup, styles, and scripts from the start.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz start with a thin index.html that only loads CSS and JS. Do not dump hundreds of style lines in the head.</p><p class="mb-4">Put styles in assets/ and scripts in js/. Folder names must be predictable so AI can point to the right path.</p><p class="mb-4">When stuck, send the folder tree to AI, not every file body. Ask which file should change.</p><p class="mb-4">Avoid circular imports. A UI module must not load a data module that loads UI again.</p><p class="mb-4">The same structure is used on app.clincoo.buzz and blog.clincoo.buzz docs so onboarding stays fast.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/struktur/">← Back to struktur</a>
+</div>
+</body>
+</html>
