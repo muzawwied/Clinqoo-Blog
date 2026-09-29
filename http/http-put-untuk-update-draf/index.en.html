@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use PUT or PATCH to Update a Clincoo Draft, Not Repeated POST — Clincoo Blog</title>
+<meta name="description" content="POSTing to the create URL on every save twins the draft. An update needs a method that targets the same resource.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/http/http-put-untuk-update-draf/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use PUT or PATCH to Update a Clincoo Draft, Not Repeated POST">
+<meta property="og:description" content="POSTing to the create URL on every save twins the draft. An update needs a method that targets the same resource.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/http/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">HTTP</div><h1>Use PUT or PATCH to Update a Clincoo Draft, Not Repeated POST</h1><p class="desc">POSTing to the create URL on every save twins the draft. An update needs a method that targets the same resource.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A save button on editor.clincoo.buzz that always POSTs to /drafts creates a new row on app.clincoo.buzz.</p><p class="mb-4">Once the draft has an id, send PUT or PATCH to /drafts/:id. POST is only for the first create.</p><p class="mb-4">If the API only accepts POST, send the same id field and ask the server to upsert. Do not guess from the page title.</p><p class="mb-4">Paste two save logs (create then update) to AI. Do not ask AI to mint a new UUID on every keystroke.</p><p class="mb-4">Clincoo on blog.clincoo.buzz does not write drafts via POST; in the editor, the HTTP method keeps one document as one.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/http/">← Back to http</a>
+</div>
+</body>
+</html>

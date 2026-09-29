@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai PUT atau PATCH untuk Update Draf Clincoo, Bukan POST Berulang — Clincoo Blog</title>
+<meta name="description" content="POST ke URL create setiap simpan membuat draf kembar. Update butuh method yang menunjuk resource yang sama.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/http/http-put-untuk-update-draf/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai PUT atau PATCH untuk Update Draf Clincoo, Bukan POST Berulang">
+<meta property="og:description" content="POST ke URL create setiap simpan membuat draf kembar. Update butuh method yang menunjuk resource yang sama.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/http/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">HTTP</div><h1>Pakai PUT atau PATCH untuk Update Draf Clincoo, Bukan POST Berulang</h1><p class="desc">POST ke URL create setiap simpan membuat draf kembar. Update butuh method yang menunjuk resource yang sama.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Tombol simpan di editor.clincoo.buzz yang selalu POST ke /drafts membuat baris baru di app.clincoo.buzz.</p><p class="mb-4">Setelah draf punya id, kirim PUT atau PATCH ke /drafts/:id. POST hanya untuk create pertama.</p><p class="mb-4">Jika API hanya menerima POST, kirim field id yang sama dan minta server upsert. Jangan tebak dari judul halaman.</p><p class="mb-4">Tempel dua log simpan (create lalu update) ke AI. Jangan minta AI menambah UUID baru setiap keystroke.</p><p class="mb-4">Clincoo di blog.clincoo.buzz tidak menulis draf lewat POST; di editor, method HTTP menjaga satu dokumen tetap satu.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/http/">← Kembali ke http</a>
+</div>
+</body>
+</html>

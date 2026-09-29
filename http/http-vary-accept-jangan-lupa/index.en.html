@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Include Vary: Accept on Clincoo API Responses — Clincoo Blog</title>
+<meta name="description" content="A cache without Vary: Accept can store an HTML error for the next JSON request.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/http/http-vary-accept-jangan-lupa/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Include Vary: Accept on Clincoo API Responses">
+<meta property="og:description" content="A cache without Vary: Accept can store an HTML error for the next JSON request.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/http/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">HTTP</div><h1>Include Vary: Accept on Clincoo API Responses</h1><p class="desc">A cache without Vary: Accept can store an HTML error for the next JSON request.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">JSON fetches to app.clincoo.buzz sometimes share a URL with an HTML page. Without Vary: Accept, the CDN stores one copy for every client.</p><p class="mb-4">Set Vary: Accept (and Authorization if the body differs per session) on the editor.clincoo.buzz API. The cache key must include negotiation headers.</p><p class="mb-4">Do not use one URL for HTML preview and draft JSON. Split the path if Vary tanks the hit rate.</p><p class="mb-4">Paste the Accept request header plus the Vary response to AI. Do not ask AI to disable site-wide cache before you inspect one URL.</p><p class="mb-4">Clincoo on blog.clincoo.buzz serves static HTML; the app API must distinguish types with Vary.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/http/">← Back to http</a>
+</div>
+</body>
+</html>
