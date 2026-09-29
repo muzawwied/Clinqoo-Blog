@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["gambar"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel gambar tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "gambar-cek-404-src-sebelum-publish", "langs": {"id": {"title": "Cek Src Gambar 404 sebelum Publish", "desc": "Hero pecah di pratinjau Clincoo hampir selalu path salah, bukan CSS. Pastikan file ada dan URL relatif benar.", "content": "<p class=\"mb-4\">Buka Network di DevTools pratinjau editor.clincoo.buzz, filter Img, muat ulang. Status 404 artinya path atau nama file salah.</p><p class=\"mb-4\">Samakan huruf besar-kecil dengan folder aset. Hosting app.clincoo.buzz membedakan Hero.png dan hero.png.</p><p class=\"mb-4\">Utamakan path relatif dari berkas HTML yang memuat gambar. Hindari URL localhost yang hanya hidup di mesin Anda.</p><p class=\"mb-4\">Kalau AI mengarang nama file, cocokkan dengan daftar folder. Jangan terima src baru tanpa bukti file itu ada.</p><p class=\"mb-4\">Setelah path benar, baru pikirkan kompresi dan srcset. Gambar yang 404 tidak bisa dioptimasi.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Check Image Src 404s before You Publish", "desc": "A broken hero in the Clincoo preview is almost always a bad path, not CSS. Confirm the file exists and the relative URL is right.", "content": "<p class=\"mb-4\">Open Network in the editor.clincoo.buzz preview DevTools, filter Img, reload. Status 404 means the path or file name is wrong.</p><p class=\"mb-4\">Match letter case with the assets folder. Hosting on app.clincoo.buzz treats Hero.png and hero.png as different files.</p><p class=\"mb-4\">Prefer a path relative to the HTML file that embeds the image. Avoid localhost URLs that only exist on your machine.</p><p class=\"mb-4\">If AI invents a file name, match it against the folder list. Do not accept a new src without proof the file exists.</p><p class=\"mb-4\">Once the path is correct, then think about compression and srcset. A 404 image cannot be optimized.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["gambar"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["gambar"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
