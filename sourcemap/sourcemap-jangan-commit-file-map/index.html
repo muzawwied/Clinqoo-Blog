@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Commit File .map Clincoo ke Repositori Publik — Clincoo Blog</title>
+<meta name="description" content="Berkas .map di git publik sama dengan membuka sumber minify. Abaikan atau simpan privat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/sourcemap/sourcemap-jangan-commit-file-map/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Commit File .map Clincoo ke Repositori Publik">
+<meta property="og:description" content="Berkas .map di git publik sama dengan membuka sumber minify. Abaikan atau simpan privat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/sourcemap/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Source Map</div><h1>Jangan Commit File .map Clincoo ke Repositori Publik</h1><p class="desc">Berkas .map di git publik sama dengan membuka sumber minify. Abaikan atau simpan privat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Build Clincoo menaruh app.js.map di folder dist yang ikut di-commit. Siapa pun mengkloning repo melihat sumber asli.</p>
+<p class="mb-4">Tambah *.map ke .gitignore jika map hanya untuk debug lokal. Jika tim butuh map produksi, unggah ke bucket privat, bukan Pages publik.</p>
+<p class="mb-4">Cek git status sebelum commit dari editor.clincoo.buzz. File .map yang besar juga memperlambat clone.</p>
+<p class="mb-4">Minta AI meninjau .gitignore dan output bundler. Tempel daftar file dist, bukan seluruh repo.</p>
+<p class="mb-4">Clincoo menayangkan file yang kamu unggah. Tanpa .map di repo publik, app.clincoo.buzz tidak membocorkan sumber.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/sourcemap/">← Kembali ke sourcemap</a>
+</div>
+</body>
+</html>
