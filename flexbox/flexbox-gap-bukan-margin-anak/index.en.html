@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Flexbox gap, Not Child Margins in Clincoo — Clincoo Blog</title>
+<meta name="description" content="Margins on flex items often break left-right alignment. Put gap on the container.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/flexbox/flexbox-gap-bukan-margin-anak/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Flexbox gap, Not Child Margins in Clincoo">
+<meta property="og:description" content="Margins on flex items often break left-right alignment. Put gap on the container.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/flexbox/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Flexbox</div><h1>Use Flexbox gap, Not Child Margins in Clincoo</h1><p class="desc">Margins on flex items often break left-right alignment. Put gap on the container.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, button rows often misalign because the last child still has margin-right. gap on the parent does not add space on the edges.</p><p class="mb-4">Set display:flex and gap:0.75rem on one container class. Remove horizontal margins on children so width math stays consistent.</p><p class="mb-4">In DevTools select the parent and inspect the flex overlay. If children overflow, shrink flex-basis or allow wrap.</p><p class="mb-4">Paste the failing CSS rule to AI. Do not ask AI for a full grid if the only issue is spacing between buttons.</p><p class="mb-4">Preview on app.clincoo.buzz and blog.clincoo.buzz at a narrow width so wrap shows before release.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/flexbox/">← Back to flexbox</a>
+</div>
+</body>
+</html>
