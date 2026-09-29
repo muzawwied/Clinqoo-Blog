@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Cache-Control: immutable pada Draf HTML Clincoo — Clincoo Blog</title>
+<meta name="description" content="immutable membuat CDN menahan HTML draf. Setelah simpan di editor, pratinjau masih menampilkan versi lama.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/http/http-cache-control-draf-bukan-immutable/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Cache-Control: immutable pada Draf HTML Clincoo">
+<meta property="og:description" content="immutable membuat CDN menahan HTML draf. Setelah simpan di editor, pratinjau masih menampilkan versi lama.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/http/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">HTTP</div><h1>Jangan Cache-Control: immutable pada Draf HTML Clincoo</h1><p class="desc">immutable membuat CDN menahan HTML draf. Setelah simpan di editor, pratinjau masih menampilkan versi lama.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">HTML halaman draf di editor.clincoo.buzz berubah setiap simpan. Header immutable atau max-age panjang menahan salinan di edge.</p><p class="mb-4">Pakai Cache-Control: no-store pada HTML yang memuat token atau isi draf. Aset statis (CSS, logo) boleh max-age panjang plus hash nama file.</p><p class="mb-4">Jika pratinjau tidak berubah, buka DevTools Network, lihat header respons, lalu purge CDN. Jangan tebak 'browser rusak'.</p><p class="mb-4">Kirim screenshot header ke AI. Jangan minta AI menulis service worker baru sebelum Anda cek Cache-Control.</p><p class="mb-4">Clincoo di app.clincoo.buzz memisahkan cache HTML dinamis dan aset hashed.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/http/">← Kembali ke http</a>
+</div>
+</body>
+</html>
