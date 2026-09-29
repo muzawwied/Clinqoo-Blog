@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["typography"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel typography tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "typography-line-height-bacaan-panjang", "langs": {"id": {"title": "Naikkan Line-Height pada Teks Bacaan Panjang Clincoo", "desc": "Teks padat di kartu blog sulit dibaca di ponsel. Pisahkan line-height judul dan paragraf.", "content": "<p class=\"mb-4\">Banyak template Clincoo memakai line-height 1.2 untuk semua teks. Paragraf di blog.clincoo.buzz lalu terasa sesak di layar sempit.</p><p class=\"mb-4\">Di editor.clincoo.buzz, set heading ke 1.2–1.3 dan body ke 1.5–1.7. Jangan wariskan satu nilai dari body ke h1.</p><p class=\"mb-4\">Uji di pratinjau mobile: jika baris saling menempel, naikkan line-height body saja, bukan font-size global.</p><p class=\"mb-4\">Minta AI mengusulkan token tipografi, bukan rewrite CSS lengkap app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo tetap memakai font merek; yang diubah hanya jarak baris bacaan.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Raise Line-Height on Long-Form Clincoo Text", "desc": "Dense text on blog cards is hard to read on a phone. Split heading and paragraph line-height.", "content": "<p class=\"mb-4\">Many Clincoo templates use line-height 1.2 for every text node. Paragraphs on blog.clincoo.buzz then feel cramped on a narrow screen.</p><p class=\"mb-4\">On editor.clincoo.buzz, set headings to 1.2–1.3 and body copy to 1.5–1.7. Do not inherit one value from body onto h1.</p><p class=\"mb-4\">Test in mobile preview: if lines stick together, raise body line-height only, not the global font-size.</p><p class=\"mb-4\">Ask AI for typography tokens, not a full CSS rewrite of app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo keeps the brand font; only reading line gap changes.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["typography"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["typography"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
