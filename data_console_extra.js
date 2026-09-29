@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["console"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel console tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "console-baca-stack-bukan-satu-baris", "langs": {"id": {"title": "Baca Stack Console, Bukan Hanya Satu Baris Merah", "desc": "Pesan error tanpa stack menyesatkan. Buka baris sumber di DevTools sebelum mengubah file Clincoo.", "content": "<p class=\"mb-4\">Banyak orang menyalin hanya teks Uncaught TypeError ke AI. Tanpa stack, AI menebak file yang salah di editor.clincoo.buzz.</p><p class=\"mb-4\">Klik segitiga di Console, buka frame pertama yang milik kode Anda, bukan milik pustaka. Catat nama file dan nomor baris.</p><p class=\"mb-4\">Jika sumber menunjuk berkas minify, hidupkan sourcemap di pratinjau. Jangan mengedit berkas hasil build.</p><p class=\"mb-4\">Tempel stack lengkap ke AI dan minta satu perbaikan. Jangan minta rewrite seluruh app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz lebih cepat diperbaiki bila stack dibaca sebelum kode diubah.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Read the Console Stack, Not Only the Red Line", "desc": "An error message without a stack misleads you. Open the source line in DevTools before you change a Clincoo file.", "content": "<p class=\"mb-4\">Many people paste only Uncaught TypeError into AI. Without a stack, AI guesses the wrong file on editor.clincoo.buzz.</p><p class=\"mb-4\">Expand the Console row, open the first frame that belongs to your code, not a library. Note the file name and line number.</p><p class=\"mb-4\">If the source points at a minified file, enable sourcemaps in preview. Do not edit the build output.</p><p class=\"mb-4\">Paste the full stack to AI and ask for one fix. Do not ask it to rewrite all of app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz is faster to repair when you read the stack before you change code.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["console"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["console"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
