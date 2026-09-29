@@ -1,1 +1,14 @@
-SEE_FILE
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://blog.clincoo.buzz/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/flexbox/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/flexbox/flexbox-gap-bukan-margin-anak/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/grid/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/grid/grid-minmax-kolom-responsif/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/error/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/error/error-baca-stack-console-dulu/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/fetch/fetch-cek-res-ok-sebelum-json/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/css/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/css/css-specificity-cek-devtools/</loc></url>
+</urlset>
