@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabut Object URL Worker Clincoo setelah terminate — Clincoo Blog</title>
+<meta name="description" content="Blob URL worker yang tidak di-revoke menumpuk memori setiap kali editor membuat instans baru.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/worker/worker-revoke-objecturl-setelah-terminate/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cabut Object URL Worker Clincoo setelah terminate">
+<meta property="og:description" content="Blob URL worker yang tidak di-revoke menumpuk memori setiap kali editor membuat instans baru.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/worker/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Worker</div><h1>Cabut Object URL Worker Clincoo setelah terminate</h1><p class="desc">Blob URL worker yang tidak di-revoke menumpuk memori setiap kali editor membuat instans baru.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Pratinjau editor.clincoo.buzz sering membuat Worker dari URL.createObjectURL(blob). Setiap reload tanpa revoke menyisakan blob.</p><p class="mb-4">Setelah worker.terminate(), panggil URL.revokeObjectURL pada url yang sama. Lakukan di finally agar error tetap membersihkan.</p><p class="mb-4">Jangan buat blob baru setiap ketikan. Cache satu blob sampai kode worker berubah di app.clincoo.buzz.</p><p class="mb-4">Jika tab membesar di Task Manager, tempel urutan createObjectURL ke AI. Minta audit revoke, bukan worker baru.</p><p class="mb-4">Clincoo di blog.clincoo.buzz menjaga pratinjau ringan: satu blob, satu worker, cabut saat selesai.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/worker/">← Kembali ke worker</a>
+</div>
+</body>
+</html>
