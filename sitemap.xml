@@ -62,4 +62,9 @@
   <url><loc>https://blog.clincoo.buzz/http/http-put-untuk-update-draf/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ssl/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ssl/ssl-mixed-content-aset-http/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-alihkan-http-ke-https/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-cek-gembok-setelah-deploy/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-hsts-setelah-https-stabil/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-websocket-wss-bukan-ws/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-peringatan-sertifikat-kedaluwarsa/</loc></url>
 </urlset>
