@@ -1,12 +1,1 @@
-// Clincoo Blog — artikel print tambahan 2026-09-30
-(function(){
-  var extra = [{"id": "print-background-izin-browser", "langs": {"id": {"title": "Aktifkan Cetak Warna Latar di Browser untuk Halaman Clincoo", "desc": "Browser sering mematikan background-color saat print. Izinkan grafis latar agar kartu Clincoo tetap terbaca.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, kartu harga yang andalkan background hilang jadi kotak putih saat Print Preview. Itu pengaturan browser, bukan CSS yang rusak.</p><p class=\"mb-4\">Tambah -webkit-print-color-adjust: exact dan print-color-adjust: exact pada blok yang wajib berwarna. Jangan andalkan background pada seluruh body.</p><p class=\"mb-4\">Di Chrome, buka Print > More settings > centang Background graphics. Simpan langkah ini di catatan rilis halaman invoice Clincoo.</p><p class=\"mb-4\">Tempel screenshot preview kosong ke AI. Jangan minta AI menulis ulang seluruh stylesheet jika yang hilang hanya warna kartu.</p><p class=\"mb-4\">Uji hasil di app.clincoo.buzz lalu bandingkan pratinjau kertas di blog.clincoo.buzz sebelum klien mencetak.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Enable Background Colors When Printing a Clincoo Page", "desc": "Browsers often drop background-color on print. Allow background graphics so Clincoo cards stay readable.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz, price cards that rely on background become empty white boxes in Print Preview. That is a browser setting, not broken CSS.</p><p class=\"mb-4\">Add -webkit-print-color-adjust: exact and print-color-adjust: exact on blocks that must keep color. Do not paint the entire body.</p><p class=\"mb-4\">In Chrome open Print > More settings > enable Background graphics. Keep this step in the Clincoo invoice page release notes.</p><p class=\"mb-4\">Paste a screenshot of the blank preview to AI. Do not ask AI to rewrite the whole stylesheet if only card color is missing.</p><p class=\"mb-4\">Test on app.clincoo.buzz then compare paper preview on blog.clincoo.buzz before a client prints.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
-  function merge(){
-    if (!window.countryDataFiles || !window.countryDataFiles["print"]) { setTimeout(merge, 30); return; }
-    var arr = window.countryDataFiles["print"].articles;
-    var have = {};
-    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
-    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
-  }
-  merge();
-})();
+// placeholder
