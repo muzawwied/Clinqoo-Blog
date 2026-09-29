@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["struktur"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel struktur tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "struktur-pisah-html-css-js", "langs": {"id": {"title": "Pisahkan HTML, CSS, dan JS di Folder Proyek Clincoo", "desc": "Satu berkas raksasa sulit di-debug. Pisahkan markup, gaya, dan skrip sejak awal.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, mulai dari index.html tipis yang hanya memuat CSS dan JS. Jangan sisipkan ratusan baris style di head.</p><p class=\"mb-4\">Taruh gaya di assets/ dan skrip di js/. Nama folder harus prediktabel agar AI bisa menunjuk path yang benar.</p><p class=\"mb-4\">Jika Anda stuck, kirim pohon folder ke AI, bukan isi semua file. Minta AI menunjukkan file mana yang harus diubah.</p><p class=\"mb-4\">Hindari circular import. Satu modul UI tidak boleh memuat modul data yang memuat UI lagi.</p><p class=\"mb-4\">Struktur yang sama dipakai di app.clincoo.buzz dan dokumentasi blog.clincoo.buzz agar onboarding cepat.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Split HTML, CSS, and JS in a Clincoo Project Folder", "desc": "A giant single file is hard to debug. Split markup, styles, and scripts from the start.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz start with a thin index.html that only loads CSS and JS. Do not dump hundreds of style lines in the head.</p><p class=\"mb-4\">Put styles in assets/ and scripts in js/. Folder names must be predictable so AI can point to the right path.</p><p class=\"mb-4\">When stuck, send the folder tree to AI, not every file body. Ask which file should change.</p><p class=\"mb-4\">Avoid circular imports. A UI module must not load a data module that loads UI again.</p><p class=\"mb-4\">The same structure is used on app.clincoo.buzz and blog.clincoo.buzz docs so onboarding stays fast.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["struktur"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["struktur"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

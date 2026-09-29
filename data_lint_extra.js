@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["lint"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel lint tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "lint-baca-satu-error-dulu", "langs": {"id": {"title": "Baca Satu Error Lint Dulu, Jangan Semua Sekaligus", "desc": "Perbaiki error lint paling atas dulu. Banyak warning ikut hilang setelah satu perbaikan di Clincoo.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, daftar lint sering penuh karena satu koma atau tanda kutip rusak. Jangan minta AI memperbaiki 40 baris sekaligus.</p><p class=\"mb-4\">Buka baris pertama yang merah. Perbaiki itu, simpan, lalu lihat ulang. Aturan no-undef dan missing-semicolon sering berantai.</p><p class=\"mb-4\">Salin pesan error mentah ke AI, plus 10 baris sekitarnya. Jangan tempel seluruh berkas app.clincoo.buzz.</p><p class=\"mb-4\">Matikan aturan yang tidak relevan di proyek kecil, tetapi catat di README supaya tim tahu.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz memakai alur yang sama: satu error, satu perbaikan, baru commit.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Read One Lint Error First, Not the Whole List", "desc": "Fix the top lint error first. Many warnings disappear after one fix in Clincoo.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz the lint list is often full because of one broken comma or quote. Do not ask AI to fix 40 lines at once.</p><p class=\"mb-4\">Open the first red line. Fix it, save, then recheck. no-undef and missing-semicolon rules often cascade.</p><p class=\"mb-4\">Paste the raw error plus about 10 nearby lines to AI. Do not paste the whole app.clincoo.buzz file.</p><p class=\"mb-4\">Disable rules that do not matter on a small project, but note them in the README so the team knows.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz uses the same flow: one error, one fix, then commit.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["lint"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["lint"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
