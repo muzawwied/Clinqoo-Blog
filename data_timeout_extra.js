@@ -1,0 +1,12 @@
+// Clincoo Blog — artikel timeout tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "timeout-abortsignal-any-gabung-sinyal", "langs": {"id": {"title": "Gabungkan Timeout dan Batal Pengguna Clincoo dengan AbortSignal.any", "desc": "Dua controller terpisah mudah lupa di-abort. Satu sinyal gabungan membatalkan fetch dari waktu atau dari tombol batal.", "content": "<p class=\"mb-4\">Fetch simpan Clincoo punya timer sendiri dan tombol batal sendiri. Salah satu jalan, listener yang lain masih hidup.</p><p class=\"mb-4\">Pakai AbortSignal.any jika browser mendukung, atau bungkus dua sinyal di editor.clincoo.buzz. Abort sekali untuk semua alasan.</p><p class=\"mb-4\">Tampilkan pesan berbeda: habis waktu versus dibatalkan pengguna. Jangan samakan keduanya sebagai error jaringan.</p><p class=\"mb-4\">Minta AI menulis wrapper fetch dengan satu signal. Tempel cuplikan AbortController, bukan seluruh app.</p><p class=\"mb-4\">Clincoo di app.clincoo.buzz berhenti menunggu ketika pengguna batal atau batas waktu tercapai.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo"}, "en": {"title": "Combine Clincoo Timeout and User Cancel with AbortSignal.any", "desc": "Two separate controllers are easy to forget to abort. One combined signal cancels fetch from time or from a cancel button.", "content": "<p class=\"mb-4\">A Clincoo save fetch has its own timer and its own cancel button. One path fires, the other listener stays alive.</p><p class=\"mb-4\">Use AbortSignal.any when the browser supports it, or wrap two signals in editor.clincoo.buzz. Abort once for every reason.</p><p class=\"mb-4\">Show different copy: timed out versus user canceled. Do not treat both as a network error.</p><p class=\"mb-4\">Ask AI to write a fetch wrapper with one signal. Paste the AbortController snippet, not the whole app.</p><p class=\"mb-4\">Clincoo on app.clincoo.buzz stops waiting when the user cancels or the time limit hits.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["timeout"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["timeout"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
