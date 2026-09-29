@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["seo"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel seo tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "seo-title-unik-setiap-halaman", "langs": {"id": {"title": "Buat Title Unik untuk Setiap Halaman Clincoo", "desc": "Title yang sama di semua rute membuat hasil cari bertumpuk. Tulis title dari isi halaman, bukan nama merek saja.", "content": "<p class=\"mb-4\">Template Clincoo sering menyalin satu title ke setiap index.html. Mesin cari lalu menampilkan judul identik untuk rute berbeda.</p><p class=\"mb-4\">Di editor.clincoo.buzz, set document.title saat rute berubah. Gabungkan topik halaman plus merek Clincoo di akhir, bukan di depan saja.</p><p class=\"mb-4\">Cek pratinjau: buka tiga URL, lihat tab browser. Jika ketiganya sama, title masih statis.</p><p class=\"mb-4\">Minta AI merangkum H1 jadi title 50–60 karakter. Jangan minta AI menulis meta untuk seluruh situs app.clincoo.buzz sekaligus.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz memakai title per artikel; halaman Anda harus sama ketatnya.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Give Every Clincoo Page a Unique Title", "desc": "The same title on every route stacks search results. Write the title from the page body, not the brand alone.", "content": "<p class=\"mb-4\">Clincoo templates often copy one title into every index.html. Search engines then show identical titles for different routes.</p><p class=\"mb-4\">On editor.clincoo.buzz, set document.title when the route changes. Put the page topic first and the Clincoo brand at the end.</p><p class=\"mb-4\">Check preview: open three URLs and look at the browser tabs. If all three match, the title is still static.</p><p class=\"mb-4\">Ask AI to turn the H1 into a 50–60 character title. Do not ask AI to write meta for all of app.clincoo.buzz at once.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz uses a title per article; your pages should be just as strict.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["seo"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["seo"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
