@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["error"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel error tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "error-baca-stack-console-dulu", "langs": {"id": {"title": "Baca Stack Console Dulu Sebelum Minta AI Clincoo", "desc": "Jangan tempel hanya pesan merah satu baris. Buka stack dan file sumber.", "content": "<p class=\"mb-4\">Error di pratinjau editor.clincoo.buzz hampir selalu punya stack. Baris pertama sering dari bundler, bukan kode Anda.</p><p class=\"mb-4\">Klik segitiga di Console, buka frame yang mengarah ke file Anda. Catat nama fungsi dan nomor baris.</p><p class=\"mb-4\">Salin stack utuh ke AI. Sertakan satu snippet 10 baris di sekitar lokasi. Jangan minta rewrite seluruh berkas.</p><p class=\"mb-4\">Jika Uncaught TypeError: Cannot read properties of null, cek elemen belum ada saat skrip jalan. Tunggu DOMContentLoaded.</p><p class=\"mb-4\">Setelah perbaikan, muat ulang app.clincoo.buzz dengan cache mati. Dokumentasikan pola error di blog.clincoo.buzz agar tim sama-sama cek stack dulu.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Read the Console Stack Before Asking Clincoo AI", "desc": "Do not paste only the one-line red message. Open the stack and the source file.", "content": "<p class=\"mb-4\">Errors in the editor.clincoo.buzz preview almost always include a stack. The first line is often the bundler, not your code.</p><p class=\"mb-4\">Expand the Console triangle and open the frame that points at your file. Note the function name and line number.</p><p class=\"mb-4\">Copy the full stack to AI. Include a 10-line snippet around the site. Do not ask for a full file rewrite.</p><p class=\"mb-4\">On Uncaught TypeError: Cannot read properties of null, the element is missing when the script runs. Wait for DOMContentLoaded.</p><p class=\"mb-4\">After the fix, reload app.clincoo.buzz with cache disabled. Document the error pattern on blog.clincoo.buzz so the team always reads the stack first.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["error"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["error"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

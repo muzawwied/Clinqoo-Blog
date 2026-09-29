@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["css"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel css tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "css-specificity-cek-devtools", "langs": {"id": {"title": "Cek Specificity CSS di DevTools Clincoo", "desc": "Jika gaya tidak jalan, lihat aturan yang dicoret di Computed, bukan tebak !important.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, kelas baru sering kalah karena selektor lama lebih spesifik. Jangan langsung tambah !important.</p><p class=\"mb-4\">Pilih elemen di DevTools, buka tab Styles. Aturan yang dicoret kalah specificity atau urutan berkas.</p><p class=\"mb-4\">Naikkan specificity dengan satu kelas parent, atau pindahkan berkas agar urutan benar. Hindari ID untuk gaya komponen.</p><p class=\"mb-4\">Kirim screenshot Styles yang dicoret ke AI. Jangan minta AI menulis ulang seluruh stylesheet.</p><p class=\"mb-4\">Uji tema terang di app.clincoo.buzz. Dokumentasikan selektor pemenang di blog.clincoo.buzz agar tidak diulang.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Check CSS Specificity in Clincoo DevTools", "desc": "If a style does not apply, inspect the crossed-out rule in Computed instead of guessing !important.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz, a new class often loses because an older selector is more specific. Do not jump to !important.</p><p class=\"mb-4\">Select the element in DevTools and open Styles. A crossed-out rule lost on specificity or file order.</p><p class=\"mb-4\">Raise specificity with one parent class, or move the file so order is correct. Avoid IDs for component styles.</p><p class=\"mb-4\">Send a screenshot of the crossed-out Styles to AI. Do not ask AI to rewrite the whole stylesheet.</p><p class=\"mb-4\">Test the light theme on app.clincoo.buzz. Document the winning selector on blog.clincoo.buzz so it is not repeated.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["css"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["css"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

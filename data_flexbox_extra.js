@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["flexbox"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel flexbox tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "flexbox-gap-bukan-margin-anak", "langs": {"id": {"title": "Pakai gap Flexbox, Bukan Margin Anak di Clincoo", "desc": "Margin pada item flex sering pecah rata kiri-kanan. Gunakan gap pada kontainer.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, baris tombol sering tidak rata karena margin-right pada anak terakhir masih ada. gap pada parent tidak menambah ruang di tepi.</p><p class=\"mb-4\">Set display:flex dan gap:0.75rem pada satu kelas kontainer. Hapus margin horizontal pada anak agar hitungan lebar konsisten.</p><p class=\"mb-4\">Cek DevTools: pilih parent, lihat flex overlay. Jika anak terdorong keluar, kurangi flex-basis atau izinkan wrap.</p><p class=\"mb-4\">Tempel aturan CSS yang gagal ke AI. Jangan minta AI menulis grid lengkap jika masalahnya hanya jarak antar tombol.</p><p class=\"mb-4\">Pratinjau hasil di app.clincoo.buzz dan blog.clincoo.buzz dengan lebar sempit supaya wrap terlihat sebelum rilis.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Use Flexbox gap, Not Child Margins in Clincoo", "desc": "Margins on flex items often break left-right alignment. Put gap on the container.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz, button rows often misalign because the last child still has margin-right. gap on the parent does not add space on the edges.</p><p class=\"mb-4\">Set display:flex and gap:0.75rem on one container class. Remove horizontal margins on children so width math stays consistent.</p><p class=\"mb-4\">In DevTools select the parent and inspect the flex overlay. If children overflow, shrink flex-basis or allow wrap.</p><p class=\"mb-4\">Paste the failing CSS rule to AI. Do not ask AI for a full grid if the only issue is spacing between buttons.</p><p class=\"mb-4\">Preview on app.clincoo.buzz and blog.clincoo.buzz at a narrow width so wrap shows before release.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["flexbox"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["flexbox"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

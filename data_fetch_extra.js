@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["fetch"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel fetch tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "fetch-cek-res-ok-sebelum-json", "langs": {"id": {"title": "Cek res.ok Sebelum res.json di Fetch Clincoo", "desc": "HTTP 400 tetap bisa diparse sebagai JSON. Status harus dicek dulu.", "content": "<p class=\"mb-4\">Fetch di editor.clincoo.buzz sering dianggap sukses hanya karena promise tidak reject. Status 400 dan 500 tidak melempar otomatis.</p><p class=\"mb-4\">Setelah const res = await fetch(url), cek if (!res.ok) lalu baca teks error. Baru panggil res.json() saat status 2xx.</p><p class=\"mb-4\">Tampilkan pesan ke pengguna dari body error, bukan hanya Failed to fetch. Failed to fetch biasanya jaringan atau CORS.</p><p class=\"mb-4\">Tempel status, URL, dan potongan body ke AI. Jangan minta AI menambah retry agresif sebelum Anda baca status.</p><p class=\"mb-4\">Samakan penanganan di app.clincoo.buzz dan catatan di blog.clincoo.buzz supaya draf dan produksi tidak beda diam-diam.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Check res.ok Before res.json in Clincoo Fetch", "desc": "HTTP 400 can still parse as JSON. Check the status first.", "content": "<p class=\"mb-4\">Fetch on editor.clincoo.buzz is often treated as success only because the promise did not reject. Status 400 and 500 do not throw by default.</p><p class=\"mb-4\">After const res = await fetch(url), check if (!res.ok) then read the error text. Call res.json() only on 2xx.</p><p class=\"mb-4\">Show the user a message from the error body, not only Failed to fetch. Failed to fetch is usually network or CORS.</p><p class=\"mb-4\">Paste the status, URL, and a body snippet to AI. Do not ask AI for aggressive retries before you read the status.</p><p class=\"mb-4\">Keep the same handling on app.clincoo.buzz and the note on blog.clincoo.buzz so draft and production do not drift.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["fetch"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["fetch"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
