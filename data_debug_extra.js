@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["debug"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel debug tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "debug-breakpoint-pada-handler-event", "langs": {"id": {"title": "Pasang Breakpoint pada Handler Event, Bukan di Setiap Baris", "desc": "debugger di setiap fungsi memperlambat pratinjau Clincoo. Hentikan hanya di handler yang gagal.", "content": "<p class=\"mb-4\">Menaruh debugger di puncak berkas membuat editor.clincoo.buzz berhenti sebelum Anda melihat UI. Pilih satu handler klik atau submit.</p><p class=\"mb-4\">Di DevTools, buka Sources, cari fungsi handler, pasang breakpoint. Muat ulang pratinjau dan ulangi aksi yang rusak.</p><p class=\"mb-4\">Periksa nilai argumen event dan this. Jika target bukan elemen yang Anda kira, masalahnya delegasi, bukan logika bisnis.</p><p class=\"mb-4\">Minta AI menjelaskan satu fungsi handler. Jangan minta AI menaruh debugger di seluruh proyek app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz memakai alur yang sama: satu titik henti, satu hipotesis.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Set a Breakpoint on the Event Handler, Not on Every Line", "desc": "A debugger in every function slows Clincoo preview. Pause only in the handler that fails.", "content": "<p class=\"mb-4\">Putting debugger at the top of a file stops editor.clincoo.buzz before you see the UI. Pick one click or submit handler.</p><p class=\"mb-4\">In DevTools, open Sources, find the handler, set a breakpoint. Reload preview and repeat the broken action.</p><p class=\"mb-4\">Inspect the event argument and this. If the target is not the element you expect, the issue is delegation, not business logic.</p><p class=\"mb-4\">Ask AI to explain one handler function. Do not ask AI to drop debugger across all of app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz uses the same flow: one pause point, one hypothesis.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["debug"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["debug"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
