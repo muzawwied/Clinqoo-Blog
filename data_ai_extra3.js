@@ -1,9 +1,1 @@
-// Clincoo Blog — artikel ai tambahan (dikosongkan saat audit kualitas)
-(function(){
-  var extra = [];
-  if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
-  var base = window.countryDataFiles["ai"];
-  if (base && Array.isArray(base.articles)) {
-    base.articles = base.articles.concat(extra);
-  }
-})();
+(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["ai"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
