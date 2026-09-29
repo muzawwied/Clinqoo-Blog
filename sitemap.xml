@@ -44,6 +44,8 @@
   <url><loc>https://blog.clincoo.buzz/timezone/timezone-satu-sumber-waktu-server/</loc></url>
   <url><loc>https://blog.clincoo.buzz/timezone/timezone-countdown-dari-utc/</loc></url>
   <url><loc>https://blog.clincoo.buzz/timezone/timezone-datetime-local-ke-utc/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/timezone/timezone-iso-offset-bukan-slash-tanggal/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/timezone/timezone-event-lintas-tengah-malam/</loc></url>
   <url><loc>https://blog.clincoo.buzz/aksesibilitas/</loc></url>
   <url><loc>https://blog.clincoo.buzz/aksesibilitas/aksesibilitas-cek-keyboard-tanpa-mouse/</loc></url>
   <url><loc>https://blog.clincoo.buzz/aksesibilitas/aksesibilitas-prefers-reduced-motion/</loc></url>
@@ -56,4 +58,8 @@
   <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-vite-dev-vs-build/</loc></url>
   <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-cors-saat-load-map/</loc></url>
   <url><loc>https://blog.clincoo.buzz/sourcemap/sourcemap-breakpoint-baris-geser/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/http/http-vary-accept-jangan-lupa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/http/http-put-untuk-update-draf/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-mixed-content-aset-http/</loc></url>
 </urlset>
