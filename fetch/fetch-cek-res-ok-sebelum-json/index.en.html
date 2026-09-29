@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check res.ok Before res.json in Clincoo Fetch — Clincoo Blog</title>
+<meta name="description" content="HTTP 400 can still parse as JSON. Check the status first.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-cek-res-ok-sebelum-json/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Check res.ok Before res.json in Clincoo Fetch">
+<meta property="og:description" content="HTTP 400 can still parse as JSON. Check the status first.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Check res.ok Before res.json in Clincoo Fetch</h1><p class="desc">HTTP 400 can still parse as JSON. Check the status first.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Fetch on editor.clincoo.buzz is often treated as success only because the promise did not reject. Status 400 and 500 do not throw by default.</p><p class="mb-4">After const res = await fetch(url), check if (!res.ok) then read the error text. Call res.json() only on 2xx.</p><p class="mb-4">Show the user a message from the error body, not only Failed to fetch. Failed to fetch is usually network or CORS.</p><p class="mb-4">Paste the status, URL, and a body snippet to AI. Do not ask AI for aggressive retries before you read the status.</p><p class="mb-4">Keep the same handling on app.clincoo.buzz and the note on blog.clincoo.buzz so draft and production do not drift.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to fetch</a>
+</div>
+</body>
+</html>
