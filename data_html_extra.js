@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["html"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel html tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "html-lang-dan-dir-pada-root", "langs": {"id": {"title": "Setel lang dan dir pada Elemen html", "desc": "Tanpa lang, pembaca layar dan terjemahan browser salah menebak halaman Clincoo. Dir menata teks RTL jika perlu.", "content": "<p class=\"mb-4\">Di berkas index halaman Clincoo, buka tag html dan tulis lang=\"id\" untuk versi Indonesia. Halaman Inggris memakai lang=\"en\".</p><p class=\"mb-4\">Atribut dir=\"ltr\" cukup untuk ID dan EN. Jika nanti ada bahasa Arab, ganti dir pada dokumen itu saja, bukan di CSS global.</p><p class=\"mb-4\">Jangan menaruh lang hanya di satu paragraf. Mesin terjemahan dan SEO membaca root. Canonical blog.clincoo.buzz juga mengikuti bahasa folder.</p><p class=\"mb-4\">Minta AI meninjau head dan tag html saja. Jangan minta rewrite seluruh body app.clincoo.buzz.</p><p class=\"mb-4\">Cek di pratinjau editor.clincoo.buzz: judul, meta, dan lang harus selaras sebelum deploy.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Set lang and dir on the html Element", "desc": "Without lang, screen readers and browser translation guess wrong on a Clincoo page. dir lays out RTL text when needed.", "content": "<p class=\"mb-4\">In the Clincoo page index file, open the html tag and write lang=\"id\" for Indonesian. English pages use lang=\"en\".</p><p class=\"mb-4\">dir=\"ltr\" is enough for ID and EN. If you later add Arabic, change dir on that document only, not in global CSS.</p><p class=\"mb-4\">Do not put lang on a single paragraph only. Translation engines and SEO read the root. The blog.clincoo.buzz canonical also follows the folder language.</p><p class=\"mb-4\">Ask AI to review the head and html tag only. Do not ask it to rewrite the whole app.clincoo.buzz body.</p><p class=\"mb-4\">Check in the editor.clincoo.buzz preview: title, meta, and lang must match before you deploy.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["html"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["html"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
