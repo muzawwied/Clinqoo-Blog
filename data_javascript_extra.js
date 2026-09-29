@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["javascript"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel javascript tambahan 2026-09-29
+(function(){
+  var extra = [{"id": "js-console-assert-cek-asumsi", "langs": {"id": {"title": "Pakai console.assert untuk Menguji Asumsi", "desc": "console.log menumpuk noise di pratinjau Clincoo. assert hanya berteriak saat syarat yang Anda yakini ternyata salah.", "content": "<p class=\"mb-4\">Ganti log 'el ada?' dengan console.assert(el, 'tombol kirim tidak ketemu'). DevTools hanya tampil jika elemen null.</p><p class=\"mb-4\">Assert cocok di handler form dan fetch di editor.clincoo.buzz. Tulis syarat dalam bahasa manusia supaya stack mudah dibaca.</p><p class=\"mb-4\">Jangan biarkan assert mengganti if. Jika data bisa sah kosong, cabangkan logika, jangan menghukum jalur normal.</p><p class=\"mb-4\">Saat minta bantuan AI, tempel baris assert yang gagal plus nilai aktual. Satu asumsi rusak lebih jelas daripada sepuluh log.</p><p class=\"mb-4\">Hapus assert yang sudah tidak relevan sebelum unggah ke app.clincoo.buzz agar konsol produksi tetap bersih.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Use console.assert to Test Assumptions", "desc": "console.log piles noise in the Clincoo preview. assert only shouts when a condition you trusted is false.", "content": "<p class=\"mb-4\">Replace a 'el exists?' log with console.assert(el, 'submit button missing'). DevTools only shows up if the element is null.</p><p class=\"mb-4\">Assert fits form and fetch handlers in editor.clincoo.buzz. Write the condition in human language so the stack is easy to read.</p><p class=\"mb-4\">Do not let assert replace if. If empty data can be valid, branch the logic; do not punish the normal path.</p><p class=\"mb-4\">When you ask AI for help, paste the failing assert line plus the actual value. One broken assumption beats ten logs.</p><p class=\"mb-4\">Remove stale asserts before you upload to app.clincoo.buzz so the production console stays clean.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["javascript"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["javascript"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
