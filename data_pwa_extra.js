@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["pwa"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog pwa extra 2026-10-01
+(function(){
+  var extra = [{id:'pwa-uji-install-prompt-chrome-android',langs:{id:{title:'Uji Prompt Install PWA di Chrome Android untuk Situs Clincoo',desc:'Manifest bisa valid di desktop tapi tombol install tidak muncul di HP. Uji perangkat nyata sebelum mengumumkan bisa dipasang.',content:'<p class="mb-4">Syarat installable Chrome: HTTPS, manifest dengan name, icons 192 dan 512, start_url, display standalone, plus service worker yang mengontrol halaman.</p><p class="mb-4">Buka situs deploy Clincoo di Chrome Android. Menu Chrome menampilkan Add to Home screen jika kriteria terpenuhi. DevTools Application di desktop tidak menggantikan uji ini.</p><p class="mb-4">Jika prompt tidak muncul, cek icon purpose any maskable, start_url di dalam scope, dan SW tidak gagal register.</p><p class="mb-4">Jangan paksa banner Install app sebelum kriteria lolos. Pasang tombol hanya setelah uji HP berhasil.</p>',source:'web.dev Learn PWA',sourceUrl:'https://web.dev/learn/pwa/installation/',sourceSnippet:'Installation criteria differ by browser and must be tested on device.'},en:{title:'Test the PWA Install Prompt on Chrome Android for a Clincoo Site',desc:'A manifest can look valid on desktop while the install button never appears on a phone. Test a real device before you claim it is installable.',content:'<p class="mb-4">Chrome installability needs HTTPS, a manifest with name, 192 and 512 icons, start_url, display standalone, plus a service worker that controls the page.</p><p class="mb-4">Open the deployed Clincoo site in Chrome Android. The Chrome menu shows Add to Home screen when the criteria pass.</p><p class="mb-4">If the prompt never appears, check icon purpose any maskable, start_url inside scope, and that the SW actually registers.</p><p class="mb-4">Do not force an Install app banner before the criteria pass. Show the button only after a real-phone test succeeds.</p>',source:'web.dev Learn PWA',sourceUrl:'https://web.dev/learn/pwa/installation/',sourceSnippet:'Installation criteria differ by browser and must be tested on device.'}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles['pwa']) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles['pwa'].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
