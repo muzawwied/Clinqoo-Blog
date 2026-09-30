@@ -3,6 +3,7 @@
   <url><loc>https://blog.clincoo.buzz/</loc></url>
   <url><loc>https://blog.clincoo.buzz/flexbox/</loc></url>
   <url><loc>https://blog.clincoo.buzz/flexbox/flexbox-gap-bukan-margin-anak/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/flexbox/flexbox-min-width-nol-item-teks/</loc></url>
   <url><loc>https://blog.clincoo.buzz/grid/</loc></url>
   <url><loc>https://blog.clincoo.buzz/grid/grid-minmax-kolom-responsif/</loc></url>
   <url><loc>https://blog.clincoo.buzz/error/</loc></url>
@@ -96,6 +97,7 @@
   <url><loc>https://blog.clincoo.buzz/shortcut/shortcut-escape-lepas-fokus/</loc></url>
   <url><loc>https://blog.clincoo.buzz/preview/</loc></url>
   <url><loc>https://blog.clincoo.buzz/preview/preview-device-toolbar-devtools/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/preview/preview-hard-refresh-tanpa-cache/</loc></url>
   <url><loc>https://blog.clincoo.buzz/pagination/</loc></url>
   <url><loc>https://blog.clincoo.buzz/pagination/pagination-offset-vs-cursor/</loc></url>
   <url><loc>https://blog.clincoo.buzz/pagination/pagination-jaga-scroll-saat-ganti-halaman/</loc></url>
@@ -119,4 +121,10 @@
   <url><loc>https://blog.clincoo.buzz/scroll/scroll-listener-passive/</loc></url>
   <url><loc>https://blog.clincoo.buzz/scroll/scroll-restore-setelah-preview/</loc></url>
   <url><loc>https://blog.clincoo.buzz/scroll/scroll-fokus-error-form/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/clipboard/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/clipboard/clipboard-baca-paste-dari-event/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/console/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/console/console-filter-log-pihak-ketiga/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/debug/debug-log-nilai-sebelum-mutasi/</loc></url>
 </urlset>
