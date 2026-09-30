@@ -67,4 +67,9 @@
   <url><loc>https://blog.clincoo.buzz/ssl/ssl-hsts-setelah-https-stabil/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ssl/ssl-websocket-wss-bukan-ws/</loc></url>
   <url><loc>https://blog.clincoo.buzz/ssl/ssl-peringatan-sertifikat-kedaluwarsa/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-cek-rantai-sertifikat-lengkap/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-jangan-self-signed-di-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-canonical-https-bukan-http/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-tls12-minimal-di-hosting/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/ssl/ssl-preconnect-hanya-https/</loc></url>
 </urlset>
