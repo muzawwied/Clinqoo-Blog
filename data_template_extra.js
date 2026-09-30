@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["template"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog template extra 2026-10-01
+(function(){
+  var extra = [{id:'template-cek-meta-title-setelah-salin',langs:{id:{title:'Cek Meta Title dan Description setelah Menyalin Template Clincoo',desc:'Template membawa title generik. Ganti sebelum publish agar tab browser dan hasil pencarian tidak bentrok.',content:'<p class="mb-4">Saat kamu menyalin template di editor.clincoo.buzz, head hampir selalu masih berisi judul demo seperti Landing Page atau nama paket template.</p><p class="mb-4">Buka index.html, cari tag title dan meta name=description. Samakan dengan H1 halaman, tapi lebih pendek. Jangan duplikat exact title antar halaman di situs yang sama.</p><p class="mb-4">Pratinjau tab browser dan bagikan tautan: unggulan pratinjau memakai og:title. Jika og masih teks template, Google menampilkan merek orang lain.</p><p class="mb-4">Simpan daftar title di catatan proyek. Minta AI merapikan 50-60 karakter, lalu tempel kembali. Publish ke app.clincoo.buzz hanya setelah head unik.</p>',source:'Clincoo Editor',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Editor resmi Clincoo untuk sunting head template.'},en:{title:'Check Meta Title and Description after Copying a Clincoo Template',desc:'Templates ship a generic title. Change it before publish so the browser tab and search results do not collide.',content:'<p class="mb-4">When you copy a template in editor.clincoo.buzz the head almost always still holds a demo title such as Landing Page or the pack name.</p><p class="mb-4">Open index.html and find the title tag plus meta name=description. Align them with the page H1, but shorter. Do not duplicate an exact title across pages on the same site.</p><p class="mb-4">Preview the browser tab and share the link: previews use og:title. If og still has template copy, search will show someone else brand.</p><p class="mb-4">Keep a title list in the project notes. Ask the AI to tighten 50-60 characters, then paste back. Publish to app.clincoo.buzz only after the head is unique.</p>',source:'Clincoo Editor',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Official Clincoo editor for template head edits.'}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles['template']) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles['template'].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
