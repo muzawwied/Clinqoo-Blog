@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clincoo Service Workers Run Only on HTTPS — Clincoo Blog</title>
+<meta name="description" content="A service worker is rejected on HTTP. PWA and preview cache break if the host is not secure.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/ssl/ssl-service-worker-hanya-https/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Clincoo Service Workers Run Only on HTTPS">
+<meta property="og:description" content="A service worker is rejected on HTTP. PWA and preview cache break if the host is not secure.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/ssl/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">SSL</div><h1>Clincoo Service Workers Run Only on HTTPS</h1><p class="desc">A service worker is rejected on HTTP. PWA and preview cache break if the host is not secure.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, service worker registration fails if the page is still http:// or the certificate is untrusted.</p><p class="mb-4">Open the console: Failed to register a ServiceWorker. Screenshot plus the full URL, not only "PWA does not work".</p><p class="mb-4">Confirm app.clincoo.buzz has a valid lock before testing offline cache. Localhost is an exception; a public host is not.</p><p class="mb-4">Paste the register error to AI. Do not ask AI to force a worker in an insecure context.</p><p class="mb-4">Clincoo on blog.clincoo.buzz uses HTTPS so cache and notifications do not fail quietly.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/ssl/">← Back to ssl</a>
+</div>
+</body>
+</html>
