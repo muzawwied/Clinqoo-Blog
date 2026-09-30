@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["deploy"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel deploy tambahan 2026-09-30
+(function(){
+  var extra = [{"id": "deploy-bandingkan-hash-aset-setelah-rilis", "langs": {"id": {"title": "Bandingkan Hash Aset setelah Deploy Clincoo", "desc": "Pengunjung bisa tetap memuat JS lama jika nama berkas tidak berubah.", "content": "<p class=\"mb-4\">Setelah rilis di app.clincoo.buzz, buka Network di pratinjau publik. Catat nama berkas CSS dan JS.</p><p class=\"mb-4\">Bandingkan dengan build sebelumnya. Jika hash sama padahal kode berubah, cache CDN menahan versi lama.</p><p class=\"mb-4\">Hard refresh satu tab. Minta rekan membuka tab baru tanpa cache. Jangan mengandalkan hanya mesin Anda.</p><p class=\"mb-4\">Jika hash tidak berganti, periksa langkah build di editor.clincoo.buzz sebelum deploy ulang.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz terasa baru bagi pengunjung hanya jika aset baru benar-benar terkirim.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Compare Asset Hashes after a Clincoo Deploy", "desc": "Visitors can keep loading old JS if the file name never changes.", "content": "<p class=\"mb-4\">After a release on app.clincoo.buzz, open Network on the public preview. Note the CSS and JS file names.</p><p class=\"mb-4\">Compare them with the previous build. If the hash is the same even though code changed, the CDN cache is holding the old version.</p><p class=\"mb-4\">Hard-refresh one tab. Ask a teammate to open a fresh tab without cache. Do not rely on your machine alone.</p><p class=\"mb-4\">If the hash did not change, check the build step on editor.clincoo.buzz before you deploy again.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz feels new to visitors only when the new assets actually ship.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["deploy"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["deploy"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

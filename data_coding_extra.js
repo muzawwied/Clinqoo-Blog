@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["coding"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel coding tambahan 2026-09-30
+(function(){
+  var extra = [{"id": "coding-repro-minimal-sebelum-minta-bantuan", "langs": {"id": {"title": "Buat Repro Minimal sebelum Minta Bantuan Coding", "desc": "Repro tiga file lebih mudah dibaca AI daripada seluruh proyek Clincoo.", "content": "<p class=\"mb-4\">Saat stuck di editor.clincoo.buzz, jangan tempel seluruh folder ke AI. Potong dulu sampai tiga file yang masih menampilkan bug.</p><p class=\"mb-4\">Salin HTML, CSS, dan JS terkait saja. Hapus analitik, widget chat, dan aset yang tidak dipakai.</p><p class=\"mb-4\">Pastikan repro masih gagal di pratinjau. Jika bug hilang, penyebabnya ada di file yang Anda buang.</p><p class=\"mb-4\">Kirim repro plus pesan error Console. Minta satu perbaikan, bukan rewrite app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz lebih cepat selesai bila bantuan dimulai dari kasus terkecil yang masih rusak.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Make a Minimal Repro before You Ask for Coding Help", "desc": "A three-file repro is easier for AI to read than an entire Clincoo project.", "content": "<p class=\"mb-4\">When you get stuck on editor.clincoo.buzz, do not paste the whole folder into AI. Cut first until three files still show the bug.</p><p class=\"mb-4\">Copy only the related HTML, CSS, and JS. Remove analytics, chat widgets, and unused assets.</p><p class=\"mb-4\">Confirm the repro still fails in preview. If the bug vanishes, the cause lives in a file you removed.</p><p class=\"mb-4\">Send the repro plus the Console error. Ask for one fix, not a rewrite of app.clincoo.buzz.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz ships faster when help starts from the smallest case that still breaks.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["coding"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["coding"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

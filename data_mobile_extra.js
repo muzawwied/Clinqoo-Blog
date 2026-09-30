@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["mobile"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel mobile tambahan 2026-09-30
+(function(){
+  var extra = [{"id": "mobile-cek-overflow-horizontal-satu-geser", "langs": {"id": {"title": "Cek Overflow Horizontal dengan Satu Geser di Ponsel", "desc": "Halaman Clincoo yang bisa digeser ke samping menyembunyikan tombol penting.", "content": "<p class=\"mb-4\">Buka pratinjau app.clincoo.buzz di ponsel. Geser halaman ke kanan. Jika body ikut bergeser, ada elemen lebih lebar dari layar.</p><p class=\"mb-4\">Di DevTools, cari elemen dengan lebar tetap atau gambar tanpa max-width.</p><p class=\"mb-4\">Perbaiki di editor.clincoo.buzz: max-width 100 persen, min-width nol pada item flex, dan hindari padding yang ditambah ke width 100 persen.</p><p class=\"mb-4\">Uji lagi dalam mode potret dan lanskap. Satu sisa geser saja sudah merusak CTA.</p><p class=\"mb-4\">Clincoo di blog.clincoo.buzz terasa rapi di HP hanya jika halaman tidak bisa digeser menyamping.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Check Horizontal Overflow with One Swipe on a Phone", "desc": "A Clincoo page that can be swiped sideways hides important buttons.", "content": "<p class=\"mb-4\">Open the app.clincoo.buzz preview on a phone. Swipe the page to the right. If the body moves, some element is wider than the screen.</p><p class=\"mb-4\">In DevTools, find elements with a fixed width or images without max-width.</p><p class=\"mb-4\">Fix them on editor.clincoo.buzz: max-width 100 percent, min-width zero on flex items, and avoid padding added on top of width 100 percent.</p><p class=\"mb-4\">Test again in portrait and landscape. A single leftover swipe already breaks the CTA.</p><p class=\"mb-4\">Clincoo on blog.clincoo.buzz only feels tidy on a phone when the page cannot be swiped sideways.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["mobile"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["mobile"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
