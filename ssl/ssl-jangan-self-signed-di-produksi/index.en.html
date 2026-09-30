@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Ship a Self-Signed Certificate on Clincoo Production — Clincoo Blog</title>
+<meta name="description" content="Self-signed is fine on localhost. It breaks fetch, Secure cookies, and visitor trust.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/ssl/ssl-jangan-self-signed-di-produksi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Ship a Self-Signed Certificate on Clincoo Production">
+<meta property="og:description" content="Self-signed is fine on localhost. It breaks fetch, Secure cookies, and visitor trust.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/ssl/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">SSL</div><h1>Do Not Ship a Self-Signed Certificate on Clincoo Production</h1><p class="desc">Self-signed is fine on localhost. It breaks fetch, Secure cookies, and visitor trust.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Local preview on editor.clincoo.buzz may use self-signed. The public host app.clincoo.buzz must not.</p><p class="mb-4">Browsers block many APIs on untrusted or insecure contexts: clipboard, service worker, geolocation.</p><p class="mb-4">Switch to a public CA or the host auto-issuer. Do not ask users to click Advanced.</p><p class="mb-4">Paste the warning screenshot plus hostname to AI. Ask how to replace the certificate, not how to click Bypass.</p><p class="mb-4">Clincoo on blog.clincoo.buzz uses trusted HTTPS so save and preview flows do not fail quietly.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/ssl/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
