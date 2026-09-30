@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang CSP Dasar di Meta tanpa unsafe-inline di Clincoo — Clincoo Blog</title>
+<meta name="description" content="Content-Security-Policy menahan skrip asing. Mulai ketat, longgarkan hanya domain yang benar-benar dipakai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-csp-meta-dasar-tanpa-unsafe-inline/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang CSP Dasar di Meta tanpa unsafe-inline di Clincoo">
+<meta property="og:description" content="Content-Security-Policy menahan skrip asing. Mulai ketat, longgarkan hanya domain yang benar-benar dipakai.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Pasang CSP Dasar di Meta tanpa unsafe-inline di Clincoo</h1><p class="desc">Content-Security-Policy menahan skrip asing. Mulai ketat, longgarkan hanya domain yang benar-benar dipakai.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman hasil editor.clincoo.buzz sering memuat satu skrip analitik plus embed. Tanpa CSP, browser menerima skrip dari domain mana pun yang berhasil tertempel di HTML.</p><p class="mb-4">Tambah meta Content-Security-Policy di head: default-src self, script-src self, style-src self unsafe-inline dulu hanya jika CSS inline masih ada, img-src self data https. Hindari script-src unsafe-inline kecuali tidak ada jalan lain.</p><p class="mb-4">Uji di Chrome DevTools tab Console. Pelanggaran CSP muncul sebagai error jelas. Salin pesan itu ke asisten AI di app.clincoo.buzz beserta cuplikan head.</p><p class="mb-4">Kalau widget pihak ketiga putus, izinkan domain itu satu per satu — jangan kembali ke wildcard. Deploy ulang ke blog.clincoo.buzz setelah meta stabil.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener">MDN Content-Security-Policy<span class="d">developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
