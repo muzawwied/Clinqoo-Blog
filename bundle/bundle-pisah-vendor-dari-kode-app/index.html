@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pisahkan Chunk Vendor dari Kode Aplikasi Clincoo — Clincoo Blog</title>
+<meta name="description" content="Pisah vendor agar cache browser tidak pecah setiap kali Anda menyimpan draf di editor.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/bundle/bundle-pisah-vendor-dari-kode-app/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pisahkan Chunk Vendor dari Kode Aplikasi Clincoo">
+<meta property="og:description" content="Pisah vendor agar cache browser tidak pecah setiap kali Anda menyimpan draf di editor.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/bundle/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Bundle</div><h1>Pisahkan Chunk Vendor dari Kode Aplikasi Clincoo</h1><p class="desc">Pisah vendor agar cache browser tidak pecah setiap kali Anda menyimpan draf di editor.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Jika vendor dan kode halaman Clincoo berada di satu file, setiap huruf yang diubah di editor.clincoo.buzz memaksa pengunjung mengunduh ulang pustaka besar.</p><p class="mb-4">Minta bundler mengekstrak node_modules ke chunk vendor. Hash vendor hanya berubah saat lockfile berubah.</p><p class="mb-4">Uji di pratinjau: hard refresh sekali, lalu muat ulang biasa. Network harus menandai vendor dari disk cache.</p><p class="mb-4">Jangan campur polyfill langka ke vendor utama. Dynamic import polyfill hanya untuk browser yang membutuhkannya.</p><p class="mb-4">Catat nama chunk di README app.clincoo.buzz supaya AI tidak menggabungkan semuanya lagi saat diminta merapikan config.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/bundle/">← Kembali ke bundle</a>
+</div>
+</body>
+</html>
