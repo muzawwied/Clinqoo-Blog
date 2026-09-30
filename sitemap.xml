@@ -154,6 +154,11 @@
   <url><loc>https://blog.clincoo.buzz/featureflag/featureflag-catat-di-catatan-rilis/</loc></url>
   <url><loc>https://blog.clincoo.buzz/bundle/</loc></url>
   <url><loc>https://blog.clincoo.buzz/bundle/bundle-ukur-ukuran-sebelum-tambah-pustaka/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-pisah-vendor-dari-kode-app/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-dynamic-import-halaman-jarang/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-cek-modul-ganda-di-devtools/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-jangan-kirim-sourcemap-produksi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-tunda-skrip-pihak-ketiga/</loc></url>
   <url><loc>https://blog.clincoo.buzz/layout/layout-stack-mobile-dulu-baru-desktop/</loc></url>
   <url><loc>https://blog.clincoo.buzz/validasi/validasi-fokus-field-error-pertama/</loc></url>
   <url><loc>https://blog.clincoo.buzz/komponen/komponen-satu-tanggung-jawab-file/</loc></url>
