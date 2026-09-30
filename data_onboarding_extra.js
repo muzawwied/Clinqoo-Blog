@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["onboarding"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel onboarding tambahan 2026-09-30
+(function(){
+  var extra = [{"id": "onboarding-satu-tugas-per-langkah", "langs": {"id": {"title": "Satu Tugas per Langkah Onboarding Clincoo", "desc": "Layar pertama yang meminta nama, tema, dan domain sekaligus membuat pengguna mundur. Pecah jadi langkah kecil.", "content": "<p class=\"mb-4\">Wizard di editor.clincoo.buzz gagal saat tiga keputusan muncul bersamaan. Pengguna menutup tab sebelum pratinjau.</p><p class=\"mb-4\">Satu layar, satu aksi: nama situs, lalu palet, lalu domain. Simpan draf setelah setiap langkah di app.clincoo.buzz.</p><p class=\"mb-4\">Tampilkan tombol Lewati yang jujur. Jangan kunci progres di balik formulir wajib yang tidak dipakai hari itu.</p><p class=\"mb-4\">Minta AI merangkum salinan satu langkah. Jangan minta rewrite seluruh alur.</p><p class=\"mb-4\">Pola yang sama dipakai blog.clincoo.buzz: masuk, baca, baru bertindak.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "One Task per Clincoo Onboarding Step", "desc": "A first screen that asks for name, theme, and domain at once makes users leave. Split it into small steps.", "content": "<p class=\"mb-4\">The wizard on editor.clincoo.buzz fails when three decisions appear together. Users close the tab before preview.</p><p class=\"mb-4\">One screen, one action: site name, then palette, then domain. Save a draft after each step on app.clincoo.buzz.</p><p class=\"mb-4\">Show an honest Skip button. Do not lock progress behind required fields you will not use that day.</p><p class=\"mb-4\">Ask AI to tighten copy for one step. Do not ask for a rewrite of the whole flow.</p><p class=\"mb-4\">blog.clincoo.buzz uses the same pattern: enter, read, then act.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["onboarding"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["onboarding"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
