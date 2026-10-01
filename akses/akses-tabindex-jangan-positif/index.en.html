@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avoid Positive tabindex on Clincoo Pages — Clincoo Blog</title>
+<meta name="description" content="tabindex=3,7,99 breaks natural Tab order. Use only 0 or -1.">
+<link rel="canonical" href="https://blog.clincoo.buzz/akses/akses-tabindex-jangan-positif/">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/akses/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">♿ Akses</div><h1>Avoid Positive tabindex on Clincoo Pages</h1><p class="desc">tabindex=3,7,99 breaks natural Tab order. Use only 0 or -1.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Positive values force an order that ignores the DOM. An ad or chat widget can jump ahead of the form.</p><p class="mb-4">In editor.clincoo.buzz, search tabindex=[1-9] and remove it. Native button and a are already focusable.</p><p class="mb-4">Use tabindex=-1 only to move scripted focus to a dialog title, then restore.</p><p class="mb-4">If AI adds a positive tabindex so the CTA comes first, reject it. Reading order beats fake conversion.</p><p class="mb-4">Tab from logo to footer before you deploy from app.clincoo.buzz.</p></div><div class="src"><h2>Information Source</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/akses/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
