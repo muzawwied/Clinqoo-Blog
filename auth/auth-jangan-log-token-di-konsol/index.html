@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangan Cetak Token Auth di Konsol saat Debug Clincoo — Clincoo Blog</title>
+<meta name="description" content="console.log pada sesi sering tertinggal sampai produksi. Log status login, bukan isi token.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/auth/auth-jangan-log-token-di-konsol/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jangan Cetak Token Auth di Konsol saat Debug Clincoo">
+<meta property="og:description" content="console.log pada sesi sering tertinggal sampai produksi. Log status login, bukan isi token.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/auth/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔑 Auth</div><h1>Jangan Cetak Token Auth di Konsol saat Debug Clincoo</h1><p class="desc">console.log pada sesi sering tertinggal sampai produksi. Log status login, bukan isi token.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Saat login gagal di editor.clincoo.buzz, banyak draf menempel seluruh objek sesi ke konsol. Token ikut tersalin ke tangkapan layar dan riwayat chat AI.</p><p class="mb-4">Log hanya boolean sudah login, kode status, dan waktu kedaluwarsa. Jangan cetak access token, refresh token, atau cookie.</p><p class="mb-4">Sebelum deploy ke app.clincoo.buzz, cari console.log dan debugger di file auth. Minta AI menandai baris itu, jangan minta rewrite modul login.</p><p class="mb-4">Jika perlu jejak, pakai id permintaan acak. Id itu aman dibagikan di blog.clincoo.buzz, token tidak.</p><p class="mb-4">Hapus log setelah bug tertutup. Pratinjau yang bersih lebih berguna daripada konsol yang ramai.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Editor<span class="d">editor.clincoo.buzz</span></a><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo App<span class="d">app.clincoo.buzz</span></a><a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener">Clincoo Blog<span class="d">blog.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/auth/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

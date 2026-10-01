@@ -1,1 +1,14 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["api"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog api extra2 2026-10-02 WIB
+(function(){
+  var extra = [
+    {id:'api-validasi-bentuk-respons-sebelum-render',langs:{id:{title:'Validasi Bentuk JSON API sebelum Merender UI Clincoo',desc:'Respons 200 yang field-nya hilang tetap bisa merusak halaman. Cek bentuk data dulu, baru tulis ke DOM.',content:'<p class=\"mb-4\">Fetch di editor.clincoo.buzz sering langsung membaca data.items.map. Saat API mengembalikan objek kosong dengan status 200, konsol melempar TypeError dan bagian halaman hilang.</p><p class=\"mb-4\">Setelah response.ok, cek Array.isArray dan field wajib. Jika bentuk salah, tampilkan pesan data tidak lengkap, jangan render sebagian.</p><p class=\"mb-4\">Jangan asumsi nama field. Bandingkan dengan contoh respons yang disimpan, lalu minta AI menunjukkan field yang tidak ada. Tempel cuplikan JSON, bukan seluruh proyek.</p><p class=\"mb-4\">Bedakan gagal jaringan, status 4xx, dan JSON yang sah tapi tidak lengkap. Tiga pesan itu membantu saat debug di app.clincoo.buzz.</p><p class=\"mb-4\">Simpan satu contoh respons valid di dekat fungsi fetch agar tes pratinjau tidak menebak.</p>',source:'Clincoo',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Editor resmi Clincoo',source2:'Clincoo App',source3:'Clincoo Blog'},en:{title:'Validate API JSON Shape before Rendering the Clincoo UI',desc:'A 200 response with a missing field can still break the page. Check the data shape first, then write to the DOM.',content:'<p class=\"mb-4\">A fetch in editor.clincoo.buzz often reads data.items.map immediately. When the API returns an empty object with status 200, the console throws a TypeError and part of the page disappears.</p><p class=\"mb-4\">After response.ok, check Array.isArray and required fields. If the shape is wrong, show an incomplete-data message instead of rendering a fragment.</p><p class=\"mb-4\">Do not assume field names. Compare with a saved sample response, then ask AI to point out missing fields. Paste the JSON snippet, not the whole project.</p><p class=\"mb-4\">Separate network failure, 4xx status, and valid JSON that is incomplete. Those three messages help when debugging on app.clincoo.buzz.</p><p class=\"mb-4\">Keep one valid response sample next to the fetch function so preview tests are not guessing.</p>',source:'Clincoo',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Official Clincoo editor',source2:'Clincoo App',source3:'Clincoo Blog'}}}
+  ];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles['api']) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles['api'].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
