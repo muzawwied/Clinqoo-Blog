@@ -46,4 +46,9 @@
   <url><loc>https://blog.clincoo.buzz/skeleton/skeleton-jangan-pada-error/</loc></url>
   <url><loc>https://blog.clincoo.buzz/skeleton/skeleton-pola-daftar-beda-detail/</loc></url>
   <url><loc>https://blog.clincoo.buzz/skeleton/skeleton-tunda-pulse-sampai-terlihat/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/analytics/analytics-debug-view-sebelum-rilis/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/api/api-tampilkan-kode-status-di-ui-error/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/async/async-jangan-campur-then-dengan-await/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/auth/auth-cek-sesi-sebelum-aksi-tulis/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cache/cache-hard-refresh-setelah-ganti-service-worker/</loc></url>
 </urlset>
