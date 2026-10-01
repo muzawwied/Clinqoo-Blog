@@ -1,1 +1,14 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["cdn"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel cdn tambahan 2026-10-01
+(function(){
+  var extra = [
+    {"id": "cdn-nama-berkas-hash-untuk-cache", "langs": {"id": {"title": "Pakai Nama Berkas Ber-hash agar Cache CDN Clincoo Aman Diperbarui", "desc": "Cache panjang pada CSS tanpa hash membuat pengunjung melihat gaya lama. Nama berkas unik menandai rilis baru.", "content": "<p class=\"mb-4\">Setelah deploy dari editor.clincoo.buzz, CSS lama masih tampil karena edge CDN menyimpan style.css terlalu lama. Refresh biasa tidak cukup.</p><p class=\"mb-4\">Beri nama berkas dengan hash isi, misalnya app.8f3a.css. HTML merujuk nama baru. Berkas ber-hash boleh cache setahun; HTML tetap cache pendek.</p><p class=\"mb-4\">Jangan cache HTML yang berisi token sesi. Aset statis saja yang immutable.</p><p class=\"mb-4\">Saat minta AI menulis header, sebutkan berkas mana yang ber-hash. AI sering menyarankan no-cache pada semua aset dan itu membuang manfaat CDN.</p><p class=\"mb-4\">Uji di blog.clincoo.buzz: buka tab Network, pastikan nama CSS berubah setelah rilis dan statusnya 200 sekali, lalu 304 atau disk cache.</p>", "source": "MDN Cache-Control", "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control", "sourceSnippet": "Immutable hashed assets can use a long max-age.", "source2": "Clincoo App", "source3": "Clincoo Blog"}, "en": {"title": "Use Hashed Filenames So the Clincoo CDN Cache Can Update Safely", "desc": "A long cache on unhashed CSS leaves visitors on old styles. A unique filename marks a new release.", "content": "<p class=\"mb-4\">After a deploy from editor.clincoo.buzz, old CSS can still show because the CDN edge cached style.css for too long. A normal refresh is not enough.</p><p class=\"mb-4\">Name files with a content hash, such as app.8f3a.css. HTML points at the new name. Hashed files may cache for a year; HTML stays on a short cache.</p><p class=\"mb-4\">Do not cache HTML that contains a session token. Only static assets should be immutable.</p><p class=\"mb-4\">When asking AI for headers, say which files are hashed. AI often suggests no-cache on every asset, which wastes the CDN.</p><p class=\"mb-4\">Test on blog.clincoo.buzz: open Network, confirm the CSS name changed after release, and that it is 200 once, then 304 or disk cache.</p>", "source": "MDN Cache-Control", "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control", "sourceSnippet": "Immutable hashed assets can use a long max-age.", "source2": "Clincoo App", "source3": "Clincoo Blog"}}}
+  ];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["cdn"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["cdn"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
