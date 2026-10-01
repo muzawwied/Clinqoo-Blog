@@ -51,4 +51,9 @@
   <url><loc>https://blog.clincoo.buzz/async/async-jangan-campur-then-dengan-await/</loc></url>
   <url><loc>https://blog.clincoo.buzz/auth/auth-cek-sesi-sebelum-aksi-tulis/</loc></url>
   <url><loc>https://blog.clincoo.buzz/cache/cache-hard-refresh-setelah-ganti-service-worker/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/search/search-highlight-aman-tanpa-html-mentah/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/search/search-history-replace-bukan-push-tiap-huruf/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/search/search-fokus-item-pertama-saat-enter/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/search/search-normalisasi-huruf-besar-kecil/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/search/search-potong-query-terlalu-panjang/</loc></url>
 </urlset>
