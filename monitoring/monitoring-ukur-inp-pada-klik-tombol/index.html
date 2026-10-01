@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ukur INP pada Klik Tombol, Bukan Hanya Waktu Muat, di Clincoo — Clincoo Blog</title>
+<meta name="description" content="Halaman cepat tetap terasa macet jika handler klik memblokir main thread. Catat INP pada interaksi nyata.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/monitoring/monitoring-ukur-inp-pada-klik-tombol/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ukur INP pada Klik Tombol, Bukan Hanya Waktu Muat, di Clincoo">
+<meta property="og:description" content="Halaman cepat tetap terasa macet jika handler klik memblokir main thread. Catat INP pada interaksi nyata.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/monitoring/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Monitoring</div><h1>Ukur INP pada Klik Tombol, Bukan Hanya Waktu Muat, di Clincoo</h1><p class="desc">Halaman cepat tetap terasa macet jika handler klik memblokir main thread. Catat INP pada interaksi nyata.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di app.clincoo.buzz, tombol simpan bisa menunggu ratusan milidetik meski LCP sudah hijau. Pengunjung merasakan jeda setelah klik.</p><p class="mb-4">Buka Performance di DevTools, rekam satu klik, dan cari long task di handler. Pindahkan kerja berat ke setelah paint atau ke potongan kecil.</p><p class="mb-4">Catat event click dan durasi sampai frame berikutnya. INP yang buruk sering dari loop DOM, bukan dari gambar.</p><p class="mb-4">Saat minta AI mempercepat, tempel handler klik dan angka durasinya. Jangan minta AI hanya menambah preload.</p><p class="mb-4">Ulangi klik yang sama di blog.clincoo.buzz setelah perbaikan. Bandingkan sebelum dan sesudah, bukan hanya skor muat.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://web.dev/articles/inp" target="_blank" rel="noopener">web.dev INP<span class="d">web.dev/articles/inp</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/monitoring/">← Kembali ke monitoring</a>
+</div>
+</body>
+</html>
