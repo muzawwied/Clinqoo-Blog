@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Clincoo Webhook Receive Time, Not Finish Time — Clincoo Blog</title>
+<meta name="description" content="A finish-time clock scrambles event order. Store the timestamp when the body arrives, before the queue.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/webhook/webhook-catat-waktu-terima-bukan-waktu-kerja/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record Clincoo Webhook Receive Time, Not Finish Time">
+<meta property="og:description" content="A finish-time clock scrambles event order. Store the timestamp when the body arrives, before the queue.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/webhook/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Webhook</div><h1>Record Clincoo Webhook Receive Time, Not Finish Time</h1><p class="desc">A finish-time clock scrambles event order. Store the timestamp when the body arrives, before the queue.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A handler on editor.clincoo.buzz sometimes writes the time after an image download or email send. An earlier event looks later.</p><p class="mb-4">Store receivedAt from the server clock when the first bytes are read. Do not use the sender clock as the only source.</p><p class="mb-4">Compare receivedAt with the replay window. Slow work must not reject a valid event because its stamp looks expired.</p><p class="mb-4">Ask AI whether the log uses Date.now() after an await. Ask for a small diff, not a queue rewrite.</p><p class="mb-4">Write the clock convention on blog.clincoo.buzz so the app.clincoo.buzz preview orders events like production logs.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/webhook/">← Back to webhook</a>
+</div>
+</body>
+</html>
