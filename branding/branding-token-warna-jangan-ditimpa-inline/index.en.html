@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Override Branding Color Tokens with Inline Colors in Clincoo — Clincoo Blog</title>
+<meta name="description" content="Inline colors on one page break brand tokens. Use the same CSS variables across every template.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/branding/branding-token-warna-jangan-ditimpa-inline/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Override Branding Color Tokens with Inline Colors in Clincoo">
+<meta property="og:description" content="Inline colors on one page break brand tokens. Use the same CSS variables across every template.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/branding/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Branding</div><h1>Do Not Override Branding Color Tokens with Inline Colors in Clincoo</h1><p class="desc">Inline colors on one page break brand tokens. Use the same CSS variables across every template.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, a green button in one section and a blue button in another usually means an inline style overrode the token. Visitors see an inconsistent brand.</p><p class="mb-4">Define --brand and --brand-ink on :root. Buttons, links, and accents should use var(--brand), not a hex code in a style attribute.</p><p class="mb-4">In DevTools open Computed and find the mismatched color. If the source is a style attribute, move the value into a token class.</p><p class="mb-4">When asking AI for help, paste the :root block and the button class. Ask it to replace inline hex with the variable, not to invent a new palette.</p><p class="mb-4">Preview on app.clincoo.buzz and blog.clincoo.buzz. If one card still drifts, that page is not using the token yet.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noopener">MDN CSS custom properties<span class="d">developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/branding/">← Back to branding</a>
+</div>
+</body>
+</html>
