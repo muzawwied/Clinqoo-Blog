@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["grid"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel grid tambahan 2026-10-02
+(function(){
+  var extra = [{id:"grid-overlay-devtools-layout-pecah",langs:{id:{title:"Nyalakan Overlay Grid di DevTools saat Layout Clincoo Pecah",desc:"Kartu yang tumpang tindih lebih cepat dibaca lewat garis grid DevTools daripada menebak template-columns.",content:"<p class=\"mb-4\">Di pratinjau app.clincoo.buzz, grid sering terlihat rapat di desktop lalu pecah di lebar tablet. Jangan langsung ubah semua fr.</p><p class=\"mb-4\">Pilih elemen grid di DevTools, nyalakan overlay. Lihat nomor garis, area bernama, dan sel yang kosong.</p><p class=\"mb-4\">Jika item keluar, cek minmax dan min-width anak. Overlay menunjukkan jalur, bukan penyebab overflow sendirian.</p><p class=\"mb-4\">Kirim tangkapan overlay ke AI. Minta satu perubahan template, lalu uji lagi lebar 360, 768, dan 1200.</p><p class=\"mb-4\">Simpan pengaturan yang stabil di editor.clincoo.buzz. Clincoo menayangkan CSS yang kamu simpan, jadi overlay harus dicek setelah publish ke blog.clincoo.buzz.</p>",source:"Clincoo",sourceUrl:"https://editor.clincoo.buzz/",sourceSnippet:"Editor resmi Clincoo",source2:"Clincoo App",source3:"Clincoo Blog"},en:{title:"Turn on the Grid Overlay in DevTools when a Clincoo Layout Breaks",desc:"Overlapping cards are faster to read with the DevTools grid overlay than by guessing template-columns.",content:"<p class=\"mb-4\">In the app.clincoo.buzz preview, a grid often looks tight on desktop and breaks at tablet width. Do not change every fr at once.</p><p class=\"mb-4\">Select the grid element in DevTools and turn on the overlay. Read line numbers, named areas, and empty cells.</p><p class=\"mb-4\">If an item spills out, check minmax and the child's min-width. The overlay shows tracks, not the overflow cause by itself.</p><p class=\"mb-4\">Send the overlay capture to the AI. Ask for one template change, then retest widths 360, 768, and 1200.</p><p class=\"mb-4\">Save the stable rules in editor.clincoo.buzz. Clincoo ships the CSS you save, so check the overlay again after publishing to blog.clincoo.buzz.</p>",source:"Clincoo",sourceUrl:"https://editor.clincoo.buzz/",sourceSnippet:"Official Clincoo editor",source2:"Clincoo App",source3:"Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["grid"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["grid"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();

@@ -1,1 +1,12 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["git"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog — artikel git tambahan 2026-10-02
+(function(){
+  var extra = [{id:"git-blame-cari-asal-baris",langs:{id:{title:"Pakai git blame untuk Cari Asal Baris yang Rusak",desc:"Sebelum menulis ulang file, lacak commit yang terakhir mengubah baris. Blame mempersempit dugaan di proyek Clincoo.",content:"<p class=\"mb-4\">Perubahan CSS di editor.clincoo.buzz sering ditimpa tanpa catatan. git blame menunjuk commit dan penulis baris yang sekarang tampil.</p><p class=\"mb-4\">Jalankan blame pada file dan rentang baris, bukan seluruh repositori. Baca pesan commit itu sebelum mengubah logika.</p><p class=\"mb-4\">Jika baris hanya pindah, blame bisa menunjuk commit pemindahan. Pakai opsi abaikan pemindahan spasi bila riwayat terlihat palsu.</p><p class=\"mb-4\">Tempel hash commit ke AI bersama gejala. Minta ringkasan diff, jangan minta reset hard.</p><p class=\"mb-4\">Clincoo tidak mengganti riwayat Git kamu. Catat hash yang relevan di catatan rilis di blog.clincoo.buzz agar tim tidak mengulang tebakan.</p>",source:"Clincoo",sourceUrl:"https://editor.clincoo.buzz/",sourceSnippet:"Editor resmi Clincoo",source2:"Clincoo App",source3:"Clincoo Blog"},en:{title:"Use git blame to Find the Line that Broke",desc:"Before rewriting a file, trace the commit that last changed the line. Blame narrows the guess in a Clincoo project.",content:"<p class=\"mb-4\">A CSS change in editor.clincoo.buzz is often overwritten with no note. git blame points to the commit and author of the line you see now.</p><p class=\"mb-4\">Run blame on the file and line range, not the whole repository. Read that commit message before changing the logic.</p><p class=\"mb-4\">If the line only moved, blame can point at the move commit. Ignore whitespace moves when the history looks fake.</p><p class=\"mb-4\">Paste the commit hash to the AI with the symptom. Ask for a diff summary, not a hard reset.</p><p class=\"mb-4\">Clincoo does not rewrite your Git history. Record the relevant hash in a release note on blog.clincoo.buzz so the team does not guess again.</p>",source:"Clincoo",sourceUrl:"https://editor.clincoo.buzz/",sourceSnippet:"Official Clincoo editor",source2:"Clincoo App",source3:"Clincoo Blog"}}}];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles["git"]) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles["git"].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
