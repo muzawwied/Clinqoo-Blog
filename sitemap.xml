@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://blog.clincoo.buzz/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/animasi/animasi-contain-layout-saat-transform/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/cookie/cookie-prefix-host-untuk-sesi/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/darkmode/darkmode-jangan-invert-seluruh-halaman/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/modal/modal-hindari-autofocus-di-ponsel/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/regex/regex-flag-u-untuk-karakter-unicode/</loc></url>
   <url><loc>https://blog.clincoo.buzz/security/security-csp-meta-dasar-tanpa-unsafe-inline/</loc></url>
   <url><loc>https://blog.clincoo.buzz/template/template-cek-meta-title-setelah-salin/</loc></url>
   <url><loc>https://blog.clincoo.buzz/performa/performa-hindari-png-screenshot-tanpa-kompres/</loc></url>
