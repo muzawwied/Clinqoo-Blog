@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate-limit Clincoo Email Form Resubmits So They Do Not Look Like Spam — Clincoo Blog</title>
+<meta name="description" content="Repeated send clicks create duplicate mail. Lock the button and show a short countdown.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/email/email-batas-kirim-ulang-bukan-spam/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rate-limit Clincoo Email Form Resubmits So They Do Not Look Like Spam">
+<meta property="og:description" content="Repeated send clicks create duplicate mail. Lock the button and show a short countdown.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/email/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Email</div><h1>Rate-limit Clincoo Email Form Resubmits So They Do Not Look Like Spam</h1><p class="desc">Repeated send clicks create duplicate mail. Lock the button and show a short countdown.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Contact forms on app.clincoo.buzz are often clicked twice because the network feels slow. The inbox fills with identical copies.</p><p class="mb-4">After a valid submit, disable the button for 20–30 seconds and change the label to Sending. Do not clear fields before a success status.</p><p class="mb-4">Store the last send timestamp in sessionStorage, not only a memory variable, so a refresh cannot send again immediately.</p><p class="mb-4">Ask AI to review the submit handler: is preventDefault present, and is the button locked while pending? Do not ask AI to send a test mail to a real address.</p><p class="mb-4">Write the resend limit on blog.clincoo.buzz so visitors know a second message is not lost, only delayed.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">Official Clincoo editor</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/email/">← Back to email</a>
+</div>
+</body>
+</html>
