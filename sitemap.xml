@@ -66,4 +66,10 @@
   <url><loc>https://blog.clincoo.buzz/deploy/deploy-jangan-salin-env-dev-ke-produksi/</loc></url>
   <url><loc>https://blog.clincoo.buzz/devtools/devtools-throttle-jaringan-sebelum-rilis/</loc></url>
   <url><loc>https://blog.clincoo.buzz/editor/editor-format-sebelum-commit-bukan-sesudah/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/bundle/bundle-audit-import-efek-samping/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/lighthouse/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/lighthouse/lighthouse-uji-incognito-bukan-profil-login/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/lighthouse/lighthouse-throttling-mobile-bukan-skor-desktop/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/lighthouse/lighthouse-kejar-lcp-bukan-skor-seratus/</loc></url>
+  <url><loc>https://blog.clincoo.buzz/lighthouse/lighthouse-simpan-json-laporan-di-ci/</loc></url>
 </urlset>
