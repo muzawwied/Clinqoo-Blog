@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Print Session Tokens in the Clincoo Console — Clincoo Blog</title>
+<meta name="description" content="console.log on a session object often includes the token. Log only status and length, not the secret value.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/logging/logging-jangan-cetak-token-sesi/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Print Session Tokens in the Clincoo Console">
+<meta property="og:description" content="console.log on a session object often includes the token. Log only status and length, not the secret value.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/logging/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Logging</div><h1>Do Not Print Session Tokens in the Clincoo Console</h1><p class="desc">console.log on a session object often includes the token. Log only status and length, not the secret value.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">While debugging login in the app.clincoo.buzz preview, people often write console.log(session) and forget to remove it.</p><p class="mb-4">A session object can hold a token, email, or account id. DevTools and bug recordings then keep that value.</p><p class="mb-4">A safe replacement log: login status, token length, and expiry time. Do not write the full token.</p><p class="mb-4">Before asking for help in editor.clincoo.buzz, remove secret log lines and paste only the error without an Authorization header.</p><p class="mb-4">Recheck by searching for token, password, and bearer in the project folder before deploy.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console" target="_blank" rel="noopener">MDN console<span class="d">developer.mozilla.org/</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/logging/">← Back to logging</a>
+</div>
+</body>
+</html>

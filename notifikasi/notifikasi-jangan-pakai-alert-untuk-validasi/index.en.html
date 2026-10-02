@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Use alert for Clincoo Form Validation — Clincoo Blog</title>
+<meta name="description" content="alert freezes the page and is hard to reread. Show the message next to the field, then focus the invalid input.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/notifikasi/notifikasi-jangan-pakai-alert-untuk-validasi/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Use alert for Clincoo Form Validation">
+<meta property="og:description" content="alert freezes the page and is hard to reread. Show the message next to the field, then focus the invalid input.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/notifikasi/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Notify</div><h1>Do Not Use alert for Clincoo Form Validation</h1><p class="desc">alert freezes the page and is hard to reread. Show the message next to the field, then focus the invalid input.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A form in editor.clincoo.buzz sometimes calls alert when the email is empty. That dialog covers the screen and does not mark the field.</p><p class="mb-4">Replace it with a message element under the input. Use short text: what is wrong and an example of a valid value.</p><p class="mb-4">After a failed submit, call focus() on the first invalid input so the keyboard lands there.</p><p class="mb-4">Do not auto-dismiss an error. A success note may disappear after a few seconds; an error stays until it is fixed.</p><p class="mb-4">Try the flow on app.clincoo.buzz with the keyboard only. If only alert appears, replace it before deploy.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank" rel="noopener">MDN Window.alert<span class="d">developer.mozilla.org/</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/notifikasi/">← Back to notifikasi</a>
+</div>
+</body>
+</html>
