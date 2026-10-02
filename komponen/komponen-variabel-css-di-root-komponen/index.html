@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letakkan Variabel CSS di Root Komponen, Bukan di :root — Clincoo Blog</title>
+<meta name="description" content="Variabel global menimpa tema lain. Simpan token warna dan jarak di elemen komponen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/komponen/komponen-variabel-css-di-root-komponen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Letakkan Variabel CSS di Root Komponen, Bukan di :root">
+<meta property="og:description" content="Variabel global menimpa tema lain. Simpan token warna dan jarak di elemen komponen.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/komponen/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Komponen</div><h1>Letakkan Variabel CSS di Root Komponen, Bukan di :root</h1><p class="desc">Variabel global menimpa tema lain. Simpan token warna dan jarak di elemen komponen.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di editor.clincoo.buzz, variabel di :root sering menimpa kartu lain yang kebetulan memakai nama yang sama, misalnya --gap atau --accent.</p><p class="mb-4">Pasang variabel pada kelas root komponen: .card { --card-gap: 12px; --card-accent: #0b6; }. Anak memakai var(--card-gap), bukan nilai ajaib.</p><p class="mb-4">Jangan salin seluruh token tema ke setiap komponen. Hanya override yang memang berbeda dari tema halaman.</p><p class="mb-4">Minta AI mengganti satu selektor :root menjadi kelas komponen. Tempel potongan CSS itu saja, bukan seluruh stylesheet.</p><p class="mb-4">Pratinjau dua komponen berdampingan di app.clincoo.buzz. Jika warna kartu ikut berubah, variabel masih bocor ke global. Catat nama token di blog.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noopener">MDN<span class="d">developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/komponen/">← Kembali ke komponen</a>
+</div>
+</body>
+</html>
