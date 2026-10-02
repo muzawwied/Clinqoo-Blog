@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two-Way ClincooPay Sync: Your Web Wallet Is the Source of Truth — Clincoo Blog</title>
+<meta name="description" content="Clincoo reads the live balance from your web wallet and writes delta mutations with a unique txid, so no transaction is ever counted twice.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/clincoopay/clincoopay-saldo-sinkron-dua-arah/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Two-Way ClincooPay Sync: Your Web Wallet Is the Source of Truth">
+<meta property="og:description" content="Clincoo reads the live balance from your web wallet and writes delta mutations with a unique txid, so no transaction is ever counted twice.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/clincoopay/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">ClincooPay</div><h1>Two-Way ClincooPay Sync: Your Web Wallet Is the Source of Truth</h1><p class="desc">Clincoo reads the live balance from your web wallet and writes delta mutations with a unique txid, so no transaction is ever counted twice.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./?lang=en">English</a></div><div class="body"><p class="mb-4">ClincooPay does not duplicate your balance. Your web Wallet is the source of truth, and Clincoo only reads it live.</p><p class="mb-4">When something changes, Clincoo sends a delta mutation to the web wallet instead of overwriting the number. The balance moves relative to its previous value.</p><p class="mb-4">Each mutation carries a unique txid. The wallet server rejects a repeated txid, so a mutation sent twice never adds the balance twice.</p><p class="mb-4">If the wallet connection fails, Clincoo shows that failure honestly. Never guess the balance from memory; always read it from the wallet page.</p><p class="mb-4">Transfers between Clincoo users go through the same path: the PIN is verified, the delta is sent with a txid, and both sides see a fresh balance.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/clincoopay/">← Kembali ke ClincooPay</a>
+</div>
+</body>
+</html>

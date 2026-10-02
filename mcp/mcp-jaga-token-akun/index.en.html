@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protect Your Session Token When Connecting Clinqoo MCP — Clincoo Blog</title>
+<meta name="description" content="The token used by the MCP server is a full account key. Keep it in the environment, never commit it to a repo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/mcp/mcp-jaga-token-akun/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Protect Your Session Token When Connecting Clinqoo MCP">
+<meta property="og:description" content="The token used by the MCP server is a full account key. Keep it in the environment, never commit it to a repo.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/mcp/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">MCP Server</div><h1>Protect Your Session Token When Connecting Clinqoo MCP</h1><p class="desc">The token used by the MCP server is a full account key. Keep it in the environment, never commit it to a repo.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./?lang=en">English</a></div><div class="body"><p class="mb-4">The Clinqoo MCP server uses your account session token via the CLINQOO_TOKEN variable. That token is as strong as being logged in.</p><p class="mb-4">Grab the token from the browser's local storage after logging into Clinqoo, or from the Authorization header in the devtools network tab.</p><p class="mb-4">Put the token in your editor's MCP config env, not directly in code. Do not share that config file publicly either.</p><p class="mb-4">If a token leaks, kill the session by logging out of Clinqoo. The old token dies and you simply reconnect with a fresh one.</p><p class="mb-4">Before committing, check .cursor/mcp.json and similar config files. Variable names may enter logs; their values may not.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/mcp/">← Kembali ke MCP Server</a>
+</div>
+</body>
+</html>
