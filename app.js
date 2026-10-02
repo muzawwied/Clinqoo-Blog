@@ -74,6 +74,7 @@ function toggleSidebar() {
 function toggleDrop(id) {
   const drop = document.getElementById(id);
   const icon = document.getElementById(id + 'Icon');
+  if (!drop) return;
   const isHidden = drop.classList.contains('hidden');
   drop.classList.toggle('hidden', !isHidden);
   drop.classList.toggle('flex', isHidden);
@@ -82,20 +83,23 @@ function toggleDrop(id) {
 
 function updateSidebarUI() {
   const u = ui();
-  document.getElementById('ctaHomeText').innerText = u.home;
-  document.getElementById('ctaAboutText').innerText = u.about;
-  document.getElementById('footerText').innerText = u.footer;
-  document.getElementById('ctaLangText').innerText = languages[currentLang].nativeName;
+  const setTxt = (id, txt) => { const el = document.getElementById(id); if (el) el.innerText = txt; };
+  setTxt('ctaHomeText', u.home);
+  setTxt('ctaAboutText', u.about);
+  setTxt('footerText', u.footer);
+  setTxt('ctaLangText', languages[currentLang].nativeName);
 
   // Populate bahasa
   const langDrop = document.getElementById('langDrop');
-  langDrop.innerHTML = '';
-  for (const key in languages) {
-    const btn = document.createElement('button');
-    btn.className = 'text-left px-3 py-1.5 rounded-md text-sm transition-colors ' + (currentLang === key ? 'bg-gray-100 font-bold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
-    btn.innerText = languages[key].nativeName;
-    btn.onclick = () => changeLanguage(key);
-    langDrop.appendChild(btn);
+  if (langDrop) {
+    langDrop.innerHTML = '';
+    for (const key in languages) {
+      const btn = document.createElement('button');
+      btn.className = 'text-left px-3 py-1.5 rounded-md text-sm transition-colors ' + (currentLang === key ? 'bg-gray-100 font-bold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.innerText = languages[key].nativeName;
+      btn.onclick = () => changeLanguage(key);
+      langDrop.appendChild(btn);
+    }
   }
 
   // Populate negara di dropdown
@@ -125,7 +129,7 @@ function changeLanguage(key) {
   else if (currentView === 'about') renderAbout();
   // Close dropdown
   const drop = document.getElementById('langDrop');
-  drop.classList.add('hidden'); drop.classList.remove('flex');
+  if (drop) { drop.classList.add('hidden'); drop.classList.remove('flex'); }
   const icon = document.getElementById('langDropIcon');
   icon && icon.classList.remove('rotate-180');
 }
@@ -162,7 +166,7 @@ function goToAbout() {
 // =============================================
 // RENDER
 // =============================================
-const appContainer = () => document.getElementById('app-container');
+const appContainer = () => document.getElementById('app-container') || document.getElementById('app');
 
 function makeHeader(backFn, backLabel) {
   return '<header class="sticky top-0 bg-white pt-4 pb-0 z-40 border-b border-gray-100 h-">' +
