@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep Source Maps Out of the Clincoo Production Bundle — Clincoo Blog</title>
+<meta name="description" content="A published source map exposes the original source. Keep maps local and do not upload them to public hosting.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/minify/minify-source-map-terpisah-dari-produksi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keep Source Maps Out of the Clincoo Production Bundle">
+<meta property="og:description" content="A published source map exposes the original source. Keep maps local and do not upload them to public hosting.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/minify/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">minify</div><h1>Keep Source Maps Out of the Clincoo Production Bundle</h1><p class="desc">A published source map exposes the original source. Keep maps local and do not upload them to public hosting.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">After minify on editor.clincoo.buzz, .map files often ride along in the upload folder. Visitors can then open source that was not cleaned.</p><p class="mb-4">Generate source maps only for the local build. Remove the sourceMappingURL comment from production files before deploy.</p><p class="mb-4">Do not commit maps to a public repository. Add *.map to the upload ignore list, then check the file list in the deploy package.</p><p class="mb-4">If a production stack trace needs a trail, send the map to an internal error tool, not to the same CDN as public assets.</p><p class="mb-4">Test the page on app.clincoo.buzz and confirm Network does not load a .map. Record this rule on blog.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/minify/">← Back to minify</a>
+</div>
+</body>
+</html>
