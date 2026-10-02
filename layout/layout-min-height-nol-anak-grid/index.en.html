@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set min-height: 0 on Overflowing Grid Children — Clincoo Blog</title>
+<meta name="description" content="A grid item refuses to shrink, then content spills out. min-height: 0 allows scrolling inside the card.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/layout/layout-min-height-nol-anak-grid/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set min-height: 0 on Overflowing Grid Children">
+<meta property="og:description" content="A grid item refuses to shrink, then content spills out. min-height: 0 allows scrolling inside the card.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/layout/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">layout</div><h1>Set min-height: 0 on Overflowing Grid Children</h1><p class="desc">A grid item refuses to shrink, then content spills out. min-height: 0 allows scrolling inside the card.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">In editor.clincoo.buzz, a card in a grid often grows until text leaves the screen. The default min-height: auto on a grid item blocks shrinking.</p><p class="mb-4">Set min-height: 0 on the item that should scroll. Then put overflow: auto on the card body, not on the whole page.</p><p class="mb-4">Do not clip with overflow: hidden if the action button sits at the bottom. A phone user cannot reach it.</p><p class="mb-4">Ask AI to flag grid items without min-height: 0 that contain a long list. Include the CSS snippet, not only a screenshot.</p><p class="mb-4">Test in the app.clincoo.buzz preview with a 20-row list. The card should stay in the viewport and its content should scroll.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">Official Clincoo editor</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/layout/">← Back to layout</a>
+</div>
+</body>
+</html>

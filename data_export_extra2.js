@@ -1,6 +1,31 @@
-// Clincoo Blog — artikel export tambahan 2026-10-02 WIB
+// Clincoo Blog — artikel export tambahan 2026-10-03 WIB
 (function(){
   var extra = [
+{
+  "id": "export-uji-unzip-di-folder-kosong",
+  "langs": {
+    "id": {
+      "title": "Uji Unzip Ekspor Clincoo di Folder Kosong",
+      "desc": "Zip yang lolos unduh masih bisa rusak saat diekstrak. Buka di folder kosong sebelum unggah ke host.",
+      "content": "<p class=\"mb-4\">Unduhan dari editor.clincoo.buzz belum tentu utuh. Koneksi yang putus di tengah sering menyisakan zip yang tetap bisa dibuka, tetapi file di dalamnya terpotong.</p><p class=\"mb-4\">Buat folder kosong, ekstrak zip ke sana, lalu cek index.html, aset CSS, dan gambar. Jangan ekstrak menimpa folder proyek yang sedang Anda edit.</p><p class=\"mb-4\">Jika ada peringatan path absolut atau file di luar folder, batalkan unggah. Zip seperti itu berbahaya di host baru.</p><p class=\"mb-4\">Minta AI menyusun daftar file yang wajib ada dari struktur proyek Clincoo. Bandingkan dengan hasil ekstrak, bukan dengan nama zip.</p><p class=\"mb-4\">Catat hasil uji di catatan rilis blog.clincoo.buzz. Tim berikutnya tidak perlu mengulang dugaan yang sama.</p>",
+      "source": "Clincoo",
+      "sourceUrl": "https://editor.clincoo.buzz/",
+      "sourceSnippet": "Editor resmi Clincoo",
+      "source2": "Clincoo App",
+      "source3": "Clincoo Blog"
+    },
+    "en": {
+      "title": "Test a Clincoo Export Unzip in an Empty Folder",
+      "desc": "A zip that finishes downloading can still be corrupt when extracted. Open it in an empty folder before uploading to a host.",
+      "content": "<p class=\"mb-4\">A download from editor.clincoo.buzz is not automatically intact. A dropped connection often leaves a zip that still opens, while files inside are truncated.</p><p class=\"mb-4\">Create an empty folder, extract the zip there, then check index.html, CSS assets, and images. Do not extract over the project folder you are editing.</p><p class=\"mb-4\">If you see absolute paths or files outside the folder, cancel the upload. That kind of zip is dangerous on a new host.</p><p class=\"mb-4\">Ask AI to list files that must exist from the Clincoo project structure. Compare that list with the extract, not with the zip name.</p><p class=\"mb-4\">Record the test on a blog.clincoo.buzz release note. The next person should not repeat the same guess.</p>",
+      "source": "Clincoo",
+      "sourceUrl": "https://editor.clincoo.buzz/",
+      "sourceSnippet": "Official Clincoo editor",
+      "source2": "Clincoo App",
+      "source3": "Clincoo Blog"
+    }
+  }
+},
   {
     "id": "export-cek-tautan-relatif-sebelum-zip",
     "langs": {

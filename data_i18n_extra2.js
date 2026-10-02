@@ -1,6 +1,31 @@
-// Clincoo Blog — artikel i18n tambahan 2026-10-02 WIB
+// Clincoo Blog — artikel i18n tambahan 2026-10-03 WIB
 (function(){
   var extra = [
+{
+  "id": "i18n-jangan-hardcode-rupiah-di-string",
+  "langs": {
+    "id": {
+      "title": "Jangan Hardcode Rupiah di String Terjemahan",
+      "desc": "Mata uang yang menempel di kalimat terjemahan pecah saat locale berganti. Format angka terpisah dari salinan.",
+      "content": "<p class=\"mb-4\">String ID dan EN di editor.clincoo.buzz sering berisi Rp 10.000. Saat halaman EN tampil, simbol itu tetap salah dan pemisah ribuan ikut rusak.</p><p class=\"mb-4\">Simpan angka polos, lalu format dengan Intl.NumberFormat memakai locale halaman. Taruh simbol di hasil format, bukan di file terjemahan.</p><p class=\"mb-4\">Jangan terjemahkan kode mata uang ISO. USD tetap USD. Yang berubah hanya pola tampilan.</p><p class=\"mb-4\">Minta AI memisahkan kalimat dan placeholder {harga}. Jangan minta AI mengubah nilai asli.</p><p class=\"mb-4\">Cek pratinjau app.clincoo.buzz dalam ID dan EN. Angka yang sama harus terbaca, dengan pemisah yang sesuai locale.</p>",
+      "source": "Clincoo",
+      "sourceUrl": "https://editor.clincoo.buzz/",
+      "sourceSnippet": "Editor resmi Clincoo",
+      "source2": "Clincoo App",
+      "source3": "Clincoo Blog"
+    },
+    "en": {
+      "title": "Do Not Hardcode Rupiah in Translation Strings",
+      "desc": "Currency glued into a translated sentence breaks when the locale changes. Format the number apart from the copy.",
+      "content": "<p class=\"mb-4\">ID and EN strings in editor.clincoo.buzz often contain Rp 10.000. When the EN page renders, that symbol stays wrong and the thousands separator breaks too.</p><p class=\"mb-4\">Store a plain number, then format it with Intl.NumberFormat using the page locale. Put the symbol in the formatted result, not in the translation file.</p><p class=\"mb-4\">Do not translate ISO currency codes. USD stays USD. Only the display pattern changes.</p><p class=\"mb-4\">Ask AI to split the sentence and a {harga} placeholder. Do not ask AI to change the original amount.</p><p class=\"mb-4\">Check the app.clincoo.buzz preview in ID and EN. The same number should be readable, with the separator that matches the locale.</p>",
+      "source": "Clincoo",
+      "sourceUrl": "https://editor.clincoo.buzz/",
+      "sourceSnippet": "Official Clincoo editor",
+      "source2": "Clincoo App",
+      "source3": "Clincoo Blog"
+    }
+  }
+},
   {
     "id": "i18n-jangan-terjemahkan-kode-error",
     "langs": {

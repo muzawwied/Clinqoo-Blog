@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Separate Network Errors from 404 on Clincoo Fetch — Clincoo Blog</title>
+<meta name="description" content="One generic failure for a dropped connection and a missing page sends debugging in circles. Split the two cases.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-bedakan-error-jaringan-dan-404/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Separate Network Errors from 404 on Clincoo Fetch">
+<meta property="og:description" content="One generic failure for a dropped connection and a missing page sends debugging in circles. Split the two cases.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Separate Network Errors from 404 on Clincoo Fetch</h1><p class="desc">One generic failure for a dropped connection and a missing page sends debugging in circles. Split the two cases.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">fetch in editor.clincoo.buzz throws a TypeError when the network drops, and returns a response when the server answers 404. Those are not the same error.</p><p class="mb-4">Treat navigator.onLine as a hint only. What matters is whether the promise rejected, or response.ok is false.</p><p class="mb-4">Show the status code when you have one. For a rejection with no response, say the request never reached the server.</p><p class="mb-4">Paste a short stack to AI and say whether a status code exists. Without that, AI often suggests fixing an endpoint that is actually up.</p><p class="mb-4">Test in the app.clincoo.buzz preview: disable the network, then open a path that really does not exist. The two messages must differ.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">Official Clincoo editor</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to fetch</a>
+</div>
+</body>
+</html>
