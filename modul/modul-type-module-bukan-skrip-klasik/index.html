@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai type=module pada Skrip Clincoo, Bukan Skrip Klasik yang Saling Tabrak — Clincoo Blog</title>
+<meta name="description" content="Skrip klasik berbagi satu lingkup global. type=module mengisolasi variabel dan menunda eksekusi sampai HTML selesai diurai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-type-module-bukan-skrip-klasik/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai type=module pada Skrip Clincoo, Bukan Skrip Klasik yang Saling Tabrak">
+<meta property="og:description" content="Skrip klasik berbagi satu lingkup global. type=module mengisolasi variabel dan menunda eksekusi sampai HTML selesai diurai.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modul</div><h1>Pakai type=module pada Skrip Clincoo, Bukan Skrip Klasik yang Saling Tabrak</h1><p class="desc">Skrip klasik berbagi satu lingkup global. type=module mengisolasi variabel dan menunda eksekusi sampai HTML selesai diurai.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di editor.clincoo.buzz, template sering menempel beberapa tag script tanpa type. Fungsi dengan nama sama saling menimpa dan error baru muncul setelah halaman hidup.</p><p class="mb-4">Beri type="module" pada berkas utama. Impor hanya yang dipakai. Variabel di dalam modul tidak bocor ke window kecuali Anda sengaja menaruhnya.</p><p class="mb-4">Modul ditunda seperti defer: DOM sudah ada saat kode jalan. Jangan andalkan document.write. Jangan campur modul dan skrip klasik yang bergantung urutan tag.</p><p class="mb-4">Minta AI mengubah satu berkas menjadi modul dan menandai impor yang hilang. Tolak tulis ulang seluruh aplikasi dalam satu jawaban.</p><p class="mb-4">Clincoo menyimpan HTML yang Anda terbitkan. Modul yang rapi membuat app.clincoo.buzz lebih mudah di-debug dari blog.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

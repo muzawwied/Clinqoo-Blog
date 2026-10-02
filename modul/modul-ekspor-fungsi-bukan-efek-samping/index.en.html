@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Export Functions from Clincoo Modules, Do Not Run Side Effects on Import — Clincoo Blog</title>
+<meta name="description" content="Top-level module code runs as soon as it is imported. That fires network calls or changes the DOM before the page is ready.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-ekspor-fungsi-bukan-efek-samping/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Export Functions from Clincoo Modules, Do Not Run Side Effects on Import">
+<meta property="og:description" content="Top-level module code runs as soon as it is imported. That fires network calls or changes the DOM before the page is ready.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modules</div><h1>Export Functions from Clincoo Modules, Do Not Run Side Effects on Import</h1><p class="desc">Top-level module code runs as soon as it is imported. That fires network calls or changes the DOM before the page is ready.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./index.en.html">English</a> · <a href="./?lang=id">Indonesia</a></div><div class="body"><p class="mb-4">Clincoo snippets often call fetch or querySelector outside a function. Importing that file from another page runs the same effect.</p><p class="mb-4">Wrap the work in export function init(). Call init from one entry point after the element exists. A module may export constants, not mutate the page immediately.</p><p class="mb-4">The only side effects allowed at top level are pure definitions. Do not attach a global listener outside init, because hot reload and preview will attach it twice.</p><p class="mb-4">Ask AI to move fetch inside init and return a list of leftover side effects. Refuse hiding errors with an empty catch.</p><p class="mb-4">Test importing the module from a blank page on editor.clincoo.buzz. There should be no network request before init is called on app.clincoo.buzz.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
