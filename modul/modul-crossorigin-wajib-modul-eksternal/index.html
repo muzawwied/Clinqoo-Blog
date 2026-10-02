@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wajib crossorigin pada Modul Clincoo yang Diimpor dari Asal Lain — Clincoo Blog</title>
+<meta name="description" content="Modul dari CDN atau domain lain gagal tanpa crossorigin. Browser menolak impor lintas asal yang tidak CORS.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-crossorigin-wajib-modul-eksternal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wajib crossorigin pada Modul Clincoo yang Diimpor dari Asal Lain">
+<meta property="og:description" content="Modul dari CDN atau domain lain gagal tanpa crossorigin. Browser menolak impor lintas asal yang tidak CORS.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modul</div><h1>Wajib crossorigin pada Modul Clincoo yang Diimpor dari Asal Lain</h1><p class="desc">Modul dari CDN atau domain lain gagal tanpa crossorigin. Browser menolak impor lintas asal yang tidak CORS.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di editor.clincoo.buzz, tag script type=module yang src-nya menunjuk CDN sering diam di konsol: failed to fetch dynamically imported module.</p><p class="mb-4">Tambahkan atribut crossorigin pada tag modul. Server CDN harus mengirim Access-Control-Allow-Origin yang cocok. Tanpa header itu, impor tetap gagal meski URL benar.</p><p class="mb-4">Jangan campur modul same-origin dengan impor CDN yang tidak mengirim CORS. Satu kegagalan di graf impor menghentikan seluruh berkas utama.</p><p class="mb-4">Minta AI menandai setiap impor lintas asal dan menambahkan crossorigin hanya pada tag itu. Tolak memindahkan seluruh aplikasi ke CDN.</p><p class="mb-4">Uji di pratinjau app.clincoo.buzz dengan tab Network. Status 200 tanpa header CORS tetap gagal untuk modul.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
