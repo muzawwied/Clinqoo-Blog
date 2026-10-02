@@ -1,1 +1,14 @@
-(function(){var e=[];var b=window.countryDataFiles&&window.countryDataFiles["animasi"];if(b&&b.articles)b.articles=b.articles.concat(e);})();
+// Clincoo Blog animasi extra 2026-10-02 WIB
+(function(){
+  var extra = [
+    {id:'animasi-reduced-motion-hentikan-loop',langs:{id:{title:'Hentikan Animasi Loop jika prefers-reduced-motion Aktif',desc:'Animasi hero yang berulang terus mengganggu pengguna yang meminta gerak dikurangi. Matikan loop lewat media query, bukan dengan menghapus seluruh CSS.',content:'<p class="mb-4">Di editor.clincoo.buzz, hero yang berputar tanpa henti tetap jalan meski sistem operasi meminta reduced motion. Pengguna vestibular bisa pusing hanya karena kartu pratinjau.</p><p class="mb-4">Tambahkan @media (prefers-reduced-motion: reduce) dan set animation: none serta transition: none pada elemen dekoratif. Biarkan perubahan warna fokus tetap ada agar keyboard tidak kehilangan petunjuk.</p><p class="mb-4">Jangan hapus seluruh stylesheet. Pisahkan kelas .is-decorative dari animasi yang menjelaskan status, misalnya spinner unggah di app.clincoo.buzz.</p><p class="mb-4">Saat minta bantuan AI, tempel potongan keyframes dan minta versi reduce saja. Jangan minta tulis ulang halaman.</p><p class="mb-4">Uji di DevTools dengan emulate prefers-reduced-motion. Catat hasilnya di blog.clincoo.buzz jika pola yang sama dipakai template lain.</p>',source:'Clincoo',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Editor resmi Clincoo',source2:'Clincoo App',source3:'Clincoo Blog'},en:{title:'Stop Looping Animation When prefers-reduced-motion Is On',desc:'A looping hero animation distracts people who asked for less motion. Disable the loop with a media query instead of deleting all CSS.',content:'<p class="mb-4">On editor.clincoo.buzz, a hero that spins forever still runs when the operating system asks for reduced motion. Vestibular users can get dizzy from a preview card alone.</p><p class="mb-4">Add @media (prefers-reduced-motion: reduce) and set animation: none and transition: none on decorative elements. Keep focus color changes so keyboard users still see a cue.</p><p class="mb-4">Do not delete the whole stylesheet. Separate an .is-decorative class from motion that explains status, such as an upload spinner on app.clincoo.buzz.</p><p class="mb-4">When asking AI for help, paste the keyframes snippet and request a reduce variant only. Do not ask it to rewrite the page.</p><p class="mb-4">Test in DevTools by emulating prefers-reduced-motion. Note the pattern on blog.clincoo.buzz if other templates share it.</p>',source:'Clincoo',sourceUrl:'https://editor.clincoo.buzz/',sourceSnippet:'Official Clincoo editor',source2:'Clincoo App',source3:'Clincoo Blog'}}}
+  ];
+  function merge(){
+    if (!window.countryDataFiles || !window.countryDataFiles['animasi']) { setTimeout(merge, 30); return; }
+    var arr = window.countryDataFiles['animasi'].articles;
+    var have = {};
+    for (var i = 0; i < arr.length; i++) have[arr[i].id] = true;
+    for (var j = 0; j < extra.length; j++) { if (!have[extra[j].id]) arr.push(extra[j]); }
+  }
+  merge();
+})();
