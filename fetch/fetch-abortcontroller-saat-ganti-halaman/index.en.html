@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cancel Fetch with AbortController when Leaving a Clincoo Page — Clincoo Blog</title>
+<meta name="description" content="A late response can overwrite the new UI. Abort the request when the user leaves the page.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/fetch/fetch-abortcontroller-saat-ganti-halaman/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cancel Fetch with AbortController when Leaving a Clincoo Page">
+<meta property="og:description" content="A late response can overwrite the new UI. Abort the request when the user leaves the page.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/fetch/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Fetch</div><h1>Cancel Fetch with AbortController when Leaving a Clincoo Page</h1><p class="desc">A late response can overwrite the new UI. Abort the request when the user leaves the page.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On app.clincoo.buzz, leaving a page does not automatically stop an in-flight fetch. A late response can fill the wrong list.</p><p class="mb-4">Create an AbortController per request. Pass signal to fetch, then call abort when the component unmounts or the route changes.</p><p class="mb-4">Ignore AbortError in catch. Do not show a network-failure toast for an intentional cancel.</p><p class="mb-4">After res.ok, check again that the request is still current before writing the DOM. That prevents two responses from racing.</p><p class="mb-4">Test with DevTools throttling on editor.clincoo.buzz, then record the pattern on blog.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener">Clincoo<span class="d">developer.mozilla.org/en-US/docs/Web/API/AbortController</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/fetch/">← Back to fetch</a>
+</div>
+</body>
+</html>
