@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Subresource Integrity to Clincoo CDN Scripts — Clincoo Blog</title>
+<meta name="description" content="A CDN script can change without you noticing. The integrity attribute rejects a file whose hash does not match.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-subresource-integrity-cdn/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Add Subresource Integrity to Clincoo CDN Scripts">
+<meta property="og:description" content="A CDN script can change without you noticing. The integrity attribute rejects a file whose hash does not match.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Add Subresource Integrity to Clincoo CDN Scripts</h1><p class="desc">A CDN script can change without you noticing. The integrity attribute rejects a file whose hash does not match.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A Clincoo page sometimes loads a font loader or a small library from a CDN. If that domain is compromised, the new script runs on your site.</p><p class="mb-4">Hash the file with SHA-384, then set integrity sha384- and crossorigin anonymous on the script or link tag. Pin the version in the URL; do not use latest.</p><p class="mb-4">On release, open Network in the app.clincoo.buzz preview. If the console reports an integrity mismatch, do not delete the attribute. Replace the hash after you download the official file.</p><p class="mb-4">Ask the AI for the SRI steps, not a random CDN paste. Refuse a rewrite that adds three new libraries.</p><p class="mb-4">SRI does not cover inline scripts. For those, rely on CSP and a review before deploy.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity" target="_blank" rel="noopener">MDN Subresource Integrity<span class="d">SRI lets browsers verify that fetched resources are delivered without unexpected manipulation.</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

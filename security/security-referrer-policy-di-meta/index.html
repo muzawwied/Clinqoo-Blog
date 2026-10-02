@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasang Referrer-Policy di Meta Situs Clincoo — Clincoo Blog</title>
+<meta name="description" content="Tautan keluar bisa mengirim URL lengkap, termasuk query berisi kode undangan. Policy ketat memotong kebocoran itu.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-referrer-policy-di-meta/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasang Referrer-Policy di Meta Situs Clincoo">
+<meta property="og:description" content="Tautan keluar bisa mengirim URL lengkap, termasuk query berisi kode undangan. Policy ketat memotong kebocoran itu.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Pasang Referrer-Policy di Meta Situs Clincoo</h1><p class="desc">Tautan keluar bisa mengirim URL lengkap, termasuk query berisi kode undangan. Policy ketat memotong kebocoran itu.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Halaman Clincoo sering punya query kampanye atau token undangan. Tanpa referrer policy, browser mengirim URL utuh ke situs yang diklik pengunjung.</p><p class="mb-4">Tambahkan di head meta name referrer dengan content strict-origin-when-cross-origin. Untuk tautan sensitif, pakai rel noreferrer pada tag a.</p><p class="mb-4">Uji di Network: klik tautan eksternal dari pratinjau blog.clincoo.buzz dan lihat header Referer. Path internal tidak boleh ikut.</p><p class="mb-4">Jangan minta AI menulis ulang seluruh head. Minta satu baris meta, lalu cek tag canonical dan og yang sudah ada.</p><p class="mb-4">Policy ini tidak menggantikan HTTPS. Ia hanya mengurangi data yang ikut saat pengunjung meninggalkan situs.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" target="_blank" rel="noopener">MDN Referrer-Policy<span class="d">Referrer-Policy controls how much referrer information is sent.</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

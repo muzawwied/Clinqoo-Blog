@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandbox Iframe Embeds on Clincoo Pages — Clincoo Blog</title>
+<meta name="description" content="A map or video embed without sandbox can run scripts and open popups. Limit permissions per widget.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-sandbox-iframe-embed/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sandbox Iframe Embeds on Clincoo Pages">
+<meta property="og:description" content="A map or video embed without sandbox can run scripts and open popups. Limit permissions per widget.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Sandbox Iframe Embeds on Clincoo Pages</h1><p class="desc">A map or video embed without sandbox can run scripts and open popups. Limit permissions per widget.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Templates in editor.clincoo.buzz often paste map, video, or form iframes. Without a sandbox attribute, that document is nearly a page of its own.</p><p class="mb-4">Start with an empty sandbox, then add only tokens you need: allow-scripts for a video player, allow-popups only if the widget fails without it. Do not combine allow-scripts and allow-same-origin unless the vendor documents it.</p><p class="mb-4">Test the preview at 360px and desktop. If the embed is blank, read the console error, then add one token. Do not remove sandbox.</p><p class="mb-4">Ask the AI to explain each token before you apply it. Refuse a suggestion that copies an admin iframe or a third-party login page.</p><p class="mb-4">An embed is still third-party content. Sandbox limits the blast radius if the widget script changes.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox" target="_blank" rel="noopener">MDN iframe sandbox<span class="d">The sandbox attribute applies extra restrictions to the content in the frame.</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

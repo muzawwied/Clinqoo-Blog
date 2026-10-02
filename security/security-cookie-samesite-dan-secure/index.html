@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set Cookie Clincoo dengan SameSite dan Secure — Clincoo Blog</title>
+<meta name="description" content="Cookie sesi tanpa SameSite dan Secure mudah ikut terbawa permintaan silang. Tulis atributnya di tempat cookie dibuat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/security/security-cookie-samesite-dan-secure/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Cookie Clincoo dengan SameSite dan Secure">
+<meta property="og:description" content="Cookie sesi tanpa SameSite dan Secure mudah ikut terbawa permintaan silang. Tulis atributnya di tempat cookie dibuat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/security/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">🔒 Keamanan</div><h1>Set Cookie Clincoo dengan SameSite dan Secure</h1><p class="desc">Cookie sesi tanpa SameSite dan Secure mudah ikut terbawa permintaan silang. Tulis atributnya di tempat cookie dibuat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form login atau preferensi di app.clincoo.buzz kadang menulis document.cookie tanpa atribut. Browser lama mengirim cookie itu ke permintaan pihak ketiga.</p><p class="mb-4">Jika cookie harus ada, tulis Secure dan SameSite=Lax untuk sesi biasa, atau Strict jika tidak perlu ikut navigasi dari situs lain. Tambahkan HttpOnly hanya jika cookie dibuat server, bukan dari JS.</p><p class="mb-4">Jangan simpan token API di cookie yang bisa dibaca skrip halaman. Simpan preferensi tampilan saja di klien.</p><p class="mb-4">Uji di Application, panel Cookies, setelah pratinjau. Kolom Secure dan SameSite harus terisi. Minta AI meninjau satu baris set cookie, bukan seluruh auth.</p><p class="mb-4">Atribut cookie tidak menggantikan validasi server. Ia mengurangi permintaan yang tidak kamu maksud.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie<span class="d">SameSite and Secure control when a cookie is sent.</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/security/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
