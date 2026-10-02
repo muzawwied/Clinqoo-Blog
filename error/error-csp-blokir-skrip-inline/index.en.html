@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read Content-Security-Policy When Clincoo Inline Scripts Are Blocked — Clincoo Blog</title>
+<meta name="description" content="The message 'Refused to execute inline script' is not a click bug. Check the CSP header in the Network tab.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/error/error-csp-blokir-skrip-inline/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Read Content-Security-Policy When Clincoo Inline Scripts Are Blocked">
+<meta property="og:description" content="The message 'Refused to execute inline script' is not a click bug. Check the CSP header in the Network tab.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/error/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Error</div><h1>Read Content-Security-Policy When Clincoo Inline Scripts Are Blocked</h1><p class="desc">The message 'Refused to execute inline script' is not a click bug. Check the CSP header in the Network tab.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">The preview on editor.clincoo.buzz can stay silent without a stack. Open Console and look for Refused to execute inline script because of Content Security Policy.</p><p class="mb-4">Switch to Network, select the HTML document, and read Content-Security-Policy. Note script-src: whether it allows 'unsafe-inline' or a nonce.</p><p class="mb-4">onclick attributes and script blocks without a nonce are rejected. Move the logic into an external .js file allowed on the same host.</p><p class="mb-4">If inline is required, take the nonce from the server and match the header. Do not add 'unsafe-inline' just to make a demo work.</p><p class="mb-4">Retry on app.clincoo.buzz with cache disabled. Paste the full CSP message to AI, not only 'the button does nothing'.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/error/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
