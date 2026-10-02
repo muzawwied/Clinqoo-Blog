@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beri Ekstensi yang Benar agar Server Clincoo Mengirim MIME Modul — Clincoo Blog</title>
+<meta name="description" content="Modul yang dilayani sebagai text/plain atau text/html ditolak browser. Ekstensi .js atau .mjs harus dipetakan ke JavaScript.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-ekstensi-file-agar-mime-benar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beri Ekstensi yang Benar agar Server Clincoo Mengirim MIME Modul">
+<meta property="og:description" content="Modul yang dilayani sebagai text/plain atau text/html ditolak browser. Ekstensi .js atau .mjs harus dipetakan ke JavaScript.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modul</div><h1>Beri Ekstensi yang Benar agar Server Clincoo Mengirim MIME Modul</h1><p class="desc">Modul yang dilayani sebagai text/plain atau text/html ditolak browser. Ekstensi .js atau .mjs harus dipetakan ke JavaScript.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Setelah deploy dari editor.clincoo.buzz, konsol kadang bilang expected a JavaScript module script. Isi berkas benar, header Content-Type salah.</p><p class="mb-4">Simpan modul sebagai .js atau .mjs, bukan .txt atau tanpa ekstensi. Pastikan hosting mengirim text/javascript atau application/javascript.</p><p class="mb-4">Jangan menyajikan modul lewat URL yang mengembalikan halaman HTML 404. Impor akan gagal parse karena menerima tag html, bukan ekspor.</p><p class="mb-4">Minta AI mengecek path impor terhadap nama file sungguhan. Tolak mengubah logika hanya karena MIME salah.</p><p class="mb-4">Di app.clincoo.buzz, buka tab Network, klik berkas modul, dan baca Content-Type sebelum mengubah kode.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
