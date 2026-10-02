@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defer Bukan Pengganti type=module di Halaman Clincoo — Clincoo Blog</title>
+<meta name="description" content="defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-defer-bukan-pengganti-type-module/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Defer Bukan Pengganti type=module di Halaman Clincoo">
+<meta property="og:description" content="defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.clincoo.buzz/modul/modul-defer-bukan-pengganti-type-module/"},"headline":"Defer Bukan Pengganti type=module di Halaman Clincoo","description":"defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.","inLanguage":"id-ID","datePublished":"2026-10-02","dateModified":"2026-10-02","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo Blog","logo":{"@type":"ImageObject","url":"https://blog.clincoo.buzz/logo.png"}},"image":"https://blog.clincoo.buzz/logo.png","isPartOf":{"@type":"Blog","name":"Clincoo Blog","url":"https://blog.clincoo.buzz"}}</script>
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modul</div><h1>Defer Bukan Pengganti type=module di Halaman Clincoo</h1><p class="desc">defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Skrip dengan defer menunggu HTML selesai diurai, tetapi variabelnya tetap global. Dua file defer tetap bisa menimpa nama yang sama.</p><p class="mb-4">type=module juga tertunda secara bawaan dan berjalan setelah dokumen diurai. Anda tidak perlu menambah defer pada tag modul.</p><p class="mb-4">Impor antar berkas hanya sah di modul. Skrip klasik yang memakai import akan gagal di konsol dengan syntax error.</p><p class="mb-4">Di editor.clincoo.buzz, tulis type=module pada tag skrip halaman, lalu pisahkan helper ke berkas terpisah yang diekspor.</p><p class="mb-4">Urutan eksekusi modul mengikuti graf impor, bukan urutan tag. Jangan mengandalkan skrip berikutnya untuk menyiapkan variabel global.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script" target="_blank" rel="noopener">MDN<span class="d">developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Kembali ke Modul</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>defer Is Not a Substitute for type=module on a Clincoo Page — Clincoo Blog</title>
+<meta name="description" content="defer only delays a classic script. Modules still need type=module so imports and an isolated scope actually work.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-defer-bukan-pengganti-type-module/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="defer Is Not a Substitute for type=module on a Clincoo Page">
+<meta property="og:description" content="defer only delays a classic script. Modules still need type=module so imports and an isolated scope actually work.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.clincoo.buzz/modul/modul-defer-bukan-pengganti-type-module/"},"headline":"defer Is Not a Substitute for type=module on a Clincoo Page","description":"defer only delays a classic script. Modules still need type=module so imports and an isolated scope actually work.","inLanguage":"en-US","datePublished":"2026-10-02","dateModified":"2026-10-02","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo Blog","logo":{"@type":"ImageObject","url":"https://blog.clincoo.buzz/logo.png"}},"image":"https://blog.clincoo.buzz/logo.png","isPartOf":{"@type":"Blog","name":"Clincoo Blog","url":"https://blog.clincoo.buzz"}}</script>
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/modul/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Modules</div><h1>defer Is Not a Substitute for type=module on a Clincoo Page</h1><p class="desc">defer only delays a classic script. Modules still need type=module so imports and an isolated scope actually work.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesia</a> · <a href="./?lang=en">English</a></div><div class="body"><p class="mb-4">A script with defer waits until HTML is parsed, but its variables stay global. Two deferred files can still overwrite the same name.</p><p class="mb-4">type=module is deferred by default and runs after the document is parsed. You do not need to add defer on a module tag.</p><p class="mb-4">Imports between files are valid only in modules. A classic script that uses import fails in the console with a syntax error.</p><p class="mb-4">In editor.clincoo.buzz, set type=module on the page script tag, then move helpers into a separate file that exports them.</p><p class="mb-4">Module execution order follows the import graph, not the tag order. Do not rely on the next script to prepare a global variable.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script" target="_blank" rel="noopener">MDN<span class="d">developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/modul/">← Kembali ke Modules</a>
+</div>
+</body>
+</html>
