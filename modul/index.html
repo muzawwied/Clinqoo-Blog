@@ -28,7 +28,13 @@
     <a class="card" href="./modul-import-map-kunci-satu-versi/"><h2>Kunci Satu Versi Pustaka Clincoo dengan Import Map</h2><p>Dua tag script CDN bisa memuat dua versi pustaka yang sama. Import map menunjuk specifier ke satu URL.</p></a>
     <a class="card" href="./modul-hindari-siklus-impor/"><h2>Putuskan Siklus Impor antar Modul Clincoo</h2><p>A mengimpor B dan B mengimpor A. Salah satu ekspor masih belum siap dan nilainya undefined.</p></a>
     <a class="card" href="./modul-ekspor-fungsi-bukan-efek-samping/"><h2>Ekspor Fungsi dari Modul Clincoo, Jangan Jalankan Efek Samping saat Impor</h2><p>Kode di tingkat atas modul jalan begitu diimpor. Itu memicu jaringan atau mengubah DOM sebelum halaman siap.</p></a>
-  <a class="card" href="./modul-defer-bukan-pengganti-type-module/"><h2>Defer Bukan Pengganti type=module di Halaman Clincoo</h2><p>defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.</p></a></div>
+    <a class="card" href="./modul-defer-bukan-pengganti-type-module/"><h2>Defer Bukan Pengganti type=module di Halaman Clincoo</h2><p>defer hanya menunda skrip klasik. Modul tetap perlu type=module agar impor dan lingkup terisolasi berjalan.</p></a>
+    <a class="card" href="./modul-crossorigin-wajib-modul-eksternal/"><h2>Wajib crossorigin pada Modul Clincoo yang Diimpor dari Asal Lain</h2><p>Modul dari CDN atau domain lain gagal tanpa crossorigin. Browser menolak impor lintas asal yang tidak CORS.</p></a>
+    <a class="card" href="./modul-modulepreload-berkas-kritis/"><h2>Pakai modulepreload untuk Berkas Modul Clincoo yang Kritis</h2><p>modulepreload mengunduh dan mengompilasi modul sebelum tag script jalan, sehingga impor pertama tidak menunggu giliran.</p></a>
+    <a class="card" href="./modul-impor-json-dengan-atribut/"><h2>Impor JSON di Modul Clincoo dengan Atribut Tipe, Bukan fetch Diam-diam</h2><p>Import atribut type json membuat data konfigurasi ikut graf modul. fetch tersembunyi di tingkat atas sulit dibatalkan.</p></a>
+    <a class="card" href="./modul-ekstensi-file-agar-mime-benar/"><h2>Beri Ekstensi yang Benar agar Server Clincoo Mengirim MIME Modul</h2><p>Modul yang dilayani sebagai text/plain atau text/html ditolak browser. Ekstensi .js atau .mjs harus dipetakan ke JavaScript.</p></a>
+    <a class="card" href="./modul-specifier-relatif-bukan-url-campur/"><h2>Pakai Specifier Relatif di Modul Clincoo, Jangan Campur URL Mutlak</h2><p>Impor ./util.js mengikuti halaman. URL mutlak ke host lain pecah saat pratinjau pindah dari editor ke domain aplikasi.</p></a>
+  </div>
   <a class="back" href="https://blog.clincoo.buzz/">← Kembali ke Clincoo Blog</a>
 </div>
 </body>
