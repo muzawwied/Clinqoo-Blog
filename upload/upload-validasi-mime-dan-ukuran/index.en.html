@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Clincoo Upload MIME and Size, Not the Extension Alone — Clincoo Blog</title>
+<meta name="description" content="A .png filename can hide a script. Check type and size, and reject the file before FormData is sent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/upload/upload-validasi-mime-dan-ukuran/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Validate Clincoo Upload MIME and Size, Not the Extension Alone">
+<meta property="og:description" content="A .png filename can hide a script. Check type and size, and reject the file before FormData is sent.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/upload/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Unggah</div><h1>Validate Clincoo Upload MIME and Size, Not the Extension Alone</h1><p class="desc">A .png filename can hide a script. Check type and size, and reject the file before FormData is sent.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">A file input on editor.clincoo.buzz only filters the accept attribute. A user can still pick another file, then rename the extension.</p><p class="mb-4">On the change event, read file.type and file.size. Allow image/jpeg, image/png, or image/webp, and cap size at about 1 MB.</p><p class="mb-4">If type is empty or does not match, do not append the file to FormData. Show a message beside the input, not an alert.</p><p class="mb-4">accept is still useful as a hint, not as a gate. The gate is the check before send.</p><p class="mb-4">Test with a text file renamed to .png. Document the limit on blog.clincoo.buzz so the next form uses the same number.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/upload/">← Back to upload</a>
+</div>
+</body>
+</html>
