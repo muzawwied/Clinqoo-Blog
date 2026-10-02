@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assert Visible Text, Not CSS Class Names, in Clincoo Tests — Clincoo Blog</title>
+<meta name="description" content="Utility classes change. A test that reads the button label survives a style refactor.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/testing/testing-uji-teks-terlihat-bukan-kelas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Assert Visible Text, Not CSS Class Names, in Clincoo Tests">
+<meta property="og:description" content="Utility classes change. A test that reads the button label survives a style refactor.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/testing/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Testing</div><h1>Assert Visible Text, Not CSS Class Names, in Clincoo Tests</h1><p class="desc">Utility classes change. A test that reads the button label survives a style refactor.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, tests that depend on class btn-primary break when design tokens change. Users never see the class name.</p><p class="mb-4">Find the button by role and accessible name, then click. Assert the status text that appears matches the UI copy.</p><p class="mb-4">Do not assert raw innerHTML. Compare normalized textContent.</p><p class="mb-4">Paste the test snippet to AI and ask to swap the class selector for getByRole. Do not ask for a full suite rewrite.</p><p class="mb-4">This flow is used when checking the app.clincoo.buzz preview and pages on blog.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">Official Clincoo editor</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/testing/">← Back to testing</a>
+</div>
+</body>
+</html>
