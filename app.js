@@ -170,10 +170,13 @@ function goToAbout() {
 const appContainer = () => document.getElementById('app-container') || document.getElementById('app');
 
 function makeHeader(backFn, backLabel) {
-  return '<header class="sticky top-0 pt-4 pb-0 z-40 border-b border-gray-100 h-">' +
-    '<div class="flex items-center h-full text-gray-500 cursor-pointer hover:text-gray-900 transition-colors" onclick="' + backFn + '">' +
+  return '<header class="sticky top-0 pt-4 pb-0 z-40 border-b border-gray-100">' +
+    '<div class="flex items-center gap-2">' +
+    '<button onclick="toggleSidebar()" class="p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none transition-colors flex-shrink-0">' +
+    '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg></button>' +
+    '<div class="flex items-center text-gray-500 cursor-pointer hover:text-gray-900 transition-colors" onclick="' + backFn + '">' +
     '<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>' +
-    '<span class="font-medium text-sm">' + backLabel + '</span></div></header>';
+    '<span class="font-medium text-sm">' + backLabel + '</span></div></div></header>';
 }
 
 // BERANDA — semua artikel campur
