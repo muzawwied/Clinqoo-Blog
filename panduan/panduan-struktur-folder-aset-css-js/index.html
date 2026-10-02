@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapikan Struktur Folder Aset, CSS, dan JS di Proyek Clincoo — Clincoo Blog</title>
+<meta name="description" content="File menumpuk di root membuat pratinjau dan deploy sulit dilacak. Pisahkan halaman, gaya, skrip, dan gambar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/panduan/panduan-struktur-folder-aset-css-js/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rapikan Struktur Folder Aset, CSS, dan JS di Proyek Clincoo">
+<meta property="og:description" content="File menumpuk di root membuat pratinjau dan deploy sulit dilacak. Pisahkan halaman, gaya, skrip, dan gambar.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/panduan/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📘 Panduan</div><h1>Rapikan Struktur Folder Aset, CSS, dan JS di Proyek Clincoo</h1><p class="desc">File menumpuk di root membuat pratinjau dan deploy sulit dilacak. Pisahkan halaman, gaya, skrip, dan gambar.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Proyek baru di editor.clincoo.buzz sering menaruh style.css, app.js, dan logo.png sejajar dengan index.html. Itu cukup untuk satu halaman, kacau setelah ada tentang dan kontak.</p><p class="mb-4">Pakai pola sederhana: halaman di root atau folder tiap rute, CSS di assets/css, JS di assets/js, gambar di assets/img. Nama file huruf kecil dan tanda hubung.</p><p class="mb-4">Tautan relatif harus mengikuti kedalaman folder. Dari /kontak/index.html, logo ada di ../assets/img/logo.png. Cek di pratinjau, bukan hanya di editor.</p><p class="mb-4">Jangan salin seluruh template ke folder baru. Pindahkan satu jenis file, refresh, lalu lanjut. Struktur yang rapi juga memudahkan saat minta bantuan AI: sebut path yang tepat.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank" rel="noopener">MDN organizing a page<span class="d">developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/panduan/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

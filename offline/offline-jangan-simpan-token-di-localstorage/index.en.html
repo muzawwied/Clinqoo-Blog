@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Store Session Tokens in localStorage for Clincoo Offline Mode — Clincoo Blog</title>
+<meta name="description" content="Offline drafts may live on the device. Login tokens must not. localStorage is readable by any script on the same origin.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/offline/offline-jangan-simpan-token-di-localstorage/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Store Session Tokens in localStorage for Clincoo Offline Mode">
+<meta property="og:description" content="Offline drafts may live on the device. Login tokens must not. localStorage is readable by any script on the same origin.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/offline/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">📄 Offline</div><h1>Do Not Store Session Tokens in localStorage for Clincoo Offline Mode</h1><p class="desc">Offline drafts may live on the device. Login tokens must not. localStorage is readable by any script on the same origin.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Offline mode in editor.clincoo.buzz often stores drafts in localStorage or IndexedDB. Do not store access tokens, refresh tokens, or session keys in the same place.</p><p class="mb-4">localStorage is readable by any JavaScript on that origin. One third-party script or an XSS snippet can take the token without touching the network.</p><p class="mb-4">Store only the draft body and a queue id. Keep authentication in an HttpOnly cookie that the browser sends when the network returns. If a token must exist on the client, keep it in tab memory, not durable storage.</p><p class="mb-4">Check the Application panel in DevTools. If a token key appears in Local Storage, move it. Test offline mode too: the draft remains, the session is not copied into a backup file.</p></div><div class="src"><h2>Information Source</h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN localStorage<span class="d">developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/offline/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
