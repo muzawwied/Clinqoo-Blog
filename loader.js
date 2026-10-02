@@ -10,13 +10,13 @@
 
   function loadApp() {
     var s = document.createElement('script');
-    s.src = 'app.js';
+    s.src = 'app.js?v=2';
     document.body.appendChild(s);
   }
 
   files.forEach(function(file) {
     var s = document.createElement('script');
-    s.src = file;
+    s.src = file + '?v=2';
     s.onload = onFileDone;
     s.onerror = onFileDone;
     document.body.appendChild(s);
