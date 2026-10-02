@@ -106,7 +106,7 @@ table{min-width:440px}
 <h3>Peran tiap kredensial</h3>
 <div class="twrap"><table>
 <tr><th>Kredensial</th><th>Contoh</th><th>Kegunaan</th><th>Bagikan?</th></tr>
-<tr><td><code>pay_key</code></td><td><code>pk_...</code></td><td>Dipakai situs deploy untuk buat pembayaran & cek status</td><td>Aman, sifatnya publik</td></tr>
+<tr><td><code>pay_key</code></td><td><code>clc_pk_...</code></td><td>Dipakai situs deploy untuk buat pembayaran & cek status</td><td>Aman, sifatnya publik</td></tr>
 <tr><td><code>account_id</code></td><td><code>CPXXXXXXXXXX</code></td><td>Identitas merchant Pembayaran proyekmu</td><td>Boleh</td></tr>
 <tr><td><code>secret</code></td><td><code>cps_...</code></td><td>Internal Clincoo, untuk relasi provider</td><td>Jangan pernah</td></tr>
 </table></div>
@@ -125,7 +125,7 @@ curl -X POST https://app.clincoo.buzz/api/pay \
   -H &quot;Content-Type: application/json&quot; \
   -d &#x27;{
     &quot;action&quot;: &quot;create&quot;,
-    &quot;key&quot;: &quot;pk_kunci_publik_proyekmu&quot;,
+    &quot;key&quot;: &quot;clc_pk_kunci_publik_proyekmu&quot;,
     &quot;amount&quot;: 25000,
     &quot;description&quot;: &quot;Paket Premium&quot;
   }&#x27; </code></pre>
@@ -140,14 +140,14 @@ curl -X POST https://app.clincoo.buzz/api/pay \
 <div class="twrap"><table>
 <tr><th>Parameter</th><th>Tipe</th><th>Wajib</th><th>Keterangan</th></tr>
 <tr><td><code>action</code></td><td><code>string</code></td><td>Ya</td><td>Wajib <code>"create"</code></td></tr>
-<tr><td><code>key</code></td><td><code>string</code></td><td>Ya</td><td>Pay key publik proyekmu (berawalan <code>pk_</code>)</td></tr>
+<tr><td><code>key</code></td><td><code>string</code></td><td>Ya</td><td>Pay key publik proyekmu (berawalan <code>clc_pk_</code>)</td></tr>
 <tr><td><code>amount</code></td><td><code>integer</code></td><td>Ya</td><td>Nominal dalam rupiah. Min <code>1000</code>, maks <code>100000000</code></td></tr>
 <tr><td><code>description</code></td><td><code>string</code></td><td>Tidak</td><td>Maks 100 karakter. Tampil di deskripsi pembayaran</td></tr>
 </table></div>
 <h3>Contoh request</h3>
 <pre><button class="copy" onclick="cp(this)">Salin</button><code>{
   &quot;action&quot;: &quot;create&quot;,
-  &quot;key&quot;: &quot;pk_abc123def456ghi789jkl&quot;,
+  &quot;key&quot;: &quot;clc_pk_abc123def456ghi789jkl&quot;,
   &quot;amount&quot;: 25000,
   &quot;description&quot;: &quot;Paket Premium&quot;
 }</code></pre>
@@ -218,7 +218,7 @@ curl -X POST https://app.clincoo.buzz/api/pay \
   &quot;active&quot;: true,
   &quot;gateway_ready&quot;: true,
   &quot;account_id&quot;: &quot;CP7K2M9XQ1Z&quot;,
-  &quot;pay_key&quot;: &quot;pk_abc123def456ghi789jkl&quot;,
+  &quot;pay_key&quot;: &quot;clc_pk_abc123def456ghi789jkl&quot;,
   &quot;available&quot;: 150000,
   &quot;total_paid&quot;: 200000,
   &quot;total_withdrawn&quot;: 50000
