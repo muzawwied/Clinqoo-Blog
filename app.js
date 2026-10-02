@@ -85,6 +85,7 @@ function updateSidebarUI() {
   const u = ui();
   const setTxt = (id, txt) => { const el = document.getElementById(id); if (el) el.innerText = txt; };
   setTxt('ctaHomeText', u.home);
+  setTxt('ctaCatText', u.country);
   setTxt('ctaAboutText', u.about);
   setTxt('footerText', u.footer);
   setTxt('ctaLangText', languages[currentLang].nativeName);
