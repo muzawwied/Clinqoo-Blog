@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reject null Before Regex.test in Clincoo, Do Not Allow a TypeError — Clincoo Blog</title>
+<meta name="description" content="RegExp.test throws a TypeError if the input is null or undefined. Coerce to an empty string or return early before testing the pattern.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/regex/regex-tolak-null-sebelum-test/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reject null Before Regex.test in Clincoo, Do Not Allow a TypeError">
+<meta property="og:description" content="RegExp.test throws a TypeError if the input is null or undefined. Coerce to an empty string or return early before testing the pattern.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/regex/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Regex</div><h1>Reject null Before Regex.test in Clincoo, Do Not Allow a TypeError</h1><p class="desc">RegExp.test throws a TypeError if the input is null or undefined. Coerce to an empty string or return early before testing the pattern.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Form validation in editor.clincoo.buzz often calls /\d+/.test(value) when a field is still empty. null is not a string, so the console shows a TypeError and submit stops.</p><p class="mb-4">At the start of the function, if the value is null or undefined, return false or an empty string. Do not rely on a regex to normalize the type.</p><p class="mb-4">For a pattern with the g flag, lastIndex changes after test. Create the regex inside the function, or set lastIndex to 0 before the next check.</p><p class="mb-4">Write two console examples: null and an empty string. Both should fail quietly, not throw.</p><p class="mb-4">Ask AI to add a type guard on one isKode function, and paste the pattern plus the error message. Test in the app.clincoo.buzz preview before saving.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/regex/">← Back to regex</a>
+</div>
+</body>
+</html>

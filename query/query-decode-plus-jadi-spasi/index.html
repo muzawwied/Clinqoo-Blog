@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anggap Plus di Query Clincoo sebagai Spasi, Jangan decode Manual — Clincoo Blog</title>
+<meta name="description" content="Form lama mengirim spasi sebagai plus. URLSearchParams sudah mengubahnya. decodeURIComponent pada plus tidak mengubah plus jadi spasi.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/query/query-decode-plus-jadi-spasi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Anggap Plus di Query Clincoo sebagai Spasi, Jangan decode Manual">
+<meta property="og:description" content="Form lama mengirim spasi sebagai plus. URLSearchParams sudah mengubahnya. decodeURIComponent pada plus tidak mengubah plus jadi spasi.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/query/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Query</div><h1>Anggap Plus di Query Clincoo sebagai Spasi, Jangan decode Manual</h1><p class="desc">Form lama mengirim spasi sebagai plus. URLSearchParams sudah mengubahnya. decodeURIComponent pada plus tidak mengubah plus jadi spasi.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Di editor.clincoo.buzz, filter yang diketik dengan spasi kadang kembali dari form sebagai q=halo+dunia. Skrip yang memakai decodeURIComponent membiarkan plus tetap plus.</p><p class="mb-4">Pakai new URLSearchParams(location.search).get('q'). Parser ini mengikuti aturan application/x-www-form-urlencoded: plus adalah spasi, persen-encoding tetap diurai.</p><p class="mb-4">Jangan gabung decodeURIComponent dan replace plus sendiri. Urutan yang salah mengubah plus yang memang bagian dari nilai, misalnya kode promo.</p><p class="mb-4">Saat menulis ulang URL, set lewat params.set lalu history.replaceState. Jangan merangkai string dengan plus mentah.</p><p class="mb-4">Minta AI hanya mengganti pembaca query, tempel satu fungsi getQuery. Uji nilai dengan spasi, plus, dan ampersand di pratinjau app.clincoo.buzz sebelum digabung.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/query/">← Kembali ke query</a>
+</div>
+</body>
+</html>
