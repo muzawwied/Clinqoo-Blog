@@ -131,7 +131,7 @@ curl -X POST https://app.clincoo.buzz/api/pay \
   }&#x27; </code></pre>
 <div class="note ok">Uji tanpa situs pun bisa: panggil lewat <code>curl</code> atau Postman. Endpoint publik tidak butuh login.</div>
 <h3>3. Pasang webhook (opsional tapi disarankan)</h3>
-<p>Supaya transaksi tercatat meski pembeli menutup halaman, atur URL webhook di <b>Pengaturan → Integrasi &amp; Webhook → Webhook Pembayaran</b>. Lihat bagian <a href="#webhook">Webhook</a>.</p>
+<p>Supaya transaksi tercatat meski pembeli menutup halaman, atur URL webhook di <b>Pengaturan → Webhook → Webhook Pembayaran</b>. Lihat bagian <a href="#webhook">Webhook</a>.</p>
 
 <h2 id="buat-pembayaran"><span class="badge post">POST</span> Buat Pembayaran</h2>
 <div class="endpoint"><span class="badge post">POST</span>/api/pay</div>
@@ -156,16 +156,23 @@ curl -X POST https://app.clincoo.buzz/api/pay \
   &quot;success&quot;: true,
   &quot;order_id&quot;: &quot;PAYM2X8K1L4QA7BZ&quot;,
   &quot;amount&quot;: 25000,
-  &quot;qr_image&quot;: &quot;data:image/png;base64,...&quot;,
-  &quot;payment_url&quot;: &quot;https://...&quot;,
-  &quot;total_payment&quot;: 25000
+  &quot;qr_image&quot;: &quot;https://api.qrserver.com/v1/create-qr-code/?size=320x320&amp;data=000201...&quot;,
+  &quot;qr_string&quot;: &quot;00020101021126...&quot;,
+  &quot;payment_url&quot;: &quot;&quot;,
+  &quot;total_payment&quot;: 25415,
+  &quot;expires_at&quot;: &quot;2026-10-04T02:30:00Z&quot;,
+  &quot;is_sandbox&quot;: false
 }</code></pre>
 <div class="twrap"><table>
 <tr><th>Field</th><th>Keterangan</th></tr>
 <tr><td><code>order_id</code></td><td>ID transaksi pembayaran — simpan untuk cek status & verifikasi webhook</td></tr>
-<tr><td><code>qr_image</code></td><td>QR QRIS siap ditampilkan (bisa base64 atau URL)</td></tr>
-<tr><td><code>payment_url</code></td><td>Link pembayaran alternatif bila tersedia</td></tr>
-<tr><td><code>total_payment</code></td><td>Total yang harus dibayar pembeli</td></tr>
+<tr><td><code>amount</code></td><td>Nominal dasar transaksi (tanpa biaya)</td></tr>
+<tr><td><code>qr_image</code></td><td>URL gambar QR QRIS — tampilkan langsung di tag <code>&lt;img&gt;</code></td></tr>
+<tr><td><code>qr_string</code></td><td>Payload QRIS mentah — opsional, kalau mau render QR sendiri</td></tr>
+<tr><td><code>payment_url</code></td><td>Link pembayaran alternatif (kosong untuk QRIS)</td></tr>
+<tr><td><code>total_payment</code></td><td>Total yang harus dibayar pembeli: nominal + biaya QRIS</td></tr>
+<tr><td><code>expires_at</code></td><td>Batas waktu pembayaran (QR batal otomatis setelah lewat)</td></tr>
+<tr><td><code>is_sandbox</code></td><td><code>true</code> = transaksi uji, uang tidak benar-benar berpindah</td></tr>
 </table></div>
 <div class="note warn">Respon 503 dengan <code>error: "gateway_not_ready"</code> berarti QRIS di sisi Clincoo belum aktif sepenuhnya. Tampilkan pesan "pembayaran sedang disiapkan" dan coba lagi nanti.</div>
 
@@ -219,7 +226,7 @@ curl -X POST https://app.clincoo.buzz/api/pay \
 <div class="note">Saldo tersedia = total transaksi <code>paid</code> − penarikan (diproses + selesai). Status penarikan: <code>pending</code> → diproses tim Clincoo → <code>done</code> atau <code>rejected</code>.</div>
 
 <h2 id="webhook">Webhook</h2>
-<p>Setiap transaksi yang berubah menjadi <code>paid</code> memicu satu POST JSON ke URL webhook proyekmu (diatur di <b>Pengaturan → Integrasi &amp; Webhook → Webhook Pembayaran</b>).</p>
+<p>Setiap transaksi yang berubah menjadi <code>paid</code> memicu satu POST JSON ke URL webhook proyekmu (diatur di <b>Pengaturan → Webhook → Webhook Pembayaran</b>).</p>
 <h3>Payload</h3>
 <pre><button class="copy" onclick="cp(this)">Salin</button><code>{
   &quot;event&quot;: &quot;payment.paid&quot;,
