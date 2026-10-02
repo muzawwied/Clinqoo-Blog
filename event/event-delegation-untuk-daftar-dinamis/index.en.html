@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Event Delegation for Dynamic Clincoo Lists — Clincoo Blog</title>
+<meta name="description" content="A listener on each row disappears when the list is redrawn. Listen on the stable parent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/event/event-delegation-untuk-daftar-dinamis/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Event Delegation for Dynamic Clincoo Lists">
+<meta property="og:description" content="A listener on each row disappears when the list is redrawn. Listen on the stable parent.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/event/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Event</div><h1>Use Event Delegation for Dynamic Clincoo Lists</h1><p class="desc">A listener on each row disappears when the list is redrawn. Listen on the stable parent.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, block lists are often replaced with innerHTML. Listeners attached per button are removed with them.</p><p class="mb-4">Attach one click listener on a parent that is not redrawn. Check event.target.closest for the action button.</p><p class="mb-4">Do not add a new listener on every render without removing the old one. That duplicates draft saves.</p><p class="mb-4">For text fields, delegation on the input event still works if the field sits inside the parent. Test the keyboard, not only clicks.</p><p class="mb-4">Document the parent selector on blog.clincoo.buzz and check the same behavior on app.clincoo.buzz.</p></div><div class="src"><h2>Sources</h2><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank" rel="noopener">Clincoo<span class="d">developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/event/">← Back to event</a>
+</div>
+</body>
+</html>
