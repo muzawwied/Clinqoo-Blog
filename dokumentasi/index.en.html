@@ -7,7 +7,6 @@
 <title>Documentation — Clincoo Blog</title>
 <meta name="description" content="All articles in the Documentation category of the Clincoo Blog: 6 official Clincoo articles.">
 <meta name="robots" content="index, follow">
-
 <link rel="canonical" href="https://blog.clincoo.buzz/dokumentasi/index.en.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Documentation — Clincoo Blog">
@@ -19,21 +18,79 @@
 <meta name="twitter:title" content="Documentation — Clincoo Blog">
 <meta name="twitter:description" content="All articles in the Documentation category of the Clincoo Blog: 6 official Clincoo articles.">
 <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
-<link rel="stylesheet" href="/assets/seo.css?v=2">
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          gray: { 100: '#f3f4f6', 200: '#e5e7eb', 300: '#d1d5db', 500: '#6b7280', 900: '#111827' }
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { -webkit-tap-highlight-color: transparent; }
+  .fade-in { animation: fadeIn 0.35s ease-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Documentation","description":"All articles in the Documentation category of the Clincoo Blog: 6 official Clincoo articles.","mainEntity":{"@type":"ItemList","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"name":"Clinqoo AI Assistant","url":"https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/index.en.html"},{"@type":"ListItem","position":2,"name":"Clinqoo Plans and Pricing","url":"https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/index.en.html"},{"@type":"ListItem","position":3,"name":"Team Collaboration in Clincoo","url":"https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/index.en.html"},{"@type":"ListItem","position":4,"name":"How to Use the Terminal in the Clincoo Editor","url":"https://blog.clincoo.buzz/dokumentasi/cara-pakai-terminal-di-editor/index.en.html"},{"@type":"ListItem","position":5,"name":"How to Set Project Environment Variables","url":"https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html"},{"@type":"ListItem","position":6,"name":"QRIS Payment Gateway API Reference (ClincooPay)","url":"https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html"}]}}</script>
 </head>
-<body>
-<header class="seo-header">
-<a class="seo-back" href="/">← Home</a>
+<body class="bg-white text-gray-900 antialiased">
+<header class="sticky top-0 z-40 bg-white border-b border-gray-100 pt-3 pb-4">
+  <div class="relative flex items-center justify-center max-w-2xl mx-auto px-4 sm:px-6">
+    <a href="/" aria-label="Back to Home" class="absolute left-4 sm:left-6 p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+    </a>
+    <div class="text-center">
+      <h1 class="text-xl font-bold text-gray-900">Documentation</h1>
+      <p class="text-xs text-gray-400 mt-0.5">6 articles</p>
+    </div>
+  </div>
 </header>
-<main class="seo-main">
-<p class="seo-cat">Documentation</p>
-<h1 class="seo-title">Documentation</h1>
-<div class="seo-body">
-<p style="margin:0 0 1.4rem"><a href="/dokumentasi/asisten-ai-clinqoo/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">Clinqoo AI Assistant</a><br><span style="color:#6b7280;font-size:0.95rem">What the AI assistant in every project can do: file management, terminal, web search, deploys, and its limits.</span></p><p style="margin:0 0 1.4rem"><a href="/dokumentasi/paket-dan-harga-clinqoo/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">Clinqoo Plans and Pricing</a><br><span style="color:#6b7280;font-size:0.95rem">The Starter, Pro, and Business plan structure: deploy quotas, collaborators, AI messages, domains, and how to upgrade.</span></p><p style="margin:0 0 1.4rem"><a href="/dokumentasi/kolaborasi-tim/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">Team Collaboration in Clincoo</a><br><span style="color:#6b7280;font-size:0.95rem">How to invite teammates, collaborator quotas per plan, and habits for working cleanly as a team.</span></p><p style="margin:0 0 1.4rem"><a href="/dokumentasi/cara-pakai-terminal-di-editor/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">How to Use the Terminal in the Clincoo Editor</a><br><span style="color:#6b7280;font-size:0.95rem">How to run Linux commands in the Clincoo terminal: inspect the project folder, list files, and stop a process without deleting your work.</span></p><p style="margin:0 0 1.4rem"><a href="/dokumentasi/cara-atur-variabel-lingkungan/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">How to Set Project Environment Variables</a><br><span style="color:#6b7280;font-size:0.95rem">How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.</span></p><p style="margin:0 0 1.4rem"><a href="/dokumentasi/api-payment-gateway-qris/index.en.html" style="color:#111827;font-weight:700;text-decoration:none">QRIS Payment Gateway API Reference (ClincooPay)</a><br><span style="color:#6b7280;font-size:0.95rem">The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.</span></p>
-</div>
-<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+<main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/asisten-ai-clinqoo/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">Clinqoo AI Assistant</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">What the AI assistant in every project can do: file management, terminal, web search, deploys, and its limits.</p>
+</a>
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/paket-dan-harga-clinqoo/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">Clinqoo Plans and Pricing</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">The Starter, Pro, and Business plan structure: deploy quotas, collaborators, AI messages, domains, and how to upgrade.</p>
+</a>
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/kolaborasi-tim/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">Team Collaboration in Clincoo</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">How to invite teammates, collaborator quotas per plan, and habits for working cleanly as a team.</p>
+</a>
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-pakai-terminal-di-editor/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">How to Use the Terminal in the Clincoo Editor</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">How to run Linux commands in the Clincoo terminal: inspect the project folder, list files, and stop a process without deleting your work.</p>
+</a>
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">How to Set Project Environment Variables</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.</p>
+</a>
+<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/api-payment-gateway-qris/index.en.html">
+  <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
+  <h2 class="text-lg font-bold text-gray-900">QRIS Payment Gateway API Reference (ClincooPay)</h2>
+  <div class="h-px bg-gray-100 w-full my-3"></div>
+  <p class="text-sm text-gray-500 leading-relaxed">The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.</p>
+</a>
 </main>
+<footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
+  &copy; 2026 Clincoo. <span>All rights reserved.</span>
+</footer>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
 </body>
