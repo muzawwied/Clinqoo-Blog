@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify the Webhook Signature before Changing Payment Status — Clincoo Blog</title>
+<meta name="description" content="Do not treat a webhook body as trusted. Match the signature and timestamp first, then write a paid status in Clincoo.">
+<link rel="canonical" href="https://blog.clincoo.buzz/pembayaran/pembayaran-verifikasi-webhook-sebelum-update-status/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Verify the Webhook Signature before Changing Payment Status">
+<meta property="og:description" content="Do not treat a webhook body as trusted. Match the signature and timestamp first, then write a paid status in Clincoo.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pembayaran/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">💳 Payment</div><h1>Verify the Webhook Signature before Changing Payment Status</h1><p class="desc">Do not treat a webhook body as trusted. Match the signature and timestamp first, then write a paid status in Clincoo.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">A payment webhook can be forged if a public endpoint accepts any JSON. In a Clincoo project, store a paid status only after the signature matches a secret that never ships to the page.</p><p class="mb-4">Read the signature header and the send time. Reject requests older than a few minutes so an old replay cannot change an order that already finished.</p><p class="mb-4">Compare the signature with a constant-time check, not a plain ==. On failure, return 401 and do not touch the balance or status in app.clincoo.buzz.</p><p class="mb-4">Log the event id, not the whole body. Repeat the test from the Clincoo payment docs in preview before pointing the endpoint at production.</p><p class="mb-4">The editor at editor.clincoo.buzz can paste a verification snippet. Keep the secret in the server environment, not in a file deployed as a static site.</p></div><div class="src"><h2>Sources</h2><a href="https://blog.clincoo.buzz/pembayaran/dokumentasi/" target="_blank" rel="noopener">Clincoo Payment Docs<span class="d">blog.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pembayaran/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

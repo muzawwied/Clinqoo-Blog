@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Not Put a Payment Secret Key in the Page — Clincoo Blog</title>
+<meta name="description" content="A public key may live in the client. Secret keys, webhook secrets, and account tokens belong only on the server, not in Clincoo HTML.">
+<link rel="canonical" href="https://blog.clincoo.buzz/pembayaran/pembayaran-jangan-taruh-kunci-rahasia-di-halaman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Not Put a Payment Secret Key in the Page">
+<meta property="og:description" content="A public key may live in the client. Secret keys, webhook secrets, and account tokens belong only on the server, not in Clincoo HTML.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pembayaran/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">💳 Payment</div><h1>Do Not Put a Payment Secret Key in the Page</h1><p class="desc">A public key may live in the client. Secret keys, webhook secrets, and account tokens belong only on the server, not in Clincoo HTML.</p><div class="langlinks">This article is available in: <a href="./">Indonesia</a> · English</div><div class="body"><p class="mb-4">Sites deployed from Clincoo are often static HTML. Anyone can view source. A secret key in a script is the same as publishing it.</p><p class="mb-4">Split the public key used to create an invoice in the client from the secret used to mark paid on the server. A variable named SECRET in a file uploaded to editor.clincoo.buzz is a red flag.</p><p class="mb-4">If an AI assistant pastes a sample with a hardcoded secret, reject that snippet. Ask for a version that reads the environment and fails closed when the variable is empty.</p><p class="mb-4">Check the repo and the preview before deploy. Search HTML for sk_live, whsec, and the word secret. One hit is enough to hold the release.</p><p class="mb-4">Rotate any key that was uploaded. Deleting the line in a later commit does not pull back a value visitors already downloaded.</p></div><div class="src"><h2>Sources</h2><a href="https://blog.clincoo.buzz/pembayaran/dokumentasi/" target="_blank" rel="noopener">Clincoo Payment Docs<span class="d">blog.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pembayaran/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

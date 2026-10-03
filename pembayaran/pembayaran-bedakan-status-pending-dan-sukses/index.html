@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedakan Status Pending dan Sukses di Alur Pembayaran — Clincoo Blog</title>
+<meta name="description" content="QR yang tampil belum berarti lunas. Halaman Clincoo harus menahan akses sampai status sukses, bukan saat tagihan dibuat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/pembayaran/pembayaran-bedakan-status-pending-dan-sukses/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bedakan Status Pending dan Sukses di Alur Pembayaran">
+<meta property="og:description" content="QR yang tampil belum berarti lunas. Halaman Clincoo harus menahan akses sampai status sukses, bukan saat tagihan dibuat.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pembayaran/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">💳 Pembayaran</div><h1>Bedakan Status Pending dan Sukses di Alur Pembayaran</h1><p class="desc">QR yang tampil belum berarti lunas. Halaman Clincoo harus menahan akses sampai status sukses, bukan saat tagihan dibuat.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Banyak bug toko berasal dari satu if: tagihan terbuat lalu konten premium langsung terbuka. Status pending hanya berarti pelanggan masih bisa membayar.</p><p class="mb-4">Simpan tiga keadaan yang eksplisit: dibuat, pending, sukses. Kedaluwarsa dan gagal jangan digabung dengan sukses hanya karena tidak ada error jaringan.</p><p class="mb-4">Tombol unduh atau tombol lanjut di app.clincoo.buzz membaca status terakhir dari server, bukan dari variabel yang di-set saat klik bayar.</p><p class="mb-4">Di pratinjau, jalankan jalur pending sampai timeout. Pastikan salinan tombol tidak membuka file berbayar sebelum webhook sukses terverifikasi.</p><p class="mb-4">Tulis label yang manusiawi: menunggu pembayaran, bukan kode status mentah. Pengunjung tidak perlu tahu nama enum internal.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://blog.clincoo.buzz/pembayaran/dokumentasi/" target="_blank" rel="noopener">Dokumentasi Pembayaran Clincoo<span class="d">blog.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pembayaran/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>

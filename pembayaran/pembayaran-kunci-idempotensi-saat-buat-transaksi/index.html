@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakai Kunci Idempotensi saat Membuat Transaksi Pembayaran — Clincoo Blog</title>
+<meta name="description" content="Klik bayar dua kali tidak boleh membuat dua tagihan. Kirim kunci idempotensi yang sama untuk order Clincoo yang sama.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/pembayaran/pembayaran-kunci-idempotensi-saat-buat-transaksi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pakai Kunci Idempotensi saat Membuat Transaksi Pembayaran">
+<meta property="og:description" content="Klik bayar dua kali tidak boleh membuat dua tagihan. Kirim kunci idempotensi yang sama untuk order Clincoo yang sama.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/pembayaran/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">💳 Pembayaran</div><h1>Pakai Kunci Idempotensi saat Membuat Transaksi Pembayaran</h1><p class="desc">Klik bayar dua kali tidak boleh membuat dua tagihan. Kirim kunci idempotensi yang sama untuk order Clincoo yang sama.</p><div class="langlinks">Artikel ini tersedia dalam: <a href="./?lang=id">Indonesia</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">Jaringan lambat membuat pengguna menekan bayar lagi. Tanpa kunci idempotensi, gateway Clincoo bisa membuat dua transaksi untuk satu keranjang.</p><p class="mb-4">Buat kunci sekali saat order dibuka, simpan di draft, dan kirim ulang kunci yang sama jika permintaan timeout. Jangan buat UUID baru pada setiap klik.</p><p class="mb-4">Server harus mengembalikan transaksi yang sudah ada jika kunci sama dan payload setara. Jika payload berbeda, tolak dengan 409 supaya jumlah tidak tertukar diam-diam.</p><p class="mb-4">Tampilkan satu status di UI: menunggu, bukan dua spinner. Di pratinjau editor.clincoo.buzz, uji klik ganda pada tombol sebelum deploy.</p><p class="mb-4">Simpan kunci bersama id order di log singkat. Itu cukup untuk menelusuri keluhan tanpa menyalin nomor kartu atau token.</p></div><div class="src"><h2>Sumber Informasi</h2><a href="https://blog.clincoo.buzz/pembayaran/dokumentasi/" target="_blank" rel="noopener">Dokumentasi Pembayaran Clincoo<span class="d">blog.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/pembayaran/">← Kembali ke Clincoo Blog</a>
+</div>
+</body>
+</html>
