@@ -38,7 +38,6 @@ function getAllArticles() {
         articleId: art.id,
         flag: c.flag,
         countryName: c.names[currentLang] || c.names['id'],
-        num: art.num || null,
         ...langData
       });
     });
@@ -51,16 +50,10 @@ function getCountryArticles(countryId) {
   if (!c) return [];
   return c.articles.map(art => {
     const langData = art.langs[currentLang] || art.langs['id'];
-    return { countryId, articleId: art.id, flag: c.flag, countryName: c.names[currentLang] || c.names['id'], num: art.num || null, ...langData };
+    return { countryId, articleId: art.id, flag: c.flag, countryName: c.names[currentLang] || c.names['id'], ...langData };
   });
 }
 
-
-function padNum(n) { return (n < 10 ? '0' : '') + n; }
-function numBadge(item) {
-  if (!item || !item.num) return '';
-  return '<span class="text-[11px] font-bold text-gray-300 tabular-nums tracking-wider">' + padNum(item.num) + '</span>';
-}
 
 // =============================================
 // SIDEBAR
@@ -208,9 +201,8 @@ function renderHome(searchQuery, skipPush) {
   } else {
     all.forEach(item => {
       cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
-        '<div class="mb-2 flex items-center justify-between gap-3">' +
+        '<div class="mb-2">' +
         '<span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + item.countryName + '</span>' +
-        numBadge(item) +
         '</div>' +
         '<h3 class="text-lg font-bold text-gray-900">' + item.title + '</h3>' +
         '<div class="h-px bg-gray-100 w-full my-3"></div>' +
@@ -254,7 +246,7 @@ function renderCountry(countryId, skipPush) {
   let cardsHtml = '';
   arts.forEach(item => {
     cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + countryId + '\',\'' + item.articleId + '\')">' +
-      '<div class="mb-2 flex items-center justify-between gap-3"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + name + '</span>' + numBadge(item) + '</div>' +
+      '<div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + name + '</span></div>' +
       '<h3 class="text-lg font-bold text-gray-900">' + item.title + '</h3>' +
       '<div class="h-px bg-gray-100 w-full my-3"></div>' +
       '<p class="text-sm text-gray-500 leading-relaxed">' + item.desc + '</p>' +
@@ -301,7 +293,7 @@ function renderArticle(countryId, articleId, skipPush) {
     makeHeader('renderCountry(\'' + countryId + '\')', u.back) +
     '<article class="pt-8 pb-10 fade-in">' +
     '<div class="flex items-center justify-center mb-3">' +
-    '<span class="text-sm font-medium text-gray-400">' + (c.names[currentLang] || c.names['id']) + (artObj.num ? (' <span class="text-gray-300">·</span> No. ' + padNum(artObj.num)) : '') + '</span>' +
+    '<span class="text-sm font-medium text-gray-400">' + (c.names[currentLang] || c.names['id']) + '</span>' +
     '</div>' +
     '<h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 leading-tight text-center">' + item.title + '</h1>' +
     '<div class="prose prose-gray max-w-none text-gray-800 leading-loose text-justify space-y-4">' + item.content + '</div>' +
@@ -360,7 +352,7 @@ function renderAbout(skipPush) {
     <p class="mb-4"><strong>Clincoo Blog</strong> adalah rumah resmi untuk artikel, panduan, dan tips seputar Clincoo — ruang kerja web lengkap dengan editor kode, template siap pakai, terminal terintegrasi, dan deploy dalam satu tempat. Blog ini hadir agar setiap fitur Clincoo punya panduan yang mudah diikuti siapa pun.</p>
     <p class="mb-4">Kami percaya membuat website seharusnya tidak butuh gelar komputer. Karena itu setiap artikel di sini ditulis dengan bahasa sederhana, langkah yang jelas, dan contoh nyata — dari memulai akun pertama sampai menerbitkan situs ke seluruh dunia.</p>
     <p class="mb-4">AI di Clincoo adalah asisten: ia membantu menjelaskan, menyarankan, dan mempercepat pekerjaanmu — kamu tetap pemegang kendali. Blog ini mengikuti prinsip yang sama: kami menemani, bukan menggantikanmu.</p>
-    <p class="mb-4">Semua panduan disusun per kategori — Memulai, Dokumentasi, Pusat Bantuan, dan Legal — supaya kamu cepat menemukan yang dicari, baik dalam bahasa Indonesia maupun Inggris.</p>
+    <p class="mb-4">Semua artikel disusun per kategori supaya kamu cepat menemukan yang dicari, baik dalam bahasa Indonesia maupun Inggris — dan daftarnya terus bertambah.</p>
     <p class="mb-4">Selamat berkarya. Mulai dari artikel mana pun, dan jangan lupa buka app.clincoo.buzz untuk langsung mencoba.</p>
   `;
 
@@ -438,7 +430,7 @@ function updateCards(searchQuery) {
   } else {
     all.forEach(function(item) {
       html += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
-        '<div class="mb-2 flex items-center justify-between gap-3"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + item.countryName + '</span>' + numBadge(item) + '</div>' +
+        '<div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + item.countryName + '</span></div>' +
         '<h3 class="text-lg font-bold text-gray-900">' + item.title + '</h3>' +
         '<div class="h-px bg-gray-100 w-full my-3"></div>' +
         '<p class="text-sm text-gray-500 leading-relaxed">' + item.desc + '</p>' +
