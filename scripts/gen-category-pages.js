@@ -43,8 +43,8 @@ function build(catId, lang) {
     const cname = cc.names[lang] || cc.names.id;
     const href = isId ? `/${cid}/` : `/${cid}/index.en.html`;
     const active = cid === catId;
-    return `<a href="${href}" class="w-full flex items-center justify-between gap-2 px-14 py-2 text-left transition-colors text-sm ${active ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50'}">
-  <span class="line-clamp-1">${esc(cname)}</span><span class="text-[11px] text-gray-400 flex-shrink-0">${cc.articles.length}</span>
+    return `<a href="${href}" class="w-full flex items-center px-14 py-2 text-left transition-colors text-sm ${active ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50'}">
+  <span class="line-clamp-1">${esc(cname)}</span>
 </a>`;
   }).join('\n');
 
@@ -159,7 +159,6 @@ ${catLinks}
     </button>
     <div class="text-center">
       <h1 class="text-xl font-bold text-gray-900">${esc(name)}</h1>
-      <p class="text-xs text-gray-400 mt-0.5">${esc(L.count(arts.length))}</p>
     </div>
   </div>
 </header>

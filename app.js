@@ -111,11 +111,10 @@ function updateSidebarUI() {
     for (const cId in countries) {
       const c = countries[cId];
       const name = c.names[currentLang] || c.names['id'];
-      const artCount = c.articles.length;
       const btn = document.createElement('button');
       const isActive = currentCountryId === cId && currentView === 'country';
-      btn.className = 'w-full flex items-center justify-between gap-2 px-14 py-2 text-left transition-colors text-sm ' + (isActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
-      btn.innerHTML = '<span class="line-clamp-1">' + name + '</span><span class="text-[11px] text-gray-400 flex-shrink-0">' + artCount + '</span>';
+      btn.className = 'w-full flex items-center px-14 py-2 text-left transition-colors text-sm ' + (isActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.innerHTML = '<span class="line-clamp-1">' + name + '</span>';
       btn.onclick = () => selectCountry(cId);
       countryDropEl.appendChild(btn);
     }
