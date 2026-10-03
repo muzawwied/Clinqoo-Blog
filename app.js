@@ -97,8 +97,9 @@ function updateSidebarUI() {
     langDrop.innerHTML = '';
     for (const key in languages) {
       const btn = document.createElement('button');
-      btn.className = 'text-left px-14 py-2 rounded-[0.5rem] text-sm transition-colors ' + (currentLang === key ? 'bg-gray-100 font-bold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
-      btn.innerText = languages[key].nativeName;
+      const langActive = currentLang === key;
+      btn.className = 'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ' + (langActive ? 'bg-white shadow-sm font-semibold text-gray-900' : 'text-gray-600 hover:bg-white hover:shadow-sm');
+      btn.innerHTML = '<span class="w-1.5 h-1.5 rounded-full flex-shrink-0 ' + (langActive ? 'bg-gray-900' : 'bg-gray-300') + '"></span><span>' + languages[key].nativeName + '</span>';
       btn.onclick = () => changeLanguage(key);
       langDrop.appendChild(btn);
     }
@@ -114,8 +115,8 @@ function updateSidebarUI() {
       const artCount = c.articles.length;
       const btn = document.createElement('button');
       const isActive = currentCountryId === cId && currentView === 'country';
-      btn.className = 'w-full flex items-center justify-between gap-2 px-14 py-2 rounded-[0.5rem] text-left transition-colors text-sm ' + (isActive ? 'bg-gray-100 font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
-      btn.innerHTML = '<span class="line-clamp-1">' + name + '</span><span class="text-xs text-gray-400 flex-shrink-0">' + artCount + ' ' + u.articles + '</span>';
+      btn.className = 'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors text-sm ' + (isActive ? 'bg-white shadow-sm font-semibold text-gray-900' : 'text-gray-600 hover:bg-white hover:shadow-sm');
+      btn.innerHTML = '<span class="text-base leading-none flex-shrink-0">' + c.flag + '</span><span class="line-clamp-1 flex-1">' + name + '</span><span class="text-[11px] text-gray-400 flex-shrink-0">' + artCount + '</span>';
       btn.onclick = () => selectCountry(cId);
       countryDropEl.appendChild(btn);
     }

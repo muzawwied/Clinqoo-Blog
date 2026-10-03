@@ -4,7 +4,7 @@
   function loadApp() {
     if (done) return; done = true;
     var a = document.createElement('script');
-    a.src = 'app.js?v=8';
+    a.src = 'app.js?v=9';
     document.body.appendChild(a);
   }
   var s = document.createElement('script');
