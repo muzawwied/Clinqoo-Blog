@@ -136,6 +136,14 @@ function changeLanguage(key) {
   icon && icon.classList.remove('rotate-180');
 }
 
+function goArticle(countryId, articleId) {
+  location.href = '/' + countryId + '/' + articleId + '/' + (currentLang === 'en' ? 'index.en.html' : '');
+}
+
+function goCountry(countryId) {
+  location.href = '/' + countryId + '/' + (currentLang === 'en' ? 'index.en.html' : '');
+}
+
 function selectCountry(countryId) {
   // Tutup dropdown negara
   const drop = document.getElementById('countryDrop');
@@ -144,10 +152,7 @@ function selectCountry(countryId) {
   if (icon) icon.classList.remove('rotate-180');
 
   toggleSidebar();
-  currentCountryId = countryId;
-  currentView = 'country';
-  updateSidebarUI();
-  renderCountry(countryId);
+  goCountry(countryId);
 }
 
 function goHomeFromMenu() {
@@ -160,9 +165,7 @@ function goHomeFromMenu() {
 
 function goToAbout() {
   toggleSidebar();
-  currentView = 'about';
-  updateSidebarUI();
-  renderAbout();
+  location.href = '/tentang/';
 }
 
 // =============================================
@@ -181,12 +184,6 @@ function makeHeader(backFn, backLabel) {
 function renderHome(searchQuery, skipPush) {
   currentView = 'home';
   searchQuery = searchQuery || '';
-  if (!skipPush) {
-    const url = '#/' + (searchQuery ? ('?q=' + encodeURIComponent(searchQuery)) : '');
-    if (location.hash !== url) {
-      history.pushState({view:'home', q: searchQuery}, '', url);
-    }
-  }
   const u = ui();
   let all = getAllArticles();
 
@@ -200,7 +197,7 @@ function renderHome(searchQuery, skipPush) {
     cardsHtml = '<div class="text-center py-12 text-gray-500">' + u.noResult + '</div>';
   } else {
     all.forEach(item => {
-      cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
+      cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="goArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
         '<div class="mb-2">' +
         '<span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + item.countryName + '</span>' +
         '</div>' +
@@ -245,7 +242,7 @@ function renderCountry(countryId, skipPush) {
 
   let cardsHtml = '';
   arts.forEach(item => {
-    cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + countryId + '\',\'' + item.articleId + '\')">' +
+    cardsHtml += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="goArticle(\'' + countryId + '\',\'' + item.articleId + '\')">' +
       '<div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + name + '</span></div>' +
       '<h3 class="text-lg font-bold text-gray-900">' + item.title + '</h3>' +
       '<div class="h-px bg-gray-100 w-full my-3"></div>' +
@@ -429,7 +426,7 @@ function updateCards(searchQuery) {
     html = '<div class="text-center py-12 text-gray-500">' + u.noResult + '</div>';
   } else {
     all.forEach(function(item) {
-      html += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="renderArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
+      html += '<div class="mb-4 border border-gray-200 rounded-[0.5rem] p-5 cursor-pointer hover:border-gray-400 transition-colors" onclick="goArticle(\'' + item.countryId + '\',\'' + item.articleId + '\')">' +
         '<div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">' + item.countryName + '</span></div>' +
         '<h3 class="text-lg font-bold text-gray-900">' + item.title + '</h3>' +
         '<div class="h-px bg-gray-100 w-full my-3"></div>' +
