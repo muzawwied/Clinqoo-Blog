@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sending Email from Your Deployed Site in Clincoo — Clincoo Docs</title>
+<meta name="description" content="Enable the email feature per project, grab the API key from the Kunci API tab, then send messages from your deployed site with one request. Quota is 1,000 emails per month.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sending Email from Your Deployed Site in Clincoo — Clincoo Docs">
+<meta property="og:description" content="Enable the email feature per project, grab the API key from the Kunci API tab, then send messages from your deployed site with one request. Quota is 1,000 emails per month.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sending Email from Your Deployed Site in Clincoo — Clincoo Docs">
+<meta name="twitter:description" content="Enable the email feature per project, grab the API key from the Kunci API tab, then send messages from your deployed site with one request. Quota is 1,000 emails per month.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sending Email from Your Deployed Site in Clincoo","description":"Enable the email feature per project, grab the API key from the Kunci API tab, then send messages from your deployed site with one request. Quota is 1,000 emails per month.","mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/index.en.html","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/index.en.html">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Documentation</p>
+<h1 class="seo-title">Sending Email from Your Deployed Site in Clincoo</h1>
+<div class="seo-body"><p class="mb-4">Sites you deploy on Clincoo can send their own email — order confirmations, contact form notifications, even audience broadcasts. This guide walks you from zero to your first successful request.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Enable the email feature</h2><p class="mb-4">Open your project on app.clincoo.buzz, go to the <b>Email</b> menu in project settings, then click <b>Aktifkan Email</b>. The feature works per project, so enable it on the project whose deployed site actually needs to send messages.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Get your API key</h2><p class="mb-4">Open the <b>Kunci API</b> tab on the same page and copy the key formatted <b>clc_email_…</b> Store it as a secret on your deployed site's server side — never hardcoded where the public can read it.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Send email with one request</h2><p class="mb-4">From your deployed site, send a single <b>POST</b> request to <b>https://app.clincoo.buzz/api/email</b> with a Content-Type application/json header and a body containing the fields <b>action</b> set to send, <b>api_key</b>, <b>to</b>, <b>subject</b>, and <b>html</b>. The <b>reply_to</b> field is optional if replies must land on a different address.</p><p class="mb-4">Test first with your own email address in the to field. Once the message arrives, point the same request at your customers or your site's contact form.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Quota and limitations</h2><p class="mb-4">Each project gets a quota of <b>1,000 emails per month</b>. The Cloudflare Email Routing backend only delivers to verified addresses, so verify your main recipient address before relying on this channel for important notifications.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Watch the results</h2><p class="mb-4">The <b>Metrik</b> tab shows delivered and failed statistics, while the <b>Template</b> and <b>Otomasi</b> tabs help you prepare reusable message bodies and automatic sending rules. If an email does not arrive, check the API key and the recipient address before retrying.</p></div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

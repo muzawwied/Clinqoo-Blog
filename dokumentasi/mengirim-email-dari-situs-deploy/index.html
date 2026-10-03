@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mengirim Email dari Situs Deploy di Clincoo — Clincoo Docs</title>
+<meta name="description" content="Aktifkan fitur email per proyek, ambil API key di tab Kunci API, lalu kirim pesan dari situs deploy-mu lewat satu request. Kuota 1.000 email per bulan.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mengirim Email dari Situs Deploy di Clincoo — Clincoo Docs">
+<meta property="og:description" content="Aktifkan fitur email per proyek, ambil API key di tab Kunci API, lalu kirim pesan dari situs deploy-mu lewat satu request. Kuota 1.000 email per bulan.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mengirim Email dari Situs Deploy di Clincoo — Clincoo Docs">
+<meta name="twitter:description" content="Aktifkan fitur email per proyek, ambil API key di tab Kunci API, lalu kirim pesan dari situs deploy-mu lewat satu request. Kuota 1.000 email per bulan.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mengirim Email dari Situs Deploy di Clincoo","description":"Aktifkan fitur email per proyek, ambil API key di tab Kunci API, lalu kirim pesan dari situs deploy-mu lewat satu request. Kuota 1.000 email per bulan.","mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dokumentasi</p>
+<h1 class="seo-title">Mengirim Email dari Situs Deploy di Clincoo</h1>
+<div class="seo-body"><p class="mb-4">Situs yang kamu deploy di Clincoo bisa mengirim email sendiri — dari konfirmasi pesanan, notifikasi form kontak, sampai broadcast ke audiens. Artikel ini menjelaskan langkahnya dari nol sampai request pertama berhasil.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Aktifkan fitur email</h2><p class="mb-4">Buka proyek di app.clincoo.buzz, masuk ke menu <b>Email</b> di pengaturan proyek, lalu klik <b>Aktifkan Email</b>. Fitur ini berlaku per proyek, jadi aktifkan pada proyek yang situs deploy-nya memang perlu mengirim pesan.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ambil API key</h2><p class="mb-4">Masuk ke tab <b>Kunci API</b> di halaman yang sama dan salin kunci berformat <b>clc_email_…</b> Simpan kunci sebagai secret di sisi server situs deploy-mu — jangan ditulis mentah di kode yang bisa dibaca publik.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Kirim email dengan satu request</h2><p class="mb-4">Dari situs deploy-mu, kirim satu request <b>POST</b> ke <b>https://app.clincoo.buzz/api/email</b> dengan header Content-Type application/json dan body berisi bidang <b>action</b> bernilai send, <b>api_key</b>, <b>to</b>, <b>subject</b>, dan <b>html</b>. Bidang <b>reply_to</b> sifatnya opsional kalau balasan harus masuk ke alamat lain.</p><p class="mb-4">Uji dulu dengan to diisi alamat emailmu sendiri. Kalau pesan masuk, barulah arahkan request yang sama ke pelanggan atau form kontak di situs deploy-mu.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Kuota dan batasan</h2><p class="mb-4">Setiap proyek mendapat kuota <b>1.000 email per bulan</b>. Cloudflare Email Routing yang dipakai di belakangnya hanya mengirim ke alamat terverifikasi, jadi verifikasi dulu alamat penerima utama sebelum menjadikan jalur ini notifikasi penting.</p><h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Pantau hasilnya</h2><p class="mb-4">Tab <b>Metrik</b> menampilkan statistik terkirim dan gagal, sedangkan tab <b>Template</b> dan <b>Otomasi</b> membantu menyiapkan isi pesan dan aturan kirim otomatis. Kalau email tidak sampai, periksa API key dan alamat penerima sebelum mencoba kirim ulang.</p></div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
