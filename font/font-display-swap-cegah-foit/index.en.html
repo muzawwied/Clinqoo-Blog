@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use font-display: swap so Clincoo Text Does Not Vanish — Clincoo Blog</title>
+<meta name="description" content="Without font-display, the browser hides text until the webfont finishes. swap shows the fallback font first.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/font/font-display-swap-cegah-foit/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use font-display: swap so Clincoo Text Does Not Vanish">
+<meta property="og:description" content="Without font-display, the browser hides text until the webfont finishes. swap shows the fallback font first.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/font/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Font</div><h1>Use font-display: swap so Clincoo Text Does Not Vanish</h1><p class="desc">Without font-display, the browser hides text until the webfont finishes. swap shows the fallback font first.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">In the editor.clincoo.buzz preview, a heading can stay blank for two seconds because @font-face has no font-display.</p><p class="mb-4">Add font-display: swap on every @font-face the page uses. Text shows immediately with the system font, then swaps when the webfont is ready.</p><p class="mb-4">Set a fallback font-family with close metrics, such as system-ui, so the layout shift stays small.</p><p class="mb-4">Ask the AI only to add font-display on the existing font blocks. Reject a new font download in the same change.</p><p class="mb-4">Clincoo does not set swap for you. The stylesheet declaration is what keeps text on blog.clincoo.buzz readable.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/font/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>

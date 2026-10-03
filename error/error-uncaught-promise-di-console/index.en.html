@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read Uncaught (in promise) in the Clincoo Console — Clincoo Blog</title>
+<meta name="description" content="A rejected promise without catch only shows up as Uncaught (in promise). Open its stack before you change the code.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/error/error-uncaught-promise-di-console/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Read Uncaught (in promise) in the Clincoo Console">
+<meta property="og:description" content="A rejected promise without catch only shows up as Uncaught (in promise). Open its stack before you change the code.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/error/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Error</div><h1>Read Uncaught (in promise) in the Clincoo Console</h1><p class="desc">A rejected promise without catch only shows up as Uncaught (in promise). Open its stack before you change the code.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz, a failed fetch often does not stop the page. The console only writes Uncaught (in promise) TypeError.</p><p class="mb-4">Click that message. The stack points at the file and line that called fetch, not a random line inside a library.</p><p class="mb-4">Add catch or .catch that shows the HTTP status. Do not swallow the error with an empty catch.</p><p class="mb-4">When you ask an AI for help, paste the full message plus the stack and the function snippet. Do not only write "promise error".</p><p class="mb-4">Clincoo does not catch promise rejections for you. Handling in app.clincoo.buzz is what makes a network failure visible.</p></div><div class="src"><h2>Sources</h2><a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">editor.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/error/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
