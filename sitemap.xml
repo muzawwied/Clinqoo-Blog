@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://blog.clincoo.buzz/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/bantuan/faq-clinqoo/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/legal/kebijakan-privasi/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/</loc></url>
-  <url><loc>https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://blog.clincoo.buzz/</loc><lastmod>2026-10-03</lastmod></url>
+  <url>
+    <loc>https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/bantuan/faq-clinqoo/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/bantuan/faq-clinqoo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/bantuan/faq-clinqoo/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/bantuan/faq-clinqoo/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/legal/kebijakan-privasi/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/legal/kebijakan-privasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/legal/kebijakan-privasi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/legal/kebijakan-privasi/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/"/>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/"/>
+  </url>
 </urlset>
