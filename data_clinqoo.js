@@ -197,6 +197,93 @@ window.countryDataFiles["mulai"] = {
      "source3Url": "https://app.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-commit-git-pertama",
+   "langs": {
+    "id": {
+     "title": "Cara Commit Git Pertama di Proyek",
+     "desc": "Tata cara menyimpan riwayat perubahan HTML, CSS, dan JS dengan git status, git add, dan git commit di editor Clincoo.",
+     "content": "<p class=\"mb-4\">Commit adalah catatan perubahan yang bisa kamu kembalii. Di terminal <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cukup tiga perintah untuk commit pertama yang berguna.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek apa yang berubah</h2><p class=\"mb-4\">Jalankan git status. File merah berarti belum dilacak atau belum masuk staging. Jangan commit node_modules, file .env, atau cadangan editor. Kalau file itu muncul, tambahkan namanya ke .gitignore lalu ulangi git status.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih file yang masuk</h2><p class=\"mb-4\">git add index.html style.css menambah file tertentu. git add . mengambil semua yang tidak diabaikan. Setelah itu git status harus menampilkan file hijau di area staged. Kalau ada yang tidak sengaja masuk, git restore --staged nama-file mengeluarkannya tanpa menghapus isi file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis pesan yang menjelaskan</h2><p class=\"mb-4\">git commit -m \"tambah hero dan tautan halaman tentang\" lebih berguna daripada \"update\". Satu commit untuk satu maksud. Kalau git menolak karena identitas kosong, isi user.name dan user.email hanya di repo ini, lalu commit lagi.</p><p class=\"mb-4\">Setelah commit, git log --oneline menunjukkan riwayat. Deploy tetap lewat tombol deploy di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, bukan otomatis dari commit.</p>",
+     "source": "Pro Git — Recording Changes",
+     "sourceUrl": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+     "sourceSnippet": "Git status shows which files are untracked, modified, or staged before you commit.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Make Your First Git Commit in a Project",
+     "desc": "How to keep a history of HTML, CSS, and JS changes with git status, git add, and git commit in the Clincoo editor.",
+     "content": "<p class=\"mb-4\">A commit is a change record you can return to. In the terminal at <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> three commands are enough for a useful first commit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">See what changed</h2><p class=\"mb-4\">Run git status. Red files are untracked or not staged. Do not commit node_modules, .env files, or editor backups. If they appear, add their names to .gitignore and run git status again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Choose what goes in</h2><p class=\"mb-4\">git add index.html style.css stages specific files. git add . stages everything that is not ignored. git status should then list those files in green. If something was staged by mistake, git restore --staged filename removes it from the commit without deleting the file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write a message that explains</h2><p class=\"mb-4\">git commit -m \"add hero and about-page link\" is more useful than \"update\". One commit, one intent. If git refuses because identity is empty, set user.name and user.email for this repo only, then commit again.</p><p class=\"mb-4\">After the commit, git log --oneline shows the history. Deploy still uses the deploy button in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, not the commit itself.</p>",
+     "source": "Pro Git — Recording Changes",
+     "sourceUrl": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+     "sourceSnippet": "Git status shows which files are untracked, modified, or staged before you commit.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-isi-title-dan-meta-deskripsi",
+   "langs": {
+    "id": {
+     "title": "Cara Isi Title dan Meta Deskripsi",
+     "desc": "Tata cara menulis title unik dan meta description di tiap halaman HTML supaya cuplikan hasil pencarian tidak kosong.",
+     "content": "<p class=\"mb-4\">Title dan meta description adalah teks yang sering dipakai mesin pencari sebagai judul dan ringkasan. Di proyek Clincoo keduanya ada di head setiap file HTML, bukan hanya di beranda.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan title dan h1</h2><p class=\"mb-4\">Tag title yang tampil di tab browser boleh sedikit berbeda dari h1 di halaman. Title sekitar 50–60 karakter, memuat nama halaman lalu merek. Dua halaman dengan title yang sama membingungkan saat tab berjejer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis deskripsi yang mengulang janji halaman</h2><p class=\"mb-4\">Meta name=\"description\" cukup satu kalimat, sekitar 150 karakter, yang menjelaskan apa yang didapat pengunjung. Jangan salin deskripsi beranda ke halaman kontak. Pratinjau di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tidak menampilkan cuplikan Google, jadi cek lewat View Source bahwa tag ada di head.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu title per halaman</h2><p class=\"mb-4\">Jangan menaruh dua tag title. Yang kedua diabaikan atau menimpa yang pertama tergantung parser. Setelah deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, buka URL publik dan pastikan title tab sudah berubah, bukan masih template.</p><p class=\"mb-4\">Gambar sosial memakai og:title dan og:description terpisah. Kalau belum diisi, salin title dan deskripsi yang sama dulu supaya unggahan tidak kosong.</p>",
+     "source": "Google Search Central — Title links",
+     "sourceUrl": "https://developers.google.com/search/docs/appearance/title-link",
+     "sourceSnippet": "Title links are the headline of a search result and are often taken from the title element.",
+     "source2": "MDN — meta description",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Fill the Title and Meta Description",
+     "desc": "How to write a unique title and meta description on each HTML page so the search snippet is not empty.",
+     "content": "<p class=\"mb-4\">The title and meta description are the texts search engines often use as the headline and summary. In a Clincoo project they belong in the head of every HTML file, not only the homepage.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate title and h1</h2><p class=\"mb-4\">The title tag shown on the browser tab can differ slightly from the h1. Keep the title near 50–60 characters, with the page name then the brand. Two pages with the same title are confusing when tabs sit side by side.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write a description that matches the page</h2><p class=\"mb-4\">A single meta name=\"description\" of about 150 characters should say what the visitor gets. Do not copy the homepage description onto the contact page. The preview at <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> does not show the Google snippet, so use View Source to confirm the tag is in head.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One title per page</h2><p class=\"mb-4\">Do not put two title tags. The second is ignored or overrides the first depending on the parser. After deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, open the public URL and confirm the tab title changed and is no longer the template.</p><p class=\"mb-4\">Social images use separate og:title and og:description tags. If they are empty, copy the same title and description first so shares are not blank.</p>",
+     "source": "Google Search Central — Title links",
+     "sourceUrl": "https://developers.google.com/search/docs/appearance/title-link",
+     "sourceSnippet": "Title links are the headline of a search result and are often taken from the title element.",
+     "source2": "MDN — meta description",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-hubungkan-css-dan-javascript",
+   "langs": {
+    "id": {
+     "title": "Cara Hubungkan CSS dan JavaScript",
+     "desc": "Tata cara menautkan style.css dan script.js dari HTML dengan path relatif yang benar di editor Clincoo.",
+     "content": "<p class=\"mb-4\">Halaman polos biasanya berarti CSS atau JS tidak termuat, bukan karena browser menolak file. Path dihitung dari lokasi file HTML yang sedang dibuka di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Letakkan link di head</h2><p class=\"mb-4\">Gunakan link rel=\"stylesheet\" href=\"style.css\" jika kedua file satu folder. Jika CSS ada di folder css, href=\"css/style.css\". Href yang diawali garis miring mencari dari akar situs, bukan dari folder proyek di laptopmu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Letakkan script sebelum tutup body</h2><p class=\"mb-4\">script src=\"script.js\" di akhir body menunggu HTML selesai diurai. defer pada script di head juga aman untuk file yang butuh DOM. Jangan memakai onclick inline sambil juga menambah listener di file, atau tombol bisa jalan dua kali.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buktikan file termuat</h2><p class=\"mb-4\">Di panel Network, style.css dan script.js harus status 200. 404 berarti nama atau folder salah. Setelah memperbaiki path, simpan HTML lalu muat ulang preview. Deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> hanya mengirim file yang ada di proyek, jadi file yang tidak diunggah tetap 404 di situs publik.</p><p class=\"mb-4\">Kalau konsol menulis Unexpected token, file JS yang tertaut mungkin sebenarnya HTML 404. Buka URL skrip di tab baru untuk memastikannya.</p>",
+     "source": "MDN — link element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+     "sourceSnippet": "The link element specifies relationships between the current document and an external resource.",
+     "source2": "MDN — script element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Link CSS and JavaScript",
+     "desc": "How to link style.css and script.js from HTML with a correct relative path in the Clincoo editor.",
+     "content": "<p class=\"mb-4\">A plain page usually means CSS or JS did not load, not that the browser rejected the file. Paths resolve from the HTML file open in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put the link in head</h2><p class=\"mb-4\">Use link rel=\"stylesheet\" href=\"style.css\" when both files share a folder. If CSS lives in a css folder, href=\"css/style.css\". A leading slash looks from the site root, not from a folder on your laptop.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put the script before the closing body</h2><p class=\"mb-4\">script src=\"script.js\" at the end of body waits until HTML is parsed. defer on a script in head is also safe for files that need the DOM. Do not use an inline onclick and also add a listener in the file, or the button can run twice.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prove the file loaded</h2><p class=\"mb-4\">In the Network panel, style.css and script.js should be status 200. A 404 means the name or folder is wrong. After fixing the path, save the HTML and reload the preview. Deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> only ships files that exist in the project, so a missing upload stays 404 on the public site.</p><p class=\"mb-4\">If the console says Unexpected token, the linked JS file may actually be a 404 HTML page. Open the script URL in a new tab to confirm.</p>",
+     "source": "MDN — link element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+     "sourceSnippet": "The link element specifies relationships between the current document and an external resource.",
+     "source2": "MDN — script element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
   }
  ]
 };
@@ -785,6 +872,64 @@ window.countryDataFiles["legal"] = {
          "source2Url": "https://docs.clincoo.buzz/legal/kebijakan-privasi/",
          "source3": "Clincoo Editor",
          "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-cantumkan-lisensi-font-pihak-ketiga",
+   "langs": {
+    "id": {
+     "title": "Cara Cantumkan Lisensi Font Pihak Ketiga",
+     "desc": "Tata cara mengecek lisensi font yang dipakai di situs Clincoo lalu menaruh atribusi di footer atau halaman kredit.",
+     "content": "<p class=\"mb-4\">Font yang diunduh bukan otomatis bebas dipakai di situs klien. Sebelum deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, baca lisensi file font yang ada di proyek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cari nama lisensi di sumber font</h2><p class=\"mb-4\">Di halaman unduhan, catat apakah lisensi SIL Open Font License, Apache, atau komersial yang melarang embed. OFL biasanya mengizinkan pakai di web asal nama font tidak dijual sebagai produk font baru. Lisensi desktop saja tidak selalu mengizinkan @font-face.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan berkas lisensi di proyek</h2><p class=\"mb-4\">Letakkan OFL.txt atau LICENSE di folder font, jangan dihapus saat merapikan file di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. Jika lisensi meminta atribusi, tambahkan satu baris di footer: nama font, penulis, dan tautan lisensi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan campur file berlisensi beda</h2><p class=\"mb-4\">Mengganti nama file font tidak mengganti kewajiban lisensi. Kalau klien meminta font berbayar, simpan bukti pembelian di luar repo publik. Untuk font sistem seperti Georgia, atribusi tidak diperlukan.</p><p class=\"mb-4\">Kebijakan konten pengguna Clincoo ada di <a href=\"https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Syarat dan Ketentuan</a>. Tanggung jawab lisensi aset tetap di pembuat situs.</p>",
+     "source": "SIL Open Font License",
+     "sourceUrl": "https://openfontlicense.org/",
+     "sourceSnippet": "The OFL allows fonts to be used, studied, modified, and redistributed if the license is kept.",
+     "source2": "Clincoo Docs — Terms",
+     "source2Url": "https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Credit a Third-Party Font License",
+     "desc": "How to check the license of a font used on a Clincoo site and place attribution in the footer or a credits page.",
+     "content": "<p class=\"mb-4\">A downloaded font is not automatically free to use on a client site. Before deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, read the license of each font file in the project.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Find the license name at the source</h2><p class=\"mb-4\">On the download page, note whether the license is SIL Open Font License, Apache, or a commercial license that forbids embedding. OFL usually allows web use as long as the font is not sold as a new font product. A desktop-only license does not always allow @font-face.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the license file in the project</h2><p class=\"mb-4\">Place OFL.txt or LICENSE in the font folder and do not delete it while cleaning files in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. If the license asks for credit, add one footer line: font name, author, and license link.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not mix files under different licenses</h2><p class=\"mb-4\">Renaming a font file does not change the license duty. If a client wants a paid font, keep the purchase proof outside the public repo. System fonts such as Georgia need no credit.</p><p class=\"mb-4\">Clincoo user-content rules are in the <a href=\"https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/index.en.html\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Terms of Service</a>. Asset license responsibility stays with the site author.</p>",
+     "source": "SIL Open Font License",
+     "sourceUrl": "https://openfontlicense.org/",
+     "sourceSnippet": "The OFL allows fonts to be used, studied, modified, and redistributed if the license is kept.",
+     "source2": "Clincoo Docs — Terms",
+     "source2Url": "https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-tandai-cuplikan-kode-berlisensi",
+   "langs": {
+    "id": {
+     "title": "Cara Tandai Cuplikan Kode Berlisensi",
+     "desc": "Tata cara menyalin cuplikan dari dokumentasi atau repositori ke proyek Clincoo tanpa menghapus komentar lisensi.",
+     "content": "<p class=\"mb-4\">Cuplikan dari Stack Overflow, GitHub, atau dokumentasi punya syarat masing-masing. Menempelnya ke file di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tidak menghapus kewajiban itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca lisensi sebelum menyalin</h2><p class=\"mb-4\">File berlisensi MIT atau BSD biasanya boleh dipakai asal komentar hak cipta tetap ada. Kode tanpa lisensi di repositori orang lain jangan dianggap domain publik. Tulis ulang dengan kata dan strukturmu sendiri kalau lisensinya tidak jelas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan komentar di atas fungsi</h2><p class=\"mb-4\">Jangan buang blok komentar SPDX atau copyright saat merapikan. Satu baris cukup: sumber, penulis, dan tautan berkas asli. Kalau kamu mengubah fungsi, catat bahwa itu turunan, bukan salinan utuh.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan kode contoh Clincoo</h2><p class=\"mb-4\">Contoh di dokumentasi Clincoo untuk dipelajari di proyekmu, bukan untuk dijual sebagai template utuh tanpa perubahan. Situs yang kamu deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tetap milikmu selama aset pihak ketiga yang kamu tempel patuh pada lisensinya.</p><p class=\"mb-4\">Kalau ragu, tanyakan ke asisten AI Clincoo dengan menempelkan tautan sumber, bukan hanya kode tanpa konteks.</p>",
+     "source": "choosealicense — MIT",
+     "sourceUrl": "https://choosealicense.com/licenses/mit/",
+     "sourceSnippet": "MIT requires inclusion of the copyright notice and permission notice in copies of the software.",
+     "source2": "Clincoo Docs — Terms",
+     "source2Url": "https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Mark a Licensed Code Snippet",
+     "desc": "How to copy a snippet from docs or a repository into a Clincoo project without stripping the license comment.",
+     "content": "<p class=\"mb-4\">Snippets from Stack Overflow, GitHub, or docs each have their own terms. Pasting them into a file in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> does not remove that duty.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the license before copying</h2><p class=\"mb-4\">MIT or BSD files can usually be used if the copyright comment stays. Unlicensed code in someone else's repository is not public domain. Rewrite it in your own words and structure if the license is unclear.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the comment above the function</h2><p class=\"mb-4\">Do not drop an SPDX or copyright block while cleaning up. One line is enough: source, author, and link to the original file. If you change the function, note that it is a derivative, not a full copy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate Clincoo sample code</h2><p class=\"mb-4\">Examples in Clincoo docs are for learning in your project, not for resale as an unchanged template. A site you deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> stays yours as long as third-party assets you pasted follow their licenses.</p><p class=\"mb-4\">If unsure, ask the Clincoo AI assistant with the source link, not only the code without context.</p>",
+     "source": "choosealicense — MIT",
+     "sourceUrl": "https://choosealicense.com/licenses/mit/",
+     "sourceSnippet": "MIT requires inclusion of the copyright notice and permission notice in copies of the software.",
+     "source2": "Clincoo Docs — Terms",
+     "source2Url": "https://docs.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
     }
    }
   }

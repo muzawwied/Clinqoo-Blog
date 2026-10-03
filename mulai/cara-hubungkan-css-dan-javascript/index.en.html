@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Link CSS and JavaScript — Clincoo Docs</title>
+<meta name="description" content="How to link style.css and script.js from HTML with a correct relative path in the Clincoo editor.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<link rel="canonical" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Link CSS and JavaScript — Clincoo Docs">
+<meta property="og:description" content="How to link style.css and script.js from HTML with a correct relative path in the Clincoo editor.">
+<meta property="og:url" content="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Link CSS and JavaScript — Clincoo Docs">
+<meta name="twitter:description" content="How to link style.css and script.js from HTML with a correct relative path in the Clincoo editor.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Link CSS and JavaScript", "description": "How to link style.css and script.js from HTML with a correct relative path in the Clincoo editor.", "mainEntityOfPage": "https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/mulai/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Getting Started</p>
+<h1 class="seo-title">How to Link CSS and JavaScript</h1>
+<div class="seo-body">
+<p class="mb-4">A plain page usually means CSS or JS did not load, not that the browser rejected the file. Paths resolve from the HTML file open in <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Put the link in head</h2><p class="mb-4">Use link rel="stylesheet" href="style.css" when both files share a folder. If CSS lives in a css folder, href="css/style.css". A leading slash looks from the site root, not from a folder on your laptop.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Put the script before the closing body</h2><p class="mb-4">script src="script.js" at the end of body waits until HTML is parsed. defer on a script in head is also safe for files that need the DOM. Do not use an inline onclick and also add a listener in the file, or the button can run twice.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Prove the file loaded</h2><p class="mb-4">In the Network panel, style.css and script.js should be status 200. A 404 means the name or folder is wrong. After fixing the path, save the HTML and reload the preview. Deploy from <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> only ships files that exist in the project, so a missing upload stays 404 on the public site.</p><p class="mb-4">If the console says Unexpected token, the linked JS file may actually be a 404 HTML page. Open the script URL in a new tab to confirm.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

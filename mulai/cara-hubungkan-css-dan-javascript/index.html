@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hubungkan CSS dan JavaScript — Clincoo Docs</title>
+<meta name="description" content="Tata cara menautkan style.css dan script.js dari HTML dengan path relatif yang benar di editor Clincoo.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<link rel="canonical" href="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hubungkan CSS dan JavaScript — Clincoo Docs">
+<meta property="og:description" content="Tata cara menautkan style.css dan script.js dari HTML dengan path relatif yang benar di editor Clincoo.">
+<meta property="og:url" content="https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Hubungkan CSS dan JavaScript — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menautkan style.css dan script.js dari HTML dengan path relatif yang benar di editor Clincoo.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Hubungkan CSS dan JavaScript", "description": "Tata cara menautkan style.css dan script.js dari HTML dengan path relatif yang benar di editor Clincoo.", "mainEntityOfPage": "https://docs.clincoo.buzz/mulai/cara-hubungkan-css-dan-javascript/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/mulai/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Memulai</p>
+<h1 class="seo-title">Cara Hubungkan CSS dan JavaScript</h1>
+<div class="seo-body">
+<p class="mb-4">Halaman polos biasanya berarti CSS atau JS tidak termuat, bukan karena browser menolak file. Path dihitung dari lokasi file HTML yang sedang dibuka di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Letakkan link di head</h2><p class="mb-4">Gunakan link rel="stylesheet" href="style.css" jika kedua file satu folder. Jika CSS ada di folder css, href="css/style.css". Href yang diawali garis miring mencari dari akar situs, bukan dari folder proyek di laptopmu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Letakkan script sebelum tutup body</h2><p class="mb-4">script src="script.js" di akhir body menunggu HTML selesai diurai. defer pada script di head juga aman untuk file yang butuh DOM. Jangan memakai onclick inline sambil juga menambah listener di file, atau tombol bisa jalan dua kali.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Buktikan file termuat</h2><p class="mb-4">Di panel Network, style.css dan script.js harus status 200. 404 berarti nama atau folder salah. Setelah memperbaiki path, simpan HTML lalu muat ulang preview. Deploy dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> hanya mengirim file yang ada di proyek, jadi file yang tidak diunggah tetap 404 di situs publik.</p><p class="mb-4">Kalau konsol menulis Unexpected token, file JS yang tertaut mungkin sebenarnya HTML 404. Buka URL skrip di tab baru untuk memastikannya.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
