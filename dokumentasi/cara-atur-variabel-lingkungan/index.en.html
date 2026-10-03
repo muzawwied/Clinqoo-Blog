@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Set Project Environment Variables — Clincoo Blog</title>
+<title>How to Set Project Environment Variables — Clincoo Docs</title>
 <meta name="description" content="How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.">
 <meta name="robots" content="index, follow">
-<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
-<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
-<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
-<link rel="canonical" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to Set Project Environment Variables — Clincoo Blog">
+<meta property="og:title" content="How to Set Project Environment Variables — Clincoo Docs">
 <meta property="og:description" content="How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.">
-<meta property="og:url" content="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
-<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How to Set Project Environment Variables — Clincoo Blog">
+<meta name="twitter:title" content="How to Set Project Environment Variables — Clincoo Docs">
 <meta name="twitter:description" content="How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.">
 <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
 <link rel="stylesheet" href="/assets/seo.css?v=2">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Set Project Environment Variables","description":"How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.","mainEntityOfPage":"https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Set Project Environment Variables","description":"How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.","mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
 </head>
 <body>
 <header class="seo-header">
@@ -34,7 +34,7 @@
 <div class="seo-body">
 <p class="mb-4">Environment variables store a secret outside the files visitors download. Static HTML and JS stay public after deploy, so a key pasted there is effectively shared.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Add a variable</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Open project settings in <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a>, or ask the AI assistant to add an env var.</li><li class="mb-1">Name it in uppercase with underscores, for example <b>MAIL_API_KEY</b>. Do not use spaces.</li><li class="mb-1">Paste the value once. Do not send that same value to a general chat or a README.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Use the value without leaking it</h2><p class="mb-4">Server code or a terminal command may read the variable. The <b>index.html</b> file sent to the browser must not. If a service has to be called from a static page, pass the call through an endpoint that holds the secret, not through a key in the frontend.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test, then deploy again</h2><ul class="list-disc pl-6 mb-4 space-y-1"><li class="mb-1">Ask the assistant to check that the secret is set, without printing it to the log.</li><li class="mb-1">If a new value is not picked up, save again and redeploy — a running process still holds the old value.</li><li class="mb-1">Rotate the key at the provider if that value was ever written in a public file.</li></ul>
 </div>
-<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
 </main>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cara Mengatur Variabel Lingkungan Proyek — Clincoo Blog</title>
+<title>Cara Mengatur Variabel Lingkungan Proyek — Clincoo Docs</title>
 <meta name="description" content="Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.">
 <meta name="robots" content="index, follow">
-<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
-<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
-<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
-<link rel="canonical" href="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cara Mengatur Variabel Lingkungan Proyek — Clincoo Blog">
+<meta property="og:title" content="Cara Mengatur Variabel Lingkungan Proyek — Clincoo Docs">
 <meta property="og:description" content="Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.">
-<meta property="og:url" content="https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
-<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/">
+<meta property="og:site_name" content="Clincoo Docs">
 <meta property="og:locale" content="id_ID">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cara Mengatur Variabel Lingkungan Proyek — Clincoo Blog">
+<meta name="twitter:title" content="Cara Mengatur Variabel Lingkungan Proyek — Clincoo Docs">
 <meta name="twitter:description" content="Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.">
 <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
 <link rel="stylesheet" href="/assets/seo.css?v=2">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cara Mengatur Variabel Lingkungan Proyek","description":"Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.","mainEntityOfPage":"https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cara Mengatur Variabel Lingkungan Proyek","description":"Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.","mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
 </head>
 <body>
 <header class="seo-header">
@@ -34,7 +34,7 @@
 <div class="seo-body">
 <p class="mb-4">Variabel lingkungan menyimpan secret di luar file yang diunduh pengunjung. HTML dan JS statis tetap publik setelah deploy, jadi kunci yang ditempel di situ sama saja dibagikan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tambahkan variabel</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Buka pengaturan proyek di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> atau minta asisten AI menambahkan env var.</li><li class="mb-1">Beri nama huruf besar dengan garis bawah, misalnya <b>MAIL_API_KEY</b>. Jangan pakai spasi.</li><li class="mb-1">Tempel nilainya sekali. Jangan mengirim nilai yang sama ke chat umum atau ke file README.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pakai nilainya tanpa membocorkannya</h2><p class="mb-4">Kode server atau perintah terminal boleh membaca variabel itu. File <b>index.html</b> yang dikirim ke browser tidak boleh. Kalau layanan harus dipanggil dari halaman statis, lewatkan panggilan lewat endpoint yang memegang secret, bukan lewat kunci di frontend.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji lalu deploy ulang</h2><ul class="list-disc pl-6 mb-4 space-y-1"><li class="mb-1">Minta asisten menguji bahwa secret terisi, tanpa mencetak isinya ke log.</li><li class="mb-1">Kalau nilai baru tidak terbaca, simpan ulang lalu deploy lagi — proses yang sudah jalan masih memegang nilai lama.</li><li class="mb-1">Putar kunci di penyedia layanan jika nilai itu pernah tertulis di file publik.</li></ul>
 </div>
-<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
 </main>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>

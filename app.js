@@ -345,7 +345,7 @@ function renderAbout(skipPush) {
   
   // Konten panjang 5 Paragraf mengenai visi misi global & sharing
   const contentId = `
-    <p class="mb-4"><strong>Clincoo Blog</strong> adalah rumah resmi untuk artikel, panduan, dan tips seputar Clincoo — ruang kerja web lengkap dengan editor kode, template siap pakai, terminal terintegrasi, dan deploy dalam satu tempat. Blog ini hadir agar setiap fitur Clincoo punya panduan yang mudah diikuti siapa pun.</p>
+    <p class="mb-4"><strong>Clincoo Docs</strong> adalah rumah resmi untuk artikel, panduan, dan tips seputar Clincoo — ruang kerja web lengkap dengan editor kode, template siap pakai, terminal terintegrasi, dan deploy dalam satu tempat. Blog ini hadir agar setiap fitur Clincoo punya panduan yang mudah diikuti siapa pun.</p>
     <p class="mb-4">Kami percaya membuat website seharusnya tidak butuh gelar komputer. Karena itu setiap artikel di sini ditulis dengan bahasa sederhana, langkah yang jelas, dan contoh nyata — dari memulai akun pertama sampai menerbitkan situs ke seluruh dunia.</p>
     <p class="mb-4">AI di Clincoo adalah asisten: ia membantu menjelaskan, menyarankan, dan mempercepat pekerjaanmu — kamu tetap pemegang kendali. Blog ini mengikuti prinsip yang sama: kami menemani, bukan menggantikanmu.</p>
     <p class="mb-4">Semua artikel disusun per kategori supaya kamu cepat menemukan yang dicari, baik dalam bahasa Indonesia maupun Inggris — dan daftarnya terus bertambah.</p>
@@ -354,8 +354,8 @@ function renderAbout(skipPush) {
 
   // Terapkan konten yang sama untuk mencegah error bahasa, bisa diterjemahkan nanti
   const aboutContent = {
-    id: { title: 'Tentang Clincoo Blog', body: contentId },
-    en: { title: 'About Clincoo Blog', body: contentId }
+    id: { title: 'Tentang Clincoo Docs', body: contentId },
+    en: { title: 'About Clincoo Docs', body: contentId }
   };
   
   const d = aboutContent[currentLang] || aboutContent['id'];
@@ -374,7 +374,7 @@ function renderAbout(skipPush) {
     '<div class="prose prose-gray max-w-none text-gray-800 leading-loose text-justify space-y-4">' + d.body + '</div>' +
     '<div class="mt-12 border-t border-gray-200 pt-8 flex flex-col items-center">' +
     '<div class="text-gray-900 mb-3">' + wikybookLogo + '</div>' +
-    '<h3 class="text-lg font-bold text-gray-900 tracking-tight">Clincoo Blog</h3>' +
+    '<h3 class="text-lg font-bold text-gray-900 tracking-tight">Clincoo Docs</h3>' +
     '<p class="text-sm text-gray-500 mt-1">Artikel, Panduan & Tips Clincoo</p>' +
     socialIcons +
     '</div>' +

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cara Memasang Domain Kustom — Clincoo Blog</title>
+<title>Cara Memasang Domain Kustom — Clincoo Docs</title>
 <meta name="description" content="Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.">
 <meta name="robots" content="index, follow">
-<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
-<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/index.en.html">
-<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
-<link rel="canonical" href="https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
+<link rel="canonical" href="https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cara Memasang Domain Kustom — Clincoo Blog">
+<meta property="og:title" content="Cara Memasang Domain Kustom — Clincoo Docs">
 <meta property="og:description" content="Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.">
-<meta property="og:url" content="https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
-<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:url" content="https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/">
+<meta property="og:site_name" content="Clincoo Docs">
 <meta property="og:locale" content="id_ID">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cara Memasang Domain Kustom — Clincoo Blog">
+<meta name="twitter:title" content="Cara Memasang Domain Kustom — Clincoo Docs">
 <meta name="twitter:description" content="Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.">
 <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
 <link rel="stylesheet" href="/assets/seo.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Memasang Domain Kustom", "description": "Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.", "mainEntityOfPage": "https://blog.clincoo.buzz/mulai/cara-pasang-domain-kustom/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Memasang Domain Kustom", "description": "Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.", "mainEntityOfPage": "https://docs.clincoo.buzz/mulai/cara-pasang-domain-kustom/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
 </head>
 <body>
 <header class="seo-header">
@@ -32,9 +32,9 @@
 <p class="seo-cat">Memulai</p>
 <h1 class="seo-title">Cara Memasang Domain Kustom</h1>
 <div class="seo-body">
-<p class="mb-4">Domain kustom dipakai setelah URL bawaan hasil deploy sudah benar. Jangan pasang domain di proyek yang masih halaman kosong. Kelola situs dari <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> dan akun dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Siapkan deploy yang sudah hidup</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Buka proyek di editor Clincoo dan pastikan deploy terakhir sukses.</li><li class="mb-1">Salin URL HTTPS bawaan, buka di tab privat, dan cek judul serta gambar.</li><li class="mb-1">Baru setelah itu buka pengaturan domain di akun.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Isi catatan DNS</h2><p class="mb-4">Di panel registrar, buat catatan yang diminta Clincoo — biasanya CNAME untuk subdomain seperti www, atau A/ALIAS untuk apex. Jangan mencampur dua catatan yang berebut hostname yang sama.</p><ul class="list-disc pl-6 mb-4 space-y-1"><li class="mb-1">Hostname harus persis seperti yang tertulis di layar Clincoo, tanpa spasi.</li><li class="mb-1">Hapus catatan lama yang mengarah ke hosting sebelumnya pada nama yang sama.</li><li class="mb-1">Simpan perubahan, lalu kembali ke Clincoo dan tekan cek ulang.</li></ul><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tunggu, lalu uji</h2><p class="mb-4">Propagasi DNS bisa beberapa menit sampai beberapa jam. Kalau cek gagal, tunggu lalu ulangi — menekan berkali-kali tidak mempercepat DNS. Setelah aktif, buka domain di tab privat dan pastikan gembok HTTPS muncul.</p><p class="mb-4">Kalau deploy belum pernah berhasil, selesaikan dulu artikel deploy situs pertama di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> sebelum menyentuh DNS.</p>
+<p class="mb-4">Domain kustom dipakai setelah URL bawaan hasil deploy sudah benar. Jangan pasang domain di proyek yang masih halaman kosong. Kelola situs dari <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> dan akun dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Siapkan deploy yang sudah hidup</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Buka proyek di editor Clincoo dan pastikan deploy terakhir sukses.</li><li class="mb-1">Salin URL HTTPS bawaan, buka di tab privat, dan cek judul serta gambar.</li><li class="mb-1">Baru setelah itu buka pengaturan domain di akun.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Isi catatan DNS</h2><p class="mb-4">Di panel registrar, buat catatan yang diminta Clincoo — biasanya CNAME untuk subdomain seperti www, atau A/ALIAS untuk apex. Jangan mencampur dua catatan yang berebut hostname yang sama.</p><ul class="list-disc pl-6 mb-4 space-y-1"><li class="mb-1">Hostname harus persis seperti yang tertulis di layar Clincoo, tanpa spasi.</li><li class="mb-1">Hapus catatan lama yang mengarah ke hosting sebelumnya pada nama yang sama.</li><li class="mb-1">Simpan perubahan, lalu kembali ke Clincoo dan tekan cek ulang.</li></ul><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tunggu, lalu uji</h2><p class="mb-4">Propagasi DNS bisa beberapa menit sampai beberapa jam. Kalau cek gagal, tunggu lalu ulangi — menekan berkali-kali tidak mempercepat DNS. Setelah aktif, buka domain di tab privat dan pastikan gembok HTTPS muncul.</p><p class="mb-4">Kalau deploy belum pernah berhasil, selesaikan dulu artikel deploy situs pertama di <a href="https://docs.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">docs.clincoo.buzz</a> sebelum menyentuh DNS.</p>
 </div>
-<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
 </main>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>

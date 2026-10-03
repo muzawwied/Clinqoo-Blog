@@ -1,4 +1,4 @@
-// Generator halaman kategori Clincoo Blog (id + en) — gaya kartu seperti beranda,
+// Generator halaman kategori Clincoo Docs (id + en) — gaya kartu seperti beranda,
 // sidebar menu lengkap. Jalankan: node scripts/gen-category-pages.js
 const fs = require('fs');
 const vm = require('vm');
@@ -54,38 +54,38 @@ function build(catId, lang) {
     "@context": "https://schema.org", "@type": "CollectionPage",
     name: name,
     description: isId
-      ? `Kumpulan artikel kategori ${name} di Clincoo Blog: ${arts.length} artikel resmi Clincoo.`
-      : `All articles in the ${name} category of the Clincoo Blog: ${arts.length} official Clincoo articles.`,
+      ? `Kumpulan artikel kategori ${name} di Clincoo Docs: ${arts.length} artikel resmi Clincoo.`
+      : `All articles in the ${name} category of the Clincoo Docs: ${arts.length} official Clincoo articles.`,
     mainEntity: {
       "@type": "ItemList", numberOfItems: arts.length,
       itemListElement: arts.map((a, i) => ({
         "@type": "ListItem", position: i + 1, name: (a.langs[lang] || a.langs.id).title,
-        url: isId ? `https://blog.clincoo.buzz/${catId}/${a.id}/` : `https://blog.clincoo.buzz/${catId}/${a.id}/index.en.html`
+        url: isId ? `https://docs.clincoo.buzz/${catId}/${a.id}/` : `https://docs.clincoo.buzz/${catId}/${a.id}/index.en.html`
       }))
     }
   };
 
-  const selfUrl = isId ? `https://blog.clincoo.buzz/${catId}/` : `https://blog.clincoo.buzz/${catId}/index.en.html`;
+  const selfUrl = isId ? `https://docs.clincoo.buzz/${catId}/` : `https://docs.clincoo.buzz/${catId}/index.en.html`;
   const desc = jsonld.description;
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(name)} — Clincoo Blog</title>
+<title>${esc(name)} — Clincoo Docs</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${selfUrl}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="${esc(name)} — Clincoo Blog">
+<meta property="og:title" content="${esc(name)} — Clincoo Docs">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${selfUrl}">
-<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:site_name" content="Clincoo Docs">
 <meta property="og:locale" content="${isId ? 'id_ID' : 'en_US'}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(name)} — Clincoo Blog">
+<meta name="twitter:title" content="${esc(name)} — Clincoo Docs">
 <meta name="twitter:description" content="${esc(desc)}">
 <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
 <link rel="preconnect" href="https://cdn.tailwindcss.com">
@@ -123,7 +123,7 @@ function build(catId, lang) {
     <div class="flex items-center justify-center text-gray-900 flex-shrink-0">
       <img src="/logo.png" width="42" height="42" alt="Clincoo" style="border-radius:0.6rem">
     </div>
-    <span class="text-xl font-bold tracking-tight text-gray-900 ml-2">Clincoo Blog</span>
+    <span class="text-xl font-bold tracking-tight text-gray-900 ml-2">Clincoo Docs</span>
     <button onclick="toggleSidebar()" aria-label="${esc(L.close)}" class="ml-auto p-1.5 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
