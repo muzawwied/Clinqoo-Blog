@@ -377,6 +377,29 @@ window.countryDataFiles["bantuan"] = {
      "source3Url": "https://blog.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-melanjutkan-pembayaran-tertunda",
+   "langs": {
+    "id": {
+     "title": "Cara Melanjutkan Pembayaran yang Belum Selesai",
+     "desc": "Langkah cepat melanjutkan pesanan QRIS yang tertunda: buka halaman pembayaran, buat ulang kode kedaluwarsa, dan pastikan paket aktif otomatis setelah bayar.",
+     "content": "<p class=\"mb-4\">Saat kamu membeli paket atau membayar lewat QRIS, pesanan berstatus <i>menunggu pembayaran</i> sampai dana kami terima. Kode QRIS kedaluwarsa beberapa menit setelah dibuat — kalau belum sempat bayar, pesanan tertunda dan paket belum aktif. Kabar baiknya, melanjutkannya mudah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buka halaman pembayaran</h2><p class=\"mb-4\">Cek email pengingat dari Clincoo dan klik tombol <b>Lanjutkan Pembayaran</b>, atau buka notifikasi di aplikasi lalu ketuk pesan pengingat. Kamu juga bisa masuk ke halaman Langganan di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan pilih paket yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buat ulang pesanan</h2><p class=\"mb-4\">Kode QRIS yang lama sudah kedaluwarsa, jadi cukup ulangi konfirmasi pembayaran di halaman checkout — sistem otomatis membuat kode QRIS baru. Scan kode itu dengan aplikasi pembayaran atau mobile banking favoritmu, lalu selesaikan pembayaran sebelum waktunya habis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sudah bayar? Tidak perlu apa-apa</h2><p class=\"mb-4\">Kalau kamu sebenarnya sudah membayar, abaikan email pengingatnya. Paket atau saldo aktif otomatis begitu pembayaran terkonfirmasi — biasanya dalam hitungan menit. Kamu bisa memastikan statusnya di halaman Langganan.</p><p class=\"mb-4\">Masih bermasalah setelah membayar dan paket belum aktif lebih dari satu jam? Hubungi kami lewat halaman <a href=\"https://blog.clincoo.buzz/bantuan/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Pusat Bantuan</a> dengan menyertakan nomor pesanan dari email.</p>",
+     "source": "Pusat Bantuan Clincoo",
+     "sourceUrl": "https://blog.clincoo.buzz/bantuan/",
+     "source2": "Clincoo",
+     "source2Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Resume an Unfinished Payment",
+     "desc": "Quick steps to resume a pending QRIS order: open the payment page, regenerate the expired code, and let your plan activate automatically after payment.",
+     "content": "<p class=\"mb-4\">When you buy a plan or pay via QRIS, the order stays in <i>awaiting payment</i> status until we receive the funds. QRIS codes expire a few minutes after creation — if you did not get to pay, the order is pending and the plan is not active yet. The good news: resuming is easy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Open the payment page</h2><p class=\"mb-4\">Check the reminder email from Clincoo and click <b>Continue Payment</b>, or open the in-app notification and tap the reminder message. You can also go to the Subscriptions page at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> and pick the same plan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Recreate the order</h2><p class=\"mb-4\">The old QRIS code has expired, so simply repeat the payment confirmation on the checkout page — the system generates a fresh QRIS code automatically. Scan it with your payment app or mobile banking, then complete the payment before it expires.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Already paid? Do nothing</h2><p class=\"mb-4\">If you actually did pay, ignore the reminder email. Your plan or balance activates automatically once the payment is confirmed — usually within minutes. You can verify the status on the Subscriptions page.</p><p class=\"mb-4\">Still having trouble after paying, and the plan is not active after more than an hour? Reach us through the <a href=\"https://blog.clincoo.buzz/bantuan/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Help Center</a> and include the order number from the email.</p>",
+     "source": "Clincoo Help Center",
+     "sourceUrl": "https://blog.clincoo.buzz/bantuan/",
+     "source2": "Clincoo",
+     "source2Url": "https://app.clincoo.buzz/"
+    }
+   }
   }
  ]
 };
