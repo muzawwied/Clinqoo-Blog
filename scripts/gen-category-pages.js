@@ -146,10 +146,6 @@ ${catLinks}
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">${esc(L.about)}</span>
     </a>
   </div>
-  <div class="px-6 py-4 border-t border-gray-100">
-    <p class="text-[11px] text-gray-400">blog.clincoo.buzz</p>
-    <p class="text-[11px] text-gray-400 mt-0.5">&copy; 2026 Clincoo</p>
-  </div>
 </aside>
 
 <header class="sticky top-0 z-40 bg-white border-b border-gray-100 pt-3 pb-4">
