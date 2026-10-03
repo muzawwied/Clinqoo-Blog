@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lay Out a Clincoo Page with grid-template-areas — Clincoo Blog</title>
+<meta name="description" content="Column numbers get swapped when the header and sidebar move on mobile. Named areas make the layout readable in CSS.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/grid/grid-template-areas-susun-halaman/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lay Out a Clincoo Page with grid-template-areas">
+<meta property="og:description" content="Column numbers get swapped when the header and sidebar move on mobile. Named areas make the layout readable in CSS.">
+<meta property="og:image" content="https://blog.clincoo.buzz/logo.png">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../logo.png">
+<link rel="stylesheet" href="../../assets/seo.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="https://blog.clincoo.buzz/grid/"><img src="../../logo.png" alt="Clincoo"><b>Clincoo Blog</b></a>
+  <div class="crumb">Grid</div><h1>Lay Out a Clincoo Page with grid-template-areas</h1><p class="desc">Column numbers get swapped when the header and sidebar move on mobile. Named areas make the layout readable in CSS.</p><div class="langlinks">This article is available in: <a href="./index.html">Indonesian</a> · <a href="./index.en.html">English</a></div><div class="body"><p class="mb-4">On editor.clincoo.buzz a dashboard layout often uses numeric grid-column. On mobile those numbers are wrong and the sidebar covers the content.</p><p class="mb-4">Name the children: header, nav, main, aside. On the parent, write grid-template-areas with one quoted row per line.</p><p class="mb-4">In a narrow media query, rewrite the areas into one column. Do not repeat span numbers that mean something else.</p><p class="mb-4">Ask AI to sketch the areas in a CSS comment before changing markup. Reject a fix that uses position absolute for the sidebar.</p><p class="mb-4">Test at 320 and 1024 in the app.clincoo.buzz preview. Document the area map on blog.clincoo.buzz so the next revision does not guess.</p></div><div class="src"><h2>Sources</h2><a href="https://app.clincoo.buzz/" target="_blank" rel="noopener">Clincoo<span class="d">app.clincoo.buzz</span></a></div>
+  <a class="back" href="https://blog.clincoo.buzz/grid/">← Back to Clincoo Blog</a>
+</div>
+</body>
+</html>
