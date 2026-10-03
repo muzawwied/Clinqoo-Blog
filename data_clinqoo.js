@@ -7,7 +7,6 @@ window.countryDataFiles["legal"] = {
   "id": "Legal",
   "en": "Legal"
  },
- "flag": "📜",
  "articles": [
   {
    "id": "syarat-dan-ketentuan",

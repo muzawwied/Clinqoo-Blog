@@ -36,7 +36,6 @@ function getAllArticles() {
       all.push({
         countryId: cId,
         articleId: art.id,
-        flag: c.flag,
         countryName: c.names[currentLang] || c.names['id'],
         ...langData
       });
@@ -50,7 +49,7 @@ function getCountryArticles(countryId) {
   if (!c) return [];
   return c.articles.map(art => {
     const langData = art.langs[currentLang] || art.langs['id'];
-    return { countryId, articleId: art.id, flag: c.flag, countryName: c.names[currentLang] || c.names['id'], ...langData };
+    return { countryId, articleId: art.id, countryName: c.names[currentLang] || c.names['id'], ...langData };
   });
 }
 
@@ -98,8 +97,8 @@ function updateSidebarUI() {
     for (const key in languages) {
       const btn = document.createElement('button');
       const langActive = currentLang === key;
-      btn.className = 'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ' + (langActive ? 'bg-white shadow-sm font-semibold text-gray-900' : 'text-gray-600 hover:bg-white hover:shadow-sm');
-      btn.innerHTML = '<span class="w-1.5 h-1.5 rounded-full flex-shrink-0 ' + (langActive ? 'bg-gray-900' : 'bg-gray-300') + '"></span><span>' + languages[key].nativeName + '</span>';
+      btn.className = 'w-full flex items-center px-14 py-2 text-sm transition-colors ' + (langActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.innerText = languages[key].nativeName;
       btn.onclick = () => changeLanguage(key);
       langDrop.appendChild(btn);
     }
@@ -115,8 +114,8 @@ function updateSidebarUI() {
       const artCount = c.articles.length;
       const btn = document.createElement('button');
       const isActive = currentCountryId === cId && currentView === 'country';
-      btn.className = 'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors text-sm ' + (isActive ? 'bg-white shadow-sm font-semibold text-gray-900' : 'text-gray-600 hover:bg-white hover:shadow-sm');
-      btn.innerHTML = '<span class="text-base leading-none flex-shrink-0">' + c.flag + '</span><span class="line-clamp-1 flex-1">' + name + '</span><span class="text-[11px] text-gray-400 flex-shrink-0">' + artCount + '</span>';
+      btn.className = 'w-full flex items-center justify-between gap-2 px-14 py-2 text-left transition-colors text-sm ' + (isActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.innerHTML = '<span class="line-clamp-1">' + name + '</span><span class="text-[11px] text-gray-400 flex-shrink-0">' + artCount + '</span>';
       btn.onclick = () => selectCountry(cId);
       countryDropEl.appendChild(btn);
     }
