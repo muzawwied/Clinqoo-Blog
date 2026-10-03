@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Baca returnValue setelah dialog Ditutup — Clincoo Docs</title>
+<meta name="description" content="Tata cara mengisi dan membaca returnValue dialog Clincoo supaya pemanggil tahu pilihan pengguna tanpa variabel global.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dialog/dialog-baca-return-value/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dialog/dialog-baca-return-value/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dialog/dialog-baca-return-value/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dialog/dialog-baca-return-value/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Baca returnValue setelah dialog Ditutup — Clincoo Docs">
+<meta property="og:description" content="Tata cara mengisi dan membaca returnValue dialog Clincoo supaya pemanggil tahu pilihan pengguna tanpa variabel global.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dialog/dialog-baca-return-value/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Baca returnValue setelah dialog Ditutup — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara mengisi dan membaca returnValue dialog Clincoo supaya pemanggil tahu pilihan pengguna tanpa variabel global.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Baca returnValue setelah dialog Ditutup", "description": "Tata cara mengisi dan membaca returnValue dialog Clincoo supaya pemanggil tahu pilihan pengguna tanpa variabel global.", "mainEntityOfPage": "https://docs.clincoo.buzz/dialog/dialog-baca-return-value/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dialog/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dialog HTML</p>
+<h1 class="seo-title">Cara Baca returnValue setelah dialog Ditutup</h1>
+<div class="seo-body">
+<p class="mb-4">Menutup dialog dengan close() tanpa nilai membuat pemanggil menebak-nebak. returnValue adalah string hasil yang bisa dibaca setelah event close.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kirim alasan lewat close</h2><p class="mb-4">Tombol Hapus memanggil close("hapus"). Tombol Batal memanggil close("batal") atau close(""). Escape juga menutup modal dan biasanya mengosongkan returnValue, jadi perlakukan string kosong sebagai batal.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Dengarkan close, bukan hanya klik</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> pasang satu listener close pada dialog. Di situ baca returnValue lalu jalankan aksi. Jangan menghapus proyek langsung di onclick sebelum close, karena pengguna masih bisa membatalkan lewat Escape.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kosongkan nilai sebelum dibuka lagi</h2><p class="mb-4">Setel returnValue ke string kosong sebelum showModal berikutnya. Cek di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> bahwa membuka ulang dialog tidak mengulang aksi hapus dari nilai lama.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

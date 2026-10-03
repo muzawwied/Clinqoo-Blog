@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Tutup dialog saat Klik Backdrop — Clincoo Docs</title>
+<meta name="description" content="Tata cara menutup dialog modal Clincoo hanya jika klik jatuh di backdrop, bukan di panel isi.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Tutup dialog saat Klik Backdrop — Clincoo Docs">
+<meta property="og:description" content="Tata cara menutup dialog modal Clincoo hanya jika klik jatuh di backdrop, bukan di panel isi.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Tutup dialog saat Klik Backdrop — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menutup dialog modal Clincoo hanya jika klik jatuh di backdrop, bukan di panel isi.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Tutup dialog saat Klik Backdrop", "description": "Tata cara menutup dialog modal Clincoo hanya jika klik jatuh di backdrop, bukan di panel isi.", "mainEntityOfPage": "https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dialog/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dialog HTML</p>
+<h1 class="seo-title">Cara Tutup dialog saat Klik Backdrop</h1>
+<div class="seo-body">
+<p class="mb-4">showModal menampilkan backdrop, tetapi klik di area gelap tidak otomatis memanggil close. Tanpa penanganan, pengguna mengira jendela macet.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Bandingkan target klik dengan dialog</h2><p class="mb-4">Pasang listener click pada elemen dialog. Tutup hanya jika event.target adalah dialog itu sendiri. Klik di panel dalam punya target anak, jadi jendela tetap terbuka.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan tutup dialog konfirmasi bahaya</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> dialog hapus proyek sebaiknya tidak tertutup lewat backdrop. Pakai pola ini hanya untuk pratinjau atau pilihan yang bisa dibatalkan. Tombol tutup tetap wajib, karena tidak semua pengguna mengklik area gelap.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji pointer dan keyboard</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> cek klik, ketuk ponsel, dan Escape. Backdrop klik tidak boleh ikut menekan tombol di halaman belakang.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

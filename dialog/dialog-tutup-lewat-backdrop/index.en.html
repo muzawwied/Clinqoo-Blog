@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Close a dialog When the Backdrop Is Clicked — Clincoo Docs</title>
+<meta name="description" content="How to close a Clincoo modal dialog only when the click lands on the backdrop, not on the content panel.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Close a dialog When the Backdrop Is Clicked — Clincoo Docs">
+<meta property="og:description" content="How to close a Clincoo modal dialog only when the click lands on the backdrop, not on the content panel.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Close a dialog When the Backdrop Is Clicked — Clincoo Docs">
+<meta name="twitter:description" content="How to close a Clincoo modal dialog only when the click lands on the backdrop, not on the content panel.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Close a dialog When the Backdrop Is Clicked", "description": "How to close a Clincoo modal dialog only when the click lands on the backdrop, not on the content panel.", "mainEntityOfPage": "https://docs.clincoo.buzz/dialog/dialog-tutup-lewat-backdrop/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dialog/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">HTML Dialog</p>
+<h1 class="seo-title">How to Close a dialog When the Backdrop Is Clicked</h1>
+<div class="seo-body">
+<p class="mb-4">showModal paints a backdrop, but a click on the dimmed area does not call close by itself. Without a handler, people think the window is stuck.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Compare the click target with the dialog</h2><p class="mb-4">Add a click listener on the dialog element. Close only when event.target is the dialog itself. A click on the inner panel has a child target, so the window stays open.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not dismiss a dangerous confirm this way</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> a delete-project dialog should not close from the backdrop. Use this pattern only for previews or choices that can be cancelled. A close button is still required, because not everyone clicks the dimmed area.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test pointer and keyboard</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> check click, phone tap, and Escape. A backdrop click must not activate a button on the page behind.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

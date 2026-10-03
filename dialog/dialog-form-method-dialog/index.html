@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Kirim Form di dalam dialog dengan method dialog — Clincoo Docs</title>
+<meta name="description" content="Tata cara memakai form method dialog di Clincoo supaya submit menutup jendela dan mengirim nilai tanpa memuat ulang halaman.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Kirim Form di dalam dialog dengan method dialog — Clincoo Docs">
+<meta property="og:description" content="Tata cara memakai form method dialog di Clincoo supaya submit menutup jendela dan mengirim nilai tanpa memuat ulang halaman.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Kirim Form di dalam dialog dengan method dialog — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara memakai form method dialog di Clincoo supaya submit menutup jendela dan mengirim nilai tanpa memuat ulang halaman.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Kirim Form di dalam dialog dengan method dialog", "description": "Tata cara memakai form method dialog di Clincoo supaya submit menutup jendela dan mengirim nilai tanpa memuat ulang halaman.", "mainEntityOfPage": "https://docs.clincoo.buzz/dialog/dialog-form-method-dialog/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dialog/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dialog HTML</p>
+<h1 class="seo-title">Cara Kirim Form di dalam dialog dengan method dialog</h1>
+<div class="seo-body">
+<p class="mb-4">Form di dalam dialog yang memakai method post sering memuat ulang preview. method dialog menutup jendela dan mengisi returnValue dengan nilai tombol submit, tanpa navigasi.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Setel method dialog dan nama tombol</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> bungkus isian dengan form method="dialog". Tombol Simpan beri name dan value, misalnya name="aksi" value="simpan". Tombol Batal cukup type="submit" dengan value="batal", atau type="button" yang memanggil close().</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Baca hasilnya di event close</h2><p class="mb-4">Setelah form terkirim, dialog menutup dan event close terpicu. Baca dialog.returnValue untuk membedakan simpan dan batal. Jangan andalkan input di luar dialog; yang ikut terkirim hanya kontrol sukses di dalam form itu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek di preview</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> pastikan Enter di input teks mengirim form, bukan membuka dialog kedua. Jika validasi gagal, panggil preventDefault pada submit dan biarkan dialog tetap terbuka.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
