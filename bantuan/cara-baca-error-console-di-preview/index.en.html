@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Read Console Errors in Preview — Clincoo Blog</title>
+<meta name="description" content="How to open the browser console, tell errors from warnings, and trace the file that failed in a Clincoo preview.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Read Console Errors in Preview — Clincoo Blog">
+<meta property="og:description" content="How to open the browser console, tell errors from warnings, and trace the file that failed in a Clincoo preview.">
+<meta property="og:url" content="https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Read Console Errors in Preview — Clincoo Blog">
+<meta name="twitter:description" content="How to open the browser console, tell errors from warnings, and trace the file that failed in a Clincoo preview.">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="stylesheet" href="/assets/seo.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Read Console Errors in Preview","description":"How to open the browser console, tell errors from warnings, and trace the file that failed in a Clincoo preview.","mainEntityOfPage":"https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/#/bantuan/cara-baca-error-console-di-preview">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Help Center</p>
+<h1 class="seo-title">How to Read Console Errors in Preview</h1>
+<div class="seo-body">
+<p class="mb-4">If the preview on <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> is blank or a button does nothing, JavaScript usually stopped at the first error. The browser console is where that error is written, not the page itself.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Open the console</h2><p class="mb-4">In Chrome or Edge, right-click the preview and choose Inspect. Open the Console tab. If the preview lives in an iframe, pick the preview frame in the console context selector so you see your site's logs, not the editor's.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tell message types apart</h2><p class="mb-4">A red error stops the script at that line. A yellow warning usually does not stop the page. A plain info line is only a note. Fix red errors first, top to bottom, because later errors are often fallout from the first one.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Read the file location</h2><p class="mb-4">Click the file:line link on the right, for example <b>app.js:42</b>. That is the line the browser failed to run. <b>is not defined</b> means a variable or function name does not exist yet. <b>Unexpected token</b> usually means a quote, bracket, or comma was left open.</p><p class="mb-4">Copy the full message, file name, and line before you ask Clincoo's AI chat for help. Do not just write "error". After the fix, save the file and reload the preview so old errors are gone from the console.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

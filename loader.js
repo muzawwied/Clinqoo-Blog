@@ -8,7 +8,7 @@
     document.body.appendChild(a);
   }
   var s = document.createElement('script');
-  s.src = 'data_clinqoo.js?v=4';
+  s.src = 'data_clinqoo.js?v=5';
   s.onload = loadApp;
   s.onerror = loadApp;
   document.body.appendChild(s);

@@ -38,6 +38,94 @@ window.countryDataFiles["bantuan"] = {
     }
    }
   }
+ ,
+  {
+   "id": "cara-baca-error-console-di-preview",
+   "langs": {
+    "id": {
+     "title": "Cara Membaca Error Console di Preview",
+     "desc": "Tata cara membuka konsol browser, membedakan error dan warning, lalu menelusuri file yang bermasalah di preview Clincoo.",
+     "content": "<p class=\"mb-4\">Kalau preview di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tampil kosong atau tombol tidak bereaksi, biasanya JavaScript berhenti di error pertama. Konsol browser adalah tempat error itu ditulis, bukan di tampilan halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buka konsol</h2><p class=\"mb-4\">Di Chrome atau Edge, klik kanan area preview lalu pilih Inspect. Buka tab Console. Jika preview ada di iframe, pilih frame preview di pemilih konteks konsol supaya log situsmu yang muncul, bukan log editor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan jenis pesan</h2><p class=\"mb-4\">Error berwarna merah menghentikan skrip di baris itu. Warning kuning biasanya tidak menghentikan halaman. Info biasa hanya catatan. Perbaiki error merah dulu, dari yang paling atas, karena error berikutnya sering hanya ikutannya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca lokasi file</h2><p class=\"mb-4\">Klik tautan file:baris di kanan pesan, misalnya <b>app.js:42</b>. Itu baris yang browser gagal jalankan. Pesan <b>is not defined</b> berarti nama variabel atau fungsi belum ada. <b>Unexpected token</b> biasanya tanda kutip, kurung, atau koma yang belum ditutup.</p><p class=\"mb-4\">Salin pesan lengkap, nama file, dan barisnya sebelum minta bantuan di chat AI Clincoo. Jangan hanya menulis \"error\". Setelah perbaikan, simpan file lalu muat ulang preview supaya konsol bersih dari error lama.</p>",
+     "source": "MDN Web Docs — Console API",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+     "sourceSnippet": "The console object provides access to the browser's debugging console.",
+     "source2": "Chrome DevTools — Console",
+     "source2Url": "https://developer.chrome.com/docs/devtools/console",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Read Console Errors in Preview",
+     "desc": "How to open the browser console, tell errors from warnings, and trace the file that failed in a Clincoo preview.",
+     "content": "<p class=\"mb-4\">If the preview on <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> is blank or a button does nothing, JavaScript usually stopped at the first error. The browser console is where that error is written, not the page itself.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Open the console</h2><p class=\"mb-4\">In Chrome or Edge, right-click the preview and choose Inspect. Open the Console tab. If the preview lives in an iframe, pick the preview frame in the console context selector so you see your site's logs, not the editor's.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tell message types apart</h2><p class=\"mb-4\">A red error stops the script at that line. A yellow warning usually does not stop the page. A plain info line is only a note. Fix red errors first, top to bottom, because later errors are often fallout from the first one.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the file location</h2><p class=\"mb-4\">Click the file:line link on the right, for example <b>app.js:42</b>. That is the line the browser failed to run. <b>is not defined</b> means a variable or function name does not exist yet. <b>Unexpected token</b> usually means a quote, bracket, or comma was left open.</p><p class=\"mb-4\">Copy the full message, file name, and line before you ask Clincoo's AI chat for help. Do not just write \"error\". After the fix, save the file and reload the preview so old errors are gone from the console.</p>",
+     "source": "MDN Web Docs — Console API",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+     "sourceSnippet": "The console object provides access to the browser's debugging console.",
+     "source2": "Chrome DevTools — Console",
+     "source2Url": "https://developer.chrome.com/docs/devtools/console",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-minta-bantuan-ai-saat-stuck",
+   "langs": {
+    "id": {
+     "title": "Cara Minta Bantuan AI Saat Stuck",
+     "desc": "Pola permintaan yang membuat asisten AI Clincoo menjawab tepat: satu masalah, file terkait, gejala, dan hasil yang diharapkan.",
+     "content": "<p class=\"mb-4\">Asisten AI di Clincoo membantu menjelaskan dan menulis cuplikan, tetapi ia tidak melihat layarmu. Kualitas jawaban mengikuti konteks yang kamu kirim lewat chat di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu masalah per obrolan</h2><p class=\"mb-4\">Jangan gabungkan perbaiki layout, ganti warna, dan sambungkan form dalam satu pesan. Sebutkan satu gejala. Contoh: tombol kirim di index.html tidak memanggil fungsi kirimForm.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan bukti</h2><p class=\"mb-4\">Tempel pesan error lengkap, nama file, dan cuplikan pendek di sekitar baris yang gagal. Sebutkan browser dan lebar layar kalau masalahnya tampilan. Tuliskan hasil yang kamu inginkan dalam satu kalimat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi perubahan</h2><p class=\"mb-4\">Minta daftar perubahan, bukan rewrite seluruh stylesheet. Tolak saran yang mengganti nama merek, menghapus file lain, atau menulis ulang bagian yang masih benar. Uji saran di preview dulu, baru simpan.</p><p class=\"mb-4\">Kalau jawaban melenceng, ulangi dengan potongan kode yang lebih kecil. Simpan prompt yang berhasil di catatan proyek supaya lain kali kamu tidak mulai dari nol.</p>",
+     "source": "Clincoo Blog — Asisten AI",
+     "sourceUrl": "https://blog.clincoo.buzz/#/dokumentasi/asisten-ai-clinqoo",
+     "sourceSnippet": "AI is an assistant, not an automatic site builder. You review every change.",
+     "source2": "MDN — JavaScript errors",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Ask the AI for Help When You Are Stuck",
+     "desc": "A request pattern that gets a precise answer from the Clincoo AI assistant: one problem, the related file, the symptom, and the expected result.",
+     "content": "<p class=\"mb-4\">The AI assistant in Clincoo can explain and draft snippets, but it cannot see your screen. Answer quality follows the context you send in chat on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One problem per chat</h2><p class=\"mb-4\">Do not combine a layout fix, a color change, and a form hookup in one message. Name one symptom. Example: the submit button in index.html does not call kirimForm.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include evidence</h2><p class=\"mb-4\">Paste the full error, the file name, and a short snippet around the failing line. Mention the browser and viewport width if the issue is visual. State the result you want in one sentence.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit the change</h2><p class=\"mb-4\">Ask for a change list, not a rewrite of the whole stylesheet. Reject advice that renames the brand, deletes other files, or rewrites parts that already work. Test the suggestion in preview before you save.</p><p class=\"mb-4\">If the answer drifts, retry with a smaller code excerpt. Keep prompts that worked in the project notes so you do not start from zero next time.</p>",
+     "source": "Clincoo Blog — Asisten AI",
+     "sourceUrl": "https://blog.clincoo.buzz/#/dokumentasi/asisten-ai-clinqoo",
+     "sourceSnippet": "AI is an assistant, not an automatic site builder. You review every change.",
+     "source2": "MDN — JavaScript errors",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-rapikan-struktur-folder-proyek",
+   "langs": {
+    "id": {
+     "title": "Cara Merapikan Struktur Folder Proyek",
+     "desc": "Tata cara menata index.html, css, js, dan gambar supaya jalur relatif tidak patah saat preview maupun deploy Clincoo.",
+     "content": "<p class=\"mb-4\">Deploy Clincoo memakai file di proyekmu apa adanya. Kalau nama dan folder tidak konsisten, gambar hilang hanya di situs live padahal preview terasa benar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu pintu masuk</h2><p class=\"mb-4\">File utama harus bernama <b>index.html</b> di akar proyek, huruf kecil semua. Home.html atau Index.HTML tidak dibaca sebagai halaman depan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Folder yang cukup</h2><p class=\"mb-4\">Pola yang aman untuk situs kecil: <b>css/style.css</b>, <b>js/app.js</b>, dan <b>img/</b> untuk gambar. Dari index.html, tautan ditulis relatif: <b>css/style.css</b>, bukan jalur komputer lokal seperti C:/Users/.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Huruf besar kecil</h2><p class=\"mb-4\">Nama file di server peka huruf. Foto.JPG dan foto.jpg adalah file berbeda. Samakan ejaan di tag img dan nama unggahan.</p><p class=\"mb-4\">Sebelum deploy dari editor, buka tiap tautan di preview. Kalau satu gambar pecah, perbaiki jalurnya dulu. Proyek rapi juga memudahkan AI menunjuk file yang tepat saat kamu minta bantuan.</p>",
+     "source": "MDN — URL paths",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL",
+     "sourceSnippet": "A relative URL points to a file relative to the current document.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo Blog",
+     "source3Url": "https://blog.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Organize a Project Folder",
+     "desc": "How to arrange index.html, css, js, and images so relative paths survive both Clincoo preview and deploy.",
+     "content": "<p class=\"mb-4\">A Clincoo deploy publishes the files in your project as they are. If names and folders are inconsistent, images vanish only on the live site even when preview looked fine.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One entry file</h2><p class=\"mb-4\">The main file must be named <b>index.html</b> at the project root, all lowercase. Home.html or Index.HTML is not treated as the front page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Enough folders</h2><p class=\"mb-4\">A safe layout for a small site: <b>css/style.css</b>, <b>js/app.js</b>, and <b>img/</b> for images. From index.html, links stay relative: <b>css/style.css</b>, not a local computer path such as C:/Users/.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Letter case</h2><p class=\"mb-4\">File names on the server are case-sensitive. Foto.JPG and foto.jpg are different files. Match the spelling in the img tag and the uploaded name.</p><p class=\"mb-4\">Before you deploy from the editor, open each link in preview. If one image breaks, fix that path first. A tidy project also helps the AI point at the right file when you ask for help.</p>",
+     "source": "MDN — URL paths",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL",
+     "sourceSnippet": "A relative URL points to a file relative to the current document.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo Blog",
+     "source3Url": "https://blog.clincoo.buzz/"
+    }
+   }
+  }
  ]
 }
 
@@ -74,6 +162,65 @@ window.countryDataFiles["legal"] = {
      "title": "Clincoo Privacy Policy",
      "desc": "How Clincoo collects, uses, stores, and protects your data — plus your rights over that data.",
      "content": "<p class=\"mb-4\">Last updated: October 3, 2026. This policy explains how Clincoo handles your personal data. We wrote it in the plainest language possible, because privacy should not be complicated.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Data we collect and why</h2><div class=\"overflow-x-auto mb-5\"><table class=\"w-full text-sm border border-gray-200 border-collapse\"><thead class=\"bg-gray-50\"><tr><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Data type</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Examples</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Purpose</th></tr></thead><tbody><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Account data</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Name, email, profile picture</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Running your account and authentication</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Usage data</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Projects created, features used</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Keeping plan quotas working correctly</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Project content</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">HTML/CSS/JS files, images</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Storing and publishing your sites</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Technical data</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">IP address, device type</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Security and aggregate analytics</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Subscription data</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Billing history, plan status</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Managing paid plans</td></tr></tbody></table></div><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">How we use data</h2><p class=\"mb-4\">Data is used to: run the service (storing projects, publishing sites, enforcing quotas), secure accounts (abuse detection), send important notices about your account and subscription, and improve the product with aggregate analytics. <b>We do not sell your personal data.</b></p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Where data is stored</h2><p class=\"mb-4\">The service runs on Cloudflare's network: files and databases live in Cloudflare data centers, and the sites you publish are served through their global network. Some third-party providers process data only as needed for their function — explained in the sharing section below.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Cookies and local storage</h2><div class=\"overflow-x-auto mb-5\"><table class=\"w-full text-sm border border-gray-200 border-collapse\"><thead class=\"bg-gray-50\"><tr><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Type</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Function</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Removable?</th></tr></thead><tbody><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Session cookies</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Keeping you logged in</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Yes — via browser settings; the session ends and you simply log in again</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">localStorage</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Display preferences (e.g. dark mode)</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Yes — via browser settings</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Analytics</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Aggregate visit statistics</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Yes — but anonymous stats do not identify you personally</td></tr></tbody></table></div><p class=\"mb-4\">Third-party advertising tracking cookies are not used.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">The AI and your content</h2><p class=\"mb-4\">When you ask the AI assistant a question, relevant project context is sent so the AI can answer accurately. AI requests are processed to produce answers and maintain service quality; we do not sell or share your project content for other purposes.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Sharing with third parties</h2><div class=\"overflow-x-auto mb-5\"><table class=\"w-full text-sm border border-gray-200 border-collapse\"><thead class=\"bg-gray-50\"><tr><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Party</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Data processed</th><th class=\"border border-gray-200 px-3 py-2 text-left font-bold text-gray-900\">Reason</th></tr></thead><tbody><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Cloudflare</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Project files, databases, traffic</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Hosting infrastructure and network</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Google / GitHub</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Basic account data at login</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Login providers (OAuth)</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Transactional email provider</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Email address</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Sending service emails (verification, notices)</td></tr><tr><td class=\"border border-gray-200 px-3 py-2 text-gray-700 font-medium text-gray-900\">Payment gateway</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Subscription transaction data</td><td class=\"border border-gray-200 px-3 py-2 text-gray-700\">Processing paid plan payments</td></tr></tbody></table></div><p class=\"mb-4\">We do not share data for advertising.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Retention and deletion</h2><p class=\"mb-4\">Account data is kept while your account is active. When you delete your account through the danger zone in settings, account and project data are permanently removed from our systems within a reasonable period, except data we must keep by law (such as transaction records). Periodic backups are also removed according to their retention cycles.</p><h2 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Your rights</h2><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\"><b>Access:</b> your personal data can be exported from account settings.</li><li class=\"mb-1\"><b>Correction:</b> inaccurate data can be fixed in the profile settings.</li><li class=\"mb-1\"><b>Deletion:</b> your account and all its data can be deleted anytime from the danger zone.</li><li class=\"mb-1\"><b>Questions:</b> contact us through the help menu in the app — requests are handled in line with applicable data protection rules.</li></ul><p class=\"mb-4\">This policy may be updated as the service develops. The latest version always lives here with an update date, and significant changes are announced in the app or by email.</p>"
+    }
+   }
+  }
+ ,
+  {
+   "id": "cara-mengekspor-data-akun",
+   "langs": {
+    "id": {
+     "title": "Cara Mengekspor Data Akun",
+     "desc": "Langkah meminta salinan data akun dan proyek Clincoo sebelum pindah alat atau sekadar arsip pribadi.",
+     "content": "<p class=\"mb-4\">Kebijakan privasi Clincoo menyebut kamu bisa mengakses data pribadimu. Ekspor berguna sebelum mengganti perangkat, mengarsipkan klien, atau menutup akun.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Dari pengaturan akun</h2><p class=\"mb-4\">Masuk ke <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, buka pengaturan akun, lalu cari opsi ekspor data. Unduh arsip yang disediakan dan simpan di luar proyek yang sedang kamu edit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Yang ikut dan yang tidak</h2><p class=\"mb-4\">Salinan biasanya mencakup profil dan file proyek yang tersimpan. Riwayat tagihan yang wajib disimpan secara hukum tetap di sistem pembayaran dan tidak selalu ada di arsip unduhan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Setelah mengunduh</h2><p class=\"mb-4\">Buka arsip dan pastikan index.html serta aset penting ada. Jangan unggah arsip itu ke repositori publik. Kalau opsi ekspor tidak terlihat, minta lewat menu bantuan di aplikasi dengan subjek akses data.</p>",
+     "source": "Clincoo Privacy Policy",
+     "sourceUrl": "https://blog.clincoo.buzz/legal/kebijakan-privasi/",
+     "sourceSnippet": "Access: your personal data can be exported from account settings.",
+     "source2": "Clincoo App",
+     "source2Url": "https://app.clincoo.buzz/",
+     "source3": "Clincoo Blog",
+     "source3Url": "https://blog.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Export Your Account Data",
+     "desc": "Steps to request a copy of your Clincoo account and project data before switching tools or keeping a personal archive.",
+     "content": "<p class=\"mb-4\">The Clincoo privacy policy says you can access your personal data. An export is useful before you change devices, archive a client project, or close an account.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">From account settings</h2><p class=\"mb-4\">Sign in at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, open account settings, and look for the data export option. Download the archive provided and store it outside the project you are editing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">What is included</h2><p class=\"mb-4\">The copy usually covers the profile and stored project files. Billing history that must be kept by law stays with the payment system and is not always inside the download.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">After download</h2><p class=\"mb-4\">Open the archive and confirm index.html plus key assets are there. Do not upload that archive to a public repository. If the export option is missing, ask through the in-app help menu with the subject data access.</p>",
+     "source": "Clincoo Privacy Policy",
+     "sourceUrl": "https://blog.clincoo.buzz/legal/kebijakan-privasi/",
+     "sourceSnippet": "Access: your personal data can be exported from account settings.",
+     "source2": "Clincoo App",
+     "source2Url": "https://app.clincoo.buzz/",
+     "source3": "Clincoo Blog",
+     "source3Url": "https://blog.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-menghapus-akun-dan-proyek",
+   "langs": {
+    "id": {
+     "title": "Cara Menghapus Akun dan Proyek",
+     "desc": "Tata cara menghapus proyek, mengosongkan sampah, lalu menutup akun Clincoo dari zona bahaya beserta akibatnya.",
+     "content": "<p class=\"mb-4\">Menghapus data di Clincoo bertahap. Proyek yang baru dihapus masih bisa dipulihkan dari sampah. Penghapusan akun dari zona bahaya bersifat permanen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hapus satu proyek</h2><p class=\"mb-4\">Di dashboard <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, pilih proyek lalu hapus. Selama belum dihapus permanen dari sampah, proyek bisa dipulihkan. Situs yang sudah dideploy tidak otomatis ikut turun hanya karena file dipindah ke sampah — cek status publish sebelum menutup pekerjaan klien.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tutup akun</h2><p class=\"mb-4\">Buka pengaturan, gulir ke zona bahaya, lalu konfirmasi hapus akun. Ekspor data dulu kalau kamu masih butuh salinan. Setelah akun dihapus, profil dan proyek di sistem kami dihapus dalam jangka waktu wajar, kecuali data yang wajib disimpan hukum seperti catatan transaksi.</p><p class=\"mb-4\">Berhenti berlangganan tidak sama dengan hapus akun. Turun ke paket gratis dilakukan di halaman Langganan dan berlaku di akhir periode tagihan.</p>",
+     "source": "Clincoo Privacy Policy",
+     "sourceUrl": "https://blog.clincoo.buzz/legal/kebijakan-privasi/",
+     "sourceSnippet": "Deletion: your account and all its data can be deleted anytime from the danger zone.",
+     "source2": "Clincoo Terms",
+     "source2Url": "https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Delete an Account and Projects",
+     "desc": "How to delete a project, empty trash, then close a Clincoo account from the danger zone, and what that does.",
+     "content": "<p class=\"mb-4\">Deleting data in Clincoo is staged. A project you just deleted can still be restored from trash. Deleting the account from the danger zone is permanent.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Delete one project</h2><p class=\"mb-4\">On the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dashboard, select the project and delete it. Until it is permanently removed from trash, it can be restored. A site already deployed does not automatically go offline just because files moved to trash — check publish status before you close a client job.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Close the account</h2><p class=\"mb-4\">Open settings, scroll to the danger zone, and confirm account deletion. Export data first if you still need a copy. After the account is deleted, the profile and projects are removed from our systems within a reasonable period, except data we must keep by law such as transaction records.</p><p class=\"mb-4\">Cancelling a subscription is not the same as deleting the account. Dropping to the free plan is done on the Subscription page and applies at the end of the billing period.</p>",
+     "source": "Clincoo Privacy Policy",
+     "sourceUrl": "https://blog.clincoo.buzz/legal/kebijakan-privasi/",
+     "sourceSnippet": "Deletion: your account and all its data can be deleted anytime from the danger zone.",
+     "source2": "Clincoo Terms",
+     "source2Url": "https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
     }
    }
   }
