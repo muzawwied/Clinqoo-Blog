@@ -1,37 +1,35 @@
+// Generator halaman kategori Clincoo Blog (id + en) — gaya kartu seperti beranda,
+// sidebar menu lengkap. Jalankan: node scripts/gen-category-pages.js
 const fs = require('fs');
 const vm = require('vm');
-const src = fs.readFileSync('data_clinqoo.js', 'utf8');
+const src = fs.readFileSync(__dirname + '/../data_clinqoo.js', 'utf8');
 const sandbox = { window: {} };
 vm.runInNewContext(src, sandbox);
 const d = sandbox.window.countryDataFiles;
-const SITE = 'https://blog.clincoo.buzz';
 
 const t = {
   id: {
-    back: 'Kembali ke Beranda', count: n => n + ' artikel',
-    desc: (name, n) => `Kumpulan artikel kategori ${name} di Clincoo Blog: ${n} artikel resmi Clincoo.`,
-    footer: 'Seluruh hak cipta dilindungi.'
+    menu: 'Menu', home: 'Beranda', categories: 'Kategori', about: 'Tentang', close: 'Tutup menu',
+    openMenu: 'Buka menu', count: n => n + ' artikel', closeTxt: 'Seluruh hak cipta dilindungi.'
   },
   en: {
-    back: 'Back to Home', count: n => n + ' articles',
-    desc: (name, n) => `All articles in the ${name} category of the Clincoo Blog: ${n} official Clincoo articles.`,
-    footer: 'All rights reserved.'
+    menu: 'Menu', home: 'Home', categories: 'Categories', about: 'About', close: 'Close menu',
+    openMenu: 'Open menu', count: n => n + ' articles', closeTxt: 'All rights reserved.'
   }
 };
 
-function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
 function build(catId, lang) {
   const c = d[catId];
   const name = c.names[lang] || c.names.id;
   const arts = c.articles;
   const L = t[lang];
-  const selfUrl = lang === 'id' ? `${SITE}/${catId}/` : `${SITE}/${catId}/index.en.html`;
-  const desc = L.desc(name, arts.length);
+  const isId = lang === 'id';
 
-  const listItems = arts.map((a, i) => {
+  const cards = arts.map(a => {
     const al = a.langs[lang] || a.langs.id;
-    const href = lang === 'id' ? `/${catId}/${a.id}/` : `/${catId}/${a.id}/index.en.html`;
+    const href = isId ? `/${catId}/${a.id}/` : `/${catId}/${a.id}/index.en.html`;
     return `<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="${href}">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">${esc(name)}</span></div>
   <h2 class="text-lg font-bold text-gray-900">${esc(al.title)}</h2>
@@ -40,17 +38,33 @@ function build(catId, lang) {
 </a>`;
   }).join('\n');
 
+  const catLinks = Object.keys(d).map(cid => {
+    const cc = d[cid];
+    const cname = cc.names[lang] || cc.names.id;
+    const href = isId ? `/${cid}/` : `/${cid}/index.en.html`;
+    const active = cid === catId;
+    return `<a href="${href}" class="w-full flex items-center justify-between gap-2 px-14 py-2 text-left transition-colors text-sm ${active ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50'}">
+  <span class="line-clamp-1">${esc(cname)}</span><span class="text-[11px] text-gray-400 flex-shrink-0">${cc.articles.length}</span>
+</a>`;
+  }).join('\n');
+
   const jsonld = {
     "@context": "https://schema.org", "@type": "CollectionPage",
-    name: name, description: desc,
+    name: name,
+    description: isId
+      ? `Kumpulan artikel kategori ${name} di Clincoo Blog: ${arts.length} artikel resmi Clincoo.`
+      : `All articles in the ${name} category of the Clincoo Blog: ${arts.length} official Clincoo articles.`,
     mainEntity: {
       "@type": "ItemList", numberOfItems: arts.length,
       itemListElement: arts.map((a, i) => ({
         "@type": "ListItem", position: i + 1, name: (a.langs[lang] || a.langs.id).title,
-        url: lang === 'id' ? `${SITE}/${catId}/${a.id}/` : `${SITE}/${catId}/${a.id}/index.en.html`
+        url: isId ? `https://blog.clincoo.buzz/${catId}/${a.id}/` : `https://blog.clincoo.buzz/${catId}/${a.id}/index.en.html`
       }))
     }
   };
+
+  const selfUrl = isId ? `https://blog.clincoo.buzz/${catId}/` : `https://blog.clincoo.buzz/${catId}/index.en.html`;
+  const desc = jsonld.description;
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -67,7 +81,7 @@ function build(catId, lang) {
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${selfUrl}">
 <meta property="og:site_name" content="Clincoo Blog">
-<meta property="og:locale" content="${lang === 'id' ? 'id_ID' : 'en_US'}">
+<meta property="og:locale" content="${isId ? 'id_ID' : 'en_US'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(name)} — Clincoo Blog">
 <meta name="twitter:description" content="${esc(desc)}">
@@ -87,17 +101,62 @@ function build(catId, lang) {
 </script>
 <style>
   body { -webkit-tap-highlight-color: transparent; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  #sidebar { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+  #sidebarOverlay { transition: opacity 0.3s ease; }
   .fade-in { animation: fadeIn 0.35s ease-out; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .drop-in { animation: dropIn 0.18s ease-out; }
+  @keyframes dropIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
 </head>
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-white text-gray-900 font-sans antialiased min-h-screen">
+
+<div id="sidebarOverlay" class="fixed inset-0 bg-black/40 z-[60] hidden opacity-0" onclick="toggleSidebar()"></div>
+
+<aside id="sidebar" class="fixed top-0 left-0 h-full w-72 z-[70] transform bg-white -translate-x-full shadow-2xl flex flex-col border-r border-gray-100">
+  <div class="p-2 border-b border-gray-100 flex items-center">
+    <div class="flex items-center justify-center text-gray-900 flex-shrink-0">
+      <img src="/logo.png" width="42" height="42" alt="Clincoo" style="border-radius:0.6rem">
+    </div>
+    <span class="text-xl font-bold tracking-tight text-gray-900 ml-2">Clincoo Blog</span>
+    <button onclick="toggleSidebar()" aria-label="${esc(L.close)}" class="ml-auto p-1.5 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="flex flex-col gap-0.5 flex-grow overflow-y-auto hide-scrollbar py-2 pb-4">
+    <h3 class="px-6 pt-3 text-[12px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">${esc(L.menu)}</h3>
+    <a href="/" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">${esc(L.home)}</span>
+    </a>
+    <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
+      <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">${esc(L.categories)}</span>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+${catLinks}
+    </div>
+    <div class="h-px bg-gray-100 w-10 mx-6 my-3"></div>
+    <a href="/tentang/" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">${esc(L.about)}</span>
+    </a>
+  </div>
+  <div class="px-6 py-4 border-t border-gray-100">
+    <p class="text-[11px] text-gray-400">blog.clincoo.buzz</p>
+    <p class="text-[11px] text-gray-400 mt-0.5">&copy; 2026 Clincoo</p>
+  </div>
+</aside>
+
 <header class="sticky top-0 z-40 bg-white border-b border-gray-100 pt-3 pb-4">
   <div class="relative flex items-center justify-center max-w-2xl mx-auto px-4 sm:px-6">
-    <a href="/" aria-label="${esc(L.back)}" class="absolute left-4 sm:left-6 p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-    </a>
+    <button onclick="toggleSidebar()" aria-label="${esc(L.openMenu)}" class="absolute left-4 sm:left-6 p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg>
+    </button>
     <div class="text-center">
       <h1 class="text-xl font-bold text-gray-900">${esc(name)}</h1>
       <p class="text-xs text-gray-400 mt-0.5">${esc(L.count(arts.length))}</p>
@@ -105,11 +164,33 @@ function build(catId, lang) {
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
-${listItems}
+${cards}
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
-  &copy; 2026 Clincoo. <span>${esc(L.footer)}</span>
+  &copy; 2026 Clincoo. <span>${esc(L.closeTxt)}</span>
 </footer>
+
+<script>
+function toggleSidebar() {
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if (sidebar.classList.contains('-translate-x-full')) {
+    sidebar.classList.remove('-translate-x-full');
+    overlay.classList.remove('hidden');
+    setTimeout(function(){ overlay.classList.remove('opacity-0'); }, 10);
+  } else {
+    sidebar.classList.add('-translate-x-full');
+    overlay.classList.add('opacity-0');
+    setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
+  }
+}
+function toggleDrop() {
+  var drop = document.getElementById('catDrop');
+  var icon = document.getElementById('catDropIcon');
+  if (drop.classList.contains('hidden')) { drop.classList.remove('hidden'); drop.classList.add('flex'); icon.classList.add('rotate-180'); }
+  else { drop.classList.add('hidden'); drop.classList.remove('flex'); icon.classList.remove('rotate-180'); }
+}
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
 </body>
