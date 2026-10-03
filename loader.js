@@ -10,7 +10,7 @@
 
   function loadApp() {
     var s = document.createElement('script');
-    s.src = 'app.js?v=5';
+    s.src = 'app.js?v=6';
     document.body.appendChild(s);
   }
 
