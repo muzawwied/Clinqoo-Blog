@@ -338,6 +338,64 @@ window.countryDataFiles["dokumentasi"] = {
      "source3Url": "https://app.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-rata-tengah-elemen-dengan-flexbox",
+   "langs": {
+    "id": {
+         "title": "Cara Rata Tengah Elemen dengan Flexbox",
+         "desc": "Tata cara memusatkan kotak di sumbu utama dan silang memakai Flexbox di editor Clincoo, tanpa margin trik negatif.",
+         "content": "<p class=\"mb-4\">Rata tengah yang geser saat lebar berubah biasanya masih memakai margin tetap. Flexbox menghitung sisa ruang sendiri. Ubah di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> lalu cek di live preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jadikan induk sebagai flex</h2><p class=\"mb-4\">Pasang display: flex pada elemen pembungkus, bukan pada anak yang ingin dipusatkan. justify-content: center menggeser di sumbu utama. align-items: center menggeser di sumbu silang. Keduanya bersama-sama memusatkan anak di kedua arah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Perhatikan arah sumbu</h2><p class=\"mb-4\">flex-direction: column menukar sumbu. Setelah column, justify-content mengatur vertikal dan align-items mengatur horizontal. Kalau hanya satu sumbu yang pindah, cek properti mana yang kamu ubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri tinggi pada pembungkus</h2><p class=\"mb-4\">align-items tidak terlihat jika tinggi pembungkus sama dengan tinggi anak. Untuk hero, beri min-height, misalnya 60vh. Jangan rata tengah dengan position absolute kecuali elemen memang harus lepas dari alur dokumen.</p><p class=\"mb-4\">Simpan CSS, muat ulang preview, lalu sempitkan lebar. Jika teks tetap di tengah saat satu kolom, Flexbox sudah benar. Grid lebih pas jika kamu meratakan beberapa sel sekaligus, bukan satu kotak.</p>",
+         "source": "MDN Web Docs — Flexbox",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout",
+         "sourceSnippet": "The flexible box layout module defines a CSS box model optimized for user interface design.",
+         "source2": "CSS-Tricks — A Complete Guide to Flexbox",
+         "source2Url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+         "title": "How to Center an Element with Flexbox",
+         "desc": "How to center a box on the main and cross axis with Flexbox in the Clincoo editor, without a negative-margin trick.",
+         "content": "<p class=\"mb-4\">Centering that drifts when the width changes is usually still using a fixed margin. Flexbox calculates the leftover space. Edit in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> and check the live preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Make the parent a flex container</h2><p class=\"mb-4\">Set display: flex on the wrapper, not on the child you want centered. justify-content: center moves along the main axis. align-items: center moves along the cross axis. Together they center the child in both directions.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Watch the axis direction</h2><p class=\"mb-4\">flex-direction: column swaps the axes. After column, justify-content controls the vertical axis and align-items controls the horizontal axis. If only one axis moved, check which property you changed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Give the wrapper a height</h2><p class=\"mb-4\">align-items has no visible effect when the wrapper is only as tall as the child. For a hero, set a min-height, for example 60vh. Do not center with position absolute unless the element must leave normal flow.</p><p class=\"mb-4\">Save the CSS, reload the preview, then narrow the width. If the text stays centered in one column, Flexbox is correct. Grid is a better fit when you are aligning several cells, not one box.</p>",
+         "source": "MDN Web Docs — Flexbox",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout",
+         "sourceSnippet": "The flexible box layout module defines a CSS box model optimized for user interface design.",
+         "source2": "CSS-Tricks — A Complete Guide to Flexbox",
+         "source2Url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-optimasi-gambar-sebelum-deploy",
+   "langs": {
+    "id": {
+         "title": "Cara Optimasi Gambar Sebelum Deploy",
+         "desc": "Tata cara mengecilkan gambar, memilih format, dan mengisi width serta alt sebelum situs Clincoo di-deploy.",
+         "content": "<p class=\"mb-4\">Gambar penuh dari kamera sering lebih besar daripada seluruh HTML dan CSS. Perkecil sebelum deploy supaya preview dan situs tayang sama-sama cepat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ubah ukuran ke lebar tampilan</h2><p class=\"mb-4\">Hero selebar 1200 piksel tidak perlu file 4000 piksel. Ekspor ulang mendekati lebar maksimum yang benar-benar ditampilkan. Simpan foto sebagai WebP atau JPEG, ikon datar sebagai SVG, bukan PNG besar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis ukuran dan alt</h2><p class=\"mb-4\">Isi atribut width dan height agar layout tidak meloncat saat gambar masuk. alt menjelaskan isi gambar untuk pembaca layar dan untuk saat file gagal dimuat. Alt kosong hanya untuk gambar murni dekoratif.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan muat gambar yang tersembunyi</h2><p class=\"mb-4\">Gambar di bawah lipatan bisa loading=\"lazy\". Gambar hero jangan lazy, karena itu yang dilihat pertama. Cek tab Network: satu gambar di atas 500 KB biasanya masih bisa diperkecil tanpa beda visual yang jelas.</p><p class=\"mb-4\">Setelah file ringan, simpan di folder aset proyek lalu deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Ulangi cek di halaman publik, bukan hanya di preview editor.</p>",
+         "source": "web.dev — Optimize images",
+         "sourceUrl": "https://web.dev/learn/performance/image-performance",
+         "sourceSnippet": "Images are often the largest assets on a page, so optimizing them has a large effect on performance.",
+         "source2": "MDN Web Docs — img element",
+         "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+         "source3": "Clincoo App",
+         "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+         "title": "How to Optimize Images Before Deploy",
+         "desc": "How to shrink images, pick a format, and set width plus alt before a Clincoo site is deployed.",
+         "content": "<p class=\"mb-4\">A full camera photo is often larger than the HTML and CSS combined. Shrink it before deploy so the preview and the live site are both fast.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Resize to the displayed width</h2><p class=\"mb-4\">A 1200-pixel-wide hero does not need a 4000-pixel file. Re-export near the maximum width that is actually shown. Save photos as WebP or JPEG, and flat icons as SVG, not a huge PNG.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set dimensions and alt</h2><p class=\"mb-4\">Set width and height so the layout does not jump when the image arrives. alt describes the image for screen readers and for when the file fails to load. An empty alt is only for a purely decorative image.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not load hidden images early</h2><p class=\"mb-4\">An image below the fold can use loading=\"lazy\". Do not lazy-load the hero, because that is what people see first. Check the Network tab: one image over 500 KB can usually shrink without an obvious visual change.</p><p class=\"mb-4\">After the file is light, save it in the project asset folder and deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Repeat the check on the public page, not only in the editor preview.</p>",
+         "source": "web.dev — Optimize images",
+         "sourceUrl": "https://web.dev/learn/performance/image-performance",
+         "sourceSnippet": "Images are often the largest assets on a page, so optimizing them has a large effect on performance.",
+         "source2": "MDN Web Docs — img element",
+         "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+         "source3": "Clincoo App",
+         "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
   }
  ]
 };
@@ -485,6 +543,64 @@ window.countryDataFiles["bantuan"] = {
      "sourceUrl": "https://docs.clincoo.buzz/bantuan/",
      "source2": "Clincoo",
      "source2Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-debug-css-selector-tidak-kena",
+   "langs": {
+    "id": {
+         "title": "Cara Debug CSS yang Selektorya Tidak Kena",
+         "desc": "Tata cara memakai panel Styles di preview Clincoo untuk mencari aturan yang menimpa, salah eja, atau kalah spesifisitas.",
+         "content": "<p class=\"mb-4\">Kalau class sudah ditulis tapi tampilan tidak berubah di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, selektor biasanya kalah, salah ketik, atau file CSS belum terhubung.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek apakah file CSS termuat</h2><p class=\"mb-4\">Di tab Network, saring CSS. Status 404 berarti path di tag link salah. Path relatif dihitung dari file HTML, bukan dari folder tempat kamu mengira file itu berada. Simpan kedua file lalu muat ulang preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat aturan yang menang</h2><p class=\"mb-4\">Klik kanan elemen, pilih Inspect, lalu buka tab Styles. Aturan yang dicoret berarti ditimpa. Aturan di bawah yang lebih spesifik, atau yang memakai !important, biasanya pemenangnya. Samakan spesifisitas, jangan langsung menambah !important.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan nama class</h2><p class=\"mb-4\">Bandingkan huruf class di HTML dan CSS, termasuk tanda hubung. .tombol-utama tidak sama dengan .tombol_utama. Pseudo-class seperti :hover hanya aktif saat kursor di atas elemen, jadi uji dengan mengaktifkan state :hover di panel Styles.</p><p class=\"mb-4\">Setelah ketemu aturan pemenang, salin selektor dan nama file ke chat AI Clincoo. Sertakan potongan HTML dan CSS yang bersangkutan, bukan hanya kalimat \"CSS tidak jalan\".</p>",
+         "source": "MDN Web Docs — CSS specificity",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity",
+         "sourceSnippet": "Specificity is the algorithm used by browsers to determine which CSS declaration is the most relevant.",
+         "source2": "Chrome DevTools — CSS",
+         "source2Url": "https://developer.chrome.com/docs/devtools/css",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+         "title": "How to Debug a CSS Selector That Does Not Apply",
+         "desc": "How to use the Styles pane in a Clincoo preview to find a rule that is overridden, misspelled, or losing on specificity.",
+         "content": "<p class=\"mb-4\">If a class is written but the preview at <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> does not change, the selector is usually losing, mistyped, or the CSS file is not linked.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check that the CSS file loaded</h2><p class=\"mb-4\">In the Network tab, filter for CSS. A 404 means the path on the link tag is wrong. Relative paths are resolved from the HTML file, not from the folder you assumed. Save both files and reload the preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">See which rule wins</h2><p class=\"mb-4\">Right-click the element, choose Inspect, and open the Styles tab. A struck-through rule is overridden. A more specific rule below it, or one using !important, is usually the winner. Match specificity instead of adding !important first.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the class name</h2><p class=\"mb-4\">Compare the class spelling in HTML and CSS, including hyphens. .tombol-utama is not .tombol_utama. A pseudo-class such as :hover only applies while the pointer is over the element, so test it by forcing the :hover state in the Styles pane.</p><p class=\"mb-4\">Once you find the winning rule, paste the selector and file name into Clincoo's AI chat. Include the related HTML and CSS snippet, not only the sentence \"CSS does not work\".</p>",
+         "source": "MDN Web Docs — CSS specificity",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity",
+         "sourceSnippet": "Specificity is the algorithm used by browsers to determine which CSS declaration is the most relevant.",
+         "source2": "Chrome DevTools — CSS",
+         "source2Url": "https://developer.chrome.com/docs/devtools/css",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-perbaiki-form-yang-tidak-terkirim",
+   "langs": {
+    "id": {
+         "title": "Cara Perbaiki Form yang Tidak Terkirim",
+         "desc": "Tata cara menelusuri tombol submit, atribut name, dan event preventDefault saat form di preview Clincoo tidak mengirim data.",
+         "content": "<p class=\"mb-4\">Form yang diam setelah diklik hampir selalu gagal di HTML atau di handler JavaScript, bukan di server dulu. Uji di preview <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sebelum menyalahkan endpoint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pastikan tombol ada di dalam form</h2><p class=\"mb-4\">Tombol type=\"submit\" harus berada di dalam tag form, atau punya atribut form yang menunjuk ke id form. type=\"button\" tidak mengirim form. Enter di input teks juga hanya mengirim jika ada satu tombol submit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri name pada input</h2><p class=\"mb-4\">Hanya kontrol yang punya atribut name yang ikut dalam FormData dan query string. id saja tidak cukup. Cek required dan type=\"email\": browser menahan kiriman jika nilai tidak lolos, biasanya dengan gelembung validasi di dekat input.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek preventDefault</h2><p class=\"mb-4\">Jika skrip memanggil event.preventDefault() lalu lupa fetch, halaman tidak pindah dan data tidak pergi ke mana pun. Di konsol, pasang log di awal handler. Kalau log tidak muncul, selektor form salah atau skrip berhenti di error sebelumnya.</p><p class=\"mb-4\">Untuk formulir akun Clincoo sendiri, lanjutkan dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Untuk form di situs yang kamu buat, perbaiki HTML dulu, baru hubungkan action atau fetch.</p>",
+         "source": "MDN Web Docs — form element",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+         "sourceSnippet": "The form element represents a document section containing interactive controls for submitting information.",
+         "source2": "MDN Web Docs — FormData",
+         "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+         "title": "How to Fix a Form That Does Not Submit",
+         "desc": "How to trace the submit button, name attributes, and preventDefault when a form in a Clincoo preview sends nothing.",
+         "content": "<p class=\"mb-4\">A form that stays still after a click almost always fails in HTML or in the JavaScript handler, not on the server first. Test it in the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> preview before blaming the endpoint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the button inside the form</h2><p class=\"mb-4\">A type=\"submit\" button must sit inside the form tag, or have a form attribute pointing at the form id. type=\"button\" does not submit. Pressing Enter in a text input only submits when there is one submit button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Give inputs a name</h2><p class=\"mb-4\">Only controls with a name attribute are included in FormData and the query string. An id alone is not enough. Check required and type=\"email\": the browser blocks the submit when the value fails, usually with a validation bubble near the input.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check preventDefault</h2><p class=\"mb-4\">If the script calls event.preventDefault() and then forgets fetch, the page does not navigate and the data goes nowhere. Log at the start of the handler. If the log never appears, the form selector is wrong or an earlier error stopped the script.</p><p class=\"mb-4\">For Clincoo account forms, continue from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. For a form on a site you build, fix the HTML first, then wire action or fetch.</p>",
+         "source": "MDN Web Docs — form element",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+         "sourceSnippet": "The form element represents a document section containing interactive controls for submitting information.",
+         "source2": "MDN Web Docs — FormData",
+         "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
     }
    }
   }
@@ -640,6 +756,35 @@ window.countryDataFiles["legal"] = {
      "source2Url": "https://editor.clincoo.buzz/",
      "source3": "Clincoo App",
      "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-pasang-tautan-kebijakan-privasi-di-footer",
+   "langs": {
+    "id": {
+         "title": "Cara Pasang Tautan Kebijakan Privasi di Footer",
+         "desc": "Tata cara menaruh tautan kebijakan privasi yang terlihat di setiap halaman situs yang kamu terbitkan lewat Clincoo.",
+         "content": "<p class=\"mb-4\">Pengunjung harus bisa menemukan kebijakan privasi tanpa mencari menu tersembunyi. Footer adalah tempat yang tetap ada di setiap halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buat halaman kebijakan</h2><p class=\"mb-4\">Tambah file privasi.html di proyek, atau satu bagian dengan id yang stabil. Tulis data apa yang dikumpulkan halaman itu: formulir, analitik, atau cookie. Jangan salin kebijakan situs lain jika alat yang kamu pakai berbeda.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tautkan dari footer</h2><p class=\"mb-4\">Di setiap halaman, taruh tautan teks biasa, misalnya Kebijakan privasi, mengarah ke privasi.html. Hindari tautan yang hanya berupa ikon tanpa nama. Warna tautan harus tetap terbaca di atas warna footer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan dengan yang benar-benar jalan</h2><p class=\"mb-4\">Jika kamu belum memasang analitik, jangan mengaku memasangnya. Jika form mengirim nama dan email ke layanan lain, sebut layanan itu. Perbarui tanggal di atas halaman tiap kali daftar alat berubah.</p><p class=\"mb-4\">Kebijakan akun Clincoo tetap di blog ini. Kebijakan situs yang kamu buat adalah tanggung jawab proyekmu di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, lalu tayang setelah deploy.</p>",
+         "source": "MDN Web Docs — footer element",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer",
+         "sourceSnippet": "The footer element represents a footer for its nearest ancestor sectioning content or sectioning root.",
+         "source2": "Clincoo Docs — Kebijakan Privasi",
+         "source2Url": "https://docs.clincoo.buzz/legal/kebijakan-privasi/",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+         "title": "How to Add a Privacy Policy Link in the Footer",
+         "desc": "How to place a visible privacy-policy link on every page of a site you publish with Clincoo.",
+         "content": "<p class=\"mb-4\">Visitors should find the privacy policy without hunting through a hidden menu. The footer is the spot that stays on every page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Create the policy page</h2><p class=\"mb-4\">Add privasi.html in the project, or one section with a stable id. Write what that page collects: forms, analytics, or cookies. Do not copy another site's policy if the tools you use are different.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Link it from the footer</h2><p class=\"mb-4\">On every page, place a plain text link, such as Privacy policy, pointing at privasi.html. Avoid a link that is only an icon with no name. The link color must stay readable on the footer color.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match what actually runs</h2><p class=\"mb-4\">If you have not installed analytics, do not claim that you have. If a form sends a name and email to another service, name that service. Update the date at the top of the page whenever the tool list changes.</p><p class=\"mb-4\">The Clincoo account policy stays on this blog. The policy for a site you build belongs to your project in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, then goes live after deploy.</p>",
+         "source": "MDN Web Docs — footer element",
+         "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer",
+         "sourceSnippet": "The footer element represents a footer for its nearest ancestor sectioning content or sectioning root.",
+         "source2": "Clincoo Docs — Privacy Policy",
+         "source2Url": "https://docs.clincoo.buzz/legal/kebijakan-privasi/",
+         "source3": "Clincoo Editor",
+         "source3Url": "https://editor.clincoo.buzz/"
     }
    }
   }

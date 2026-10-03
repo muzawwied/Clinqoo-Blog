@@ -182,4 +182,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/legal/cara-mengatur-cookie-dan-izin/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/legal/cara-mengatur-cookie-dan-izin/"/>
   </url>
+
+  <url>
+    <loc>https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/dokumentasi/cara-rata-tengah-elemen-dengan-flexbox/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/cara-rata-tengah-elemen-dengan-flexbox/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/cara-rata-tengah-elemen-dengan-flexbox/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/cara-rata-tengah-elemen-dengan-flexbox/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/dokumentasi/cara-optimasi-gambar-sebelum-deploy/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/cara-optimasi-gambar-sebelum-deploy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/cara-optimasi-gambar-sebelum-deploy/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/cara-optimasi-gambar-sebelum-deploy/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/"/>
+  </url>
 </urlset>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Debug CSS yang Selektorya Tidak Kena — Clincoo Docs</title>
+<meta name="description" content="Tata cara memakai panel Styles di preview Clincoo untuk mencari aturan yang menimpa, salah eja, atau kalah spesifisitas.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/">
+<link rel="canonical" href="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Debug CSS yang Selektorya Tidak Kena — Clincoo Docs">
+<meta property="og:description" content="Tata cara memakai panel Styles di preview Clincoo untuk mencari aturan yang menimpa, salah eja, atau kalah spesifisitas.">
+<meta property="og:url" content="https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Debug CSS yang Selektorya Tidak Kena — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara memakai panel Styles di preview Clincoo untuk mencari aturan yang menimpa, salah eja, atau kalah spesifisitas.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cara Debug CSS yang Selektorya Tidak Kena","description":"Tata cara memakai panel Styles di preview Clincoo untuk mencari aturan yang menimpa, salah eja, atau kalah spesifisitas.","mainEntityOfPage":"https://docs.clincoo.buzz/bantuan/cara-debug-css-selector-tidak-kena/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/bantuan/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Pusat Bantuan</p>
+<h1 class="seo-title">Cara Debug CSS yang Selektorya Tidak Kena</h1>
+<div class="seo-body">
+<p class="mb-4">Kalau class sudah ditulis tapi tampilan tidak berubah di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a>, selektor biasanya kalah, salah ketik, atau file CSS belum terhubung.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek apakah file CSS termuat</h2><p class="mb-4">Di tab Network, saring CSS. Status 404 berarti path di tag link salah. Path relatif dihitung dari file HTML, bukan dari folder tempat kamu mengira file itu berada. Simpan kedua file lalu muat ulang preview.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Lihat aturan yang menang</h2><p class="mb-4">Klik kanan elemen, pilih Inspect, lalu buka tab Styles. Aturan yang dicoret berarti ditimpa. Aturan di bawah yang lebih spesifik, atau yang memakai !important, biasanya pemenangnya. Samakan spesifisitas, jangan langsung menambah !important.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cocokkan nama class</h2><p class="mb-4">Bandingkan huruf class di HTML dan CSS, termasuk tanda hubung. .tombol-utama tidak sama dengan .tombol_utama. Pseudo-class seperti :hover hanya aktif saat kursor di atas elemen, jadi uji dengan mengaktifkan state :hover di panel Styles.</p><p class="mb-4">Setelah ketemu aturan pemenang, salin selektor dan nama file ke chat AI Clincoo. Sertakan potongan HTML dan CSS yang bersangkutan, bukan hanya kalimat "CSS tidak jalan".</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

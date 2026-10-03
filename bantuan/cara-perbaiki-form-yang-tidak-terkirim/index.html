@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Perbaiki Form yang Tidak Terkirim — Clincoo Docs</title>
+<meta name="description" content="Tata cara menelusuri tombol submit, atribut name, dan event preventDefault saat form di preview Clincoo tidak mengirim data.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/">
+<link rel="canonical" href="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Perbaiki Form yang Tidak Terkirim — Clincoo Docs">
+<meta property="og:description" content="Tata cara menelusuri tombol submit, atribut name, dan event preventDefault saat form di preview Clincoo tidak mengirim data.">
+<meta property="og:url" content="https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Perbaiki Form yang Tidak Terkirim — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menelusuri tombol submit, atribut name, dan event preventDefault saat form di preview Clincoo tidak mengirim data.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cara Perbaiki Form yang Tidak Terkirim","description":"Tata cara menelusuri tombol submit, atribut name, dan event preventDefault saat form di preview Clincoo tidak mengirim data.","mainEntityOfPage":"https://docs.clincoo.buzz/bantuan/cara-perbaiki-form-yang-tidak-terkirim/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/bantuan/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Pusat Bantuan</p>
+<h1 class="seo-title">Cara Perbaiki Form yang Tidak Terkirim</h1>
+<div class="seo-body">
+<p class="mb-4">Form yang diam setelah diklik hampir selalu gagal di HTML atau di handler JavaScript, bukan di server dulu. Uji di preview <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> sebelum menyalahkan endpoint.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pastikan tombol ada di dalam form</h2><p class="mb-4">Tombol type="submit" harus berada di dalam tag form, atau punya atribut form yang menunjuk ke id form. type="button" tidak mengirim form. Enter di input teks juga hanya mengirim jika ada satu tombol submit.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Beri name pada input</h2><p class="mb-4">Hanya kontrol yang punya atribut name yang ikut dalam FormData dan query string. id saja tidak cukup. Cek required dan type="email": browser menahan kiriman jika nilai tidak lolos, biasanya dengan gelembung validasi di dekat input.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek preventDefault</h2><p class="mb-4">Jika skrip memanggil event.preventDefault() lalu lupa fetch, halaman tidak pindah dan data tidak pergi ke mana pun. Di konsol, pasang log di awal handler. Kalau log tidak muncul, selektor form salah atau skrip berhenti di error sebelumnya.</p><p class="mb-4">Untuk formulir akun Clincoo sendiri, lanjutkan dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>. Untuk form di situs yang kamu buat, perbaiki HTML dulu, baru hubungkan action atau fetch.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
