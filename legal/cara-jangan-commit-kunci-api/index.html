@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Jangan Commit Kunci API — Clincoo Docs</title>
+<meta name="description" content="Tata cara memisahkan kunci API dari repositori proyek Clincoo supaya tidak ikut terbit ke situs publik.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/">
+<link rel="canonical" href="https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Jangan Commit Kunci API — Clincoo Docs">
+<meta property="og:description" content="Tata cara memisahkan kunci API dari repositori proyek Clincoo supaya tidak ikut terbit ke situs publik.">
+<meta property="og:url" content="https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Jangan Commit Kunci API — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara memisahkan kunci API dari repositori proyek Clincoo supaya tidak ikut terbit ke situs publik.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Jangan Commit Kunci API", "description": "Tata cara memisahkan kunci API dari repositori proyek Clincoo supaya tidak ikut terbit ke situs publik.", "mainEntityOfPage": "https://docs.clincoo.buzz/legal/cara-jangan-commit-kunci-api/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/legal/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Legal</p>
+<h1 class="seo-title">Cara Jangan Commit Kunci API</h1>
+<div class="seo-body">
+<p class="mb-4">Kunci API yang tertulis di file HTML atau JavaScript akan terbaca siapa pun yang membuka sumber halaman. Jangan menempelkannya di proyek yang kamu deploy dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pakai variabel lingkungan, bukan string di kode</h2><p class="mb-4">Simpan rahasia di pengaturan environment proyek, lalu baca lewat proses server kalau fiturnya ada. Di sisi browser, anggap semua konstanta terlihat. Panggil layanan lewat endpoint yang kamu kendalikan, bukan langsung dengan kunci di klien.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek sebelum commit</h2><p class="mb-4">Sebelum commit pertama atau commit lanjutan di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a>, cari pola sk_ , api_key, dan token di pencarian file. Kalau ketemu, pindahkan, lalu commit penghapusannya.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kalau sudah terlanjur terbit</h2><p class="mb-4">Putar (rotate) kunci di penyedia layanan, anggap kunci lama bocor, dan deploy ulang. Menghapus baris dari file tidak menarik kembali salinan yang sudah diunduh orang.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

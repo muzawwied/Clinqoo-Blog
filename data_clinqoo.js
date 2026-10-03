@@ -284,7 +284,37 @@ window.countryDataFiles["mulai"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-buka-kembali-proyek-yang-sudah-ada",
+   "langs": {
+    "id": {
+     "title": "Cara Buka Kembali Proyek yang Sudah Ada",
+     "desc": "Tata cara kembali ke proyek Clincoo yang sudah dibuat, membedakan draf dan situs yang sudah di-deploy.",
+     "content": "<p class=\"mb-4\">Proyek tidak hilang saat kamu menutup tab. Masuk lagi ke <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan akun yang sama — Google, GitHub, atau email — lalu buka daftar proyek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih proyek, bukan template baru</h2><p class=\"mb-4\">Tombol proyek baru membuat salinan dari template. Untuk melanjutkan, klik nama proyek yang sudah ada. Kalau daftar kosong, kamu mungkin masuk dengan akun lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan dulu sebelum pindah file</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, tekan simpan sebelum menutup tab. Live preview menampilkan draf; alamat publik hanya berubah setelah deploy. Jangan menilai hasil dari preview saja kalau kamu sedang mengecek situs yang sudah tayang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kalau proyek tidak muncul</h2><p class=\"mb-4\">Muat ulang daftar, cek kuota 3 proyek aktif di paket gratis, dan pastikan undangan tim tidak membuatmu membuka ruang kerja orang lain. Proyek yang dihapus tidak kembali dari halaman ini.</p>",
+     "source": "Clincoo Docs — Welcome",
+     "sourceUrl": "https://docs.clincoo.buzz/mulai/selamat-datang-di-clinqoo/",
+     "sourceSnippet": "The free plan includes 3 active projects, 50 AI messages per month, and 5 deploys per month.",
+     "source2": "Clincoo Docs — deploy",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-deploy-situs-pertama/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Reopen an Existing Project",
+     "desc": "How to return to a Clincoo project you already created, and tell a draft apart from a deployed site.",
+     "content": "<p class=\"mb-4\">A project does not vanish when you close the tab. Sign in again at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with the same account — Google, GitHub, or email — then open the project list.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick the project, not a new template</h2><p class=\"mb-4\">The new-project button copies a template. To continue, click the name of the project you already have. If the list is empty, you may be signed in with another account.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Save before switching files</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, press save before closing the tab. Live preview shows the draft; the public address changes only after deploy. Do not judge the live site from preview alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">If the project is missing</h2><p class=\"mb-4\">Reload the list, check the free-plan limit of 3 active projects, and make sure a team invite did not open someone else's workspace. A deleted project does not come back from this page.</p>",
+     "source": "Clincoo Docs — Welcome",
+     "sourceUrl": "https://docs.clincoo.buzz/mulai/selamat-datang-di-clinqoo/",
+     "sourceSnippet": "The free plan includes 3 active projects, 50 AI messages per month, and 5 deploys per month.",
+     "source2": "Clincoo Docs — deploy",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-deploy-situs-pertama/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
   }
+
  ]
 };
 
@@ -528,7 +558,37 @@ window.countryDataFiles["dokumentasi"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-atur-heading-berjenjang",
+   "langs": {
+    "id": {
+     "title": "Cara Atur Heading Berjenjang",
+     "desc": "Tata cara memakai satu h1 dan heading berurutan di halaman Clincoo supaya judul mudah dipindai manusia dan mesin telusur.",
+     "content": "<p class=\"mb-4\">Heading adalah kerangka halaman, bukan cara memperbesar tulisan. Di file HTML proyek <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, pakai satu h1 untuk judul halaman, lalu h2 untuk bagian, h3 untuk anak bagian.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan loncat tingkat</h2><p class=\"mb-4\">Setelah h2, lanjut ke h3, bukan langsung h4. Ukuran visual diatur di CSS. Kalau sebuah kalimat hanya perlu tebal, pakai strong atau kelas teks, bukan heading.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan h1 dengan title</h2><p class=\"mb-4\">Isi h1 sebaiknya dekat dengan tag title di head, tetapi tidak harus identik. Title untuk tab dan hasil telusur; h1 untuk orang yang sudah membuka halaman. Isi meta description tetap ringkas, satu atau dua kalimat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di pratinjau dan outline</h2><p class=\"mb-4\">Di live preview, scroll dan pastikan hanya ada satu judul utama. Asisten AI Clincoo bisa diminta menandai heading yang loncat tingkat — tempelkan potongan head dan body, bukan seluruh proyek, kalau halamanmu panjang.</p>",
+     "source": "MDN — Heading elements",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements",
+     "sourceSnippet": "Heading elements implement six levels of document headings, h1 through h6, and should not be used for styling alone.",
+     "source2": "Google Search Central — title links",
+     "source2Url": "https://developers.google.com/search/docs/appearance/title-link",
+     "source3": "Clincoo Docs — title and meta",
+     "source3Url": "https://docs.clincoo.buzz/mulai/cara-isi-title-dan-meta-deskripsi/"
+    },
+    "en": {
+     "title": "How to Set a Heading Hierarchy",
+     "desc": "How to use one h1 and ordered headings on a Clincoo page so titles are easy for people and search engines to scan.",
+     "content": "<p class=\"mb-4\">A heading is the page outline, not a way to make text bigger. In the HTML file of an <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> project, use one h1 for the page title, h2 for sections, and h3 for subsections.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not skip levels</h2><p class=\"mb-4\">After an h2, continue to h3, not straight to h4. Visual size belongs in CSS. If a sentence only needs to be bold, use strong or a text class, not a heading.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the h1 close to the title</h2><p class=\"mb-4\">The h1 should be close to the title tag in head, but it does not have to be identical. The title is for the tab and search results; the h1 is for someone who already opened the page. Keep the meta description short, one or two sentences.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check preview and outline</h2><p class=\"mb-4\">In live preview, scroll and confirm there is only one main title. The Clincoo AI assistant can flag skipped levels — paste the head and body snippet, not the whole project, if the page is long.</p>",
+     "source": "MDN — Heading elements",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements",
+     "sourceSnippet": "Heading elements implement six levels of document headings, h1 through h6, and should not be used for styling alone.",
+     "source2": "Google Search Central — title links",
+     "source2Url": "https://developers.google.com/search/docs/appearance/title-link",
+     "source3": "Clincoo Docs — title and meta",
+     "source3Url": "https://docs.clincoo.buzz/mulai/cara-isi-title-dan-meta-deskripsi/"
+    }
+   }
   }
+
  ]
 };
 
@@ -1094,7 +1154,95 @@ window.countryDataFiles["legal"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-beri-atribusi-gambar-berlisensi",
+   "langs": {
+    "id": {
+     "title": "Cara Beri Atribusi Gambar Berlisensi",
+     "desc": "Tata cara menaruh kredit gambar stok atau ikon berlisensi di footer situs yang kamu deploy dari Clincoo.",
+     "content": "<p class=\"mb-4\">Gambar dari Unsplash, ikon berlisensi, atau ilustrasi orang lain tidak otomatis bebas dipakai hanya karena sudah tampil di preview. Kalau lisensinya minta kredit, tulis di situs yang kamu terbitkan dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek syarat sebelum unduh</h2><p class=\"mb-4\">Baca apakah kredit wajib, apakah boleh diubah, dan apakah boleh dipakai komersial. Simpan tautan halaman unduhan di catatan proyek. Jangan mengandalkan nama file saja.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis kredit yang bisa diklik</h2><p class=\"mb-4\">Di footer, satu baris cukup: nama pembuat, sumber, dan tautan. Contoh: Foto oleh Nama via Unsplash. Letakkan dekat tautan kebijakan privasi supaya pengunjung menemukannya tanpa scroll panjang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan hapus saat merapikan CSS</h2><p class=\"mb-4\">Saat kamu memoles layout di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, pastikan blok kredit tidak ikut terhapus. Kalau gambar diganti, ganti juga baris kreditnya pada commit yang sama.</p>",
+     "source": "Unsplash License",
+     "sourceUrl": "https://unsplash.com/license",
+     "sourceSnippet": "Unsplash photos can be used for free, including commercially, and attribution is appreciated though not required.",
+     "source2": "Creative Commons — attribution",
+     "source2Url": "https://creativecommons.org/licenses/by/4.0/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Attribute a Licensed Image",
+     "desc": "How to place a stock or icon license credit in the footer of a site you deploy from Clincoo.",
+     "content": "<p class=\"mb-4\">An Unsplash photo, a licensed icon, or someone else's illustration is not free to use just because it shows in preview. If the license asks for credit, put it on the site you publish from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the terms before download</h2><p class=\"mb-4\">Read whether credit is required, whether edits are allowed, and whether commercial use is allowed. Save the download page URL in the project notes. Do not rely on the filename alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write a clickable credit</h2><p class=\"mb-4\">One footer line is enough: creator name, source, and link. Example: Photo by Name via Unsplash. Place it near the privacy-policy link so visitors find it without a long scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not drop it while cleaning CSS</h2><p class=\"mb-4\">When you polish layout in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, make sure the credit block is not deleted with it. If you swap the image, update the credit line in the same commit.</p>",
+     "source": "Unsplash License",
+     "sourceUrl": "https://unsplash.com/license",
+     "sourceSnippet": "Unsplash photos can be used for free, including commercially, and attribution is appreciated though not required.",
+     "source2": "Creative Commons — attribution",
+     "source2Url": "https://creativecommons.org/licenses/by/4.0/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-jangan-commit-kunci-api",
+   "langs": {
+    "id": {
+     "title": "Cara Jangan Commit Kunci API",
+     "desc": "Tata cara memisahkan kunci API dari repositori proyek Clincoo supaya tidak ikut terbit ke situs publik.",
+     "content": "<p class=\"mb-4\">Kunci API yang tertulis di file HTML atau JavaScript akan terbaca siapa pun yang membuka sumber halaman. Jangan menempelkannya di proyek yang kamu deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai variabel lingkungan, bukan string di kode</h2><p class=\"mb-4\">Simpan rahasia di pengaturan environment proyek, lalu baca lewat proses server kalau fiturnya ada. Di sisi browser, anggap semua konstanta terlihat. Panggil layanan lewat endpoint yang kamu kendalikan, bukan langsung dengan kunci di klien.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek sebelum commit</h2><p class=\"mb-4\">Sebelum commit pertama atau commit lanjutan di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, cari pola sk_ , api_key, dan token di pencarian file. Kalau ketemu, pindahkan, lalu commit penghapusannya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kalau sudah terlanjur terbit</h2><p class=\"mb-4\">Putar (rotate) kunci di penyedia layanan, anggap kunci lama bocor, dan deploy ulang. Menghapus baris dari file tidak menarik kembali salinan yang sudah diunduh orang.</p>",
+     "source": "OWASP — Secrets Management",
+     "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+     "sourceSnippet": "Secrets should not be stored in source code or client-side code that ships to users.",
+     "source2": "Clincoo Docs — environment variables",
+     "source2Url": "https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Avoid Committing an API Key",
+     "desc": "How to keep an API key out of a Clincoo project repository so it is not published with the public site.",
+     "content": "<p class=\"mb-4\">An API key written in an HTML or JavaScript file is readable by anyone who opens the page source. Do not paste it into a project you deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use an environment variable, not a string in code</h2><p class=\"mb-4\">Store the secret in the project environment settings, and read it from a server process when that feature exists. In the browser, treat every constant as visible. Call the service through an endpoint you control, not with the key in the client.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check before you commit</h2><p class=\"mb-4\">Before the first or next commit in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, search files for sk_, api_key, and token. If you find one, move it, then commit the removal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">If it already shipped</h2><p class=\"mb-4\">Rotate the key at the provider, treat the old key as leaked, and deploy again. Deleting the line does not pull back copies people already downloaded.</p>",
+     "source": "OWASP — Secrets Management",
+     "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+     "sourceSnippet": "Secrets should not be stored in source code or client-side code that ships to users.",
+     "source2": "Clincoo Docs — environment variables",
+     "source2Url": "https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-buat-halaman-kontak-penanggung-jawab",
+   "langs": {
+    "id": {
+     "title": "Cara Buat Halaman Kontak Penanggung Jawab",
+     "desc": "Tata cara menambah halaman kontak pemilik situs yang di-deploy Clincoo, untuk laporan kesalahan dan permintaan data.",
+     "content": "<p class=\"mb-4\">Situs yang mengumpulkan formulir atau cookie sebaiknya punya satu halaman yang menyebut siapa yang bertanggung jawab. Buat file kontak.html di proyek <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, lalu tautkan dari footer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Isi minimum yang jelas</h2><p class=\"mb-4\">Nama atau nama usaha, email yang kamu pantau, dan kota operasional sudah cukup untuk situs kecil. Jangan menaruh nomor KTP atau alamat rumah kalau tidak wajib. Jelaskan bahwa formulir di situs ini dikirim ke email tersebut.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan kontak Clincoo dan kontak situmu</h2><p class=\"mb-4\">Pengunjung situmu bukan otomatis pengguna Clincoo. Arahkan bug editor ke pusat bantuan Clincoo, dan arahkan pertanyaan isi situs ke emailmu. Tautan kebijakan privasi tetap mengarah ke halamanmu sendiri.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek setelah deploy</h2><p class=\"mb-4\">Buka URL publik, kirim email percobaan, dan pastikan tautan footer tidak 404. Kalau kamu memakai domain kustom, tes di domain itu, bukan hanya di pratinjau.</p>",
+     "source": "ICO — Privacy notice checklist",
+     "sourceUrl": "https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices/",
+     "sourceSnippet": "A privacy notice should say who you are and how people can contact you about their information.",
+     "source2": "Clincoo Docs — privacy policy link",
+     "source2Url": "https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Add a Responsible-Contact Page",
+     "desc": "How to add an owner contact page on a Clincoo-deployed site for error reports and data requests.",
+     "content": "<p class=\"mb-4\">A site that collects a form or sets a cookie should have one page naming who is responsible. Create contact.html in the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> project, then link it from the footer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Minimum clear contents</h2><p class=\"mb-4\">A name or business name, an email you actually read, and an operating city are enough for a small site. Do not publish a national ID number or home address unless required. State that forms on this site go to that email.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate Clincoo contact from your site contact</h2><p class=\"mb-4\">A visitor to your site is not automatically a Clincoo user. Point editor bugs to Clincoo help, and point questions about site content to your email. The privacy-policy link should still go to your own page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check after deploy</h2><p class=\"mb-4\">Open the public URL, send a test email, and confirm the footer link is not a 404. If you use a custom domain, test on that domain, not only in preview.</p>",
+     "source": "ICO — Privacy notice checklist",
+     "sourceUrl": "https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices/",
+     "sourceSnippet": "A privacy notice should say who you are and how people can contact you about their information.",
+     "source2": "Clincoo Docs — privacy policy link",
+     "source2Url": "https://docs.clincoo.buzz/legal/cara-pasang-tautan-kebijakan-privasi-di-footer/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
   }
+
  ]
 };
 
