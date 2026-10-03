@@ -315,6 +315,36 @@ window.countryDataFiles["mulai"] = {
    }
   }
 
+ ,
+  {
+   "id": "cara-duplikat-proyek-sebagai-cadangan",
+   "langs": {
+    "id": {
+     "title": "Cara Duplikat Proyek sebagai Cadangan",
+     "desc": "Tata cara menyalin proyek Clincoo sebelum eksperimen besar supaya versi yang sudah jalan tetap bisa dibuka.",
+     "content": "<p class=\"mb-4\">Eksperimen layout atau ganti template bisa merusak halaman yang sudah beres. Duplikat dulu proyek di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> supaya ada salinan yang tidak ikut berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin sebelum mengubah</h2><p class=\"mb-4\">Buka daftar proyek, pilih proyek yang sudah di-deploy, lalu pakai aksi duplikat atau salin. Beri nama yang memuat tanggal, misalnya toko-cadangan-2026-10-03. Jangan menimpa proyek asli.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek isi salinan</h2><p class=\"mb-4\">Buka salinan di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. Pastikan index.html, CSS, dan gambar ikut tersalin. Jalankan live preview. Kalau gambar pecah, jalur relatifnya masih mengarah ke folder lama — pindahkan aset ke folder yang sama di salinan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan deploy salinan ke domain utama</h2><p class=\"mb-4\">Domain kustom tetap menempel di proyek asli. Deploy salinan hanya untuk URL pratinjau. Setelah eksperimen beres dan kamu yakin, baru pindahkan perubahan ke proyek utama, atau tukar domain secara sadar.</p><p class=\"mb-4\">Commit git di proyek asli tetap berguna, tetapi duplikat proyek adalah jaring kedua kalau commit belum sempat dibuat.</p>",
+     "source": "MDN — File and directory entries",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API",
+     "sourceSnippet": "Keep a separate copy of files before a risky edit so you can return to a known-good set.",
+     "source2": "Clincoo Docs — reopen a project",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-buka-kembali-proyek-yang-sudah-ada/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Duplicate a Project as a Backup",
+     "desc": "How to copy a Clincoo project before a large experiment so the working version stays available.",
+     "content": "<p class=\"mb-4\">A layout experiment or a template swap can break a page that already works. Duplicate the project in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> first so a copy stays unchanged.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy before you edit</h2><p class=\"mb-4\">Open the project list, select the deployed project, then use duplicate or copy. Name it with a date, for example shop-backup-2026-10-03. Do not overwrite the original.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the copy</h2><p class=\"mb-4\">Open the copy in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. Confirm index.html, CSS, and images came along. Run live preview. If an image breaks, its relative path still points at the old folder — move the asset into the same folder in the copy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not deploy the copy to the main domain</h2><p class=\"mb-4\">The custom domain stays on the original project. Deploy the copy only to a preview URL. After the experiment works, move the changes back to the main project, or switch the domain on purpose.</p><p class=\"mb-4\">A git commit on the original is still useful, but a project duplicate is a second net if you have not committed yet.</p>",
+     "source": "MDN — File and directory entries",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API",
+     "sourceSnippet": "Keep a separate copy of files before a risky edit so you can return to a known-good set.",
+     "source2": "Clincoo Docs — reopen a project",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-buka-kembali-proyek-yang-sudah-ada/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  }
  ]
 };
 
@@ -589,6 +619,36 @@ window.countryDataFiles["dokumentasi"] = {
    }
   }
 
+ ,
+  {
+   "id": "cara-baca-log-deploy-yang-gagal",
+   "langs": {
+    "id": {
+     "title": "Cara Baca Log Deploy yang Gagal",
+     "desc": "Tata cara membaca pesan gagal deploy di Clincoo: file hilang, path salah, dan batas ukuran, lalu perbaiki sebelum mencoba lagi.",
+     "content": "<p class=\"mb-4\">Deploy gagal biasanya berhenti di satu baris yang menyebut file atau perintah. Baca baris itu di log sebelum menekan deploy lagi di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cari baris pertama yang merah</h2><p class=\"mb-4\">Gulir ke atas sampai pesan error pertama, bukan baris terakhir yang hanya mengulang kegagalan. Catat nama file dan kode status. ENOENT atau 404 berarti file yang dirujuk tidak ada di proyek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan dengan isi folder</h2><p class=\"mb-4\">Buka pohon file. Nama di log harus sama persis, termasuk huruf besar. index.HTML tidak sama dengan index.html. Path yang diawali garis miring mencari dari akar situs, path tanpa garis miring mencari relatif terhadap halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukuran dan env</h2><p class=\"mb-4\">Kalau log menyebut kuota atau file terlalu besar, kecilkan gambar lalu deploy ulang. Kalau log menyebut variabel kosong, isi env di pengaturan proyek, bukan di file yang ikut ter-commit. Setelah perbaikan, deploy sekali lagi dan simpan URL yang sukses di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN — HTTP response status codes",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+     "sourceSnippet": "404 Not Found means the server has no resource at that path.",
+     "source2": "Clincoo Docs — deploy first site",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-deploy-situs-pertama/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Read a Failed Deploy Log",
+     "desc": "How to read a failed Clincoo deploy log: missing files, bad paths, and size limits, then fix them before retrying.",
+     "content": "<p class=\"mb-4\">A failed deploy usually stops on one line that names a file or a command. Read that line in the log before pressing deploy again in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Find the first red line</h2><p class=\"mb-4\">Scroll up to the first error, not the last line that only repeats the failure. Note the file name and status code. ENOENT or 404 means the referenced file is not in the project.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the folder</h2><p class=\"mb-4\">Open the file tree. The name in the log must match exactly, including case. index.HTML is not index.html. A path that starts with a slash is from the site root. A path without a slash is relative to the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Size and env</h2><p class=\"mb-4\">If the log mentions a quota or a file that is too large, shrink the image and deploy again. If it mentions an empty variable, set the env in project settings, not in a committed file. After the fix, deploy once more and keep the successful URL in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN — HTTP response status codes",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+     "sourceSnippet": "404 Not Found means the server has no resource at that path.",
+     "source2": "Clincoo Docs — deploy first site",
+     "source2Url": "https://docs.clincoo.buzz/mulai/cara-deploy-situs-pertama/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  }
  ]
 };
 
