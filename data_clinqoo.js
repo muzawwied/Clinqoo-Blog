@@ -110,6 +110,93 @@ window.countryDataFiles["mulai"] = {
      "source3Url": "https://app.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "cara-pasang-domain-kustom",
+   "langs": {
+    "id": {
+     "title": "Cara Memasang Domain Kustom",
+     "desc": "Tata cara mengarahkan domain sendiri ke situs Clincoo yang sudah di-deploy: DNS, tunggu propagasi, lalu cek HTTPS.",
+     "content": "<p class=\"mb-4\">Domain kustom dipakai setelah URL bawaan hasil deploy sudah benar. Jangan pasang domain di proyek yang masih halaman kosong. Kelola situs dari <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> dan akun dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Siapkan deploy yang sudah hidup</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Buka proyek di editor Clincoo dan pastikan deploy terakhir sukses.</li><li class=\"mb-1\">Salin URL HTTPS bawaan, buka di tab privat, dan cek judul serta gambar.</li><li class=\"mb-1\">Baru setelah itu buka pengaturan domain di akun.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Isi catatan DNS</h2><p class=\"mb-4\">Di panel registrar, buat catatan yang diminta Clincoo — biasanya CNAME untuk subdomain seperti www, atau A/ALIAS untuk apex. Jangan mencampur dua catatan yang berebut hostname yang sama.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Hostname harus persis seperti yang tertulis di layar Clincoo, tanpa spasi.</li><li class=\"mb-1\">Hapus catatan lama yang mengarah ke hosting sebelumnya pada nama yang sama.</li><li class=\"mb-1\">Simpan perubahan, lalu kembali ke Clincoo dan tekan cek ulang.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tunggu, lalu uji</h2><p class=\"mb-4\">Propagasi DNS bisa beberapa menit sampai beberapa jam. Kalau cek gagal, tunggu lalu ulangi — menekan berkali-kali tidak mempercepat DNS. Setelah aktif, buka domain di tab privat dan pastikan gembok HTTPS muncul.</p><p class=\"mb-4\">Kalau deploy belum pernah berhasil, selesaikan dulu artikel deploy situs pertama di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menyentuh DNS.</p>",
+     "source": "MDN Web Docs — What is a domain name?",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name",
+     "sourceSnippet": "A domain name is a human-readable address that points to a website on the internet.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Attach a Custom Domain",
+     "desc": "How to point your own domain at a deployed Clincoo site: DNS records, wait for propagation, then confirm HTTPS.",
+     "content": "<p class=\"mb-4\">Attach a custom domain only after the default deploy URL already looks right. Do not point a domain at an empty project. Manage the site from <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> and the account from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Start from a live deploy</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Open the project in the Clincoo editor and confirm the latest deploy succeeded.</li><li class=\"mb-1\">Copy the default HTTPS URL, open it in a private tab, and check the title and images.</li><li class=\"mb-1\">Only then open domain settings on the account.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add the DNS records</h2><p class=\"mb-4\">In the registrar panel, create the records Clincoo asks for — usually a CNAME for a subdomain such as www, or an A/ALIAS record for the apex. Do not leave two records fighting over the same hostname.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">The hostname must match the Clincoo screen exactly, with no spaces.</li><li class=\"mb-1\">Remove old records that still point that name at a previous host.</li><li class=\"mb-1\">Save, return to Clincoo, and run the check again.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Wait, then test</h2><p class=\"mb-4\">DNS propagation can take minutes or a few hours. If the check fails, wait and retry — extra clicks do not speed up DNS. When it is active, open the domain in a private tab and confirm the HTTPS lock.</p><p class=\"mb-4\">If deploy has never succeeded, finish the first-deploy article on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before touching DNS.</p>",
+     "source": "MDN Web Docs — What is a domain name?",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name",
+     "sourceSnippet": "A domain name is a human-readable address that points to a website on the internet.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-cek-tampilan-di-lebar-ponsel",
+   "langs": {
+    "id": {
+     "title": "Cara Mengecek Tampilan di Lebar Ponsel",
+     "desc": "Tata cara menguji situs Clincoo di lebar layar ponsel lewat preview editor dan perangkat sungguhan sebelum deploy.",
+     "content": "<p class=\"mb-4\">Situs yang rapi di laptop sering pecah di ponsel: teks kepanjangan, tombol tertutup, atau gambar melebar. Cek ini di preview <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sebelum menekan deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ubah lebar preview</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Simpan file HTML dan CSS yang sedang diubah.</li><li class=\"mb-1\">Sempitkan panel preview, atau pakai mode perangkat di alat pengembang browser pada lebar sekitar 390 piksel.</li><li class=\"mb-1\">Gulir dari atas sampai bawah. Catat bagian yang terpotong, bukan hanya hero.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Yang wajib dilihat</h2><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Tidak ada scroll horizontal. Kalau ada, cari elemen dengan lebar tetap yang lebih besar dari layar.</li><li class=\"mb-1\">Tombol dan tautan cukup besar untuk disentuh, dengan jarak antar tautan.</li><li class=\"mb-1\">Gambar memakai lebar maksimal 100 persen supaya tidak mendorong layout.</li><li class=\"mb-1\">Menu bisa dibuka tanpa hover, karena ponsel tidak punya hover.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di perangkat sungguhan</h2><p class=\"mb-4\">Setelah deploy ke URL bawaan, buka alamat itu di ponsel lewat data seluler, bukan hanya Wi-Fi kantor. Cache lama sering menipu. Kalau masih versi kemarin, muat ulang.</p><p class=\"mb-4\">Perubahan disimpan di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, akun dan kuota deploy ada di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — Responsive design",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+     "sourceSnippet": "Responsive design is the practice of making pages work well on a range of screen sizes.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Check the Layout at Phone Width",
+     "desc": "How to test a Clincoo site at phone width in the editor preview and on a real device before you deploy.",
+     "content": "<p class=\"mb-4\">A page that looks fine on a laptop often breaks on a phone: long lines, covered buttons, or images that stretch the page. Check this in the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> preview before you deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Change the preview width</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Save the HTML and CSS files you are editing.</li><li class=\"mb-1\">Narrow the preview pane, or use the browser device mode at about 390 pixels wide.</li><li class=\"mb-1\">Scroll from top to bottom. Note clipped sections, not only the hero.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">What to look for</h2><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">No horizontal scroll. If there is some, find a fixed-width element wider than the screen.</li><li class=\"mb-1\">Buttons and links are large enough to tap, with space between them.</li><li class=\"mb-1\">Images use a max width of 100 percent so they do not push the layout.</li><li class=\"mb-1\">The menu opens without hover, because phones have no hover.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test on a real device</h2><p class=\"mb-4\">After deploying to the default URL, open that address on a phone over cellular data, not only office Wi-Fi. An old cache often lies. If you still see yesterday's version, reload.</p><p class=\"mb-4\">Edits are saved in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. The account and deploy quota live at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — Responsive design",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+     "sourceSnippet": "Responsive design is the practice of making pages work well on a range of screen sizes.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-buat-halaman-kedua",
+   "langs": {
+    "id": {
+     "title": "Cara Membuat Halaman Kedua di Proyek",
+     "desc": "Tata cara menambah about.html atau kontak, menautkannya dari beranda, dan memastikan jalur relatif tetap utuh di Clincoo.",
+     "content": "<p class=\"mb-4\">Beranda saja tidak cukup untuk situs sungguhan. Halaman kedua adalah file HTML baru di proyek yang sama, bukan proyek baru. Kerjakan di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Duplikasi yang aman</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Di pohon file, buat file baru bernama about.html di folder yang sama dengan index.html.</li><li class=\"mb-1\">Salin kerangka HTML dari index.html: doctype, head, dan tautan CSS.</li><li class=\"mb-1\">Ganti judul dan isi. Jangan menyalin ulang seluruh stylesheet ke dalam file.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tautan relatif</h2><p class=\"mb-4\">Dari index.html, tautan ke halaman kedua adalah about.html, bukan URL absolut. Dari about.html kembali ke beranda pakai index.html atau ./ . Gambar tetap ../gambar/foto.jpg hanya jika file berada di subfolder.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Uji setiap tautan di preview, termasuk yang di footer.</li><li class=\"mb-1\">Kalau CSS hilang di halaman kedua, jalur href stylesheet salah satu tingkat.</li><li class=\"mb-1\">Nama file huruf kecil dan tanpa spasi, supaya deploy tidak membedakan besar-kecil.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan lalu deploy ulang</h2><p class=\"mb-4\">Simpan kedua file, cek preview, lalu deploy. Halaman baru tidak muncul di internet sebelum deploy berikutnya. Kuota deploy terhitung di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — Creating hyperlinks",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks",
+     "sourceSnippet": "Links are created with the anchor element and an href that points to another page or resource.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Add a Second Page to a Project",
+     "desc": "How to add about.html or a contact page, link it from the home page, and keep relative paths intact in Clincoo.",
+     "content": "<p class=\"mb-4\">A home page alone is not a real site. A second page is a new HTML file in the same project, not a new project. Do the work in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A safe copy</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">In the file tree, create about.html in the same folder as index.html.</li><li class=\"mb-1\">Copy the HTML skeleton from index.html: doctype, head, and the CSS link.</li><li class=\"mb-1\">Replace the title and body. Do not paste the whole stylesheet into the file.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Relative links</h2><p class=\"mb-4\">From index.html, the link to the second page is about.html, not an absolute URL. From about.html, link home with index.html or ./. Images stay ../gambar/foto.jpg only if the file sits in a subfolder.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Click every link in the preview, including the footer.</li><li class=\"mb-1\">If CSS disappears on the second page, the stylesheet href is one level off.</li><li class=\"mb-1\">Keep file names lowercase and without spaces so deploy does not care about case.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Save, then deploy again</h2><p class=\"mb-4\">Save both files, check the preview, then deploy. The new page is not on the internet until the next deploy. Deploy quota is counted at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — Creating hyperlinks",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks",
+     "sourceSnippet": "Links are created with the anchor element and an href that points to another page or resource.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
   }
  ]
 };
@@ -493,6 +580,64 @@ window.countryDataFiles["legal"] = {
      "sourceSnippet": "Deletion: your account and all its data can be deleted anytime from the danger zone.",
      "source2": "Clincoo Terms",
      "source2Url": "https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-laporkan-penyalahgunaan-konten",
+   "langs": {
+    "id": {
+     "title": "Cara Melaporkan Penyalahgunaan Konten",
+     "desc": "Tata cara melaporkan situs atau unggahan di Clincoo yang melanggar hukum, meniru merek, atau menyalahgunakan data orang lain.",
+     "content": "<p class=\"mb-4\">Clincoo mengizinkan pengguna menerbitkan situs, tetapi tidak mengizinkan penipuan, peniruan merek, atau unggahan yang membocorkan data orang lain. Laporan dikirim dari akun di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, bukan lewat komentar publik di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kumpulkan bukti dulu</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Salin URL lengkap situs yang bermasalah, termasuk jalur halaman.</li><li class=\"mb-1\">Catat waktu kamu melihatnya dan apa yang dilanggar: penipuan, ujaran yang mengancam, atau data pribadi.</li><li class=\"mb-1\">Simpan tangkapan layar. Jangan mengunduh atau menyebarkan data pribadi yang bocor.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kirim laporan</h2><p class=\"mb-4\">Masuk ke akun Clincoo, buka bantuan akun, lalu pilih laporkan penyalahgunaan. Jelaskan dalam beberapa kalimat. Satu laporan untuk satu URL. Menyertakan tautan kedua hanya jika itu bagian dari situs yang sama.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Jangan meminta penghapusan akun orang lain lewat chat AI di editor — asisten tidak menindak akun.</li><li class=\"mb-1\">Jika ini darurat keselamatan, hubungi pihak berwenang setempat sekaligus mengirim laporan.</li><li class=\"mb-1\">Laporan bohong yang berulang dapat menangguhkan akun pelapor, sesuai syarat layanan.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Setelah terkirim</h2><p class=\"mb-4\">Kamu menerima tanda bahwa laporan masuk. Peninjauan tidak selalu membalas dengan detail akun orang lain. Kalau URL sudah tidak bisa dibuka, tindakan mungkin sudah diterapkan.</p>",
+     "source": "MDN Web Docs — Privacy on the web",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Privacy",
+     "sourceSnippet": "Web privacy covers how sites collect and share information about people.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Report Abusive Content",
+     "desc": "How to report a Clincoo site or upload that breaks the law, copies a brand, or misuses someone else's data.",
+     "content": "<p class=\"mb-4\">Clincoo lets people publish sites, but it does not allow fraud, brand impersonation, or uploads that leak someone else's data. Send the report from the account at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, not as a public comment on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Collect evidence first</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Copy the full URL of the site, including the page path.</li><li class=\"mb-1\">Note when you saw it and what is wrong: fraud, a threat, or personal data.</li><li class=\"mb-1\">Keep a screenshot. Do not download or reshare leaked personal data.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Send the report</h2><p class=\"mb-4\">Sign in to Clincoo, open account help, and choose report abuse. Explain it in a few sentences. One report per URL. Add a second link only if it is part of the same site.</p><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Do not ask the editor AI to delete someone else's account — the assistant cannot act on accounts.</li><li class=\"mb-1\">If this is a safety emergency, contact local authorities as well as sending the report.</li><li class=\"mb-1\">Repeated false reports can suspend the reporter's account under the terms of service.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">After it is sent</h2><p class=\"mb-4\">You get a sign that the report arrived. Review does not always reply with details about the other account. If the URL no longer opens, an action may already have been applied.</p>",
+     "source": "MDN Web Docs — Privacy on the web",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Privacy",
+     "sourceSnippet": "Web privacy covers how sites collect and share information about people.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-mengatur-cookie-dan-izin",
+   "langs": {
+    "id": {
+     "title": "Cara Mengatur Cookie dan Izin Browser",
+     "desc": "Tata cara membaca cookie yang dipakai Clincoo, menolak izin yang tidak perlu, dan menulis pemberitahuan cookie di situsmu sendiri.",
+     "content": "<p class=\"mb-4\">Cookie sesi menjaga kamu tetap masuk di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. Cookie itu bukan izin untuk melacak pengunjung situs yang kamu deploy. Dua hal ini sering tercampur.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cookie akun Clincoo</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Buka pengaturan situs di browser untuk app.clincoo.buzz.</li><li class=\"mb-1\">Cookie sesi boleh tetap ada supaya tidak keluar setiap kali menyegarkan editor.</li><li class=\"mb-1\">Kalau kamu memakai komputer bersama, keluar dari akun setelah selesai, bukan hanya menutup tab.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Izin yang tidak wajib</h2><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Tolak notifikasi, kamera, dan lokasi kalau proyek tidak memakainya.</li><li class=\"mb-1\">Izin mikrofon tidak diperlukan untuk menyunting HTML.</li><li class=\"mb-1\">Menghapus cookie akan mengeluarkan akun. Simpan dulu pekerjaan di editor.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pemberitahuan di situsmu</h2><p class=\"mb-4\">Jika situs yang kamu terbitkan memasang analitik pihak ketiga, tulis kalimat singkat di footer: apa yang disimpan, untuk apa, dan tautan ke kebijakan privasi. Jangan menyalin banner orang lain tanpa menyesuaikan alat yang benar-benar kamu pakai.</p><p class=\"mb-4\">Rincian pengumpulan data akun ada di kebijakan privasi Clincoo di blog ini.</p>",
+     "source": "MDN Web Docs — HTTP cookies",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+     "sourceSnippet": "An HTTP cookie is a small piece of data a server stores on the user's device.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Manage Cookies and Browser Permissions",
+     "desc": "How to read the cookies Clincoo uses, refuse permissions you do not need, and write a cookie notice on your own site.",
+     "content": "<p class=\"mb-4\">A session cookie keeps you signed in at <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> and <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>. That cookie is not permission to track visitors on a site you deploy. Those two ideas get mixed up often.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Clincoo account cookies</h2><ol class=\"list-decimal pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Open site settings in the browser for app.clincoo.buzz.</li><li class=\"mb-1\">The session cookie can stay so the editor does not sign you out on every refresh.</li><li class=\"mb-1\">On a shared computer, sign out when you finish instead of only closing the tab.</li></ol><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Permissions you do not need</h2><ul class=\"list-disc pl-6 mb-4 space-y-1\"><li class=\"mb-1\">Refuse notifications, camera, and location if the project does not use them.</li><li class=\"mb-1\">Microphone permission is not required to edit HTML.</li><li class=\"mb-1\">Clearing cookies signs you out. Save work in the editor first.</li></ul><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A notice on your site</h2><p class=\"mb-4\">If the site you publish sets a third-party analytics cookie, put a short footer line: what is stored, why, and a link to the privacy policy. Do not copy someone else's banner without matching the tools you actually use.</p><p class=\"mb-4\">How account data is collected is covered in the Clincoo privacy policy on this blog.</p>",
+     "source": "MDN Web Docs — HTTP cookies",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+     "sourceSnippet": "An HTTP cookie is a small piece of data a server stores on the user's device.",
+     "source2": "Clincoo Editor",
+     "source2Url": "https://editor.clincoo.buzz/",
      "source3": "Clincoo App",
      "source3Url": "https://app.clincoo.buzz/"
     }
