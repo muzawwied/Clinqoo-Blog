@@ -499,6 +499,36 @@ window.countryDataFiles["dokumentasi"] = {
     }
    }
   }
+,
+  {
+   "id": "cara-buat-layout-grid-dua-kolom",
+   "langs": {
+    "id": {
+     "title": "Cara Buat Layout Grid Dua Kolom",
+     "desc": "Tata cara menyusun dua kolom dengan CSS Grid yang jatuh menjadi satu kolom di layar sempit, di editor Clincoo.",
+     "content": "<p class=\\\"mb-4\\\">Grid cocok untuk kartu sejajar yang harus rata. Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> bungkus item dengan satu elemen, lalu atur kolom di CSS, bukan dengan tabel.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Dua kolom yang sama</h2><p class=\\\"mb-4\\\">display: grid dan grid-template-columns: 1fr 1fr membuat dua jalur selebar sama. gap: 1rem memberi jarak tanpa margin yang saling dorong. Anak langsung menjadi sel. Jangan lupa min-width: 0 jika ada teks panjang.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Jatuh di ponsel</h2><p class=\\\"mb-4\\\">Di media query max-width: 640px, ganti ke grid-template-columns: 1fr. Satu aturan itu lebih aman daripada menyembunyikan kolom. Gambar di dalam sel perlu max-width: 100%.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cek di preview lalu deploy</h2><p class=\\\"mb-4\\\">Sempitkan preview dan pastikan tidak ada scroll horizontal. Simpan, lalu terbitkan dari <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. Untuk meratakan satu kotak di tengah, tetap pakai Flexbox, bukan Grid.</p>",
+     "source": "MDN Web Docs — grid-template-columns",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns",
+     "sourceSnippet": "The grid-template-columns property defines the line names and track sizing of grid columns.",
+     "source2": "MDN Web Docs — CSS grid layout",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Build a Two-Column Grid Layout",
+     "desc": "How to build two columns with CSS Grid that collapse to one column on a narrow screen, in the Clincoo editor.",
+     "content": "<p class=\\\"mb-4\\\">Grid fits side-by-side cards that should line up. In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> wrap the items in one element, then set the columns in CSS, not with a table.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Two equal columns</h2><p class=\\\"mb-4\\\">display: grid and grid-template-columns: 1fr 1fr make two equal tracks. gap: 1rem adds space without margins pushing each other. Direct children become cells. Add min-width: 0 if a cell holds a long word.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Collapse on a phone</h2><p class=\\\"mb-4\\\">In a max-width: 640px media query, switch to grid-template-columns: 1fr. That one rule is safer than hiding a column. Images inside a cell need max-width: 100%.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Check the preview, then deploy</h2><p class=\\\"mb-4\\\">Narrow the preview and confirm there is no horizontal scroll. Save, then publish from <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. To center a single box, keep using Flexbox, not Grid.</p>",
+     "source": "MDN Web Docs — grid-template-columns",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns",
+     "sourceSnippet": "The grid-template-columns property defines the line names and track sizing of grid columns.",
+     "source2": "MDN Web Docs — CSS grid layout",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  }
  ]
 };
 
@@ -703,6 +733,123 @@ window.countryDataFiles["bantuan"] = {
          "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData",
          "source3": "Clincoo Editor",
          "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  }
+,
+  {
+   "id": "cara-baca-referenceerror-is-not-defined",
+   "langs": {
+    "id": {
+     "title": "Cara Baca ReferenceError is not defined",
+     "desc": "Tata cara menelusuri baris, nama variabel, dan urutan skrip saat konsol preview Clincoo menulis ReferenceError.",
+     "content": "<p class=\\\"mb-4\\\">ReferenceError muncul saat JavaScript memakai nama yang belum dideklarasikan. Di preview <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> buka konsol, catat nama yang merah, lalu cari nama itu di file yang disebut.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Baca nama dan barisnya</h2><p class=\\\"mb-4\\\">Pesan seperti menuToggle is not defined berarti skrip memanggil menuToggle, tetapi tidak ada var, let, const, atau fungsi dengan nama itu di lingkup yang sama. Angka baris di konsol mengarah ke pemanggilan, bukan selalu ke tempat yang seharusnya mendeklarasikan nama.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cek urutan dan ejaan</h2><p class=\\\"mb-4\\\">Skrip di head yang memakai defer jalan setelah HTML diurai. Skrip biasa di head jalan sebelum tombol ada, tetapi nama fungsi tetap harus sudah dideklarasikan saat dipanggil. Salah ketik satu huruf, misalnya MenuToggle versus menuToggle, dihitung sebagai nama lain.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Jangan sembunyikan error</h2><p class=\\\"mb-4\\\">Mengosongkan catch tanpa log membuat halaman diam dan error hilang. Tampilkan error di konsol, perbaiki deklarasi, lalu simpan dan muat ulang preview. Kalau masih macet, kirim pesan error utuh ke asisten di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — ReferenceError",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+     "sourceSnippet": "A ReferenceError is thrown when a non-existent variable is referenced.",
+     "source2": "MDN Web Docs — let",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Read a ReferenceError is not defined",
+     "desc": "How to trace the line, variable name, and script order when the Clincoo preview console reports a ReferenceError.",
+     "content": "<p class=\\\"mb-4\\\">A ReferenceError appears when JavaScript uses a name that was never declared. In the preview at <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> open the console, copy the red name, then search for that name in the file the console cites.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Read the name and the line</h2><p class=\\\"mb-4\\\">A message such as menuToggle is not defined means the script calls menuToggle, but no var, let, const, or function with that name exists in the same scope. The line number points at the call, not always at the place the name should have been declared.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Check order and spelling</h2><p class=\\\"mb-4\\\">A script in the head with defer runs after HTML is parsed. A plain script in the head runs before the button exists, but the function name still has to be declared before it is called. One wrong letter, such as MenuToggle versus menuToggle, counts as a different name.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Do not hide the error</h2><p class=\\\"mb-4\\\">An empty catch without a log makes the page look frozen and drops the error. Print the error in the console, fix the declaration, then save and reload the preview. If you are still stuck, send the full error text to the assistant in <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — ReferenceError",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+     "sourceSnippet": "A ReferenceError is thrown when a non-existent variable is referenced.",
+     "source2": "MDN Web Docs — let",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-perbaiki-gambar-yang-pecah",
+   "langs": {
+    "id": {
+     "title": "Cara Perbaiki Gambar yang Pecah di Preview",
+     "desc": "Tata cara mencocokkan src, huruf besar, dan folder gambar saat ikon pecah muncul di live preview Clincoo.",
+     "content": "<p class=\\\"mb-4\\\">Ikon gambar pecah hampir selalu salah jalur, bukan file yang rusak. Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> klik gambar, lihat src di panel elemen, lalu bandingkan dengan nama file di pohon proyek.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Samakan jalur relatif</h2><p class=\\\"mb-4\\\">Dari index.html di akar, src=\"images/hero.jpg\" mencari folder images di sebelah index.html. Dari halaman di folder tentang, jalur yang sama mencari tentang/images/hero.jpg. Naik satu folder dengan ../images/hero.jpg.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Huruf besar dan ekstensi</h2><p class=\\\"mb-4\\\">Hero.JPG dan hero.jpg adalah file berbeda di banyak server. Ekstensi .jpeg tidak sama dengan .jpg. Spasi di nama file lebih aman diganti tanda hubung, lalu src diperbarui.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cek file benar-benar ada</h2><p class=\\\"mb-4\\\">Kalau file belum diunggah, unggah dulu baru simpan HTML. Setelah deploy dari <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>, buka URL gambar langsung. Status 404 berarti jalur di situs tayang masih salah.</p>",
+     "source": "MDN Web Docs — img",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+     "sourceSnippet": "The src attribute gives the URL of the image to embed.",
+     "source2": "web.dev — Optimize images",
+     "source2Url": "https://web.dev/learn/images/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Fix Broken Images in Preview",
+     "desc": "How to match src, letter case, and the image folder when a broken icon shows in the Clincoo live preview.",
+     "content": "<p class=\\\"mb-4\\\">A broken image icon is almost always a bad path, not a damaged file. In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> select the image, read src in the elements panel, then compare it with the file name in the project tree.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Match the relative path</h2><p class=\\\"mb-4\\\">From index.html at the root, src=\"images/hero.jpg\" looks for an images folder next to index.html. From a page inside about, the same path looks for about/images/hero.jpg. Step up one folder with ../images/hero.jpg.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Letter case and extension</h2><p class=\\\"mb-4\\\">Hero.JPG and hero.jpg are different files on many servers. A .jpeg extension is not the same as .jpg. Spaces in file names are safer as hyphens, then update src.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Confirm the file exists</h2><p class=\\\"mb-4\\\">If the file was never uploaded, upload it before saving the HTML. After deploy from <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>, open the image URL directly. A 404 means the live path is still wrong.</p>",
+     "source": "MDN Web Docs — img",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+     "sourceSnippet": "The src attribute gives the URL of the image to embed.",
+     "source2": "web.dev — Optimize images",
+     "source2Url": "https://web.dev/learn/images/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-hilangkan-scroll-horizontal",
+   "langs": {
+    "id": {
+     "title": "Cara Hilangkan Scroll Horizontal di Ponsel",
+     "desc": "Tata cara menemukan elemen yang lebih lebar dari layar saat preview Clincoo bisa digeser ke samping.",
+     "content": "<p class=\\\"mb-4\\\">Scroll horizontal di ponsel biasanya datang dari satu elemen yang melebihi lebar viewport. Di preview <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> sempitkan panel sampai lebar ponsel, lalu gulir ke samping untuk memastikan gejalanya nyata.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cari yang melebar</h2><p class=\\\"mb-4\\\">Di konsol tempel document.querySelectorAll('*') lalu bandingkan scrollWidth dengan clientWidth. Elemen yang scrollWidth-nya lebih besar adalah tersangka. Sering kali itu gambar tanpa max-width, tabel, atau teks panjang tanpa spasi.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Batasi lebar</h2><p class=\\\"mb-4\\\">img, video, dan iframe perlu max-width: 100% dan height: auto. Kontainer grid atau flex yang tidak boleh menyusut perlu min-width: 0 pada anak. Padding besar ditambah width: 100% tanpa border-box juga mendorong halaman keluar.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji lagi sebelum deploy</h2><p class=\\\"mb-4\\\">Setelah perbaikan, scroll kiri-kanan harus hilang di lebar 360 piksel. Baru deploy dari <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. Jangan sembunyikan gejala dengan overflow-x: hidden di body sebelum penyebabnya ketemu.</p>",
+     "source": "MDN Web Docs — overflow",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+     "sourceSnippet": "The overflow property sets what happens when content is too big for its box.",
+     "source2": "web.dev — Responsive design",
+     "source2Url": "https://web.dev/learn/design/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Remove Horizontal Scroll on Mobile",
+     "desc": "How to find the element wider than the screen when the Clincoo preview can be scrolled sideways.",
+     "content": "<p class=\\\"mb-4\\\">Horizontal scroll on a phone usually comes from one element wider than the viewport. In the preview at <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> narrow the panel to a phone width, then scroll sideways to confirm the symptom.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Find what is overflowing</h2><p class=\\\"mb-4\\\">In the console, inspect elements and compare scrollWidth with clientWidth. The node whose scrollWidth is larger is the suspect. It is often an image without max-width, a table, or a long word with no break.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cap the width</h2><p class=\\\"mb-4\\\">img, video, and iframe need max-width: 100% and height: auto. A grid or flex child that must shrink needs min-width: 0. Large padding plus width: 100% without border-box also pushes the page out.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Retest before deploy</h2><p class=\\\"mb-4\\\">After the fix, left-right scroll should be gone at 360 pixels. Then deploy from <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. Do not hide the symptom with overflow-x: hidden on body before you find the cause.</p>",
+     "source": "MDN Web Docs — overflow",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+     "sourceSnippet": "The overflow property sets what happens when content is too big for its box.",
+     "source2": "web.dev — Responsive design",
+     "source2Url": "https://web.dev/learn/design/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "cara-hubungkan-label-ke-input",
+   "langs": {
+    "id": {
+     "title": "Cara Hubungkan Label ke Input Form",
+     "desc": "Tata cara memakai for dan id supaya label bisa diklik dan pembaca layar mengumumkan nama bidang di form Clincoo.",
+     "content": "<p class=\\\"mb-4\\\">Placeholder bukan label. Di form yang kamu susun di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>, setiap input perlu nama yang tetap terlihat.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Pasangkan for dan id</h2><p class=\\\"mb-4\\\">label for=\"email\" harus menunjuk ke input id=\"email\". Klik teks label lalu fokus pindah ke bidang. id wajib unik di halaman. Jangan memakai id yang sama untuk dua input.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Bungkus atau hubungkan</h2><p class=\\\"mb-4\\\">Membungkus input di dalam label juga menghubungkan keduanya tanpa for. Pilih satu cara dan konsisten. Untuk kotak centang, label di samping membuat area klik lebih besar.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Jangan andalkan placeholder</h2><p class=\\\"mb-4\\\">Placeholder hilang saat pengguna mengetik. Tambahkan label, lalu aria-describedby hanya untuk petunjuk tambahan. Uji dengan Tab. Setelah beres, deploy dari <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — label",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
+     "sourceSnippet": "The label element represents a caption for an item in a user interface.",
+     "source2": "W3C WAI — Labeling controls",
+     "source2Url": "https://www.w3.org/WAI/tutorials/forms/labels/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Connect a Label to a Form Input",
+     "desc": "How to use for and id so a label is clickable and screen readers announce the field name in a Clincoo form.",
+     "content": "<p class=\\\"mb-4\\\">A placeholder is not a label. In a form you build at <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>, each input needs a name that stays visible.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Pair for and id</h2><p class=\\\"mb-4\\\">label for=\"email\" must point at input id=\"email\". Clicking the label text moves focus into the field. An id must be unique on the page. Do not reuse the same id on two inputs.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Wrap or associate</h2><p class=\\\"mb-4\\\">Wrapping the input inside the label also connects them without for. Pick one method and stay consistent. For a checkbox, a label beside it makes the click target larger.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Do not rely on the placeholder</h2><p class=\\\"mb-4\\\">A placeholder disappears while the user types. Add a label, and use aria-describedby only for extra help. Test with Tab. When it works, deploy from <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>.</p>",
+     "source": "MDN Web Docs — label",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
+     "sourceSnippet": "The label element represents a caption for an item in a user interface.",
+     "source2": "W3C WAI — Labeling controls",
+     "source2Url": "https://www.w3.org/WAI/tutorials/forms/labels/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
     }
    }
   }
