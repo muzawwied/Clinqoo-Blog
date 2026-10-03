@@ -170,7 +170,7 @@ function goToAbout() {
 const appContainer = () => document.getElementById('app-container') || document.getElementById('app');
 
 function makeHeader(backFn, backLabel) {
-  return '<header class="sticky top-0 pt-3 pb-0 z-40 border-b border-gray-100">' +
+  return '<header class="sticky top-0 pt-3 pb-0 z-40 bg-white border-b border-gray-100">' +
     '<div class="flex items-center gap-2">' +
     '<button onclick="toggleSidebar()" class="p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none transition-colors flex-shrink-0">' +
     '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg></button>' +
@@ -214,7 +214,7 @@ function renderHome(searchQuery, skipPush) {
   }
 
   appContainer().innerHTML =
-    '<header class="sticky top-0 pt-3 pb-0 z-40">' +
+    '<header class="sticky top-0 z-40 bg-white border-b border-gray-100 pt-3 pb-3">' +
     '<div class="flex items-center gap-3">' +
     '<button onclick="toggleSidebar()" class="p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none transition-colors flex-shrink-0">' +
     '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg>' +
@@ -222,8 +222,8 @@ function renderHome(searchQuery, skipPush) {
     '<div class="relative flex-grow">' +
     '<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>' +
     '<input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="' + u.searchPh + '" value="' + searchQuery + '" oninput="handleSearch(this)" autocomplete="off" spellcheck="false">' +
-    '</div></div>' +
-    '<div class="h-px bg-gray-200 w-full mt-4"></div></header>' +
+    '</div>' +
+    '</header>' +
     '<div class="pt-6 fade-in" id="homeCards">' + cardsHtml + '</div>';
 
   window.scrollTo(0, 0);
@@ -255,7 +255,7 @@ function renderCountry(countryId, skipPush) {
   });
 
   appContainer().innerHTML =
-    '<header class="sticky top-0 pt-3 pb-4 z-40 border-b border-gray-100">' +
+    '<header class="sticky top-0 pt-3 pb-4 z-40 bg-white border-b border-gray-100">' +
     '<div class="relative flex items-center justify-center">' +
     '<button onclick="toggleSidebar()" class="absolute left-0 p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none transition-colors">' +
     '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg>' +
