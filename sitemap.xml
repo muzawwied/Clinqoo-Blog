@@ -549,6 +549,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-cegah-kirim-ganda/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-cegah-kirim-ganda/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/form/form-textarea-rows-dan-maxlength/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-textarea-rows-dan-maxlength/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-textarea-rows-dan-maxlength/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-textarea-rows-dan-maxlength/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/form/form-select-opsi-kosong-disabled/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-select-opsi-kosong-disabled/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-select-opsi-kosong-disabled/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-select-opsi-kosong-disabled/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/form/form-checkbox-value-dan-name/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-checkbox-value-dan-name/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-checkbox-value-dan-name/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-checkbox-value-dan-name/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/form/form-input-file-accept-tipe/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/form/form-method-post-untuk-data-sensitif/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-method-post-untuk-data-sensitif/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-method-post-untuk-data-sensitif/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-method-post-untuk-data-sensitif/"/>
+  </url>
 </urlset>
 
 

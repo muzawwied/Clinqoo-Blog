@@ -152,5 +152,151 @@ window.countryDataFiles["form"] = {
     }
    }
   }
+,
+  {
+   "id": "form-textarea-rows-dan-maxlength",
+   "langs": {
+    "id": {
+     "title": "Cara Atur Textarea: rows, maxlength, dan label",
+     "desc": "Tata cara memasang textarea di form Clincoo dengan label, rows, dan maxlength supaya pesan panjang tetap terbaca dan tidak terpotong diam-diam.",
+     "content": "<p class=\"mb-4\">Textarea bukan input satu baris yang dipaksa tinggi. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pesan, catatan, atau alamat panjang memakai textarea dengan nama yang jelas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri label dan tinggi awal</h2><p class=\"mb-4\">Hubungkan label lewat for dan id. Atribut rows menentukan tinggi awal, misalnya rows=\"4\". Jangan mengunci tinggi dengan CSS yang memotong teks. Pengguna harus bisa melihat beberapa baris sekaligus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi panjang dengan maxlength</h2><p class=\"mb-4\">Kalau backend menolak lebih dari 500 karakter, tulis maxlength=\"500\" pada textarea. Tampilkan sisa karakter di dekat isian jika batasnya ketat. Jangan hanya memotong di server tanpa pesan di halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ketik teks yang melewati batas. Peramban harus menahan ketikan, dan label tetap terbacakan oleh pembaca layar. Simpan contoh yang lolos di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya pola yang sama dipakai di form lain.</p>",
+     "source": "MDN — The Textarea element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea",
+     "sourceSnippet": "The textarea element represents a multiline plain-text editing control.",
+     "source2": "MDN — HTML maxlength attribute",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Set Up a Textarea: rows, maxlength, and a Label",
+     "desc": "How to add a textarea on a Clincoo form with a label, rows, and maxlength so long messages stay readable and are not cut off silently.",
+     "content": "<p class=\"mb-4\">A textarea is not a single-line input forced to be tall. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> messages, notes, or long addresses use a textarea with a clear name.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Give it a label and a starting height</h2><p class=\"mb-4\">Connect the label with for and id. The rows attribute sets the starting height, for example rows=\"4\". Do not lock the height with CSS that clips text. People should see several lines at once.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cap the length with maxlength</h2><p class=\"mb-4\">If the backend rejects more than 500 characters, set maxlength=\"500\" on the textarea. Show the remaining count near the field when the limit is tight. Do not only trim on the server with no message on the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> type past the limit. The browser should stop the extra characters, and a screen reader should still announce the label. Keep a passing example on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so other forms reuse the same pattern.</p>",
+     "source": "MDN — The Textarea element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea",
+     "sourceSnippet": "The textarea element represents a multiline plain-text editing control.",
+     "source2": "MDN — HTML maxlength attribute",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "form-select-opsi-kosong-disabled",
+   "langs": {
+    "id": {
+     "title": "Cara Buat Opsi Kosong di Select sebagai Placeholder",
+     "desc": "Tata cara menambah opsi pertama yang disabled dan selected di select Clincoo supaya pengguna memilih nilai sungguhan, bukan label palsu.",
+     "content": "<p class=\"mb-4\">Select selalu punya nilai, bahkan sebelum pengguna menyentuhnya. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jangan jadikan opsi pertama sebagai data sungguhan kalau itu hanya petunjuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Opsi pertama disabled dan selected</h2><p class=\"mb-4\">Tulis option value=\"\" disabled selected. Teksnya boleh “Pilih paket”. Karena value kosong, required pada select gagal saat belum ada pilihan. Jangan memakai option yang bisa dikirim sebagai nama produk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan option pertama yang valid</h2><p class=\"mb-4\">Kalau opsi pertama adalah paket termurah dan selected, form bisa terkirim tanpa sengaja. Placeholder harus tidak bisa dipilih ulang setelah pengguna memilih yang lain, kecuali Anda memang ingin mengizinkan kosong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji keyboard</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka select dengan keyboard. Opsi kosong tidak boleh ikut terkirim. Setelah memilih, label tetap terlihat di samping select, bukan hanya di dalam daftar.</p>",
+     "source": "MDN — The Select element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select",
+     "sourceSnippet": "The select element represents a control for selecting amongst a set of options.",
+     "source2": "MDN — HTML option element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Use an Empty Select Option as a Placeholder",
+     "desc": "How to add a disabled, selected first option on a Clincoo select so people pick a real value instead of a fake label.",
+     "content": "<p class=\"mb-4\">A select always has a value, even before anyone touches it. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> do not treat the first option as real data if it is only a hint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">First option disabled and selected</h2><p class=\"mb-4\">Write option value=\"\" disabled selected. The text can be “Choose a plan”. Because the value is empty, required on the select fails until a choice is made. Do not use an option that would be submitted as a product name.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a valid first option</h2><p class=\"mb-4\">If the first option is the cheapest plan and selected, the form can be sent by accident. The placeholder should not be selectable again after a real choice, unless empty is intentionally allowed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the keyboard</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the select with the keyboard. The empty option must not be submitted. After a choice, the label stays beside the select, not only inside the list.</p>",
+     "source": "MDN — The Select element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select",
+     "sourceSnippet": "The select element represents a control for selecting amongst a set of options.",
+     "source2": "MDN — HTML option element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "form-checkbox-value-dan-name",
+   "langs": {
+    "id": {
+     "title": "Cara Isi name dan value pada Checkbox",
+     "desc": "Tata cara memberi name dan value pada checkbox Clincoo supaya hanya yang dicentang yang terkirim, dan setiap kotak punya label sendiri.",
+     "content": "<p class=\"mb-4\">Checkbox yang tidak dicentang tidak ikut terkirim. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> itu sering mengejutkan kalau Anda mengharapkan nilai “tidak”.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu name, value yang bermakna</h2><p class=\"mb-4\">Beri name yang sama untuk kelompok, misalnya name=\"topik\", dan value berbeda: \"deploy\" atau \"seo\". Jangan mengandalkan value bawaan \"on\". Label menempel lewat for, bukan teks yang hanya ditulis di sebelahnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kalau perlu nilai tidak dicentang</h2><p class=\"mb-4\">Tambahkan input hidden dengan name yang sama dan value=\"0\" sebelum checkbox. Saat dicentang, checkbox menimpa nilai itu di sebagian server. Dokumentasikan perilaku ini supaya tidak dikira bug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek payload</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kirim form dengan satu kotak kosong dan satu tercentang. Panel jaringan hanya boleh memuat value kotak yang dicentang, plus hidden jika Anda memang menambahkannya.</p>",
+     "source": "MDN — input type checkbox",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox",
+     "sourceSnippet": "A checkbox is checked (ticked) or unchecked.",
+     "source2": "MDN — HTML input name",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Set name and value on a Checkbox",
+     "desc": "How to set name and value on a Clincoo checkbox so only checked boxes are submitted, and each box has its own label.",
+     "content": "<p class=\"mb-4\">An unchecked checkbox is not submitted. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> that surprises people who expected a “no” value.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One name, a meaningful value</h2><p class=\"mb-4\">Use the same name for the group, for example name=\"topik\", and different values: \"deploy\" or \"seo\". Do not rely on the default value \"on\". Attach the label with for, not text merely sitting beside the box.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">If you need an unchecked value</h2><p class=\"mb-4\">Add a hidden input with the same name and value=\"0\" before the checkbox. When checked, the checkbox overrides that value on many servers. Document this so it is not treated as a bug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the payload</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> submit with one box empty and one checked. The network panel should include only the checked value, plus the hidden field if you added one.</p>",
+     "source": "MDN — input type checkbox",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox",
+     "sourceSnippet": "A checkbox is checked (ticked) or unchecked.",
+     "source2": "MDN — HTML input name",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "form-input-file-accept-tipe",
+   "langs": {
+    "id": {
+     "title": "Cara Batasi Tipe File dengan accept",
+     "desc": "Tata cara memakai accept pada input file di form Clincoo supaya dialog berkas menyaring gambar atau PDF, tanpa menganggap itu validasi keamanan.",
+     "content": "<p class=\"mb-4\">Atribut accept hanya membantu dialog berkas. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tetap periksa tipe dan ukuran di server, karena pengguna bisa mengubah berkas yang dipilih.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis tipe yang diizinkan</h2><p class=\"mb-4\">Untuk gambar: accept=\"image/png,image/jpeg,image/webp\". Untuk satu PDF: accept=\"application/pdf,.pdf\". Jangan tulis accept=\"*\" kalau Anda hanya ingin gambar. Tambahkan label yang menyebut batas, misalnya “PNG atau JPEG, maks 2 MB”.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">accept bukan pagar keamanan</h2><p class=\"mb-4\">Peramban bisa mengabaikan saringan. Skrip harus menolak tipe lain sebelum unggah, dan server mengulang pemeriksaan. Jangan menampilkan nama berkas mentah tanpa escape.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pemilih berkas. Daftar harus condong ke tipe yang diizinkan. Coba pilih berkas lain lewat “semua file” jika peramban mengizinkan, lalu pastikan form menolaknya dengan pesan di dekat input.</p>",
+     "source": "MDN — input type file",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file",
+     "sourceSnippet": "The accept attribute defines the file types the file input should accept.",
+     "source2": "MDN — HTML attribute accept",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Limit File Types with accept",
+     "desc": "How to use accept on a file input in a Clincoo form so the file dialog filters images or PDFs, without treating that as a security check.",
+     "content": "<p class=\"mb-4\">The accept attribute only helps the file dialog. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> still check type and size on the server, because someone can change the chosen file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">List the allowed types</h2><p class=\"mb-4\">For images: accept=\"image/png,image/jpeg,image/webp\". For a single PDF: accept=\"application/pdf,.pdf\". Do not write accept=\"*\" if you only want images. Add a label that states the limit, for example “PNG or JPEG, max 2 MB”.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">accept is not a security fence</h2><p class=\"mb-4\">The browser can ignore the filter. Script should reject other types before upload, and the server repeats the check. Do not render a raw file name without escaping.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the file picker. The list should favor the allowed types. Try another file via “all files” if the browser allows it, and confirm the form rejects it with a message next to the input.</p>",
+     "source": "MDN — input type file",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file",
+     "sourceSnippet": "The accept attribute defines the file types the file input should accept.",
+     "source2": "MDN — HTML attribute accept",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "form-method-post-untuk-data-sensitif",
+   "langs": {
+    "id": {
+     "title": "Cara Pilih method POST untuk Data Sensitif",
+     "desc": "Tata cara memakai method post pada form Clincoo supaya sandi dan data pribadi tidak masuk URL, riwayat, atau log referer.",
+     "content": "<p class=\"mb-4\">method=\"get\" menaruh setiap isian di query string. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> form login, kontak, dan unggahan memakai method=\"post\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kapan get masih masuk akal</h2><p class=\"mb-4\">Get cocok untuk pencarian yang boleh dibagikan dan di-bookmark. Jangan menaruh token, sandi, atau email di form get. action harus URL HTTPS di domain yang Anda kendalikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Post dan enctype</h2><p class=\"mb-4\">Form biasa cukup method=\"post\". Kalau ada input file, tambahkan enctype=\"multipart/form-data\". Tanpa itu berkas tidak ikut terkirim. Tombol kirim harus type=\"submit\" di dalam form.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek URL setelah kirim</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kirim form percobaan. Bilah alamat tidak boleh memuat nilai isian. Kalau URL berubah jadi ?email=..., method-nya masih get. Catat pola yang benar di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum form dipakai pengunjung.</p>",
+     "source": "MDN — form method",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#method",
+     "sourceSnippet": "The HTTP method to submit the form with.",
+     "source2": "MDN — HTMLFormElement",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Choose method POST for Sensitive Data",
+     "desc": "How to use method post on a Clincoo form so passwords and personal data do not land in the URL, history, or referer logs.",
+     "content": "<p class=\"mb-4\">method=\"get\" puts every field in the query string. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> login, contact, and upload forms use method=\"post\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">When get still makes sense</h2><p class=\"mb-4\">Get fits a search that may be shared and bookmarked. Do not put a token, password, or email in a get form. action should be an HTTPS URL on a domain you control.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Post and enctype</h2><p class=\"mb-4\">A normal form only needs method=\"post\". If there is a file input, add enctype=\"multipart/form-data\". Without it the file is not sent. The submit control must be type=\"submit\" inside the form.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the URL after submit</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> send a trial form. The address bar must not contain field values. If the URL becomes ?email=..., the method is still get. Write the correct pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before visitors use the form.</p>",
+     "source": "MDN — form method",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#method",
+     "sourceSnippet": "The HTTP method to submit the form with.",
+     "source2": "MDN — HTMLFormElement",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  }
  ]
 };

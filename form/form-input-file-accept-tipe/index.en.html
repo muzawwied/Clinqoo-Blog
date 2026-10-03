@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Limit File Types with accept — Clincoo Docs</title>
+<meta name="description" content="How to use accept on a file input in a Clincoo form so the file dialog filters images or PDFs, without treating that as a security check.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/">
+<link rel="canonical" href="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Limit File Types with accept — Clincoo Docs">
+<meta property="og:description" content="How to use accept on a file input in a Clincoo form so the file dialog filters images or PDFs, without treating that as a security check.">
+<meta property="og:url" content="https://docs.clincoo.buzz/form/form-input-file-accept-tipe/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Limit File Types with accept — Clincoo Docs">
+<meta name="twitter:description" content="How to use accept on a file input in a Clincoo form so the file dialog filters images or PDFs, without treating that as a security check.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Limit File Types with accept", "description": "How to use accept on a file input in a Clincoo form so the file dialog filters images or PDFs, without treating that as a security check.", "mainEntityOfPage": "https://docs.clincoo.buzz/form/form-input-file-accept-tipe/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/form/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">HTML Forms</p>
+<h1 class="seo-title">How to Limit File Types with accept</h1>
+<div class="seo-body">
+<p class="mb-4">The accept attribute only helps the file dialog. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> still check type and size on the server, because someone can change the chosen file.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">List the allowed types</h2><p class="mb-4">For images: accept="image/png,image/jpeg,image/webp". For a single PDF: accept="application/pdf,.pdf". Do not write accept="*" if you only want images. Add a label that states the limit, for example “PNG or JPEG, max 2 MB”.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">accept is not a security fence</h2><p class="mb-4">The browser can ignore the filter. Script should reject other types before upload, and the server repeats the check. Do not render a raw file name without escaping.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test the preview</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the file picker. The list should favor the allowed types. Try another file via “all files” if the browser allows it, and confirm the form rejects it with a message next to the input.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
