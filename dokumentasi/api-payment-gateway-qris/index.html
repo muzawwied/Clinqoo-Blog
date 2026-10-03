@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumentasi API Payment Gateway QRIS (ClincooPay) — Clincoo Blog</title>
+<meta name="description" content="Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<link rel="canonical" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dokumentasi API Payment Gateway QRIS (ClincooPay) — Clincoo Blog">
+<meta property="og:description" content="Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo.">
+<meta property="og:url" content="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dokumentasi API Payment Gateway QRIS (ClincooPay) — Clincoo Blog">
+<meta name="twitter:description" content="Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo.">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="stylesheet" href="/assets/seo.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Dokumentasi API Payment Gateway QRIS (ClincooPay)","description":"Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo.","mainEntityOfPage":"https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dokumentasi</p>
+<h1 class="seo-title">Dokumentasi API Payment Gateway QRIS (ClincooPay)</h1>
+<div class="seo-body">
+<p class="mb-4">ClincooPay adalah payment gateway bawaan Clincoo: pembeli membayar lewat QRIS, saldo masuk ke dashboard proyekmu, dan kamu bisa mencairkannya kapan pun. Artikel ini adalah dokumentasi resmi API-nya untuk situs yang kamu deploy dari <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Alur besar integrasi</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Aktifkan Pembayaran di Pengaturan proyekmu, lalu salin <b>pay_key</b> (berawalan <span class="font-mono text-sm">clc_pay_</span>).</li><li class="mb-1">Situsmu memanggil <span class="font-mono text-sm">POST /api/pay</span> untuk membuat transaksi QRIS.</li><li class="mb-1">Pembeli diarahkan ke halaman bayar resmi Clincoo, atau kamu menampilkan QR sendiri.</li><li class="mb-1">Status dicek lewat <span class="font-mono text-sm">GET /api/pay?action=status</span> sampai lunas.</li><li class="mb-1">Saat dibayar, Clincoo mengirim webhook ke URL yang kamu daftarkan.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ringkasan endpoint</h2><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Endpoint</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Fungsi</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Autentikasi</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"create"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Membuat transaksi QRIS baru</td><td class="border border-gray-200 px-3 py-2 text-gray-700">pay_key (publik)</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">GET /api/pay?action=status</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Cek status transaksi</td><td class="border border-gray-200 px-3 py-2 text-gray-700">pay_key (publik)</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"activate"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Aktifkan gateway untuk proyek</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Login Clincoo</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">GET /api/pay?action=config</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Status, pay_key, dan saldo</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Login Clincoo</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"withdraw"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Ajukan penarikan saldo</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Login Clincoo</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"transactions"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Log 25 transaksi terakhir</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Login Clincoo</td></tr></tbody></table></div><p class="mb-4">Semua endpoint berada di <span class="font-mono text-sm">https://app.clincoo.buzz/api/pay</span>. Pay_key aman dipakai di frontend karena hanya bisa membuat transaksi dan membaca status — kredensial gateway sebenarnya tetap di server Clincoo.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Membuat transaksi QRIS</h2><p class="mb-4">Kirim permintaan POST dari situs deploy-mu tanpa perlu login:</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>POST https://app.clincoo.buzz/api/pay
+Content-Type: application/json
+
+{
+  "action": "create",
+  "key": "clc_pay_....",
+  "amount": 25000,
+  "description": "Paket A"
+}</code></pre><p class="mb-4">Parameter:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Field</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Wajib</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Keterangan</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">key</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Ya</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Pay_key proyekmu, contoh clc_pay_....</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">amount</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Ya</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Integer rupiah, Rp 1.000 sampai Rp 100.000.000</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">description</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Tidak</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Keterangan transaksi, maksimal 100 karakter</td></tr></tbody></table></div><p class="mb-4">Contoh respons sukses:</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>{
+  "success": true,
+  "order_id": "clincoo....",
+  "checkout_url": "https://app.clincoo.buzz/pay/?order_id=clincoo....&amp;key=clc_pay_....",
+  "amount": 25000,
+  "qr_image": "https://api.qrserver.com/v1/create-qr-code/?...",
+  "qr_string": "&lt;payload QRIS&gt;",
+  "total_payment": 25415,
+  "expires_at": "2026-10-03T09:00:00.000Z",
+  "is_sandbox": false
+}</code></pre><p class="mb-4"><b>total_payment</b> adalah nominal yang benar-benar dibayar pembeli (nominal + biaya QRIS). Respons <span class="font-mono text-sm">503 gateway_not_ready</span> berarti QRIS server sedang menyiapkan diri — tampilkan pesan itu apa adanya.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cara termudah: pakai halaman bayar resmi</h2><p class="mb-4">Setelah create berhasil, cukup alihkan pembeli ke <b>checkout_url</b>. Halaman bayar resmi Clincoo sudah menampilkan QR, total tagihan, cek status otomatis, dan halaman sukses — kamu tidak perlu membuat halaman bayar sendiri.</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>async function buatBayaran(amount) {
+  const r = await fetch('https://app.clincoo.buzz/api/pay', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action: 'create', key: 'clc_pay_....', amount, description: 'Pembayaran' })
+  });
+  const d = await r.json();
+  if (d.success) window.location.href = d.checkout_url;
+}</code></pre><p class="mb-4">Kalau kamu ingin tampilan bayar khusus, alternatifnya: tampilkan <b>qr_image</b> di tag img (atau render qr_string sendiri), lalu polling status seperti di bawah.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek status transaksi</h2><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>GET https://app.clincoo.buzz/api/pay?action=status&amp;key=clc_pay_....&amp;order_id=clincoo....
+
+{ "success": true, "status": "paid", "amount": 25000, "total_payment": 25415 }</code></pre><p class="mb-4">Nilai status yang mungkin:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Status</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Arti</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">pending</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Menunggu pembayaran; QR masih aktif</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">paid</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Lunas — saldo masuk ke dashboard proyek</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">expired</td><td class="border border-gray-200 px-3 py-2 text-gray-700">QR kedaluwarsa atau dibatalkan</td></tr></tbody></table></div><p class="mb-4">Lakukan polling tiap 3-5 detik sampai status paid, lalu arahkan pembeli ke halaman sukses. Server hanya mengecek ke gateway maksimal satu kali per 4 detik untuk tiap transaksi, jadi polling lebih cepat dari itu tidak memberi hasil baru.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Webhook pembayaran</h2><p class="mb-4">Setiap transaksi berubah jadi paid, Clincoo mengirim notifikasi POST ke URL webhook proyekmu (daftarkan di Pengaturan &gt; Webhook):</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>{
+  "event": "payment.paid",
+  "order_id": "clincoo....",
+  "amount": 25000,
+  "description": "Paket A",
+  "status": "paid",
+  "paid_at": "2026-10-03T09:00:00.000Z"
+}</code></pre><p class="mb-4">Selalu cocokkan order_id ke sistemmu sebelum mengaktifkan pesanan. Halaman sukses untuk pembeli tetap perlu dibuat di situsmu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Dashboard pemilik proyek</h2><p class="mb-4">Aksi berikut butuh login Clincoo dan field project_id:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Aksi</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Hasil</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">config</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Status aktif, pay_key, saldo tersedia, total masuk, total dicairkan</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">summary</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Ringkasan saldo singkat</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">transactions</td><td class="border border-gray-200 px-3 py-2 text-gray-700">25 transaksi terakhir</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">withdraw</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Penarikan saldo, minimum Rp 10.000, maksimum saldo tersedia</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">withdrawals</td><td class="border border-gray-200 px-3 py-2 text-gray-700">25 riwayat penarikan</td></tr></tbody></table></div><p class="mb-4">Semua bisa dilakukan dari halaman <b>Pengaturan &gt; Pembayaran</b> di dashboard tanpa menyentuh API. Butuh bantuan? Cek <a href="https://blog.clincoo.buzz/bantuan/faq-clinqoo/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">FAQ</a> atau <a href="https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Masalah Umum</a>.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

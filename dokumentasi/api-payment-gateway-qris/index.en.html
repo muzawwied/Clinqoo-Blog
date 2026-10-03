@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"blog.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QRIS Payment Gateway API Reference (ClincooPay) — Clincoo Blog</title>
+<meta name="description" content="The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/">
+<link rel="canonical" href="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QRIS Payment Gateway API Reference (ClincooPay) — Clincoo Blog">
+<meta property="og:description" content="The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.">
+<meta property="og:url" content="https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html">
+<meta property="og:site_name" content="Clincoo Blog">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QRIS Payment Gateway API Reference (ClincooPay) — Clincoo Blog">
+<meta name="twitter:description" content="The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="stylesheet" href="/assets/seo.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"QRIS Payment Gateway API Reference (ClincooPay)","description":"The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.","mainEntityOfPage":"https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/index.en.html","author":{"@type":"Organization","name":"Clincoo"},"publisher":{"@type":"Organization","name":"Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/index.en.html">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Documentation</p>
+<h1 class="seo-title">QRIS Payment Gateway API Reference (ClincooPay)</h1>
+<div class="seo-body">
+<p class="mb-4">ClincooPay is the built-in Clincoo payment gateway: buyers pay with QRIS, the balance lands in your project dashboard, and you can withdraw it anytime. This is the official API reference for sites deployed from <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Integration overview</h2><ol class="list-decimal pl-6 mb-4 space-y-1"><li class="mb-1">Activate Payments in your project Settings, then copy your <b>pay_key</b> (starts with <span class="font-mono text-sm">clc_pay_</span>).</li><li class="mb-1">Your site calls <span class="font-mono text-sm">POST /api/pay</span> to create a QRIS transaction.</li><li class="mb-1">The buyer is sent to the official Clincoo checkout page, or you render the QR yourself.</li><li class="mb-1">Your site polls <span class="font-mono text-sm">GET /api/pay?action=status</span> until the payment clears.</li><li class="mb-1">When paid, Clincoo sends a webhook to your registered URL.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Endpoint summary</h2><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Endpoint</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Purpose</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Auth</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"create"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Create a new QRIS transaction</td><td class="border border-gray-200 px-3 py-2 text-gray-700">pay_key (public)</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">GET /api/pay?action=status</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Check transaction status</td><td class="border border-gray-200 px-3 py-2 text-gray-700">pay_key (public)</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"activate"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Activate the gateway for a project</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Clincoo login</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">GET /api/pay?action=config</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Status, pay_key, and balance</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Clincoo login</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"withdraw"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Request a balance withdrawal</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Clincoo login</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">POST /api/pay {action:"transactions"}</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Last 25 transactions</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Clincoo login</td></tr></tbody></table></div><p class="mb-4">All endpoints live at <span class="font-mono text-sm">https://app.clincoo.buzz/api/pay</span>. The pay_key is safe to use in your frontend — it can only create transactions and read status; the real gateway credentials stay on Clincoo servers.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Creating a QRIS transaction</h2><p class="mb-4">Send a POST request from your deployed site — no login needed:</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>POST https://app.clincoo.buzz/api/pay
+Content-Type: application/json
+
+{
+  "action": "create",
+  "key": "clc_pay_....",
+  "amount": 25000,
+  "description": "Plan A"
+}</code></pre><p class="mb-4">Parameters:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Field</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Required</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Notes</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">key</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Yes</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Your project pay_key, e.g. clc_pay_....</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">amount</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Yes</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Integer rupiah, Rp 1,000 to Rp 100,000,000</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">description</td><td class="border border-gray-200 px-3 py-2 text-gray-700">No</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Transaction note, up to 100 characters</td></tr></tbody></table></div><p class="mb-4">Example success response:</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>{
+  "success": true,
+  "order_id": "clincoo....",
+  "checkout_url": "https://app.clincoo.buzz/pay/?order_id=clincoo....&amp;key=clc_pay_....",
+  "amount": 25000,
+  "qr_image": "https://api.qrserver.com/v1/create-qr-code/?...",
+  "qr_string": "&lt;QRIS payload&gt;",
+  "total_payment": 25415,
+  "expires_at": "2026-10-03T09:00:00.000Z",
+  "is_sandbox": false
+}</code></pre><p class="mb-4"><b>total_payment</b> is what the buyer actually pays (amount + QRIS fee). A <span class="font-mono text-sm">503 gateway_not_ready</span> response means the QRIS server is still activating — surface that message as-is.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Easiest path: use the official checkout</h2><p class="mb-4">After a successful create, simply send the buyer to <b>checkout_url</b>. The official Clincoo checkout page shows the QR, the total bill, automatic status checks, and a success page — you do not need to build your own checkout.</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>async function createPayment(amount) {
+  const r = await fetch('https://app.clincoo.buzz/api/pay', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action: 'create', key: 'clc_pay_....', amount, description: 'Payment' })
+  });
+  const d = await r.json();
+  if (d.success) window.location.href = d.checkout_url;
+}</code></pre><p class="mb-4">If you want a custom checkout instead: display <b>qr_image</b> in an img tag (or render qr_string yourself), then poll for status as below.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Checking transaction status</h2><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>GET https://app.clincoo.buzz/api/pay?action=status&amp;key=clc_pay_....&amp;order_id=clincoo....
+
+{ "success": true, "status": "paid", "amount": 25000, "total_payment": 25415 }</code></pre><p class="mb-4">Possible status values:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Status</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Meaning</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">pending</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Awaiting payment; the QR is still active</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">paid</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Cleared — balance added to your project dashboard</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">expired</td><td class="border border-gray-200 px-3 py-2 text-gray-700">QR expired or canceled</td></tr></tbody></table></div><p class="mb-4">Poll every 3-5 seconds until the status is paid, then show your success page. The server checks the gateway at most once every 4 seconds per transaction, so faster polling returns nothing new.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Payment webhook</h2><p class="mb-4">Whenever a transaction becomes paid, Clincoo POSTs a notification to your project webhook URL (register it under Settings &gt; Webhook):</p><pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs overflow-x-auto mb-4"><code>{
+  "event": "payment.paid",
+  "order_id": "clincoo....",
+  "amount": 25000,
+  "description": "Plan A",
+  "status": "paid",
+  "paid_at": "2026-10-03T09:00:00.000Z"
+}</code></pre><p class="mb-4">Always match the order_id against your system before fulfilling the order. The buyer-facing success page still lives on your site.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Owner dashboard</h2><p class="mb-4">These actions require a Clincoo login and a project_id field:</p><div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Action</th><th class="border border-gray-200 px-3 py-2 bg-gray-50 text-left font-bold text-gray-900">Result</th></tr></thead><tbody><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">config</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Active status, pay_key, available balance, total paid, total withdrawn</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">summary</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Short balance summary</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">transactions</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Last 25 transactions</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">withdraw</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Withdraw funds, minimum Rp 10,000, up to available balance</td></tr><tr><td class="border border-gray-200 px-3 py-2 font-medium text-gray-900">withdrawals</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Last 25 withdrawal records</td></tr></tbody></table></div><p class="mb-4">Everything here is also available from the <b>Settings &gt; Payments</b> page in the dashboard without touching the API. Need help? See the <a href="https://blog.clincoo.buzz/bantuan/faq-clinqoo/index.en.html" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">FAQ</a> or <a href="https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/index.en.html" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Common Issues</a>.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Blog</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

@@ -15,7 +15,7 @@
     document.body.appendChild(e);
   }
   var s = document.createElement('script');
-  s.src = 'data_clinqoo.js?v=6';
+  s.src = 'data_clinqoo.js?v=7';
   s.onload = loadExtra;
   s.onerror = loadExtra;
   document.body.appendChild(s);

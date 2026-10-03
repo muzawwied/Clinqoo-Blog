@@ -47,3 +47,11 @@ body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Rob
 .seo-body table.border-collapse { border-collapse:collapse; }
 .seo-body th, .seo-body td { border:1px solid #e5e7eb; padding:0.5rem 0.75rem; text-align:left; }
 .seo-body thead.bg-gray-50, .seo-body th { background:#f9fafb; }
+
+/* Blok kode dalam artikel */
+.seo-body pre { background:#f9fafb; border:1px solid #e5e7eb; border-radius:0.5rem; padding:1rem; margin:0 0 1rem; overflow-x:auto; font-size:0.8rem; line-height:1.6; }
+.seo-body pre code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:#111827; white-space:pre; }
+.seo-body code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:0.875em; }
+.seo-body .rounded-lg { border-radius:0.5rem; }
+.seo-body .p-4 { padding:1rem; }
+.seo-body .font-mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }

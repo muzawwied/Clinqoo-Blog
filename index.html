@@ -42,51 +42,32 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="theme-color" content="#ffffff">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Clincoo Blog",
-    "url": "https://blog.clincoo.buzz/",
-    "description": "Artikel, panduan, dan tips resmi seputar Clincoo.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://blog.clincoo.buzz/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@1.41.0"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gray: { 100: '#f3f4f6', 200: '#e5e7eb', 300: '#d1d5db', 500: '#6b7280', 900: '#111827' }
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body { -webkit-tap-highlight-color: transparent; }
-    .hide-scrollbar::-webkit-scrollbar { display: none; }
-    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    #sidebar { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-    #sidebarOverlay { transition: opacity 0.3s ease; }
-    .fade-in { animation: fadeIn 0.35s ease-out; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes skeletonPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-    .drop-in { animation: dropIn 0.18s ease-out; }
-    @keyframes dropIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
-    .skeleton-card { animation: skeletonPulse 1.4s ease-in-out infinite; }
-  </style>
-
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Clincoo Blog — Daftar Artikel","url":"https://blog.clincoo.buzz/","description":"Artikel resmi Clincoo: panduan memulai, dokumentasi fitur, pusat bantuan, dan dokumen legal akun.","mainEntity":{"@type":"ItemList","numberOfItems":13,"itemListElement":[{"@type":"ListItem","position":1,"name":"Selamat Datang di Clincoo","description":"Pengenalan singkat Clincoo dan peta jalan dari nol sampai situs pertamamu tayang di internet.","url":"https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/"},{"@type":"ListItem","position":2,"name":"Asisten AI Clincoo","description":"Kemampuan asisten AI di setiap proyek: mengelola file, terminal, pencarian web, deploy, dan batasannya.","url":"https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/"},{"@type":"ListItem","position":3,"name":"Paket dan Harga Clincoo","description":"Struktur paket Starter, Pro, dan Bisnis: kuota deploy, kolaborator, pesan AI, domain, dan cara upgrade.","url":"https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/"},{"@type":"ListItem","position":4,"name":"Kolaborasi Tim di Clincoo","description":"Cara mengundang anggota tim, kuota kolaborator tiap paket, dan kebiasaan kerja tim yang rapi.","url":"https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/"},{"@type":"ListItem","position":5,"name":"Pertanyaan yang Sering Diajukan (FAQ)","description":"Jawaban cepat untuk pertanyaan paling umum seputar akun, paket, AI, kolaborasi, dan deploy di Clincoo.","url":"https://blog.clincoo.buzz/bantuan/faq-clinqoo/"},{"@type":"ListItem","position":6,"name":"Masalah Umum dan Cara Mengatasinya","description":"Tabel ringkas gejala → penyebab → solusi, plus penjelasan detail untuk masalah yang paling sering dialami.","url":"https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/"},{"@type":"ListItem","position":7,"name":"Cara Membaca Error Console di Preview","description":"Tata cara membuka konsol browser, membedakan error dan warning, lalu menelusuri file yang bermasalah di preview Clincoo.","url":"https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/"},{"@type":"ListItem","position":8,"name":"Cara Minta Bantuan AI Saat Stuck","description":"Pola permintaan yang membuat asisten AI Clincoo menjawab tepat: satu masalah, file terkait, gejala, dan hasil yang diharapkan.","url":"https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/"},{"@type":"ListItem","position":9,"name":"Cara Merapikan Struktur Folder Proyek","description":"Tata cara menata index.html, css, js, dan gambar supaya jalur relatif tidak patah saat preview maupun deploy Clincoo.","url":"https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/"},{"@type":"ListItem","position":10,"name":"Syarat dan Ketentuan Penggunaan Clincoo","description":"Aturan penggunaan layanan Clincoo: akun, konten pengguna, pembayaran langganan, batasan layanan, dan penangguhan akun.","url":"https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/"},{"@type":"ListItem","position":11,"name":"Kebijakan Privasi Clincoo","description":"Bagaimana Clincoo mengumpulkan, memakai, menyimpan, dan melindungi datamu — beserta hak-hakmu atas data tersebut.","url":"https://blog.clincoo.buzz/legal/kebijakan-privasi/"},{"@type":"ListItem","position":12,"name":"Cara Mengekspor Data Akun","description":"Langkah meminta salinan data akun dan proyek Clincoo sebelum pindah alat atau sekadar arsip pribadi.","url":"https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/"},{"@type":"ListItem","position":13,"name":"Cara Menghapus Akun dan Proyek","description":"Tata cara menghapus proyek, mengosongkan sampah, lalu menutup akun Clincoo dari zona bahaya beserta akibatnya.","url":"https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/"}]}}</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"ItemList",
+  "description":"Artikel resmi Clincoo: panduan memulai, dokumentasi fitur, pusat bantuan, dan legal.",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Selamat Datang di Clincoo","url":"https://blog.clincoo.buzz/mulai/selamat-datang-di-clinqoo/"},
+    {"@type":"ListItem","position":2,"name":"Cara Membuat Proyek dari Template","url":"https://blog.clincoo.buzz/mulai/cara-buat-proyek-dari-template/"},
+    {"@type":"ListItem","position":3,"name":"Cara Menyimpan File dan Mengecek Live Preview","url":"https://blog.clincoo.buzz/mulai/cara-simpan-dan-cek-live-preview/"},
+    {"@type":"ListItem","position":4,"name":"Cara Deploy Situs Pertama dari Editor","url":"https://blog.clincoo.buzz/mulai/cara-deploy-situs-pertama/"},
+    {"@type":"ListItem","position":1,"name":"Asisten AI Clincoo","url":"https://blog.clincoo.buzz/dokumentasi/asisten-ai-clinqoo/"},
+    {"@type":"ListItem","position":2,"name":"Paket dan Harga Clincoo","url":"https://blog.clincoo.buzz/dokumentasi/paket-dan-harga-clinqoo/"},
+    {"@type":"ListItem","position":3,"name":"Kolaborasi Tim di Clincoo","url":"https://blog.clincoo.buzz/dokumentasi/kolaborasi-tim/"},
+    {"@type":"ListItem","position":4,"name":"Cara Memakai Terminal di Editor Clincoo","url":"https://blog.clincoo.buzz/dokumentasi/cara-pakai-terminal-di-editor/"},
+    {"@type":"ListItem","position":5,"name":"Cara Mengatur Variabel Lingkungan Proyek","url":"https://blog.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/"},
+    {"@type":"ListItem","position":6,"name":"Dokumentasi API Payment Gateway QRIS (ClincooPay)","url":"https://blog.clincoo.buzz/dokumentasi/api-payment-gateway-qris/"},
+    {"@type":"ListItem","position":1,"name":"Pertanyaan yang Sering Diajukan (FAQ)","url":"https://blog.clincoo.buzz/bantuan/faq-clinqoo/"},
+    {"@type":"ListItem","position":2,"name":"Masalah Umum dan Cara Mengatasinya","url":"https://blog.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/"},
+    {"@type":"ListItem","position":3,"name":"Cara Membaca Error Console di Preview","url":"https://blog.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/"},
+    {"@type":"ListItem","position":4,"name":"Cara Minta Bantuan AI Saat Stuck","url":"https://blog.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/"},
+    {"@type":"ListItem","position":5,"name":"Cara Merapikan Struktur Folder Proyek","url":"https://blog.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/"},
+    {"@type":"ListItem","position":1,"name":"Syarat dan Ketentuan Penggunaan Clincoo","url":"https://blog.clincoo.buzz/legal/syarat-dan-ketentuan/"},
+    {"@type":"ListItem","position":2,"name":"Kebijakan Privasi Clincoo","url":"https://blog.clincoo.buzz/legal/kebijakan-privasi/"},
+    {"@type":"ListItem","position":3,"name":"Cara Mengekspor Data Akun","url":"https://blog.clincoo.buzz/legal/cara-mengekspor-data-akun/"},
+    {"@type":"ListItem","position":4,"name":"Cara Menghapus Akun dan Proyek","url":"https://blog.clincoo.buzz/legal/cara-menghapus-akun-dan-proyek/"}
+  ]
+}</script>
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
   <script>
@@ -174,7 +155,7 @@
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span id="footerText">Seluruh hak cipta dilindungi.</span>
 </footer>
-<script src="loader.js?v=13"></script>
+<script src="loader.js?v=14"></script>
 <script>if (window.lucide) lucide.createIcons();</script>
 </body>
 </html>
