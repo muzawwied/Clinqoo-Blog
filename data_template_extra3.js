@@ -26,6 +26,14 @@
       }
     }
   }
+,
+  {
+    "id": "template-cek-lang-html-setelah-salin",
+    "langs": {
+      "id": {"title": "Cek atribut lang pada html setelah Menyalin Template Clincoo", "desc": "Template bahasa Inggris yang disalin apa adanya membuat pembaca layar salah mengucapkan teks Indonesia.", "content": "<p class=\"mb-4\">Di editor.clincoo.buzz, template demo sering membawa html lang=en. Teks Indonesia tetap tertinggal di atribut itu.</p><p class=\"mb-4\">Ganti lang ke id pada halaman Indonesia, dan en pada halaman English. Jangan andalkan terjemahan visual saja.</p><p class=\"mb-4\">Minta AI mencari lang= di seluruh salinan. Minta daftar berkas, bukan rewrite massal.</p><p class=\"mb-4\">Uji pratinjau di app.clincoo.buzz dengan pembaca layar. Catat pasangan bahasa di blog.clincoo.buzz.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Editor resmi Clincoo", "source2": "Clincoo App", "source3": "Clincoo Blog"},
+      "en": {"title": "Check the html lang attribute after copying a Clincoo template", "desc": "An English template copied as-is makes screen readers mispronounce Indonesian text.", "content": "<p class=\"mb-4\">On editor.clincoo.buzz, demo templates often ship with html lang=en. Indonesian text is left under that attribute.</p><p class=\"mb-4\">Set lang to id on Indonesian pages and en on English pages. Do not rely on visual translation alone.</p><p class=\"mb-4\">Ask AI to find lang= across the copy. Ask for a file list, not a mass rewrite.</p><p class=\"mb-4\">Test the preview on app.clincoo.buzz with a screen reader. Note the language pair on blog.clincoo.buzz.</p>", "source": "Clincoo", "sourceUrl": "https://editor.clincoo.buzz/", "sourceSnippet": "Official Clincoo editor", "source2": "Clincoo App", "source3": "Clincoo Blog"}
+    }
+  }
 ];
   var b = window.countryDataFiles && window.countryDataFiles["template"];
   if (b && b.articles) b.articles = b.articles.concat(extra);
