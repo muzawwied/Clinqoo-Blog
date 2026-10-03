@@ -181,5 +181,151 @@ window.countryDataFiles["dialog"] = {
     }
    }
   }
- ]
+ ,
+  {
+   "id": "dialog-tangani-event-cancel",
+   "langs": {
+    "id": {
+     "title": "Cara Tangani Event cancel saat Escape Menutup dialog",
+     "desc": "Tata cara memakai event cancel di dialog Clincoo supaya Escape bisa dicegah jika form belum disimpan.",
+     "content": "<p class=\"mb-4\">Menekan Escape pada dialog modal memicu event cancel sebelum jendela tertutup. Tanpa penangan, isian form di editor bisa hilang meski pengguna hanya ingin tetap di jendela itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Dengarkan cancel, lalu cegah jika perlu</h2><p class=\"mb-4\">Pasang addEventListener('cancel', ...) pada elemen dialog. Jika ada perubahan yang belum disimpan, panggil preventDefault() supaya dialog tetap terbuka. Jangan cegah Escape pada dialog konfirmasi singkat yang tidak menyimpan data.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan cancel dan close</h2><p class=\"mb-4\">cancel terjadi saat penutupan dibatalkan oleh pengguna, misalnya Escape. close terjadi setelah dialog benar-benar tertutup, termasuk lewat close(). Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan draf dulu, baru izinkan cancel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Buka preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, ketik di form, lalu tekan Escape. Dialog harus tetap ada dan fokus tidak loncat ke halaman belakang.</p>",
+     "source": "MDN — HTMLDialogElement: cancel event",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/cancel_event",
+     "sourceSnippet": "The cancel event fires on dialog when the user requests to dismiss it, such as with the Escape key. Calling preventDefault() keeps the dialog open.",
+     "source2": "MDN — The Dialog element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Handle the cancel Event When Escape Closes a dialog",
+     "desc": "How to use the cancel event on a Clincoo dialog so Escape can be blocked when a form is still unsaved.",
+     "content": "<p class=\"mb-4\">Pressing Escape on a modal dialog fires the cancel event before the window closes. Without a handler, form input in the editor can disappear even when the user only meant to stay in that window.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Listen for cancel, then prevent it if needed</h2><p class=\"mb-4\">Add addEventListener('cancel', ...) on the dialog element. If there are unsaved changes, call preventDefault() so the dialog stays open. Do not block Escape on a short confirm dialog that does not save data.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate cancel from close</h2><p class=\"mb-4\">cancel happens when the user dismisses the dialog, for example with Escape. close happens after the dialog has actually closed, including via close(). In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> save a draft first, then allow cancel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">Open the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, type in the form, then press Escape. The dialog should remain and focus should not jump to the page behind it.</p>",
+     "source": "MDN — HTMLDialogElement: cancel event",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/cancel_event",
+     "sourceSnippet": "The cancel event fires on dialog when the user requests to dismiss it, such as with the Escape key. Calling preventDefault() keeps the dialog open.",
+     "source2": "MDN — The Dialog element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "dialog-hindari-invalidstateerror",
+   "langs": {
+    "id": {
+     "title": "Cara Hindari InvalidStateError saat showModal Dipanggil Ulang",
+     "desc": "Tata cara cek dialog.open sebelum showModal di Clincoo supaya klik ganda tidak melempar InvalidStateError.",
+     "content": "<p class=\"mb-4\">showModal() hanya boleh dipanggil jika dialog belum terbuka. Klik ganda pada tombol “Hapus” sering memanggilnya dua kali dan browser melempar InvalidStateError.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek open sebelum membuka</h2><p class=\"mb-4\">Sebelum showModal(), baca properti open. Jika sudah true, jangan panggil lagi. Nonaktifkan tombol pemicu selama dialog terbuka, lalu aktifkan kembali di event close.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan bungkus dengan try tanpa pesan</h2><p class=\"mb-4\">try/catch boleh menangkap InvalidStateError, tetapi pengguna tetap perlu tahu kenapa jendela tidak berubah. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tampilkan satu dialog saja, bukan tumpukan modal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji klik cepat</h2><p class=\"mb-4\">Di preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik tombol pembuka dua kali cepat. Konsol harus bersih dan fokus tetap di dalam dialog.</p>",
+     "source": "MDN — HTMLDialogElement.showModal()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "sourceSnippet": "If the dialog is already open, calling showModal() throws an InvalidStateError DOMException.",
+     "source2": "MDN — HTMLDialogElement.open",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/open",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Avoid InvalidStateError When showModal Is Called Again",
+     "desc": "How to check dialog.open before showModal in Clincoo so a double click does not throw InvalidStateError.",
+     "content": "<p class=\"mb-4\">showModal() may be called only when the dialog is not already open. A double click on a Delete button often calls it twice and the browser throws InvalidStateError.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check open before showing</h2><p class=\"mb-4\">Before showModal(), read the open property. If it is already true, do not call it again. Disable the trigger button while the dialog is open, then enable it again on the close event.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not swallow the error without a message</h2><p class=\"mb-4\">try/catch may catch InvalidStateError, but the user still needs to know why the window did not change. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> show one dialog, not a stack of modals.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a fast click</h2><p class=\"mb-4\">In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, click the opener twice quickly. The console should stay clean and focus should remain inside the dialog.</p>",
+     "source": "MDN — HTMLDialogElement.showModal()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "sourceSnippet": "If the dialog is already open, calling showModal() throws an InvalidStateError DOMException.",
+     "source2": "MDN — HTMLDialogElement.open",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/open",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "dialog-closedby-light-dismiss",
+   "langs": {
+    "id": {
+     "title": "Cara Pakai closedby supaya dialog Bisa Ditutup Ringan",
+     "desc": "Tata cara mengatur atribut closedby pada dialog Clincoo supaya klik luar atau tombol tutup mengikuti niat desain.",
+     "content": "<p class=\"mb-4\">Tidak semua dialog boleh tertutup hanya karena klik jatuh di luar panel. Atribut closedby memberi isyarat browser apakah dialog boleh light-dismiss.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih nilai yang sesuai</h2><p class=\"mb-4\">any mengizinkan penutupan dari luar, closerequest membatasi ke permintaan tutup seperti Escape, dan none menolak penutupan ringan. Dialog hapus data di Clincoo sebaiknya none atau closerequest, lalu sediakan tombol Batal yang memanggil close().</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan klik backdrop saja</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tetap sediakan tombol bertuliskan Batal. Pengguna keyboard tidak mengklik backdrop.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di dua lebar</h2><p class=\"mb-4\">Cek preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> di ponsel dan desktop. Klik di luar panel hanya boleh menutup dialog yang memang dirancang light-dismiss.</p>",
+     "source": "MDN — HTMLDialogElement.closedBy",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/closedBy",
+     "sourceSnippet": "The closedby attribute of the dialog element controls whether the dialog can be dismissed by a light dismiss user action.",
+     "source2": "MDN — The Dialog element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Use closedby So a dialog Can Light-Dismiss",
+     "desc": "How to set the closedby attribute on a Clincoo dialog so an outside click or close request matches the design intent.",
+     "content": "<p class=\"mb-4\">Not every dialog should close just because a click lands outside the panel. The closedby attribute tells the browser whether the dialog may light-dismiss.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick the matching value</h2><p class=\"mb-4\">any allows dismissal from outside, closerequest limits it to a close request such as Escape, and none rejects light dismissal. A delete-data dialog in Clincoo should use none or closerequest, then provide a Cancel button that calls close().</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a backdrop click alone</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> still provide a button labeled Cancel. Keyboard users do not click the backdrop.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test both widths</h2><p class=\"mb-4\">Check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview on phone and desktop. A click outside the panel should close only a dialog designed for light dismiss.</p>",
+     "source": "MDN — HTMLDialogElement.closedBy",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/closedBy",
+     "sourceSnippet": "The closedby attribute of the dialog element controls whether the dialog can be dismissed by a light dismiss user action.",
+     "source2": "MDN — The Dialog element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "dialog-beda-show-dan-showmodal",
+   "langs": {
+    "id": {
+     "title": "Cara Pilih show atau showModal untuk dialog",
+     "desc": "Tata cara membedakan show dan showModal di Clincoo supaya jendela non-modal tidak mengunci seluruh halaman.",
+     "content": "<p class=\"mb-4\">show() membuka dialog tanpa mode modal: halaman belakang tetap bisa diklik. showModal() mengunci interaksi dan menutup dengan Escape. Salah pilih membuat palet warna di editor terasa macet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai show untuk panel samping</h2><p class=\"mb-4\">Tips singkat, palet, atau catatan yang boleh dibiarkan terbuka saat pengguna mengedit cocok dengan show(). Jangan berharap fokus terkunci. Tutup dengan close() dari tombol yang jelas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai showModal untuk keputusan</h2><p class=\"mb-4\">Konfirmasi hapus, ganti domain, atau buang draf harus showModal(). Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jangan campur keduanya pada elemen yang sama tanpa menutup dulu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek interaksi latar</h2><p class=\"mb-4\">Di preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, dialog non-modal harus mengizinkan klik di editor. Dialog modal tidak boleh.</p>",
+     "source": "MDN — HTMLDialogElement.show()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/show",
+     "sourceSnippet": "The show() method displays the dialog modelessly. showModal() displays it as a modal dialog and throws if it is already open.",
+     "source2": "MDN — HTMLDialogElement.showModal()",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Choose show or showModal for a dialog",
+     "desc": "How to tell show from showModal in Clincoo so a non-modal window does not lock the whole page.",
+     "content": "<p class=\"mb-4\">show() opens a dialog without modal mode: the page behind stays clickable. showModal() locks interaction and closes with Escape. Picking the wrong one makes a color palette in the editor feel stuck.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use show for a side panel</h2><p class=\"mb-4\">A short tip, palette, or note that may stay open while the user edits fits show(). Do not expect focus to be trapped. Close it with close() from a clearly labeled button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use showModal for a decision</h2><p class=\"mb-4\">Confirm delete, change domain, or discard a draft must use showModal(). In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> do not mix both on the same element without closing first.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check background interaction</h2><p class=\"mb-4\">In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, a non-modal dialog should allow clicks in the editor. A modal dialog must not.</p>",
+     "source": "MDN — HTMLDialogElement.show()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/show",
+     "sourceSnippet": "The show() method displays the dialog modelessly. showModal() displays it as a modal dialog and throws if it is already open.",
+     "source2": "MDN — HTMLDialogElement.showModal()",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "dialog-kunci-scroll-latar",
+   "langs": {
+    "id": {
+     "title": "Cara Kunci Scroll Latar saat dialog Modal Terbuka",
+     "desc": "Tata cara menahan scroll halaman belakang di Clincoo saat dialog modal terbuka, tanpa mengunci scroll di dalam panel.",
+     "content": "<p class=\"mb-4\">Di ponsel, gestur gulir sering menggeser halaman di belakang dialog meski showModal sudah dipanggil. Pengguna kehilangan konteks form yang sedang diisi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tahan overflow pada html</h2><p class=\"mb-4\">Saat showModal, set overflow hidden pada html atau body, dan simpan posisi scroll. Saat close, kembalikan nilai semula lalu scroll ke posisi itu. Jangan set hidden permanen di stylesheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Biarkan isi dialog menggulir</h2><p class=\"mb-4\">Panel di dalam dialog perlu max-height dan overflow auto. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> form panjang harus tetap bisa digulir di dalam jendela, bukan di halaman belakang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di lebar ponsel</h2><p class=\"mb-4\">Buka preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> selebar 390px. Gulir di luar panel tidak boleh menggerakkan latar. Setelah tutup, halaman kembali ke posisi semula.</p>",
+     "source": "MDN — HTMLDialogElement.showModal()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "sourceSnippet": "A modal dialog should prevent interaction with the rest of the page. Overflow on the document can still scroll behind it unless the page locks scroll while the dialog is open.",
+     "source2": "MDN — overflow CSS",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Lock Background Scroll While a Modal dialog Is Open",
+     "desc": "How to hold background page scroll in Clincoo while a modal dialog is open, without locking scroll inside the panel.",
+     "content": "<p class=\"mb-4\">On a phone, a scroll gesture often moves the page behind a dialog even after showModal. The user loses the form context they were filling in.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hold overflow on html</h2><p class=\"mb-4\">When showModal runs, set overflow hidden on html or body and store the scroll position. On close, restore the previous value and scroll back. Do not set hidden permanently in the stylesheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Let the dialog content scroll</h2><p class=\"mb-4\">The panel inside the dialog needs max-height and overflow auto. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> a long form must still scroll inside the window, not on the page behind it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test at phone width</h2><p class=\"mb-4\">Open the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview at 390px. Scrolling outside the panel must not move the background. After close, the page returns to its previous position.</p>",
+     "source": "MDN — HTMLDialogElement.showModal()",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+     "sourceSnippet": "A modal dialog should prevent interaction with the rest of the page. Overflow on the document can still scroll behind it unless the page locks scroll while the dialog is open.",
+     "source2": "MDN — overflow CSS",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+     "source3": "Clincoo App",
+     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  }
+]
 };
