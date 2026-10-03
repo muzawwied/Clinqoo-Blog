@@ -42,6 +42,36 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@1.41.0"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray: { 100: '#f3f4f6', 200: '#e5e7eb', 300: '#d1d5db', 500: '#6b7280', 900: '#111827' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { -webkit-tap-highlight-color: transparent; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    #sidebar { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    #sidebarOverlay { transition: opacity 0.3s ease; }
+    .fade-in { animation: fadeIn 0.35s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes skeletonPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    .drop-in { animation: dropIn 0.18s ease-out; }
+    @keyframes dropIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    .skeleton-card { animation: skeletonPulse 1.4s ease-in-out infinite; }
+  </style>
+
+
   <script type="application/ld+json">{
   "@context":"https://schema.org",
   "@type":"ItemList",
