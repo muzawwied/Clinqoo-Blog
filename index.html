@@ -60,6 +60,7 @@
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@1.41.0"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -108,26 +109,58 @@
     </div>
     <span class="text-xl font-bold tracking-tight text-gray-900 ml-2">Clincoo Blog</span>
     <button onclick="toggleSidebar()" class="ml-auto p-1.5 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      <i data-lucide="x" class="w-5 h-5"></i>
     </button>
   </div>
-  <div class="p-4 flex flex-col gap-1 flex-grow overflow-y-auto hide-scrollbar">
-    <button onclick="goHomeFromMenu()" class="w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-[0.5rem] text-left transition-colors">
-      <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-      <span id="ctaHomeText" class="font-medium text-gray-700 text-sm">Beranda</span>
+  <div class="flex flex-col gap-0.5 flex-grow overflow-y-auto hide-scrollbar py-2 pb-4">
+    <h3 class="px-6 pt-3 text-[12px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Menu</h3>
+    <button onclick="goHomeFromMenu()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
+      <i data-lucide="home" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors"></i>
+      <span id="ctaHomeText" class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">Beranda</span>
     </button>
-    <div class="h-px bg-gray-100 w-full my-1"></div>
-    <button onclick="toggleDrop('countryDrop')" class="w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-[0.5rem] text-left transition-colors">
-      <svg class="w-5 h-5 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
-      <span id="ctaCatText" class="font-medium text-gray-700 text-sm flex-1">Kategori</span>
-      <svg id="countryDropIcon" class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <button onclick="toggleDrop('countryDrop')" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
+      <i data-lucide="folder" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span id="ctaCatText" class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Kategori</span>
+      <i data-lucide="chevron-down" id="countryDropIcon" class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0"></i>
     </button>
-    <div id="countryDrop" class="hidden flex-col gap-0.5 max-h-[60vh] overflow-y-auto pl-3 pr-1"></div>
-    <div class="h-px bg-gray-100 w-full my-1"></div>
-    <a href="https://www.clincoo.buzz/" class="w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-[0.5rem] text-left transition-colors">
-      <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      <span class="font-medium text-gray-700 text-sm">Tentang</span>
+    <div id="countryDrop" class="hidden flex-col gap-0.5 max-h-[45vh] overflow-y-auto py-1"></div>
+    <button onclick="toggleDrop('langDrop')" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
+      <i data-lucide="languages" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span id="ctaLangText" class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Indonesia</span>
+      <i data-lucide="chevron-down" id="langDropIcon" class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0"></i>
+    </button>
+    <div id="langDrop" class="hidden flex-col gap-0.5 py-1"></div>
+    <div class="h-px bg-gray-100 w-10 mx-6 my-3"></div>
+    <h3 class="px-6 text-[12px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Jelajahi Clincoo</h3>
+    <a href="https://www.clincoo.buzz/" target="_blank" rel="noopener" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <i data-lucide="globe" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Situs</span>
+      <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-300 flex-shrink-0"></i>
     </a>
+    <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <i data-lucide="smartphone" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Aplikasi</span>
+      <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-300 flex-shrink-0"></i>
+    </a>
+    <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <i data-lucide="code" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Editor</span>
+      <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-300 flex-shrink-0"></i>
+    </a>
+    <a href="https://wallet.clincoo.buzz/" target="_blank" rel="noopener" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <i data-lucide="wallet" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Wallet</span>
+      <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-300 flex-shrink-0"></i>
+    </a>
+    <a href="https://www.clincoo.buzz/" target="_blank" rel="noopener" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
+      <i data-lucide="info" class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0"></i>
+      <span id="ctaAboutText" class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Tentang</span>
+      <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-300 flex-shrink-0"></i>
+    </a>
+  </div>
+  <div class="px-6 py-4 border-t border-gray-100">
+    <p class="text-[11px] text-gray-400">blog.clincoo.buzz</p>
+    <p class="text-[11px] text-gray-400 mt-0.5">&copy; 2026 Clincoo</p>
   </div>
 </aside>
 
@@ -141,5 +174,6 @@
   &copy; 2026 Clincoo. <span id="footerText">Seluruh hak cipta dilindungi.</span>
 </footer>
 <script src="loader.js?v=5"></script>
+<script>if (window.lucide) lucide.createIcons();</script>
 </body>
 </html>

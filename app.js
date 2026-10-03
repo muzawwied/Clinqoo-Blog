@@ -96,7 +96,7 @@ function updateSidebarUI() {
     langDrop.innerHTML = '';
     for (const key in languages) {
       const btn = document.createElement('button');
-      btn.className = 'text-left px-3 py-1.5 rounded-md text-sm transition-colors ' + (currentLang === key ? 'bg-gray-100 font-bold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.className = 'text-left px-14 py-2 rounded-[0.5rem] text-sm transition-colors ' + (currentLang === key ? 'bg-gray-100 font-bold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
       btn.innerText = languages[key].nativeName;
       btn.onclick = () => changeLanguage(key);
       langDrop.appendChild(btn);
@@ -113,7 +113,7 @@ function updateSidebarUI() {
       const artCount = c.articles.length;
       const btn = document.createElement('button');
       const isActive = currentCountryId === cId && currentView === 'country';
-      btn.className = 'w-full flex items-center justify-between gap-2 px-3 py-2 rounded-[0.5rem] text-left transition-colors text-sm ' + (isActive ? 'bg-gray-100 font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.className = 'w-full flex items-center justify-between gap-2 px-14 py-2 rounded-[0.5rem] text-left transition-colors text-sm ' + (isActive ? 'bg-gray-100 font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
       btn.innerHTML = '<span class="line-clamp-1">' + name + '</span><span class="text-xs text-gray-400 flex-shrink-0">' + artCount + ' ' + u.articles + '</span>';
       btn.onclick = () => selectCountry(cId);
       countryDropEl.appendChild(btn);
@@ -170,13 +170,10 @@ function goToAbout() {
 const appContainer = () => document.getElementById('app-container') || document.getElementById('app');
 
 function makeHeader(backFn, backLabel) {
-  return '<header class="sticky top-0 pt-3 pb-0 z-40 bg-white border-b border-gray-100">' +
-    '<div class="flex items-center gap-2">' +
-    '<button onclick="toggleSidebar()" class="p-2 -ml-2 text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none transition-colors flex-shrink-0">' +
-    '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h10 M4 18h16"/></svg></button>' +
-    '<div class="flex items-center text-gray-500 cursor-pointer hover:text-gray-900 transition-colors" onclick="' + backFn + '">' +
+  return '<header class="sticky top-0 py-3 z-40 bg-white border-b border-gray-100">' +
+    '<div class="flex items-center text-gray-500 cursor-pointer hover:text-gray-900 transition-colors -ml-2 p-2 rounded-md hover:bg-gray-100" onclick="' + backFn + '">' +
     '<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>' +
-    '<span class="font-medium text-sm">' + backLabel + '</span></div></div></header>';
+    '<span class="font-medium text-sm">' + backLabel + '</span></div></header>';
 }
 
 // BERANDA — semua artikel campur
