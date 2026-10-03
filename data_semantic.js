@@ -239,6 +239,122 @@ window.countryDataFiles["semantic"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "semantic-details-dan-summary",
+   "langs": {
+    "id": {
+     "title": "Cara Buka-Tutup Konten dengan details dan summary",
+     "desc": "Tata cara memakai details dan summary di halaman Clincoo supaya bagian panjang bisa dilipat tanpa JavaScript.",
+     "content": "<p class=\"mb-4\">Blok FAQ atau catatan lanjutan sering membuat halaman Clincoo terasa panjang. Elemen details plus summary melipat isi itu dan tetap bisa dibuka keyboard, tanpa onclick pada div.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis ringkasan yang bisa diklik</h2><p class=\"mb-4\">summary adalah label yang terlihat: “Cara reset password”, bukan “Klik di sini”. Satu details hanya punya satu summary, dan summary harus anak langsung details.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan skrip untuk buka-tutup</h2><p class=\"mb-4\">Browser sudah mengurus atribut open. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cukup tulis details, summary, lalu paragraf jawaban. Tambah open hanya jika bagian itu harus terbuka saat halaman dimuat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview ponsel</h2><p class=\"mb-4\">Buka preview di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, ketuk summary, lalu pastikan isi tidak mendorong tombol aksi keluar layar. Tab dari summary harus masuk ke tautan di dalam details.</p>",
+     "source": "MDN — The Details disclosure element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+     "sourceSnippet": "The details element creates a disclosure widget in which information is visible only when the widget is toggled into an open state.",
+     "source2": "MDN — The Disclosure Summary element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Toggle Content with details and summary",
+     "desc": "How to use details and summary on a Clincoo page so long sections can collapse without JavaScript.",
+     "content": "<p class=\"mb-4\">FAQ blocks and extra notes often make a Clincoo page feel long. The details and summary elements collapse that content and stay keyboard-operable, without an onclick on a div.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write a summary people can activate</h2><p class=\"mb-4\">summary is the visible label: “How to reset a password”, not “Click here”. Each details has one summary, and that summary must be a direct child of details.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a script to toggle</h2><p class=\"mb-4\">The browser already handles the open attribute. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write details, then summary, then the answer paragraphs. Add open only when that section should be expanded on load.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the phone preview</h2><p class=\"mb-4\">Open the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, tap the summary, and confirm the content does not push the action button off screen. Tabbing from the summary should reach links inside details.</p>",
+     "source": "MDN — The Details disclosure element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+     "sourceSnippet": "The details element creates a disclosure widget in which information is visible only when the widget is toggled into an open state.",
+     "source2": "MDN — The Disclosure Summary element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "semantic-fieldset-dan-legend",
+   "langs": {
+    "id": {
+     "title": "Cara Kelompokkan Input dengan fieldset dan legend",
+     "desc": "Tata cara membungkus radio atau checkbox berelasi dengan fieldset dan legend supaya nama kelompok terbaca bantuan layar.",
+     "content": "<p class=\"mb-4\">Tiga radio “Paket” tanpa nama kelompok hanya terdengar sebagai opsi terpisah. fieldset mengelompokkan input yang satu pertanyaan, dan legend menamai pertanyaan itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu pertanyaan, satu fieldset</h2><p class=\"mb-4\">Letakkan legend sebagai anak pertama fieldset. Tulis pertanyaan lengkap: “Pilih paket”, lalu tiap opsi punya label sendiri yang menempel ke input. Jangan jadikan legend tombol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan ganti dengan div berbingkai</h2><p class=\"mb-4\">Border CSS tidak memberi nama kelompok. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pakai fieldset untuk pilihan metode bayar, ukuran, atau setuju syarat. disabled pada fieldset menonaktifkan semua kontrol di dalamnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan keyboard</h2><p class=\"mb-4\">Di preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, pindah antar radio dengan panah, bukan hanya Tab. Legend harus tetap terlihat saat fieldset di-scroll di layar sempit.</p>",
+     "source": "MDN — The Field Set element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset",
+     "sourceSnippet": "The fieldset element is used to group several controls as well as labels within a web form.",
+     "source2": "MDN — The Legend element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Group Inputs with fieldset and legend",
+     "desc": "How to wrap related radios or checkboxes with fieldset and legend so the group name is announced.",
+     "content": "<p class=\"mb-4\">Three “Plan” radios without a group name are announced as separate options. fieldset groups inputs that answer one question, and legend names that question.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One question, one fieldset</h2><p class=\"mb-4\">Put legend as the first child of fieldset. Write the full question: “Choose a plan”, then give each option its own label tied to the input. Do not turn the legend into a button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not replace it with a bordered div</h2><p class=\"mb-4\">A CSS border does not name the group. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> use fieldset for payment method, size, or terms agreement. disabled on the fieldset disables every control inside it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test with the keyboard</h2><p class=\"mb-4\">In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, move between radios with the arrow keys, not only Tab. The legend should stay visible when the fieldset scrolls on a narrow screen.</p>",
+     "source": "MDN — The Field Set element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset",
+     "sourceSnippet": "The fieldset element is used to group several controls as well as labels within a web form.",
+     "source2": "MDN — The Legend element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "semantic-strong-bukan-tebal-semu",
+   "langs": {
+    "id": {
+     "title": "Cara Pakai strong dan em, Bukan Tebal Semu",
+     "desc": "Tata cara menandai kata penting dengan strong atau em di Clincoo, bukan span yang hanya diubah font-weight.",
+     "content": "<p class=\"mb-4\">Tebal visual dan penekanan makna bukan hal yang sama. strong menandai bagian penting atau peringatan. em menandai penekanan saat dibaca. span dengan font-weight hanya mengubah tampilan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih elemen sesuai makna</h2><p class=\"mb-4\">Pakai strong untuk “wajib” pada syarat, atau peringatan hapus data. Pakai em untuk kata yang berubah arti jika ditekankan. Jangan membungkus satu paragraf penuh dengan strong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">CSS boleh, makna tetap di HTML</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kamu boleh menata strong agar tidak terlalu berat, tetapi jangan menggantinya dengan class .bold pada span. b dan i hanya untuk kekhasan tipografi, misalnya istilah asing, bukan untuk peringatan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca ulang tanpa gaya</h2><p class=\"mb-4\">Di preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, pastikan kalimat tetap jelas jika tebal diabaikan. Jika makna hilang tanpa warna atau tebal, pindahkan makna itu ke teks, bukan ke gaya.</p>",
+     "source": "MDN — The Strong Importance element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong",
+     "sourceSnippet": "The strong element indicates that its contents have strong importance, seriousness, or urgency.",
+     "source2": "MDN — The Emphasis element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Use strong and em Instead of Fake Bold",
+     "desc": "How to mark important words with strong or em in Clincoo, not a span that only changes font-weight.",
+     "content": "<p class=\"mb-4\">Visual bold and semantic emphasis are not the same. strong marks importance or a warning. em marks stress when the sentence is read. A span with font-weight only changes appearance.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick the element for the meaning</h2><p class=\"mb-4\">Use strong for “required” in terms, or a delete-data warning. Use em for a word whose meaning shifts when stressed. Do not wrap a whole paragraph in strong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">CSS is fine, meaning stays in HTML</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> you may style strong so it is not too heavy, but do not replace it with a .bold class on a span. b and i are for typographic convention, such as a foreign term, not for warnings.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reread without styles</h2><p class=\"mb-4\">In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, confirm the sentence still works if bold is ignored. If the meaning disappears without color or weight, move that meaning into the text, not the style.</p>",
+     "source": "MDN — The Strong Importance element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong",
+     "sourceSnippet": "The strong element indicates that its contents have strong importance, seriousness, or urgency.",
+     "source2": "MDN — The Emphasis element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "semantic-caption-dan-th-tabel",
+   "langs": {
+    "id": {
+     "title": "Cara Beri Judul Tabel dengan caption dan th",
+     "desc": "Tata cara menyusun tabel data di Clincoo dengan caption dan th supaya judul kolom tidak hilang saat dibaca bantuan layar.",
+     "content": "<p class=\"mb-4\">Tabel harga yang hanya memakai td terlihat rapi, tetapi judul kolom tidak terhubung ke sel. th menandai header, caption menamai tabel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nama tabel dulu, header kemudian</h2><p class=\"mb-4\">Letakkan caption sebagai anak pertama table. Tulis apa yang dibandingkan: “Perbandingan paket Clincoo”, bukan “Tabel 1”. Baris header memakai th dengan scope=\"col\". Header baris memakai scope=\"row\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan susun layout dengan table</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> table hanya untuk data berulang. Kartu fitur dua kolom lebih tepat memakai grid, bukan table tanpa header.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek scroll di layar sempit</h2><p class=\"mb-4\">Bungkus table dengan elemen yang overflow-x auto, lalu buka preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> selebar ponsel. Caption harus tetap terlihat tanpa memotong header.</p>",
+     "source": "MDN — The Table Caption element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption",
+     "sourceSnippet": "The caption element specifies the caption (or title) of a table.",
+     "source2": "MDN — The Table Header element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Title a Table with caption and th",
+     "desc": "How to build a data table in Clincoo with caption and th so column titles are not lost to assistive tech.",
+     "content": "<p class=\"mb-4\">A pricing table made only of td cells can look tidy while column titles stay disconnected from the cells. th marks a header, and caption names the table.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Name the table first, then the headers</h2><p class=\"mb-4\">Put caption as the first child of table. Say what is compared: “Clincoo plan comparison”, not “Table 1”. Header cells use th with scope=\"col\". Row headers use scope=\"row\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not lay out the page with a table</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> table is for repeating data. A two-column feature card belongs in grid, not a table without headers.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check scroll on a narrow screen</h2><p class=\"mb-4\">Wrap the table in an element with overflow-x auto, then open the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview at phone width. The caption should stay visible without clipping the header.</p>",
+     "source": "MDN — The Table Caption element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption",
+     "sourceSnippet": "The caption element specifies the caption (or title) of a table.",
+     "source2": "MDN — The Table Header element",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
   }
 ]
 };

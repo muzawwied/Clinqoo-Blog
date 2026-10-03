@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
-  function loadSemantic() {
+  function loadDialog() {
     var e = document.createElement('script');
-    e.src = 'data_semantic.js?v=1';
+    e.src = 'data_dialog.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadSemantic() {
+    var e = document.createElement('script');
+    e.src = 'data_semantic.js?v=2';
+    e.onload = loadDialog;
+    e.onerror = loadDialog;
     document.body.appendChild(e);
   }
   function loadExtra() {
