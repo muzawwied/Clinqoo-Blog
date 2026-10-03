@@ -67,9 +67,9 @@
     <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Kategori</span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0 rotate-180" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
     </button>
-    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+    <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
 <a href="/mulai/" class="w-full flex items-center px-14 py-2 text-left transition-colors text-sm text-gray-600 hover:bg-gray-50">
   <span class="line-clamp-1">Memulai</span>
 </a>
@@ -102,42 +102,47 @@
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/asisten-ai-clinqoo/">
+<div class="relative mb-4">
+  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+  <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="Cari artikel..." oninput="filterCards(this)" autocomplete="off" spellcheck="false">
+</div>
+<a data-card data-title="Asisten AI Clincoo" data-desc="Kemampuan asisten AI di setiap proyek: mengelola file, terminal, pencarian web, deploy, dan batasannya." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/asisten-ai-clinqoo/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Asisten AI Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Kemampuan asisten AI di setiap proyek: mengelola file, terminal, pencarian web, deploy, dan batasannya.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/paket-dan-harga-clinqoo/">
+<a data-card data-title="Paket dan Harga Clincoo" data-desc="Struktur paket Starter, Pro, dan Bisnis: kuota deploy, kolaborator, pesan AI, domain, dan cara upgrade." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/paket-dan-harga-clinqoo/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Paket dan Harga Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Struktur paket Starter, Pro, dan Bisnis: kuota deploy, kolaborator, pesan AI, domain, dan cara upgrade.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/kolaborasi-tim/">
+<a data-card data-title="Kolaborasi Tim di Clincoo" data-desc="Cara mengundang anggota tim, kuota kolaborator tiap paket, dan kebiasaan kerja tim yang rapi." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/kolaborasi-tim/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Kolaborasi Tim di Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Cara mengundang anggota tim, kuota kolaborator tiap paket, dan kebiasaan kerja tim yang rapi.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-pakai-terminal-di-editor/">
+<a data-card data-title="Cara Memakai Terminal di Editor Clincoo" data-desc="Tata cara menjalankan perintah Linux di terminal Clincoo: cek folder proyek, lihat file, dan hentikan proses tanpa menghapus pekerjaan." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-pakai-terminal-di-editor/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Memakai Terminal di Editor Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Tata cara menjalankan perintah Linux di terminal Clincoo: cek folder proyek, lihat file, dan hentikan proses tanpa menghapus pekerjaan.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-atur-variabel-lingkungan/">
+<a data-card data-title="Cara Mengatur Variabel Lingkungan Proyek" data-desc="Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-atur-variabel-lingkungan/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Mengatur Variabel Lingkungan Proyek</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Tata cara menyimpan API key sebagai env var di Clincoo, memisahkannya dari kode publik, dan menguji bahwa nilainya terbaca.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/api-payment-gateway-qris/">
+<a data-card data-title="Dokumentasi API Payment Gateway QRIS (ClincooPay)" data-desc="Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/api-payment-gateway-qris/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Dokumentasi</span></div>
   <h2 class="text-lg font-bold text-gray-900">Dokumentasi API Payment Gateway QRIS (ClincooPay)</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Referensi resmi ClincooPay: buat transaksi QRIS dari situs deploy-mu via /api/pay, cek status, webhook pembayaran, dan penarikan saldo.</p>
 </a>
+<div id="noResult" class="text-center py-12 text-gray-500" style="display:none">Tidak ada artikel ditemukan.</div>
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span>Seluruh hak cipta dilindungi.</span>
@@ -156,6 +161,19 @@ function toggleSidebar() {
     overlay.classList.add('opacity-0');
     setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
   }
+}
+function filterCards(input) {
+  var q = (input.value || '').toLowerCase();
+  var any = false;
+  var cards = document.querySelectorAll('[data-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var el = cards[i];
+    var ok = (el.getAttribute('data-title') || '').toLowerCase().indexOf(q) > -1 ||
+             (el.getAttribute('data-desc') || '').toLowerCase().indexOf(q) > -1;
+    el.style.display = ok ? '' : 'none';
+    if (ok) any = true;
+  }
+  document.getElementById('noResult').style.display = any ? 'none' : '';
 }
 function toggleDrop() {
   var drop = document.getElementById('catDrop');

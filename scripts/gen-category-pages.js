@@ -10,11 +10,13 @@ const d = sandbox.window.countryDataFiles;
 const t = {
   id: {
     menu: 'Menu', home: 'Beranda', categories: 'Kategori', about: 'Tentang', close: 'Tutup menu',
-    openMenu: 'Buka menu', count: n => n + ' artikel', closeTxt: 'Seluruh hak cipta dilindungi.'
+    openMenu: 'Buka menu', searchPh: 'Cari artikel...', noResult: 'Tidak ada artikel ditemukan.',
+    closeTxt: 'Seluruh hak cipta dilindungi.'
   },
   en: {
     menu: 'Menu', home: 'Home', categories: 'Categories', about: 'About', close: 'Close menu',
-    openMenu: 'Open menu', count: n => n + ' articles', closeTxt: 'All rights reserved.'
+    openMenu: 'Open menu', searchPh: 'Search articles...', noResult: 'No articles found.',
+    closeTxt: 'All rights reserved.'
   }
 };
 
@@ -30,7 +32,7 @@ function build(catId, lang) {
   const cards = arts.map(a => {
     const al = a.langs[lang] || a.langs.id;
     const href = isId ? `/${catId}/${a.id}/` : `/${catId}/${a.id}/index.en.html`;
-    return `<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="${href}">
+    return `<a data-card data-title="${esc(al.title)}" data-desc="${esc(al.desc)}" class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="${href}">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">${esc(name)}</span></div>
   <h2 class="text-lg font-bold text-gray-900">${esc(al.title)}</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
@@ -135,9 +137,9 @@ function build(catId, lang) {
     <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">${esc(L.categories)}</span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0 rotate-180" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
     </button>
-    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+    <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
 ${catLinks}
     </div>
     <div class="h-px bg-gray-100 w-10 mx-6 my-3"></div>
@@ -159,7 +161,12 @@ ${catLinks}
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
+<div class="relative mb-4">
+  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+  <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="${esc(L.searchPh)}" oninput="filterCards(this)" autocomplete="off" spellcheck="false">
+</div>
 ${cards}
+<div id="noResult" class="text-center py-12 text-gray-500" style="display:none">${esc(L.noResult)}</div>
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span>${esc(L.closeTxt)}</span>
@@ -178,6 +185,19 @@ function toggleSidebar() {
     overlay.classList.add('opacity-0');
     setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
   }
+}
+function filterCards(input) {
+  var q = (input.value || '').toLowerCase();
+  var any = false;
+  var cards = document.querySelectorAll('[data-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var el = cards[i];
+    var ok = (el.getAttribute('data-title') || '').toLowerCase().indexOf(q) > -1 ||
+             (el.getAttribute('data-desc') || '').toLowerCase().indexOf(q) > -1;
+    el.style.display = ok ? '' : 'none';
+    if (ok) any = true;
+  }
+  document.getElementById('noResult').style.display = any ? 'none' : '';
 }
 function toggleDrop() {
   var drop = document.getElementById('catDrop');

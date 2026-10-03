@@ -67,9 +67,9 @@
     <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Categories</span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0 rotate-180" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
     </button>
-    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+    <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
 <a href="/mulai/index.en.html" class="w-full flex items-center px-14 py-2 text-left transition-colors text-sm text-gray-600 hover:bg-gray-50">
   <span class="line-clamp-1">Getting Started</span>
 </a>
@@ -102,42 +102,47 @@
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/asisten-ai-clinqoo/index.en.html">
+<div class="relative mb-4">
+  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+  <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="Search articles..." oninput="filterCards(this)" autocomplete="off" spellcheck="false">
+</div>
+<a data-card data-title="Clinqoo AI Assistant" data-desc="What the AI assistant in every project can do: file management, terminal, web search, deploys, and its limits." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/asisten-ai-clinqoo/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">Clinqoo AI Assistant</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">What the AI assistant in every project can do: file management, terminal, web search, deploys, and its limits.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/paket-dan-harga-clinqoo/index.en.html">
+<a data-card data-title="Clinqoo Plans and Pricing" data-desc="The Starter, Pro, and Business plan structure: deploy quotas, collaborators, AI messages, domains, and how to upgrade." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/paket-dan-harga-clinqoo/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">Clinqoo Plans and Pricing</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">The Starter, Pro, and Business plan structure: deploy quotas, collaborators, AI messages, domains, and how to upgrade.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/kolaborasi-tim/index.en.html">
+<a data-card data-title="Team Collaboration in Clincoo" data-desc="How to invite teammates, collaborator quotas per plan, and habits for working cleanly as a team." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/kolaborasi-tim/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">Team Collaboration in Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to invite teammates, collaborator quotas per plan, and habits for working cleanly as a team.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-pakai-terminal-di-editor/index.en.html">
+<a data-card data-title="How to Use the Terminal in the Clincoo Editor" data-desc="How to run Linux commands in the Clincoo terminal: inspect the project folder, list files, and stop a process without deleting your work." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-pakai-terminal-di-editor/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Use the Terminal in the Clincoo Editor</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to run Linux commands in the Clincoo terminal: inspect the project folder, list files, and stop a process without deleting your work.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
+<a data-card data-title="How to Set Project Environment Variables" data-desc="How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/cara-atur-variabel-lingkungan/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Set Project Environment Variables</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to store an API key as an env var in Clincoo, keep it out of public code, and check that the value is actually read.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/api-payment-gateway-qris/index.en.html">
+<a data-card data-title="QRIS Payment Gateway API Reference (ClincooPay)" data-desc="The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/dokumentasi/api-payment-gateway-qris/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Documentation</span></div>
   <h2 class="text-lg font-bold text-gray-900">QRIS Payment Gateway API Reference (ClincooPay)</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">The official ClincooPay reference: create QRIS transactions from your deployed site via /api/pay, check status, payment webhooks, and balance withdrawals.</p>
 </a>
+<div id="noResult" class="text-center py-12 text-gray-500" style="display:none">No articles found.</div>
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span>All rights reserved.</span>
@@ -156,6 +161,19 @@ function toggleSidebar() {
     overlay.classList.add('opacity-0');
     setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
   }
+}
+function filterCards(input) {
+  var q = (input.value || '').toLowerCase();
+  var any = false;
+  var cards = document.querySelectorAll('[data-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var el = cards[i];
+    var ok = (el.getAttribute('data-title') || '').toLowerCase().indexOf(q) > -1 ||
+             (el.getAttribute('data-desc') || '').toLowerCase().indexOf(q) > -1;
+    el.style.display = ok ? '' : 'none';
+    if (ok) any = true;
+  }
+  document.getElementById('noResult').style.display = any ? 'none' : '';
 }
 function toggleDrop() {
   var drop = document.getElementById('catDrop');

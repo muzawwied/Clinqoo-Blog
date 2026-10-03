@@ -67,9 +67,9 @@
     <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Categories</span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0 rotate-180" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
     </button>
-    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+    <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
 <a href="/mulai/index.en.html" class="w-full flex items-center px-14 py-2 text-left transition-colors text-sm font-semibold text-gray-900">
   <span class="line-clamp-1">Getting Started</span>
 </a>
@@ -89,10 +89,6 @@
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">About</span>
     </a>
   </div>
-  <div class="px-6 py-4 border-t border-gray-100">
-    <p class="text-[11px] text-gray-400">blog.clincoo.buzz</p>
-    <p class="text-[11px] text-gray-400 mt-0.5">&copy; 2026 Clincoo</p>
-  </div>
 </aside>
 
 <header class="sticky top-0 z-40 bg-white border-b border-gray-100 pt-3 pb-4">
@@ -106,48 +102,53 @@
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/selamat-datang-di-clinqoo/index.en.html">
+<div class="relative mb-4">
+  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+  <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="Search articles..." oninput="filterCards(this)" autocomplete="off" spellcheck="false">
+</div>
+<a data-card data-title="Welcome to Clincoo" data-desc="A short introduction to Clincoo and a roadmap from zero to your first site live on the internet." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/selamat-datang-di-clinqoo/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">Welcome to Clincoo</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">A short introduction to Clincoo and a roadmap from zero to your first site live on the internet.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-buat-proyek-dari-template/index.en.html">
+<a data-card data-title="How to Create a Project from a Template" data-desc="How to pick a Clincoo template, replace the text and images, and save your first project without starting from an empty file." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-buat-proyek-dari-template/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Create a Project from a Template</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to pick a Clincoo template, replace the text and images, and save your first project without starting from an empty file.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-simpan-dan-cek-live-preview/index.en.html">
+<a data-card data-title="How to Save a File and Check Live Preview" data-desc="How to save HTML, CSS, and JS in the Clincoo editor and make sure the preview shows the latest version, not an old cache." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-simpan-dan-cek-live-preview/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Save a File and Check Live Preview</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to save HTML, CSS, and JS in the Clincoo editor and make sure the preview shows the latest version, not an old cache.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-deploy-situs-pertama/index.en.html">
+<a data-card data-title="How to Deploy Your First Site from the Editor" data-desc="How to publish a Clincoo project to the internet: check the public files, press deploy, then open the HTTPS URL it produces." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-deploy-situs-pertama/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Deploy Your First Site from the Editor</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to publish a Clincoo project to the internet: check the public files, press deploy, then open the HTTPS URL it produces.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-pasang-domain-kustom/index.en.html">
+<a data-card data-title="How to Attach a Custom Domain" data-desc="How to point your own domain at a deployed Clincoo site: DNS records, wait for propagation, then confirm HTTPS." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-pasang-domain-kustom/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Attach a Custom Domain</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to point your own domain at a deployed Clincoo site: DNS records, wait for propagation, then confirm HTTPS.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-cek-tampilan-di-lebar-ponsel/index.en.html">
+<a data-card data-title="How to Check the Layout at Phone Width" data-desc="How to test a Clincoo site at phone width in the editor preview and on a real device before you deploy." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-cek-tampilan-di-lebar-ponsel/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Check the Layout at Phone Width</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to test a Clincoo site at phone width in the editor preview and on a real device before you deploy.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-buat-halaman-kedua/index.en.html">
+<a data-card data-title="How to Add a Second Page to a Project" data-desc="How to add about.html or a contact page, link it from the home page, and keep relative paths intact in Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/mulai/cara-buat-halaman-kedua/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Getting Started</span></div>
   <h2 class="text-lg font-bold text-gray-900">How to Add a Second Page to a Project</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">How to add about.html or a contact page, link it from the home page, and keep relative paths intact in Clincoo.</p>
 </a>
+<div id="noResult" class="text-center py-12 text-gray-500" style="display:none">No articles found.</div>
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span>All rights reserved.</span>
@@ -166,6 +167,19 @@ function toggleSidebar() {
     overlay.classList.add('opacity-0');
     setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
   }
+}
+function filterCards(input) {
+  var q = (input.value || '').toLowerCase();
+  var any = false;
+  var cards = document.querySelectorAll('[data-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var el = cards[i];
+    var ok = (el.getAttribute('data-title') || '').toLowerCase().indexOf(q) > -1 ||
+             (el.getAttribute('data-desc') || '').toLowerCase().indexOf(q) > -1;
+    el.style.display = ok ? '' : 'none';
+    if (ok) any = true;
+  }
+  document.getElementById('noResult').style.display = any ? 'none' : '';
 }
 function toggleDrop() {
   var drop = document.getElementById('catDrop');

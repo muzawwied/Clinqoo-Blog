@@ -67,9 +67,9 @@
     <button onclick="toggleDrop()" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group text-left">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900 flex-1">Kategori</span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0 rotate-180" id="catDropIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
     </button>
-    <div id="catDrop" class="hidden flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
+    <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in">
 <a href="/mulai/" class="w-full flex items-center px-14 py-2 text-left transition-colors text-sm text-gray-600 hover:bg-gray-50">
   <span class="line-clamp-1">Memulai</span>
 </a>
@@ -102,42 +102,47 @@
   </div>
 </header>
 <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 fade-in">
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/faq-clinqoo/">
+<div class="relative mb-4">
+  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+  <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="Cari artikel..." oninput="filterCards(this)" autocomplete="off" spellcheck="false">
+</div>
+<a data-card data-title="Pertanyaan yang Sering Diajukan (FAQ)" data-desc="Jawaban cepat untuk pertanyaan paling umum seputar akun, paket, AI, kolaborasi, dan deploy di Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/faq-clinqoo/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Pertanyaan yang Sering Diajukan (FAQ)</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Jawaban cepat untuk pertanyaan paling umum seputar akun, paket, AI, kolaborasi, dan deploy di Clincoo.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/masalah-umum-dan-solusinya/">
+<a data-card data-title="Masalah Umum dan Cara Mengatasinya" data-desc="Tabel ringkas gejala → penyebab → solusi, plus penjelasan detail untuk masalah yang paling sering dialami." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/masalah-umum-dan-solusinya/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Masalah Umum dan Cara Mengatasinya</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Tabel ringkas gejala → penyebab → solusi, plus penjelasan detail untuk masalah yang paling sering dialami.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-baca-error-console-di-preview/">
+<a data-card data-title="Cara Membaca Error Console di Preview" data-desc="Tata cara membuka konsol browser, membedakan error dan warning, lalu menelusuri file yang bermasalah di preview Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-baca-error-console-di-preview/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Membaca Error Console di Preview</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Tata cara membuka konsol browser, membedakan error dan warning, lalu menelusuri file yang bermasalah di preview Clincoo.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-minta-bantuan-ai-saat-stuck/">
+<a data-card data-title="Cara Minta Bantuan AI Saat Stuck" data-desc="Pola permintaan yang membuat asisten AI Clincoo menjawab tepat: satu masalah, file terkait, gejala, dan hasil yang diharapkan." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-minta-bantuan-ai-saat-stuck/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Minta Bantuan AI Saat Stuck</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Pola permintaan yang membuat asisten AI Clincoo menjawab tepat: satu masalah, file terkait, gejala, dan hasil yang diharapkan.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-rapikan-struktur-folder-proyek/">
+<a data-card data-title="Cara Merapikan Struktur Folder Proyek" data-desc="Tata cara menata index.html, css, js, dan gambar supaya jalur relatif tidak patah saat preview maupun deploy Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-rapikan-struktur-folder-proyek/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Merapikan Struktur Folder Proyek</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Tata cara menata index.html, css, js, dan gambar supaya jalur relatif tidak patah saat preview maupun deploy Clincoo.</p>
 </a>
-<a class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-melanjutkan-pembayaran-tertunda/">
+<a data-card data-title="Cara Melanjutkan Pembayaran yang Belum Selesai" data-desc="Langkah cepat melanjutkan pesanan QRIS yang tertunda: buka halaman pembayaran, buat ulang kode kedaluwarsa, dan pastikan paket aktif otomatis setelah bayar." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/cara-melanjutkan-pembayaran-tertunda/">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Pusat Bantuan</span></div>
   <h2 class="text-lg font-bold text-gray-900">Cara Melanjutkan Pembayaran yang Belum Selesai</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>
   <p class="text-sm text-gray-500 leading-relaxed">Langkah cepat melanjutkan pesanan QRIS yang tertunda: buka halaman pembayaran, buat ulang kode kedaluwarsa, dan pastikan paket aktif otomatis setelah bayar.</p>
 </a>
+<div id="noResult" class="text-center py-12 text-gray-500" style="display:none">Tidak ada artikel ditemukan.</div>
 </main>
 <footer class="py-6 mt-12 border-t border-gray-200 text-center text-sm text-gray-500 w-full max-w-2xl mx-auto px-4 sm:px-6">
   &copy; 2026 Clincoo. <span>Seluruh hak cipta dilindungi.</span>
@@ -156,6 +161,19 @@ function toggleSidebar() {
     overlay.classList.add('opacity-0');
     setTimeout(function(){ overlay.classList.add('hidden'); }, 300);
   }
+}
+function filterCards(input) {
+  var q = (input.value || '').toLowerCase();
+  var any = false;
+  var cards = document.querySelectorAll('[data-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var el = cards[i];
+    var ok = (el.getAttribute('data-title') || '').toLowerCase().indexOf(q) > -1 ||
+             (el.getAttribute('data-desc') || '').toLowerCase().indexOf(q) > -1;
+    el.style.display = ok ? '' : 'none';
+    if (ok) any = true;
+  }
+  document.getElementById('noResult').style.display = any ? 'none' : '';
 }
 function toggleDrop() {
   var drop = document.getElementById('catDrop');
