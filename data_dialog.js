@@ -327,5 +327,35 @@ window.countryDataFiles["dialog"] = {
     }
    }
   }
+,
+{
+ "id": "dialog-kembalikan-fokus-ke-pemicu",
+ "langs": {
+  "id": {
+   "title": "Cara Kembalikan Fokus ke Tombol yang Membuka Dialog",
+   "desc": "Tata cara menyimpan pemicu dialog Clincoo dan mengembalikan fokus ke tombol itu setelah dialog ditutup.",
+   "content": "<p class=\"mb-4\">Kalau dialog ditutup lalu fokus hilang ke awal halaman, pengguna keyboard harus mengulang tab. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan elemen yang membuka dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan pemicu sebelum showModal</h2><p class=\"mb-4\">Pada klik tombol, simpan document.activeElement ke variabel. Baru panggil dialog.showModal(). Jangan membuka dialog dari skrip tanpa tahu tombol mana yang dipanggil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kembalikan saat close</h2><p class=\"mb-4\">Dengarkan event close. Jika pemicu masih ada di dokumen, panggil focus() padanya. Jangan memindahkan fokus ke body hanya karena dialog sudah tidak tampil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan keyboard</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka dialog dengan Enter, tutup dengan Escape, lalu pastikan fokus kembali ke tombol yang sama — bukan ke tautan logo.</p>",
+   "source": "MDN — HTMLDialogElement",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement",
+   "sourceSnippet": "The HTMLDialogElement interface provides methods to manipulate dialog elements.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Return Focus to the Button That Opened a Dialog",
+   "desc": "How to remember the Clincoo dialog trigger and move focus back to that button after the dialog closes.",
+   "content": "<p class=\"mb-4\">If the dialog closes and focus jumps to the top of the page, keyboard users must tab through everything again. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> store the element that opened the dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Store the trigger before showModal</h2><p class=\"mb-4\">On the button click, save document.activeElement in a variable. Then call dialog.showModal(). Do not open the dialog from a script without knowing which button was used.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Restore it on close</h2><p class=\"mb-4\">Listen for the close event. If the trigger is still in the document, call focus() on it. Do not move focus to body only because the dialog is no longer visible.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test with the keyboard</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the dialog with Enter, close it with Escape, and confirm focus returns to the same button — not the logo link.</p>",
+   "source": "MDN — HTMLDialogElement",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement",
+   "sourceSnippet": "The HTMLDialogElement interface provides methods to manipulate dialog elements.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

@@ -298,5 +298,64 @@ window.countryDataFiles["form"] = {
     }
    }
   }
- ]
+ ,
+{
+ "id": "form-datalist-saran-tanpa-memaksa-opsi",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai datalist untuk Saran tanpa Memaksa Opsi",
+   "desc": "Tata cara menambahkan datalist pada input Clincoo supaya pengunjung dapat saran, tetapi tetap boleh mengetik nilai di luar daftar.",
+   "content": "<p class=\"mb-4\">Select memaksa satu opsi. Kalau pengunjung boleh mengetik sendiri, pakai input plus datalist di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hubungkan list dan id</h2><p class=\"mb-4\">Beri datalist id unik, misalnya id=\"kota-saran\". Input memakai list=\"kota-saran\". Setiap saran adalah option value. Jangan mengulang id datalist di halaman yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tetap validasi di server</h2><p class=\"mb-4\">Datalist hanya saran di browser. Pengguna tetap bisa mengirim teks bebas. Di form kontak Clincoo, cek panjang dan karakter di sisi yang menerima data, bukan hanya di daftar option.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ketik dua huruf: saran harus muncul, dan nilai di luar daftar tetap bisa dikirim. Label tetap terhubung lewat for.</p>",
+   "source": "MDN — The datalist element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist",
+   "sourceSnippet": "The datalist element contains a set of option elements that represent the permissible or suggested options available to choose from within other controls.",
+   "source2": "MDN — input list attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use datalist for Suggestions Without Forcing an Option",
+   "desc": "How to add a datalist to a Clincoo input so visitors get suggestions but can still type a value outside the list.",
+   "content": "<p class=\"mb-4\">A select forces one option. If the visitor may type their own value, use an input plus datalist in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Connect list and id</h2><p class=\"mb-4\">Give the datalist a unique id, for example id=\"kota-saran\". The input uses list=\"kota-saran\". Each suggestion is an option value. Do not reuse that datalist id on the same page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Still validate on the server</h2><p class=\"mb-4\">A datalist is only a browser suggestion. People can still submit free text. On a Clincoo contact form, check length and characters where the data is received, not only in the option list.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> type two letters: suggestions should appear, and a value outside the list should still submit. Keep the label connected with for.</p>",
+   "source": "MDN — The datalist element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist",
+   "sourceSnippet": "The datalist element contains a set of option elements that represent the permissible or suggested options available to choose from within other controls.",
+   "source2": "MDN — input list attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "form-hidden-bukan-tempat-rahasia",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai Input Hidden tanpa Menyimpan Rahasia",
+   "desc": "Tata cara memakai input hidden di form Clincoo untuk penanda tampilan, bukan untuk kunci API atau token yang tidak boleh terlihat.",
+   "content": "<p class=\"mb-4\">Input hidden tetap ada di HTML dan bisa dibaca siapa saja yang membuka sumber halaman. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pakai ia hanya untuk penanda yang aman bocor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Yang boleh disimpan</h2><p class=\"mb-4\">Contoh yang aman: name=\"sumber\" value=\"halaman-harga\" supaya kamu tahu form mana yang dikirim. Jangan taruh kunci pembayaran, sandi, atau token sesi di value hidden.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nama harus unik dan method POST</h2><p class=\"mb-4\">Beri name yang tidak bentrok dengan isian lain. Form yang membawa data ini sebaiknya method post, supaya nilai tidak menempel di URL saat dibagikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek sebelum deploy</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka sumber preview dan cari type=\"hidden\". Kalau ada string yang tidak boleh publik, pindahkan ke variabel lingkungan di server, bukan ke halaman.</p>",
+   "source": "MDN — input type hidden",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden",
+   "sourceSnippet": "input elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted.",
+   "source2": "MDN — HTMLFormElement",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use a Hidden Input Without Storing a Secret",
+   "desc": "How to use a hidden input on a Clincoo form for a display marker, not for an API key or a token that must stay private.",
+   "content": "<p class=\"mb-4\">A hidden input is still in the HTML and anyone who views source can read it. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> use it only for a marker that is safe to expose.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">What you may store</h2><p class=\"mb-4\">A safe example: name=\"sumber\" value=\"halaman-harga\" so you know which form was submitted. Do not put a payment key, password, or session token in the hidden value.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Unique name and POST</h2><p class=\"mb-4\">Give it a name that does not clash with another field. A form that carries this value should use method post so the value is not stuck on a shared URL.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check before deploy</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> view the preview source and search for type=\"hidden\". If a string must not be public, move it to a server environment variable, not the page.</p>",
+   "source": "MDN — input type hidden",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden",
+   "sourceSnippet": "input elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted.",
+   "source2": "MDN — HTMLFormElement",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+]
 };

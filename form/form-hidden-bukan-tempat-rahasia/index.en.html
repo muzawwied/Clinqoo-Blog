@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use a Hidden Input Without Storing a Secret — Clincoo Docs</title>
+<meta name="description" content="How to use a hidden input on a Clincoo form for a display marker, not for an API key or a token that must stay private.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/">
+<link rel="canonical" href="https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use a Hidden Input Without Storing a Secret — Clincoo Docs">
+<meta property="og:description" content="How to use a hidden input on a Clincoo form for a display marker, not for an API key or a token that must stay private.">
+<meta property="og:url" content="https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Use a Hidden Input Without Storing a Secret — Clincoo Docs">
+<meta name="twitter:description" content="How to use a hidden input on a Clincoo form for a display marker, not for an API key or a token that must stay private.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Use a Hidden Input Without Storing a Secret", "description": "How to use a hidden input on a Clincoo form for a display marker, not for an API key or a token that must stay private.", "mainEntityOfPage": "https://docs.clincoo.buzz/form/form-hidden-bukan-tempat-rahasia/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/form/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">HTML Forms</p>
+<h1 class="seo-title">How to Use a Hidden Input Without Storing a Secret</h1>
+<div class="seo-body">
+<p class="mb-4">A hidden input is still in the HTML and anyone who views source can read it. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> use it only for a marker that is safe to expose.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">What you may store</h2><p class="mb-4">A safe example: name="sumber" value="halaman-harga" so you know which form was submitted. Do not put a payment key, password, or session token in the hidden value.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Unique name and POST</h2><p class="mb-4">Give it a name that does not clash with another field. A form that carries this value should use method post so the value is not stuck on a shared URL.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check before deploy</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> view the preview source and search for type="hidden". If a string must not be public, move it to a server environment variable, not the page.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

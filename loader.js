@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clinqoo.js + semantic + form) lalu app.js
+// Loader: muat konten blog Clincoo (data_clinqoo.js + semantic + form + dialog + aria) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,16 +7,23 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
-  function loadDialog() {
+  function loadAria() {
     var e = document.createElement('script');
-    e.src = 'data_dialog.js?v=1';
+    e.src = 'data_aria.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
   }
+  function loadDialog() {
+    var e = document.createElement('script');
+    e.src = 'data_dialog.js?v=2';
+    e.onload = loadAria;
+    e.onerror = loadAria;
+    document.body.appendChild(e);
+  }
   function loadForm() {
     var e = document.createElement('script');
-    e.src = 'data_form.js?v=1';
+    e.src = 'data_form.js?v=2';
     e.onload = loadDialog;
     e.onerror = loadDialog;
     document.body.appendChild(e);
