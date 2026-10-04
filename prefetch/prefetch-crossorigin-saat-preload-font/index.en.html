@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Add crossorigin When Preloading a Font — Clincoo Docs</title>
+<meta name="description" content="How to add crossorigin on a font preload in a Clincoo project so the font file is not downloaded twice.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/">
+<link rel="canonical" href="https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Add crossorigin When Preloading a Font — Clincoo Docs">
+<meta property="og:description" content="How to add crossorigin on a font preload in a Clincoo project so the font file is not downloaded twice.">
+<meta property="og:url" content="https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Add crossorigin When Preloading a Font — Clincoo Docs">
+<meta name="twitter:description" content="How to add crossorigin on a font preload in a Clincoo project so the font file is not downloaded twice.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Add crossorigin When Preloading a Font", "description": "How to add crossorigin on a font preload in a Clincoo project so the font file is not downloaded twice.", "inLanguage": "en", "mainEntityOfPage": "https://docs.clincoo.buzz/prefetch/prefetch-crossorigin-saat-preload-font/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/prefetch/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Prefetch</p>
+<h1 class="seo-title">How to Add crossorigin When Preloading a Font</h1>
+<div class="seo-body">
+<p class="mb-4">A font is almost always requested in CORS mode, even when the file is same-origin. A preload without crossorigin does not match the CSS request, so the browser downloads the font again. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> make both requests match before the <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> preview.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Attributes that must be present</h2><p class="mb-4">Use rel=preload, as=font, type=font/woff2, and crossorigin. anonymous is enough for a font. The href must be exactly the url() in @font-face, including the query string.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not preload the whole family</h2><p class="mb-4">Preload only the cut used above the fold, usually one weight and one style. Other weights can stay in CSS. Preloading four font files slows the assets that are actually critical.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Read the Initiator column</h2><p class="mb-4">In the Network panel filter to Font. One URL should be one row. If there are two, compare the CORS mode. Note on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> an href that is not an exact match, then fix it before publish.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
