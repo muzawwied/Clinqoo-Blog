@@ -295,6 +295,122 @@ window.countryDataFiles["csp"] = {
    "source3Url": "https://blog.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "csp-upgrade-insecure-requests",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai upgrade-insecure-requests",
+   "desc": "Tata cara memaksa subresource HTTP di halaman Clincoo naik ke HTTPS supaya campuran protokol tidak memecah pratinjau.",
+   "content": "<p class=\"mb-4\">upgrade-insecure-requests meminta browser menulis ulang URL HTTP menjadi HTTPS sebelum dimuat. Ini menutup peringatan mixed content tanpa mengubah setiap tag satu per satu. Simpan arahan di konfigurasi deploy <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, lalu buka pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan pastikan gambar serta skrip tetap tampil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan anggap ini pengganti script-src</h2><p class=\"mb-4\">Arahan ini hanya menaikkan skema. Host yang boleh memuat skrip tetap diatur script-src. Keduanya dipakai bersama, bukan saling mengganti.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Perbaiki sumber yang tidak punya HTTPS</h2><p class=\"mb-4\">Kalau aset pihak ketiga tidak melayani HTTPS, naikkan skema akan gagal memuat. Ganti sumber atau host sendiri, jangan cabut arahan hanya agar aset lama muncul.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat aset yang masih HTTP</h2><p class=\"mb-4\">Daftar sisa URL HTTP di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum deploy, supaya tim tahu mana yang sengaja dinaikkan dan mana yang harus diganti.</p>",
+   "source": "MDN — upgrade-insecure-requests",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) upgrade-insecure-requests directive instructs user agents to treat all of a site's insecure URLs as though they have been replaced with secure URLs.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#upgrade-insecure-requests",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use upgrade-insecure-requests",
+   "desc": "How to upgrade HTTP subresources on Clincoo pages to HTTPS so mixed content does not break the preview.",
+   "content": "<p class=\"mb-4\">upgrade-insecure-requests asks the browser to rewrite HTTP URLs to HTTPS before they load. That clears mixed-content warnings without editing every tag. Store the directive in the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> deploy config, then open the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview and confirm images and scripts still appear.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not treat it as a script-src replacement</h2><p class=\"mb-4\">This directive only upgrades the scheme. Hosts allowed to load scripts are still set by script-src. Use both together, not as substitutes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fix sources that have no HTTPS</h2><p class=\"mb-4\">If a third-party asset does not serve HTTPS, the upgrade fails to load it. Replace the source or host it yourself. Do not drop the directive just so an old asset appears.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record remaining HTTP assets</h2><p class=\"mb-4\">List leftover HTTP URLs on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before deploy so the team knows which ones are upgraded on purpose and which ones must be replaced.</p>",
+   "source": "MDN — upgrade-insecure-requests",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) upgrade-insecure-requests directive instructs user agents to treat all of a site's insecure URLs as though they have been replaced with secure URLs.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#upgrade-insecure-requests",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-worker-src-batasi-service-worker",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi worker-src pada service worker",
+   "desc": "Tata cara membatasi asal service worker dan worker Clincoo supaya skrip latar tidak didaftarkan dari host lain.",
+   "content": "<p class=\"mb-4\">worker-src mengatur dari mana Worker, SharedWorker, dan service worker boleh dimuat. Tanpa arahan ini, browser bisa jatuh ke script-src atau child-src dan celahnya tidak terlihat. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> izinkan hanya origin sendiri, lalu cek pendaftaran worker di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan blob hanya jika perlu</h2><p class=\"mb-4\">Worker dari string sering butuh blob:. Tambahkan skema itu hanya pada halaman yang benar-benar membuat worker di memori, bukan di seluruh situs.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan script-src saja</h2><p class=\"mb-4\">script-src tidak selalu menutup navigator.serviceWorker.register. Sebut worker-src secara eksplisit supaya laporan pelanggaran menyebut arahan yang tepat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji ulang setelah ganti path</h2><p class=\"mb-4\">Catat path worker di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Path yang pindah membuat registrasi gagal diam-diam kalau kebijakan masih menunjuk file lama.</p>",
+   "source": "MDN — worker-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) worker-src directive specifies valid sources for Worker, SharedWorker, or ServiceWorker scripts.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-worker-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit worker-src for Service Workers",
+   "desc": "How to restrict Clincoo service worker and worker origins so background scripts are not registered from another host.",
+   "content": "<p class=\"mb-4\">worker-src controls where Worker, SharedWorker, and service worker scripts may load. Without it, the browser may fall back to script-src or child-src and the gap stays invisible. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> allow only your own origin, then check worker registration in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include blob only if needed</h2><p class=\"mb-4\">Workers built from strings often need blob:. Add that scheme only on pages that really create an in-memory worker, not site-wide.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on script-src alone</h2><p class=\"mb-4\">script-src does not always cover navigator.serviceWorker.register. Name worker-src explicitly so violation reports cite the right directive.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Retest after a path change</h2><p class=\"mb-4\">Record the worker path on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. A moved path fails registration quietly if the policy still points at the old file.</p>",
+   "source": "MDN — worker-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) worker-src directive specifies valid sources for Worker, SharedWorker, or ServiceWorker scripts.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-worker-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-media-src-batasi-audio-video",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi media-src pada audio dan video",
+   "desc": "Tata cara membatasi asal audio dan video Clincoo supaya media tidak ditarik dari host yang tidak disetujui.",
+   "content": "<p class=\"mb-4\">media-src membatasi URL yang boleh dipakai elemen audio dan video. img-src tidak menutup media ini. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> daftarkan CDN video yang dipakai, lalu putar sampel di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan dari img-src</h2><p class=\"mb-4\">Gambar poster boleh lebih longgar daripada file video. Jangan menyalin daftar img-src mentah ke media-src kalau host gambar tidak menyajikan media.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan skema blob untuk rekaman</h2><p class=\"mb-4\">Pratinjau rekaman lokal sering memakai blob:. Tambahkan skema itu hanya pada halaman yang memutar hasil MediaRecorder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat CDN media</h2><p class=\"mb-4\">Simpan host media-src di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya ganti penyedia video tidak memecah pemutaran di produksi.</p>",
+   "source": "MDN — media-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/media-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) media-src directive specifies valid sources for loading media using the audio and video elements.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-media-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit media-src for Audio and Video",
+   "desc": "How to restrict Clincoo audio and video origins so media is not pulled from an unapproved host.",
+   "content": "<p class=\"mb-4\">media-src limits URLs allowed on audio and video elements. img-src does not cover this media. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> list the video CDN you use, then play a sample in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep it separate from img-src</h2><p class=\"mb-4\">Poster images can be looser than video files. Do not copy the img-src list into media-src if image hosts do not serve media.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include the blob scheme for recordings</h2><p class=\"mb-4\">Local recording previews often use blob:. Add that scheme only on pages that play a MediaRecorder result.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record the media CDN</h2><p class=\"mb-4\">Save media-src hosts on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a video-provider change does not break playback in production.</p>",
+   "source": "MDN — media-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/media-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) media-src directive specifies valid sources for loading media using the audio and video elements.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-media-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-manifest-src-batasi-webmanifest",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi manifest-src pada web app manifest",
+   "desc": "Tata cara membatasi asal web app manifest Clincoo supaya nama dan ikon instalasi tidak diambil dari host lain.",
+   "content": "<p class=\"mb-4\">manifest-src mengatur file manifest yang boleh dipasang lewat link rel manifest. Manifest asing bisa menimpa nama dan ikon saat halaman diinstal. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> izinkan hanya origin situs, lalu cek link manifest di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan jatuhkan ke default</h2><p class=\"mb-4\">Tanpa manifest-src, browser memakai default-src. Sebut arahan ini eksplisit supaya laporan pelanggaran mudah dibaca.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan dengan file yang di-deploy</h2><p class=\"mb-4\">Path manifest harus sama dengan file yang benar-benar diunggah. Path lama membuat instalasi gagal meski header sudah benar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat ikon yang dirujuk</h2><p class=\"mb-4\">Ikon di dalam manifest masih tunduk pada img-src. Catat kedua arahan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya ikon instalasi tidak pecah.</p>",
+   "source": "MDN — manifest-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/manifest-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) manifest-src directive specifies which manifest can be applied to the resource.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-manifest-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit manifest-src for the Web App Manifest",
+   "desc": "How to restrict the Clincoo web app manifest origin so install name and icons are not taken from another host.",
+   "content": "<p class=\"mb-4\">manifest-src controls the manifest file allowed via link rel manifest. A foreign manifest can overwrite the install name and icons. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> allow only the site origin, then check the manifest link in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not leave it to the default</h2><p class=\"mb-4\">Without manifest-src, the browser uses default-src. Name this directive explicitly so violation reports stay readable.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the deployed file</h2><p class=\"mb-4\">The manifest path must match the file that is actually uploaded. An old path makes install fail even when the header is correct.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record referenced icons</h2><p class=\"mb-4\">Icons inside the manifest still follow img-src. Note both directives on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the install icon does not break.</p>",
+   "source": "MDN — manifest-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/manifest-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) manifest-src directive specifies which manifest can be applied to the resource.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/#directive-manifest-src",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
 }
  ]
 };
