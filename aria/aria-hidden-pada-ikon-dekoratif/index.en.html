@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Hide a Decorative Icon with aria-hidden — Clincoo Docs</title>
+<meta name="description" content="How to mark a decorative icon on Clincoo with aria-hidden so a screen reader does not announce the SVG file name.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/">
+<link rel="canonical" href="https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Hide a Decorative Icon with aria-hidden — Clincoo Docs">
+<meta property="og:description" content="How to mark a decorative icon on Clincoo with aria-hidden so a screen reader does not announce the SVG file name.">
+<meta property="og:url" content="https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Hide a Decorative Icon with aria-hidden — Clincoo Docs">
+<meta name="twitter:description" content="How to mark a decorative icon on Clincoo with aria-hidden so a screen reader does not announce the SVG file name.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Hide a Decorative Icon with aria-hidden", "description": "How to mark a decorative icon on Clincoo with aria-hidden so a screen reader does not announce the SVG file name.", "mainEntityOfPage": "https://docs.clincoo.buzz/aria/aria-hidden-pada-ikon-dekoratif/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/aria/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">ARIA</p>
+<h1 class="seo-title">How to Hide a Decorative Icon with aria-hidden</h1>
+<div class="seo-body">
+<p class="mb-4">A decorative icon beside a heading often exposes a file name such as icon-star.svg. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> an icon that adds no meaning should be hidden from the accessibility tree.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Put aria-hidden on the SVG</h2><p class="mb-4">Add aria-hidden="true" on the svg element, not on the heading that wraps it. If the text beside it already explains the action, the icon does not need a second name.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not hide a control</h2><p class="mb-4">Buttons, links, and inputs must not be aria-hidden. If the icon is the only content of a button, give the button an aria-label and hide only the SVG inside it.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the preview</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the accessibility tree. The decorative icon should not appear as a separate name, and the button should still be focusable.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
