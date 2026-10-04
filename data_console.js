@@ -326,5 +326,35 @@ window.countryDataFiles["console"] = {
   }
  }
 }
+,
+{
+ "id": "console-table-untuk-bandingkan-baris",
+ "langs": {
+  "id": {
+   "title": "Cara Bandingkan Baris Data dengan console.table",
+   "desc": "Tata cara menampilkan array objek Clincoo sebagai tabel di konsol supaya kolom yang beda langsung terlihat, tanpa menggulir objek satu per satu.",
+   "content": "<p class=\"mb-4\">Objek bersarang di konsol sulit dibandingkan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil console.table pada array hasil fetch atau daftar blok, bukan console.log berulang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih kolom yang memang dibandingkan</h2><p class=\"mb-4\">Argumen kedua console.table menerima daftar nama properti. Sertakan id, status, dan judul saja supaya kolom acak tidak menutupi perbedaan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tabelkan objek terlalu dalam</h2><p class=\"mb-4\">Tabel meratakan satu tingkat. Kalau nilai masih objek, petakan dulu ke string singkat. Cek hasil di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sebelum mengubah data asli.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin tabel, bukan tangkapan layar</h2><p class=\"mb-4\">Klik kanan baris tabel lalu salin objek. Tempel ke catatan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya angka tidak hilang saat gambar diperkecil.</p>",
+   "source": "MDN — console.table",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/table_static",
+   "sourceSnippet": "The console.table() static method displays tabular data as a table.",
+   "source2": "Chrome Developers — Console API reference",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console/api",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Compare Rows with console.table",
+   "desc": "How to print a Clincoo array of objects as a console table so differing columns show up at once, without expanding objects one by one.",
+   "content": "<p class=\"mb-4\">Nested objects in the console are hard to compare. On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call console.table on a fetch result or block list, not a series of console.log calls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick the columns you actually compare</h2><p class=\"mb-4\">The second argument to console.table is a list of property names. Include id, status, and title only so random columns do not hide the difference.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not table a deeply nested object</h2><p class=\"mb-4\">The table flattens one level. If a value is still an object, map it to a short string first. Check the preview on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> before changing the real data.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy the table, not a screenshot</h2><p class=\"mb-4\">Right-click a table row and copy the object. Paste it into notes on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so numbers survive when an image is scaled down.</p>",
+   "source": "MDN — console.table",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/table_static",
+   "sourceSnippet": "The console.table() static method displays tabular data as a table.",
+   "source2": "Chrome Developers — Console API reference",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console/api",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };
