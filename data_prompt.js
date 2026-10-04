@@ -238,6 +238,122 @@ window.countryDataFiles["prompt"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "prompt-sebutkan-versi-dan-perintah",
+ "langs": {
+  "id": {
+   "title": "Cara Sebutkan Versi dan Perintah saat Minta Bantuan AI",
+   "desc": "Tata cara menulis versi dependensi dan perintah yang benar-benar dijalankan saat minta bantuan AI Clincoo, supaya jawaban tidak mengira lingkungan yang berbeda.",
+   "content": "<p class=\"mb-4\">Jawaban AI sering meleset karena versi paket dan perintah tidak disebut. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis versi yang terpasang dan perintah utuh sebelum menempel error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin perintah, jangan parafrase</h2><p class=\"mb-4\">Tempel perintah apa adanya, termasuk flag. 'Saya menjalankan build' tidak sama dengan npm run build. Catat folder kerja jika perintah dijalankan di subfolder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan versi yang relevan</h2><p class=\"mb-4\">Sebut Node, browser, atau paket yang disebut di error. Jangan kirim seluruh lockfile. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cukup nama paket dan versinya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tandai yang sudah dicoba</h2><p class=\"mb-4\">Tuliskan satu perintah yang sudah dijalankan ulang dan hasilnya. Simpan pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya permintaan berikutnya tidak mengulang konteks yang sama.</p>",
+   "source": "MDN — console.error()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/error_static",
+   "sourceSnippet": "The console.error() static method outputs an error message to the console.",
+   "source2": "npm docs — npm run-script",
+   "source2Url": "https://docs.npmjs.com/cli/v10/commands/npm-run-script",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Include the Version and Command when Asking an AI",
+   "desc": "How to state the dependency version and the command you actually ran when asking the Clincoo AI, so the answer does not assume a different environment.",
+   "content": "<p class=\"mb-4\">AI answers miss when the package version and command are omitted. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write the installed version and the full command before pasting the error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Paste the command, do not paraphrase</h2><p class=\"mb-4\">Paste the command as run, including flags. 'I ran the build' is not the same as npm run build. Note the working folder if the command ran in a subfolder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include the relevant version</h2><p class=\"mb-4\">Name Node, the browser, or the package named in the error. Do not send the whole lockfile. On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> the package name and version are enough.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Mark what you already retried</h2><p class=\"mb-4\">Write the one command you reran and its result. Keep this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next request does not repeat the same context.</p>",
+   "source": "MDN — console.error()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/error_static",
+   "sourceSnippet": "The console.error() static method outputs an error message to the console.",
+   "source2": "npm docs — npm run-script",
+   "source2Url": "https://docs.npmjs.com/cli/v10/commands/npm-run-script",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prompt-minta-jelaskan-diff-sebelum-terapkan",
+ "langs": {
+  "id": {
+   "title": "Cara Minta Penjelasan Diff sebelum Menerapkan Jawaban AI",
+   "desc": "Tata cara meminta asisten AI Clincoo menjelaskan apa yang berubah di diff sebelum kode ditempel, supaya perubahan yang tidak diminta ketahuan lebih dulu.",
+   "content": "<p class=\"mb-4\">Kode jadi dari AI sering ikut mengubah baris yang tidak rusak. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> minta penjelasan diff dulu, baru terapkan bagian yang kamu setujui.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Minta daftar baris yang berubah</h2><p class=\"mb-4\">Minta AI menyebut file, baris, dan alasan tiap perubahan. Tolak jawaban yang hanya menempel blok utuh tanpa menyebut apa yang dihapus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Terapkan satu hunk</h2><p class=\"mb-4\">Salin satu perubahan, simpan, lalu cek preview di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Jika halaman lain ikut bergeser, hentikan dan kirim gejala itu, bukan hunk berikutnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tolak perubahan di luar permintaan</h2><p class=\"mb-4\">Jika diff mengganti nama kelas atau merapikan file lain, kembalikan. Catat batas ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar sesi berikutnya tetap sempit.</p>",
+   "source": "MDN — Using the Web Console",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Tools/Web_Console",
+   "sourceSnippet": "The Web Console logs information associated with a web page.",
+   "source2": "Git — git diff",
+   "source2Url": "https://git-scm.com/docs/git-diff",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Ask for a Diff Explanation before Applying an AI Answer",
+   "desc": "How to ask the Clincoo AI to explain what changed in the diff before you paste the code, so unrequested edits show up first.",
+   "content": "<p class=\"mb-4\">Finished AI code often edits lines that were not broken. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ask for a diff explanation first, then apply only the part you accept.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ask for the list of changed lines</h2><p class=\"mb-4\">Ask the AI to name the file, the line, and the reason for each change. Reject an answer that only pastes a full block without saying what was removed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Apply one hunk</h2><p class=\"mb-4\">Copy one change, save, then check the preview on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. If another page shifts, stop and send that symptom instead of the next hunk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reject edits outside the request</h2><p class=\"mb-4\">If the diff renames a class or tidies another file, revert it. Keep this boundary on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next session stays narrow.</p>",
+   "source": "MDN — Using the Web Console",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Tools/Web_Console",
+   "sourceSnippet": "The Web Console logs information associated with a web page.",
+   "source2": "Git — git diff",
+   "source2Url": "https://git-scm.com/docs/git-diff",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prompt-batasi-file-yang-terkait",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi Konteks ke File yang Terkait",
+   "desc": "Tata cara memilih satu atau dua file yang benar-benar terlibat saat minta bantuan AI Clincoo, supaya jawaban tidak merombak bagian proyek yang tidak terkait.",
+   "content": "<p class=\"mb-4\">Menempel seluruh proyek membuat AI menebak file yang salah. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kirim file tempat gejala muncul, plus satu file yang ia panggil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sebut jalur, bukan nama umum</h2><p class=\"mb-4\">Tulis path seperti src/form.js, bukan 'file form'. Jika ada dua file bernama mirip, sebut keduanya dan tandai yang sedang terbuka.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Potong bagian yang tidak ikut jalan</h2><p class=\"mb-4\">Hapus fungsi yang tidak terpanggil dari cuplikan, tetapi jangan menghapus impor yang error sebut. Cek hasilnya di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> setelah satu suntingan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan kirim rahasia bersama path</h2><p class=\"mb-4\">Path boleh dikirim. Isi .env tidak. Simpan aturan batas file di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "JavaScript modules let you split code across files and import only what you need.",
+   "source2": "OWASP — Secrets Management",
+   "source2Url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit Context to the Related Files",
+   "desc": "How to pick the one or two files that are actually involved when asking the Clincoo AI, so the answer does not rewrite unrelated parts of the project.",
+   "content": "<p class=\"mb-4\">Pasting the whole project makes the AI guess the wrong file. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> send the file where the symptom appears, plus one file it calls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Name the path, not a generic label</h2><p class=\"mb-4\">Write a path such as src/form.js, not 'the form file'. If two files have similar names, name both and mark the one that is open.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cut the parts that do not run</h2><p class=\"mb-4\">Remove functions the snippet never calls, but do not delete an import the error names. Check the result on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> after one edit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not send secrets with the path</h2><p class=\"mb-4\">Paths can be sent. .env contents cannot. Keep the file-boundary rule on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "JavaScript modules let you split code across files and import only what you need.",
+   "source2": "OWASP — Secrets Management",
+   "source2Url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prompt-minta-cek-regresi-setelah-perbaikan",
+ "langs": {
+  "id": {
+   "title": "Cara Minta Cek Regresi setelah Perbaikan AI",
+   "desc": "Tata cara meminta asisten AI Clincoo menyebut apa yang harus diuji ulang setelah perbaikan, supaya bug yang hilang tidak merusak alur yang tadi berjalan.",
+   "content": "<p class=\"mb-4\">Perbaikan yang hanya menutup error konsol bisa merusak alur lain. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> minta daftar cek regresi sebelum kamu menutup tugas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Minta tiga jalur, bukan satu</h2><p class=\"mb-4\">Minta jalur yang rusak, jalur tetangga yang memakai fungsi yang sama, dan jalur kosong (tanpa data). Jangan menerima jawaban 'sudah beres' tanpa langkah klik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di lebar yang disebut</h2><p class=\"mb-4\">Jika bug ada di mobile, uji lagi lebar itu di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Catat satu kalimat hasil: lolos atau masih gagal di langkah ke berapa.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan daftar uji</h2><p class=\"mb-4\">Tempel daftar uji singkat di catatan rilis atau di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Permintaan AI berikutnya bisa merujuk daftar itu, bukan mengulang dari nol.</p>",
+   "source": "MDN — Debugging JavaScript",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong",
+   "sourceSnippet": "When JavaScript does not work, the console and a small reproduction are the starting point.",
+   "source2": "web.dev — Testing",
+   "source2Url": "https://web.dev/articles/testing-overview",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Ask for a Regression Check after an AI Fix",
+   "desc": "How to ask the Clincoo AI to name what to retest after a fix, so a bug that disappears does not break a flow that was working.",
+   "content": "<p class=\"mb-4\">A fix that only clears the console can break another flow. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ask for a regression checklist before you close the task.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ask for three paths, not one</h2><p class=\"mb-4\">Ask for the broken path, a neighbor path that uses the same function, and an empty path (no data). Do not accept 'it is fixed' without click steps.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Retest the width you named</h2><p class=\"mb-4\">If the bug was on mobile, retest that width on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Record one sentence: passed, or still failing at which step.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the checklist</h2><p class=\"mb-4\">Paste the short checklist into the release note or on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. The next AI request can point at that list instead of starting over.</p>",
+   "source": "MDN — Debugging JavaScript",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong",
+   "sourceSnippet": "When JavaScript does not work, the console and a small reproduction are the starting point.",
+   "source2": "web.dev — Testing",
+   "source2Url": "https://web.dev/articles/testing-overview",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
 }
  ]
 };
