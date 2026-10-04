@@ -150,6 +150,151 @@ window.countryDataFiles["keyboard"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+  {
+   "id": "keyboard-skip-link-ke-main",
+   "langs": {
+    "id": {
+     "title": "Cara Tambah Skip Link ke Konten Utama",
+     "desc": "Tata cara memasang tautan lewati ke main di halaman Clincoo supaya pengguna keyboard tidak men-Tab seluruh header setiap kali.",
+     "content": "<p class=\"mb-4\">Header yang panjang memaksa Tab berulang sebelum sampai ke isi. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tautan lewati adalah kontrol pertama di body, tersembunyi sampai fokus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Letakkan sebelum navigasi</h2><p class=\"mb-4\">Tautan href=\"#isi-utama\" menuju elemen main yang punya id sama. Jangan mengarah ke div kosong. main perlu tabindex=\"-1\" hanya jika fokus harus pindah ke wilayah itu, bukan ke kontrol di dalamnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sembunyikan tanpa menghapus dari Tab</h2><p class=\"mb-4\">Pakai CSS yang menggeser tautan keluar layar, lalu tampilkan saat :focus. Jangan display:none atau visibility:hidden, karena Tab tidak akan menemukannya. Teksnya jelas: Loncat ke isi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tekan Tab sekali saat halaman dimuat. Tautan lewati harus muncul, Enter memindahkan fokus ke main, dan header tidak diulang. Catat polanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> jika tim memakai header yang sama di setiap halaman.</p>",
+     "source": "MDN — The Anchor element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
+     "sourceSnippet": "The a element represents a hyperlink. A skip link is an ordinary link placed first so keyboard users can jump to the main content.",
+     "source2": "W3C — Bypass Blocks",
+     "source2Url": "https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Add a Skip Link to the Main Content",
+     "desc": "How to add a skip link to main on a Clincoo page so keyboard users do not Tab through the whole header every time.",
+     "content": "<p class=\"mb-4\">A long header forces repeated Tab stops before the content. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> the skip link is the first control in the body, hidden until it receives focus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Place it before navigation</h2><p class=\"mb-4\">A link with href=\"#isi-utama\" points at main with the same id. Do not point it at an empty div. main needs tabindex=\"-1\" only if focus should land on the region itself, not on a control inside it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hide it without removing it from Tab</h2><p class=\"mb-4\">Use CSS that shifts the link off screen, then show it on :focus. Do not use display:none or visibility:hidden, or Tab will never find it. The text should be clear: Skip to content.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> press Tab once when the page loads. The skip link should appear, Enter should move focus to main, and the header should not be repeated. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> if the team reuses the same header on every page.</p>",
+     "source": "MDN — The Anchor element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
+     "sourceSnippet": "The a element represents a hyperlink. A skip link is an ordinary link placed first so keyboard users can jump to the main content.",
+     "source2": "W3C — Bypass Blocks",
+     "source2Url": "https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "keyboard-panah-di-menu",
+   "langs": {
+    "id": {
+     "title": "Cara Gerakkan Menu dengan Tombol Panah",
+     "desc": "Tata cara memakai tombol panah di menu Clincoo, sementara Tab tetap keluar dari menu, bukan berhenti di setiap butir.",
+     "content": "<p class=\"mb-4\">Menu yang setiap butirnya bisa di-Tab membuat daftar panjang. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pola menu memakai satu tab stop, lalu panah memindahkan pilihan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu tab stop, lalu panah</h2><p class=\"mb-4\">Tombol pemicu tetap di urutan Tab. Setelah terbuka, butir menu memakai tabindex=\"-1\" kecuali butir yang aktif. Panah bawah dan atas memindahkan tabindex 0 ke saudara berikutnya, lalu memanggil focus().</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Home, End, dan Escape</h2><p class=\"mb-4\">Home ke butir pertama, End ke butir terakhir. Escape menutup menu dan mengembalikan fokus ke pemicu. Tab boleh menutup menu lalu melanjutkan ke kontrol berikutnya, bukan masuk ke setiap butir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka menu dengan Enter, gerakkan panah, lalu Tab keluar. Fokus tidak boleh terjebak di butir terakhir. Ulangi di lebar ponsel karena menu yang menutupi layar sering menelan panah.</p>",
+     "source": "MDN — Keyboard-navigable JavaScript widgets",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets",
+     "sourceSnippet": "Some composite widgets are keyboard navigable with arrow keys rather than Tab for every child.",
+     "source2": "WAI-ARIA — Menu pattern",
+     "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Move Through a Menu with Arrow Keys",
+     "desc": "How to use arrow keys inside a Clincoo menu while Tab still leaves the menu instead of stopping on every item.",
+     "content": "<p class=\"mb-4\">A menu where every item is a Tab stop makes a long list. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> the menu pattern uses one tab stop, then arrows move the selection.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One tab stop, then arrows</h2><p class=\"mb-4\">The trigger button stays in the Tab order. After it opens, menu items use tabindex=\"-1\" except the active item. Arrow Down and Arrow Up move tabindex 0 to the next sibling, then call focus().</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Home, End, and Escape</h2><p class=\"mb-4\">Home goes to the first item, End to the last. Escape closes the menu and returns focus to the trigger. Tab may close the menu and continue to the next control, rather than entering every item.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the menu with Enter, move with arrows, then Tab out. Focus must not get stuck on the last item. Repeat at phone width, because a menu that covers the screen often swallows arrow keys.</p>",
+     "source": "MDN — Keyboard-navigable JavaScript widgets",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets",
+     "sourceSnippet": "Some composite widgets are keyboard navigable with arrow keys rather than Tab for every child.",
+     "source2": "WAI-ARIA — Menu pattern",
+     "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "keyboard-enter-dan-space-pada-tombol",
+   "langs": {
+    "id": {
+     "title": "Cara Bedakan Enter dan Space pada Tombol",
+     "desc": "Tata cara menangani Enter dan Space di tombol Clincoo supaya aksi tidak terpicu dua kali dan tautan tidak ikut terpencet.",
+     "content": "<p class=\"mb-4\">Tombol bawaan sudah aktif lewat Enter dan Space. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> listener click tambahan pada keydown sering menggandakan aksi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Andalkan click bawaan</h2><p class=\"mb-4\">Untuk button type=\"button\", cukup dengarkan click. Browser mengirim click saat Enter atau Space dilepas. Jangan menambah keydown yang juga memanggil handler yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cegah Space menggulir halaman</h2><p class=\"mb-4\">Jika kamu membangun kontrol sendiri, Space harus preventDefault saat keydown supaya halaman tidak tergulir, lalu jalankan aksi pada keyup. Enter menjalankan aksi pada keydown. Jangan memasang pola ini pada a href.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab ke tombol Simpan, tekan Space, lalu Enter. Aksi harus sekali masing-masing, dan halaman tidak meloncat. Jika tombol ada di dalam tautan, pisahkan dulu: tautan untuk pindah URL, tombol untuk aksi.</p>",
+     "source": "MDN — The Button element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
+     "sourceSnippet": "The button element represents a clickable button, which can be used in forms or anywhere a standard button is needed.",
+     "source2": "MDN — KeyboardEvent.key",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Treat Enter and Space on a Button",
+     "desc": "How to handle Enter and Space on a Clincoo button so the action does not fire twice and links are not activated by mistake.",
+     "content": "<p class=\"mb-4\">A native button already activates on Enter and Space. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> an extra keydown listener beside click often doubles the action.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Rely on the native click</h2><p class=\"mb-4\">For button type=\"button\", listen for click only. The browser fires click when Enter or Space is released. Do not add a keydown handler that calls the same function.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Stop Space from scrolling the page</h2><p class=\"mb-4\">If you build a custom control, Space should preventDefault on keydown so the page does not scroll, then run the action on keyup. Enter runs the action on keydown. Do not apply this pattern to an a href.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab to Save, press Space, then Enter. The action should run once each, and the page should not jump. If the button sits inside a link, separate them first: a link navigates, a button acts.</p>",
+     "source": "MDN — The Button element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
+     "sourceSnippet": "The button element represents a clickable button, which can be used in forms or anywhere a standard button is needed.",
+     "source2": "MDN — KeyboardEvent.key",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "keyboard-jebak-fokus-modal-kustom",
+   "langs": {
+    "id": {
+     "title": "Cara Jebak Fokus di Modal Kustom",
+     "desc": "Tata cara menahan Tab di dalam modal kustom Clincoo jika kamu belum memakai dialog.showModal, lalu mengembalikan fokus saat tutup.",
+     "content": "<p class=\"mb-4\">Modal dari div fixed tidak menahan Tab. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> lebih baik memakai dialog dan showModal. Kalau modal lama belum diganti, jebak fokus sendiri.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan pemicu, lalu kunci Tab</h2><p class=\"mb-4\">Saat membuka, simpan document.activeElement. Kumpulkan kontrol yang terlihat di dalam panel. Pada keydown Tab di kontrol terakhir, preventDefault dan fokus ke kontrol pertama. Shift+Tab di kontrol pertama kembali ke yang terakhir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan jebak yang tersembunyi</h2><p class=\"mb-4\">Abaikan tombol dengan hidden, disabled, atau display none. Setelah tutup, hapus listener dan focus() ke pemicu. Escape tetap menutup, kecuali dialog konfirmasi berbahaya yang memang harus lewat tombol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka modal, Tab berkali-kali, lalu Shift+Tab. Fokus tidak boleh masuk ke footer di belakang. Tutup modal dan pastikan fokus kembali ke tombol yang membukanya.</p>",
+     "source": "MDN — The Dialog element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "sourceSnippet": "The dialog element represents a dialog box. showModal() displays it as a modal and confines interaction to that window.",
+     "source2": "WAI-ARIA — Dialog modal pattern",
+     "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Trap Focus in a Custom Modal",
+     "desc": "How to keep Tab inside a custom Clincoo modal when you are not using dialog.showModal yet, then restore focus on close.",
+     "content": "<p class=\"mb-4\">A modal made from a fixed div does not hold Tab. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> prefer dialog and showModal. If an old modal is not replaced yet, trap focus yourself.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remember the trigger, then lock Tab</h2><p class=\"mb-4\">On open, store document.activeElement. Collect the visible controls inside the panel. On Tab from the last control, preventDefault and focus the first. Shift+Tab from the first returns to the last.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not trap hidden controls</h2><p class=\"mb-4\">Skip buttons that are hidden, disabled, or display none. After close, remove the listener and focus() the trigger. Escape should still close, unless a dangerous confirm must go through a button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the modal, Tab repeatedly, then Shift+Tab. Focus must not reach the footer behind it. Close the modal and confirm focus returns to the button that opened it.</p>",
+     "source": "MDN — The Dialog element",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+     "sourceSnippet": "The dialog element represents a dialog box. showModal() displays it as a modal and confines interaction to that window.",
+     "source2": "WAI-ARIA — Dialog modal pattern",
+     "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
+  },
+  {
+   "id": "keyboard-jangan-pakai-accesskey-satu-huruf",
+   "langs": {
+    "id": {
+     "title": "Cara Jangan Pasang accesskey Satu Huruf",
+     "desc": "Tata cara menghindari accesskey satu huruf di halaman Clincoo supaya pintasan tidak menabrak menu browser atau pembaca layar.",
+     "content": "<p class=\"mb-4\">accesskey satu huruf terlihat singkat, tetapi kombinasinya beda di setiap browser dan sering merebut pintasan yang sudah ada. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> hindari accesskey satu huruf.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan accesskey</h2><p class=\"mb-4\">Tombol yang penting harus bisa dicapai lewat Tab dan punya nama terlihat. Jika perlu pintasan, tampilkan petunjuk di UI dan batasi pada konteks yang tidak sedang mengetik. Jangan preventDefault pada huruf biasa di input.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bentrok yang sering terjadi</h2><p class=\"mb-4\">Huruf tunggal mudah bentrok dengan navigasi pembaca layar dan menu browser. Alt+huruf di satu peramban menjadi Alt+Shift di peramban lain. Pengguna tidak bisa menghafal perbedaan itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab ke kontrol utama tanpa menekan accesskey. Lalu ketik di input: huruf tidak boleh memicu aksi tersembunyi. Dokumentasikan pintasan yang memang kamu buat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>, bukan di atribut accesskey.</p>",
+     "source": "MDN — accesskey",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey",
+     "sourceSnippet": "The accesskey global attribute provides a hint for generating a keyboard shortcut for the current element.",
+     "source2": "MDN — Event.preventDefault()",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    },
+    "en": {
+     "title": "How to Avoid a Single-Letter accesskey",
+     "desc": "How to avoid single-letter accesskey values on a Clincoo page so shortcuts do not clash with the browser menu or a screen reader.",
+     "content": "<p class=\"mb-4\">A single-letter accesskey looks short, but the modifier differs by browser and often steals an existing shortcut. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> avoid a single-letter accesskey.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on accesskey</h2><p class=\"mb-4\">An important button must be reachable with Tab and have a visible name. If you need a shortcut, show the hint in the UI and limit it to a context where the user is not typing. Do not preventDefault on plain letters inside an input.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Clashes that show up often</h2><p class=\"mb-4\">A single letter easily clashes with screen-reader navigation and the browser menu. Alt plus a letter in one browser becomes Alt+Shift in another. People cannot memorize that difference.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab to the main controls without pressing an accesskey. Then type in an input: letters must not trigger a hidden action. Document a shortcut you really ship on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>, not in an accesskey attribute.</p>",
+     "source": "MDN — accesskey",
+     "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey",
+     "sourceSnippet": "The accesskey global attribute provides a hint for generating a keyboard shortcut for the current element.",
+     "source2": "MDN — Event.preventDefault()",
+     "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+     "source3": "Clincoo Editor",
+     "source3Url": "https://editor.clincoo.buzz/"
+    }
+   }
   }
  ]
 };
