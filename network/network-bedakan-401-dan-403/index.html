@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Bedakan 401 dan 403 sebelum Ganti Token — Clincoo Docs</title>
+<meta name="description" content="Tata cara membaca status 401 dan 403 di panel Network Clincoo supaya token tidak diganti saat masalahnya sebenarnya izin.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/">
+<link rel="canonical" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Bedakan 401 dan 403 sebelum Ganti Token — Clincoo Docs">
+<meta property="og:description" content="Tata cara membaca status 401 dan 403 di panel Network Clincoo supaya token tidak diganti saat masalahnya sebenarnya izin.">
+<meta property="og:url" content="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Bedakan 401 dan 403 sebelum Ganti Token — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara membaca status 401 dan 403 di panel Network Clincoo supaya token tidak diganti saat masalahnya sebenarnya izin.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Bedakan 401 dan 403 sebelum Ganti Token", "description": "Tata cara membaca status 401 dan 403 di panel Network Clincoo supaya token tidak diganti saat masalahnya sebenarnya izin.", "inLanguage": "id", "mainEntityOfPage": "https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/network/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Network</p>
+<h1 class="seo-title">Cara Bedakan 401 dan 403 sebelum Ganti Token</h1>
+<div class="seo-body">
+<p class="mb-4">Respons merah di API sering langsung disangka token mati. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> buka panel Network, filter Fetch/XHR, lalu baca kode status sebelum menyalin header baru ke <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">401 berarti identitas belum diterima</h2><p class="mb-4">401 Unauthorized: kredensial tidak ada, kedaluwarsa, atau formatnya salah. Cek header Authorization dan apakah request ini yang dimaksud, bukan request aset.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">403 berarti identitas dikenali tetapi ditolak</h2><p class="mb-4">403 Forbidden: server tahu siapa kamu, tetapi aksi atau sumber daya tidak diizinkan. Mengganti token yang masih valid tidak mengubah peran. Baca body singkat, jangan hanya warna status.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tulis kode dan cuplikan body saat minta bantuan</h2><p class="mb-4">Di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> atau chat, sebut 401 atau 403 plus satu kalimat body yang sudah disensor. Jangan tempel token.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

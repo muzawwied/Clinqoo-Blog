@@ -1244,4 +1244,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-salin-sebagai-curl/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-salin-sebagai-curl/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-baca-timing-ttfb/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-bedakan-401-dan-403/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-cek-rantai-redirect/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-cek-rantai-redirect/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-cek-rantai-redirect/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-cek-rantai-redirect/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-baca-kolom-initiator/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-baca-kolom-initiator/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-baca-kolom-initiator/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-baca-kolom-initiator/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-throttle-slow-3g/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-throttle-slow-3g/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-throttle-slow-3g/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-throttle-slow-3g/"/>
+  </url>
 </urlset>

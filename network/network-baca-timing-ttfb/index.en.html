@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Read Timing: TTFB Is Not the Same as a Slow Download — Clincoo Docs</title>
+<meta name="description" content="How to read the Timing bars in the Clincoo Network panel so server wait time is not blamed on a file that is simply large.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/">
+<link rel="canonical" href="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Read Timing: TTFB Is Not the Same as a Slow Download — Clincoo Docs">
+<meta property="og:description" content="How to read the Timing bars in the Clincoo Network panel so server wait time is not blamed on a file that is simply large.">
+<meta property="og:url" content="https://docs.clincoo.buzz/network/network-baca-timing-ttfb/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Read Timing: TTFB Is Not the Same as a Slow Download — Clincoo Docs">
+<meta name="twitter:description" content="How to read the Timing bars in the Clincoo Network panel so server wait time is not blamed on a file that is simply large.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Read Timing: TTFB Is Not the Same as a Slow Download", "description": "How to read the Timing bars in the Clincoo Network panel so server wait time is not blamed on a file that is simply large.", "inLanguage": "en", "mainEntityOfPage": "https://docs.clincoo.buzz/network/network-baca-timing-ttfb/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/network/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Network</p>
+<h1 class="seo-title">How to Read Timing: TTFB Is Not the Same as a Slow Download</h1>
+<div class="seo-body">
+<p class="mb-4">A slow page is not always a heavy image. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> open DevTools, the Network tab, click the slow request, then open Timing. Repeat the same action in the <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> preview.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Separate Waiting from Content Download</h2><p class="mb-4">Waiting (TTFB) is time until the first byte. Content Download is time spent sending the body. A long TTFB points at the server, a queue, or DNS. A long download points at size or the network.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not optimize images when the wait bar is the long one</h2><p class="mb-4">Image compression does not shorten an API TTFB. Note which bar dominates before changing assets. Compare the same request on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> if you rewrite the test steps.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Record numbers, not a feeling</h2><p class="mb-4">Copy Waiting and Content Download in milliseconds. “Slow” without numbers cannot be compared after a fix.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
