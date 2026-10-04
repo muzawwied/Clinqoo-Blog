@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Buka Satu dialog dalam Satu Waktu — Clincoo Docs</title>
+<meta name="description" content="Tata cara menutup dialog yang sedang terbuka sebelum membuka dialog lain di Clincoo, supaya fokus dan lapisan modal tidak bertumpuk.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Buka Satu dialog dalam Satu Waktu — Clincoo Docs">
+<meta property="og:description" content="Tata cara menutup dialog yang sedang terbuka sebelum membuka dialog lain di Clincoo, supaya fokus dan lapisan modal tidak bertumpuk.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Buka Satu dialog dalam Satu Waktu — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menutup dialog yang sedang terbuka sebelum membuka dialog lain di Clincoo, supaya fokus dan lapisan modal tidak bertumpuk.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Buka Satu dialog dalam Satu Waktu", "description": "Tata cara menutup dialog yang sedang terbuka sebelum membuka dialog lain di Clincoo, supaya fokus dan lapisan modal tidak bertumpuk.", "mainEntityOfPage": "https://docs.clincoo.buzz/dialog/dialog-satu-modal-dalam-satu-waktu/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dialog/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dialog HTML</p>
+<h1 class="seo-title">Cara Buka Satu dialog dalam Satu Waktu</h1>
+<div class="seo-body">
+<p class="mb-4">Dua dialog.showModal berturut-turut menumpuk lapisan atas. Yang bawah tidak bisa diklik, dan Escape kadang hanya menutup yang teratas. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> jaga satu dialog modal dalam satu waktu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tutup dulu, baru buka</h2><p class="mb-4">Sebelum showModal berikutnya, panggil close pada dialog yang open. Kalau alurnya konfirmasi lalu formulir, ganti isi dialog yang sama, jangan membuat elemen dialog kedua yang tidak ditutup.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan andalkan tumpukan untuk langkah kedua</h2><p class="mb-4">Return value dialog pertama bisa membuka langkah kedua setelah close. Baca nilai itu di event close, lalu baru buka dialog lain. Uji di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>: Escape sekali harus mengembalikan fokus ke tombol pemicu, bukan ke dialog yang tersisa.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Catat jika lapisan gelap ganda</h2><p class="mb-4">Latar dua kali lebih gelap biasanya berarti dua modal. Catat pemicu ganda di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> sebelum menambah z-index.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-32K4RH4DKN",{page_path:location.pathname});</script>
+</body>
+</html>

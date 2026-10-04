@@ -357,5 +357,35 @@ window.countryDataFiles["form"] = {
   }
  }
 }
+,
+{
+ "id": "form-enterkeyhint-aksi-keyboard",
+ "langs": {
+  "id": {
+   "title": "Cara Isi enterkeyhint agar Tombol Keyboard Jelas",
+   "desc": "Tata cara mengisi enterkeyhint pada input Clincoo supaya label tombol Enter di ponsel sesuai aksi, misalnya cari atau kirim, bukan selalu return.",
+   "content": "<p class=\"mb-4\">Papan ketik ponsel memakai label Enter yang umum kalau input tidak memberi petunjuk. enterkeyhint mengubah label itu menjadi search, go, done, atau send. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang atribut ini pada isian yang aksi utamanya jelas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sesuaikan dengan tombol di form</h2><p class=\"mb-4\">Kolom cari memakai enterkeyhint=\"search\". Form kirim pesan memakai send. Isian di tengah wizard memakai next, dan isian terakhir memakai done. Jangan menaruh search pada form yang tidak mencari.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hint bukan pengganti type</h2><p class=\"mb-4\">type=\"search\" dan inputmode tetap mengatur papan ketik. enterkeyhint hanya label tombol tindakan. Tetap hubungkan form ke tombol submit supaya Enter benar-benar mengirim, bukan hanya berganti tulisan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di lebar ponsel</h2><p class=\"mb-4\">Pratinjau di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pada perangkat sentuh. Kalau label tidak berubah, catat browser di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menambah skrip khusus.</p>",
+   "source": "MDN — enterkeyhint",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/enterkeyhint",
+   "sourceSnippet": "The enterkeyhint global attribute is an enumerated attribute defining what action label (or icon) to present for the enter key on virtual keyboards.",
+   "source2": "HTML Living Standard — enterkeyhint",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set enterkeyhint So the Keyboard Action Is Clear",
+   "desc": "How to set enterkeyhint on a Clincoo input so the mobile Enter key label matches the action, such as search or send, instead of a generic return.",
+   "content": "<p class=\"mb-4\">The mobile keyboard uses a generic Enter label when the input gives no hint. enterkeyhint changes that label to search, go, done, or send. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set this attribute on fields whose main action is clear.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the form button</h2><p class=\"mb-4\">A search field uses enterkeyhint=\"search\". A message form uses send. A middle wizard field uses next, and the last field uses done. Do not put search on a form that does not search.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">The hint does not replace type</h2><p class=\"mb-4\">type=\"search\" and inputmode still shape the keyboard. enterkeyhint is only the action-key label. Keep the form wired to a submit button so Enter actually submits, not just relabels the key.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check at phone width</h2><p class=\"mb-4\">Preview on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> on a touch device. If the label does not change, note the browser on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before adding a special script.</p>",
+   "source": "MDN — enterkeyhint",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/enterkeyhint",
+   "sourceSnippet": "The enterkeyhint global attribute is an enumerated attribute defining what action label (or icon) to present for the enter key on virtual keyboards.",
+   "source2": "HTML Living Standard — enterkeyhint",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

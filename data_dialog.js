@@ -357,5 +357,35 @@ window.countryDataFiles["dialog"] = {
   }
  }
 }
+,
+{
+ "id": "dialog-satu-modal-dalam-satu-waktu",
+ "langs": {
+  "id": {
+   "title": "Cara Buka Satu dialog dalam Satu Waktu",
+   "desc": "Tata cara menutup dialog yang sedang terbuka sebelum membuka dialog lain di Clincoo, supaya fokus dan lapisan modal tidak bertumpuk.",
+   "content": "<p class=\"mb-4\">Dua dialog.showModal berturut-turut menumpuk lapisan atas. Yang bawah tidak bisa diklik, dan Escape kadang hanya menutup yang teratas. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jaga satu dialog modal dalam satu waktu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tutup dulu, baru buka</h2><p class=\"mb-4\">Sebelum showModal berikutnya, panggil close pada dialog yang open. Kalau alurnya konfirmasi lalu formulir, ganti isi dialog yang sama, jangan membuat elemen dialog kedua yang tidak ditutup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan tumpukan untuk langkah kedua</h2><p class=\"mb-4\">Return value dialog pertama bisa membuka langkah kedua setelah close. Baca nilai itu di event close, lalu baru buka dialog lain. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>: Escape sekali harus mengembalikan fokus ke tombol pemicu, bukan ke dialog yang tersisa.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat jika lapisan gelap ganda</h2><p class=\"mb-4\">Latar dua kali lebih gelap biasanya berarti dua modal. Catat pemicu ganda di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menambah z-index.</p>",
+   "source": "MDN — HTMLDialogElement.showModal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+   "sourceSnippet": "The showModal() method of the HTMLDialogElement interface displays the dialog as a modal, over the top of any other dialogs that might be present.",
+   "source2": "HTML Living Standard — the dialog element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep One dialog Open at a Time",
+   "desc": "How to close the open dialog before showing another one in Clincoo, so focus and modal layers do not stack.",
+   "content": "<p class=\"mb-4\">Two dialog.showModal calls in a row stack top layers. The lower one cannot be clicked, and Escape may only close the top one. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep a single modal dialog open at a time.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Close first, then open</h2><p class=\"mb-4\">Before the next showModal, call close on the dialog that is open. If the flow is confirm then a form, swap the contents of the same dialog instead of creating a second dialog element you never close.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a stack for step two</h2><p class=\"mb-4\">The first dialog return value can open step two after close. Read that value on the close event, then open the other dialog. Test on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>: one Escape should return focus to the trigger, not to a leftover dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Note a double dimmed backdrop</h2><p class=\"mb-4\">A backdrop that is twice as dark usually means two modals. Note the double trigger on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before adding a z-index.</p>",
+   "source": "MDN — HTMLDialogElement.showModal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+   "sourceSnippet": "The showModal() method of the HTMLDialogElement interface displays the dialog as a modal, over the top of any other dialogs that might be present.",
+   "source2": "HTML Living Standard — the dialog element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

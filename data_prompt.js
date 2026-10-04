@@ -355,5 +355,35 @@ window.countryDataFiles["prompt"] = {
   }
  }
 }
- ]
+ ,
+{
+ "id": "prompt-sebutkan-yang-sudah-dicoba",
+ "langs": {
+  "id": {
+   "title": "Cara Sebutkan yang Sudah Dicoba saat Minta Bantuan AI",
+   "desc": "Tata cara menulis percobaan yang sudah gagal saat minta bantuan asisten AI Clincoo, supaya jawaban tidak mengulang langkah yang sama.",
+   "content": "<p class=\"mb-4\">Asisten sering menyarankan hard refresh atau cek typo karena konteksnya kosong. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> mulai pesan dengan gejala, lalu daftar singkat yang sudah dicoba.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tiga baris percobaan cukup</h2><p class=\"mb-4\">Tulis apa yang diubah, apa hasilnya, dan apa yang tidak berubah. Contoh: cache dihapus, error tetap; selector diganti class, tetap tidak kena. Jangan menempel seluruh riwayat obrolan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sebutkan batas yang tidak boleh dilanggar</h2><p class=\"mb-4\">Kalau halaman harus tetap tanpa framework, katakan itu. Minta satu hipotesis berikut, bukan sepuluh tips umum. Lampirkan cuplikan minimal yang masih gagal di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan jawaban yang dipakai</h2><p class=\"mb-4\">Salin langkah yang benar-benar memperbaiki ke catatan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya sesi berikutnya tidak mulai dari nol.</p>",
+   "source": "MDN — What went wrong? Troubleshooting JavaScript",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_went_wrong",
+   "sourceSnippet": "When you are just learning, finding and fixing errors can be a frustrating experience, but it is a skill that will pay you back.",
+   "source2": "Chrome Developers — Debug JavaScript",
+   "source2Url": "https://developer.chrome.com/docs/devtools/javascript",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Tell the AI What You Already Tried",
+   "desc": "How to list the attempts that already failed when asking the Clincoo AI assistant for help, so the reply does not repeat the same steps.",
+   "content": "<p class=\"mb-4\">An assistant often suggests a hard refresh or a typo check because the context is empty. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> start the message with the symptom, then a short list of what you already tried.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Three attempt lines are enough</h2><p class=\"mb-4\">Write what changed, what the result was, and what stayed the same. Example: cache cleared, error remained; selector switched to a class, still missed. Do not paste the whole chat history.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">State the constraint</h2><p class=\"mb-4\">If the page must stay framework-free, say so. Ask for the next single hypothesis, not ten generic tips. Attach the minimal snippet that still fails in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the fix that worked</h2><p class=\"mb-4\">Copy the steps that actually fixed it into a note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next session does not start from zero.</p>",
+   "source": "MDN — What went wrong? Troubleshooting JavaScript",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_went_wrong",
+   "sourceSnippet": "When you are just learning, finding and fixing errors can be a frustrating experience, but it is a skill that will pay you back.",
+   "source2": "Chrome Developers — Debug JavaScript",
+   "source2Url": "https://developer.chrome.com/docs/devtools/javascript",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+]
 };

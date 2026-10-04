@@ -354,5 +354,35 @@ window.countryDataFiles["keyboard"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
-}]
+},
+{
+ "id": "keyboard-jangan-cegah-semua-keydown",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Cegah Semua keydown di Halaman",
+   "desc": "Tata cara membatasi preventDefault pada keydown di Clincoo supaya pintasan khusus tidak menelan Tab, Enter, atau gulir bawaan browser.",
+   "content": "<p class=\"mb-4\">Satu pendengar keydown di document yang selalu memanggil preventDefault membuat Tab macet dan form tidak terkirim. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cegah aksi bawaan hanya untuk kombinasi yang memang kamu tangani.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek target dan kombinasi dulu</h2><p class=\"mb-4\">Abaikan event kalau target adalah input, textarea, atau select, kecuali pintasan itu memang untuk isian. Bandingkan event.key, bukan keyCode. Hanya panggil preventDefault setelah syaratnya cocok, misalnya Ctrl bersama huruf yang tidak dipakai browser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tangkap Tab global</h2><p class=\"mb-4\">Tab adalah urutan fokus. Menelannya memaksa pengguna mouse. Kalau panel butuh perangkap fokus, batasi di dalam panel itu, bukan di seluruh halaman. Uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan keyboard saja.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lepas pendengar saat panel tutup</h2><p class=\"mb-4\">Pendengar yang tertinggal terus menelan tombol di halaman berikutnya. Hapus saat komponen dibongkar, lalu catat gejalanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> jika Tab masih macet setelah rilis.</p>",
+   "source": "MDN — Event.preventDefault",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+   "sourceSnippet": "The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.",
+   "source2": "MDN — KeyboardEvent.key",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Preventing Every keydown",
+   "desc": "How to limit preventDefault on keydown in Clincoo so a custom shortcut does not swallow Tab, Enter, or the browser default scroll.",
+   "content": "<p class=\"mb-4\">A document keydown listener that always calls preventDefault freezes Tab and stops forms from submitting. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> prevent the default only for the combination you actually handle.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the target and the combo first</h2><p class=\"mb-4\">Ignore the event when the target is an input, textarea, or select, unless the shortcut is meant for that field. Compare event.key, not keyCode. Call preventDefault only after the condition matches, for example Ctrl plus a letter the browser does not use.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not capture Tab globally</h2><p class=\"mb-4\">Tab is the focus order. Swallowing it forces a mouse. If a panel needs a focus trap, keep it inside that panel, not on the whole page. Test on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with the keyboard only.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remove the listener when the panel closes</h2><p class=\"mb-4\">A leftover listener keeps eating keys on the next page. Remove it when the component unmounts, and note the symptom on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> if Tab is still stuck after release.</p>",
+   "source": "MDN — Event.preventDefault",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+   "sourceSnippet": "The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.",
+   "source2": "MDN — KeyboardEvent.key",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+]
 };

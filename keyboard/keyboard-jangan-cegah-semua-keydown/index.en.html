@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Preventing Every keydown — Clincoo Docs</title>
+<meta name="description" content="How to limit preventDefault on keydown in Clincoo so a custom shortcut does not swallow Tab, Enter, or the browser default scroll.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/">
+<link rel="canonical" href="https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Preventing Every keydown — Clincoo Docs">
+<meta property="og:description" content="How to limit preventDefault on keydown in Clincoo so a custom shortcut does not swallow Tab, Enter, or the browser default scroll.">
+<meta property="og:url" content="https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Avoid Preventing Every keydown — Clincoo Docs">
+<meta name="twitter:description" content="How to limit preventDefault on keydown in Clincoo so a custom shortcut does not swallow Tab, Enter, or the browser default scroll.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Avoid Preventing Every keydown", "description": "How to limit preventDefault on keydown in Clincoo so a custom shortcut does not swallow Tab, Enter, or the browser default scroll.", "mainEntityOfPage": "https://docs.clincoo.buzz/keyboard/keyboard-jangan-cegah-semua-keydown/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/keyboard/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Keyboard</p>
+<h1 class="seo-title">How to Avoid Preventing Every keydown</h1>
+<div class="seo-body">
+<p class="mb-4">A document keydown listener that always calls preventDefault freezes Tab and stops forms from submitting. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> prevent the default only for the combination you actually handle.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the target and the combo first</h2><p class="mb-4">Ignore the event when the target is an input, textarea, or select, unless the shortcut is meant for that field. Compare event.key, not keyCode. Call preventDefault only after the condition matches, for example Ctrl plus a letter the browser does not use.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not capture Tab globally</h2><p class="mb-4">Tab is the focus order. Swallowing it forces a mouse. If a panel needs a focus trap, keep it inside that panel, not on the whole page. Test on <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> with the keyboard only.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Remove the listener when the panel closes</h2><p class="mb-4">A leftover listener keeps eating keys on the next page. Remove it when the component unmounts, and note the symptom on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> if Tab is still stuck after release.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-32K4RH4DKN",{page_path:location.pathname});</script>
+</body>
+</html>

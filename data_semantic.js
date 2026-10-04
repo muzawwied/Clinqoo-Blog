@@ -355,6 +355,35 @@ window.countryDataFiles["semantic"] = {
      "source3Url": "https://editor.clincoo.buzz/"
     }
    }
+  },
+{
+ "id": "semantic-address-untuk-kontak",
+ "langs": {
+  "id": {
+   "title": "Cara Tandai Kontak dengan Elemen address",
+   "desc": "Tata cara memakai elemen address untuk alamat dan kontak di halaman Clincoo, bukan div biasa, supaya mesin telusur dan pembaca layar mengenali blok kontak.",
+   "content": "<p class=\"mb-4\">Alamat studio atau email dukungan sering hanya jadi paragraf. Elemen address menandai blok kontak, bukan alamat pos sembarang di artikel. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus email dan nama penanggung jawab dengan address di footer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Isi yang memang kontak</h2><p class=\"mb-4\">Taruh tautan mailto, nomor yang boleh dihubungi, dan nama halaman kontak. Jangan memakai address untuk alamat di dalam cerita atau kutipan. Satu halaman cukup satu blok kontak utama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tautan yang bisa diklik</h2><p class=\"mb-4\">Email ditulis sebagai tautan mailto, bukan teks polos. Nomor telepon memakai tautan tel hanya jika pengunjung ponsel memang diharapkan menekan. Cek di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bahwa gaya miring bawaan browser sudah ditimpa jika desain footer Clincoo tidak memakai italic.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan ganti dengan div</h2><p class=\"mb-4\">div dengan class kontak tidak punya makna. address tetap address meski tampilannya diatur CSS. Catat pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya footer proyek lain tidak kembali ke div.</p>",
+   "source": "MDN — address element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address",
+   "sourceSnippet": "The address HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.",
+   "source2": "HTML Living Standard — the address element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/sections.html#the-address-element",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Mark Contact Details with address",
+   "desc": "How to use the address element for contact details on a Clincoo page, instead of a plain div, so search engines and screen readers recognize the contact block.",
+   "content": "<p class=\"mb-4\">A studio address or support email is often just a paragraph. The address element marks a contact block, not a random postal address inside an article. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap the email and the responsible name with address in the footer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Only real contact details</h2><p class=\"mb-4\">Put a mailto link, a number people may call, and the contact page name. Do not use address for a place mentioned in a story or a quote. One page needs one main contact block.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Links people can activate</h2><p class=\"mb-4\">Write the email as a mailto link, not plain text. Use a tel link only if mobile visitors are expected to tap it. Check the preview on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> and override the browser italic if the Clincoo footer is not italic.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not swap it for a div</h2><p class=\"mb-4\">A div with a contact class has no meaning. address stays address even after CSS restyles it. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so other project footers do not slide back to a div.</p>",
+   "source": "MDN — address element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address",
+   "sourceSnippet": "The address HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.",
+   "source2": "HTML Living Standard — the address element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/sections.html#the-address-element",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
   }
+ }
+}
 ]
 };
