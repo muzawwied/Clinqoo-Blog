@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Help Center — Clincoo Docs</title>
@@ -51,7 +51,7 @@
   .drop-in { animation: dropIn 0.18s ease-out; }
   @keyframes dropIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Help Center","description":"All articles in the Help Center category of the Clincoo Docs: 12 official Clincoo articles.","mainEntity":{"@type":"ItemList","numberOfItems":12,"itemListElement":[{"@type":"ListItem","position":1,"name":"Frequently Asked Questions (FAQ)","url":"https://docs.clincoo.buzz/bantuan/faq-clinqoo/index.en.html"},{"@type":"ListItem","position":2,"name":"Common Problems and How to Fix Them","url":"https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/index.en.html"},{"@type":"ListItem","position":3,"name":"How to Read Console Errors in Preview","url":"https://docs.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html"},{"@type":"ListItem","position":4,"name":"How to Ask the AI for Help When You Are Stuck","url":"https://docs.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/index.en.html"},{"@type":"ListItem","position":5,"name":"How to Organize a Project Folder","url":"https://docs.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/index.en.html"},{"@type":"ListItem","position":6,"name":"How to Resume an Unfinished Payment","url":"https://docs.clincoo.buzz/bantuan/cara-melanjutkan-pembayaran-tertunda/index.en.html"}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Help Center","description":"All articles in the Help Center category of the Clincoo Docs: 12 official Clincoo articles.","mainEntity":{"@type":"ItemList","numberOfItems":12,"itemListElement":[{"@type":"ListItem","position":1,"name":"Frequently Asked Questions (FAQ)","url":"https://docs.clincoo.buzz/bantuan/faq-clincoo/index.en.html"},{"@type":"ListItem","position":2,"name":"Common Problems and How to Fix Them","url":"https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/index.en.html"},{"@type":"ListItem","position":3,"name":"How to Read Console Errors in Preview","url":"https://docs.clincoo.buzz/bantuan/cara-baca-error-console-di-preview/index.en.html"},{"@type":"ListItem","position":4,"name":"How to Ask the AI for Help When You Are Stuck","url":"https://docs.clincoo.buzz/bantuan/cara-minta-bantuan-ai-saat-stuck/index.en.html"},{"@type":"ListItem","position":5,"name":"How to Organize a Project Folder","url":"https://docs.clincoo.buzz/bantuan/cara-rapikan-struktur-folder-proyek/index.en.html"},{"@type":"ListItem","position":6,"name":"How to Resume an Unfinished Payment","url":"https://docs.clincoo.buzz/bantuan/cara-melanjutkan-pembayaran-tertunda/index.en.html"}]}}</script>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased min-h-screen">
 
@@ -74,7 +74,7 @@
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">Home</span>
     </a>
     <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in"></div>
-<script src="/assets/cat-nav.js?v=2"></script>
+<script src="/assets/cat-nav.js?v=3"></script>
     <div class="h-px bg-gray-100 w-10 mx-6 my-3"></div>
     <a href="/tentang/" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -98,7 +98,7 @@
   <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
   <input type="text" id="searchInput" class="w-full border border-gray-300 rounded-full py-2.5 pl-12 pr-5 text-base outline-none focus:border-gray-900 transition-colors shadow-sm" placeholder="Search articles..." oninput="filterCards(this)" autocomplete="off" spellcheck="false">
 </div>
-<a data-card data-title="Frequently Asked Questions (FAQ)" data-desc="Quick answers to the most common questions about accounts, plans, AI, collaboration, and deploys on Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/faq-clinqoo/index.en.html">
+<a data-card data-title="Frequently Asked Questions (FAQ)" data-desc="Quick answers to the most common questions about accounts, plans, AI, collaboration, and deploys on Clincoo." class="mb-4 block border border-gray-200 rounded-[0.5rem] p-5 hover:border-gray-400 transition-colors" href="/bantuan/faq-clincoo/index.en.html">
   <div class="mb-2"><span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Help Center</span></div>
   <h2 class="text-lg font-bold text-gray-900">Frequently Asked Questions (FAQ)</h2>
   <div class="h-px bg-gray-100 w-full my-3"></div>

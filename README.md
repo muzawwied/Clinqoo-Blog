@@ -1,14 +1,14 @@
-# Clinqoo Blog
+# Clincoo Blog
 
 ## ⛔ ATURAN DEPLOYMENT — WAJIB DIBACA SEBELUM DEPLOY
 
-Blog (Cloudflare Pages, project `clinqoo-blog`) **sudah terhubung otomatis
+Blog (Cloudflare Pages, project `clincoo-blog`) **sudah terhubung otomatis
 dengan repo ini** (GitHub-connected, branch `main`). Setiap push ke `main`
 otomatis memicu build & deploy blog.
 
 1. Deploy blog **SATU-SATUNYA lewat git**: `git pull` → ubah kode →
    `git commit` → `git push origin main`. Cloudflare membangun ulang otomatis.
-2. **JANGAN `wrangler pages deploy . --project-name=clinqoo-blog`.** Upload
+2. **JANGAN `wrangler pages deploy . --project-name=clincoo-blog`.** Upload
    langsung menimpa build dari git tanpa jejak commit. Kalau folder lokalnya
    basi (belum `git pull` terbaru), blog tertimpa versi lama dan pembaruan
    terbaru **hilang / halaman rusak**. Ini sudah terjadi berkali-kali di

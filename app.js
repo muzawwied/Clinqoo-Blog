@@ -62,10 +62,12 @@ function toggleSidebar() {
   const overlay = document.getElementById('sidebarOverlay');
   if (sidebar.classList.contains('-translate-x-full')) {
     sidebar.classList.remove('-translate-x-full');
+    document.body.style.overflow = 'hidden';
     overlay.classList.remove('hidden');
     setTimeout(() => overlay.classList.remove('opacity-0'), 10);
   } else {
     sidebar.classList.add('-translate-x-full');
+    document.body.style.overflow = '';
     overlay.classList.add('opacity-0');
     setTimeout(() => overlay.classList.add('hidden'), 300);
   }

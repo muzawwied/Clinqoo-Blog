@@ -3,7 +3,7 @@
 (function () {
   var CATS = {
     "mulai": { name: {"id":"Memulai","en":"Getting Started"}, arts: [
-      ["selamat-datang-di-clinqoo", "Selamat Datang di Clincoo", "Welcome to Clincoo"],
+      ["selamat-datang-di-clincoo", "Selamat Datang di Clincoo", "Welcome to Clincoo"],
       ["cara-buat-proyek-dari-template", "Cara Membuat Proyek dari Template", "How to Create a Project from a Template"],
       ["cara-simpan-dan-cek-live-preview", "Cara Menyimpan File dan Mengecek Live Preview", "How to Save a File and Check Live Preview"],
       ["cara-deploy-situs-pertama", "Cara Deploy Situs Pertama dari Editor", "How to Deploy Your First Site from the Editor"],
@@ -17,8 +17,8 @@
       ["cara-duplikat-proyek-sebagai-cadangan", "Cara Duplikat Proyek sebagai Cadangan", "How to Duplicate a Project as a Backup"],
     ] },
     "dokumentasi": { name: {"id":"Dokumentasi","en":"Documentation"}, arts: [
-      ["asisten-ai-clinqoo", "Asisten AI Clincoo", "Clinqoo AI Assistant"],
-      ["paket-dan-harga-clinqoo", "Paket dan Harga Clincoo", "Clinqoo Plans and Pricing"],
+      ["asisten-ai-clincoo", "Asisten AI Clincoo", "Clincoo AI Assistant"],
+      ["paket-dan-harga-clincoo", "Paket dan Harga Clincoo", "Clincoo Plans and Pricing"],
       ["kolaborasi-tim", "Kolaborasi Tim di Clincoo", "Team Collaboration in Clincoo"],
       ["cara-pakai-terminal-di-editor", "Cara Memakai Terminal di Editor Clincoo", "How to Use the Terminal in the Clincoo Editor"],
       ["cara-atur-variabel-lingkungan", "Cara Mengatur Variabel Lingkungan Proyek", "How to Set Project Environment Variables"],
@@ -29,11 +29,11 @@
       ["cara-buat-layout-grid-dua-kolom", "Cara Buat Layout Grid Dua Kolom", "How to Build a Two-Column Grid Layout"],
       ["cara-atur-heading-berjenjang", "Cara Atur Heading Berjenjang", "How to Set a Heading Hierarchy"],
       ["cara-baca-log-deploy-yang-gagal", "Cara Baca Log Deploy yang Gagal", "How to Read a Failed Deploy Log"],
-      ["cara-tarik-saldo-dari-clinqoo", "Cara Tarik Saldo Penghasilan dari Clincoo", "How to Withdraw Your Clincoo Earnings"],
+      ["cara-tarik-saldo-dari-clincoo", "Cara Tarik Saldo Penghasilan dari Clincoo", "How to Withdraw Your Clincoo Earnings"],
       ["cara-atur-webhook-proyek", "Cara Mengatur Webhook Proyek di Clincoo", "How to Set Up Project Webhooks in Clincoo"],
     ] },
     "bantuan": { name: {"id":"Pusat Bantuan","en":"Help Center"}, arts: [
-      ["faq-clinqoo", "Pertanyaan yang Sering Diajukan (FAQ)", "Frequently Asked Questions (FAQ)"],
+      ["faq-clincoo", "Pertanyaan yang Sering Diajukan (FAQ)", "Frequently Asked Questions (FAQ)"],
       ["masalah-umum-dan-solusinya", "Masalah Umum dan Cara Mengatasinya", "Common Problems and How to Fix Them"],
       ["cara-baca-error-console-di-preview", "Cara Membaca Error Console di Preview", "How to Read Console Errors in Preview"],
       ["cara-minta-bantuan-ai-saat-stuck", "Cara Minta Bantuan AI Saat Stuck", "How to Ask the AI for Help When You Are Stuck"],
@@ -192,4 +192,16 @@
   box.innerHTML = html;
   box.classList.remove("hidden");
   box.classList.add("flex");
+
+  // Perbaikan scroll: selama drawer sidebar terbuka, halaman artikel dikunci supaya
+  // menggulir di atas sidebar tidak ikut menggulirkan halaman di belakangnya.
+  var sb = document.getElementById("sidebar");
+  if (sb) {
+    var lock = function () {
+      var open = sb.classList.contains("translate-x-0") && !sb.classList.contains("-translate-x-full");
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+    if (typeof MutationObserver !== "undefined") new MutationObserver(lock).observe(sb, { attributes: true, attributeFilter: ["class"] });
+    lock();
+  }
 })();

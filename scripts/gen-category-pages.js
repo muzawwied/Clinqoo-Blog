@@ -2,7 +2,7 @@
 // sidebar menu lengkap. Jalankan: node scripts/gen-category-pages.js
 const fs = require('fs');
 const vm = require('vm');
-const src = fs.readFileSync(__dirname + '/../data_clinqoo.js', 'utf8');
+const src = fs.readFileSync(__dirname + '/../data_clincoo.js', 'utf8');
 const sandbox = { window: {} };
 vm.runInNewContext(src, sandbox);
 const d = sandbox.window.countryDataFiles;
@@ -71,7 +71,7 @@ function build(catId, lang) {
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(name)} — Clincoo Docs</title>

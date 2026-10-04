@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dialog HTML — Clincoo Docs</title>
@@ -51,7 +51,7 @@
   .drop-in { animation: dropIn 0.18s ease-out; }
   @keyframes dropIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Dialog HTML","description":"Kumpulan artikel kategori Dialog HTML di Clincoo Docs: 12 artikel resmi Clincoo.","mainEntity":{"@type":"ItemList","numberOfItems":10,"itemListElement":[{"@type":"ListItem","position":1,"name":"Selamat Datang di Clincoo","url":"https://docs.clincoo.buzz/dialog/selamat-datang-di-clinqoo/"},{"@type":"ListItem","position":2,"name":"Cara Membuat Proyek dari Template","url":"https://docs.clincoo.buzz/dialog/cara-buat-proyek-dari-template/"},{"@type":"ListItem","position":3,"name":"Cara Menyimpan File dan Mengecek Live Preview","url":"https://docs.clincoo.buzz/dialog/cara-simpan-dan-cek-live-preview/"},{"@type":"ListItem","position":4,"name":"Cara Deploy Situs Pertama dari Editor","url":"https://docs.clincoo.buzz/dialog/cara-deploy-situs-pertama/"},{"@type":"ListItem","position":5,"name":"Cara Memasang Domain Kustom","url":"https://docs.clincoo.buzz/dialog/cara-pasang-domain-kustom/"},{"@type":"ListItem","position":6,"name":"Cara Mengecek Tampilan di Lebar Ponsel","url":"https://docs.clincoo.buzz/dialog/cara-cek-tampilan-di-lebar-ponsel/"},{"@type":"ListItem","position":7,"name":"Cara Membuat Halaman Kedua di Proyek","url":"https://docs.clincoo.buzz/dialog/cara-buat-halaman-kedua/"}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Dialog HTML","description":"Kumpulan artikel kategori Dialog HTML di Clincoo Docs: 12 artikel resmi Clincoo.","mainEntity":{"@type":"ItemList","numberOfItems":10,"itemListElement":[{"@type":"ListItem","position":1,"name":"Selamat Datang di Clincoo","url":"https://docs.clincoo.buzz/dialog/selamat-datang-di-clincoo/"},{"@type":"ListItem","position":2,"name":"Cara Membuat Proyek dari Template","url":"https://docs.clincoo.buzz/dialog/cara-buat-proyek-dari-template/"},{"@type":"ListItem","position":3,"name":"Cara Menyimpan File dan Mengecek Live Preview","url":"https://docs.clincoo.buzz/dialog/cara-simpan-dan-cek-live-preview/"},{"@type":"ListItem","position":4,"name":"Cara Deploy Situs Pertama dari Editor","url":"https://docs.clincoo.buzz/dialog/cara-deploy-situs-pertama/"},{"@type":"ListItem","position":5,"name":"Cara Memasang Domain Kustom","url":"https://docs.clincoo.buzz/dialog/cara-pasang-domain-kustom/"},{"@type":"ListItem","position":6,"name":"Cara Mengecek Tampilan di Lebar Ponsel","url":"https://docs.clincoo.buzz/dialog/cara-cek-tampilan-di-lebar-ponsel/"},{"@type":"ListItem","position":7,"name":"Cara Membuat Halaman Kedua di Proyek","url":"https://docs.clincoo.buzz/dialog/cara-buat-halaman-kedua/"}]}}</script>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased min-h-screen">
 
@@ -74,7 +74,7 @@
       <span class="text-[15px] font-medium text-gray-800 group-hover:text-gray-900">Beranda</span>
     </a>
     <div id="catDrop" class="flex flex-col max-h-[70vh] overflow-y-auto py-1 drop-in"></div>
-<script src="/assets/cat-nav.js?v=2"></script>
+<script src="/assets/cat-nav.js?v=3"></script>
     <div class="h-px bg-gray-100 w-10 mx-6 my-3"></div>
     <a href="/tentang/" class="w-full flex items-center px-6 py-2 hover:bg-gray-50 transition-colors group">
       <svg class="w-5 h-5 text-gray-500 mr-4 group-hover:text-gray-900 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
