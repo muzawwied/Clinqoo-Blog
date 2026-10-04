@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clinqoo.js + extra + semantic + form + dialog + aria + keyboard + prompt) lalu app.js
+// Loader: muat konten blog Clincoo (data_clinqoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
-  function loadPrompt() {
+  function loadConsole() {
     var e = document.createElement('script');
-    e.src = 'data_prompt.js?v=2';
+    e.src = 'data_console.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadPrompt() {
+    var e = document.createElement('script');
+    e.src = 'data_prompt.js?v=3';
+    e.onload = loadConsole;
+    e.onerror = loadConsole;
     document.body.appendChild(e);
   }
   function loadKeyboard() {
