@@ -121,6 +121,151 @@ window.countryDataFiles["seo"] = {
    "source3Url": "https://blog.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "seo-lebar-tinggi-gambar-cegah-cls",
+ "langs": {
+  "id": {
+   "title": "Cara Isi Width dan Height Gambar supaya Layout Tidak Melompat",
+   "desc": "Tata cara menaruh width dan height pada img di halaman Clincoo supaya ruang gambar sudah dipesan sebelum berkas selesai diunduh.",
+   "content": "<p class=\"mb-4\">Gambar tanpa ukuran membuat teks di bawahnya meloncat saat berkas selesai. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> isi width dan height sesuai rasio asli, bukan angka sembarang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai ukuran intrinsik</h2><p class=\"mb-4\">Jika foto 1200×800, tulis width=\"1200\" height=\"800\". CSS boleh mengecilkan dengan max-width: 100% dan height: auto. Jangan hapus atributnya hanya karena layout sudah memakai persen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tipu rasio</h2><p class=\"mb-4\">Width 100 dan height 100 pada foto lebar memaksa kotak yang salah lalu terkoreksi. Rasio atribut harus sama dengan berkas. Gambar hias tetap butuh alt kosong, bukan ukuran yang dihilangkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat ulang dengan jaringan lambat. Teks di bawah gambar tidak boleh bergeser. Catat pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — img width and height",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-width",
+   "sourceSnippet": "The width and height attributes give the intrinsic size so the browser can reserve space before the image loads.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set Image Width and Height so the Layout Does Not Jump",
+   "desc": "How to set width and height on img elements in a Clincoo page so the image box is reserved before the file finishes downloading.",
+   "content": "<p class=\"mb-4\">An image without dimensions pushes the text below it when the file arrives. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set width and height to the real ratio, not a random pair.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use the intrinsic size</h2><p class=\"mb-4\">If the photo is 1200×800, write width=\"1200\" height=\"800\". CSS may shrink it with max-width: 100% and height: auto. Do not drop the attributes just because the layout already uses percent.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not fake the ratio</h2><p class=\"mb-4\">Width 100 and height 100 on a wide photo reserves the wrong box, then corrects itself. The attribute ratio must match the file. A decorative image still needs an empty alt, not missing dimensions.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reload on a slow network. Text under the image should not shift. Keep this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — img width and height",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-width",
+   "sourceSnippet": "The width and height attributes give the intrinsic size so the browser can reserve space before the image loads.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-loading-lazy-gambar-bawah-lipatan",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang loading lazy pada Gambar di Bawah Lipatan",
+   "desc": "Tata cara menunda unduhan gambar di bawah lipatan halaman Clincoo dengan loading lazy, tanpa menunda gambar hero yang langsung terlihat.",
+   "content": "<p class=\"mb-4\">Semua gambar yang diunduh bersamaan memperlambat judul. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> gambar di bawah lipatan boleh loading=\"lazy\". Gambar pertama yang terlihat tidak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan hero dan sisanya</h2><p class=\"mb-4\">Hero, logo, dan gambar di layar pertama tidak memakai lazy. Gambar galeri, kartu bawah, dan ilustrasi footer memakai loading=\"lazy\". Width dan height tetap diisi supaya kotak tidak melompat saat gambar masuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan lazy pada gambar LCP</h2><p class=\"mb-4\">Gambar terbesar di layar pertama yang ditunda akan terlambat tercatat. Kalau ragu, biarkan bawaan browser untuk satu gambar atas saja.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka panel jaringan, muat ulang, dan gulir. Gambar bawah baru terunduh setelah mendekat. Simpan cek ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — loading attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
+   "sourceSnippet": "The loading attribute indicates how the browser should load the image: eagerly or lazily.",
+   "source2": "web.dev — Browser-level image lazy loading",
+   "source2Url": "https://web.dev/articles/browser-level-image-lazy-loading",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Lazy-Load Images Below the Fold",
+   "desc": "How to defer below-the-fold images on a Clincoo page with loading lazy, without delaying the hero image that is visible immediately.",
+   "content": "<p class=\"mb-4\">Downloading every image at once slows the heading. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> images below the fold may use loading=\"lazy\". The first visible image should not.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate the hero from the rest</h2><p class=\"mb-4\">The hero, logo, and first-screen image do not use lazy. Gallery images, lower cards, and footer art use loading=\"lazy\". Keep width and height so the box does not jump when the file arrives.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not lazy-load the LCP image</h2><p class=\"mb-4\">The largest first-screen image, if deferred, is recorded late. If you are unsure, leave the browser default on that one top image.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the network panel, reload, and scroll. Lower images should download only as they approach. Keep this check on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — loading attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
+   "sourceSnippet": "The loading attribute indicates how the browser should load the image: eagerly or lazily.",
+   "source2": "web.dev — Browser-level image lazy loading",
+   "source2Url": "https://web.dev/articles/browser-level-image-lazy-loading",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-url-huruf-kecil-tanpa-parameter",
+ "langs": {
+  "id": {
+   "title": "Cara Jaga URL Publik Huruf Kecil tanpa Parameter Pelacak",
+   "desc": "Tata cara menormalkan URL halaman Clincoo ke huruf kecil dan tanpa utm, supaya mesin telusur tidak melihat duplikat halaman yang sama.",
+   "content": "<p class=\"mb-4\">URL /Harga dan /harga?utm=x sering dianggap dua halaman. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tautan internal memakai huruf kecil, tanda hubung, dan tanpa parameter pelacak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu bentuk kanonis</h2><p class=\"mb-4\">Pilih /harga/ atau /harga, lalu pakai bentuk itu di semua tautan dan canonical. Jangan campur huruf besar di menu. Parameter utm boleh pada tautan kampanye keluar, bukan pada href internal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Canonical menunjuk bentuk bersih</h2><p class=\"mb-4\">Jika pengunjung datang dengan query pelacak, canonical tetap ke URL tanpa query. Jangan menaruh utm di canonical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik menu dan baca href. Semuanya huruf kecil dan tanpa query. Contoh pola ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — URL structure",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+   "sourceSnippet": "A simple URL structure helps Google crawl and understand your site.",
+   "source2": "MDN — link rel canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#canonical",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep Public URLs Lowercase and Free of Tracking Parameters",
+   "desc": "How to normalize Clincoo page URLs to lowercase and without utm so search engines do not treat the same page as duplicates.",
+   "content": "<p class=\"mb-4\">The URLs /Harga and /harga?utm=x are often treated as two pages. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> internal links use lowercase, hyphens, and no tracking parameters.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One canonical form</h2><p class=\"mb-4\">Pick /harga/ or /harga, then use that form in every link and canonical. Do not mix capitals in the menu. utm may appear on outbound campaign links, not on internal hrefs.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Canonical points at the clean form</h2><p class=\"mb-4\">If a visitor arrives with a tracking query, canonical still points at the URL without the query. Do not put utm in canonical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click the menu and read the hrefs. They should be lowercase and query-free. Keep the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — URL structure",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+   "sourceSnippet": "A simple URL structure helps Google crawl and understand your site.",
+   "source2": "MDN — link rel canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#canonical",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-breadcrumb-yang-bisa-diikuti",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang Breadcrumb yang Bisa Diikuti",
+   "desc": "Tata cara menulis jejak tautan Clincoo dengan nav dan daftar, bukan teks polos, supaya jalur kategori ke artikel bisa diikuti.",
+   "content": "<p class=\"mb-4\">Teks “Beranda / SEO / artikel” tanpa tautan tidak bisa diikuti. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus jejak dengan nav dan ol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tautan sampai induk, bukan halaman ini</h2><p class=\"mb-4\">Butir beranda dan kategori adalah tautan. Butir terakhir adalah teks halaman ini, bukan tautan ke dirinya sendiri. Beri nav aria-label=\"Jejak halaman\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan hanya andalkan skrip</h2><p class=\"mb-4\">Jejak harus ada di HTML awal. JSON-LD boleh menambahkan, tetapi tidak mengganti tautan yang terlihat. Href relatif harus tetap benar setelah pindah folder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik tiap butir kecuali yang terakhir. Kategori terbuka, bukan 404. Simpan contoh di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Breadcrumb",
+   "sourceUrl": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+   "sourceSnippet": "A breadcrumb trail on a page indicates the page position in the site hierarchy.",
+   "source2": "MDN — nav element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Add a Breadcrumb that Can Be Followed",
+   "desc": "How to write a Clincoo trail with nav and a list, not plain text, so the path from category to article can be followed.",
+   "content": "<p class=\"mb-4\">The text “Home / SEO / article” without links cannot be followed. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap the trail in nav and ol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Link up to the parent, not this page</h2><p class=\"mb-4\">Home and category items are links. The last item is the current page text, not a link to itself. Give the nav aria-label=\"Breadcrumb\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on script alone</h2><p class=\"mb-4\">The trail must be in the initial HTML. JSON-LD may add data, but it does not replace visible links. Relative hrefs must still work after a folder move.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click every item except the last. The category should open, not a 404. Keep a sample on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Breadcrumb",
+   "sourceUrl": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+   "sourceSnippet": "A breadcrumb trail on a page indicates the page position in the site hierarchy.",
+   "source2": "MDN — nav element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-cek-tautan-404-sebelum-deploy",
+ "langs": {
+  "id": {
+   "title": "Cara Cek Tautan Internal 404 sebelum Deploy",
+   "desc": "Tata cara menguji tautan internal halaman Clincoo sebelum deploy supaya href yang salah tidak ikut terbit sebagai 404.",
+   "content": "<p class=\"mb-4\">Tautan ke file yang sudah diganti nama tetap terlihat biru, tetapi berakhir 404. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kumpulkan href internal lalu buka satu per satu di preview sebelum deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan internal dan luar</h2><p class=\"mb-4\">Href yang diawali / atau tanpa protokol adalah milik situs. Href https ke domain lain dicatat terpisah. Jangan menganggap tautan luar yang gagal sebagai bug deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan folder dan huruf</h2><p class=\"mb-4\">index.html di folder lain butuh path yang benar. Huruf besar yang beda satu karakter sudah cukup untuk 404 di hosting yang peka huruf. Trailing slash harus sama dengan canonical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik tiap tautan utama. Status 200 sebelum tombol deploy. Catat daftar cek di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTTP 404",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+   "sourceSnippet": "The HTTP 404 Not Found response status code indicates that the server cannot find the requested resource.",
+   "source2": "Google Search Central — Crawlable links",
+   "source2Url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check Internal Links for 404 before Deploy",
+   "desc": "How to test internal links on a Clincoo page before deploy so a wrong href is not published as a 404.",
+   "content": "<p class=\"mb-4\">A link to a renamed file still looks blue, then ends in a 404. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> collect internal hrefs and open each one in preview before deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate internal and outbound</h2><p class=\"mb-4\">An href that starts with / or has no protocol belongs to the site. An https href to another domain is noted separately. Do not treat a failed outbound link as a deploy bug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match folder and case</h2><p class=\"mb-4\">index.html in another folder needs the right path. One capital letter is enough for a 404 on a case-sensitive host. The trailing slash should match canonical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click each main link. Expect status 200 before the deploy button. Keep the checklist on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTTP 404",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+   "sourceSnippet": "The HTTP 404 Not Found response status code indicates that the server cannot find the requested resource.",
+   "source2": "Google Search Central — Crawlable links",
+   "source2Url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
 }
 ]
 };
