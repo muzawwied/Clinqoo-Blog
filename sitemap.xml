@@ -1102,6 +1102,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-report-to-untuk-pelanggaran/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-report-to-untuk-pelanggaran/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/csp/csp-connect-src-batasi-fetch/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-connect-src-batasi-fetch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-connect-src-batasi-fetch/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-connect-src-batasi-fetch/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/csp/csp-object-src-none/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-object-src-none/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-object-src-none/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-object-src-none/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/csp/csp-base-uri-cegah-base-tag/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-base-uri-cegah-base-tag/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-base-uri-cegah-base-tag/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-base-uri-cegah-base-tag/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/csp/csp-form-action-batasi-tujuan-kirim/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-form-action-batasi-tujuan-kirim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-form-action-batasi-tujuan-kirim/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-form-action-batasi-tujuan-kirim/"/>
+  </url>
 </urlset>
 
 
