@@ -296,5 +296,63 @@ window.countryDataFiles["keyboard"] = {
     }
    }
   }
- ]
+ ,
+  {
+ "id": "keyboard-kembalikan-fokus-setelah-elemen-hilang",
+ "langs": {
+  "id": {
+   "title": "Cara Kembalikan Fokus setelah Elemen Hilang",
+   "desc": "Tata cara mengembalikan fokus keyboard di Clincoo setelah tombol atau panel yang sedang fokus dihapus, supaya Tab tidak jatuh ke body.",
+   "content": "<p class=\"mb-4\">Kalau elemen yang sedang fokus dihapus, browser sering melempar fokus ke body. Pengguna keyboard harus men-Tab dari atas lagi. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan pemicu sebelum menutup panel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan pemicu sebelum menutup</h2><p class=\"mb-4\">Sebelum remove() atau hidden, catat document.activeElement. Setelah panel hilang, panggil focus() pada tombol yang tadi membuka panel. Jangan focus() ke elemen yang sudah tidak ada di dokumen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan urutan Tab otomatis</h2><p class=\"mb-4\">Tanpa pengembalian fokus, Tab berikutnya mulai dari body atau dari kontrol tak terduga. Di dialog asli, showModal mengembalikan fokus sendiri. Panel kustom harus mengembalikannya manual.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka panel hanya dengan keyboard, lalu tutup. Fokus harus kembali ke tombol buka, bukan ke awal halaman. Catat polanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> jika panel dipakai di lebih dari satu template.</p>",
+   "source": "MDN — HTMLElement.focus()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
+   "sourceSnippet": "The HTMLElement.focus() method sets focus on the specified element, if it can be focused.",
+   "source2": "MDN — HTMLDialogElement.showModal()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Restore Focus after an Element Disappears",
+   "desc": "How to move keyboard focus back in Clincoo after the focused button or panel is removed, so Tab does not fall to the body.",
+   "content": "<p class=\"mb-4\">If the focused element is removed, the browser often drops focus to the body. Keyboard users must Tab from the top again. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> store the trigger before closing a panel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Store the trigger before close</h2><p class=\"mb-4\">Before remove() or hidden, record document.activeElement. After the panel is gone, call focus() on the button that opened it. Do not call focus() on a node that is no longer in the document.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on automatic Tab order</h2><p class=\"mb-4\">Without restoring focus, the next Tab starts at the body or on an unexpected control. A native dialog restores focus from showModal. A custom panel must restore it yourself.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the panel with the keyboard only, then close it. Focus should return to the open button, not the top of the page. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> if the panel is shared across templates.</p>",
+   "source": "MDN — HTMLElement.focus()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
+   "sourceSnippet": "The HTMLElement.focus() method sets focus on the specified element, if it can be focused.",
+   "source2": "MDN — HTMLDialogElement.showModal()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+  {
+ "id": "keyboard-jangan-autofocus-di-tiap-muat",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Pakai autofocus di Setiap Muat Halaman",
+   "desc": "Tata cara membatasi autofocus di halaman Clincoo supaya pengguna keyboard dan pembaca layar tidak langsung ditarik ke isian saat halaman dibuka.",
+   "content": "<p class=\"mb-4\">autofocus memindahkan fokus begitu dokumen siap. Di halaman yang sering dibuka, itu memotong skip link dan menu. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jangan pasang autofocus pada setiap template.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kapan autofocus masuk akal</h2><p class=\"mb-4\">Satu isian utama di halaman khusus, misalnya kotak cari yang memang tujuan halaman, boleh memakai autofocus. Halaman artikel, dashboard, dan form panjang tidak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Yang rusak kalau selalu dipasang</h2><p class=\"mb-4\">Skip link tidak pernah jadi perhentian pertama. Pembaca layar langsung mengumumkan isian, bukan judul halaman. Pengguna yang hanya ingin baca harus keluar dari isian dulu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat halaman dan tekan Tab sekali. Perhentian pertama harus skip link atau kontrol header, bukan input tersembunyi. Jika satu halaman memang butuh fokus awal, tulis alasannya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — autofocus",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autofocus",
+   "sourceSnippet": "The autofocus global attribute is a Boolean attribute indicating that an element should be focused on page load.",
+   "source2": "MDN — Skip link",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid autofocus on Every Page Load",
+   "desc": "How to limit autofocus on a Clincoo page so keyboard and screen-reader users are not pulled into a field as soon as the page opens.",
+   "content": "<p class=\"mb-4\">autofocus moves focus as soon as the document is ready. On pages people open often, that skips the skip link and the menu. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> do not put autofocus on every template.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">When autofocus is reasonable</h2><p class=\"mb-4\">A single primary field on a dedicated page, such as a search box that is the point of the page, can use autofocus. Article pages, dashboards, and long forms should not.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">What breaks if it is always on</h2><p class=\"mb-4\">The skip link never becomes the first stop. A screen reader announces the field instead of the page title. Someone who only wanted to read must leave the field first.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> load the page and press Tab once. The first stop should be the skip link or a header control, not a hidden input. If one page really needs initial focus, write the reason on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — autofocus",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autofocus",
+   "sourceSnippet": "The autofocus global attribute is a Boolean attribute indicating that an element should be focused on page load.",
+   "source2": "MDN — Skip link",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}]
 };
