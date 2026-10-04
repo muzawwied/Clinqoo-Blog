@@ -208,6 +208,151 @@ window.countryDataFiles["aria"] = {
     "source3Url": "https://app.clincoo.buzz/"
    }
   }
+ },
+ {
+  "id": "aria-pressed-pada-tombol-toggle",
+  "langs": {
+   "id": {
+    "title": "Cara Tandai Tombol Toggle dengan aria-pressed",
+    "desc": "Tata cara memasang aria-pressed pada tombol nyala-mati di Clincoo supaya pembaca layar mengumumkan status, bukan hanya nama tombol.",
+    "content": "<p class=\"mb-4\">Tombol yang mengubah warna saja tidak memberitahu status. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tombol toggle butuh aria-pressed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai button, bukan div</h2><p class=\"mb-4\">Elemennya tetap button. aria-pressed=\"true\" saat aktif dan aria-pressed=\"false\" saat mati. Jangan menulis \"aktif\" hanya di class CSS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Perbarui setelah klik</h2><p class=\"mb-4\">Di handler klik, ubah atribut bersamaan dengan tampilan. Nama tombol tetap singkat, misalnya \"Mode gelap\". Status dibaca dari aria-pressed, bukan dari aria-label yang berubah-ubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> aktifkan toggle lalu tab ke tombol. Pembaca layar harus menyebut ditekan atau tidak ditekan, sesuai nilai terbaru.</p>",
+    "source": "MDN — aria-pressed",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-pressed",
+    "sourceSnippet": "The aria-pressed attribute indicates the current pressed state of a toggle button.",
+    "source2": "WAI-ARIA — toggle button",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Mark a Toggle Button with aria-pressed",
+    "desc": "How to set aria-pressed on an on-off button in Clincoo so a screen reader announces the state, not only the button name.",
+    "content": "<p class=\"mb-4\">A button that only changes color does not report state. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> a toggle needs aria-pressed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use a button, not a div</h2><p class=\"mb-4\">Keep the element a button. Set aria-pressed=\"true\" when it is on and aria-pressed=\"false\" when it is off. Do not store \"active\" only in a CSS class.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update it after the click</h2><p class=\"mb-4\">In the click handler, change the attribute together with the visual. Keep the name short, for example \"Dark mode\". The state comes from aria-pressed, not from an aria-label that keeps changing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> turn the toggle on, then tab to the button. A screen reader should announce pressed or not pressed from the latest value.</p>",
+    "source": "MDN — aria-pressed",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-pressed",
+    "sourceSnippet": "The aria-pressed attribute indicates the current pressed state of a toggle button.",
+    "source2": "WAI-ARIA — toggle button",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   }
+  }
+ },
+ {
+  "id": "aria-controls-pada-panel",
+  "langs": {
+   "id": {
+    "title": "Cara Hubungkan Tombol ke Panel dengan aria-controls",
+    "desc": "Tata cara mengikat tombol pembuka panel di Clincoo ke id panel lewat aria-controls supaya hubungan kontrolnya jelas.",
+    "content": "<p class=\"mb-4\">Tombol yang membuka panel di bawahnya perlu hubungan yang bisa dibaca mesin. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> hubungan itu ditulis dengan aria-controls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan id panel</h2><p class=\"mb-4\">Beri panel id unik, misalnya id=\"panel-bantuan\". Pada tombol tulis aria-controls=\"panel-bantuan\". Nilai harus sama persis dengan id, tanpa tanda pagar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasangkan dengan aria-expanded</h2><p class=\"mb-4\">aria-controls tidak menggantikan status buka. Tetap set aria-expanded=\"true\" saat panel terlihat dan false saat disembunyikan. Jangan menghapus panel dari DOM jika id-nya masih dirujuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka panel dari tombol. Inspeksi elemen: aria-controls menunjuk id yang benar-benar ada di halaman.</p>",
+    "source": "MDN — aria-controls",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-controls",
+    "sourceSnippet": "The aria-controls attribute identifies the element or elements whose contents are controlled by the element on which this attribute is set.",
+    "source2": "WAI-ARIA — disclosure pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Link a Button to a Panel with aria-controls",
+    "desc": "How to tie a panel opener in Clincoo to the panel id with aria-controls so the control relationship is explicit.",
+    "content": "<p class=\"mb-4\">A button that opens a panel below it needs a machine-readable link. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> that link is aria-controls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the panel id</h2><p class=\"mb-4\">Give the panel a unique id, for example id=\"help-panel\". On the button write aria-controls=\"help-panel\". The value must match the id exactly, with no hash.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pair it with aria-expanded</h2><p class=\"mb-4\">aria-controls does not replace the open state. Still set aria-expanded=\"true\" when the panel is visible and false when it is hidden. Do not remove the panel from the DOM while its id is still referenced.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the panel from the button. Inspect the element: aria-controls points at an id that really exists on the page.</p>",
+    "source": "MDN — aria-controls",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-controls",
+    "sourceSnippet": "The aria-controls attribute identifies the element or elements whose contents are controlled by the element on which this attribute is set.",
+    "source2": "WAI-ARIA — disclosure pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
+   }
+  }
+ },
+ {
+  "id": "aria-haspopup-pada-menu",
+  "langs": {
+   "id": {
+    "title": "Cara Tandai Tombol Menu dengan aria-haspopup",
+    "desc": "Tata cara menandai tombol yang membuka menu di Clincoo dengan aria-haspopup supaya pembaca layar tahu ada popup, bukan navigasi biasa.",
+    "content": "<p class=\"mb-4\">Tombol menu sering terlihat sama dengan tautan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bedanya perlu ditulis di aria-haspopup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih nilai yang sesuai</h2><p class=\"mb-4\">Untuk menu aksi tulis aria-haspopup=\"menu\". Untuk dialog tulis \"dialog\". Untuk daftar saran tulis \"listbox\". Jangan memakai true jika jenis popup-nya sudah jelas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan taruh di tautan halaman</h2><p class=\"mb-4\">aria-haspopup hanya untuk kontrol yang membuka popup di halaman yang sama. Tautan yang pindah ke URL lain tidak perlu atribut ini. Pasangkan dengan aria-expanded pada tombol pembuka.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> atau preview app, tab ke tombol menu. Nama plus petunjuk popup harus terdengar sebelum item di dalamnya.</p>",
+    "source": "MDN — aria-haspopup",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-haspopup",
+    "sourceSnippet": "The aria-haspopup attribute indicates the availability and type of interactive popup element that can be triggered by the element.",
+    "source2": "WAI-ARIA — menu button pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Mark a Menu Button with aria-haspopup",
+    "desc": "How to mark a button that opens a menu in Clincoo with aria-haspopup so a screen reader knows a popup is coming, not a plain navigation jump.",
+    "content": "<p class=\"mb-4\">A menu button often looks like a link. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> the difference belongs in aria-haspopup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick the matching value</h2><p class=\"mb-4\">For an action menu write aria-haspopup=\"menu\". For a dialog write \"dialog\". For a suggestion list write \"listbox\". Do not use true when the popup type is already known.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not put it on a page link</h2><p class=\"mb-4\">aria-haspopup is only for a control that opens a popup on the same page. A link that navigates to another URL does not need it. Pair it with aria-expanded on the opener.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> or the app preview, tab to the menu button. The name plus a popup hint should be announced before the items inside.</p>",
+    "source": "MDN — aria-haspopup",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-haspopup",
+    "sourceSnippet": "The aria-haspopup attribute indicates the availability and type of interactive popup element that can be triggered by the element.",
+    "source2": "WAI-ARIA — menu button pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   }
+  }
+ },
+ {
+  "id": "role-alert-untuk-pesan-error",
+  "langs": {
+   "id": {
+    "title": "Cara Umumkan Error Form dengan role alert",
+    "desc": "Tata cara menaruh role alert pada pesan gagal di form Clincoo supaya error dibacakan segera, tanpa menunggu pengguna pindah fokus.",
+    "content": "<p class=\"mb-4\">Pesan merah yang muncul setelah submit sering terlewat. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pesan itu perlu role=\"alert\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sisipkan teks, jangan hanya warna</h2><p class=\"mb-4\">Siapkan elemen kosong di dekat form, lalu isi teks error saat validasi gagal. role=\"alert\" setara aria-live=\"assertive\" dan dibaca begitu teks masuk. Jangan menaruh role alert pada setiap field.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu pesan, lalu fokus</h2><p class=\"mb-4\">Tulis satu kalimat yang menyebut apa yang harus diperbaiki. Setelah itu pindahkan fokus ke field pertama yang gagal. role alert mengumumkan, aria-invalid menandai field-nya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kirim form kosong. Pesan gagal harus terdengar tanpa klik tambahan, dan tidak berulang setiap ketikan.</p>",
+    "source": "MDN — alert role",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/alert_role",
+    "sourceSnippet": "The alert role is for important, and usually time-sensitive, information.",
+    "source2": "WAI-ARIA — alert pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Announce a Form Error with role alert",
+    "desc": "How to put role alert on a failed-form message in Clincoo so the error is announced immediately, without waiting for a focus move.",
+    "content": "<p class=\"mb-4\">A red message after submit is easy to miss. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> that message needs role=\"alert\".</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Insert text, not only color</h2><p class=\"mb-4\">Prepare an empty element near the form, then fill the error text when validation fails. role=\"alert\" is equivalent to aria-live=\"assertive\" and is read when the text arrives. Do not put role alert on every field.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One message, then focus</h2><p class=\"mb-4\">Write one sentence that says what to fix. Then move focus to the first failed field. role alert announces; aria-invalid marks the field.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> submit an empty form. The failure should be announced without an extra click, and it should not repeat on every keystroke.</p>",
+    "source": "MDN — alert role",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/alert_role",
+    "sourceSnippet": "The alert role is for important, and usually time-sensitive, information.",
+    "source2": "WAI-ARIA — alert pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
+   }
+  }
+ },
+ {
+  "id": "aria-labelledby-pada-dialog",
+  "langs": {
+   "id": {
+    "title": "Cara Beri Nama Dialog dengan aria-labelledby",
+    "desc": "Tata cara menamai dialog Clincoo lewat aria-labelledby yang menunjuk heading terlihat, supaya nama tidak dobel dengan aria-label.",
+    "content": "<p class=\"mb-4\">Dialog tanpa nama hanya terdengar sebagai dialog. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> nama diambil dari heading yang sudah terlihat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tunjuk id heading</h2><p class=\"mb-4\">Beri judul id, misalnya id=\"judul-hapus\". Pada dialog tulis aria-labelledby=\"judul-hapus\". Pembaca layar memakai teks heading itu. Jangan menambah aria-label dengan kalimat yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Deskripsi terpisah</h2><p class=\"mb-4\">Kalimat penjelasan boleh dirujuk dengan aria-describedby ke paragraf di dalam dialog. Judul tetap pendek. Jika judul berubah, id-nya jangan ikut berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka dialog konfirmasi. Nama yang diumumkan harus sama dengan heading di layar, bukan \"dialog\" saja.</p>",
+    "source": "MDN — aria-labelledby",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby",
+    "sourceSnippet": "The aria-labelledby attribute identifies the element or elements that label the element it is applied to.",
+    "source2": "WAI-ARIA — dialog pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Name a Dialog with aria-labelledby",
+    "desc": "How to name a Clincoo dialog with aria-labelledby pointing at the visible heading, so the name is not duplicated in aria-label.",
+    "content": "<p class=\"mb-4\">A dialog without a name is announced only as a dialog. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> the name comes from the heading already on screen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Point at the heading id</h2><p class=\"mb-4\">Give the title an id, for example id=\"delete-title\". On the dialog write aria-labelledby=\"delete-title\". The screen reader uses that heading text. Do not also add an aria-label with the same sentence.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the description separate</h2><p class=\"mb-4\">An explanation sentence can be referenced with aria-describedby on a paragraph inside the dialog. Keep the title short. If the title text changes, do not change its id.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open a confirm dialog. The announced name should match the heading on screen, not just \"dialog\".</p>",
+    "source": "MDN — aria-labelledby",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby",
+    "sourceSnippet": "The aria-labelledby attribute identifies the element or elements that label the element it is applied to.",
+    "source2": "WAI-ARIA — dialog pattern",
+    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   }
+  }
  }
 ]
 };

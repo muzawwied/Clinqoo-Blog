@@ -654,8 +654,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-invalid-pada-field-error/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-invalid-pada-field-error/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aria/aria-pressed-pada-tombol-toggle/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-pressed-pada-tombol-toggle/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-pressed-pada-tombol-toggle/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-pressed-pada-tombol-toggle/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aria/aria-controls-pada-panel/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-controls-pada-panel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-controls-pada-panel/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-controls-pada-panel/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aria/aria-haspopup-pada-menu/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-haspopup-pada-menu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-haspopup-pada-menu/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-haspopup-pada-menu/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aria/role-alert-untuk-pesan-error/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/role-alert-untuk-pesan-error/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/role-alert-untuk-pesan-error/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/role-alert-untuk-pesan-error/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aria/aria-labelledby-pada-dialog/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-labelledby-pada-dialog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-labelledby-pada-dialog/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-labelledby-pada-dialog/"/>
+  </url>
 </urlset>
-
-
-
-
