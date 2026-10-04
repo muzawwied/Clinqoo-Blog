@@ -1279,4 +1279,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-throttle-slow-3g/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-throttle-slow-3g/"/>
   </url>
+  <url><loc>https://docs.clincoo.buzz/prefetch/</loc><lastmod>2026-10-05</lastmod></url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-preserve-log-saat-navigasi/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-preserve-log-saat-navigasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-preserve-log-saat-navigasi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-preserve-log-saat-navigasi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/network/network-baca-size-dan-transferred/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/network/network-baca-size-dan-transferred/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/network/network-baca-size-dan-transferred/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/network/network-baca-size-dan-transferred/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-bedakan-preload-dan-prefetch/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-bedakan-preload-dan-prefetch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-bedakan-preload-dan-prefetch/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-bedakan-preload-dan-prefetch/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-preconnect-asal-kritis/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-preconnect-asal-kritis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-preconnect-asal-kritis/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-preconnect-asal-kritis/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-modulepreload-modul-es/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-modulepreload-modul-es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-modulepreload-modul-es/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-modulepreload-modul-es/"/>
+  </url>
 </urlset>

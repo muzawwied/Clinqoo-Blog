@@ -295,6 +295,64 @@ window.countryDataFiles["network"] = {
    "source3Url": "https://app.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "network-preserve-log-saat-navigasi",
+ "langs": {
+  "id": {
+   "title": "Cara Aktifkan Preserve Log saat Halaman Pindah",
+   "desc": "Tata cara menahan log panel Network Clincoo supaya request yang terjadi tepat sebelum pindah halaman tidak hilang.",
+   "content": "<p class=\"mb-4\">Request yang gagal sering terjadi setengah detik sebelum halaman pindah. Tanpa Preserve log, panel Network di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kosong tepat saat kamu ingin melihatnya. Ulangi aksi di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, lalu centang Preserve log sebelum mengklik tautan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Centang sebelum navigasi, bukan sesudah</h2><p class=\"mb-4\">Preserve log menahan baris dari dokumen sebelumnya. Kalau kamu mencentangnya setelah halaman baru termuat, request pemicu sudah terhapus. Aktifkan dulu, baru ulangi langkah yang membuat halaman pindah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan request lama dan baru</h2><p class=\"mb-4\">Baris dari halaman sebelumnya tetap ada. Baca kolom Initiator dan nama dokumen, jangan mengira semua baris milik halaman yang sedang terbuka. Kosongkan log secara manual jika campurannya membingungkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat URL yang hilang</h2><p class=\"mb-4\">Salin status, metode, dan URL ke catatan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Satu baris itu cukup untuk membedakan redirect yang disengaja dari request yang dibatalkan navigasi.</p>",
+   "source": "Chrome Developers — Network panel reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference",
+   "sourceSnippet": "Preserve log keeps network requests across page loads so you can inspect them after navigation.",
+   "source2": "MDN — Navigation and the HTTP cache",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Enable Preserve Log When the Page Navigates",
+   "desc": "How to keep the Clincoo Network panel log so requests that fire just before a navigation are not wiped.",
+   "content": "<p class=\"mb-4\">A failing request often fires half a second before the page changes. Without Preserve log, the Network panel in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> is empty by the time you look. Repeat the action in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, then enable Preserve log before you click the link.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Enable it before navigation, not after</h2><p class=\"mb-4\">Preserve log keeps rows from the previous document. If you enable it after the new page has loaded, the triggering request is already gone. Turn it on first, then repeat the step that navigates.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate old rows from new ones</h2><p class=\"mb-4\">Rows from the previous page stay visible. Read the Initiator column and the document name. Do not assume every row belongs to the page that is open. Clear the log manually if the mix gets confusing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write down the URL that vanished</h2><p class=\"mb-4\">Copy the status, method, and URL into a note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. That one row is enough to tell an intentional redirect from a request cancelled by navigation.</p>",
+   "source": "Chrome Developers — Network panel reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference",
+   "sourceSnippet": "Preserve log keeps network requests across page loads so you can inspect them after navigation.",
+   "source2": "MDN — Navigation and the HTTP cache",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "network-baca-size-dan-transferred",
+ "langs": {
+  "id": {
+   "title": "Cara Baca Size dan Transferred supaya Tahu Kompresi",
+   "desc": "Tata cara membandingkan kolom Size dan Transferred di panel Network Clincoo supaya aset yang belum terkompresi ketahuan sebelum deploy.",
+   "content": "<p class=\"mb-4\">Angka besar di panel Network belum tentu berarti berkas sebesar itu di jaringan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tampilkan kolom Size dan Transferred, lalu muat ulang pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan cache dimatikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Size adalah ukuran asli, Transferred adalah yang lewat jaringan</h2><p class=\"mb-4\">Size menunjukkan ukuran hasil decode. Transferred mencakup header dan isi yang benar-benar diunduh. Kalau keduanya hampir sama pada CSS atau JS, kompresi gzip atau Brotli mungkin tidak aktif.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan bandingkan saat dari cache</h2><p class=\"mb-4\">Baris dari disk cache atau memory cache menampilkan Transferred kecil atau (disk cache). Itu bukan bukti kompresi. Matikan cache, muat ulang, lalu bandingkan lagi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat satu aset sebelum minta bantuan</h2><p class=\"mb-4\">Di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> tulis nama berkas, Size, Transferred, dan header content-encoding. Tanpa ketiga angka itu, saran untuk mengompres gambar atau menyalakan Brotli hanya tebakan.</p>",
+   "source": "Chrome Developers — Network features reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference#size",
+   "sourceSnippet": "Size is the resource size and Transferred is the bytes sent over the network, including headers.",
+   "source2": "MDN — Content-Encoding",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read Size and Transferred to See Compression",
+   "desc": "How to compare the Size and Transferred columns in the Clincoo Network panel so an uncompressed asset is caught before deploy.",
+   "content": "<p class=\"mb-4\">A large number in the Network panel does not always mean that many bytes crossed the network. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> show the Size and Transferred columns, then reload the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview with cache disabled.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Size is the decoded weight, Transferred is what crossed the network</h2><p class=\"mb-4\">Size is the decoded resource size. Transferred includes headers and the bytes actually downloaded. If the two are almost equal for CSS or JS, gzip or Brotli may be off.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not compare a cached row</h2><p class=\"mb-4\">A disk cache or memory cache row shows a tiny Transferred value or (disk cache). That is not proof of compression. Disable cache, reload, then compare again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record one asset before asking for help</h2><p class=\"mb-4\">On <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> write the file name, Size, Transferred, and the content-encoding header. Without those three figures, advice to compress an image or enable Brotli is a guess.</p>",
+   "source": "Chrome Developers — Network features reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference#size",
+   "sourceSnippet": "Size is the resource size and Transferred is the bytes sent over the network, including headers.",
+   "source2": "MDN — Content-Encoding",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
 }
- ]
+]
 };
