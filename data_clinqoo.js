@@ -675,6 +675,35 @@ window.countryDataFiles["dokumentasi"] = {
     "source2Url": "https://docs.clincoo.buzz/dokumentasi/api-payment-gateway-qris/",
     "source3": "Clincoo App",
     "source3Url": "https://app.clincoo.buzz/"
+    }
+   }
+  },
+  {
+  "id": "cara-atur-webhook-proyek",
+  "langs": {
+   "id": {
+    "title": "Cara Mengatur Webhook Proyek di Clincoo",
+    "desc": "Panduan resmi webhook Clincoo: daftarkan URL endpoint HTTPS per proyek, pilih metode GET atau POST, notifikasi pembayaran ClincooPay, dan notifikasi event deploy.",
+    "content": "<p class=\"mb-4\">Webhook adalah cara Clincoo memberi tahu situs deploy-mu secara otomatis saat ada event — pembayaran QRIS masuk atau deploy selesai — tanpa perlu kamu mengecek manual. Artikel ini menjelaskan cara mendaftarkan dan mengelolanya di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tambahkan URL endpoint</h2><p class=\"mb-4\">Di Pengaturan proyekmu, buka tab Webhook lalu klik <b>Tambah</b>. Isi URL endpoint yang siap menerima request — harus HTTPS, misalnya <span class=\"font-mono text-sm\">https://situsmu.com/webhook/bayar</span>. Kamu bisa mendaftarkan lebih dari satu URL dan menghapusnya kapan pun dari daftar yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih metode pengiriman</h2><p class=\"mb-4\">Setiap URL punya pilihan metode <b>GET</b> atau <b>POST</b>. Pilih yang sesuai dengan handler endpoint-mu — untuk notifikasi pembayaran, Clincoo mengirim data sebagai JSON di body POST.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Notifikasi pembayaran ClincooPay</h2><p class=\"mb-4\">Saat pembeli menyelesaikan pembayaran QRIS di situs deploy-mu, Clincoo mengirim notifikasi <span class=\"font-mono text-sm\">payment.paid</span> ke URL webhook pembayaran proyekmu. Isinya: <span class=\"font-mono text-sm\">order_id</span>, <span class=\"font-mono text-sm\">amount</span>, <span class=\"font-mono text-sm\">description</span>, <span class=\"font-mono text-sm\">status</span>, dan <span class=\"font-mono text-sm\">paid_at</span>. Endpoint-mu cukup balas cepat dan proses data di latar — jangan sampai memblokir sampai timeout.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Notifikasi event deploy</h2><p class=\"mb-4\">Di tab yang sama ada setelan notifikasi deploy. Aktifkan supaya endpoint-mu juga menerima pemberitahuan ketika proyek selesai dibangun, jadi sistemmu tahu kapan versi baru sudah live.</p><p class=\"mb-4\">Kalau notifikasi tidak sampai, mulai dari <a href=\"https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Masalah Umum</a> sebelum mengubah apa pun. Rincian payload dan alur API pembayaran ada di <a href=\"https://docs.clincoo.buzz/dokumentasi/api-payment-gateway-qris/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">dokumentasi ClincooPay</a>.</p>",
+    "source": "Clincoo — Pengaturan Webhook",
+    "sourceUrl": "https://app.clincoo.buzz/",
+    "sourceSnippet": "payment.paid dikirim sebagai POST JSON berisi order_id, amount, description, status, paid_at.",
+    "source2": "Clincoo Docs — ClincooPay API",
+    "source2Url": "https://docs.clincoo.buzz/dokumentasi/api-payment-gateway-qris/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Set Up Project Webhooks in Clincoo",
+    "desc": "The official Clincoo webhook guide: register HTTPS endpoint URLs per project, pick GET or POST, ClincooPay payment notifications, and deploy event notifications.",
+    "content": "<p class=\"mb-4\">Webhooks are how Clincoo tells your deployed site about events automatically — an incoming QRIS payment or a finished deploy — without you checking manually. This guide covers registering and managing them on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add an endpoint URL</h2><p class=\"mb-4\">In your project Settings, open the Webhook tab and click <b>Add</b>. Enter a URL that is ready to receive requests — it must be HTTPS, for example <span class=\"font-mono text-sm\">https://yoursite.com/webhook/pay</span>. You can register more than one URL and remove any of them from the same list at any time.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick a delivery method</h2><p class=\"mb-4\">Each URL has a <b>GET</b> or <b>POST</b> method option. Pick the one your endpoint handler expects — for payment notifications, Clincoo sends the data as JSON in the POST body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">ClincooPay payment notifications</h2><p class=\"mb-4\">When a buyer completes a QRIS payment on your deployed site, Clincoo sends a <span class=\"font-mono text-sm\">payment.paid</span> notification to your project payment webhook URL. The payload contains <span class=\"font-mono text-sm\">order_id</span>, <span class=\"font-mono text-sm\">amount</span>, <span class=\"font-mono text-sm\">description</span>, <span class=\"font-mono text-sm\">status</span>, and <span class=\"font-mono text-sm\">paid_at</span>. Answer quickly and process the data in the background — do not block until timeout.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Deploy event notifications</h2><p class=\"mb-4\">The same tab has a deploy notification setting. Enable it so your endpoint also receives a notice when the project build finishes, so your system knows when a new version is live.</p><p class=\"mb-4\">If notifications never arrive, start with <a href=\"https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">Common Problems</a> before changing anything. Payload details and the payment API flow are in the <a href=\"https://docs.clincoo.buzz/dokumentasi/api-payment-gateway-qris/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">ClincooPay API reference</a>.</p>",
+    "source": "Clincoo — Webhook Settings",
+    "sourceUrl": "https://app.clincoo.buzz/",
+    "sourceSnippet": "payment.paid is sent as a POST JSON payload with order_id, amount, description, status, paid_at.",
+    "source2": "Clincoo Docs — ClincooPay API",
+    "source2Url": "https://docs.clincoo.buzz/dokumentasi/api-payment-gateway-qris/",
+    "source3": "Clincoo App",
+    "source3Url": "https://app.clincoo.buzz/"
    }
   }
   }

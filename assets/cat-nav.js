@@ -1,5 +1,5 @@
 // Sidebar Clincoo Docs — daftar kategori + judul artikel, tampil langsung (bukan tombol CTA)
-// Data di-generate dari data_clinqoo.js + data_aria/dialog/form/semantic.js — Okt 2026
+// Data di-generate dari file data_*.js — Okt 2026
 (function () {
   var CATS = {
     "mulai": { name: {"id":"Memulai","en":"Getting Started"}, arts: [
@@ -30,6 +30,7 @@
       ["cara-atur-heading-berjenjang", "Cara Atur Heading Berjenjang", "How to Set a Heading Hierarchy"],
       ["cara-baca-log-deploy-yang-gagal", "Cara Baca Log Deploy yang Gagal", "How to Read a Failed Deploy Log"],
       ["cara-tarik-saldo-dari-clinqoo", "Cara Tarik Saldo Penghasilan dari Clincoo", "How to Withdraw Your Clincoo Earnings"],
+      ["cara-atur-webhook-proyek", "Cara Mengatur Webhook Proyek di Clincoo", "How to Set Up Project Webhooks in Clincoo"],
     ] },
     "bantuan": { name: {"id":"Pusat Bantuan","en":"Help Center"}, arts: [
       ["faq-clinqoo", "Pertanyaan yang Sering Diajukan (FAQ)", "Frequently Asked Questions (FAQ)"],
@@ -114,6 +115,59 @@
       ["semantic-fieldset-dan-legend", "Cara Kelompokkan Input dengan fieldset dan legend", "How to Group Inputs with fieldset and legend"],
       ["semantic-strong-bukan-tebal-semu", "Cara Pakai strong dan em, Bukan Tebal Semu", "How to Use strong and em Instead of Fake Bold"],
       ["semantic-caption-dan-th-tabel", "Cara Beri Judul Tabel dengan caption dan th", "How to Title a Table with caption and th"],
+    ] },
+    "console": { name: {"id":"Konsol","en":"Console"}, arts: [
+      ["console-baca-error-pertama-bukan-ikutannya", "Cara Baca Error Pertama di Konsol, Bukan yang Mengikutinya", "How to Read the First Console Error, Not the Cascade"],
+      ["console-preserve-log-saat-navigasi", "Cara Aktifkan Preserve Log Saat Halaman Pindah", "How to Keep Preserve Log Across Navigation"],
+      ["console-tampilkan-timestamp-log", "Cara Nyalakan Timestamp di Setiap Baris Konsol", "How to Show a Timestamp on Every Console Line"],
+      ["console-salin-objek-dengan-copy", "Cara Salin Objek dari Konsol dengan copy()", "How to Copy a Console Object with copy()"],
+      ["console-groupcollapsed-detail-opsional", "Cara Pakai groupCollapsed untuk Detail Opsional", "How to Use groupCollapsed for Optional Detail"],
+      ["console-kirim-objek-error-utuh", "Cara Kirim Objek Error Utuh, Bukan String Saja", "How to Log the Full Error Object, Not Only a String"],
+      ["console-logpoint-tanpa-jeda", "Cara Pasang Logpoint Tanpa Menghentikan Skrip", "How to Add a Logpoint Without Pausing the Script"],
+      ["console-dollar-nol-elemen-terpilih", "Cara Pakai $0 untuk Elemen yang Sedang Dipilih", "How to Use $0 for the Currently Selected Element"],
+      ["console-await-promise-yang-ditolak", "Cara Await Promise yang Ditolak di Konsol", "How to Await a Rejected Promise in the Console"],
+      ["console-breakpoint-kondisi-di-loop", "Cara Pasang Breakpoint Bersyarat di Dalam Loop", "How to Set a Conditional Breakpoint Inside a Loop"],
+      ["console-filter-level-error-saja", "Cara Saring Konsol Hanya Level Error", "How to Filter the Console to Errors Only"],
+      ["console-table-untuk-bandingkan-baris", "Cara Bandingkan Baris Data dengan console.table", "How to Compare Rows with console.table"],
+    ] },
+    "keyboard": { name: {"id":"Keyboard","en":"Keyboard"}, arts: [
+      ["keyboard-jangan-hapus-outline-tanpa-pengganti", "Cara Jangan Hapus Outline Fokus tanpa Pengganti", "How to Avoid Removing the Focus Outline without a Replacement"],
+      ["keyboard-urutan-tab-yang-masuk-akal", "Cara Atur Urutan Tab yang Masuk Akal", "How to Set a Sensible Tab Order"],
+      ["keyboard-fokus-awal-setelah-aksi", "Cara Pindahkan Fokus setelah Aksi Selesai", "How to Move Focus after an Action Completes"],
+      ["keyboard-escape-menutup-panel", "Cara Tutup Panel dengan Escape", "How to Close a Panel with Escape"],
+      ["keyboard-shortcut-jangan-tabrak-browser", "Cara Hindari Shortcut yang Menabrak Browser", "How to Avoid Shortcuts that Collide with the Browser"],
+      ["keyboard-skip-link-ke-main", "Cara Tambah Skip Link ke Konten Utama", "How to Add a Skip Link to the Main Content"],
+      ["keyboard-panah-di-menu", "Cara Gerakkan Menu dengan Tombol Panah", "How to Move Through a Menu with Arrow Keys"],
+      ["keyboard-enter-dan-space-pada-tombol", "Cara Bedakan Enter dan Space pada Tombol", "How to Treat Enter and Space on a Button"],
+      ["keyboard-jebak-fokus-modal-kustom", "Cara Jebak Fokus di Modal Kustom", "How to Trap Focus in a Custom Modal"],
+      ["keyboard-jangan-pakai-accesskey-satu-huruf", "Cara Jangan Pasang accesskey Satu Huruf", "How to Avoid a Single-Letter accesskey"],
+      ["keyboard-kembalikan-fokus-setelah-elemen-hilang", "Cara Kembalikan Fokus setelah Elemen Hilang", "How to Restore Focus after an Element Disappears"],
+      ["keyboard-jangan-autofocus-di-tiap-muat", "Cara Jangan Pakai autofocus di Setiap Muat Halaman", "How to Avoid autofocus on Every Page Load"],
+    ] },
+    "prompt": { name: {"id":"Minta Bantuan AI","en":"Asking AI for Help"}, arts: [
+      ["prompt-tempel-pesan-error-utuh", "Cara Tempel Pesan Error Utuh saat Minta Bantuan AI", "How to Paste the Full Error when Asking an AI for Help"],
+      ["prompt-kirim-cuplikan-minimal-yang-gagal", "Cara Kirim Cuplikan Minimal yang Masih Gagal", "How to Send a Minimal Snippet that Still Fails"],
+      ["prompt-minta-langkah-uji-bukan-kode-jadi", "Cara Minta Langkah Uji, Bukan Kode Jadi", "How to Ask for Check Steps, Not a Finished Patch"],
+      ["prompt-sebutkan-browser-dan-langkah-reproduksi", "Cara Sebutkan Browser dan Langkah Reproduksi", "How to Name the Browser and the Reproduction Steps"],
+      ["prompt-pisahkan-gejala-dari-dugaan", "Cara Pisahkan Gejala dari Dugaan", "How to Separate the Symptom from the Guess"],
+      ["prompt-minta-satu-perubahan-per-balasan", "Cara Minta Satu Perubahan per Balasan", "How to Ask for One Change per Reply"],
+      ["prompt-lampirkan-hasil-yang-diharapkan", "Cara Lampirkan Hasil yang Diharapkan", "How to Attach the Result You Expected"],
+      ["prompt-sensor-token-sebelum-menempel", "Cara Sensor Token sebelum Menempel ke AI", "How to Redact Tokens before Pasting to an AI"],
+      ["prompt-sebutkan-versi-dan-perintah", "Cara Sebutkan Versi dan Perintah saat Minta Bantuan AI", "How to Include the Version and Command when Asking an AI"],
+      ["prompt-minta-jelaskan-diff-sebelum-terapkan", "Cara Minta Penjelasan Diff sebelum Menerapkan Jawaban AI", "How to Ask for a Diff Explanation before Applying an AI Answer"],
+      ["prompt-batasi-file-yang-terkait", "Cara Batasi Konteks ke File yang Terkait", "How to Limit Context to the Related Files"],
+      ["prompt-minta-cek-regresi-setelah-perbaikan", "Cara Minta Cek Regresi setelah Perbaikan AI", "How to Ask for a Regression Check after an AI Fix"],
+    ] },
+    "seo": { name: {"id":"SEO On-Page","en":"On-Page SEO"}, arts: [
+      ["seo-satu-h1-dan-judul-unik", "Cara Jaga Satu H1 dan Judul Halaman yang Unik", "How to Keep One H1 and a Unique Page Title"],
+      ["seo-meta-description-yang-spesifik", "Cara Tulis Meta Description yang Spesifik", "How to Write a Specific Meta Description"],
+      ["seo-heading-jangan-lompat-level", "Cara Susun Heading Tanpa Melompati Level", "How to Order Headings Without Skipping Levels"],
+      ["seo-tautan-internal-anchor-jelas", "Cara Tulis Anchor Tautan Internal yang Jelas", "How to Write Clear Internal Link Anchors"],
+      ["seo-lebar-tinggi-gambar-cegah-cls", "Cara Isi Width dan Height Gambar supaya Layout Tidak Melompat", "How to Set Image Width and Height so the Layout Does Not Jump"],
+      ["seo-loading-lazy-gambar-bawah-lipatan", "Cara Pasang loading lazy pada Gambar di Bawah Lipatan", "How to Lazy-Load Images Below the Fold"],
+      ["seo-url-huruf-kecil-tanpa-parameter", "Cara Jaga URL Publik Huruf Kecil tanpa Parameter Pelacak", "How to Keep Public URLs Lowercase and Free of Tracking Parameters"],
+      ["seo-breadcrumb-yang-bisa-diikuti", "Cara Pasang Breadcrumb yang Bisa Diikuti", "How to Add a Breadcrumb that Can Be Followed"],
+      ["seo-cek-tautan-404-sebelum-deploy", "Cara Cek Tautan Internal 404 sebelum Deploy", "How to Check Internal Links for 404 before Deploy"],
     ] },
   };
   var path = location.pathname.split("/").filter(Boolean);
