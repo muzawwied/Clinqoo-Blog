@@ -150,6 +150,151 @@ window.countryDataFiles["csp"] = {
    "source3Url": "https://blog.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "csp-style-src-tanpa-unsafe-inline",
+ "langs": {
+  "id": {
+   "title": "Cara Tulis style-src tanpa unsafe-inline",
+   "desc": "Tata cara mengizinkan CSS situs Clincoo lewat nonce atau hash, bukan unsafe-inline yang ikut mengizinkan style sisipan.",
+   "content": "<p class=\"mb-4\">style-src 'unsafe-inline' mengizinkan atribut style dan tag style yang disisipkan. Itu cukup untuk menyembunyikan tombol atau menimpa tata letak. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan stylesheet di berkas terpisah, lalu izinkan hanya nonce atau hash di header deploy. Cek di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan style inline ke kelas</h2><p class=\"mb-4\">Ganti style=\"...\" pada elemen dengan kelas di berkas CSS. Parser tetap merender tampilan, tetapi kebijakan tidak perlu membuka inline.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nonce untuk style yang memang dinamis</h2><p class=\"mb-4\">Kalau satu blok style harus dibuat per respons, isi atribut nonce yang sama dengan nilai di header. Jangan pakai ulang nonce di respons berikutnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di Report-Only dulu</h2><p class=\"mb-4\">Catat pelanggaran style-src sebelum mengunci kebijakan. Salin arahan yang lolos ke <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya deploy berikutnya tidak mengembalikan unsafe-inline.</p>",
+   "source": "MDN — style-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) style-src directive specifies valid sources for stylesheets.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Write style-src without unsafe-inline",
+   "desc": "How to allow Clincoo site CSS with a nonce or hash, not unsafe-inline that also allows injected styles.",
+   "content": "<p class=\"mb-4\">style-src 'unsafe-inline' allows injected style attributes and style tags. That is enough to hide a button or override layout. On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep stylesheets in separate files, then allow only a nonce or hash in the deploy header. Check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move inline styles to classes</h2><p class=\"mb-4\">Replace style=\"...\" on elements with a class in the CSS file. The parser still renders the layout, but the policy does not need to open inline styles.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nonce for styles that must be dynamic</h2><p class=\"mb-4\">If one style block must be built per response, set a nonce attribute that matches the header value. Do not reuse that nonce on the next response.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in Report-Only first</h2><p class=\"mb-4\">Record style-src violations before locking the policy. Copy the directive that passes to <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next deploy does not put unsafe-inline back.</p>",
+   "source": "MDN — style-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) style-src directive specifies valid sources for stylesheets.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-connect-src-batasi-fetch",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi connect-src untuk fetch dan API",
+   "desc": "Tata cara mengizinkan fetch Clincoo hanya ke origin API yang dipakai, supaya skrip sisipan tidak mengirim data ke host lain.",
+   "content": "<p class=\"mb-4\">connect-src mengatur tujuan fetch, XHR, WebSocket, dan EventSource. Bintang di sini berarti skrip yang lolos bisa mengirim isi formulir ke mana saja. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> daftarkan origin API yang memang dipanggil, lalu cek permintaan jaringan di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan skema dan port</h2><p class=\"mb-4\">https://api.contoh tidak otomatis mengizinkan ws:// atau port lain. Tulis tiap skema yang benar-benar dipakai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan default-src saja</h2><p class=\"mb-4\">default-src memang menjadi cadangan connect-src, tetapi arahan eksplisit lebih mudah diaudit saat origin baru ditambah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat origin di dokumentasi</h2><p class=\"mb-4\">Simpan daftar origin yang diizinkan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya penambahan endpoint tidak lupa memperbarui header.</p>",
+   "source": "MDN — connect-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) connect-src directive restricts the URLs which can be loaded using script interfaces.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit connect-src for fetch and APIs",
+   "desc": "How to allow Clincoo fetch only to the API origins you use, so an injected script cannot send data to another host.",
+   "content": "<p class=\"mb-4\">connect-src controls fetch, XHR, WebSocket, and EventSource targets. A wildcard here means a script that gets through can send form contents anywhere. On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> list the API origins you actually call, then check network requests in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include scheme and port</h2><p class=\"mb-4\">https://api.example does not automatically allow ws:// or another port. Write each scheme you really use.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on default-src alone</h2><p class=\"mb-4\">default-src is the fallback for connect-src, but an explicit directive is easier to audit when a new origin is added.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record origins in the docs</h2><p class=\"mb-4\">Keep the allowed origin list on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a new endpoint does not ship without a header update.</p>",
+   "source": "MDN — connect-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) connect-src directive restricts the URLs which can be loaded using script interfaces.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-object-src-none",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang object-src none",
+   "desc": "Tata cara mematikan plugin object dan embed di halaman Clincoo supaya sumber lama tidak menjadi celah muat skrip.",
+   "content": "<p class=\"mb-4\">Elemen object dan embed bisa memuat konten plugin yang tidak lewat script-src. Kalau halaman Clincoo tidak memakai plugin, object-src 'none' menutup jalur itu. Simpan arahan di konfigurasi deploy <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, lalu buka pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan pastikan tidak ada elemen object yang rusak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti plugin dengan gambar atau video</h2><p class=\"mb-4\">PDF dan media yang masih di-embed lebih aman dimuat lewat img, video, atau tautan unduh yang sudah dibatasi img-src dan media-src.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tertukar dengan frame-src</h2><p class=\"mb-4\">iframe diatur frame-src atau frame-ancestors, bukan object-src. Tutup object tidak otomatis menutup iframe.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat pengecualian</h2><p class=\"mb-4\">Kalau satu halaman masih butuh object, tulis alasannya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum membuka origin. Jangan longgarkan seluruh situs.</p>",
+   "source": "MDN — object-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/object-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) object-src directive specifies valid sources for the <object> and <embed> elements.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set object-src to none",
+   "desc": "How to disable object and embed plugins on Clincoo pages so legacy sources cannot become a script-loading gap.",
+   "content": "<p class=\"mb-4\">object and embed can load plugin content that does not pass through script-src. If a Clincoo page does not use plugins, object-src 'none' closes that path. Store the directive in the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> deploy config, then open the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview and confirm no object element breaks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace plugins with images or video</h2><p class=\"mb-4\">PDFs and media still embedded are safer as img, video, or a download link already limited by img-src and media-src.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not confuse it with frame-src</h2><p class=\"mb-4\">iframes are controlled by frame-src or frame-ancestors, not object-src. Closing object does not automatically close iframes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record exceptions</h2><p class=\"mb-4\">If one page still needs object, write the reason on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before opening an origin. Do not loosen the whole site.</p>",
+   "source": "MDN — object-src",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/object-src",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) object-src directive specifies valid sources for the <object> and <embed> elements.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-base-uri-cegah-base-tag",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai base-uri supaya tag base tidak dibajak",
+   "desc": "Tata cara membatasi tag base di halaman Clincoo supaya tautan relatif tidak diarahkan ke host lain.",
+   "content": "<p class=\"mb-4\">Tag base mengubah tujuan semua URL relatif. Skrip yang menyisipkan base ke host lain bisa mengalihkan formulir dan aset tanpa menyentuh tiap tautan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> setel base-uri 'self' atau 'none' pada header deploy, lalu cek pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih none jika base tidak dipakai</h2><p class=\"mb-4\">Halaman yang tidak punya tag base lebih aman dengan base-uri 'none'. 'self' hanya jika base ke origin sendiri memang diperlukan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ini bukan pengganti script-src</h2><p class=\"mb-4\">base-uri tidak memblokir skrip. Pasangkan dengan script-src yang sudah membatasi nonce atau hash.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Dokumentasikan pilihan</h2><p class=\"mb-4\">Tulis arahan final di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar perubahan template tidak menambah tag base diam-diam.</p>",
+   "source": "MDN — base-uri",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) base-uri directive restricts the URLs which can be used in a document's <base> element.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use base-uri so a base Tag Cannot Be Hijacked",
+   "desc": "How to restrict the base tag on Clincoo pages so relative links cannot be pointed at another host.",
+   "content": "<p class=\"mb-4\">A base tag changes the target of every relative URL. A script that injects a base pointing at another host can redirect forms and assets without touching each link. On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set base-uri 'self' or 'none' on the deploy header, then check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prefer none if base is unused</h2><p class=\"mb-4\">A page with no base tag is safer with base-uri 'none'. Use 'self' only if a base to your own origin is required.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">This does not replace script-src</h2><p class=\"mb-4\">base-uri does not block scripts. Pair it with a script-src that already limits nonces or hashes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Document the choice</h2><p class=\"mb-4\">Write the final directive on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a template change does not add a base tag unnoticed.</p>",
+   "source": "MDN — base-uri",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) base-uri directive restricts the URLs which can be used in a document's <base> element.",
+   "source2": "MDN — Content-Security-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "csp-form-action-batasi-tujuan-kirim",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi form-action pada tujuan kirim formulir",
+   "desc": "Tata cara membatasi action formulir Clincoo supaya isian tidak terkirim ke origin di luar daftar yang disetujui.",
+   "content": "<p class=\"mb-4\">form-action mengatur ke mana formulir boleh dikirim. script-src tidak menutup celah ini: halaman yang aman skripnya tetap bisa punya action ke host lain. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> izinkan hanya origin penerima yang dipakai, lalu uji kirim di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sertakan path hanya jika perlu</h2><p class=\"mb-4\">Origin saja biasanya cukup. Path di form-action mudah usang saat rute berubah. Perbarui kebijakan bersama rute, bukan setelah laporan pengguna.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tertukar dengan navigate-to</h2><p class=\"mb-4\">form-action khusus pengiriman formulir. Navigasi tautan biasa diatur arahan lain. Jangan mengendurkan form-action hanya karena tautan internal gagal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan daftar penerima</h2><p class=\"mb-4\">Catat origin form-action di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya integrasi baru tidak mengirim isian sebelum header diperbarui.</p>",
+   "source": "MDN — form-action",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/form-action",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) form-action directive restricts the URLs which can be used as the target of form submissions from a given context.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit form-action to Real Form Targets",
+   "desc": "How to restrict Clincoo form actions so submissions cannot go to an origin outside the approved list.",
+   "content": "<p class=\"mb-4\">form-action controls where a form may be submitted. script-src does not close this gap: a page with a locked script policy can still have an action pointing at another host. On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> allow only the receiver origins you use, then test a submit in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Include a path only if you must</h2><p class=\"mb-4\">An origin is usually enough. A path in form-action goes stale when routes change. Update the policy with the route, not after a user report.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not confuse it with navigate-to</h2><p class=\"mb-4\">form-action is specifically for form submissions. Ordinary link navigation uses other directives. Do not loosen form-action just because an internal link failed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the receiver list</h2><p class=\"mb-4\">Record form-action origins on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a new integration does not send fields before the header is updated.</p>",
+   "source": "MDN — form-action",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/form-action",
+   "sourceSnippet": "The HTTP Content-Security-Policy (CSP) form-action directive restricts the URLs which can be used as the target of form submissions from a given context.",
+   "source2": "W3C — Content Security Policy Level 3",
+   "source2Url": "https://www.w3.org/TR/CSP3/",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
 }
  ]
 };
