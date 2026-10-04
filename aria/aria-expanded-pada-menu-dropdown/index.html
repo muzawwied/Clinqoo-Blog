@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Set aria-expanded pada Menu Dropdown — Clincoo Docs</title>
+<meta name="description" content="Tata cara menyelaraskan aria-expanded dengan panel menu di Clincoo supaya status buka atau tutup terdengar.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/">
+<link rel="canonical" href="https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Set aria-expanded pada Menu Dropdown — Clincoo Docs">
+<meta property="og:description" content="Tata cara menyelaraskan aria-expanded dengan panel menu di Clincoo supaya status buka atau tutup terdengar.">
+<meta property="og:url" content="https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Set aria-expanded pada Menu Dropdown — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menyelaraskan aria-expanded dengan panel menu di Clincoo supaya status buka atau tutup terdengar.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Set aria-expanded pada Menu Dropdown", "description": "Tata cara menyelaraskan aria-expanded dengan panel menu di Clincoo supaya status buka atau tutup terdengar.", "mainEntityOfPage": "https://docs.clincoo.buzz/aria/aria-expanded-pada-menu-dropdown/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/aria/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">ARIA</p>
+<h1 class="seo-title">Cara Set aria-expanded pada Menu Dropdown</h1>
+<div class="seo-body">
+<p class="mb-4">Menu yang hanya berubah secara visual membuat pengguna keyboard tidak tahu panelnya terbuka. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tombol pemicu wajib punya aria-expanded.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ikat tombol ke panel</h2><p class="mb-4">Beri tombol aria-controls yang sama dengan id panel. Saat tertutup, aria-expanded="false". Saat terbuka, ganti ke true dalam handler yang sama dengan class tampilan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tutup dengan Escape</h2><p class="mb-4">Dengarkan Escape pada panel, set aria-expanded kembali ke false, lalu kembalikan fokus ke tombol pemicu. Jangan hanya menyembunyikan panel dengan CSS.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek di preview</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka menu dengan Enter. Pengumuman harus berubah dari tertutup menjadi terbuka, lalu kembali saat Escape.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
