@@ -356,5 +356,35 @@ window.countryDataFiles["console"] = {
   }
  }
 }
+,
+{
+ "id": "console-bersihkan-sebelum-reproduksi",
+ "langs": {
+  "id": {
+   "title": "Cara Bersihkan Konsol sebelum Mengulang Langkah Reproduksi",
+   "desc": "Tata cara mengosongkan konsol di pratinjau Clincoo sebelum mengulang bug, supaya error lama tidak tercampur dengan percobaan baru.",
+   "content": "<p class=\"mb-4\">Log lama membuat error baru terlihat seperti pengulangan. Di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka konsol, kosongkan panel, lalu ulangi langkah yang sama dari <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">clear() atau tombol Clear, lalu satu tindakan</h2><p class=\"mb-4\">Panggil clear() atau klik Clear console. Jangan bersihkan di tengah langkah. Mulai dari keadaan yang sama: muat ulang jika perlu, lalu lakukan satu klik yang memicu bug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan clear untuk menyembunyikan error</h2><p class=\"mb-4\">clear() hanya merapikan tampilan. Error yang sama akan muncul lagi jika penyebabnya masih ada. Preserve log boleh menyala saat navigasi, tetapi matikan dulu jika kamu sengaja ingin panel kosong sebelum reproduksi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin hasil yang bersih</h2><p class=\"mb-4\">Setelah langkah selesai, salin error pertama saja. Tempel ke <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> atau ke catatan bantuan bersama URL halaman dan waktu. Panel yang bersih membuat perbedaan antara percobaan gagal dan percobaan yang sudah beres terlihat.</p>",
+   "source": "MDN — console.clear()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/clear_static",
+   "sourceSnippet": "The console.clear() method clears the console if the environment allows it.",
+   "source2": "Chrome Developers — Console overview",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Clear the Console Before You Repeat a Reproduction",
+   "desc": "How to clear the console in a Clincoo preview before you repeat a bug, so an old error is not mixed with the new attempt.",
+   "content": "<p class=\"mb-4\">Old logs make a new error look like a repeat. In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview open the console, clear the panel, then repeat the same steps from <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">clear() or the Clear button, then one action</h2><p class=\"mb-4\">Call clear() or click Clear console. Do not clear in the middle of the steps. Start from the same state: reload if needed, then do the one click that triggers the bug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on clear to hide an error</h2><p class=\"mb-4\">clear() only tidies the view. The same error returns if the cause is still there. Preserve log can stay on during navigation, but turn it off first if you intentionally want an empty panel before the reproduction.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy the clean result</h2><p class=\"mb-4\">After the steps finish, copy only the first error. Paste it to <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> or to the help note with the page URL and the time. A clean panel makes the difference between a failed attempt and a fixed attempt obvious.</p>",
+   "source": "MDN — console.clear()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console/clear_static",
+   "sourceSnippet": "The console.clear() method clears the console if the environment allows it.",
+   "source2": "Chrome Developers — Console overview",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

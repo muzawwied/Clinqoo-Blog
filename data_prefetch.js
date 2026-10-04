@@ -239,5 +239,122 @@ window.countryDataFiles["prefetch"] = {
   }
  }
 }
+],
+{
+ "id": "prefetch-fetchpriority-bukan-pengganti-preload",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai fetchpriority tanpa Mengganti Preload",
+   "desc": "Tata cara menandai prioritas gambar atau skrip di proyek Clincoo dengan fetchpriority, bukan menambahkan preload untuk aset yang sudah ada di HTML.",
+   "content": "<p class=\"mb-4\">Aset yang sudah tertulis di HTML tidak selalu butuh hint kedua. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cek gambar hero dan skrip utama, lalu set fetchpriority sebelum menyimpan pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">fetchpriority mengatur antrean, preload menambah request</h2><p class=\"mb-4\">fetchpriority=high cocok untuk gambar LCP yang sudah punya tag img. fetchpriority=low cocok untuk gambar di bawah lipatan. rel=preload tetap untuk aset yang belum ditemukan parser, misalnya font yang baru dipanggil dari CSS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan pasang keduanya pada URL yang sama</h2><p class=\"mb-4\">Preload plus fetchpriority pada berkas yang sama sering mengunduh dua kali atau berebut bandwidth. Pilih satu: tag yang sudah ada cukup diberi fetchpriority, aset tersembunyi baru di-preload.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buktikan di kolom Priority</h2><p class=\"mb-4\">Muat ulang, baca kolom Priority di panel Network. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> apakah gambar hero naik tanpa request ganda. Hapus preload yang tidak mengubah urutan.</p>",
+   "source": "MDN — fetchpriority",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "sourceSnippet": "fetchpriority hints how the browser should prioritize fetching this image relative to other resources.",
+   "source2": "web.dev — Optimize resource loading",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use fetchpriority Without Replacing Preload",
+   "desc": "How to mark image or script priority in a Clincoo project with fetchpriority, instead of adding preload for an asset that is already in the HTML.",
+   "content": "<p class=\"mb-4\">An asset already written in the HTML does not always need a second hint. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> check the hero image and the main script, then set fetchpriority before you save the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">fetchpriority sets the queue, preload adds a request</h2><p class=\"mb-4\">fetchpriority=high fits an LCP image that already has an img tag. fetchpriority=low fits an image below the fold. rel=preload is still for an asset the parser has not discovered yet, such as a font that CSS requests later.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not put both on the same URL</h2><p class=\"mb-4\">Preload plus fetchpriority on the same file often downloads twice or fights for bandwidth. Pick one: an existing tag only needs fetchpriority, a hidden asset is the one to preload.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prove it in the Priority column</h2><p class=\"mb-4\">Reload and read the Priority column in the Network panel. Note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> whether the hero image moved up without a duplicate request. Remove a preload that does not change the order.</p>",
+   "source": "MDN — fetchpriority",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "sourceSnippet": "fetchpriority hints how the browser should prioritize fetching this image relative to other resources.",
+   "source2": "web.dev — Optimize resource loading",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prefetch-speculation-eagerness-moderate",
+ "langs": {
+  "id": {
+   "title": "Cara Set Eagerness moderate pada Speculation Rules",
+   "desc": "Tata cara mempratinjau halaman berikutnya di Clincoo hanya saat hover atau pointer down, bukan prerender setiap tautan saat halaman dibuka.",
+   "content": "<p class=\"mb-4\">Prerender yang terlalu awal memakan memori dan bisa memicu permintaan yang tidak diinginkan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka script type=speculationrules, lalu set eagerness sebelum cek pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">moderate dan conservative, bukan immediate di daftar</h2><p class=\"mb-4\">eagerness=immediate memprerender begitu aturan cocok. Untuk menu, pakai moderate supaya prerender mulai saat hover. conservative menunggu pointer down atau sentuh. Jangan immediate pada daftar artikel yang panjang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi where href_matches</h2><p class=\"mb-4\">Tulis pola yang sempit, misalnya hanya langkah berikutnya di alur. Syarat not href_matches untuk logout, checkout, atau tautan yang mengubah data. Prerender tidak boleh menekan tombol yang menulis ke server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di panel Speculative loads</h2><p class=\"mb-4\">Buka Application atau panel speculative loads, hover satu tautan, lalu lihat apakah hanya URL itu yang prerender. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> aturan yang memicu halaman tak terpakai. Sempitkan pola itu.</p>",
+   "source": "MDN — Speculation Rules API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API",
+   "sourceSnippet": "The Speculation Rules API lets a page declare which URLs to prefetch or prerender, with an eagerness level.",
+   "source2": "Chrome Developers — Speculation rules",
+   "source2Url": "https://developer.chrome.com/docs/web-platform/prerender-pages",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set moderate Eagerness on Speculation Rules",
+   "desc": "How to prerender the next Clincoo page only on hover or pointer down, instead of prerendering every link when the page opens.",
+   "content": "<p class=\"mb-4\">A prerender that starts too early uses memory and can fire requests you did not want. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the script type=speculationrules and set eagerness before you check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">moderate and conservative, not immediate on a list</h2><p class=\"mb-4\">eagerness=immediate prerenders as soon as the rule matches. For a menu, use moderate so prerender starts on hover. conservative waits for pointer down or touch. Do not use immediate on a long article list.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit where href_matches</h2><p class=\"mb-4\">Write a narrow pattern, for example only the next step in a flow. Add not href_matches for logout, checkout, or a link that changes data. A prerender must not press a button that writes to the server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the Speculative loads panel</h2><p class=\"mb-4\">Open Application or the speculative loads panel, hover one link, and see whether only that URL prerenders. Note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> a rule that starts an unused page. Narrow that pattern.</p>",
+   "source": "MDN — Speculation Rules API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API",
+   "sourceSnippet": "The Speculation Rules API lets a page declare which URLs to prefetch or prerender, with an eagerness level.",
+   "source2": "Chrome Developers — Speculation rules",
+   "source2Url": "https://developer.chrome.com/docs/web-platform/prerender-pages",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prefetch-jangan-preload-css-yang-sudah-ada",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Preload CSS yang Sudah Diblokir Parser",
+   "desc": "Tata cara menghindari preload untuk stylesheet yang sudah ada di head proyek Clincoo, karena hint itu sering mengunduh berkas yang sama dua kali.",
+   "content": "<p class=\"mb-4\">Stylesheet di head sudah menjadi permintaan prioritas tinggi. Menambahkan rel=preload as=style untuk URL yang sama tidak mempercepat, malah bisa menggandakan unduhan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bandingkan href link rel=stylesheet dengan setiap preload sebelum simpan pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload CSS hanya jika belum ditemukan</h2><p class=\"mb-4\">Pakai preload untuk CSS yang baru diminta dari impor, atau untuk stylesheet yang disisipkan belakangan. Jika tag link stylesheet sudah di awal head, hapus preload URL itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">as=style dan onload bukan pola default</h2><p class=\"mb-4\">Pola preload lalu onload=this.rel=stylesheet berguna untuk CSS yang tidak memblokir, tetapi jangan untuk CSS utama yang mengatur layout. Tanpa onload yang benar, berkas terunduh lalu tidak dipakai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek request ganda di Network</h2><p class=\"mb-4\">Filter CSS, muat ulang, lalu lihat apakah satu URL muncul dua kali. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> berkas yang double. Sisakan satu link stylesheet untuk CSS utama.</p>",
+   "source": "MDN — rel=preload",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "sourceSnippet": "preload is a hint to fetch a resource the page will need soon; it is not a replacement for the tag that uses the resource.",
+   "source2": "web.dev — Preload critical assets",
+   "source2Url": "https://web.dev/articles/preload-critical-assets",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Preloading CSS the Parser Already Blocks On",
+   "desc": "How to avoid preloading a stylesheet that is already in a Clincoo project head, because that hint often downloads the same file twice.",
+   "content": "<p class=\"mb-4\">A stylesheet in the head is already a high-priority request. Adding rel=preload as=style for the same URL does not speed it up and can download the file twice. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> compare each stylesheet href with every preload before you save the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload CSS only if the parser has not found it</h2><p class=\"mb-4\">Use preload for CSS requested from an import, or for a stylesheet inserted later. If a link rel=stylesheet is already at the start of head, remove the preload for that URL.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">as=style plus onload is not the default pattern</h2><p class=\"mb-4\">The preload then onload=this.rel=stylesheet pattern is for CSS that should not block, not for the main CSS that sets layout. Without a correct onload, the file downloads and is never applied.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check for a duplicate request in Network</h2><p class=\"mb-4\">Filter to CSS, reload, and see whether one URL appears twice. Note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> the doubled file. Keep a single stylesheet link for the main CSS.</p>",
+   "source": "MDN — rel=preload",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "sourceSnippet": "preload is a hint to fetch a resource the page will need soon; it is not a replacement for the tag that uses the resource.",
+   "source2": "web.dev — Preload critical assets",
+   "source2Url": "https://web.dev/articles/preload-critical-assets",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "prefetch-integrity-pada-preload-skrip",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang integrity saat Preload Skrip Pihak Ketiga",
+   "desc": "Tata cara menyamakan atribut integrity dan crossorigin pada preload skrip pihak ketiga di proyek Clincoo dengan tag script yang memakainya.",
+   "content": "<p class=\"mb-4\">Preload skrip tanpa integrity yang sama bisa gagal saat tag script menuntut SRI, atau lolos cache yang tidak terverifikasi. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> salin integrity dari tag script ke link preload, lalu cek pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nilai integrity harus identik</h2><p class=\"mb-4\">Atribut integrity pada preload dan pada script harus string yang sama, biasanya sha384 atau sha512. crossorigin=anonymous wajib di keduanya jika SRI dipakai. Beda satu karakter membuat browser mengunduh ulang atau menolak skrip.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan preload skrip yang tidak kamu kendalikan hash-nya</h2><p class=\"mb-4\">Jika penyedia mengubah berkas tanpa memberitahu, integrity lama akan memblokir halaman. Preload hanya skrip yang hash-nya kamu catat. Skrip yang berubah tiap rilis lebih aman dimuat dari tag script biasa setelah kamu perbarui hash.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di konsol setelah muat ulang</h2><p class=\"mb-4\">Cari pesan failed integrity atau request yang statusnya gagal. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> URL dan hash yang ditolak. Samakan kedua tag, atau hapus preload jika tag script sudah cukup awal di head.</p>",
+   "source": "MDN — Subresource Integrity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity",
+   "sourceSnippet": "Subresource Integrity lets the browser verify that a fetched file matches a cryptographic hash you specify.",
+   "source2": "MDN — rel=preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Add integrity When Preloading a Third-Party Script",
+   "desc": "How to match integrity and crossorigin on a third-party script preload in a Clincoo project with the script tag that uses it.",
+   "content": "<p class=\"mb-4\">Preloading a script without the same integrity can fail when the script tag requires SRI, or can reuse a cache that was not checked. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> copy integrity from the script tag onto the preload link, then check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">The integrity value must be identical</h2><p class=\"mb-4\">The integrity attribute on the preload and on the script must be the same string, usually sha384 or sha512. crossorigin=anonymous is required on both when SRI is used. One different character makes the browser download again or reject the script.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not preload a script whose hash you do not control</h2><p class=\"mb-4\">If the provider changes the file without notice, the old integrity blocks the page. Preload only a script whose hash you recorded. A script that changes every release is safer on a normal script tag after you update the hash.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the console after a reload</h2><p class=\"mb-4\">Look for a failed integrity message or a request that errors. Note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> the URL and the rejected hash. Match both tags, or remove the preload if the script tag is already early in head.</p>",
+   "source": "MDN — Subresource Integrity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity",
+   "sourceSnippet": "Subresource Integrity lets the browser verify that a fetched file matches a cryptographic hash you specify.",
+   "source2": "MDN — rel=preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

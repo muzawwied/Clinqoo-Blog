@@ -1350,4 +1350,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-jangan-hint-semua-rute/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-jangan-hint-semua-rute/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-fetchpriority-bukan-pengganti-preload/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-fetchpriority-bukan-pengganti-preload/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-fetchpriority-bukan-pengganti-preload/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-fetchpriority-bukan-pengganti-preload/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-speculation-eagerness-moderate/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-speculation-eagerness-moderate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-speculation-eagerness-moderate/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-speculation-eagerness-moderate/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-jangan-preload-css-yang-sudah-ada/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-jangan-preload-css-yang-sudah-ada/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-jangan-preload-css-yang-sudah-ada/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-jangan-preload-css-yang-sudah-ada/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/console/console-bersihkan-sebelum-reproduksi/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/console/console-bersihkan-sebelum-reproduksi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/console/console-bersihkan-sebelum-reproduksi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/console/console-bersihkan-sebelum-reproduksi/"/>
+  </url>
 </urlset>

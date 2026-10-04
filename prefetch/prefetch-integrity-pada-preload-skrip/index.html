@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pasang integrity saat Preload Skrip Pihak Ketiga — Clincoo Docs</title>
+<meta name="description" content="Tata cara menyamakan atribut integrity dan crossorigin pada preload skrip pihak ketiga di proyek Clincoo dengan tag script yang memakainya.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/">
+<link rel="canonical" href="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pasang integrity saat Preload Skrip Pihak Ketiga — Clincoo Docs">
+<meta property="og:description" content="Tata cara menyamakan atribut integrity dan crossorigin pada preload skrip pihak ketiga di proyek Clincoo dengan tag script yang memakainya.">
+<meta property="og:url" content="https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Pasang integrity saat Preload Skrip Pihak Ketiga — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menyamakan atribut integrity dan crossorigin pada preload skrip pihak ketiga di proyek Clincoo dengan tag script yang memakainya.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Pasang integrity saat Preload Skrip Pihak Ketiga", "description": "Tata cara menyamakan atribut integrity dan crossorigin pada preload skrip pihak ketiga di proyek Clincoo dengan tag script yang memakainya.", "inLanguage": "id", "mainEntityOfPage": "https://docs.clincoo.buzz/prefetch/prefetch-integrity-pada-preload-skrip/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/prefetch/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Prefetch</p>
+<h1 class="seo-title">Cara Pasang integrity saat Preload Skrip Pihak Ketiga</h1>
+<div class="seo-body">
+<p class="mb-4">Preload skrip tanpa integrity yang sama bisa gagal saat tag script menuntut SRI, atau lolos cache yang tidak terverifikasi. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> salin integrity dari tag script ke link preload, lalu cek pratinjau <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a>.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Nilai integrity harus identik</h2><p class="mb-4">Atribut integrity pada preload dan pada script harus string yang sama, biasanya sha384 atau sha512. crossorigin=anonymous wajib di keduanya jika SRI dipakai. Beda satu karakter membuat browser mengunduh ulang atau menolak skrip.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan preload skrip yang tidak kamu kendalikan hash-nya</h2><p class="mb-4">Jika penyedia mengubah berkas tanpa memberitahu, integrity lama akan memblokir halaman. Preload hanya skrip yang hash-nya kamu catat. Skrip yang berubah tiap rilis lebih aman dimuat dari tag script biasa setelah kamu perbarui hash.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji di konsol setelah muat ulang</h2><p class="mb-4">Cari pesan failed integrity atau request yang statusnya gagal. Catat di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> URL dan hash yang ditolak. Samakan kedua tag, atau hapus preload jika tag script sudah cukup awal di head.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
