@@ -180,5 +180,151 @@ window.countryDataFiles["console"] = {
   }
  }
 }
+,
+{
+ "id": "console-logpoint-tanpa-jeda",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang Logpoint Tanpa Menghentikan Skrip",
+   "desc": "Tata cara memasang logpoint di DevTools Clincoo supaya nilai variabel tercatat di konsol tanpa breakpoint yang menghentikan halaman.",
+   "content": "<p class=\"mb-4\">Breakpoint menghentikan timer, animasi, dan fetch. Kalau kamu hanya ingin nilai sebuah variabel, di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pakai logpoint, bukan breakpoint biru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Klik kanan nomor baris</h2><p class=\"mb-4\">Di panel Sources, klik kanan nomor baris lalu pilih Add logpoint. Isi ekspresi seperti nama, jumlah, dan status. Pesan muncul di konsol saat baris itu lewat, dan skrip tetap jalan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan log seluruh objek besar</h2><p class=\"mb-4\">Ekspresi logpoint dijalankan di halaman. Menulis objek DOM atau array ribuan item memperlambat preview. Pilih satu atau dua field. Hapus logpoint sebelum deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan dengan preview</h2><p class=\"mb-4\">Buka <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, ulangi klik yang memicu baris itu, lalu baca konsol. Kalau tidak ada baris baru, ekspresinya salah atau baris itu tidak pernah tercapai.</p>",
+   "source": "Chrome Developers — Logpoints",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/javascript/breakpoints#logpoint",
+   "sourceSnippet": "Logpoints let you inject logs into your code without pausing and without editing the source.",
+   "source2": "MDN — debugger",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Add a Logpoint Without Pausing the Script",
+   "desc": "How to add a DevTools logpoint on a Clincoo page so a variable is written to the console without a breakpoint that pauses the page.",
+   "content": "<p class=\"mb-4\">A breakpoint stops timers, animation, and fetch. If you only need a variable, use a logpoint in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, not a blue breakpoint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Right-click the line number</h2><p class=\"mb-4\">In Sources, right-click the line number and choose Add logpoint. Enter an expression such as name, count, and status. The message appears in the console when that line runs, and the script keeps going.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not log a huge object</h2><p class=\"mb-4\">A logpoint expression runs on the page. Logging a DOM node or a thousand-item array slows the preview. Pick one or two fields. Remove the logpoint before deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match it with the preview</h2><p class=\"mb-4\">Open <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, repeat the click that hits that line, then read the console. If nothing new appears, the expression is wrong or the line never ran.</p>",
+   "source": "Chrome Developers — Logpoints",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/javascript/breakpoints#logpoint",
+   "sourceSnippet": "Logpoints let you inject logs into your code without pausing and without editing the source.",
+   "source2": "MDN — debugger",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "console-dollar-nol-elemen-terpilih",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai $0 untuk Elemen yang Sedang Dipilih",
+   "desc": "Tata cara memakai $0 di konsol Clincoo supaya elemen yang diklik di panel Elements bisa diukur dan diubah tanpa mencari selector dulu.",
+   "content": "<p class=\"mb-4\">Menyalin selector panjang sering salah elemen. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pilih elemen di panel Elements, lalu ketik $0 di konsol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur sebelum mengubah</h2><p class=\"mb-4\">$0.getBoundingClientRect() memberi posisi dan ukuran. getComputedStyle($0).display memberi display yang menang. Jangan menebak flex atau block dari tampilan saja.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ubah sementara, lalu tulis di sumber</h2><p class=\"mb-4\">$0.style.outline = '2px solid red' hanya hidup di sesi ini. Muat ulang menghapusnya. Kalau percobaan berhasil, salin perubahannya ke file CSS, bukan meninggalkan perintah konsol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di lebar ponsel</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> aktifkan device toolbar, pilih elemen yang tumpang-tindih, lalu bandingkan $0 dengan elemen di bawahnya lewat $0.parentElement.</p>",
+   "source": "Chrome Developers — Console utilities",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/console/utilities",
+   "sourceSnippet": "$0 returns the most recently selected element in the Elements panel.",
+   "source2": "MDN — Element.getBoundingClientRect()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use $0 for the Currently Selected Element",
+   "desc": "How to use $0 in the Clincoo console so the element clicked in the Elements panel can be measured and changed without writing a selector first.",
+   "content": "<p class=\"mb-4\">Copying a long selector often hits the wrong element. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> select the node in Elements, then type $0 in the console.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure before you change it</h2><p class=\"mb-4\">$0.getBoundingClientRect() returns position and size. getComputedStyle($0).display returns the winning display. Do not guess flex or block from the picture alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Change it temporarily, then write the source</h2><p class=\"mb-4\">$0.style.outline = '2px solid red' lasts only for this session. A reload clears it. If the trial works, copy the change into the CSS file instead of leaving a console command behind.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check at phone width</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> turn on the device toolbar, select the overlapping element, then compare $0 with the node under it via $0.parentElement.</p>",
+   "source": "Chrome Developers — Console utilities",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/console/utilities",
+   "sourceSnippet": "$0 returns the most recently selected element in the Elements panel.",
+   "source2": "MDN — Element.getBoundingClientRect()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "console-await-promise-yang-ditolak",
+ "langs": {
+  "id": {
+   "title": "Cara Await Promise yang Ditolak di Konsol",
+   "desc": "Tata cara menunggu fetch yang gagal di konsol Clincoo supaya alasan penolakan dan status HTTP terbaca, bukan hanya Uncaught (in promise).",
+   "content": "<p class=\"mb-4\">Baris Uncaught (in promise) tidak menyebut URL. Di konsol <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kamu bisa mengetik await karena konteksnya async.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tangkap alasan, jangan hanya status</h2><p class=\"mb-4\">await fetch('/api/health').then(r => { if (!r.ok) throw new Error(r.status + ' ' + r.url); return r.json() }) menampilkan status dan URL. Kalau server mengirim teks, baca await res.text() sebelum menganggapnya JSON.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat alasan di objek, bukan string</h2><p class=\"mb-4\">Kalau promise ditolak dengan Error, salin error itu. String 'gagal' menghilangkan stack. Untuk penolakan tanpa catch di halaman, buka baris merah lalu klik sumbernya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ulangi di preview</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Network bersamaan. Status 401, 404, atau CORS harus cocok dengan alasan yang kamu catat. Jangan menempel hanya kata Uncaught.</p>",
+   "source": "MDN — Promise rejection",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch",
+   "sourceSnippet": "The catch() method returns a Promise and deals with rejected cases only.",
+   "source2": "Chrome Developers — Console",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Await a Rejected Promise in the Console",
+   "desc": "How to await a failed fetch in the Clincoo console so the rejection reason and HTTP status are visible, not only Uncaught (in promise).",
+   "content": "<p class=\"mb-4\">An Uncaught (in promise) line does not name the URL. In the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> console you can type await because the context is async.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Capture the reason, not only the status</h2><p class=\"mb-4\">await fetch('/api/health').then(r => { if (!r.ok) throw new Error(r.status + ' ' + r.url); return r.json() }) shows the status and URL. If the server sends text, read await res.text() before treating it as JSON.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the reason on the object, not a string</h2><p class=\"mb-4\">If the promise rejects with an Error, copy that error. The string 'failed' drops the stack. For an uncaught rejection on the page, open the red line and click its source.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Repeat it in the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> keep Network open. A 401, 404, or CORS failure should match the reason you wrote down. Do not paste only the word Uncaught.</p>",
+   "source": "MDN — Promise rejection",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch",
+   "sourceSnippet": "The catch() method returns a Promise and deals with rejected cases only.",
+   "source2": "Chrome Developers — Console",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "console-breakpoint-kondisi-di-loop",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang Breakpoint Bersyarat di Dalam Loop",
+   "desc": "Tata cara menghentikan loop Clincoo hanya saat indeks atau id tertentu, supaya kamu tidak menekan lanjut ratusan kali di DevTools.",
+   "content": "<p class=\"mb-4\">Breakpoint di dalam forEach berhenti di setiap item. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> klik kanan nomor baris, pilih Add conditional breakpoint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Syarat yang sempit</h2><p class=\"mb-4\">Contoh syarat: item.id === 'paket-bisnis' atau index === 12. Syarat yang selalu benar sama dengan breakpoint biasa. Syarat yang memakai DOM query di loop besar membuat halaman terasa macet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat nilai, lalu lanjut</h2><p class=\"mb-4\">Saat berhenti, lihat Scope, bukan hanya baris kode. Salin id dan field yang salah. Hapus breakpoint setelah bug ketemu supaya preview tidak tertahan lagi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek ulang tanpa debugger</h2><p class=\"mb-4\">Muat ulang <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan breakpoint mati. Perbaikan yang hanya terlihat saat skrip dijeda sering salah karena timer dan fetch ikut tertahan.</p>",
+   "source": "Chrome Developers — Conditional breakpoints",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/javascript/breakpoints#conditional",
+   "sourceSnippet": "A conditional breakpoint pauses only when a condition you set evaluates to true.",
+   "source2": "MDN — forEach",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set a Conditional Breakpoint Inside a Loop",
+   "desc": "How to pause a Clincoo loop only for a specific index or id, so you do not press resume hundreds of times in DevTools.",
+   "content": "<p class=\"mb-4\">A breakpoint inside forEach pauses on every item. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> right-click the line number and choose Add conditional breakpoint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the condition narrow</h2><p class=\"mb-4\">Example conditions: item.id === 'paket-bisnis' or index === 12. A condition that is always true is a normal breakpoint. A condition that queries the DOM inside a large loop makes the page feel stuck.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write down the value, then resume</h2><p class=\"mb-4\">When it pauses, read Scope, not only the code line. Copy the id and the field that is wrong. Remove the breakpoint after the bug is found so the preview is not held again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Recheck without the debugger</h2><p class=\"mb-4\">Reload <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with the breakpoint off. A fix that only appears while the script is paused is often wrong because timers and fetch were held too.</p>",
+   "source": "Chrome Developers — Conditional breakpoints",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/javascript/breakpoints#conditional",
+   "sourceSnippet": "A conditional breakpoint pauses only when a condition you set evaluates to true.",
+   "source2": "MDN — forEach",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "console-filter-level-error-saja",
+ "langs": {
+  "id": {
+   "title": "Cara Saring Konsol Hanya Level Error",
+   "desc": "Tata cara menampilkan hanya level error di konsol Clincoo supaya peringatan pihak ketiga tidak menutup pesan yang benar-benar menghentikan halaman.",
+   "content": "<p class=\"mb-4\">Konsol penuh log info membuat error merah tenggelam. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> klik filter level, lalu sisakan Errors.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Matikan info dan verbose dulu</h2><p class=\"mb-4\">Default sering menampilkan Info, Warnings, dan Errors. Untuk pencarian pertama, sisakan Errors. Setelah penyebab ketemu, nyalakan lagi Warnings karena ada peringatan CORS dan cookie yang penting.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kotak teks menyaring isi, bukan level</h2><p class=\"mb-4\">Mengetik nama file di kotak filter menyembunyikan error lain. Kosongkan kotak teks sebelum menyimpulkan tidak ada error. Ikon sidebar error tetap menghitung pesan yang tersembunyi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan dengan preview</h2><p class=\"mb-4\">Ulangi di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pada jendela bersih tanpa ekstensi. Error yang hanya muncul bersama ekstensi bukan bug halaman. Catat satu pesan error pertama.</p>",
+   "source": "Chrome Developers — Console filters",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/console/reference#filter",
+   "sourceSnippet": "You can filter console messages by severity level, text, or regular expression.",
+   "source2": "MDN — console",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Filter the Console to Errors Only",
+   "desc": "How to show only the error level in the Clincoo console so third-party warnings do not hide the message that actually stops the page.",
+   "content": "<p class=\"mb-4\">A console full of info logs hides the red error. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the level filter and leave Errors on.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Turn off info and verbose first</h2><p class=\"mb-4\">The default often shows Info, Warnings, and Errors. For the first pass, leave Errors only. After the cause is found, turn Warnings back on because some CORS and cookie warnings matter.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">The text box filters content, not level</h2><p class=\"mb-4\">Typing a file name in the filter box hides other errors. Clear the text box before concluding there is no error. The error sidebar icon still counts hidden messages.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the preview</h2><p class=\"mb-4\">Repeat it on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> in a clean window without extensions. An error that appears only with an extension is not a page bug. Write down the first error message.</p>",
+   "source": "Chrome Developers — Console filters",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/console/reference#filter",
+   "sourceSnippet": "You can filter console messages by severity level, text, or regular expression.",
+   "source2": "MDN — console",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

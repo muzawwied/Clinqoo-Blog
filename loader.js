@@ -9,7 +9,7 @@
   }
   function loadConsole() {
     var e = document.createElement('script');
-    e.src = 'data_console.js?v=1';
+    e.src = 'data_console.js?v=2';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);

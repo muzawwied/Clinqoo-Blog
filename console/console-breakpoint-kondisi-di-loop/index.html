@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pasang Breakpoint Bersyarat di Dalam Loop — Clincoo Docs</title>
+<meta name="description" content="Tata cara menghentikan loop Clincoo hanya saat indeks atau id tertentu, supaya kamu tidak menekan lanjut ratusan kali di DevTools.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/">
+<link rel="canonical" href="https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pasang Breakpoint Bersyarat di Dalam Loop — Clincoo Docs">
+<meta property="og:description" content="Tata cara menghentikan loop Clincoo hanya saat indeks atau id tertentu, supaya kamu tidak menekan lanjut ratusan kali di DevTools.">
+<meta property="og:url" content="https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Pasang Breakpoint Bersyarat di Dalam Loop — Clincoo Docs">
+<meta name="twitter:description" content="Tata cara menghentikan loop Clincoo hanya saat indeks atau id tertentu, supaya kamu tidak menekan lanjut ratusan kali di DevTools.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cara Pasang Breakpoint Bersyarat di Dalam Loop", "description": "Tata cara menghentikan loop Clincoo hanya saat indeks atau id tertentu, supaya kamu tidak menekan lanjut ratusan kali di DevTools.", "inLanguage": "id", "mainEntityOfPage": "https://docs.clincoo.buzz/console/console-breakpoint-kondisi-di-loop/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/console/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Konsol</p>
+<h1 class="seo-title">Cara Pasang Breakpoint Bersyarat di Dalam Loop</h1>
+<div class="seo-body">
+<p class="mb-4">Breakpoint di dalam forEach berhenti di setiap item. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> klik kanan nomor baris, pilih Add conditional breakpoint.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Syarat yang sempit</h2><p class="mb-4">Contoh syarat: item.id === 'paket-bisnis' atau index === 12. Syarat yang selalu benar sama dengan breakpoint biasa. Syarat yang memakai DOM query di loop besar membuat halaman terasa macet.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Catat nilai, lalu lanjut</h2><p class="mb-4">Saat berhenti, lihat Scope, bukan hanya baris kode. Salin id dan field yang salah. Hapus breakpoint setelah bug ketemu supaya preview tidak tertahan lagi.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek ulang tanpa debugger</h2><p class="mb-4">Muat ulang <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> dengan breakpoint mati. Perbaikan yang hanya terlihat saat skrip dijeda sering salah karena timer dan fetch ikut tertahan.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
