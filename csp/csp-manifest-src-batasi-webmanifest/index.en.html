@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Limit manifest-src for the Web App Manifest — Clincoo Docs</title>
+<meta name="description" content="How to restrict the Clincoo web app manifest origin so install name and icons are not taken from another host.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/">
+<link rel="canonical" href="https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Limit manifest-src for the Web App Manifest — Clincoo Docs">
+<meta property="og:description" content="How to restrict the Clincoo web app manifest origin so install name and icons are not taken from another host.">
+<meta property="og:url" content="https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Limit manifest-src for the Web App Manifest — Clincoo Docs">
+<meta name="twitter:description" content="How to restrict the Clincoo web app manifest origin so install name and icons are not taken from another host.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Limit manifest-src for the Web App Manifest", "description": "How to restrict the Clincoo web app manifest origin so install name and icons are not taken from another host.", "inLanguage": "en", "mainEntityOfPage": "https://docs.clincoo.buzz/csp/csp-manifest-src-batasi-webmanifest/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/csp/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">CSP</p>
+<h1 class="seo-title">How to Limit manifest-src for the Web App Manifest</h1>
+<div class="seo-body">
+<p class="mb-4">manifest-src controls the manifest file allowed via link rel manifest. A foreign manifest can overwrite the install name and icons. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> allow only the site origin, then check the manifest link in the <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> preview.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not leave it to the default</h2><p class="mb-4">Without manifest-src, the browser uses default-src. Name this directive explicitly so violation reports stay readable.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Match the deployed file</h2><p class="mb-4">The manifest path must match the file that is actually uploaded. An old path makes install fail even when the header is correct.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Record referenced icons</h2><p class="mb-4">Icons inside the manifest still follow img-src. Note both directives on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> so the install icon does not break.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

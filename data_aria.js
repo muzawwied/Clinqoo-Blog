@@ -353,6 +353,35 @@ window.countryDataFiles["aria"] = {
     "source3Url": "https://editor.clincoo.buzz/"
    }
   }
+ },
+{
+ "id": "aria-busy-pada-area-loading",
+ "langs": {
+  "id": {
+   "title": "Cara Tandai area loading dengan aria-busy",
+   "desc": "Tata cara menandai wilayah Clincoo yang sedang dimuat dengan aria-busy supaya teknologi bantu tidak membaca isi setengah jadi.",
+   "content": "<p class=\"mb-4\">aria-busy true memberi tahu bahwa isi sebuah wilayah belum selesai diperbarui. Pasang pada kontainer, bukan pada setiap spinner. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set atribut saat fetch mulai dan kembalikan ke false setelah DOM stabil, lalu cek di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasangkan dengan status yang terlihat</h2><p class=\"mb-4\">aria-busy tidak menggantikan teks status. Tetap tampilkan pesan memuat yang terlihat, dan hubungkan pesan itu dengan aria-live jika pembaruan harus diumumkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan biarkan true tertinggal</h2><p class=\"mb-4\">Kalau permintaan gagal, set aria-busy false lalu tampilkan pesan gagal. Atribut yang tertinggal membuat wilayah terdengar sibuk selamanya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat wilayah yang ditandai</h2><p class=\"mb-4\">Daftar kontainer ber-aria-busy di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya tim tidak menandai seluruh body dan menutup pengumuman lain.</p>",
+   "source": "MDN — aria-busy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-busy",
+   "sourceSnippet": "The aria-busy state indicates an element is being modified and that assistive technologies may want to wait until the modifications are complete before exposing them to the user.",
+   "source2": "WAI-ARIA — aria-busy",
+   "source2Url": "https://www.w3.org/TR/wai-aria-1.2/#aria-busy",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Mark a Loading Region with aria-busy",
+   "desc": "How to mark a Clincoo region that is still loading with aria-busy so assistive tech does not read a half-ready result.",
+   "content": "<p class=\"mb-4\">aria-busy true tells assistive tech that a region is not finished updating. Put it on the container, not on every spinner. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set the attribute when fetch starts and return it to false after the DOM settles, then check the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pair it with visible status</h2><p class=\"mb-4\">aria-busy does not replace status text. Keep a visible loading message, and connect that message with aria-live if the update should be announced.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not leave true behind</h2><p class=\"mb-4\">If the request fails, set aria-busy to false and show the failure. A leftover attribute makes the region sound busy forever.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record marked regions</h2><p class=\"mb-4\">List aria-busy containers on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the team does not mark the whole body and mute other announcements.</p>",
+   "source": "MDN — aria-busy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-busy",
+   "sourceSnippet": "The aria-busy state indicates an element is being modified and that assistive technologies may want to wait until the modifications are complete before exposing them to the user.",
+   "source2": "WAI-ARIA — aria-busy",
+   "source2Url": "https://www.w3.org/TR/wai-aria-1.2/#aria-busy",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
  }
+}
 ]
 };
