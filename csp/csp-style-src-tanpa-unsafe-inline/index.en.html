@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Write style-src without unsafe-inline — Clincoo Docs</title>
+<meta name="description" content="How to allow Clincoo site CSS with a nonce or hash, not unsafe-inline that also allows injected styles.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/">
+<link rel="canonical" href="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Write style-src without unsafe-inline — Clincoo Docs">
+<meta property="og:description" content="How to allow Clincoo site CSS with a nonce or hash, not unsafe-inline that also allows injected styles.">
+<meta property="og:url" content="https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Write style-src without unsafe-inline — Clincoo Docs">
+<meta name="twitter:description" content="How to allow Clincoo site CSS with a nonce or hash, not unsafe-inline that also allows injected styles.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Write style-src without unsafe-inline", "description": "How to allow Clincoo site CSS with a nonce or hash, not unsafe-inline that also allows injected styles.", "inLanguage": "en", "mainEntityOfPage": "https://docs.clincoo.buzz/csp/csp-style-src-tanpa-unsafe-inline/index.en.html", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/csp/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">CSP</p>
+<h1 class="seo-title">How to Write style-src without unsafe-inline</h1>
+<div class="seo-body">
+<p class="mb-4">style-src 'unsafe-inline' allows injected style attributes and style tags. That is enough to hide a button or override layout. On <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> keep stylesheets in separate files, then allow only a nonce or hash in the deploy header. Check the <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> preview.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Move inline styles to classes</h2><p class="mb-4">Replace style="..." on elements with a class in the CSS file. The parser still renders the layout, but the policy does not need to open inline styles.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Nonce for styles that must be dynamic</h2><p class="mb-4">If one style block must be built per response, set a nonce attribute that matches the header value. Do not reuse that nonce on the next response.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test in Report-Only first</h2><p class="mb-4">Record style-src violations before locking the policy. Copy the directive that passes to <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> so the next deploy does not put unsafe-inline back.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
