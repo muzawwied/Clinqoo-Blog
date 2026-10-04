@@ -104,21 +104,46 @@ function updateSidebarUI() {
     }
   }
 
-  // Populate negara di dropdown
+  // Populate kategori di sidebar — tiap kategori bisa dibuka jadi daftar judul artikelnya
   const countryDropEl = document.getElementById('countryDrop');
   if (countryDropEl) {
     countryDropEl.innerHTML = '';
     for (const cId in countries) {
       const c = countries[cId];
+      if (!c.articles || !c.articles.length) continue; // lewati kategori kosong
       const name = c.names[currentLang] || c.names['id'];
-      const btn = document.createElement('button');
       const isActive = currentCountryId === cId && currentView === 'country';
-      btn.className = 'w-full flex items-center px-14 py-2 text-left transition-colors text-sm ' + (isActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
-      btn.innerHTML = '<span class="line-clamp-1">' + name + '</span>';
-      btn.onclick = () => selectCountry(cId);
+      const btn = document.createElement('button');
+      btn.className = 'w-full flex items-center px-6 py-2 text-left transition-colors text-sm ' + (isActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+      btn.innerHTML = '<span class="line-clamp-1 flex-1">' + name + '</span>' +
+        '<svg class="w-4 h-4 text-gray-400 transition-transform flex-shrink-0' + (isActive ? ' rotate-180' : '') + '" id="catIcon-' + cId + '" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
+      btn.onclick = () => toggleCatDrop(cId);
       countryDropEl.appendChild(btn);
+
+      const list = document.createElement('div');
+      list.id = 'catList-' + cId;
+      list.className = 'flex flex-col pb-1' + (isActive ? '' : ' hidden');
+      c.articles.forEach(art => {
+        const ld = art.langs[currentLang] || art.langs['id'];
+        const a = document.createElement('a');
+        a.href = '/' + cId + '/' + art.id + '/' + (currentLang === 'en' ? 'index.en.html' : '');
+        const artActive = currentView === 'article' && currentCountryId === cId && currentArticleId === art.id;
+        a.className = 'w-full flex items-center px-12 py-1.5 text-left transition-colors text-[13px] ' + (artActive ? 'font-semibold text-gray-900' : 'text-gray-600 hover:bg-gray-50');
+        a.innerHTML = '<span class="line-clamp-2">' + ld.title + '</span>';
+        list.appendChild(a);
+      });
+      countryDropEl.appendChild(list);
     }
   }
+}
+
+function toggleCatDrop(cId) {
+  const drop = document.getElementById('catList-' + cId);
+  const icon = document.getElementById('catIcon-' + cId);
+  if (!drop) return;
+  drop.classList.toggle('hidden');
+  drop.classList.toggle('flex');
+  icon && icon.classList.toggle('rotate-180');
 }
 
 function changeLanguage(key) {
