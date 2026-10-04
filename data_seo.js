@@ -267,5 +267,151 @@ window.countryDataFiles["seo"] = {
   }
  }
 }
+,
+{
+ "id": "seo-canonical-satu-url-resmi",
+ "langs": {
+  "id": {
+   "title": "Cara Tetapkan Satu URL Kanonik dengan rel=canonical",
+   "desc": "Tata cara menandai satu URL resmi di halaman Clincoo supaya varian query dan salinan tidak saling bersaing di penelusuran.",
+   "content": "<p class=\"mb-4\">URL dengan dan tanpa garis miring, atau dengan parameter utm, sering dianggap halaman berbeda. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang link rel=canonical yang menunjuk ke satu alamat yang ingin diindeks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih satu bentuk alamat</h2><p class=\"mb-4\">Putuskan https, huruf kecil, dan ada atau tidaknya garis miring akhir. Semua salinan menunjuk ke bentuk itu, termasuk halaman yang sama di pratinjau.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan kanonik ke URL yang 404</h2><p class=\"mb-4\">Canonical harus memuat status 200 dan konten yang sama. Cek di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sebelum deploy. Jangan arahkan ke beranda jika artikel punya URL sendiri.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan dengan sitemap</h2><p class=\"mb-4\">URL di sitemap sama dengan canonical. Simpan pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya tiap halaman baru tidak mengulang varian.</p>",
+   "source": "Google Search Central — Canonical",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+   "sourceSnippet": "A canonical URL is the URL of the page that Google thinks is most representative from a set of duplicate pages on your site.",
+   "source2": "MDN — rel=canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#canonical",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set One Canonical URL with rel=canonical",
+   "desc": "How to mark one official URL on a Clincoo page so query variants and copies do not compete in search.",
+   "content": "<p class=\"mb-4\">A URL with and without a trailing slash, or with a utm parameter, is often treated as a different page. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add a rel=canonical link that points to the single address you want indexed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick one address shape</h2><p class=\"mb-4\">Decide https, lowercase, and whether the trailing slash stays. Every copy points at that shape, including the same page in preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not canonicalize to a 404</h2><p class=\"mb-4\">The canonical must return 200 and the same content. Check on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> before deploy. Do not point an article at the homepage if it has its own URL.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the sitemap</h2><p class=\"mb-4\">The sitemap URL matches the canonical. Keep the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so each new page does not repeat a variant.</p>",
+   "source": "Google Search Central — Canonical",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+   "sourceSnippet": "A canonical URL is the URL of the page that Google thinks is most representative from a set of duplicate pages on your site.",
+   "source2": "MDN — rel=canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#canonical",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-robots-txt-jangan-blokir-halaman-publik",
+ "langs": {
+  "id": {
+   "title": "Cara Tulis robots.txt yang Tidak Memblokir Halaman Publik",
+   "desc": "Tata cara menyusun robots.txt di proyek Clincoo supaya aset draf tertutup tanpa ikut menutup halaman yang ingin muncul di penelusuran.",
+   "content": "<p class=\"mb-4\">Satu baris Disallow: / menutup seluruh situs. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis robots.txt yang hanya menutup folder draf, bukan beranda dan artikel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Izinkan halaman yang diindeks</h2><p class=\"mb-4\">User-agent: * lalu Allow: / untuk konten publik. Disallow hanya path seperti /preview/ atau /draft/. Jangan blokir CSS dan gambar yang dipakai halaman itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan robots.txt dan noindex</h2><p class=\"mb-4\">robots.txt mencegah unduhan, bukan perintah hapus dari indeks. Halaman yang sudah terindeks dan ingin disembunyikan perlu meta noindex, lalu tetap bisa diunduh.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji sebelum deploy</h2><p class=\"mb-4\">Buka /robots.txt di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Catat pola yang aman di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — robots.txt",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+   "sourceSnippet": "A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.",
+   "source2": "MDN — robots.txt",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Write a robots.txt That Does Not Block Public Pages",
+   "desc": "How to write robots.txt in a Clincoo project so draft assets stay closed without also hiding pages you want in search.",
+   "content": "<p class=\"mb-4\">A single Disallow: / closes the whole site. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write a robots.txt that only closes the draft folder, not the homepage and articles.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Allow pages you want indexed</h2><p class=\"mb-4\">User-agent: * then Allow: / for public content. Disallow only paths such as /preview/ or /draft/. Do not block the CSS and images those pages use.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate robots.txt and noindex</h2><p class=\"mb-4\">robots.txt stops a fetch, it is not a remove-from-index order. A page already indexed that you want hidden needs a noindex meta, and must still be fetchable.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test before deploy</h2><p class=\"mb-4\">Open /robots.txt in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview. Keep the safe pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — robots.txt",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+   "sourceSnippet": "A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.",
+   "source2": "MDN — robots.txt",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-open-graph-judul-dan-gambar",
+ "langs": {
+  "id": {
+   "title": "Cara Isi Open Graph Judul dan Gambar untuk Tautan yang Dibagikan",
+   "desc": "Tata cara mengisi og:title, og:description, dan og:image di halaman Clincoo supaya cuplikan saat dibagikan tidak jatuh ke teks acak.",
+   "content": "<p class=\"mb-4\">Tanpa Open Graph, aplikasi chat mengambil paragraf pertama atau gambar sembarang. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> isi og:title, og:description, dan og:image di head tiap halaman publik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Judul yang sama dengan janji halaman</h2><p class=\"mb-4\">og:title boleh lebih pendek dari title, tetapi harus menyebut topik yang sama. Jangan ulang nama merek Clincoo saja di semua URL.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Gambar mutlak dan cukup besar</h2><p class=\"mb-4\">og:image memakai URL https absolut, kira-kira 1200x630. Path relatif sering gagal saat tautan dibagikan di luar situs.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek setelah deploy</h2><p class=\"mb-4\">Bagikan URL staging dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ke diri sendiri. Simpan ukuran gambar di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Open Graph protocol",
+   "sourceUrl": "https://ogp.me/",
+   "sourceSnippet": "The Open Graph protocol enables any web page to become a rich object in a social graph.",
+   "source2": "MDN — meta og",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set an Open Graph Title and Image for Shared Links",
+   "desc": "How to set og:title, og:description, and og:image on a Clincoo page so a shared snippet does not fall back to random text.",
+   "content": "<p class=\"mb-4\">Without Open Graph, a chat app grabs the first paragraph or a random image. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set og:title, og:description, and og:image in the head of each public page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A title that matches the page promise</h2><p class=\"mb-4\">og:title may be shorter than title, but it must name the same topic. Do not repeat only the Clincoo brand on every URL.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">An absolute image that is large enough</h2><p class=\"mb-4\">og:image uses an absolute https URL, about 1200x630. A relative path often fails when the link is shared off-site.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check after deploy</h2><p class=\"mb-4\">Share the staging URL from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> to yourself. Keep the image size note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Open Graph protocol",
+   "sourceUrl": "https://ogp.me/",
+   "sourceSnippet": "The Open Graph protocol enables any web page to become a rich object in a social graph.",
+   "source2": "MDN — meta og",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-sitemap-xml-hanya-url-kanonik",
+ "langs": {
+  "id": {
+   "title": "Cara Susun sitemap.xml yang Hanya Memuat URL Kanonik",
+   "desc": "Tata cara menulis sitemap.xml proyek Clincoo yang hanya memuat URL 200 kanonik, bukan draf, parameter, atau salinan.",
+   "content": "<p class=\"mb-4\">Sitemap yang penuh URL 404 atau parameter membuat penelusuran membuang anggaran crawl. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> daftar hanya URL yang memang ingin diindeks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu loc per halaman</h2><p class=\"mb-4\">Setiap loc memakai https, huruf kecil, dan bentuk yang sama dengan rel=canonical. Jangan masukkan /index.html jika kanoniknya tanpa nama file itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keluarkan draf dan pratinjau</h2><p class=\"mb-4\">Halaman noindex dan folder draf tidak masuk sitemap. lastmod diubah hanya saat konten benar-benar berubah, bukan tiap simpan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tautkan dari robots.txt</h2><p class=\"mb-4\">Tambahkan Sitemap: di robots.txt setelah deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Contoh pola ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Sitemaps",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+   "sourceSnippet": "A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them.",
+   "source2": "sitemaps.org protocol",
+   "source2Url": "https://www.sitemaps.org/protocol.html",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Build a sitemap.xml That Lists Only Canonical URLs",
+   "desc": "How to write a Clincoo project sitemap.xml that lists only canonical 200 URLs, not drafts, parameters, or copies.",
+   "content": "<p class=\"mb-4\">A sitemap full of 404s or parameters makes search waste crawl budget. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> list only URLs you actually want indexed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One loc per page</h2><p class=\"mb-4\">Each loc uses https, lowercase, and the same shape as rel=canonical. Do not include /index.html if the canonical omits that filename.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Leave out drafts and previews</h2><p class=\"mb-4\">noindex pages and the draft folder stay out of the sitemap. Change lastmod only when the content actually changes, not on every save.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Link it from robots.txt</h2><p class=\"mb-4\">Add a Sitemap: line in robots.txt after deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. A pattern lives on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Sitemaps",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+   "sourceSnippet": "A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them.",
+   "source2": "sitemaps.org protocol",
+   "source2Url": "https://www.sitemaps.org/protocol.html",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "seo-atribut-lang-pada-html",
+ "langs": {
+  "id": {
+   "title": "Cara Isi atribut lang di html untuk Halaman Dua Bahasa",
+   "desc": "Tata cara mengisi lang pada elemen html di situs Clincoo supaya versi Indonesia dan Inggris tidak tercampur di satu URL.",
+   "content": "<p class=\"mb-4\">Tanpa lang, mesin telusur menebak bahasa dari kata pertama. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set html lang=id pada versi Indonesia dan lang=en pada versi Inggris.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu bahasa utama per URL</h2><p class=\"mb-4\">Jangan campur paragraf panjang dua bahasa di halaman yang sama. Cuplikan merek Clincoo boleh tetap, tetapi isi utama mengikuti lang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasangkan hreflang</h2><p class=\"mb-4\">link alternate hreflang=id dan hreflang=en menunjuk ke URL masing-masing. x-default mengarah ke versi yang dipakai pengunjung baru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> lihat elemen html lewat inspektur. Catatan pola ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Localized versions",
+   "sourceUrl": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+   "sourceSnippet": "Use hreflang to tell Google about variations of your content so that we can understand these pages are localized variants of the same content.",
+   "source2": "MDN — lang attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set the html lang Attribute on a Bilingual Page",
+   "desc": "How to set lang on the html element of a Clincoo site so the Indonesian and English versions are not mixed on one URL.",
+   "content": "<p class=\"mb-4\">Without lang, a search engine guesses the language from the first words. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set html lang=id on the Indonesian version and lang=en on the English version.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One primary language per URL</h2><p class=\"mb-4\">Do not mix long paragraphs of two languages on the same page. A Clincoo brand snippet can stay, but the main copy follows lang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pair it with hreflang</h2><p class=\"mb-4\">alternate links for hreflang=id and hreflang=en point at each URL. x-default points at the version new visitors get.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check in preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> inspect the html element. The pattern note lives on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google Search Central — Localized versions",
+   "sourceUrl": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+   "sourceSnippet": "Use hreflang to tell Google about variations of your content so that we can understand these pages are localized variants of the same content.",
+   "source2": "MDN — lang attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+}
 ]
 };
