@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var m={"clinqoo-blog.pages.dev":"docs.clincoo.buzz"};var t=m[location.hostname];if(t)location.replace("https://"+t+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Move Focus after an Action Completes — Clincoo Docs</title>
+<meta name="description" content="How to move keyboard focus on Clincoo after save, delete, or opening a panel so the user is not left on a button that disappeared.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/">
+<link rel="canonical" href="https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Move Focus after an Action Completes — Clincoo Docs">
+<meta property="og:description" content="How to move keyboard focus on Clincoo after save, delete, or opening a panel so the user is not left on a button that disappeared.">
+<meta property="og:url" content="https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Move Focus after an Action Completes — Clincoo Docs">
+<meta name="twitter:description" content="How to move keyboard focus on Clincoo after save, delete, or opening a panel so the user is not left on a button that disappeared.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Move Focus after an Action Completes", "description": "How to move keyboard focus on Clincoo after save, delete, or opening a panel so the user is not left on a button that disappeared.", "mainEntityOfPage": "https://docs.clincoo.buzz/keyboard/keyboard-fokus-awal-setelah-aksi/", "author": {"@type": "Organization", "name": "Clincoo"}, "publisher": {"@type": "Organization", "name": "Clincoo"}}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/keyboard/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Keyboard</p>
+<h1 class="seo-title">How to Move Focus after an Action Completes</h1>
+<div class="seo-body">
+<p class="mb-4">If a button is removed from the DOM when clicked, focus falls to the body. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> move focus to the next sensible place.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pick a target that already exists</h2><p class="mb-4">After save, focus can stay on the button if it remains. After deleting a row, move to the next row or the section heading. The target needs tabindex="-1" if it is not a control.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not jump to the top silently</h2><p class="mb-4">Do not call focus() on the main heading every time. A status announcement is enough via a live region. Move focus only when the old element is gone or a new panel opened.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the preview</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> delete an item with the keyboard. The next focus should stay in the list, not disappear to the top of the page.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>
