@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Add a nomodule Fallback for Older Browsers — Clincoo</title>
+<meta name="description" content="How to pair a type=module script with a nomodule script in Clincoo so an older browser still has a classic path.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Add a nomodule Fallback for Older Browsers">
+<meta property="og:description" content="How to pair a type=module script with a nomodule script in Clincoo so an older browser still has a classic path.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-nomodule-fallback-browser-lama/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Add a nomodule Fallback for Older Browsers</h1>
+<p>How to pair a type=module script with a nomodule script in Clincoo so an older browser still has a classic path.</p>
+<p class="mb-4">A type=module file is ignored by older browsers. Without a second path, a button that depends on that script stays silent.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Two scripts, one job</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add the modern script with type=module and the classic script with nomodule. Do not put the same logic in both without a guard, or a new browser runs it twice.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test in preview</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the console and confirm only one path runs. Record the file names on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>. If nomodule also loads in a new browser, remove the duplicate before deploy.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN — JavaScript modules</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

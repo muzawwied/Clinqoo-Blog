@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + modul extra + fokus) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,32 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadFokus() {
+    var e = document.createElement('script');
+    e.src = 'data_fokus.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadModulExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_modul_extra.js?v=1';
+    e.onload = loadFokus;
+    e.onerror = loadFokus;
+    document.body.appendChild(e);
+  }
+  function loadIntegrasiAiExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_integrasi_ai_extra.js?v=1';
+    e.onload = loadModulExtra;
+    e.onerror = loadModulExtra;
+    document.body.appendChild(e);
+  }
   function loadMcpExtra() {
     var e = document.createElement('script');
     e.src = 'data_mcp_extra.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadIntegrasiAiExtra;
+    e.onerror = loadIntegrasiAiExtra;
     document.body.appendChild(e);
   }
   function loadMcp() {
