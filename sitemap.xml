@@ -1584,9 +1584,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-unit-cqi-untuk-teks-kartu/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-unit-cqi-untuk-teks-kartu/"/>
   </url>
-<url><loc>https://docs.clincoo.buzz/cerita/</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://docs.clincoo.buzz/cerita/cerita-founder-clincoo/</loc><lastmod>2026-10-05</lastmod></url>
-<url><loc>https://docs.clincoo.buzz/cerita/cerita-founder-clincoo/index.en.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url>
+    <loc>https://docs.clincoo.buzz/container/container-pilih-inline-size-bukan-size/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/container/container-pilih-inline-size-bukan-size/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-pilih-inline-size-bukan-size/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-pilih-inline-size-bukan-size/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/container/container-style-query-untuk-varian/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/container/container-style-query-untuk-varian/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-style-query-untuk-varian/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-style-query-untuk-varian/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/container/container-fallback-jika-query-tidak-didukung/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/container/container-fallback-jika-query-tidak-didukung/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-fallback-jika-query-tidak-didukung/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-fallback-jika-query-tidak-didukung/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/container/container-kolom-kartu-di-sidebar/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/container/container-kolom-kartu-di-sidebar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-kolom-kartu-di-sidebar/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-kolom-kartu-di-sidebar/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/container/container-debug-query-di-devtools/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/container/container-debug-query-di-devtools/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/container/container-debug-query-di-devtools/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/container/container-debug-query-di-devtools/"/>
+  </url>
 </urlset>
 
 
