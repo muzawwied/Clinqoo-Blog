@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid undefined this at the Top of a Module — Clincoo</title>
+<meta name="description" content="How to replace top-level this in a Clincoo module, which does not point at window.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-this-undefined-di-level-atas/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-this-undefined-di-level-atas/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-this-undefined-di-level-atas/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-this-undefined-di-level-atas/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid undefined this at the Top of a Module">
+<meta property="og:description" content="How to replace top-level this in a Clincoo module, which does not point at window.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-this-undefined-di-level-atas/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Avoid undefined this at the Top of a Module</h1>
+<p>How to replace top-level this in a Clincoo module, which does not point at window.</p>
+<p class="mb-4">In a classic script, top-level this is often window. In type=module, top-level this is undefined. Code that reads this.location breaks.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Replace this with globalThis</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> find this outside a function in a module file. Replace window access with globalThis, or import what you need explicitly. Do not restore this by calling the function through window.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the console before deploy</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> load the page and confirm there is no TypeError on this. Write the result on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>. If an event handler needs the element, use event.currentTarget, not top-level this.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN — JavaScript modules</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

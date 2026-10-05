@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Mengandalkan Strict Mode Otomatis di type=module — Clincoo</title>
+<meta name="description" content="Tata cara memanfaatkan strict mode bawaan modul JavaScript di Clincoo tanpa menulis use strict manual.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Mengandalkan Strict Mode Otomatis di type=module">
+<meta property="og:description" content="Tata cara memanfaatkan strict mode bawaan modul JavaScript di Clincoo tanpa menulis use strict manual.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+</head>
+<body>
+<article>
+<h1>Cara Mengandalkan Strict Mode Otomatis di type=module</h1>
+<p>Tata cara memanfaatkan strict mode bawaan modul JavaScript di Clincoo tanpa menulis use strict manual.</p>
+<p class="mb-4">Berkas dengan type=module sudah berjalan di strict mode. Menulis use strict di dalamnya tidak mengubah apa pun, tetapi assignment ke variabel yang belum dideklarasikan tetap gagal.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Hapus use strict yang tersisa dari salinan skrip klasik</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> ubah skrip menjadi type=module. Hapus baris use strict. Deklarasikan setiap variabel dengan let atau const. Jangan mengandalkan variabel global implisit.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji error di pratinjau</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka konsol dan sengaja tulis nama tanpa deklarasi. Pesan ReferenceError berarti strict mode aktif. Catat berkasnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> sebelum deploy.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN — JavaScript modules</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

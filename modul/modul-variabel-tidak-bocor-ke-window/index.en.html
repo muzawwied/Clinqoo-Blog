@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Keep Module Variables Off window — Clincoo</title>
+<meta name="description" content="How to export a Clincoo function explicitly instead of relying on a global variable.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Keep Module Variables Off window">
+<meta property="og:description" content="How to export a Clincoo function explicitly instead of relying on a global variable.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Keep Module Variables Off window</h1>
+<p>How to export a Clincoo function explicitly instead of relying on a global variable.</p>
+<p class="mb-4">A variable in type=module does not become a window property. Another script that calls that name gets a ReferenceError.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Export only what is shared</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add export on functions used by other files. In the consumer file, write import. Do not attach a function to window just so a classic script can see it, unless a nomodule fallback truly needs it.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Confirm there is no global name</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> type the function name in the console. undefined or ReferenceError is the correct result for a module. Note the import on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN — JavaScript modules</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

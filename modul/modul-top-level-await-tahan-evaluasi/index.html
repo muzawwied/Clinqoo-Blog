@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Menahan Evaluasi Modul dengan Top-Level Await — Clincoo</title>
+<meta name="description" content="Tata cara memakai top-level await di Clincoo supaya impor tidak lanjut sebelum data siap.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Menahan Evaluasi Modul dengan Top-Level Await">
+<meta property="og:description" content="Tata cara memakai top-level await di Clincoo supaya impor tidak lanjut sebelum data siap.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+</head>
+<body>
+<article>
+<h1>Cara Menahan Evaluasi Modul dengan Top-Level Await</h1>
+<p>Tata cara memakai top-level await di Clincoo supaya impor tidak lanjut sebelum data siap.</p>
+<p class="mb-4">Top-level await menahan evaluasi modul dan semua yang mengimpornya. Satu permintaan yang lambat menahan seluruh pohon impor.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Batasi await di modul gerbang</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> letakkan top-level await hanya di modul yang memang harus selesai dulu, misalnya konfigurasi. Jangan await di modul yang diimpor halaman utama jika datanya tidak kritis. Beri batas waktu pada fetch.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ukur waktu muat</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka panel Network dan lihat kapan skrip berikutnya mulai. Catat penundaan di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>. Jika halaman diam terlalu lama, pindahkan await ke impor dinamis.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await">MDN — Top-level await</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

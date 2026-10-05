@@ -1907,4 +1907,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/fokus/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/fokus/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/modul/modul-this-undefined-di-level-atas/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/modul/modul-variabel-tidak-bocor-ke-window/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/modul/modul-perbaiki-failed-to-resolve-module-specifier/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/modul/modul-perbaiki-failed-to-resolve-module-specifier/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/modul/modul-perbaiki-failed-to-resolve-module-specifier/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/modul/modul-perbaiki-failed-to-resolve-module-specifier/"/>
+  </url>
 </urlset>

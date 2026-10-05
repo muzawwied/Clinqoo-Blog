@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Rely on Automatic Strict Mode in type=module — Clincoo</title>
+<meta name="description" content="How to use the strict mode that JavaScript modules already have in Clincoo, without a manual use strict line.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Rely on Automatic Strict Mode in type=module">
+<meta property="og:description" content="How to use the strict mode that JavaScript modules already have in Clincoo, without a manual use strict line.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-strict-mode-otomatis-di-type-module/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Rely on Automatic Strict Mode in type=module</h1>
+<p>How to use the strict mode that JavaScript modules already have in Clincoo, without a manual use strict line.</p>
+<p class="mb-4">A file with type=module already runs in strict mode. Writing use strict inside it changes nothing, but assigning to an undeclared variable still fails.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Remove leftover use strict from a classic script copy</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> change the script to type=module. Remove the use strict line. Declare every variable with let or const. Do not rely on an implicit global.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test the error in preview</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the console and write a name without a declaration. A ReferenceError means strict mode is on. Note the file on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> before deploy.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN — JavaScript modules</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

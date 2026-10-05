@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Hold Module Evaluation with Top-Level Await — Clincoo</title>
+<meta name="description" content="How to use top-level await in Clincoo so importers do not continue before data is ready.">
+<link rel="canonical" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Hold Module Evaluation with Top-Level Await">
+<meta property="og:description" content="How to use top-level await in Clincoo so importers do not continue before data is ready.">
+<meta property="og:url" content="https://blog.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/modul/modul-top-level-await-tahan-evaluasi/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Hold Module Evaluation with Top-Level Await</h1>
+<p>How to use top-level await in Clincoo so importers do not continue before data is ready.</p>
+<p class="mb-4">Top-level await holds module evaluation and everything that imports it. One slow request holds the whole import tree.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Limit await to a gate module</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> put top-level await only in a module that must finish first, such as config. Do not await in a module imported by the home page if the data is not critical. Set a timeout on fetch.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Measure load time</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the Network panel and see when the next script starts. Record the delay on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>. If the page stays blank too long, move the await into a dynamic import.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await">MDN — Top-level await</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
