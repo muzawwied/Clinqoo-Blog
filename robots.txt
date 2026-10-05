@@ -4,3 +4,4 @@ Sitemap: https://blog.clincoo.buzz/sitemap.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-pembayaran.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-cls.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-cerita.xml
+Sitemap: https://blog.clincoo.buzz/sitemap-testing.xml
