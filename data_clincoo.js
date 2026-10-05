@@ -737,8 +737,6 @@ window.countryDataFiles["dokumentasi"] = {
     }
    }
   },
-<<<<<<< Updated upstream
-=======
    {
    "id": "fitur-email-clincoo",
    "langs": {
@@ -754,7 +752,6 @@ window.countryDataFiles["dokumentasi"] = {
    }
   }
 
->>>>>>> Stashed changes
  ]
 };
 
