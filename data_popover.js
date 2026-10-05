@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Popover (5 Oktober 2026, WIB) — 5 artikel
+// Clincoo Docs — kategori Popover (5 Oktober 2026, WIB) — 10 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["popover"] = {
  "names": { "id": "Popover", "en": "Popover" },
@@ -143,6 +143,151 @@ window.countryDataFiles["popover"] = {
    "sourceSnippet": "The toggle event fires on a popover element when it is shown or hidden, and newState reports the resulting state.",
    "source2": "WAI — menu and disclosure",
    "source2Url": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-pasang-anchor-positioning",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang Anchor Positioning pada Popover",
+   "desc": "Tata cara menempelkan popover Clincoo ke tombol pemicu dengan anchor-name dan position-anchor, supaya panel tidak melayang di pojok viewport.",
+   "content": "<p class=\"mb-4\">Popover bawaan muncul di top layer, tetapi posisi defaultnya sering di tengah atau mengikuti margin, bukan di samping tombol. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> itu membuat menu terasa lepas dari kontrolnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri nama jangkar pada tombol</h2><p class=\"mb-4\">Pada tombol pemicu setel anchor-name: --menu-akun. Pada elemen popover setel position-anchor: --menu-akun, lalu top dan left dengan anchor() supaya tepi panel menempel ke tepi tombol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sediakan posisi cadangan</h2><p class=\"mb-4\">Jika ruang di bawah tombol habis, geser panel ke atas dengan position-try. Uji di lebar ponsel pada <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan catat hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS anchor positioning",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "sourceSnippet": "Anchor positioning lets a positioned element be placed relative to one or more anchor elements.",
+   "source2": "CSS — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Anchor a Popover with CSS Anchor Positioning",
+   "desc": "How to pin a Clincoo popover to its trigger with anchor-name and position-anchor so the panel does not float in a viewport corner.",
+   "content": "<p class=\"mb-4\">A native popover sits in the top layer, but its default position is often centered or margin-based, not beside the button. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> that makes the menu feel detached from its control.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Name the anchor on the button</h2><p class=\"mb-4\">On the trigger set anchor-name: --account-menu. On the popover set position-anchor: --account-menu, then top and left with anchor() so the panel edge meets the button edge.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add a fallback position</h2><p class=\"mb-4\">If there is no room below the button, flip the panel upward with position-try. Check a phone width on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> and note the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS anchor positioning",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "sourceSnippet": "Anchor positioning lets a positioned element be placed relative to one or more anchor elements.",
+   "source2": "CSS — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-bedakan-dengan-dialog",
+ "langs": {
+  "id": {
+   "title": "Cara Bedakan Popover dan Dialog Modal",
+   "desc": "Tata cara memilih popover untuk menu singkat dan dialog untuk tugas yang harus diselesaikan, supaya fokus dan lapisan tidak tertukar di Clincoo.",
+   "content": "<p class=\"mb-4\">Popover dan dialog sama-sama di top layer, tetapi tujuan mereka beda. Menu akun yang boleh diabaikan cocok di popover. Konfirmasi hapus yang wajib dijawab cocok di dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek apakah tugas boleh ditinggal</h2><p class=\"mb-4\">Jika pengguna boleh klik di luar dan lanjut bekerja, pakai popover auto. Jika halaman di belakang harus terkunci sampai ada pilihan, pakai dialog showModal di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan campur peran</h2><p class=\"mb-4\">Jangan jadikan popover sebagai form panjang. Form singkat boleh, tetapi unggah berkas atau pembayaran di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> lebih aman di dialog. Ringkas keputusannya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — the popover attribute",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "The popover attribute is for transient UI, while dialog is for a window that can be modal.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Choose Popover Instead of a Modal Dialog",
+   "desc": "How to use a popover for a short menu and a dialog for a task that must be finished, so focus and layers do not get mixed in Clincoo.",
+   "content": "<p class=\"mb-4\">Popover and dialog both use the top layer, but they serve different jobs. An account menu the user may ignore belongs in a popover. A delete confirm that needs an answer belongs in a dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check whether the task can be abandoned</h2><p class=\"mb-4\">If the user may click outside and keep working, use an auto popover. If the page behind must stay locked until a choice is made, use dialog showModal in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not mix the roles</h2><p class=\"mb-4\">Do not turn a popover into a long form. A short form is fine, but file upload or payment on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> is safer in a dialog. Summarize the choice on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — the popover attribute",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "The popover attribute is for transient UI, while dialog is for a window that can be modal.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-dengarkan-toggle-newstate",
+ "langs": {
+  "id": {
+   "title": "Cara Dengarkan toggle dan newState pada Popover",
+   "desc": "Tata cara memakai peristiwa toggle di Clincoo supaya status menu tersimpan hanya saat popover benar-benar terbuka atau tertutup.",
+   "content": "<p class=\"mb-4\">Mengandalkan klik tombol saja mudah salah: popover bisa ditutup Escape atau light dismiss tanpa klik kedua pada tombol yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang listener toggle</h2><p class=\"mb-4\">Pada elemen popover dengarkan toggle. Baca event.newState: open berarti panel tampil, closed berarti sudah hilang. Jangan ubah aria-expanded di klik sebelum peristiwa ini selesai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji tiga jalur tutup</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tutup lewat tombol, Escape, dan klik luar. Ketiganya harus mengirim newState closed. Catat yang hilang di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum merilis ke <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — ToggleEvent",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent",
+   "sourceSnippet": "The toggle event fires on a popover when it is shown or hidden, and newState reports the resulting state.",
+   "source2": "HTML — toggle event",
+   "source2Url": "https://html.spec.whatwg.org/multipage/popover.html#event-toggle",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Listen for toggle and newState on a Popover",
+   "desc": "How to use the toggle event in Clincoo so menu state is stored only when the popover has actually opened or closed.",
+   "content": "<p class=\"mb-4\">Relying on the button click alone is easy to get wrong: a popover can close with Escape or light dismiss without a second click on the same button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add a toggle listener</h2><p class=\"mb-4\">Listen for toggle on the popover element. Read event.newState: open means the panel is shown, closed means it is gone. Do not flip aria-expanded on click before this event finishes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test three close paths</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> close via the button, Escape, and an outside click. All three should send newState closed. Note any miss on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before shipping to <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — ToggleEvent",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent",
+   "sourceSnippet": "The toggle event fires on a popover when it is shown or hidden, and newState reports the resulting state.",
+   "source2": "HTML — toggle event",
+   "source2Url": "https://html.spec.whatwg.org/multipage/popover.html#event-toggle",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-pakai-backdrop-tipis",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai ::backdrop Tipis pada Popover",
+   "desc": "Tata cara memberi lapisan redup pada popover Clincoo dengan ::backdrop tanpa mengunci halaman seperti dialog modal.",
+   "content": "<p class=\"mb-4\">Popover auto tetap bisa ditutup klik luar. Lapisan ::backdrop hanya membantu mata melihat panel mana yang aktif, bukan menggantikan dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Warnai backdrop, jangan tangkap fokus</h2><p class=\"mb-4\">Selector [popover]::backdrop menerima background dengan alpha rendah. Jangan pasang pointer-events yang menelan klik jika Anda masih ingin light dismiss bekerja di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jaga kontras panel</h2><p class=\"mb-4\">Teks di panel harus tetap kontras di atas backdrop. Cek mode terang dan gelap di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, lalu tulis pengecualian browser di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ::backdrop",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop",
+   "sourceSnippet": "The ::backdrop pseudo-element is a box rendered immediately below a popover or modal dialog in the top layer.",
+   "source2": "MDN — Popover API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Style a Light ::backdrop on a Popover",
+   "desc": "How to dim the page behind a Clincoo popover with ::backdrop without locking the page the way a modal dialog does.",
+   "content": "<p class=\"mb-4\">An auto popover can still close on an outside click. A ::backdrop layer only helps the eye see which panel is active; it does not replace a dialog.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Color the backdrop, do not trap focus</h2><p class=\"mb-4\">The [popover]::backdrop selector accepts a low-alpha background. Do not set pointer-events that swallow clicks if you still want light dismiss in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep panel contrast</h2><p class=\"mb-4\">Text in the panel must stay contrasted on top of the backdrop. Check light and dark mode on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, then write any browser exception on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ::backdrop",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop",
+   "sourceSnippet": "The ::backdrop pseudo-element is a box rendered immediately below a popover or modal dialog in the top layer.",
+   "source2": "MDN — Popover API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-hindari-bersarang-menutup-induk",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari Popover Bersarang yang Menutup Induk",
+   "desc": "Tata cara menyusun submenu Clincoo supaya popover anak tidak ikut menutup induk saat light dismiss, atau sebaliknya menumpuk tanpa jalur tutup.",
+   "content": "<p class=\"mb-4\">Popover auto yang bersarang sering menutup keduanya sekaligus saat klik di dalam submenu, karena klik itu dianggap di luar induk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hubungkan induk dan anak</h2><p class=\"mb-4\">Taruh submenu sebagai popover terpisah yang dipicu dari dalam induk, lalu uji apakah hint invoker atau popovertargetaction menjaga induk tetap terbuka. Jika tidak, buat submenu manual dan tutup eksplisit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sediakan satu jalur tutup</h2><p class=\"mb-4\">Escape harus menutup anak dulu, baru induk. Cek urutan di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> dan <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Jika urutan terbalik, catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — popover stacking",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "Showing a popover hides other auto popovers that are not ancestors, which matters for nested menus.",
+   "source2": "MDN — Popover API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid a Nested Popover Closing Its Parent",
+   "desc": "How to stack a Clincoo submenu so a child popover does not close its parent on light dismiss, and does not pile up with no close path.",
+   "content": "<p class=\"mb-4\">Nested auto popovers often close both at once when the user clicks inside the submenu, because that click counts as outside the parent.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Connect parent and child</h2><p class=\"mb-4\">Place the submenu as a separate popover triggered from inside the parent, then check whether an invoker hint or popovertargetaction keeps the parent open. If not, make the submenu manual and close it explicitly.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Give one close path</h2><p class=\"mb-4\">Escape should close the child first, then the parent. Check the order in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> and <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. If the order flips, note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — popover stacking",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "Showing a popover hides other auto popovers that are not ancestors, which matters for nested menus.",
+   "source2": "MDN — Popover API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
