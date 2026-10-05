@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Container (5 Oktober 2026, WIB) — 8 artikel
+// Clincoo Docs — kategori Container (5 Oktober 2026, WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["container"] = {
  "names": { "id": "Container", "en": "Container" },
@@ -231,6 +231,123 @@ window.countryDataFiles["container"] = {
    "sourceSnippet": "DevTools can show which element is the query container and why a container query matches.",
    "source2": "MDN — container-name",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/container-name",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "container-jangan-query-elemen-sendiri",
+ "langs": {
+  "id":   {
+   "title": "Cara Hindari Container Query pada Elemen Itu Sendiri",
+   "desc": "Tata cara menaruh @container di anak, bukan di elemen yang menjadi container, supaya aturan Clincoo benar-benar kena.",
+   "content": "<p class=\"mb-4\">Container query tidak menata elemen yang menjadi container. Aturan yang ditulis pada kelas yang sama dengan container-type terlihat diam, lalu dianggap bug browser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan induk dan anak</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set container-type pada pembungkus, lalu tulis @container hanya pada anak di dalamnya: judul, baris tombol, atau grid isi. Jangan gabungkan keduanya di satu selector.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buktikan di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan kolom. Kalau hanya anak yang berubah, pemisahan sudah benar. Catat selector induk dan anak di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS container queries",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
+   "sourceSnippet": "A container query styles descendants of a query container; it does not style the container element itself.",
+   "source2": "MDN — @container",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@container",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Avoid a Container Query on the Element Itself",
+   "desc": "How to put @container on a child, not on the element that is the container, so the Clincoo rule actually applies.",
+   "content": "<p class=\"mb-4\">A container query does not style the element that is the container. A rule written on the same class as container-type looks dead, then gets blamed on the browser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Split parent and child</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set container-type on the wrapper, then write @container only on a child inside it: the title, the button row, or the content grid. Do not combine both on one selector.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prove it in preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow the column. If only the child changes, the split is correct. Note the parent and child selectors on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS container queries",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
+   "sourceSnippet": "A container query styles descendants of a query container; it does not style the container element itself.",
+   "source2": "MDN — @container",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@container",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "container-cqw-untuk-padding-dalam-kartu",
+ "langs": {
+  "id":   {
+   "title": "Cara Pakai cqw untuk Padding di Dalam Kartu",
+   "desc": "Tata cara memakai unit cqw di Clincoo supaya padding kartu mengikuti lebar container, bukan lebar jendela.",
+   "content": "<p class=\"mb-4\">Padding dengan vw membesar saat jendela lebar, meski kartu hanya duduk di sidebar. Isi terdorong dan memicu scroll horizontal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ikat padding ke container</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri induk container-type: inline-size, lalu set padding dengan clamp dan cqw pada anak. Jangan sisakan vw di padding atau gap kartu yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan dua kolom</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> taruh kartu yang sama di kolom lebar dan sempit. Padding harus ikut kolom, bukan ikut jendela. Simpan nilai clamp di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Container query length units",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
+   "sourceSnippet": "The cqw unit is 1% of the query container's width.",
+   "source2": "MDN — clamp()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Use cqw for Padding Inside a Card",
+   "desc": "How to use the cqw unit in Clincoo so card padding follows the container width, not the window width.",
+   "content": "<p class=\"mb-4\">Padding in vw grows with the window even when the card sits in a sidebar. Content is pushed and horizontal scroll appears.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bind padding to the container</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> give the parent container-type: inline-size, then set padding with clamp and cqw on the child. Do not leave vw on the padding or gap of that same card.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare two columns</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> place the same card in a wide and a narrow column. Padding should follow the column, not the window. Save the clamp values on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Container query length units",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
+   "sourceSnippet": "The cqw unit is 1% of the query container's width.",
+   "source2": "MDN — clamp()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "container-sintaks-range-lebar",
+ "langs": {
+  "id":   {
+   "title": "Cara Tulis Container Query dengan Sintaks Range Lebar",
+   "desc": "Tata cara memakai sintaks range (width >=) di Clincoo supaya ambang container mudah dibaca dan tidak tertukar min atau max.",
+   "content": "<p class=\"mb-4\">Bentuk lama min-width dan max-width mudah tertukar saat dua ambang digabung. Kartu berubah di lebar yang tidak dimaksud.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis ambang yang eksplisit</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis @container (width >= 24rem) untuk susunan melebar, dan rentang (24rem <= width < 40rem) jika hanya satu pita yang beda. Sebut nama container jika ada lebih dari satu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di batas angka</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> set lebar induk tepat di bawah dan di atas ambang. Perubahan harus terjadi sekali, bukan dua kali. Catat angkanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @container",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@container",
+   "sourceSnippet": "Container queries accept range syntax such as width >= 24rem.",
+   "source2": "MDN — Using container size and style queries",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_size_and_style_queries",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Write a Container Query with Width Range Syntax",
+   "desc": "How to use range syntax (width >=) in Clincoo so a container threshold is readable and min or max is not swapped.",
+   "content": "<p class=\"mb-4\">The older min-width and max-width forms are easy to swap when two thresholds are combined. The card then changes at the wrong width.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write the threshold explicitly</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write @container (width >= 24rem) for the wide layout, and a band (24rem <= width < 40rem) if only one slice differs. Name the container when there is more than one.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test on the number</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> set the parent width just below and just above the threshold. The change should happen once, not twice. Record the numbers on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @container",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@container",
+   "sourceSnippet": "Container queries accept range syntax such as width >= 24rem.",
+   "source2": "MDN — Using container size and style queries",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_size_and_style_queries",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "container-atasi-meluber-di-kontainer-sempit",
+ "langs": {
+  "id":   {
+   "title": "Cara Atasi Isi yang Meluber di Container Sempit",
+   "desc": "Tata cara menahan teks panjang dan gambar di Clincoo saat container query sudah berganti susunan tetapi isi masih keluar kolom.",
+   "content": "<p class=\"mb-4\">Query yang benar tetap bisa kalah oleh kata panjang, URL, atau gambar tanpa batas. Kolom sempit Clincoo lalu melebar ke luar layar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri batas pada isi</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan min-width: 0 pada item flex atau grid di dalam container, overflow-wrap: anywhere pada teks, dan max-width: 100% pada gambar. Query mengatur susunan; batas ini menahan isi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek scroll horizontal</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> isi judul dengan satu kata sangat panjang. Halaman tidak boleh bisa digeser ke samping. Simpan trio properti itu di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overflow-wrap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+   "sourceSnippet": "overflow-wrap: anywhere allows an otherwise unbreakable string to wrap to prevent overflow.",
+   "source2": "MDN — min-width",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Fix Content That Overflows a Narrow Container",
+   "desc": "How to contain long text and images in Clincoo when the container query already restacks but content still escapes the column.",
+   "content": "<p class=\"mb-4\">A correct query can still lose to a long word, a URL, or an unbounded image. The narrow Clincoo column then grows off screen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bound the content</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add min-width: 0 on the flex or grid item inside the container, overflow-wrap: anywhere on text, and max-width: 100% on images. The query sets the layout; these limits hold the content.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check horizontal scroll</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> fill the title with one very long word. The page should not scroll sideways. Save that trio of properties on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overflow-wrap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+   "sourceSnippet": "overflow-wrap: anywhere allows an otherwise unbreakable string to wrap to prevent overflow.",
+   "source2": "MDN — min-width",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
