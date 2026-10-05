@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori CLS (5 Oktober 2026, WIB) — 10 artikel
+// Clincoo Docs — kategori CLS (5 Oktober 2026, WIB) — 15 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["cls"] = {
  "names": { "id": "CLS", "en": "CLS" },
@@ -290,6 +290,152 @@ window.countryDataFiles["cls"] = {
    "source2Url": "https://web.dev/articles/optimize-cls",
    "source3": "Clincoo Docs",
    "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+}
+ ,
+{
+ "id": "cls-width-height-pada-img",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang width dan height pada Gambar",
+   "desc": "Tata cara mengisi atribut width dan height pada img Clincoo supaya browser menyiapkan rasio sebelum berkas gambar selesai diunduh.",
+   "content": "<p class=\"mb-4\">Gambar tanpa ukuran membuat browser menebak tinggi nol, lalu mendorong teks saat berkas tiba. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> isi atribut width dan height sesuai piksel asli, bukan hanya CSS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Isi atribut, bukan hanya style</h2><p class=\"mb-4\">Atribut width dan height memberi rasio intrinsik sebelum CSS kustom selesai. Tetap boleh memakai max-width: 100% dan height: auto agar gambar mengecil di layar sempit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan biarkan satu gambar tanpa rasio</h2><p class=\"mb-4\">Logo, thumbnail, dan gambar hero di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> perlu pasangan atribut yang sama. Jika hanya satu yang terisi, rasio tidak terbentuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di panel Performance</h2><p class=\"mb-4\">Muat ulang dengan cache kosong. Entri layout shift tidak boleh menunjuk ke img yang sudah punya kedua atribut. Catat rasio yang dipakai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLImageElement.width",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/width",
+   "sourceSnippet": "The width property of the HTMLImageElement interface indicates the width of the image in CSS pixels.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set width and height on Images",
+   "desc": "How to set width and height on a Clincoo img so the browser reserves the ratio before the image file finishes downloading.",
+   "content": "<p class=\"mb-4\">An image without a size makes the browser assume zero height, then pushes text when the file arrives. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set the width and height attributes to the intrinsic pixels, not CSS alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set the attributes, not only style</h2><p class=\"mb-4\">The width and height attributes provide an intrinsic ratio before custom CSS finishes. You can still use max-width: 100% and height: auto so the image shrinks on a narrow screen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not leave a single image without a ratio</h2><p class=\"mb-4\">Logos, thumbnails, and hero images in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> need the same attribute pair. If only one is set, the ratio is not formed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the Performance panel</h2><p class=\"mb-4\">Reload with an empty cache. A layout-shift entry should not point at an img that already has both attributes. Record the ratio you used on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLImageElement.width",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/width",
+   "sourceSnippet": "The width property of the HTMLImageElement interface indicates the width of the image in CSS pixels.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cls-css-kritis-sebelum-cat",
+ "langs": {
+  "id": {
+   "title": "Cara Muat CSS Kritis Sebelum Cat Pertama",
+   "desc": "Tata cara menaruh CSS layout Clincoo di head supaya halaman tidak dicat tanpa gaya lalu bergeser saat berkas CSS terlambat.",
+   "content": "<p class=\"mb-4\">Cat tanpa CSS lalu disusun ulang adalah pergeseran yang sering lolos jika hanya gambar yang dicek. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> taruh aturan layout di head, bukan di akhir body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Utamakan aturan yang mengubah ukuran</h2><p class=\"mb-4\">Grid, flex, margin hero, dan tinggi header harus ada sebelum cat pertama. CSS dekoratif boleh ditunda. Jangan mengandalkan berkas besar yang memblokir hanya setelah teks terlihat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hindari sisipan style setelah konten</h2><p class=\"mb-4\">Skrip yang menyuntik elemen style di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> setelah paint bisa mengubah tinggi kartu. Pindahkan aturan itu ke stylesheet awal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan jaringan lambat</h2><p class=\"mb-4\">Throttle ke 3G, muat ulang, dan pastikan judul tidak meloncat saat CSS tiba. Simpan cuplikan aturan kritis di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — link rel stylesheet",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+   "sourceSnippet": "The link element specifies relationships between the current document and an external resource.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Load Critical CSS Before First Paint",
+   "desc": "How to place Clincoo layout CSS in the head so the page is not painted unstyled and then shifted when the stylesheet arrives late.",
+   "content": "<p class=\"mb-4\">A paint without CSS that is then restyled is a shift that slips through if you only check images. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> put layout rules in the head, not at the end of the body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prioritize rules that change size</h2><p class=\"mb-4\">Grid, flex, hero margin, and header height must exist before first paint. Decorative CSS can wait. Do not rely on a large file that only blocks after text is visible.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Avoid injecting style after content</h2><p class=\"mb-4\">A script that injects a style element in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> after paint can change card height. Move those rules into the early stylesheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test on a slow network</h2><p class=\"mb-4\">Throttle to 3G, reload, and confirm the heading does not jump when CSS arrives. Save the critical rule snippet on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — link rel stylesheet",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+   "sourceSnippet": "The link element specifies relationships between the current document and an external resource.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cls-slot-avatar-dan-ikon",
+ "langs": {
+  "id": {
+   "title": "Cara Kunci Slot Avatar dan Ikon",
+   "desc": "Tata cara memberi kotak tetap untuk avatar dan ikon Clincoo supaya nama pengguna tidak bergeser saat gambar profil terlambat.",
+   "content": "<p class=\"mb-4\">Avatar yang muncul belakangan mendorong nama dan tombol di sampingnya. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus gambar profil dengan kotak yang sudah punya lebar dan tinggi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai kotak, bukan gambar polos</h2><p class=\"mb-4\">Div berukuran tetap, lalu img dengan width 100% dan height 100% serta object-fit: cover. Jika gambar gagal, inisial tetap di dalam kotak yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ikon SVG juga perlu ukuran</h2><p class=\"mb-4\">Ikon inline di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tanpa width dan height bisa membesar setelah font ikon tiba. Set ukuran di atribut atau CSS sebelum paint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan di daftar dan detail</h2><p class=\"mb-4\">Slot 40px di daftar dan 40px di header tidak boleh berubah antar halaman. Catat ukuran di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya template berikutnya tidak memakai nilai lain.</p>",
+   "source": "MDN — object-fit",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit",
+   "sourceSnippet": "The object-fit CSS property sets how the content of a replaced element should be resized to fit its container.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Reserve Avatar and Icon Slots",
+   "desc": "How to give Clincoo avatars and icons a fixed box so the user name does not shift when the profile image arrives late.",
+   "content": "<p class=\"mb-4\">An avatar that appears later pushes the name and the button beside it. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap the profile image in a box that already has width and height.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use a box, not a bare image</h2><p class=\"mb-4\">A fixed-size div, then an img with width 100% and height 100% and object-fit: cover. If the image fails, initials stay inside the same box.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">SVG icons need a size too</h2><p class=\"mb-4\">Inline icons in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> without width and height can grow after an icon font arrives. Set the size in an attribute or in CSS before paint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match list and detail</h2><p class=\"mb-4\">A 40px slot in the list and 40px in the header should not change between pages. Record the size on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next template does not use another value.</p>",
+   "source": "MDN — object-fit",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit",
+   "sourceSnippet": "The object-fit CSS property sets how the content of a replaced element should be resized to fit its container.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cls-konten-bersyarat-tanpa-dorong",
+ "langs": {
+  "id": {
+   "title": "Cara Tampilkan Konten Bersyarat Tanpa Mendorong",
+   "desc": "Tata cara menyiapkan ruang untuk pesan login, kupon, atau peringatan Clincoo yang baru muncul setelah data siap, tanpa mendorong isi di bawahnya.",
+   "content": "<p class=\"mb-4\">Blok yang disisipkan setelah fetch selesai sering mendorong judul. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> siapkan slot dengan min-height sebelum permintaan data dikirim.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reservasi sebelum respons datang</h2><p class=\"mb-4\">Jika pesan hanya muncul untuk sebagian pengguna, slot boleh kosong tetapi tingginya tetap. Jangan menambah node di atas konten utama setelah paint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sembunyikan dengan visibility, bukan sisipan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pakai visibility atau opacity pada slot yang sudah ada. Menghapus display: none lalu menyisipkan elemen baru mengubah aliran dokumen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur di dua keadaan</h2><p class=\"mb-4\">Bandingkan pengguna yang melihat pesan dan yang tidak. Selisih posisi judul harus nol. Simpan tinggi slot di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — min-height",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-height",
+   "sourceSnippet": "The min-height CSS property sets the minimum height of an element.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Show Conditional Content Without Pushing",
+   "desc": "How to reserve space for a Clincoo login note, coupon, or warning that appears only after data is ready, without pushing content below.",
+   "content": "<p class=\"mb-4\">A block inserted after a fetch often pushes the heading. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> reserve a slot with min-height before the data request is sent.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reserve space before the response</h2><p class=\"mb-4\">If the message appears only for some users, the slot may stay empty but its height stays. Do not add a node above the main content after paint.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hide with visibility, not insertion</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> use visibility or opacity on a slot that already exists. Removing display: none and inserting a new element changes document flow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure both states</h2><p class=\"mb-4\">Compare a user who sees the message and one who does not. The heading position difference should be zero. Save the slot height on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — min-height",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-height",
+   "sourceSnippet": "The min-height CSS property sets the minimum height of an element.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cls-tinggi-carousel-tetap",
+ "langs": {
+  "id": {
+   "title": "Cara Kunci Tinggi Carousel",
+   "desc": "Tata cara memberi carousel Clincoo tinggi tetap supaya slide berikutnya yang lebih tinggi tidak mendorong konten di bawahnya.",
+   "content": "<p class=\"mb-4\">Carousel yang mengikuti tinggi slide aktif membuat halaman meloncat tiap geser. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> kunci tinggi ke slide tertinggi, atau pakai aspect-ratio yang sama untuk semua slide.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan rasio setiap slide</h2><p class=\"mb-4\">Gambar slide memakai width, height, dan object-fit yang sama. Teks yang lebih panjang dipotong atau di-scroll di dalam kartu, bukan memperbesar carousel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan hitung tinggi setelah transisi</h2><p class=\"mb-4\">Skrip di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> yang mengatur height ke offsetHeight slide aktif setelah animasi adalah sumber CLS. Tinggi harus ada di CSS sebelum slide pertama digambar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji geser pertama</h2><p class=\"mb-4\">Geser dari slide pendek ke slide tinggi. Konten di bawah carousel tidak boleh bergerak. Catat tinggi yang dikunci di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The aspect-ratio CSS property allows you to define the desired width-to-height ratio of an element's box.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Lock Carousel Height",
+   "desc": "How to give a Clincoo carousel a fixed height so a taller next slide does not push the content below it.",
+   "content": "<p class=\"mb-4\">A carousel that follows the active slide height makes the page jump on every swipe. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> lock the height to the tallest slide, or use the same aspect-ratio for every slide.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the ratio of every slide</h2><p class=\"mb-4\">Slide images use the same width, height, and object-fit. Longer text is clipped or scrolled inside the card, not used to grow the carousel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not measure height after the transition</h2><p class=\"mb-4\">A script in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> that sets height to the active slide offsetHeight after the animation is a CLS source. The height must exist in CSS before the first slide is painted.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the first swipe</h2><p class=\"mb-4\">Swipe from a short slide to a tall one. Content below the carousel should not move. Record the locked height on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The aspect-ratio CSS property allows you to define the desired width-to-height ratio of an element's box.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
   }
  }
 }
