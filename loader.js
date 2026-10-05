@@ -9,7 +9,7 @@
   }
   function loadCls() {
     var e = document.createElement('script');
-    e.src = 'data_cls.js?v=1';
+    e.src = 'data_cls.js?v=2';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
