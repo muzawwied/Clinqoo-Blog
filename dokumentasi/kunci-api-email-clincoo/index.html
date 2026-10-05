@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunci API Email Clincoo: Kelola Akses dan Identitas Pengirim — Clincoo Docs</title>
+<meta name="description" content="Panduan tab Kunci API Clincoo: salin kunci Clincoo Email API, buat ulang dan nonaktifkan, atur identitas pengirim (nama tampilan dan alamat @clincoo.buzz), plus praktik aman menyimpan kunci.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kunci API Email Clincoo: Kelola Akses dan Identitas Pengirim">
+<meta property="og:description" content="Panduan tab Kunci API Clincoo: salin kunci Clincoo Email API, buat ulang dan nonaktifkan, atur identitas pengirim (nama tampilan dan alamat @clincoo.buzz), plus praktik aman menyimpan kunci.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fitur Database Clincoo: Penyimpanan Data Bawaan Backend Function — Clincoo Docs">
+<meta name="twitter:description" content="Panduan fitur Database bawaan Clincoo: simpan data permanen langsung dari backend function (db.get, db.set, db.list, db.count), batasan, tips performa, dan contoh kodenya.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Kunci API Email Clincoo: Kelola Akses dan Identitas Pengirim","description":"Panduan tab Kunci API Clincoo: salin kunci Clincoo Email API, buat ulang dan nonaktifkan, atur identitas pengirim (nama tampilan dan alamat @clincoo.buzz), plus praktik aman menyimpan kunci.","datePublished":"2026-10-05","publisher":{"@type":"Organization","name":"Clincoo","url":"https://docs.clincoo.buzz"},"mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Clincoo Docs","item":"https://docs.clincoo.buzz"},{"@type":"ListItem","position":2,"name":"Dokumentasi","item":"https://docs.clincoo.buzz/dokumentasi/"},{"@type":"ListItem","position":3,"name":"Kunci API Email Clincoo: Kelola Akses dan Identitas Pengirim","item":"https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apakah satu kunci bisa dipakai untuk proyek lain?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Kunci terisolasi per proyek — setiap proyek punya kunci dan identitas pengirimnya sendiri."}},{"@type":"Question","name":"Kunci saya hilang atau lupa disimpan, bagaimana?","acceptedAnswer":{"@type":"Answer","text":"Buka tab Kunci API — kunci selalu tampil di sana. Kalau ragu keamanannya, gunakan Buat ulang kunci untuk menggantinya."}},{"@type":"Question","name":"Kenapa alamat pengirim harus @clincoo.buzz?","acceptedAnswer":{"@type":"Answer","text":"Alamat @clincoo.buzz menjaga agar email dari proyekmu terkirim dengan identitas yang konsisten dan terverifikasi."}},{"@type":"Question","name":"Apa bedanya nonaktifkan dengan buat ulang kunci?","acceptedAnswer":{"@type":"Answer","text":"Nonaktifkan hanya menjeda pengiriman — kunci tetap sama dan bisa diaktifkan lagi. Buat ulang mengganti kuncinya, jadi situs deploy-mu harus memakai kunci baru."}}]}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/">← Kembali ke kategori</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dokumentasi</p>
+<p class="seo-cat">Dokumentasi</p>
+<h1 class="seo-title">Kunci API Email Clincoo: Kelola Akses dan Identitas Pengirim</h1>
+<div class="seo-meta">2026-10-05</div>
+<p class="mb-4">Tab <b>Kunci API</b> di Pengaturan proyek (Email → Kunci API) adalah tempat mengelola akses <b>Clincoo Email API</b>: melihat dan menyalin kunci proyek, membuat ulang kunci, menonaktifkannya, serta mengatur <b>identitas pengirim</b> — nama tampilan dan alamat yang muncul di email penerima.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Melihat dan menyalin kunci</h2><p class="mb-4">Setelah fitur email proyek aktif, kunci API tampil langsung di tab ini. Tombol <b>Salin</b> menyalinnya ke papan klip dalam satu ketukan — tanpa perlu membuka pengaturan apa pun. Satu kunci mewakili seluruh proyeknya: cukup satu kunci untuk semua request kirim email dari situs deploy-mu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Buat ulang dan nonaktifkan</h2><p class="mb-4">Ada dua tombol pengelolaan di samping kunci:</p><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li><b>Buat ulang kunci</b> — mengganti kunci dengan yang baru. Lakukan saat kunci lama diduga bocor, atau sekadar rotasi berkala. Kunci lama langsung berhenti berlaku, jadi perbarui nilai kunci di situs deploy-mu.</li><li><b>Nonaktifkan</b> — memutus sementara semua pengiriman lewat API tanpa menghapus kunci. Cocok saat kamu ingin menjeda pengiriman tanpa mengubah konfigurasi; aktifkan kembali kapan saja.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Identitas pengirim</h2><p class="mb-4">Bagian identitas pengirim mengatur siapa yang muncul sebagai pengirim email-mu:</p><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li><b>Nama tampilan</b> — nama yang tampil di kotak masuk penerima, misalnya nama brand-mu.</li><li><b>Alamat pengirim</b> — harus berdomain <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">@clincoo.buzz</code>. Ketersediaan alamat dicek langsung saat kamu mengetik: hijau berarti tersedia, merah berarti sudah dipakai.</li></ol><p class="mb-4">Tekan <b>Simpan Pengirim</b> untuk menerapkan. Kalau kamu tidak mengatur identitas khusus, email tetap terkirim dengan identitas bawaan dari nama proyekmu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Praktik aman menyimpan kunci</h2><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li>Simpan kunci sebagai <a href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">variabel lingkungan</a>, bukan hardcoded di kode.</li><li>Jangan pernah menuliskan kunci ke repositori — ikuti panduan <a href="https://docs.clincoo.buzz/dokumentasi/cara-jangan-commit-kunci-api/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">jangan commit kunci API</a>.</li><li>Rotasi kunci saat ada keraguan, dan nonaktifkan dulu bila situs-mu sedang tidak mengirim email.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Contoh pemakaian</h2><p class="mb-4">Kunci dipakai di header <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">Authorization: Bearer</code> setiap request ke Clincoo Email API. Panduan lengkap kirim email dari situs deploy — lengkap dengan contoh request — ada di artikel <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Mengirim Email dari Situs Deploy</a>.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pertanyaan umum</h2><p class="font-bold text-gray-900 mb-1">Apakah satu kunci bisa dipakai untuk proyek lain?</p><p class="text-gray-700 mb-3">Tidak. Kunci terisolasi per proyek — setiap proyek punya kunci dan identitas pengirimnya sendiri.</p><p class="font-bold text-gray-900 mb-1">Kunci saya hilang atau lupa disimpan, bagaimana?</p><p class="text-gray-700 mb-3">Buka tab Kunci API — kunci selalu tampil di sana. Kalau ragu keamanannya, gunakan Buat ulang kunci untuk menggantinya.</p><p class="font-bold text-gray-900 mb-1">Kenapa alamat pengirim harus @clincoo.buzz?</p><p class="text-gray-700 mb-3">Alamat @clincoo.buzz menjaga agar email dari proyekmu terkirim dengan identitas yang konsisten dan terverifikasi.</p><p class="font-bold text-gray-900 mb-1">Apa bedanya nonaktifkan dengan buat ulang kunci?</p><p class="text-gray-700 mb-3">Nonaktifkan hanya menjeda pengiriman — kunci tetap sama dan bisa diaktifkan lagi. Buat ulang mengganti kuncinya, jadi situs deploy-mu harus memakai kunci baru.</p>
+<p class="mt-8 text-sm text-gray-600">Artikel terkait: <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Mengirim Email dari Situs Deploy</a> · <a href="https://docs.clincoo.buzz/dokumentasi/fitur-email-clincoo/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Fitur Email Clincoo</a> · <a href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Cara Atur Variabel Lingkungan</a>.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

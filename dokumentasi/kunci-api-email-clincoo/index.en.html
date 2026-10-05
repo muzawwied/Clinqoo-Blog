@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://docs.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clincoo Email API Keys: Manage Access and Sender Identity — Clincoo Docs</title>
+<meta name="description" content="Guide to the Clincoo API Keys tab: copy your Clincoo Email API key, regenerate and disable it, set the sender identity (display name and @clincoo.buzz address), plus safe key handling practices.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/">
+<link rel="canonical" href="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/index.en.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Clincoo Email API Keys: Manage Access and Sender Identity">
+<meta property="og:description" content="Guide to the Clincoo API Keys tab: copy your Clincoo Email API key, regenerate and disable it, set the sender identity (display name and @clincoo.buzz address), plus safe key handling practices.">
+<meta property="og:url" content="https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/index.en.html">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clincoo Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clincoo Database: Built-in Storage for Backend Functions — Clincoo Docs">
+<meta name="twitter:description" content="Guide to the built-in Clincoo database: store permanent data straight from backend functions (db.get, db.set, db.list, db.count), limits, performance tips, and code examples.">
+<meta name="twitter:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/assets/seo.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Clincoo Email API Keys: Manage Access and Sender Identity","description":"Guide to the Clincoo API Keys tab: copy your Clincoo Email API key, regenerate and disable it, set the sender identity (display name and @clincoo.buzz address), plus safe key handling practices.","datePublished":"2026-10-05","publisher":{"@type":"Organization","name":"Clincoo","url":"https://docs.clincoo.buzz"},"mainEntityOfPage":"https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Clincoo Docs","item":"https://docs.clincoo.buzz"},{"@type":"ListItem","position":2,"name":"Dokumentasi","item":"https://docs.clincoo.buzz/dokumentasi/"},{"@type":"ListItem","position":3,"name":"Clincoo Email API Keys: Manage Access and Sender Identity","item":"https://docs.clincoo.buzz/dokumentasi/kunci-api-email-clincoo/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can one key be used for other projects?","acceptedAnswer":{"@type":"Answer","text":"No. Keys are isolated per project — each project has its own key and sender identity."}},{"@type":"Question","name":"I lost or never saved my key — what now?","acceptedAnswer":{"@type":"Answer","text":"Open the API Keys tab — the key is always visible there. If you have security concerns, use Regenerate to replace it."}},{"@type":"Question","name":"Why must the sender address be @clincoo.buzz?","acceptedAnswer":{"@type":"Answer","text":"The @clincoo.buzz address keeps emails from your project sending with a consistent, verified identity."}},{"@type":"Question","name":"What is the difference between disabling and regenerating the key?","acceptedAnswer":{"@type":"Answer","text":"Disable only pauses sending — the key stays the same and can be re-enabled. Regenerate replaces the key, so your deployed site must switch to the new one."}}]}</script>
+</head>
+<body>
+<header class="seo-header">
+<a class="seo-back" href="/dokumentasi/">← Back to category</a>
+</header>
+<main class="seo-main">
+<p class="seo-cat">Dokumentasi</p>
+<p class="seo-cat">Documentation</p>
+<h1 class="seo-title">Clincoo Email API Keys: Manage Access and Sender Identity</h1>
+<div class="seo-meta">2026-10-05</div>
+<p class="mb-4">The <b>API Keys</b> tab in your project settings (Email → Kunci API) is where you manage <b>Clincoo Email API</b> access: view and copy the project key, regenerate it, disable it, and set the <b>sender identity</b> — the display name and address recipients see.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Viewing and copying the key</h2><p class="mb-4">Once the project email feature is active, the API key appears right in this tab. The <b>Salin</b> (Copy) button copies it to your clipboard in one tap — no settings digging required. One key represents the whole project: a single key covers every send-email request from your deployed site.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Regenerating and disabling</h2><p class="mb-4">Two management buttons sit next to the key:</p><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li><b>Buat ulang kunci</b> (Regenerate) — replaces the key with a new one. Do this when the old key is suspected leaked, or for routine rotation. The old key stops working immediately, so update the key value in your deployed site.</li><li><b>Nonaktifkan</b> (Disable) — temporarily cuts off all API sending without deleting the key. Ideal when you want to pause deliveries without touching configuration; re-enable anytime.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Sender identity</h2><p class="mb-4">The sender identity section controls who appears as the sender of your emails:</p><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li><b>Display name</b> — the name shown in the recipient’s inbox, like your brand name.</li><li><b>Sender address</b> — must use the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">@clincoo.buzz</code> domain. Availability is checked live as you type: green means available, red means taken.</li></ol><p class="mb-4">Press <b>Simpan Pengirim</b> (Save Sender) to apply. If you never set a custom identity, emails still send with a default identity based on your project name.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Safe key handling</h2><ol class="list-decimal pl-6 mb-5 space-y-2 text-gray-700"><li>Store the key as an <a href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">environment variable</a>, not hardcoded.</li><li>Never write the key into your repository — follow the <a href="https://docs.clincoo.buzz/dokumentasi/cara-jangan-commit-kunci-api/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">never commit API keys</a> guide.</li><li>Rotate the key whenever in doubt, and disable it while your site is not sending email.</li></ol><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Usage example</h2><p class="mb-4">The key goes in the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">Authorization: Bearer</code> header of every request to the Clincoo Email API. The full guide to sending email from your deployed site — with example requests — is in <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Sending Email from a Deployed Site</a>.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">FAQ</h2><p class="font-bold text-gray-900 mb-1">Can one key be used for other projects?</p><p class="text-gray-700 mb-3">No. Keys are isolated per project — each project has its own key and sender identity.</p><p class="font-bold text-gray-900 mb-1">I lost or never saved my key — what now?</p><p class="text-gray-700 mb-3">Open the API Keys tab — the key is always visible there. If you have security concerns, use Regenerate to replace it.</p><p class="font-bold text-gray-900 mb-1">Why must the sender address be @clincoo.buzz?</p><p class="text-gray-700 mb-3">The @clincoo.buzz address keeps emails from your project sending with a consistent, verified identity.</p><p class="font-bold text-gray-900 mb-1">What is the difference between disabling and regenerating the key?</p><p class="text-gray-700 mb-3">Disable only pauses sending — the key stays the same and can be re-enabled. Regenerate replaces the key, so your deployed site must switch to the new one.</p>
+<p class="mt-8 text-sm text-gray-600">Related articles: <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Sending Email from a Deployed Site</a> · <a href="https://docs.clincoo.buzz/dokumentasi/fitur-email-clincoo/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Clincoo Email Features</a> · <a href="https://docs.clincoo.buzz/dokumentasi/cara-atur-variabel-lingkungan/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">How to Set Environment Variables</a>.</p>
+</div>
+<footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
+</main>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32K4RH4DKN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-32K4RH4DKN',{page_path:location.pathname});</script>
+</body>
+</html>

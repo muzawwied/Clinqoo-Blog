@@ -42,7 +42,7 @@
 <h1 class="seo-title">Clincoo Email Feature: Complete Guide to Sending Email, Broadcast, and Audience</h1>
 <div class="seo-body">
 <p class="mb-4">The Clincoo Email feature lets every Clincoo project send real email — announcements, newsletters, and automated notifications from the sites you deploy — without setting up SMTP, signing up for a third-party service, or touching any server configuration. Everything is managed from one place: the Email page in your project settings.</p>
-<p class="mb-4">Once activated, the feature gives you a delivery log, mass broadcast, audience management, delivery metrics, and API keys — all isolated per project and tied to your plan quota. This guide summarizes the full set of capabilities, specifications, advantages, and benefits in a single page.</p>
+<p class="mb-4">Once activated, the feature gives you a delivery log, mass broadcast, audience management, delivery metrics, and API keys — all isolated per project. This guide summarizes the full set of capabilities, specifications, advantages, and benefits in a single page.</p>
 <h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Feature map</h2>
 <p class="mb-4">The Email page is organized into sub-pages with clear responsibilities:</p>
 <div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 text-left font-bold text-gray-900">Page</th><th class="border border-gray-200 px-3 py-2 text-left font-bold text-gray-900">Main function</th></tr></thead><tbody>
@@ -51,7 +51,7 @@
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Automation</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Automatic sending triggers — under development; you can submit a feature request right from the page.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Template</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Ready-made email templates — under development, with the same request channel.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Audience</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Manage contacts: add manually, bulk import, edit, delete one, or delete all.</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Metrics</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Delivery summary: sent, failed, quota used, daily trends, top recipients, and most popular subjects.</td></tr>
+<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Metrics</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Delivery summary: sent, failed, daily trends, top recipients, and most popular subjects.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">API Keys</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Create, view, copy, regenerate, and revoke the project's email API keys.</td></tr>
 </tbody></table></div>
 <h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">How to activate Email for a project</h2>
@@ -62,13 +62,9 @@
 <ul class="list-disc pl-5 mb-4"><li class="mb-1">Subject and body are written in HTML — links, images via URL, and text formatting are supported.</li><li class="mb-1">Recipients can be typed directly, separated by commas, spaces, or new lines.</li><li class="mb-1">A live counter tracks recipients; the maximum is <b>50 recipients</b> per broadcast.</li><li class="mb-1">The <b>Import from Audience</b> button pulls audience contacts into the form automatically — merged and de-duplicated.</li><li class="mb-1">Broadcast history records the subject, recipient count, and result; <b>Send again</b> refills the form with the previous recipients.</li></ul>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">Manage your audience</h3>
 <p class="mb-4">The audience is the project's contact book: each contact stores a name and an email address. You can add contacts one by one, paste an address list to import in bulk, edit entries, or delete contacts. Imports validate every address automatically and drop invalid or duplicate ones. The contact limit follows your account plan:</p>
-<div class="overflow-x-auto mb-5"><table class="w-full text-sm border border-gray-200 border-collapse"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-3 py-2 text-left font-bold text-gray-900">Plan</th><th class="border border-gray-200 px-3 py-2 text-left font-bold text-gray-900">Audience contact limit</th><th class="border border-gray-200 px-3 py-2 text-left font-bold text-gray-900">Monthly email quota</th></tr></thead><tbody>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Starter</td><td class="border border-gray-200 px-3 py-2 text-gray-700">100 contacts</td><td class="border border-gray-200 px-3 py-2 text-gray-700">100 emails</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Pro</td><td class="border border-gray-200 px-3 py-2 text-gray-700">500 contacts</td><td class="border border-gray-200 px-3 py-2 text-gray-700">500 emails</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Business</td><td class="border border-gray-200 px-3 py-2 text-gray-700">1,000 contacts</td><td class="border border-gray-200 px-3 py-2 text-gray-700">1,000 emails</td></tr>
-</tbody></table></div>
+
 <h3 class="font-bold text-gray-900 mt-6 mb-2">Monitor delivery metrics</h3>
-<p class="mb-4">The Metrics page summarizes your project's email health: <b>Sent</b> and <b>Failed</b> cards across the full history, <b>quota used this month</b> with the remaining balance, plus charts for delivery status, the daily trend of the last 14 days, hourly activity, top recipients, and most popular subjects. It tells you which messages resonate and when your audience is most active.</p>
+<p class="mb-4">The Metrics page summarizes your project's email health: <b>Sent</b> and <b>Failed</b> cards across the full history, plus charts for delivery status, the daily trend of the last 14 days, hourly activity, top recipients, and most popular subjects. It tells you which messages resonate and when your audience is most active.</p>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">API keys for deployed sites</h3>
 <p class="mb-4">A site you have deployed can send its own email through the Clincoo API — order confirmations or signup notifications, for example. Keys are created on the <b>API Keys</b> page: shown masked, revealed and copied when needed, regenerated without losing history, and revocable at any time. See the full usage guide in <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Sending Email from a Deployed Site</a>.</p>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">Sender name</h3>
@@ -78,8 +74,8 @@
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Activation</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Per project, free, one click from the Email page.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Body format</td><td class="border border-gray-200 px-3 py-2 text-gray-700">HTML — links, images via URL, and text formatting are supported.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Recipients per broadcast</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Maximum 50; duplicates and invalid addresses are dropped automatically.</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Monthly quota</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Follows the plan: Starter 100 · Pro 500 · Business 1000 emails per month; resets at the start of each month.</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Audience contacts</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Follows the plan: Starter 100 · Pro 500 · Business 1000 contacts per project.</td></tr>
+<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Monthly usage</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Resets at the start of each month; usage is visible on the Metrics page.</td></tr>
+<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Audience contacts</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Contact limits are visible on the Audience page.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Default sender</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Official Clincoo Mail address with a display name configurable per project.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Log</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Records every delivery with its status; entries can be deleted one by one.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">API for deployed sites</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Per-project API keys, regenerable and revocable at any time.</td></tr>
@@ -89,7 +85,7 @@
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">No SMTP setup</td><td class="border border-gray-200 px-3 py-2 text-gray-700">No host, port, or third-party credentials to configure — activate and send.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">One integrated workspace</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Log, broadcast, audience, metrics, and API keys live in the same place as your project.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Isolated per project</td><td class="border border-gray-200 px-3 py-2 text-gray-700">One project's email data never mixes with another — log, audience, and keys are all separate.</td></tr>
-<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Clear plan-based quota</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Monthly limits are visible on the Metrics page, so there are no surprise bills or silent quota runs.</td></tr>
+<tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Clear usage visibility</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Monthly usage is visible on the Metrics page, so there are no surprises.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Your own API keys</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Created, regenerated, and revoked from the API Keys page — you stay in full control.</td></tr>
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Works with deployed sites</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Your production site sends automated email through the API — perfect for notifications and confirmations.</td></tr>
 </tbody></table></div>
@@ -102,17 +98,17 @@
 <tr><td class="border border-gray-200 px-3 py-2 text-gray-700">Owners of many projects</td><td class="border border-gray-200 px-3 py-2 text-gray-700">Each project has its own log and metrics, making per-client reporting easy to separate.</td></tr>
 </tbody></table></div>
 <h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Security and privacy</h2>
-<ul class="list-disc pl-5 mb-4"><li class="mb-1">API keys belong to your project only — regenerate or revoke them at any time from the API Keys page without affecting other projects.</li><li class="mb-1">Email data — log, audience, and broadcast history — is isolated per project.</li><li class="mb-1">Every recipient address is validated automatically, and duplicates are removed before sending.</li><li class="mb-1">Plan quotas prevent excessive sending that risks being flagged as spam by recipient inbox providers.</li><li class="mb-1">Activation is opt-in per project: a project without Email active uses no quota and cannot send anything.</li></ul>
+<ul class="list-disc pl-5 mb-4"><li class="mb-1">API keys belong to your project only — regenerate or revoke them at any time from the API Keys page without affecting other projects.</li><li class="mb-1">Email data — log, audience, and broadcast history — is isolated per project.</li><li class="mb-1">Every recipient address is validated automatically, and duplicates are removed before sending.</li><li class="mb-1">Sending limits keep your project from excessive sending that risks being flagged as spam by recipient inbox providers.</li><li class="mb-1">Activation is opt-in per project: a project without Email active cannot send anything.</li></ul>
 <h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Frequently asked questions</h2>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">Do I need my own domain?</h3>
 <p class="mb-4">No. The default official Clincoo Mail sender works out of the box from activation, with a display name you can configure.</p>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">What if my audience is larger than 50?</h3>
 <p class="mb-4">Split recipients into consecutive broadcasts — for example the first 50, then the next 50 using Send again. The per-broadcast limit keeps delivery reliable all the way to the inbox.</p>
-<h3 class="font-bold text-gray-900 mt-6 mb-2">When does the monthly quota reset?</h3>
-<p class="mb-4">At the start of each month. Remaining quota is always visible on the Metrics page and the main Email page.</p>
+<h3 class="font-bold text-gray-900 mt-6 mb-2">How do I monitor email usage?</h3>
+<p class="mb-4">Monthly usage is always visible on the Metrics page and the main Email page.</p>
 <h3 class="font-bold text-gray-900 mt-6 mb-2">How do I send email automatically from my deployed site?</h3>
 <p class="mb-4">Use the API key from the API Keys page and follow the steps in <a href="https://docs.clincoo.buzz/dokumentasi/mengirim-email-dari-situs-deploy/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Sending Email from a Deployed Site</a>.</p>
-<p class="mb-4">If a send fails, check the <a href="https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Clincoo Help Center</a> — most issues come down to an exhausted quota or an invalid recipient address, both clearly visible on the Metrics page and the log.</p>
+<p class="mb-4">If a send fails, check the <a href="https://docs.clincoo.buzz/bantuan/masalah-umum-dan-solusinya/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">Clincoo Help Center</a> — most issues come down to an invalid recipient address, clearly visible on the Metrics page and the log.</p>
 </div>
 <footer class="seo-footer">© 2026 Clincoo · <a href="/">Clincoo Docs</a> · <a href="https://app.clincoo.buzz/">app.clincoo.buzz</a></footer>
 </main>
