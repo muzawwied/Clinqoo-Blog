@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadTestingExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_testing_extra.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
   function loadTesting() {
     var e = document.createElement('script');
     e.src = 'data_testing.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadTestingExtra;
+    e.onerror = loadTestingExtra;
     document.body.appendChild(e);
   }
   function loadAnchor() {
