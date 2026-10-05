@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan Stack (6 Oktober 2026, 01:00 WIB)
+// Clincoo Docs — artikel tambahan Stack (6 Oktober 2026, 01:14 WIB — tambah 4 artikel)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.stack) return;
   var list = window.countryDataFiles.stack.articles;
@@ -143,6 +143,123 @@
    "sourceSnippet": "The Layers panel shows how the page is composited and which elements form layers.",
    "source2": "MDN — Stacking context",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "stack-z-index-negatif-di-belakang-latar",
+ "langs": {
+  "id":   {
+   "title": "Cara Pakai z-index Negatif tanpa Menelan Klik",
+   "desc": "Tata cara menaruh dekorasi di belakang latar Clincoo dengan z-index negatif tanpa mematikan tautan.",
+   "content": "<p class=\"mb-4\">z-index negatif hanya menempatkan elemen di belakang saudara dalam context yang sama, bukan di belakang seluruh halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi pada saudara latar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri posisi pada dekorasi dan z-index: -1. Induk kartu jangan punya background transparan jika dekorasi harus tetap di dalam kartu. Cek bahwa tautan saudara tetap bisa diklik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di atas dan di bawah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik judul dan tombol di kartu yang punya bayangan dekoratif. Jika klik tembus ke elemen di belakang halaman, induk belum membentuk context. Catat selector di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menaikkan angka lain.</p>",
+   "source": "MDN — z-index",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+   "sourceSnippet": "A negative z-index paints an element behind siblings in the same stacking context.",
+   "source2": "MDN — Stacking context",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Use a Negative z-index Without Swallowing Clicks",
+   "desc": "How to place decoration behind a Clincoo background with a negative z-index without disabling links.",
+   "content": "<p class=\"mb-4\">A negative z-index only paints an element behind siblings in the same context, not behind the whole page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit it to the background sibling</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> position the decoration and set z-index: -1. The card parent should not have a transparent background if the decoration must stay inside the card. Check that sibling links remain clickable.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test above and below</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click the title and button on a card with decorative shadow. If the click falls through to something behind the page, the parent has not formed a context. Record the selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before raising other numbers.</p>",
+   "source": "MDN — z-index",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+   "sourceSnippet": "A negative z-index paints an element behind siblings in the same stacking context.",
+   "source2": "MDN — Stacking context",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "stack-order-flex-bukan-pengganti-z-index",
+ "langs": {
+  "id":   {
+   "title": "Cara Bedakan order Flex dan z-index",
+   "desc": "Tata cara memakai order Flexbox di Clincoo tanpa mengira properti itu mengubah lapisan visual.",
+   "content": "<p class=\"mb-4\">order mengubah urutan dalam flex, bukan lapisan cat. Elemen yang tampak belakangan di DOM tetap bisa menang z-index.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ubah urutan, bukan lapisan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pakai order hanya untuk urutan visual tombol atau badge di baris flex. Untuk menu yang harus menutup kartu, set position dan z-index pada context yang sama. Jangan menaikkan order berharap menu naik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek tab dan cat</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tabur fokus mengikuti DOM, bukan order. Jika fokus meloncat, urutan sumber salah. Catat perbedaan order dan z-index di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya revisi tidak menukar keduanya.</p>",
+   "source": "MDN — order",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/order",
+   "sourceSnippet": "The order property changes flex or grid visual order and does not create a stacking context by itself.",
+   "source2": "MDN — z-index",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Tell Flex order Apart from z-index",
+   "desc": "How to use Flexbox order in Clincoo without assuming the property changes the paint layer.",
+   "content": "<p class=\"mb-4\">order changes sequence inside flex, not the paint layer. An element later in the DOM can still win on z-index.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Change order, not the layer</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> use order only for the visual sequence of buttons or badges in a flex row. For a menu that must cover a card, set position and z-index in the same context. Do not raise order and expect the menu to climb.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check tab and paint</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab focus follows the DOM, not order. If focus jumps, the source order is wrong. Note the difference between order and z-index on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a later edit does not swap them.</p>",
+   "source": "MDN — order",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/order",
+   "sourceSnippet": "The order property changes flex or grid visual order and does not create a stacking context by itself.",
+   "source2": "MDN — z-index",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "stack-dialog-showmodal-top-layer",
+ "langs": {
+  "id":   {
+   "title": "Cara Pakai Top Layer dialog showModal",
+   "desc": "Tata cara membuka dialog Clincoo dengan showModal supaya overlay masuk top layer, bukan bertarung z-index.",
+   "content": "<p class=\"mb-4\">Elemen dialog yang dibuka dengan showModal masuk top layer browser, di atas stacking context halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai showModal, bukan display saja</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil dialog.showModal() untuk konfirmasi hapus. Jangan hanya mengubah class tersembunyi jika modal harus mengalahkan header sticky. Beri ::backdrop agar latar di luar dialog tidak bisa diklik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan duplikasi z-index 9999</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka dialog saat toast dan header sama-sama tampil. Dialog harus di depan. Jika tidak, cek apakah yang terbuka div biasa, bukan dialog. Tulis pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> dan tolak saran AI yang hanya menaikkan z-index.</p>",
+   "source": "MDN — dialog element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "sourceSnippet": "showModal displays the dialog in the top layer, above other page content.",
+   "source2": "HTML spec — top layer",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Top_layer",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Use the dialog showModal Top Layer",
+   "desc": "How to open a Clincoo dialog with showModal so the overlay joins the top layer instead of fighting z-index.",
+   "content": "<p class=\"mb-4\">A dialog opened with showModal joins the browser top layer, above the page stacking context.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use showModal, not display alone</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call dialog.showModal() for a delete confirmation. Do not only toggle a hidden class if the modal must beat a sticky header. Add ::backdrop so the page outside the dialog cannot be clicked.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not duplicate z-index 9999</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the dialog while a toast and the header are both visible. The dialog should be in front. If it is not, check whether a plain div opened, not a dialog. Write this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> and reject an AI suggestion that only raises z-index.</p>",
+   "source": "MDN — dialog element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "sourceSnippet": "showModal displays the dialog in the top layer, above other page content.",
+   "source2": "HTML spec — top layer",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Top_layer",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "stack-sticky-bersaing-dengan-footer",
+ "langs": {
+  "id":   {
+   "title": "Cara Atur Sticky yang Bertabrakan dengan Footer",
+   "desc": "Tata cara menahan sidebar sticky Clincoo supaya tidak menutup footer atau tombol di ujung halaman.",
+   "content": "<p class=\"mb-4\">Sidebar sticky dengan z-index tinggi bisa menutup footer saat gulir mentok, terutama jika tinggi sidebar lebih besar dari sisa viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri batas bawah</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set top dan z-index token sidebar, lalu batasi tinggi dengan max-height dan overflow. Jangan buat sticky pada pembungkus yang juga berisi footer. Footer tetap di alur normal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di ujung halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir sampai footer. Tombol footer harus bisa diklik dan tidak tertutup sidebar. Jika tertutup, kecilkan context sidebar, bukan menaikkan footer ke 9999. Simpan hasil di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+   "sourceSnippet": "A sticky element stays in flow until its container ends, then scrolls away with that container.",
+   "source2": "MDN — z-index",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Stop a Sticky Sidebar Covering the Footer",
+   "desc": "How to pin a Clincoo sticky sidebar so it does not cover the footer or the button at the end of the page.",
+   "content": "<p class=\"mb-4\">A sticky sidebar with a high z-index can cover the footer at the end of the scroll, especially when the sidebar is taller than the remaining viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set a lower bound</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set the sidebar top and a token z-index, then cap height with max-height and overflow. Do not make the wrapper that also contains the footer sticky. Keep the footer in normal flow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test at the page end</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll to the footer. The footer button should be clickable and not covered by the sidebar. If it is covered, shrink the sidebar context instead of raising the footer to 9999. Save the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+   "sourceSnippet": "A sticky element stays in flow until its container ends, then scrolls away with that container.",
+   "source2": "MDN — z-index",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
