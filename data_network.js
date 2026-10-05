@@ -354,5 +354,35 @@ window.countryDataFiles["network"] = {
   }
  }
 }
+,
+{
+ "id": "network-bandingkan-payload-dan-response",
+ "langs": {
+  "id": {
+   "title": "Cara Bandingkan Payload Request dan Body Response",
+   "desc": "Tata cara membaca payload dan response di panel Network Clincoo supaya field yang dikirim dan yang kembali tidak tertukar saat form gagal.",
+   "content": "<p class=\"mb-4\">Status 400 saja tidak menjelaskan field mana yang ditolak. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka baris fetch, lalu tab Payload dan Response.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan nama field</h2><p class=\"mb-4\">Bandingkan kunci yang dikirim dengan kunci yang diharapkan server. Salah ketik email menjadi mail sering lolos di klien tetapi ditolak di server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan simpulkan dari preview</h2><p class=\"mb-4\">Preview halaman bisa menampilkan data lama. Yang sah adalah body response permintaan terakhir. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan satu field dikosongkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin cuplikan, sensor token</h2><p class=\"mb-4\">Saat minta bantuan, salin payload yang sudah disensor. Langkah ini dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Chrome Developers — Network features reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference",
+   "sourceSnippet": "The Network panel records each request and its response.",
+   "source2": "MDN — Fetch API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Compare a Request Payload and Response Body",
+   "desc": "How to read the payload and response in the Clincoo Network panel so sent fields and returned fields are not mixed up when a form fails.",
+   "content": "<p class=\"mb-4\">A 400 status alone does not say which field was rejected. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the fetch row, then the Payload and Response tabs.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match field names</h2><p class=\"mb-4\">Compare the keys you sent with the keys the server expects. Typing email as mail often passes the client and fails on the server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not trust the preview alone</h2><p class=\"mb-4\">The page preview can show stale data. The source of truth is the response body of the latest request. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with one field left empty.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy a snippet, redact tokens</h2><p class=\"mb-4\">When asking for help, paste a redacted payload. The step is noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Chrome Developers — Network features reference",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/network/reference",
+   "sourceSnippet": "The Network panel records each request and its response.",
+   "source2": "MDN — Fetch API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

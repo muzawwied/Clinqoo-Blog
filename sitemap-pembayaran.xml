@@ -35,4 +35,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/pembayaran/pembayaran-batas-waktu-checkout-di-antarmuka/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/pembayaran/pembayaran-batas-waktu-checkout-di-antarmuka/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/pembayaran/pembayaran-verifikasi-tanda-tangan-webhook/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/pembayaran/pembayaran-verifikasi-tanda-tangan-webhook/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/pembayaran/pembayaran-verifikasi-tanda-tangan-webhook/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/pembayaran/pembayaran-verifikasi-tanda-tangan-webhook/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/pembayaran/pembayaran-abaikan-callback-duplikat/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/pembayaran/pembayaran-abaikan-callback-duplikat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/pembayaran/pembayaran-abaikan-callback-duplikat/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/pembayaran/pembayaran-abaikan-callback-duplikat/"/>
+  </url>
 </urlset>

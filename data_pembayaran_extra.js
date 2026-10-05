@@ -148,6 +148,65 @@
   }
  }
 }
+,
+{
+ "id": "pembayaran-verifikasi-tanda-tangan-webhook",
+ "langs": {
+  "id": {
+   "title": "Cara Verifikasi Tanda Tangan Webhook Pembayaran",
+   "desc": "Tata cara menolak webhook pembayaran Clincoo yang tidak lolos tanda tangan, sebelum status order diubah menjadi lunas.",
+   "content": "<p class=\"mb-4\">Webhook yang sampai ke server belum tentu dari gateway. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bandingkan tanda tangan di header dengan HMAC dari badan mentah, memakai rahasia yang hanya ada di server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai badan mentah</h2><p class=\"mb-4\">Hitung ulang tanda tangan dari byte yang diterima, bukan dari objek yang sudah diurai ulang. Perbedaan spasi atau urutan kunci membuat tanda tangan sah terlihat palsu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tolak sebelum mengubah status</h2><p class=\"mb-4\">Jika tanda tangan gagal, jawab 401 dan jangan sentuh order. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan payload yang diubah satu karakter.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan catat rahasia</h2><p class=\"mb-4\">Log boleh menyimpan id event dan hasil cocok atau tidak. Contoh alur dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — SubtleCrypto.sign",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign",
+   "sourceSnippet": "The sign() method generates a digital signature.",
+   "source2": "OWASP — Webhook security",
+   "source2Url": "https://cheatsheetseries.owasp.org/cheatsheets/Webhook_Security_Cheat_Sheet.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Verify a Payment Webhook Signature",
+   "desc": "How to reject a Clincoo payment webhook that fails signature checks before an order is marked paid.",
+   "content": "<p class=\"mb-4\">A webhook that reaches your server is not automatically from the gateway. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> compare the header signature with an HMAC of the raw body, using a secret that lives only on the server.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use the raw body</h2><p class=\"mb-4\">Recompute the signature from the bytes you received, not from a re-serialized object. A space or key-order change makes a valid signature look fake.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reject before changing status</h2><p class=\"mb-4\">If the signature fails, respond 401 and do not touch the order. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with a payload changed by one character.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not log the secret</h2><p class=\"mb-4\">Logs may store the event id and whether the check matched. A sample flow is noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — SubtleCrypto.sign",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign",
+   "sourceSnippet": "The sign() method generates a digital signature.",
+   "source2": "OWASP — Webhook security",
+   "source2Url": "https://cheatsheetseries.owasp.org/cheatsheets/Webhook_Security_Cheat_Sheet.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "pembayaran-abaikan-callback-duplikat",
+ "langs": {
+  "id": {
+   "title": "Cara Abaikan Callback Pembayaran yang Datang Dua Kali",
+   "desc": "Tata cara membuat callback pembayaran Clincoo idempoten supaya event yang sama tidak menandai lunas dua kali atau mengirim email ganda.",
+   "content": "<p class=\"mb-4\">Gateway sering mengirim event yang sama jika jawaban Anda lambat. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan id event yang sudah diproses sebelum mengubah order.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kunci pada id event</h2><p class=\"mb-4\">Jika id event sudah ada, jawab 200 dan berhenti. Jangan menambah saldo atau mengirim email lagi. Status akhir tetap lunas satu kali.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis jejak sesudah sukses</h2><p class=\"mb-4\">Catat id event hanya setelah penyimpanan order berhasil, atau pakai transaksi yang mengunci baris. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan dua permintaan berurutan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan event lain</h2><p class=\"mb-4\">Event gagal dan event lunas punya id berbeda. Pola ini dirangkum di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTTP response status codes",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+   "sourceSnippet": "200 OK means the request succeeded.",
+   "source2": "Stripe — Idempotent requests",
+   "source2Url": "https://docs.stripe.com/api/idempotent_requests",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Ignore a Duplicate Payment Callback",
+   "desc": "How to make a Clincoo payment callback idempotent so the same event does not mark paid twice or send a second email.",
+   "content": "<p class=\"mb-4\">Gateways often resend the same event if your response is slow. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> store the event id you already processed before changing the order.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Key on the event id</h2><p class=\"mb-4\">If the event id already exists, respond 200 and stop. Do not add balance or send another email. The final status stays paid once.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write the trace after success</h2><p class=\"mb-4\">Record the event id only after the order save succeeds, or use a transaction that locks the row. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with two requests in a row.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep other events distinct</h2><p class=\"mb-4\">A failed event and a paid event have different ids. The pattern is summarized on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTTP response status codes",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+   "sourceSnippet": "200 OK means the request succeeded.",
+   "source2": "Stripe — Idempotent requests",
+   "source2Url": "https://docs.stripe.com/api/idempotent_requests",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
   ];
   extra.forEach(function (article) {
     var exists = list.some(function (item) { return item.id === article.id; });

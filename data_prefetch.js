@@ -239,7 +239,7 @@ window.countryDataFiles["prefetch"] = {
   }
  }
 }
-],
+,
 {
  "id": "prefetch-fetchpriority-bukan-pengganti-preload",
  "langs": {
@@ -351,6 +351,36 @@ window.countryDataFiles["prefetch"] = {
    "sourceSnippet": "Subresource Integrity lets the browser verify that a fetched file matches a cryptographic hash you specify.",
    "source2": "MDN — rel=preload",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "prefetch-cek-hint-di-panel-network",
+ "langs": {
+  "id": {
+   "title": "Cara Cek Hint Prefetch di Panel Network",
+   "desc": "Tata cara memastikan link prefetch Clincoo benar-benar terunduh, bukan hanya tertulis di head, dengan kolom initiator di panel Network.",
+   "content": "<p class=\"mb-4\">Tag prefetch di head belum berarti browser mengambil berkas. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka Network, saring Doc atau JS, lalu cari inisiator prefetch.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat prioritas dan status</h2><p class=\"mb-4\">Berkas prefetch biasanya prioritas rendah dan status 200. Jika baris tidak muncul, hint diabaikan karena halaman ini sudah memuat sumber yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di koneksi lambat</h2><p class=\"mb-4\">Throttle ke 3G lalu muat ulang. Prefetch yang menyaingi CSS utama terlihat di waterfall. Cek di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sebelum deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hapus hint yang tidak terpakai</h2><p class=\"mb-4\">Hint tanpa baris Network hanya menambah HTML. Catatan uji ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — rel=prefetch",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/prefetch",
+   "sourceSnippet": "prefetch is a hint that the browser may fetch a resource for a possible next navigation.",
+   "source2": "Chrome Developers — Network features reference",
+   "source2Url": "https://developer.chrome.com/docs/devtools/network/reference",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check a Prefetch Hint in the Network Panel",
+   "desc": "How to confirm a Clincoo prefetch link actually downloads, not only sits in the head, using the initiator column in the Network panel.",
+   "content": "<p class=\"mb-4\">A prefetch tag in the head does not mean the browser fetched the file. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open Network, filter Doc or JS, then look for a prefetch initiator.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check priority and status</h2><p class=\"mb-4\">A prefetch file is usually low priority with status 200. If the row is missing, the hint was ignored because this page already loads that resource.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test on a slow connection</h2><p class=\"mb-4\">Throttle to 3G and reload. A prefetch that competes with the main CSS shows up in the waterfall. Check in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> before deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remove unused hints</h2><p class=\"mb-4\">A hint with no Network row only adds HTML. The test note is on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — rel=prefetch",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/prefetch",
+   "sourceSnippet": "prefetch is a hint that the browser may fetch a resource for a possible next navigation.",
+   "source2": "Chrome Developers — Network features reference",
+   "source2Url": "https://developer.chrome.com/docs/devtools/network/reference",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

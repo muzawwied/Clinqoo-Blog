@@ -1031,6 +1031,36 @@ window.countryDataFiles["bantuan"] = {
     }
    }
   }
+,
+{
+  "id": "cara-ukur-waktu-muat-di-preview",
+  "langs": {
+   "id": {
+    "title": "Cara Ukur Waktu Muat Halaman di Preview",
+    "desc": "Tata cara membaca waktu muat di preview Clincoo dari panel Performance atau Network supaya perbaikan tidak hanya terasa di mesin sendiri.",
+    "content": "<p class=\"mb-4\">Halaman yang terasa cepat di laptop bisa lambat di ponsel. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka preview, lalu catat waktu sampai permintaan terakhir selesai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai satu kondisi</h2><p class=\"mb-4\">Ukur dengan cache dimatikan, lalu sekali lagi dengan cache aktif. Campuran dua kondisi membuat angka tidak bisa dibandingkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat tiga angka</h2><p class=\"mb-4\">Simpan waktu dokumen, waktu gambar terbesar, dan jumlah permintaan. Uji lebar ponsel di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sebelum menyimpulkan halaman sudah ringan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ubah satu hal lalu ukur lagi</h2><p class=\"mb-4\">Jangan gabung kompresi gambar dan hapus skrip dalam satu percobaan. Pola ukur ini ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — Performance API",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
+    "sourceSnippet": "The Performance interface gives access to timing-related information for the current page.",
+    "source2": "Chrome Developers — Network features reference",
+    "source2Url": "https://developer.chrome.com/docs/devtools/network/reference",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Measure Page Load Time in Preview",
+    "desc": "How to read load time in the Clincoo preview from the Performance or Network panel so a fix is not judged only on your own machine.",
+    "content": "<p class=\"mb-4\">A page that feels fast on a laptop can be slow on a phone. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the preview, then note the time until the last request finishes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use one condition</h2><p class=\"mb-4\">Measure with the cache disabled, then once more with the cache enabled. Mixing the two makes the numbers impossible to compare.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record three numbers</h2><p class=\"mb-4\">Save document time, largest image time, and request count. Test a phone width in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> before calling the page light.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Change one thing, then measure again</h2><p class=\"mb-4\">Do not combine image compression and script removal in one trial. This measuring pattern is on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — Performance API",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
+    "sourceSnippet": "The Performance interface gives access to timing-related information for the current page.",
+    "source2": "Chrome Developers — Network features reference",
+    "source2Url": "https://developer.chrome.com/docs/devtools/network/reference",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   }
+  }
+}
  ]
 };
 
