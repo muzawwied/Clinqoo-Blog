@@ -6,3 +6,4 @@ Sitemap: https://blog.clincoo.buzz/sitemap-cls.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-cerita.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-testing.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-stack.xml
+Sitemap: https://blog.clincoo.buzz/sitemap-mcp.xml
