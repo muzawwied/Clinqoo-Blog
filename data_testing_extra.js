@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan Testing (5 Oktober 2026, 22:00 WIB)
+// Clincoo Docs — artikel tambahan Testing (5 Oktober 2026, 23:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.testing) return;
   var list = window.countryDataFiles.testing.articles;
@@ -143,6 +143,36 @@
    "sourceSnippet": "The href attribute indicates the URL the link points to.",
    "source2": "Chrome — Network panel",
    "source2Url": "https://developer.chrome.com/docs/devtools/network",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "testing-uji-fokus-setelah-submit-gagal",
+ "langs": {
+  "id":   {
+   "title": "Cara Uji Fokus Pindah ke Error Pertama setelah Submit Gagal",
+   "desc": "Tata cara memastikan form Clincoo memindahkan fokus ke field error pertama setelah submit gagal, bukan membiarkan kursor diam di tombol.",
+   "content": "<p class=\"mb-4\">Submit gagal yang hanya menampilkan teks merah di bawah field membuat pengguna keyboard tidak tahu di mana harus memperbaiki. Fokus masih di tombol kirim.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan fokus setelah validasi</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> setelah submit gagal, cari input pertama yang invalid lalu panggil focus(). Jangan andalkan scrollIntoView saja. Pasangkan aria-invalid dan pesan yang ditautkan dengan aria-describedby.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji tanpa mouse</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kosongkan field wajib, tekan Enter pada tombol kirim, lalu lanjutkan hanya dengan Tab. Fokus harus sudah berada di field error pertama. Catat hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta bantuan AI.</p>",
+   "source": "W3C — Understanding Success Criterion 3.3.1",
+   "sourceUrl": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html",
+   "sourceSnippet": "Error identification should tell the user what is wrong and where to correct it.",
+   "source2": "MDN — HTMLElement.focus()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Test That Focus Moves to the First Error after a Failed Submit",
+   "desc": "How to confirm a Clincoo form moves focus to the first invalid field after a failed submit instead of leaving the cursor on the button.",
+   "content": "<p class=\"mb-4\">A failed submit that only paints red text under a field leaves keyboard users unsure what to fix. Focus is still on the send button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move focus after validation</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, after a failed submit, find the first invalid input and call focus(). Do not rely on scrollIntoView alone. Pair it with aria-invalid and a message linked by aria-describedby.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test without a mouse</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> leave a required field empty, press Enter on the submit button, then continue with Tab only. Focus should already be on the first error field. Record the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking an AI for help.</p>",
+   "source": "W3C — Understanding Success Criterion 3.3.1",
+   "sourceUrl": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html",
+   "sourceSnippet": "Error identification should tell the user what is wrong and where to correct it.",
+   "source2": "MDN — HTMLElement.focus()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

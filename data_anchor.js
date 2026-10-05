@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Anchor (5 Oktober 2026, WIB) — 11 artikel
+// Clincoo Docs — kategori Anchor (5 Oktober 2026, WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["anchor"] = {
  "names": { "id": "Anchor", "en": "Anchor" },
@@ -316,6 +316,35 @@ window.countryDataFiles["anchor"] = {
    "source": "MDN — anchor-name",
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/anchor-name",
    "sourceSnippet": "anchor-name identifies the element that position-anchor should attach to. Names must match exactly.",
+   "source2": "MDN — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "anchor-tooltip-di-dalam-overflow-scroll",
+ "langs": {
+  "id":   {
+   "title": "Cara Jaga Tooltip Anchor di Dalam Kontainer Overflow",
+   "desc": "Tata cara menempelkan tooltip CSS anchor Clincoo pada tombol di dalam kartu yang di-scroll, supaya popup tidak terpotong atau tertinggal.",
+   "content": "<p class=\"mb-4\">Tooltip yang menempel ke tombol di kartu overflow sering terpotong oleh overflow: hidden, atau tertinggal saat isi kartu di-scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangkar ikut kontainer</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri tombol anchor-name: --tips. Pada tooltip set position-anchor: --tips dan position-area: top. Jika kartu memotong popup, pindahkan tooltip ke luar kartu dan biarkan jangkar menunjuk tombol, bukan menyalin koordinat scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji saat kartu digulir</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir isi kartu sampai tombol naik ke tepi. Tooltip harus ikut tombol atau tersembunyi saat jangkar keluar, bukan mengambang di koordinat lama. Catat nama jangkar di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS anchor positioning",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "sourceSnippet": "Anchor positioning places an element relative to an anchor element using anchor-name and position-anchor.",
+   "source2": "MDN — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Keep an Anchor Tooltip Inside an Overflow Container",
+   "desc": "How to pin a Clincoo CSS anchor tooltip to a button inside a scrolling card so the popup is not clipped or left behind.",
+   "content": "<p class=\"mb-4\">A tooltip pinned to a button inside an overflow card is often clipped by overflow: hidden, or left behind when the card content scrolls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Let the anchor follow the container</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> give the button anchor-name: --tips. On the tooltip set position-anchor: --tips and position-area: top. If the card clips the popup, move the tooltip outside the card and keep the anchor pointing at the button instead of copying scroll coordinates.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test while the card scrolls</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll the card until the button reaches the edge. The tooltip should follow the button or hide when the anchor leaves, not float at the old coordinates. Record the anchor name on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS anchor positioning",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "sourceSnippet": "Anchor positioning places an element relative to an anchor element using anchor-name and position-anchor.",
    "source2": "MDN — position-anchor",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
    "source3": "Clincoo Editor",
