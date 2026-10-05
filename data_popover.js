@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Popover (5 Oktober 2026, WIB) — 10 artikel
+// Clincoo Docs — kategori Popover (5 Oktober 2026, WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["popover"] = {
  "names": { "id": "Popover", "en": "Popover" },
@@ -290,6 +290,64 @@ window.countryDataFiles["popover"] = {
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-balik-posisi-saat-keluar-viewport",
+ "langs": {
+  "id":   {
+   "title": "Cara Balik Posisi Popover saat Keluar Viewport",
+   "desc": "Tata cara membalik popover Clincoo ke atas atau ke samping saat panel terpotong tepi layar, tanpa menggeser layout halaman.",
+   "content": "<p class=\"mb-4\">Popover yang selalu membuka ke bawah akan terpotong di dekat footer atau di dalam panel yang pendek. Pembaca tidak melihat tombol tutup, lalu mengira fitur rusak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek ruang sebelum membuka</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ukur jarak trigger ke tepi viewport. Kalau ruang di bawah lebih kecil dari tinggi panel, set posisi ke atas. Jangan menambah margin halaman hanya supaya panel muat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jaga anchor tetap di trigger</h2><p class=\"mb-4\">Panah atau tepi panel harus tetap menunjuk tombol pemicu. Kalau anchor positioning tersedia, pakai fallback flip. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan jendela pendek dan zoom 200%, lalu catat hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API displays content on top of other page content, so placement still has to stay inside the viewport.",
+   "source2": "CSS — Anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Flip a Popover When It Leaves the Viewport",
+   "desc": "How to flip a Clincoo popover above or beside the trigger when the panel is clipped by the viewport, without shifting page layout.",
+   "content": "<p class=\"mb-4\">A popover that always opens downward is clipped near the footer or inside a short panel. Readers never see the close control and assume the feature is broken.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure space before opening</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> measure the gap from the trigger to the viewport edge. If the space below is smaller than the panel, place it above. Do not add page margin just to make the panel fit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the anchor on the trigger</h2><p class=\"mb-4\">The arrow or panel edge should still point at the invoking button. If anchor positioning is available, use a flip fallback. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with a short window and 200% zoom, then note the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API displays content on top of other page content, so placement still has to stay inside the viewport.",
+   "source2": "CSS — Anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "popover-jangan-taruh-konfirmasi-kritis",
+ "langs": {
+  "id":   {
+   "title": "Cara Jangan Taruh Konfirmasi Kritis di Popover",
+   "desc": "Tata cara memindahkan konfirmasi hapus atau bayar dari popover Clincoo ke dialog, karena popover bisa tertutup klik di luar.",
+   "content": "<p class=\"mb-4\">Popover light-dismiss menutup diri saat pengguna klik di luar. Itu cocok untuk menu, bukan untuk konfirmasi yang tidak boleh hilang sebelum dipilih.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan aksi destruktif ke dialog</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> biarkan popover hanya memuat pratinjau atau tautan. Tombol hapus, cabut akses, atau bayar membuka dialog dengan dua aksi yang eksplisit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji klik di luar</h2><p class=\"mb-4\">Buka panel dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, klik area kosong, dan pastikan aksi kritis tidak batal diam-diam. Catat keputusan pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — popover attribute",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "Auto popovers are light dismissed, so a click outside closes them without an explicit choice.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Keep Critical Confirms Out of a Popover",
+   "desc": "How to move a Clincoo delete or pay confirmation out of a popover and into a dialog, because a popover closes on an outside click.",
+   "content": "<p class=\"mb-4\">A light-dismiss popover closes when the user clicks outside. That fits a menu, not a confirmation that must not vanish before a choice.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move destructive actions to a dialog</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep the popover for a preview or links. Delete, revoke, or pay should open a dialog with two explicit actions.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the outside click</h2><p class=\"mb-4\">Open the panel from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, click empty space, and confirm the critical action does not cancel silently. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "HTML — popover attribute",
+   "sourceUrl": "https://html.spec.whatwg.org/multipage/popover.html",
+   "sourceSnippet": "Auto popovers are light dismissed, so a click outside closes them without an explicit choice.",
+   "source2": "MDN — dialog element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
   }
  }
 }
