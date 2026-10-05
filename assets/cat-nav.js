@@ -169,6 +169,9 @@
       ["seo-breadcrumb-yang-bisa-diikuti", "Cara Pasang Breadcrumb yang Bisa Diikuti", "How to Add a Breadcrumb that Can Be Followed"],
       ["seo-cek-tautan-404-sebelum-deploy", "Cara Cek Tautan Internal 404 sebelum Deploy", "How to Check Internal Links for 404 before Deploy"],
     ] },
+    "cerita": { name: {"id":"Cerita","en":"Story"}, arts: [
+      ["cerita-founder-clincoo", "Cerita di Balik Clincoo: Muzawwied Ilman Al-Fauza", "The Story Behind Clincoo: Muzawwied Ilman Al-Fauza"],
+    ] },
   };
   var path = location.pathname.split("/").filter(Boolean);
   var lang = /index\.en\.html$/.test(location.pathname) ? "en" : "id";
