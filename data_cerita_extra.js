@@ -148,6 +148,152 @@
   }
  }
 }
+,
+{
+ "id": "cerita-z-index-kalah-karena-stacking-context",
+ "langs": {
+  "id": {
+   "title": "Cara Memperbaiki z-index yang Kalah karena Stacking Context",
+   "desc": "Tata cara menelusuri induk yang membuat konteks tumpukan baru saat dropdown Clincoo tetap tertutup elemen lain meski z-index-nya besar.",
+   "content": "<p class=\"mb-4\">Di halaman menu, dropdown diberi z-index 9999 tetapi tetap tertutup kartu di sebelahnya. Angka besar tidak menang jika induknya sudah membuat konteks tumpukan sendiri.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cari induk yang membentuk konteks</h2><p class=\"mb-4\">Di pratinjau <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, pilih dropdown lalu naik ke induk. Opacity di bawah 1, transform, filter, atau will-change pada pembungkus membuat konteks baru. z-index anak hanya dibanding di dalam konteks itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan z-index ke induk yang tepat</h2><p class=\"mb-4\">Naikkan z-index pada pembungkus yang sejajar dengan elemen penutup, bukan pada tombol di dalam kartu. Hapus transform yang hanya dipakai untuk trik posisi. Uji buka menu di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pada lebar desktop dan ponsel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat sebelum mengubah</h2><p class=\"mb-4\">Simpan cuplikan CSS induk di catatan proyek. Perubahan z-index tanpa catatan sering kembali saat template diganti.</p>",
+   "source": "MDN — Stacking context",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context",
+   "sourceSnippet": "A stacking context is formed by certain CSS properties, and z-index only competes inside that context.",
+   "source2": "CSS Tricks — What The Heck, z-index??",
+   "source2Url": "https://css-tricks.com/almanac/properties/z/z-index/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Fix a z-index That Loses Because of a Stacking Context",
+   "desc": "How to trace the parent that creates a new stacking context when a Clincoo dropdown stays covered even with a large z-index.",
+   "content": "<p class=\"mb-4\">On a menu page, a dropdown had z-index 9999 and still sat under the card beside it. A large number does not win if a parent already created its own stacking context.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Find the parent that creates a context</h2><p class=\"mb-4\">In the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> preview, select the dropdown and walk up the parents. Opacity below 1, transform, filter, or will-change on a wrapper creates a new context. A child z-index is compared only inside that context.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move z-index to the right parent</h2><p class=\"mb-4\">Raise z-index on the wrapper that is a sibling of the covering element, not on the button inside the card. Remove a transform that was only a positioning trick. Open the menu in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> at desktop and phone widths.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Note it before you change it</h2><p class=\"mb-4\">Save the parent CSS snippet in the project notes. A z-index change without a note often returns when the template is swapped.</p>",
+   "source": "MDN — Stacking context",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context",
+   "sourceSnippet": "A stacking context is formed by certain CSS properties, and z-index only competes inside that context.",
+   "source2": "CSS Tricks — What The Heck, z-index??",
+   "source2Url": "https://css-tricks.com/almanac/properties/z/z-index/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cerita-path-gambar-pecah-setelah-pindah-folder",
+ "langs": {
+  "id": {
+   "title": "Cara Memperbaiki Path Gambar yang Pecah setelah Pindah Folder",
+   "desc": "Tata cara mengganti path relatif yang salah setelah berkas dipindah di Clincoo supaya gambar tidak menjadi ikon rusak di pratinjau.",
+   "content": "<p class=\"mb-4\">Setelah halaman About dipindah ke folder proyek, semua foto jadi ikon rusak. HTML-nya tidak berubah, hanya kedalaman folder yang berubah, sehingga path relatif menunjuk tempat lama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan URL yang diminta</h2><p class=\"mb-4\">Buka panel Network di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> dan saring Img. URL 404 menunjukkan path yang benar-benar diminta browser. Bandingkan dengan lokasi berkas di pohon folder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai path dari root situs</h2><p class=\"mb-4\">Ganti src seperti ../images/hero.jpg menjadi /images/hero.jpg jika berkas ada di root situs. Path yang diawali garis miring tidak bergantung pada folder halaman. Cek lagi di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> hanya sebagai referensi pola, lalu uji pratinjau proyek sendiri.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji satu gambar dulu</h2><p class=\"mb-4\">Perbaiki satu src, muat ulang, lalu baru salin pola ke gambar lain. Mengganti semua path sekaligus menyulitkan jika ada folder gambar kedua.</p>",
+   "source": "MDN — URL paths",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL",
+   "sourceSnippet": "A path-absolute URL starts with a slash and is resolved from the host root, not from the current document folder.",
+   "source2": "web.dev — Image issues",
+   "source2Url": "https://web.dev/learn/images/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Fix Image Paths That Break After a Folder Move",
+   "desc": "How to replace a wrong relative path after a file move in Clincoo so images do not turn into broken icons in preview.",
+   "content": "<p class=\"mb-4\">After the About page moved into a project folder, every photo became a broken icon. The HTML had not changed; only the folder depth had, so relative paths still pointed at the old place.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare the requested URL</h2><p class=\"mb-4\">Open the Network panel in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> and filter Img. A 404 shows the path the browser actually requested. Compare it with the file location in the folder tree.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use a site-root path</h2><p class=\"mb-4\">Change a src such as ../images/hero.jpg to /images/hero.jpg if the file lives at the site root. A leading slash does not depend on the page folder. Check <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> only as a pattern reference, then test your own project preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fix one image first</h2><p class=\"mb-4\">Repair one src, reload, then copy the pattern to the other images. Replacing every path at once is hard to undo if a second image folder exists.</p>",
+   "source": "MDN — URL paths",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL",
+   "sourceSnippet": "A path-absolute URL starts with a slash and is resolved from the host root, not from the current document folder.",
+   "source2": "web.dev — Image issues",
+   "source2Url": "https://web.dev/learn/images/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cerita-console-log-menimbun-error-asli",
+ "langs": {
+  "id": {
+   "title": "Cara Membersihkan console.log yang Menimbun Error Asli",
+   "desc": "Tata cara menyaring log debug di konsol Clincoo supaya pesan merah pertama tetap kelihatan dan tidak tertutup jejak percobaan.",
+   "content": "<p class=\"mb-4\">Halaman checkout diam saja. Konsol penuh baris \"masuk fungsi\" dari percobaan kemarin, dan error asli ada di atas sekali sampai harus digulir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Saring level error dulu</h2><p class=\"mb-4\">Di pratinjau <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, buka konsol dan aktifkan hanya level Error. Baca pesan pertama, berkas, dan nomor baris. Pesan berikutnya sering hanya akibat yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hapus log yang bukan keputusan</h2><p class=\"mb-4\">Cari console.log yang hanya menandai \"sampai sini\". Hapus atau bungkus dengan syarat yang mati di produksi. Simpan satu log yang mencetak nilai yang benar-benar dipakai cabang if.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ulangi alurnya sekali</h2><p class=\"mb-4\">Muat ulang dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, ulangi klik yang gagal, dan pastikan konsol hanya menyisakan error yang bisa ditindak. Jangan tempel seluruh riwayat log ke catatan jika baris pertama sudah cukup.</p>",
+   "source": "MDN — console",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "sourceSnippet": "The console object provides access to the browser debugging console, including error and log levels.",
+   "source2": "Chrome — Console overview",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Clear console.log Calls That Bury the Real Error",
+   "desc": "How to filter debug logs in the Clincoo console so the first red message stays visible and is not covered by trial traces.",
+   "content": "<p class=\"mb-4\">The checkout page did nothing. The console was full of \"entered function\" lines from yesterday, and the real error sat so far up that it needed a scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Filter to errors first</h2><p class=\"mb-4\">In the <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> preview, open the console and enable only the Error level. Read the first message, file, and line number. Later messages are often the same failure again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remove logs that are not decisions</h2><p class=\"mb-4\">Find console.log calls that only mark \"got here\". Delete them or wrap them in a flag that is off in production. Keep one log that prints the value a branch actually uses.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replay the flow once</h2><p class=\"mb-4\">Reload from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, repeat the click that failed, and confirm the console only leaves an error you can act on. Do not paste the whole log history into notes if the first line is enough.</p>",
+   "source": "MDN — console",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "sourceSnippet": "The console object provides access to the browser debugging console, including error and log levels.",
+   "source2": "Chrome — Console overview",
+   "source2Url": "https://developer.chrome.com/docs/devtools/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cerita-placeholder-dipakai-sebagai-label",
+ "langs": {
+  "id": {
+   "title": "Cara Mengganti Placeholder yang Dipakai sebagai Label Form",
+   "desc": "Tata cara mengembalikan label terlihat pada form Clincoo saat placeholder hilang begitu pengunjung mulai mengetik.",
+   "content": "<p class=\"mb-4\">Form daftar hanya punya placeholder abu-abu. Setelah pengunjung mengetik, petunjuk hilang dan mereka tidak ingat kolom itu email atau nama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasangkan label yang tetap terlihat</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, tambah elemen label dengan atribut for yang sama dengan id input. Biarkan placeholder untuk contoh format, misalnya nama@domain.com, bukan sebagai satu-satunya nama kolom.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan mengandalkan warna saja</h2><p class=\"mb-4\">Placeholder sering kontrasnya rendah. Label biasa tetap terbaca dan tetap ada saat nilai terisi. Cek urutan tab di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan isian setengah</h2><p class=\"mb-4\">Isi dua kolom, kosongkan satu, lalu lihat apakah nama kolom masih terbaca tanpa menghapus isian. Itu yang terjadi saat orang kembali ke form setelah gangguan.</p>",
+   "source": "W3C WAI — Labels",
+   "sourceUrl": "https://www.w3.org/WAI/tutorials/forms/labels/",
+   "sourceSnippet": "Provide labels to identify all form controls and do not rely on placeholder text as the only label.",
+   "source2": "MDN — placeholder attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#placeholder",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Replace a Placeholder Used as a Form Label",
+   "desc": "How to restore a visible label on a Clincoo form when the placeholder disappears as soon as the visitor types.",
+   "content": "<p class=\"mb-4\">A signup form had only grey placeholders. Once the visitor typed, the hint vanished and they could not tell whether the field was email or name.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pair a label that stays visible</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, add a label element whose for attribute matches the input id. Keep the placeholder for an example format, such as name@domain.com, not as the only field name.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on color alone</h2><p class=\"mb-4\">Placeholders often have low contrast. A normal label stays readable and stays present when the value is filled. Check tab order in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a half-filled form</h2><p class=\"mb-4\">Fill two fields, leave one empty, and see whether the field name is still readable without clearing the input. That is what happens when someone returns to the form after an interruption.</p>",
+   "source": "W3C WAI — Labels",
+   "sourceUrl": "https://www.w3.org/WAI/tutorials/forms/labels/",
+   "sourceSnippet": "Provide labels to identify all form controls and do not rely on placeholder text as the only label.",
+   "source2": "MDN — placeholder attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#placeholder",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cerita-git-status-sebelum-pull",
+ "langs": {
+  "id": {
+   "title": "Cara Cek git status sebelum Pull agar Kerjaan Tidak Tertimpa",
+   "desc": "Tata cara melihat perubahan lokal di proyek Clincoo sebelum pull supaya berkas yang belum commit tidak bentrok diam-diam.",
+   "content": "<p class=\"mb-4\">Dua orang mengedit stylesheet yang sama. Yang satu langsung pull. Perubahan lokal yang belum commit bercampur, dan pratinjau menampilkan tombol yang bukan milik siapa pun.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca status sebelum mengambil remote</h2><p class=\"mb-4\">Di folder proyek, jalankan git status. Catat berkas modified dan untracked. Jika ada kerjaan yang ingin disimpan, commit kecil dulu atau pindahkan ke stash dengan pesan yang menyebut halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pull, lalu lihat diff</h2><p class=\"mb-4\">Setelah pull, jalankan git diff pada berkas yang tadi kamu sentuh. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, muat ulang pratinjau dan bandingkan dengan tampilan di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan selesaikan konflik dengan mengambil semua</h2><p class=\"mb-4\">Jika Git menandai konflik, baca kedua sisi. Mengambil \"ours\" atau \"theirs\" untuk seluruh berkas sering menghapus aturan CSS yang baru saja diperbaiki.</p>",
+   "source": "Git — git status",
+   "sourceUrl": "https://git-scm.com/docs/git-status",
+   "sourceSnippet": "git status shows the working tree status, including paths that have differences between the index and the working tree.",
+   "source2": "Git — git pull",
+   "source2Url": "https://git-scm.com/docs/git-pull",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check git status Before a Pull So Work Is Not Overwritten",
+   "desc": "How to inspect local changes in a Clincoo project before a pull so uncommitted files do not clash quietly.",
+   "content": "<p class=\"mb-4\">Two people edited the same stylesheet. One pulled immediately. Uncommitted local edits mixed in, and the preview showed a button that belonged to neither person.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read status before taking remote</h2><p class=\"mb-4\">In the project folder, run git status. Note modified and untracked files. If there is work you want to keep, make a small commit first or move it to a stash with a message that names the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pull, then read the diff</h2><p class=\"mb-4\">After the pull, run git diff on the files you had touched. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, reload the preview and compare it with <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not finish a conflict by taking everything</h2><p class=\"mb-4\">If Git marks a conflict, read both sides. Taking ours or theirs for the whole file often deletes a CSS rule that was just fixed.</p>",
+   "source": "Git — git status",
+   "sourceUrl": "https://git-scm.com/docs/git-status",
+   "sourceSnippet": "git status shows the working tree status, including paths that have differences between the index and the working tree.",
+   "source2": "Git — git pull",
+   "source2Url": "https://git-scm.com/docs/git-pull",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
   ];
   extra.forEach(function (article) {
     var exists = list.some(function (item) { return item.id === article.id; });
