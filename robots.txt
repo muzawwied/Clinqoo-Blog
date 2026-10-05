@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://blog.clincoo.buzz/sitemap.xml
+Sitemap: https://blog.clincoo.buzz/sitemap-pembayaran.xml
