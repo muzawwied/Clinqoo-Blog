@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Anchor (5 Oktober 2026, WIB) — 6 artikel
+// Clincoo Docs — kategori Anchor (5 Oktober 2026, WIB) — 11 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["anchor"] = {
  "names": { "id": "Anchor", "en": "Anchor" },
@@ -172,6 +172,152 @@ window.countryDataFiles["anchor"] = {
    "sourceSnippet": "An anchor-name must be unique on the page or positioned elements attach to the wrong anchor.",
    "source2": "MDN — position-try-fallbacks",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-try-fallbacks",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "anchor-lebar-popup-ikut-lebar-input",
+ "langs": {
+  "id":   {
+   "title": "Cara Buat Lebar Dropdown Ikut Lebar Input dengan anchor-size",
+   "desc": "Tata cara memakai anchor-size di Clincoo supaya panel opsi selebar input jangkar, bukan lebar isi yang meloncat.",
+   "content": "<p class=\"mb-4\">Dropdown yang lebarnya mengikuti teks opsi sering lebih sempit atau lebih lebar dari input. Pengguna lalu mengira daftar itu milik field lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ambil ukuran jangkar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri input anchor-name: --field. Pada panel set position: absolute, position-anchor: --field, position-area: bottom, dan width: anchor-size(width). Jangan salin lebar dari getBoundingClientRect sekali jalan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji saat input meregang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> perlebar kartu. Panel harus ikut lebar input. Catat token jangkar di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya field lain tidak memakai nama yang sama.</p>",
+   "source": "MDN — anchor-size()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/anchor-size",
+   "sourceSnippet": "anchor-size() returns the width or height of the anchor element for use in sizing the positioned popup.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Match Dropdown Width to the Input with anchor-size",
+   "desc": "How to use anchor-size in Clincoo so the option panel matches the anchor input instead of jumping to the content width.",
+   "content": "<p class=\"mb-4\">A dropdown sized by option text is often narrower or wider than the input. People then think the list belongs to another field.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the anchor size</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set the input to anchor-name: --field. On the panel set position: absolute, position-anchor: --field, position-area: bottom, and width: anchor-size(width). Do not copy a one-shot getBoundingClientRect width.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test when the input stretches</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> widen the card. The panel should follow the input width. Record the anchor token on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so other fields do not reuse the name.</p>",
+   "source": "MDN — anchor-size()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/anchor-size",
+   "sourceSnippet": "anchor-size() returns the width or height of the anchor element for use in sizing the positioned popup.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "anchor-popover-api-menempel-ke-tombol",
+ "langs": {
+  "id":   {
+   "title": "Cara Tempelkan Popover API ke Tombol dengan CSS Anchor",
+   "desc": "Tata cara menggabungkan atribut popover dan position-anchor di Clincoo supaya menu light-dismiss tetap menempel tombol pemicu.",
+   "content": "<p class=\"mb-4\">Popover API menutup sendiri saat klik di luar, tetapi posisi defaultnya menumpuk di tengah atau sudut. Tanpa jangkar, menu terasa lepas dari tombol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pemicu dan panel</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri tombol popovertarget dan anchor-name: --menu. Pada panel set popover, position: absolute, position-anchor: --menu, dan position-area: bottom span-right. Biarkan browser mengurus light-dismiss, jangan tambah listener klik dokumen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji buka dan tutup</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka menu, klik di luar, lalu buka lagi setelah tombol pindah baris. Panel harus kembali menempel. Catat id pemicu di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API creates top-layer elements that dismiss on an outside click and can be anchored with CSS.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Anchor the Popover API to a Button with CSS Anchor",
+   "desc": "How to combine the popover attribute and position-anchor in Clincoo so a light-dismiss menu stays on its trigger.",
+   "content": "<p class=\"mb-4\">The Popover API closes on an outside click, but its default position stacks in the center or a corner. Without an anchor the menu feels detached from the button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Trigger and panel</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> give the button popovertarget and anchor-name: --menu. On the panel set popover, position: absolute, position-anchor: --menu, and position-area: bottom span-right. Let the browser handle light-dismiss. Do not add a document click listener.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test open and close</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the menu, click outside, then open it again after the button wraps. The panel should stick again. Record the trigger id on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API creates top-layer elements that dismiss on an outside click and can be anchored with CSS.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "anchor-badge-di-sudut-tombol",
+ "langs": {
+  "id":   {
+   "title": "Cara Tempelkan Badge di Sudut Tombol dengan CSS Anchor",
+   "desc": "Tata cara menaruh badge angka di sudut tombol Clincoo dengan position-area supaya lencana ikut saat tombol berpindah.",
+   "content": "<p class=\"mb-4\">Badge yang diletakkan dengan right: -6px pada pembungkus relatif pecah jika tombol tidak lagi position relative, atau jika ikon diganti.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangkar pada tombol</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set tombol anchor-name: --act. Pada badge set position: absolute, position-anchor: --act, dan position-area: top span-right. Geser sedikit dengan margin, bukan dengan koordinat absolut tetap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek saat label berubah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> perpanjang label tombol. Badge harus tetap di sudut kanan atas, bukan tertinggal di posisi lama. Catat nama jangkar di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position-area",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-area",
+   "sourceSnippet": "position-area places an anchor-positioned element on a side or corner of its anchor.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Pin a Badge to a Button Corner with CSS Anchor",
+   "desc": "How to place a count badge on a Clincoo button corner with position-area so the badge follows when the button moves.",
+   "content": "<p class=\"mb-4\">A badge placed with right: -6px on a relative wrapper breaks when the button is no longer position relative, or when the icon is swapped.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Anchor the button</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set the button to anchor-name: --act. On the badge set position: absolute, position-anchor: --act, and position-area: top span-right. Nudge it with margin, not a fixed absolute coordinate.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check when the label changes</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> lengthen the button label. The badge should stay at the top-right corner, not linger at the old spot. Record the anchor name on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position-area",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-area",
+   "sourceSnippet": "position-area places an anchor-positioned element on a side or corner of its anchor.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "anchor-sembunyikan-jika-jangkar-keluar-layar",
+ "langs": {
+  "id":   {
+   "title": "Cara Sembunyikan Popup jika Jangkar Keluar Layar",
+   "desc": "Tata cara memakai position-visibility di Clincoo supaya tooltip hilang saat tombol jangkar tergulir keluar viewport.",
+   "content": "<p class=\"mb-4\">Tooltip yang tetap tampil setelah tombolnya tergulir menutup konten di bawah. Pengguna mengira petunjuk itu milik elemen lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ikat visibilitas ke jangkar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pada tooltip yang sudah memakai position-anchor, tambahkan position-visibility: anchors-visible. Browser menyembunyikan popup jika jangkar tidak terlihat. Jangan menghapus node lewat listener scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji gulir</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka tooltip lalu gulir tombol keluar layar. Popup harus hilang, lalu muncul lagi saat tombol kembali. Catat propertinya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position-visibility",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-visibility",
+   "sourceSnippet": "position-visibility can hide an anchor-positioned element when its anchor is no longer visible.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Hide a Popup When Its Anchor Leaves the Screen",
+   "desc": "How to use position-visibility in Clincoo so a tooltip hides when the anchor button scrolls out of the viewport.",
+   "content": "<p class=\"mb-4\">A tooltip that stays after its button scrolls away covers content below. People then think the hint belongs to another element.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tie visibility to the anchor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> on a tooltip that already uses position-anchor, add position-visibility: anchors-visible. The browser hides the popup when the anchor is not visible. Do not remove the node from a scroll listener.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test scrolling</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the tooltip, then scroll the button off screen. The popup should hide, then return when the button comes back. Record the property on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — position-visibility",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-visibility",
+   "sourceSnippet": "position-visibility can hide an anchor-positioned element when its anchor is no longer visible.",
+   "source2": "MDN — CSS anchor positioning",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "anchor-debug-popup-yang-tidak-menempel",
+ "langs": {
+  "id":   {
+   "title": "Cara Debug Popup CSS Anchor yang Tidak Menempel",
+   "desc": "Tata cara melacak di Clincoo kenapa tooltip tidak menempel: nama jangkar salah, position belum absolute, atau elemen jangkar display none.",
+   "content": "<p class=\"mb-4\">Popup yang jatuh ke kiri atas biasanya bukan bug layout acak. Jangkar tidak ketemu, atau elemen yang diposisikan masih dalam alur normal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek tiga syarat</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pastikan tombol punya anchor-name yang sama persis dengan position-anchor pada popup, termasuk tanda --. Popup harus position: absolute atau fixed. Jangkar tidak boleh display: none. Nama yang tidak ada tidak menghasilkan peringatan keras di konsol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat di inspektur</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pilih popup di inspektur dan bandingkan nama jangkar dengan tombol. Jika nama beda satu huruf, perbaiki lalu muat ulang. Catat pasangan nama di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — anchor-name",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/anchor-name",
+   "sourceSnippet": "anchor-name identifies the element that position-anchor should attach to. Names must match exactly.",
+   "source2": "MDN — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Debug a CSS Anchor Popup That Does Not Stick",
+   "desc": "How to trace in Clincoo why a tooltip does not stick: a wrong anchor name, a missing absolute position, or an anchor with display none.",
+   "content": "<p class=\"mb-4\">A popup that falls to the top left is usually not a random layout bug. The anchor was not found, or the positioned element is still in normal flow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check three requirements</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> make sure the button's anchor-name matches position-anchor on the popup exactly, including the --. The popup must be position: absolute or fixed. The anchor must not be display: none. A missing name does not raise a loud console warning.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Look in the inspector</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> select the popup in the inspector and compare the anchor name with the button. If the name differs by one letter, fix it and reload. Record the name pair on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — anchor-name",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/anchor-name",
+   "sourceSnippet": "anchor-name identifies the element that position-anchor should attach to. Names must match exactly.",
+   "source2": "MDN — position-anchor",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position-anchor",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
