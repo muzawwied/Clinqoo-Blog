@@ -61,3 +61,27 @@ body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Rob
 .seo-body .rounded-lg { border-radius:0.5rem; }
 .seo-body .p-4 { padding:1rem; }
 .seo-body .font-mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+
+/* Daftar bertumpuk (judul di atas, detail di bawah) di dalam artikel */
+.seo-body .rounded-xl { border-radius:0.75rem; }
+.seo-body .border { border-width:1px; }
+.seo-body .border-gray-200 { border-color:#e5e7eb; }
+.seo-body .divide-y > * + * { border-top:1px solid #f3f4f6; }
+.seo-body .divide-gray-100 > * + * { border-top-color:#f3f4f6; }
+.seo-body .px-4 { padding-left:1rem; padding-right:1rem; }
+.seo-body .py-3 { padding-top:0.75rem; padding-bottom:0.75rem; }
+.seo-body .flex { display:flex; }
+.seo-body .flex-wrap { flex-wrap:wrap; }
+.seo-body .items-center { align-items:center; }
+.seo-body .justify-between { justify-content:space-between; }
+.seo-body .gap-2 { gap:0.5rem; }
+.seo-body .text-xs { font-size:0.75rem; }
+.seo-body .px-2 { padding-left:0.5rem; padding-right:0.5rem; }
+.seo-body .py-0\.5 { padding-top:0.125rem; padding-bottom:0.125rem; }
+.seo-body .rounded-full { border-radius:9999px; }
+.seo-body .bg-gray-900 { background:#111827; }
+.seo-body .bg-gray-100 { background:#f3f4f6; }
+.seo-body .text-white { color:#ffffff; }
+.seo-body .text-gray-500 { color:#6b7280; }
+.seo-body .text-gray-600 { color:#4b5563; }
+.seo-body .mt-1 { margin-top:0.25rem; }
