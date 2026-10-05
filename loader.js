@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadPembayaranExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_pembayaran_extra.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
   function loadPembayaran() {
     var e = document.createElement('script');
     e.src = 'data_pembayaran.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadPembayaranExtra;
+    e.onerror = loadPembayaranExtra;
     document.body.appendChild(e);
   }
   function loadPrefetch() {
