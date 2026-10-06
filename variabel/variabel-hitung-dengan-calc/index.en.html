@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Size with calc() and CSS Variables — Clincoo Docs</title>
+<meta name="description" content="How to use var() inside calc() so Clincoo card widths follow tokens without magic numbers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-hitung-dengan-calc/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Size with calc() and CSS Variables — Clincoo Docs">
+<meta property="og:description" content="How to use var() inside calc() so Clincoo card widths follow tokens without magic numbers.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-hitung-dengan-calc/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Size with calc() and CSS Variables</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Why magic numbers break</h2><p class="mb-4">A card width of 320px does not follow a sidebar change. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> store --lebar-sidebar: 16rem; then compute the rest with calc(100% - var(--lebar-sidebar) - 1.5rem).</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">The token needs a unit</h2><p class="mb-4">var(--celah) inside calc() fails if the value is 16 with no rem. Store --celah: 1rem; then use calc(var(--celah) * 2). Preview on <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> at 360px and 1200px.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Record the formula</h2><p class="mb-4">Keep the formula in a CSS comment and a short note on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> so the next edit does not replace calc() with a fixed pixel width.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">MDN — calc()</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>
