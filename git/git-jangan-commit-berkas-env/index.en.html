@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Keep .env Files Out of Commits — Clincoo</title>
+<meta name="description" content="How to ignore local secrets in a Clincoo project so keys do not enter Git history.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-jangan-commit-berkas-env/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-jangan-commit-berkas-env/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-jangan-commit-berkas-env/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-jangan-commit-berkas-env/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Keep .env Files Out of Commits">
+<meta property="og:description" content="How to ignore local secrets in a Clincoo project so keys do not enter Git history.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-jangan-commit-berkas-env/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/">
+</head>
+<body>
+<article>
+<h1>How to Keep .env Files Out of Commits</h1>
+<p>How to ignore local secrets in a Clincoo project so keys do not enter Git history.</p>
+<p class="mb-4">A committed .env puts keys into history even after the file is removed from the working folder.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Add the pattern to gitignore</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add .env and .env.local to .gitignore before the file is created. Commit only .env.example with variable names and no values.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check status before push</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> run git status and confirm .env is not an untracked file about to be added. If it was committed, do not push; record the fix steps on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://git-scm.com/docs/gitignore">Git — gitignore</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

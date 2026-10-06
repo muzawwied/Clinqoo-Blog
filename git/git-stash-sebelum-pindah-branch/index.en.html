@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to git stash Before Switching Branches — Clincoo</title>
+<meta name="description" content="How to save uncommitted Clincoo work before switching branches, then restore it.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-stash-sebelum-pindah-branch/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-stash-sebelum-pindah-branch/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-stash-sebelum-pindah-branch/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-stash-sebelum-pindah-branch/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to git stash Before Switching Branches">
+<meta property="og:description" content="How to save uncommitted Clincoo work before switching branches, then restore it.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-stash-sebelum-pindah-branch/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/">
+</head>
+<body>
+<article>
+<h1>How to git stash Before Switching Branches</h1>
+<p>How to save uncommitted Clincoo work before switching branches, then restore it.</p>
+<p class="mb-4">Switching branches with hanging changes often fails, or overwrites files the other branch is using.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Save it with a message</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> run git stash push -m "half-done hero" when you must switch branches. Do not stash if a new file is not added yet; use git stash -u only when you really want untracked files included.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Restore it on the right branch</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> after you return, run git stash list then git stash pop. If there is a conflict, finish it before continuing. Note the stash name on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> if the work waits more than a day.</p>
+<p>Source: <a href="https://git-scm.com/docs/git-stash">Git — git-stash</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

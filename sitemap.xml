@@ -2617,5 +2617,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/zindex/zindex-isolation-tanpa-menelan-menu/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/zindex/zindex-isolation-tanpa-menelan-menu/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-lihat-diff-sebelum-commit/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-lihat-diff-sebelum-commit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-lihat-diff-sebelum-commit/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-lihat-diff-sebelum-commit/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-pull-origin-main-sebelum-kerja/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-pull-origin-main-sebelum-kerja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-pull-origin-main-sebelum-kerja/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-pull-origin-main-sebelum-kerja/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-pesan-commit-yang-jelas/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-pesan-commit-yang-jelas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-pesan-commit-yang-jelas/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-pesan-commit-yang-jelas/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-jangan-commit-berkas-env/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-stash-sebelum-pindah-branch/"/>
+  </url>
 </urlset>
 
