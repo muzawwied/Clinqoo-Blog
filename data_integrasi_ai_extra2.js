@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Integrasi AI (6 Oktober 2026, 20:00 WIB)
 // Clincoo Docs — tambah artikel Integrasi AI +1 (6 Oktober 2026, 12:00 WIB)
 // Clincoo Docs — artikel tambahan Integrasi AI (6 Oktober 2026, 11:00 WIB — tambah 1 artikel)
 (function () {
@@ -266,6 +267,35 @@
    "sourceSnippet": "Layout bugs should be reproduced at the viewport width where they appear.",
    "source2": "Chrome DevTools — device mode",
    "source2Url": "https://developer.chrome.com/docs/devtools/device-mode/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "integrasi-ai-minta-langkah-uji-setelah-saran",
+ "langs": {
+  "id": {
+   "title": "Cara Minta Langkah Uji Setelah Saran AI",
+   "desc": "Tata cara meminta asisten Clincoo menulis langkah uji singkat setelah saran, sebelum perubahan dianggap selesai.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Saran tanpa uji mudah lolos</h2><p class=\"mb-4\">Asisten bisa mengubah CSS lalu berhenti. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> akhiri permintaan dengan: beri 3 langkah uji di pratinjau, sebut lebar layar, dan apa yang harus terlihat. Jangan minta rewrite file lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji yang bisa diulang</h2><p class=\"mb-4\">Langkah yang baik menyebut halaman, selector, dan hasil. Contoh: buka beranda di 390px, tombol menu harus tetap di dalam header. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jalankan langkah itu sebelum deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan yang gagal</h2><p class=\"mb-4\">Jika langkah gagal, tempel gejala dan cuplikan, bukan seluruh proyek. Simpan prompt yang menghasilkan langkah uji jelas di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Test your site",
+   "sourceUrl": "https://web.dev/articles/test-your-site",
+   "sourceSnippet": "A change is not done until you can reproduce the expected result in the browser.",
+   "source2": "MDN — Debugging CSS",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Ask for a Test Plan After an AI Suggestion",
+   "desc": "How to ask the Clincoo assistant for a short test plan after a suggestion, before the change is treated as done.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A suggestion without a test slips through</h2><p class=\"mb-4\">An assistant can change CSS and stop. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> end the request with: give 3 preview checks, name the viewport, and say what should be visible. Do not ask it to rewrite other files.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A check you can repeat</h2><p class=\"mb-4\">A good step names the page, the selector, and the result. Example: open the home page at 390px; the menu button must stay inside the header. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> run that step before deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the failures</h2><p class=\"mb-4\">If a step fails, paste the symptom and a snippet, not the whole project. Save the prompt that produced a clear test plan on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Test your site",
+   "sourceUrl": "https://web.dev/articles/test-your-site",
+   "sourceSnippet": "A change is not done until you can reproduce the expected result in the browser.",
+   "source2": "MDN — Debugging CSS",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

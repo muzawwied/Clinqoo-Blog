@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 4 artikel Gambar (6 Oktober 2026, 20:00 WIB)
 // Clincoo Docs — artikel tambahan Gambar (6 Oktober 2026, 19:00 WIB — tambah 5 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -150,7 +151,123 @@
     "source3Url": "https://editor.clincoo.buzz/"
    }
   }
+ },
+{
+ "id": "gambar-object-position-jaga-wajah",
+ "langs": {
+  "id": {
+   "title": "Cara Jaga Wajah di Crop dengan object-position",
+   "desc": "Tata cara menggeser titik fokus object-position supaya wajah tidak terpotong saat gambar Clincoo di-crop.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">object-fit memotong, object-position memilih titik</h2><p class=\"mb-4\">object-fit: cover mengisi kotak, tetapi titik default adalah tengah. Jika wajah ada di kiri, cover memotongnya. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set object-fit: cover lalu object-position: 30% 20% sampai wajah masuk bingkai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di dua lebar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cek 390px dan 1280px. Persentase yang bagus di desktop bisa memotong dagu di ponsel. Simpan nilai yang lolos kedua lebar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan hanya crop editor</h2><p class=\"mb-4\">Crop file tetap berguna, tetapi object-position menolong saat rasio kotak berubah. Catat nilai akhirnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya edit berikutnya tidak mengulang tebakan.</p>",
+   "source": "MDN — object-position",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-position",
+   "sourceSnippet": "object-position sets the alignment point of a replaced element inside its box when object-fit crops it.",
+   "source2": "MDN — object-fit",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep a Face in Frame with object-position",
+   "desc": "How to shift object-position so a face stays in frame when a Clincoo image is cropped.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">object-fit crops, object-position chooses the point</h2><p class=\"mb-4\">object-fit: cover fills the box, but the default point is the center. If the face sits left, cover cuts it. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set object-fit: cover, then object-position: 30% 20% until the face stays inside.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check two widths</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> check 390px and 1280px. A percentage that works on desktop can crop the chin on a phone. Keep the value that passes both widths.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on file crop alone</h2><p class=\"mb-4\">A file crop still helps, but object-position covers ratio changes. Note the final value on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next edit does not guess again.</p>",
+   "source": "MDN — object-position",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-position",
+   "sourceSnippet": "object-position sets the alignment point of a replaced element inside its box when object-fit crops it.",
+   "source2": "MDN — object-fit",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
  }
+},
+{
+ "id": "gambar-max-width-cegah-meluber",
+ "langs": {
+  "id": {
+   "title": "Cara Cegah Gambar Meluber dengan max-width",
+   "desc": "Tata cara memakai max-width: 100% dan height: auto supaya gambar Clincoo tidak mendorong layout keluar kolom.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lebar intrinsik sering lebih besar dari kolom</h2><p class=\"mb-4\">Gambar 1600px di kolom 720px meluber jika CSS tidak membatasinya. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan img { max-width: 100%; height: auto; } pada stylesheet halaman, bukan inline di setiap tag.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan set height tetap tanpa width</h2><p class=\"mb-4\">height: 400px tanpa width membuat rasio rusak. Biarkan height: auto mengikuti width dan height atribut HTML. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> geser viewport; gambar harus mengecil, bukan memunculkan scroll horizontal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek induk yang overflow hidden</h2><p class=\"mb-4\">Jika masih terpotong, induk mungkin overflow: hidden atau flex item tanpa min-width: 0. Catat selector yang diperbaiki di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — max-width",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-width",
+   "sourceSnippet": "max-width sets the maximum width of an element. A percentage is relative to the containing block.",
+   "source2": "web.dev — Optimize images",
+   "source2Url": "https://web.dev/learn/images",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stop Images Overflowing with max-width",
+   "desc": "How to use max-width: 100% and height: auto so a Clincoo image does not push the layout out of the column.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Intrinsic width is often wider than the column</h2><p class=\"mb-4\">A 1600px image in a 720px column overflows if CSS does not cap it. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add img { max-width: 100%; height: auto; } on the page stylesheet, not inline on every tag.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not set a fixed height without width</h2><p class=\"mb-4\">height: 400px without width breaks the ratio. Leave height: auto so the HTML width and height attributes can scale. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> resize the viewport; the image should shrink, not create horizontal scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check a parent with overflow hidden</h2><p class=\"mb-4\">If it is still clipped, the parent may use overflow: hidden or a flex item without min-width: 0. Note the selector you fixed on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — max-width",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-width",
+   "sourceSnippet": "max-width sets the maximum width of an element. A percentage is relative to the containing block.",
+   "source2": "web.dev — Optimize images",
+   "source2Url": "https://web.dev/learn/images",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "gambar-loading-eager-untuk-lcp",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai loading eager pada Gambar LCP",
+   "desc": "Tata cara menandai gambar hero Clincoo dengan loading eager dan fetchpriority high supaya tidak tertunda seperti gambar bawah.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">lazy pada hero menunda LCP</h2><p class=\"mb-4\">loading=lazy berguna di bawah lipatan, tetapi pada gambar pertama membuat browser menunda unduhan. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set loading=eager pada hero, dan biarkan lazy hanya pada gambar setelah lipatan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu fetchpriority high</h2><p class=\"mb-4\">Tambahkan fetchpriority=high hanya pada satu gambar LCP. Jika semua gambar high, prioritas tidak berarti. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Network, filter Img, dan pastikan hero mulai lebih dulu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan preload semua gambar</h2><p class=\"mb-4\">Preload hanya hero yang benar-benar LCP. Catat URL hero di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya revisi berikutnya tidak menandai thumbnail sebagai prioritas.</p>",
+   "source": "MDN — img loading",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#loading",
+   "sourceSnippet": "The loading attribute tells the browser whether to load the image immediately or defer it until needed.",
+   "source2": "web.dev — Optimize LCP",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use loading eager on the LCP Image",
+   "desc": "How to mark a Clincoo hero with loading eager and fetchpriority high so it is not delayed like below-the-fold images.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">lazy on the hero delays LCP</h2><p class=\"mb-4\">loading=lazy helps below the fold, but on the first image it delays the download. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set loading=eager on the hero, and keep lazy only on images after the fold.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One fetchpriority high</h2><p class=\"mb-4\">Add fetchpriority=high on only one LCP image. If every image is high, priority means nothing. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open Network, filter Img, and confirm the hero starts first.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not preload every image</h2><p class=\"mb-4\">Preload only the hero that is truly LCP. Note the hero URL on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next revision does not mark a thumbnail as priority.</p>",
+   "source": "MDN — img loading",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#loading",
+   "sourceSnippet": "The loading attribute tells the browser whether to load the image immediately or defer it until needed.",
+   "source2": "web.dev — Optimize LCP",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "gambar-nama-berkas-deskriptif",
+ "langs": {
+  "id": {
+   "title": "Cara Namai Berkas Gambar agar Mudah Dicari",
+   "desc": "Tata cara menamai berkas gambar Clincoo dengan kata deskriptif, bukan IMG_1234, supaya SEO dan debug lebih jelas.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nama acak menyulitkan debug 404</h2><p class=\"mb-4\">IMG_8841.jpg tidak menjelaskan bagian halaman. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ganti nama sebelum unggah: hero-warung-malam.webp, bukan hasil kamera. Gunakan huruf kecil dan tanda hubung.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Alt tetap terpisah dari nama berkas</h2><p class=\"mb-4\">Nama berkas membantu URL, alt menjelaskan isi untuk pembaca layar. Jangan menyalin nama berkas ke alt. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cek panel aksesibilitas: alt harus kalimat singkat, nama berkas boleh kata kunci.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan ganti nama setelah publish tanpa redirect</h2><p class=\"mb-4\">Mengganti src memutus gambar yang sudah diindeks. Jika harus ganti, simpan nama lama atau perbarui semua referensi, lalu catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google — Image SEO",
+   "sourceUrl": "https://developers.google.com/search/docs/appearance/google-images",
+   "sourceSnippet": "Descriptive file names and alt text help search engines understand the image.",
+   "source2": "MDN — img alt",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Name Image Files So They Are Easy to Find",
+   "desc": "How to name Clincoo image files with descriptive words instead of IMG_1234 so SEO and debugging stay clear.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Random names make 404s harder</h2><p class=\"mb-4\">IMG_8841.jpg does not say which section it belongs to. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> rename before upload: hero-warung-malam.webp, not the camera name. Use lowercase and hyphens.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Alt stays separate from the file name</h2><p class=\"mb-4\">The file name helps the URL; alt describes the content for screen readers. Do not copy the file name into alt. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> check the accessibility pane: alt should be a short sentence, the file name can be keywords.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rename after publish without a redirect</h2><p class=\"mb-4\">Changing src breaks an image that is already indexed. If you must rename, keep the old name or update every reference, then note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Google — Image SEO",
+   "sourceUrl": "https://developers.google.com/search/docs/appearance/google-images",
+   "sourceSnippet": "Descriptive file names and alt text help search engines understand the image.",
+   "source2": "MDN — img alt",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ];
   extra.forEach(function (item) {
     if (!list.some(function (x) { return x.id === item.id; })) list.push(item);
