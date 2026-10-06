@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Testing (6 Oktober 2026, 15:00 WIB)
 // Clincoo Docs — artikel tambahan Testing (5 Oktober 2026, 23:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.testing) return;
@@ -178,7 +179,37 @@
   }
  }
 }
-  ];
+  ,
+{
+ "id": "testing-uji-selector-setelah-ubah-html",
+ "langs": {
+  "id": {
+   "title": "Cara Uji Selector Setelah Struktur HTML Berubah",
+   "desc": "Tata cara menguji ulang selector setelah elemen dipindah, dibungkus, atau class-nya diganti.",
+   "content": "<p class=\"mb-4\">Selector yang lulus kemarin bisa gagal setelah div pembungkus ditambah. Uji struktur, bukan hanya warna yang terlihat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan selector di konsol</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jalankan <code>document.querySelectorAll</code> dengan selector komponen. Jumlah node harus sama dengan yang Anda harapkan. Nol hasil berarti spasi, kelas, atau induk sudah berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji keadaan kosong dan terisi</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cek keadaan tanpa data dan dengan beberapa kartu. Hover bukan pengganti uji keyboard. Catat jumlah node dan selector di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta AI memperbaiki gaya.</p>",
+   "source": "MDN — Document.querySelectorAll()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll",
+   "sourceSnippet": "querySelectorAll returns a static NodeList of elements matching the selector.",
+   "source2": "MDN — CSS selectors",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Test Selectors After the HTML Structure Changes",
+   "desc": "How to retest selectors after an element is moved, wrapped, or renamed.",
+   "content": "<p class=\"mb-4\">A selector that passed yesterday can fail after a wrapper div is added. Test the structure, not only the color you see.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the selector in the console</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> run <code>document.querySelectorAll</code> with the component selector. The node count should match what you expect. Zero results means a space, class, or parent changed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test empty and filled states</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> check the empty state and a state with several cards. Hover is not a substitute for a keyboard test. Record the node count and selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking AI to fix the style.</p>",
+   "source": "MDN — Document.querySelectorAll()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll",
+   "sourceSnippet": "querySelectorAll returns a static NodeList of elements matching the selector.",
+   "source2": "MDN — CSS selectors",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+];
   extra.forEach(function (article) {
     var exists = list.some(function (item) { return item.id === article.id; });
     if (!exists) list.push(article);

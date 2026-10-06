@@ -2192,4 +2192,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/selector/selector-saudara-plus-dan-tilde/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/selector/selector-saudara-plus-dan-tilde/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/selector/selector-not-pengecualian-yang-sempit/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/selector/selector-not-pengecualian-yang-sempit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/selector/selector-not-pengecualian-yang-sempit/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/selector/selector-not-pengecualian-yang-sempit/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/selector/selector-pseudo-elemen-before-after/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/selector/selector-pseudo-elemen-before-after/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/selector/selector-pseudo-elemen-before-after/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/selector/selector-pseudo-elemen-before-after/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/selector/selector-kelas-ganda-tanpa-spasi/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/selector/selector-kelas-ganda-tanpa-spasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/selector/selector-kelas-ganda-tanpa-spasi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/selector/selector-kelas-ganda-tanpa-spasi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/cerita/cerita-selector-terlalu-umum-menimpa-kartu/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/cerita/cerita-selector-terlalu-umum-menimpa-kartu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/cerita/cerita-selector-terlalu-umum-menimpa-kartu/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/cerita/cerita-selector-terlalu-umum-menimpa-kartu/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/testing/testing-uji-selector-setelah-ubah-html/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/testing/testing-uji-selector-setelah-ubah-html/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/testing/testing-uji-selector-setelah-ubah-html/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/testing/testing-uji-selector-setelah-ubah-html/"/>
+  </url>
 </urlset>

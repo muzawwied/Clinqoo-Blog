@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 3 artikel Selector (6 Oktober 2026, 15:00 WIB)
 // Clincoo Docs — artikel tambahan Selector (6 Oktober 2026, 14:00 WIB — tambah 5 artikel)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.selector) return;
@@ -143,6 +144,94 @@
    "sourceSnippet": "The next-sibling combinator matches the second element only if it immediately follows the first.",
    "source2": "MDN — Subsequent-sibling combinator",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "selector-not-pengecualian-yang-sempit",
+ "langs": {
+  "id": {
+   "title": "Cara Persempit :not() supaya Tidak Menimpa Komponen Lain",
+   "desc": "Tata cara memakai :not() pada kelas yang sempit, bukan pada elemen polos, agar gaya pengecualian tidak merembet.",
+   "content": "<p class=\"mb-4\">Selector :not() terasa singkat, tetapi :not(button) atau :not(.aktif) pada elemen polos mudah menimpa kartu, menu, dan form lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi induknya dulu</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis <code>.kartu :not(.aktif)</code> hanya jika Anda memang ingin semua anak kartu. Lebih aman: <code>.kartu > .item:not(.aktif)</code>. Cek panel Styles: aturan mana yang menang dan dari file mana.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan gabung :not dengan tag global</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> hindari <code>div:not(.prose)</code> di stylesheet global. Pengecualian selebar itu mengubah jarak komponen yang tidak sedang Anda uji. Catat selector final di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta AI merapikan CSS.</p>",
+   "source": "MDN — :not()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+   "sourceSnippet": ":not() matches elements that do not match the selector inside it.",
+   "source2": "MDN — Specificity",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep :not() Narrow So It Does Not Override Other Components",
+   "desc": "How to use :not() on a narrow class, not a bare element, so the exception does not leak.",
+   "content": "<p class=\"mb-4\">:not() looks short, but :not(button) or :not(.active) on a bare element easily overrides cards, menus, and other forms.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit the parent first</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write <code>.card :not(.active)</code> only if you really mean every child of the card. Safer: <code>.card > .item:not(.active)</code>. In the Styles pane, check which rule wins and which file it comes from.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not combine :not with a global tag</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> avoid <code>div:not(.prose)</code> in a global stylesheet. An exception that wide changes spacing on components you are not testing. Record the final selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking AI to tidy the CSS.</p>",
+   "source": "MDN — :not()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+   "sourceSnippet": ":not() matches elements that do not match the selector inside it.",
+   "source2": "MDN — Specificity",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "selector-pseudo-elemen-before-after",
+ "langs": {
+  "id": {
+   "title": "Cara Debug ::before dan ::after yang Tidak Muncul",
+   "desc": "Tata cara menampilkan ::before dan ::after: konten wajib, elemen induk, dan content yang bukan none.",
+   "content": "<p class=\"mb-4\">Pseudo-elemen tidak muncul jika content kosong, display tidak cocok, atau selector induk tidak kena.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Isi content dan cek induk</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan <code>content: </code> pada ::before. Tanpa content, browser tidak membuat kotak. Pastikan selector induk benar-benar mengenai elemen, lalu baru tambah ::before.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat di panel Elements</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pohon elemen dan cari ::before di bawah induk. Jika tidak ada, selector tidak cocok atau content masih none. Jangan menyembunyikan teks asli hanya dengan ::after. Simpan cuplikan yang gagal di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> saat minta bantuan AI.</p>",
+   "source": "MDN — ::before",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/::before",
+   "sourceSnippet": "The ::before pseudo-element is generated only when the content property is set to a value other than none.",
+   "source2": "MDN — content",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/content",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debug ::before and ::after That Do Not Show",
+   "desc": "How to show ::before and ::after: required content, the parent element, and content other than none.",
+   "content": "<p class=\"mb-4\">A pseudo-element stays invisible when content is empty, display does not fit, or the parent selector misses.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set content and check the parent</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add <code>content: </code> on ::before. Without content, the browser does not generate a box. Confirm the parent selector matches the element, then add ::before.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Inspect the Elements pane</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the element tree and look for ::before under the parent. If it is missing, the selector missed or content is still none. Do not hide real text with ::after alone. Keep the failing snippet on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> when you ask AI for help.</p>",
+   "source": "MDN — ::before",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/::before",
+   "sourceSnippet": "The ::before pseudo-element is generated only when the content property is set to a value other than none.",
+   "source2": "MDN — content",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/content",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "selector-kelas-ganda-tanpa-spasi",
+ "langs": {
+  "id": {
+   "title": "Cara Tulis Kelas Ganda Tanpa Spasi",
+   "desc": "Tata cara memakai .kartu.aktif untuk elemen yang punya dua kelas, bukan .kartu .aktif yang memilih anak.",
+   "content": "<p class=\"mb-4\">Satu spasi mengubah arti selector. .kartu.aktif memilih satu elemen dengan kedua kelas. .kartu .aktif memilih keturunan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan dengan class di HTML</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> lihat atribut class pada elemen yang ingin diubah. Jika status ditambahkan di elemen yang sama, tulis <code>.kartu.aktif</code> tanpa spasi. Jika status ada di anak, baru pakai spasi atau tanda >.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan menambah dan menghapus kelas</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> toggle class aktif dari konsol atau dari klik. Gaya harus berubah hanya pada elemen itu. Catat perbedaan kedua bentuk selector di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya AI tidak menyisipkan spasi saat merapikan CSS.</p>",
+   "source": "MDN — Class selectors",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors",
+   "sourceSnippet": "A class selector matches elements that have that class; chained class selectors match the same element.",
+   "source2": "MDN — Descendant combinator",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Write a Double Class Selector Without a Space",
+   "desc": "How to use .card.active for one element with two classes, not .card .active which selects a descendant.",
+   "content": "<p class=\"mb-4\">One space changes the selector. .card.active matches one element with both classes. .card .active matches a descendant.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the class attribute in HTML</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> read the class attribute of the element you want to change. If the state is on the same element, write <code>.card.active</code> with no space. If the state is on a child, then use a space or >.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test by adding and removing the class</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> toggle the active class from the console or from a click. The style should change only on that element. Note both selector forms on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so AI does not insert a space while tidying CSS.</p>",
+   "source": "MDN — Class selectors",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors",
+   "sourceSnippet": "A class selector matches elements that have that class; chained class selectors match the same element.",
+   "source2": "MDN — Descendant combinator",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

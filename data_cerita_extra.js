@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Cerita (6 Oktober 2026, 15:00 WIB)
 // Clincoo Docs — artikel tambahan Cerita (5 Oktober 2026, WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.cerita) return;
@@ -294,7 +295,37 @@
   }
  }
 }
-  ];
+  ,
+{
+ "id": "cerita-selector-terlalu-umum-menimpa-kartu",
+ "langs": {
+  "id": {
+   "title": "Cara Memperbaiki Selector Terlalu Umum yang Menimpa Kartu",
+   "desc": "Kisah tata cara mengecilkan selector button dan a yang tanpa sengaja mengubah kartu di seluruh halaman.",
+   "content": "<p class=\"mb-4\">Satu aturan <code>button, a &#123; width: 100% &#125;</code> membuat tombol kartu melebar dan tautan menu turun baris. Gejalanya muncul setelah AI merapikan CSS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batalkan aturan global</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cari selector tag polos di stylesheet. Ganti dengan kelas komponen, misalnya <code>.kartu .aksi</code>. Jangan menambal dengan !important di setiap kartu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan sebelum deploy</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pratinjau lebar meja dan layar sempit. Tombol aksi harus mengikuti kartu, bukan sebaliknya. Tulis selector yang diganti di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar kejadian yang sama tidak diulang pada halaman lain.</p>",
+   "source": "MDN — CSS selectors",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors",
+   "sourceSnippet": "Type selectors match every element of that name; a class selector limits the match.",
+   "source2": "MDN — !important",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/important",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Fix an Overly Broad Selector That Overrode the Cards",
+   "desc": "A how-to story about narrowing bare button and a selectors that accidentally restyled cards across the page.",
+   "content": "<p class=\"mb-4\">One rule <code>button, a &#123; width: 100% &#125;</code> stretched card buttons and wrapped menu links. The symptom showed up after AI tidied the CSS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remove the global rule</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> find bare tag selectors in the stylesheet. Replace them with a component class, for example <code>.card .action</code>. Do not patch every card with !important.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare before deploy</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the desktop and narrow previews. Action buttons should follow the card, not the other way around. Write down the replaced selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the same leak is not repeated on another page.</p>",
+   "source": "MDN — CSS selectors",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors",
+   "sourceSnippet": "Type selectors match every element of that name; a class selector limits the match.",
+   "source2": "MDN — !important",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/important",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+];
   extra.forEach(function (article) {
     var exists = list.some(function (item) { return item.id === article.id; });
     if (!exists) list.push(article);

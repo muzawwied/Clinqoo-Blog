@@ -9,7 +9,7 @@
   }
   function loadSelectorExtra() {
     var e = document.createElement('script');
-    e.src = 'data_selector_extra.js?v=1';
+    e.src = 'data_selector_extra.js?v=2';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
@@ -93,7 +93,7 @@
   }
   function loadTestingExtra() {
     var e = document.createElement('script');
-    e.src = 'data_testing_extra.js?v=2';
+    e.src = 'data_testing_extra.js?v=3';
     e.onload = loadStack;
     e.onerror = loadStack;
     document.body.appendChild(e);
@@ -114,7 +114,7 @@
   }
   function loadCeritaExtra() {
     var e = document.createElement('script');
-    e.src = 'data_cerita_extra.js?v=1';
+    e.src = 'data_cerita_extra.js?v=2';
     e.onload = loadAnchor;
     e.onerror = loadAnchor;
     document.body.appendChild(e);
