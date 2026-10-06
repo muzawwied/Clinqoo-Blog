@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Check a Focus Trap Inside a Modal — Clincoo</title>
+<meta name="description" content="How to keep Tab inside a Clincoo modal and release it when the modal closes.">
+<link rel="canonical" href="https://blog.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Check a Focus Trap Inside a Modal">
+<meta property="og:description" content="How to keep Tab inside a Clincoo modal and release it when the modal closes.">
+<meta property="og:url" content="https://blog.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/fokus/fokus-periksa-perangkap-fokus-di-modal/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Check a Focus Trap Inside a Modal</h1>
+<p>How to keep Tab inside a Clincoo modal and release it when the modal closes.</p>
+<p class="mb-4">A modal that does not trap Tab lets focus escape to the page behind it. Users can activate buttons they cannot see.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Limit Tab to controls inside the dialog</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> use dialog.showModal so the top layer holds interaction. If the modal is custom, move focus to the first focusable element, then wrap Tab from the last control back to the first. Include the close button in that cycle.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Make sure the background is not focused</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the modal and hold Tab ten times. Focus must not land on the page menu behind it. After close, check that the trap is released. Keep the test note on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal">MDN — HTMLDialogElement.showModal</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
