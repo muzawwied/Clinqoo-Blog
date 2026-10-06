@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Set a CSS Variable from JavaScript — Clincoo Docs</title>
+<meta name="description" content="How to use setProperty for a Clincoo theme token without rewriting the whole stylesheet.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-setproperty-dari-js/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Set a CSS Variable from JavaScript — Clincoo Docs">
+<meta property="og:description" content="How to use setProperty for a Clincoo theme token without rewriting the whole stylesheet.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-setproperty-dari-js/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Set a CSS Variable from JavaScript</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Change the token, not dozens of classes</h2><p class="mb-4">A theme button should not touch every color. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> call document.documentElement.style.setProperty('--warna-latar', '#111827') when the user picks dark mode.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">The name must match exactly</h2><p class="mb-4">setProperty('--warna-latar', value) fails quietly if one hyphen is wrong. Read getPropertyValue('--warna-latar') and match it to the :root declaration.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not store secrets in variables</h2><p class="mb-4">Color tokens may live in an inline style. Do not put an API key in a custom property; it shows in DevTools. Test on <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> and record the token name on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty">MDN — CSSStyleDeclaration.setProperty</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>
