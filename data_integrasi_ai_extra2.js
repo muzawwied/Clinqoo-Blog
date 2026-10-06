@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan Integrasi AI (6 Oktober 2026, 09:00 WIB — tambah 5 artikel)
+// Clincoo Docs — artikel tambahan Integrasi AI (6 Oktober 2026, 11:00 WIB — tambah 1 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["integrasi-ai"]) {
@@ -207,6 +207,36 @@
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "integrasi-ai-jangan-tempel-rahasia-ke-chat",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Tempel Rahasia ke Chat Integrasi AI",
+   "desc": "Tata cara menyembunyikan kunci API, token, dan kata sandi sebelum menempel cuplikan ke integrasi AI Clincoo.",
+   "content": "<p class=\"mb-4\">Cuplikan yang menolong debugging sering ikut membawa rahasia. Chat bukan tempat menyimpan kunci, meskipun pertanyaan hanya soal error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti rahasia dengan placeholder</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> salin pesan error dan baris yang gagal. Ganti nilai kunci dengan NAMA_KUNCI sebelum menempel ke integrasi AI. Jangan mengirim berkas .env utuh.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek jawaban sebelum diterapkan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> terapkan saran hanya jika tidak menulis rahasia baru ke kode klien. Kalau kunci sempat tertempel, putar kunci itu lalu catat batasnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "OWASP — Secrets Management",
+   "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+   "sourceSnippet": "Secrets should not be placed in source code, chat logs, or other shared context where they can be copied.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How Not to Paste Secrets into the AI Integration Chat",
+   "desc": "How to hide API keys, tokens, and passwords before pasting a snippet into the Clincoo AI integration.",
+   "content": "<p class=\"mb-4\">A snippet that helps debugging often carries a secret with it. The chat is not a place to store keys, even when the question is only about an error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace secrets with placeholders</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> copy the error message and the failing line. Replace key values with KEY_NAME before pasting into the AI integration. Do not send a whole .env file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the answer before applying it</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> apply a suggestion only if it does not write a new secret into client code. If a key was pasted, rotate that key and note the boundary on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "OWASP — Secrets Management",
+   "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+   "sourceSnippet": "Secrets should not be placed in source code, chat logs, or other shared context where they can be copied.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
   }
  }
 }

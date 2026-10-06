@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan Modul (6 Oktober 2026, 10:00 WIB — tambah 2 artikel)
+// Clincoo Docs — artikel tambahan Modul (6 Oktober 2026, 11:00 WIB — tambah 4 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["modul"]) {
@@ -236,6 +236,123 @@
    "source2Url": "https://editor.clincoo.buzz/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "modul-tangkap-gagal-impor-dinamis",
+ "langs": {
+  "id": {
+   "title": "Cara Tangkap Gagal Impor Dinamis di Konsol",
+   "desc": "Tata cara menangkap import() yang gagal di Clincoo supaya halaman tidak diam saat jaringan atau jalur berkas salah.",
+   "content": "<p class=\"mb-4\">import() mengembalikan janji. Kalau jalur atau jaringan gagal, penolakan yang tidak ditangkap hanya muncul di konsol dan panel tetap kosong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bungkus dengan catch</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil import() lalu tangkap error. Tampilkan pesan yang menyebut nama berkas, bukan alert generik. Jangan mengimpor panel yang jarang dipakai di level atas halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan jalur salah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ubah sementara jalur impor, muat ulang pratinjau, dan pastikan catch yang menulis status. Kembalikan jalur yang benar lalu catat polanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — import()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import",
+   "sourceSnippet": "Dynamic import() returns a promise that rejects when the module cannot be fetched or evaluated.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Catch a Failed Dynamic Import in the Console",
+   "desc": "How to catch a rejected import() in Clincoo so the page does not stay blank when the network or file path is wrong.",
+   "content": "<p class=\"mb-4\">import() returns a promise. If the path or network fails, an uncaught rejection only shows in the console and the panel stays empty.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Wrap it with catch</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call import() and catch the error. Show a message that names the file, not a generic alert. Do not import a rarely used panel at the top level of the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test with a wrong path</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> temporarily change the import path, reload the preview, and confirm the catch writes a status. Restore the correct path and note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — import()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import",
+   "sourceSnippet": "Dynamic import() returns a promise that rejects when the module cannot be fetched or evaluated.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "modul-jangan-andalkan-urutan-skrip-klasik",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Andalkan Urutan Skrip Klasik di type=module",
+   "desc": "Tata cara berhenti mengandalkan urutan tag script klasik saat berkas Clincoo sudah type=module.",
+   "content": "<p class=\"mb-4\">Skrip klasik berjalan sesuai urutan tag. Modul ditunda, dievaluasi setelah dependensi, dan tidak berbagi variabel lewat window.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Impor yang benar-benar dipakai</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ganti anggapan fileA.js lalu fileB.js dengan import bernama. Kalau sebuah fungsi harus ada sebelum render, impor fungsi itu, jangan mengharapkan side effect dari tag di atasnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat ulang dan pastikan tidak ada ReferenceError karena variabel global hilang. Simpan urutan dependensi yang baru di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "Module scripts are deferred and their evaluation order follows the import graph, not classic script-tag order.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How Not to Rely on Classic Script Order with type=module",
+   "desc": "How to stop relying on classic script-tag order once Clincoo files use type=module.",
+   "content": "<p class=\"mb-4\">Classic scripts run in tag order. Modules are deferred, evaluated after their dependencies, and do not share variables through window.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Import what you actually use</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> replace the assumption that fileA.js then fileB.js with a named import. If a function must exist before render, import that function. Do not expect a side effect from a tag above it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reload and confirm there is no ReferenceError from a missing global. Save the new dependency order on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "Module scripts are deferred and their evaluation order follows the import graph, not classic script-tag order.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "modul-konsisten-ekspor-named",
+ "langs": {
+  "id": {
+   "title": "Cara Konsisten Pakai Ekspor Named, Jangan Dicampur Default",
+   "desc": "Tata cara memilih ekspor named yang konsisten di modul Clincoo supaya impor tidak salah nama.",
+   "content": "<p class=\"mb-4\">Mencampur export default dan export bernama pada berkas yang sama sering membuat impor default tertukar dengan nama fungsi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih satu gaya per berkas</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ekspor fungsi dengan nama yang sama dengan pemakaiannya. Impor dengan kurung kurawal dan nama itu. Jangan menambah default hanya supaya baris impor lebih pendek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan nama di pemanggil</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka konsol setelah pratinjau. SyntaxError atau fungsi yang undefined biasanya berarti nama impor tidak sama dengan ekspor. Catat gaya yang dipilih di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — export",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export",
+   "sourceSnippet": "Named exports must be imported with the same name unless the import is renamed; a default export is a separate binding.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stay Consistent with Named Exports Instead of Mixing Defaults",
+   "desc": "How to pick a consistent named export in Clincoo modules so imports do not use the wrong name.",
+   "content": "<p class=\"mb-4\">Mixing export default and named exports in the same file often swaps a default import with the function name.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick one style per file</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> export the function under the name callers use. Import it with braces and that name. Do not add a default just to make the import line shorter.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the name at the caller</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the console after preview. A SyntaxError or an undefined function usually means the import name does not match the export. Note the chosen style on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — export",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export",
+   "sourceSnippet": "Named exports must be imported with the same name unless the import is renamed; a default export is a separate binding.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "modul-perbaiki-impor-relatif-salah-folder",
+ "langs": {
+  "id": {
+   "title": "Cara Perbaiki Impor Relatif yang Salah Folder",
+   "desc": "Tata cara mengoreksi jalur ./ dan ../ di modul Clincoo ketika berkas pindah folder.",
+   "content": "<p class=\"mb-4\">Failed to resolve module specifier sering muncul setelah berkas dipindah, bukan karena modulnya rusak. Jalur relatif dihitung dari berkas pengimpor, bukan dari root proyek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hitung dari berkas saat ini</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka berkas pengimpor. Satu ../ naik satu folder. Tambahkan ekstensi .js jika server menolak specifier tanpa ekstensi. Jangan menulis jalur dari folder mental root.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Muat ulang dan baca konsol</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat ulang pratinjau. Kalau error masih menyebut specifier, salin jalur itu dan bandingkan dengan pohon berkas. Simpan perbaikan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — import statement",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+   "sourceSnippet": "A relative module specifier is resolved against the URL of the module that contains the import.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Fix a Relative Import That Points at the Wrong Folder",
+   "desc": "How to correct ./ and ../ paths in Clincoo modules after a file moves to another folder.",
+   "content": "<p class=\"mb-4\">Failed to resolve module specifier often appears after a file moves, not because the module is broken. A relative path is resolved from the importing file, not from the project root.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Count from the current file</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the importing file. One ../ goes up one folder. Add the .js extension if the server rejects a specifier without one. Do not write the path from an imagined root folder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reload and read the console</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reload the preview. If the error still names the specifier, copy that path and compare it with the file tree. Save the fix on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — import statement",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+   "sourceSnippet": "A relative module specifier is resolved against the URL of the module that contains the import.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
   }
  }
 }
