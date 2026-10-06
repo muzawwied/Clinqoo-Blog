@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Positive tabindex That Breaks Tab Order — Clincoo</title>
+<meta name="description" content="How to keep Clincoo Tab order intact without a tabindex greater than 0.">
+<link rel="canonical" href="https://blog.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Positive tabindex That Breaks Tab Order">
+<meta property="og:description" content="How to keep Clincoo Tab order intact without a tabindex greater than 0.">
+<meta property="og:url" content="https://blog.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/fokus/fokus-hindari-tabindex-positif/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Avoid Positive tabindex That Breaks Tab Order</h1>
+<p>How to keep Clincoo Tab order intact without a tabindex greater than 0.</p>
+<p class="mb-4">tabindex="5" forces focus to jump ahead of elements that appear first visually. Odd Tab order is hard to explain and breaks again when the layout changes.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Use 0 or remove tabindex</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> search for tabindex values greater than 0. Use 0 only when a custom element must be focusable, or remove the attribute when the element is already a link or button. Reorder the DOM so visual order matches source order.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Walk Tab from the top of the page</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> press Tab from the logo to the footer. Focus should follow reading order, not jump to a button in the middle. Note exceptions on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> if a widget truly needs a special order.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">MDN — tabindex</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
