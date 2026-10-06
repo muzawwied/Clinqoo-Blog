@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Batasi Ruang Lingkup Variabel di Komponen — Clincoo Docs</title>
+<meta name="description" content="Tata cara menaruh custom property pada selector komponen, bukan hanya :root, supaya kartu tidak menimpa token global.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-ruang-lingkup-komponen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Batasi Ruang Lingkup Variabel di Komponen — Clincoo Docs">
+<meta property="og:description" content="Tata cara menaruh custom property pada selector komponen, bukan hanya :root, supaya kartu tidak menimpa token global.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-ruang-lingkup-komponen/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Batasi Ruang Lingkup Variabel di Komponen</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan timpa :root untuk satu kartu</h2><p class="mb-4">Mengubah --warna-teks di :root mengubah seluruh halaman. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set --warna-teks pada .kartu-promo saja. Anak elemen mewarisi nilai itu, saudara di luar kartu tidak.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Nama lokal tetap jelas</h2><p class="mb-4">Pakai awalan komponen, misalnya --promo-latar, jika nilai tidak boleh bocor. Cek di panel Styles bahwa properti yang menang adalah yang paling dekat dengan elemen.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji dua komponen bersebelahan</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> letakkan kartu promo dan kartu biasa. Keduanya harus mempertahankan warna sendiri. Catat keputusan ruang lingkup di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>
