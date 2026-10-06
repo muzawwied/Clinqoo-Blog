@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Spacing (7 Oktober 2026, WIB) — 5 artikel
+// Clincoo Docs — kategori Spacing (7 Oktober 2026, WIB) — 10 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["spacing"] = {
  "names": { "id": "Spacing", "en": "Spacing" },
@@ -143,6 +143,152 @@ window.countryDataFiles["spacing"] = {
    "sourceSnippet": "Gap is extra space between items; it is added on top of any margins those items still have.",
    "source2": "Chrome DevTools — Inspect CSS grid",
    "source2Url": "https://developer.chrome.com/docs/devtools/css/grid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "spacing-pisahkan-row-gap-dan-column-gap",
+ "langs": {
+  "id":   {
+   "title": "Cara Pisahkan row-gap dan column-gap",
+   "desc": "Tata cara mengatur jarak baris dan kolom Clincoo secara terpisah supaya kartu wrap tidak terlalu renggang vertikal.",
+   "content": "<p class=\"mb-4\">Satu nilai gap memaksa jarak horizontal dan vertikal sama. Saat kartu turun ke baris baru, ruang antar baris terasa terlalu longgar dibanding jarak antar kolom.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis column-gap: 1rem dan row-gap: 1.5rem pada kontainer flex atau grid. Jangan andalkan shorthand gap jika kedua sumbu memang beda. Hapus margin anak yang meniru gutter.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan layar sampai satu kartu pindah baris. Ukur kedua gutter di DevTools. Catat kedua token di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya asisten AI tidak menyatukan lagi jadi gap: 1rem.</p>",
+   "source": "MDN — row-gap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap",
+   "sourceSnippet": "row-gap sets the size of the gap between rows in a flex or grid container.",
+   "source2": "MDN — column-gap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Split row-gap and column-gap",
+   "desc": "How to set Clincoo row and column gutters separately so wrapped cards do not get too much vertical space.",
+   "content": "<p class=\"mb-4\">A single gap value forces horizontal and vertical space to match. When a card wraps, the space between rows feels looser than the space between columns.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set column-gap: 1rem and row-gap: 1.5rem on the flex or grid container. Do not rely on the gap shorthand if the two axes should differ. Remove child margins that imitate the gutter.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow the screen until one card wraps. Measure both gutters in DevTools. Record both tokens on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the AI assistant does not collapse them back to gap: 1rem.</p>",
+   "source": "MDN — row-gap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap",
+   "sourceSnippet": "row-gap sets the size of the gap between rows in a flex or grid container.",
+   "source2": "MDN — column-gap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "spacing-safe-area-inset-di-hp",
+ "langs": {
+  "id":   {
+   "title": "Cara Pakai safe-area-inset di Layar HP",
+   "desc": "Tata cara menambahkan jarak aman Clincoo di tepi layar HP supaya tombol tidak tertutup notch atau bilah home.",
+   "content": "<p class=\"mb-4\">Padding 1rem di footer terlihat cukup di desktop, lalu tombol aksi tertutup bilah home di iPhone. Pengunjung harus menggeser sedikit untuk mengetuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan viewport-fit=cover pada meta viewport, lalu padding-bottom: calc(1rem + env(safe-area-inset-bottom)). Untuk tepi kiri-kanan landscape pakai padding-inline: max(1rem, env(safe-area-inset-left)). Jangan menaruh angka notch tetap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pratinjau mode perangkat, atau cek di HP sungguhan. Tombol terakhir harus di atas area aman. Catat rumus calc di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta AI merapikan CSS mobile.</p>",
+   "source": "MDN — env()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/env",
+   "sourceSnippet": "The env() function inserts a user-agent defined environment variable, such as a safe-area inset.",
+   "source2": "WebKit — Designing Websites for iPhone X",
+   "source2Url": "https://webkit.org/blog/7929/designing-websites-for-iphone-x/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Use safe-area-inset on Phone Screens",
+   "desc": "How to add Clincoo safe-area spacing so buttons are not covered by a notch or the home bar.",
+   "content": "<p class=\"mb-4\">A 1rem footer padding looks fine on desktop, then the action button sits under the home bar on an iPhone. Visitors have to scroll a little just to tap it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add viewport-fit=cover to the viewport meta, then padding-bottom: calc(1rem + env(safe-area-inset-bottom)). For landscape edges use padding-inline: max(1rem, env(safe-area-inset-left)). Do not hard-code a notch number.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open device preview, or check a real phone. The last button should sit above the safe area. Record the calc formula on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking an AI to tidy mobile CSS.</p>",
+   "source": "MDN — env()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/env",
+   "sourceSnippet": "The env() function inserts a user-agent defined environment variable, such as a safe-area inset.",
+   "source2": "WebKit — Designing Websites for iPhone X",
+   "source2Url": "https://webkit.org/blog/7929/designing-websites-for-iphone-x/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "spacing-padding-kontainer-bukan-margin-anak",
+ "langs": {
+  "id":   {
+   "title": "Cara Pakai Padding Kontainer, Bukan Margin Anak",
+   "desc": "Tata cara memberi napas tepi section Clincoo dari padding induk supaya anak pertama dan terakhir tidak mendorong layout.",
+   "content": "<p class=\"mb-4\">Margin pada anak pertama sering menembus ke luar section, atau tertelan collapse. Latar section jadi menempel ke teks, padahal token jarak sudah ada.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set padding: var(--space-4) pada section, lalu margin: 0 pada anak langsung. Jarak dalam section datang dari padding induk; jarak antar section datang dari gap parent. Jangan mengulang margin: 1rem 1rem 0 pada tiap blok.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> aktifkan overlay box model. Padding harus mengelilingi konten, dan margin anak langsung harus 0. Catat keputusan ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — padding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+   "sourceSnippet": "Padding is the space between an element's content and its border.",
+   "source2": "MDN — Mastering margin collapsing",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Use Container Padding Instead of Child Margins",
+   "desc": "How to inset a Clincoo section with parent padding so the first and last children do not push the layout.",
+   "content": "<p class=\"mb-4\">A margin on the first child often escapes the section, or collapses away. The section background then touches the text even though a spacing token exists.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set padding: var(--space-4) on the section and margin: 0 on direct children. Inner space comes from parent padding; space between sections comes from the parent gap. Do not repeat margin: 1rem 1rem 0 on every block.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> turn on the box-model overlay. Padding should surround the content, and direct-child margin should be 0. Record that choice on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — padding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+   "sourceSnippet": "Padding is the space between an element's content and its border.",
+   "source2": "MDN — Mastering margin collapsing",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "spacing-reset-margin-heading-bawaan",
+ "langs": {
+  "id":   {
+   "title": "Cara Reset Margin Heading Bawaan Browser",
+   "desc": "Tata cara menetralkan margin h1–h3 bawaan Clincoo supaya ritme judul mengikuti skala jarak, bukan stylesheet user-agent.",
+   "content": "<p class=\"mb-4\">Browser memberi h2 margin atas dan bawah sekitar 0.83em. Angka itu tidak ada di token Clincoo, jadi judul terasa melompat di antara section yang sudah memakai gap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> reset h1, h2, h3, p { margin: 0; } lalu beri jarak lewat .stack { display: flex; flex-direction: column; gap: var(--space-3); }. Jika butuh napas hanya di bawah judul, pakai margin-block-end: var(--space-2) pada heading, bukan nilai em bawaan. Jangan membiarkan user-agent dan token hidup bersamaan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan Computed margin heading sebelum dan sesudah reset. Nilai harus token, bukan em browser. Catat selector reset di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — heading elements",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements",
+   "sourceSnippet": "User agents typically apply margins to heading elements unless the page stylesheet resets them.",
+   "source2": "MDN — margin",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Reset Default Browser Heading Margins",
+   "desc": "How to neutralize default Clincoo h1–h3 margins so heading rhythm follows the spacing scale, not the user-agent sheet.",
+   "content": "<p class=\"mb-4\">Browsers give h2 a top and bottom margin of about 0.83em. That number is not on the Clincoo scale, so headings jump between sections that already use gap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> reset h1, h2, h3, p { margin: 0; } then space them with .stack { display: flex; flex-direction: column; gap: var(--space-3); }. If only the heading needs air below it, use margin-block-end: var(--space-2) on the heading, not the default em. Do not leave the user-agent margin and the token active together.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> compare the computed heading margin before and after the reset. It should be a token, not a browser em. Record the reset selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — heading elements",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements",
+   "sourceSnippet": "User agents typically apply margins to heading elements unless the page stylesheet resets them.",
+   "source2": "MDN — margin",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "spacing-align-content-saat-flex-wrap",
+ "langs": {
+  "id":   {
+   "title": "Cara Atur align-content saat Flex Wrap",
+   "desc": "Tata cara menutup ruang kosong Clincoo di sumbu silang saat kartu flex wrap, tanpa menambah gap palsu.",
+   "content": "<p class=\"mb-4\">Kontainer flex dengan flex-wrap dan tinggi lebih besar dari isi menaruh baris di tengah atau menyebar. Jarak antar baris jadi bukan row-gap yang Anda tulis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set align-content: flex-start pada kontainer yang wrap. Biarkan row-gap sebagai satu-satunya jarak antar baris. Jangan pakai align-content: space-between jika skala jarak sudah ditetapkan. align-items hanya mengatur item di dalam satu baris, bukan jarak antar baris.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tambah tinggi kontainer sebentar. Baris harus menempel ke awal, dan gutter tetap row-gap. Catat properti ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta AI merapikan layout kartu.</p>",
+   "source": "MDN — align-content",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+   "sourceSnippet": "align-content sets the distribution of space between and around content items along a flex container's cross axis.",
+   "source2": "MDN — flex-wrap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Set align-content When Flex Wraps",
+   "desc": "How to close leftover Clincoo cross-axis space when flex cards wrap, without inventing a fake gap.",
+   "content": "<p class=\"mb-4\">A wrapping flex container taller than its content packs rows in the center or spreads them out. The space between rows is no longer the row-gap you wrote.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set align-content: flex-start on the wrapping container. Leave row-gap as the only space between rows. Do not use align-content: space-between once a spacing scale exists. align-items only aligns items inside one line, not the gap between lines.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> temporarily increase the container height. Rows should pack to the start, and the gutter should stay row-gap. Record this property on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking an AI to tidy the card layout.</p>",
+   "source": "MDN — align-content",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+   "sourceSnippet": "align-content sets the distribution of space between and around content items along a flex container's cross axis.",
+   "source2": "MDN — flex-wrap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
