@@ -2545,4 +2545,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/spacing/spacing-align-content-saat-flex-wrap/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/spacing/spacing-align-content-saat-flex-wrap/"/>
   </url>
+
+  <url><loc>https://docs.clincoo.buzz/zindex/</loc><lastmod>2026-10-07</lastmod></url>
+  <url>
+    <loc>https://docs.clincoo.buzz/spacing/spacing-pusatkan-blok-dengan-margin-inline-auto/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/spacing/spacing-pusatkan-blok-dengan-margin-inline-auto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/spacing/spacing-pusatkan-blok-dengan-margin-inline-auto/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/spacing/spacing-pusatkan-blok-dengan-margin-inline-auto/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/spacing/spacing-nolkan-gap-saat-cetak/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/spacing/spacing-nolkan-gap-saat-cetak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/spacing/spacing-nolkan-gap-saat-cetak/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/spacing/spacing-nolkan-gap-saat-cetak/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/zindex/zindex-batasi-skala-bukan-angka-9999/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/zindex/zindex-batasi-skala-bukan-angka-9999/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/zindex/zindex-batasi-skala-bukan-angka-9999/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/zindex/zindex-batasi-skala-bukan-angka-9999/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/zindex/zindex-opacity-membuat-stacking-context/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/zindex/zindex-opacity-membuat-stacking-context/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/zindex/zindex-opacity-membuat-stacking-context/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/zindex/zindex-opacity-membuat-stacking-context/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/zindex/zindex-overlay-tertutup-header/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/zindex/zindex-overlay-tertutup-header/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/zindex/zindex-overlay-tertutup-header/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/zindex/zindex-overlay-tertutup-header/"/>
+  </url>
 </urlset>

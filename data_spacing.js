@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Spacing (7 Oktober 2026, WIB) — 10 artikel
+// Clincoo Docs — kategori Spacing (7 Oktober 2026, WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["spacing"] = {
  "names": { "id": "Spacing", "en": "Spacing" },
@@ -294,5 +294,65 @@ window.countryDataFiles["spacing"] = {
   }
  }
 }
- ]
+ 
+,
+{
+ "id": "spacing-pusatkan-blok-dengan-margin-inline-auto",
+ "langs": {
+  "id":   {
+   "title": "Cara Pusatkan Blok dengan margin-inline auto",
+   "desc": "Tata cara menengahkan kartu atau hero Clincoo tanpa margin kiri-kanan angka tetap yang pecah di layar sempit.",
+   "content": "<p class=\"mb-4\">Blok dengan lebar tetap sering didorong pakai margin-left: 120px. Di layar HP angka itu mendorong konten keluar viewport, dan di RTL sisi kirinya salah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> batasi lebar dengan max-width: 40rem lalu tulis margin-inline: auto. Jangan pakai margin-left dan margin-right angka piksel untuk menengahkan. Jika parent sudah flex, justify-content: center lebih jelas daripada auto margin yang kalah oleh flex-grow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan dan lebarkan viewport. Blok harus tetap di tengah, tidak terpotong. Catat pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum minta asisten AI merapikan layout.</p>",
+   "source": "MDN — margin-inline",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline",
+   "sourceSnippet": "The margin-inline CSS shorthand sets the logical start and end margins of an element.",
+   "source2": "MDN — Centering with margin auto",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Center a Block with margin-inline auto",
+   "desc": "How to center a Clincoo card or hero without fixed left-right margins that break on a narrow screen.",
+   "content": "<p class=\"mb-4\">A fixed-width block is often nudged with margin-left: 120px. On a phone that number pushes content off the viewport, and in RTL the left side is wrong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cap the width with max-width: 40rem and write margin-inline: auto. Do not use pixel margin-left and margin-right to center. If the parent is already flex, justify-content: center is clearer than auto margins that lose to flex-grow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow and widen the viewport. The block should stay centered and not clip. Record the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before asking the AI assistant to tidy the layout.</p>",
+   "source": "MDN — margin-inline",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline",
+   "sourceSnippet": "The margin-inline CSS shorthand sets the logical start and end margins of an element.",
+   "source2": "MDN — Centering with margin auto",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "spacing-nolkan-gap-saat-cetak",
+ "langs": {
+  "id":   {
+   "title": "Cara Nolkan gap saat Halaman Dicetak",
+   "desc": "Tata cara mengecilkan jarak Flex dan Grid Clincoo di @media print supaya kartu tidak memakan halaman kosong.",
+   "content": "<p class=\"mb-4\">Skala jarak layar 1.5rem nyaman di pratinjau, tetapi saat cetak atau simpan PDF setiap gap ikut terpotong jadi halaman ekstra. Pengunjung yang unduh invoice melihat banyak ruang kosong.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sumber jarak di editor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan @media print { .stack { gap: 0.5rem; padding: 0; } }. Jangan mengubah token --space di :root hanya demi cetak. Sembunyikan header lengket yang memakai safe-area. Biarkan gap layar tetap untuk pratinjau.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka dialog cetak browser. Jumlah halaman harus turun tanpa konten saling menimpa. Catat media query cetak di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @media print",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media#print",
+   "sourceSnippet": "The print media type is for paged material and documents viewed on screen in print preview mode.",
+   "source2": "MDN — gap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en":   {
+   "title": "How to Zero gap in Print Styles",
+   "desc": "How to shrink Clincoo Flex and Grid gaps inside @media print so cards do not waste blank pages.",
+   "content": "<p class=\"mb-4\">A 1.5rem screen scale feels fine in preview, but every gap is paginated when printing or saving a PDF. Someone downloading an invoice sees extra blank pages.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One source of space in the editor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add @media print { .stack { gap: 0.5rem; padding: 0; } }. Do not change the :root --space tokens just for print. Hide sticky headers that use safe-area. Leave the screen gap for preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the browser print dialog. Page count should drop without content overlapping. Record the print media query on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @media print",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media#print",
+   "sourceSnippet": "The print media type is for paged material and documents viewed on screen in print preview mode.",
+   "source2": "MDN — gap",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+]
 };
