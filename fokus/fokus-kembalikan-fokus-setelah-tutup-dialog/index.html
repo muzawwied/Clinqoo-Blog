@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Kembalikan Fokus Setelah Dialog Ditutup — Clincoo</title>
+<meta name="description" content="Tata cara mengembalikan fokus keyboard ke tombol pemicu setelah dialog Clincoo ditutup.">
+<link rel="canonical" href="https://blog.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Kembalikan Fokus Setelah Dialog Ditutup">
+<meta property="og:description" content="Tata cara mengembalikan fokus keyboard ke tombol pemicu setelah dialog Clincoo ditutup.">
+<meta property="og:url" content="https://blog.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/fokus/fokus-kembalikan-fokus-setelah-tutup-dialog/">
+</head>
+<body>
+<article>
+<h1>Cara Kembalikan Fokus Setelah Dialog Ditutup</h1>
+<p>Tata cara mengembalikan fokus keyboard ke tombol pemicu setelah dialog Clincoo ditutup.</p>
+<p class="mb-4">Dialog yang menutup tanpa mengembalikan fokus membuat pengguna keyboard tersesat di awal halaman. Simpan elemen yang membuka dialog, lalu fokuskan lagi saat dialog hilang.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Simpan pemicu sebelum dialog terbuka</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> simpan document.activeElement ke variabel sebelum memanggil showModal. Saat close, kembalikan focus ke elemen itu jika masih ada di dokumen. Jangan memindahkan fokus ke body.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji buka dan tutup dengan keyboard</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka dialog dengan Enter, tutup dengan Escape, lalu tekan Tab sekali. Fokus harus kembali ke tombol pemicu, bukan ke tautan logo. Catat hasilnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event">MDN — HTMLDialogElement: close event</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
