@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use srcset so Images Are Not Too Large — Clincoo Docs</title>
+<meta name="description" content="How to set srcset and sizes in Clincoo so a phone does not download the desktop image.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-srcset-untuk-layar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use srcset so Images Are Not Too Large — Clincoo Docs">
+<meta property="og:description" content="How to set srcset and sizes in Clincoo so a phone does not download the desktop image.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-srcset-untuk-layar/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Use srcset so Images Are Not Too Large</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">One large file for every screen</h2><p class="mb-4">A 2000px image used in a 400px card wastes data. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> prepare two or three widths, then write srcset with w descriptors and sizes that match the column. Keep src as a fallback for older browsers.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">sizes must be honest</h2><p class="mb-4">sizes="100vw" on a one-third column card makes the browser pick a file that is too large. Measure the display width in the layout, for example (min-width: 768px) 33vw, 100vw.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test in Network</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the Network tab, filter Img, and narrow the window. The downloaded file should be the small one. Save the width list on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images">MDN — Responsive images</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

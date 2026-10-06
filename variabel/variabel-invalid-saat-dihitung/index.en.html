@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Handle a CSS Variable That Is Invalid at Computed-Value Time — Clincoo Docs</title>
+<meta name="description" content="How to spot a Clincoo custom property that is invalid at computed-value time and fix the var() fallback.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-invalid-saat-dihitung/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Handle a CSS Variable That Is Invalid at Computed-Value Time — Clincoo Docs">
+<meta property="og:description" content="How to spot a Clincoo custom property that is invalid at computed-value time and fix the var() fallback.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-invalid-saat-dihitung/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Handle a CSS Variable That Is Invalid at Computed-Value Time</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Symptom: the property is dropped</h2><p class="mb-4">If --ukuran-kartu holds 16px but is used as a color, the browser marks it invalid at computed-value time and drops the declaration. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> keep size tokens and color tokens apart. Do not store a length in a variable used by color.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">A fallback is for missing, not for the wrong type</h2><p class="mb-4">var(--ukuran-kartu, 1rem) does not save a color usage. The fallback applies when the variable is not defined, not when the type is wrong. Prefix names with --warna- and --ukuran- so they are not swapped.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test in preview</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> break one token on purpose and see which element disappears. Restore the value, reload, and write the name-to-type pairs on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var">MDN — var()</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>

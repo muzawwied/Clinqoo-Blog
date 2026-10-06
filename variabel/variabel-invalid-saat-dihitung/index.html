@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Tangani Variabel CSS yang Invalid saat Dihitung — Clincoo Docs</title>
+<meta name="description" content="Tata cara mengenali custom property Clincoo yang invalid at computed-value time dan memperbaiki fallback var().">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-invalid-saat-dihitung/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Tangani Variabel CSS yang Invalid saat Dihitung — Clincoo Docs">
+<meta property="og:description" content="Tata cara mengenali custom property Clincoo yang invalid at computed-value time dan memperbaiki fallback var().">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-invalid-saat-dihitung/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Tangani Variabel CSS yang Invalid saat Dihitung</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Gejala: properti diabaikan</h2><p class="mb-4">Jika --ukuran-kartu berisi 16px tetapi dipakai di warna, browser menandai nilai invalid at computed-value time dan mengabaikan deklarasi. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> pisahkan token ukuran dan token warna. Jangan menaruh satuan panjang di variabel yang dipakai color.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Fallback hanya untuk kosong, bukan untuk tipe salah</h2><p class="mb-4">var(--ukuran-kartu, 1rem) tidak menyelamatkan pemakaian di color. Fallback dipakai jika variabel belum terdefinisi, bukan jika tipe salah. Beri nama --warna- dan --ukuran- supaya tidak tertukar.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji di pratinjau</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> sengaja salahkan satu token lalu lihat elemen mana yang hilang. Kembalikan nilai, muat ulang, dan tulis pasangan nama-tipe di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var">MDN — var()</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

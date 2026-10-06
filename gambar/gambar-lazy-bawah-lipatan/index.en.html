@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use loading lazy on Below-the-Fold Images — Clincoo Docs</title>
+<meta name="description" content="How to defer Clincoo images below the fold without delaying the hero.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-lazy-bawah-lipatan/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use loading lazy on Below-the-Fold Images — Clincoo Docs">
+<meta property="og:description" content="How to defer Clincoo images below the fold without delaying the hero.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-lazy-bawah-lipatan/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Use loading lazy on Below-the-Fold Images</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not lazy-load the hero</h2><p class="mb-4">loading="lazy" on the first image delays LCP. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> leave the hero without lazy, and set loading="lazy" only on images below the fold: galleries, blog cards, and footer avatars.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Still set width and height</h2><p class="mb-4">Lazy does not replace reserved space. Without width and height the layout still jumps when the image enters the viewport. Add decoding="async" if decode stalls scrolling.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test download order</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> load the page and watch Network. The hero should come first. Below-the-fold images appear when scrolled. Record the hero exception on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#loading">MDN — loading attribute</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

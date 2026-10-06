@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Set width and height so Images Do Not Push the Layout — Clincoo Docs</title>
+<meta name="description" content="How to set width and height on Clincoo images so the browser reserves space before the file finishes loading.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-isi-width-height/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Set width and height so Images Do Not Push the Layout — Clincoo Docs">
+<meta property="og:description" content="How to set width and height on Clincoo images so the browser reserves space before the file finishes loading.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-isi-width-height/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Set width and height so Images Do Not Push the Layout</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Without sizes, the layout jumps</h2><p class="mb-4">An image without width and height makes the text below jump when the file arrives. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set width and height to the intrinsic ratio, for example 1200 and 630 on a hero. CSS may use height: auto and width: 100% so it stays responsive.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not invent the ratio</h2><p class="mb-4">Numbers that do not match the ratio squash the image before CSS corrects it. Read the size from the file, not from a guess. A decorative SVG still needs a display width and height.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check cumulative layout shift</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> reload the preview on a slow network. If the block does not shift, the attributes are correct. Record the standard size of each image slot on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#width">MDN — HTMLImageElement width</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

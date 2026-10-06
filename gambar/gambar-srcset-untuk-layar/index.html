@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pakai srcset supaya Gambar Tidak Terlalu Besar — Clincoo Docs</title>
+<meta name="description" content="Tata cara menyiapkan srcset dan sizes di Clincoo agar ponsel tidak mengunduh gambar desktop.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-srcset-untuk-layar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pakai srcset supaya Gambar Tidak Terlalu Besar — Clincoo Docs">
+<meta property="og:description" content="Tata cara menyiapkan srcset dan sizes di Clincoo agar ponsel tidak mengunduh gambar desktop.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-srcset-untuk-layar/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Pakai srcset supaya Gambar Tidak Terlalu Besar</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Satu berkas besar untuk semua layar</h2><p class="mb-4">Gambar 2000px yang dipakai di kartu 400px membuang data. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> siapkan dua atau tiga lebar, lalu tulis srcset dengan deskriptor w dan sizes yang sesuai kolom. src tetap ada sebagai cadangan browser lama.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">sizes harus jujur</h2><p class="mb-4">sizes="100vw" pada kartu sepertiga kolom membuat browser memilih berkas terlalu besar. Ukur lebar tampilan di layout, misalnya (min-width: 768px) 33vw, 100vw.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji di Network</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka tab Network, filter Img, dan sempitkan jendela. Berkas yang terunduh harus yang kecil. Simpan daftar lebar di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images">MDN — Responsive images</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Reset a CSS Variable on a Component — Clincoo Docs</title>
+<meta name="description" content="How to return a Clincoo custom property to its initial value so a parent token does not leak in.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-reset-di-komponen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Reset a CSS Variable on a Component — Clincoo Docs">
+<meta property="og:description" content="How to return a Clincoo custom property to its initial value so a parent token does not leak in.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-reset-di-komponen/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Reset a CSS Variable on a Component</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">A parent token can leak into a card</h2><p class="mb-4">A variable on :root inherits to every element. A promo card that needs its own color still inherits --warna-teks. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set --warna-teks: initial on .kartu-promo when you want to cut inheritance, then define a local value.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">initial is not transparent</h2><p class="mb-4">initial on a custom property means the guaranteed-invalid initial value, not a transparent color. Text using var(--warna-teks) without a fallback can disappear. Always provide a fallback: var(--warna-teks, #111827).</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check Computed</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open DevTools, the Computed pane, and search the token name. If it still inherits, the reset selector lost specificity. Record the reset class on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>

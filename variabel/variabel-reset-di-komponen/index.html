@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Reset Variabel CSS di Komponen — Clincoo Docs</title>
+<meta name="description" content="Tata cara mengembalikan custom property Clincoo ke nilai awal di komponen supaya token induk tidak bocor.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-reset-di-komponen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Reset Variabel CSS di Komponen — Clincoo Docs">
+<meta property="og:description" content="Tata cara mengembalikan custom property Clincoo ke nilai awal di komponen supaya token induk tidak bocor.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-reset-di-komponen/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Reset Variabel CSS di Komponen</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Token induk bisa bocor ke kartu</h2><p class="mb-4">Variabel di :root diwariskan ke semua elemen. Kartu promo yang butuh warna sendiri ikut mewarisi --warna-teks dari halaman. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> setel --warna-teks: initial pada kelas .kartu-promo jika ingin memutus pewarisan, lalu definisikan ulang nilai lokal.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">initial bukan transparent</h2><p class="mb-4">initial pada custom property berarti nilai awal (guaranteed-invalid), bukan warna transparan. Teks yang memakai var(--warna-teks) tanpa fallback bisa jadi tidak terlihat. Selalu beri fallback: var(--warna-teks, #111827).</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek di Computed</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka DevTools, tab Computed, dan cari nama token. Jika masih mewarisi, selector reset kalah spesifisitas. Catat kelas yang di-reset di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

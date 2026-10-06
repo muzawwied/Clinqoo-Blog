@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel Variabel 6-7 (6 Oktober 2026, 18:00 WIB)
 // Clincoo Docs — tambah artikel Variabel 3-5 (6 Oktober 2026, 17:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.variabel) return;
@@ -85,6 +86,65 @@
           "sourceSnippet": "Custom properties are case-sensitive and share one cascade; a later declaration of the same name wins.",
           "source2": "CSS Cascade — custom properties",
           "source2Url": "https://www.w3.org/TR/css-variables-1/",
+          "source3": "Clincoo Editor",
+          "source3Url": "https://editor.clincoo.buzz/"
+        }
+      }
+    }
+,
+    {
+      "id": "variabel-reset-di-komponen",
+      "langs": {
+        "id": {
+          "title": "Cara Reset Variabel CSS di Komponen",
+          "desc": "Tata cara mengembalikan custom property Clincoo ke nilai awal di komponen supaya token induk tidak bocor.",
+          "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Token induk bisa bocor ke kartu</h2><p class=\"mb-4\">Variabel di :root diwariskan ke semua elemen. Kartu promo yang butuh warna sendiri ikut mewarisi --warna-teks dari halaman. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> setel --warna-teks: initial pada kelas .kartu-promo jika ingin memutus pewarisan, lalu definisikan ulang nilai lokal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">initial bukan transparent</h2><p class=\"mb-4\">initial pada custom property berarti nilai awal (guaranteed-invalid), bukan warna transparan. Teks yang memakai var(--warna-teks) tanpa fallback bisa jadi tidak terlihat. Selalu beri fallback: var(--warna-teks, #111827).</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di Computed</h2><p class=\"mb-4\">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka DevTools, tab Computed, dan cari nama token. Jika masih mewarisi, selector reset kalah spesifisitas. Catat kelas yang di-reset di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+          "source": "MDN — Using CSS custom properties",
+          "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+          "sourceSnippet": "Custom properties inherit. The initial value of a custom property is the guaranteed-invalid value.",
+          "source2": "CSS Variables — inheritance",
+          "source2Url": "https://www.w3.org/TR/css-variables-1/",
+          "source3": "Clincoo Editor",
+          "source3Url": "https://editor.clincoo.buzz/"
+        },
+        "en": {
+          "title": "How to Reset a CSS Variable on a Component",
+          "desc": "How to return a Clincoo custom property to its initial value so a parent token does not leak in.",
+          "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A parent token can leak into a card</h2><p class=\"mb-4\">A variable on :root inherits to every element. A promo card that needs its own color still inherits --warna-teks. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set --warna-teks: initial on .kartu-promo when you want to cut inheritance, then define a local value.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">initial is not transparent</h2><p class=\"mb-4\">initial on a custom property means the guaranteed-invalid initial value, not a transparent color. Text using var(--warna-teks) without a fallback can disappear. Always provide a fallback: var(--warna-teks, #111827).</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check Computed</h2><p class=\"mb-4\">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open DevTools, the Computed pane, and search the token name. If it still inherits, the reset selector lost specificity. Record the reset class on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+          "source": "MDN — Using CSS custom properties",
+          "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+          "sourceSnippet": "Custom properties inherit. The initial value of a custom property is the guaranteed-invalid value.",
+          "source2": "CSS Variables — inheritance",
+          "source2Url": "https://www.w3.org/TR/css-variables-1/",
+          "source3": "Clincoo Editor",
+          "source3Url": "https://editor.clincoo.buzz/"
+        }
+      }
+    },
+    {
+      "id": "variabel-invalid-saat-dihitung",
+      "langs": {
+        "id": {
+          "title": "Cara Tangani Variabel CSS yang Invalid saat Dihitung",
+          "desc": "Tata cara mengenali custom property Clincoo yang invalid at computed-value time dan memperbaiki fallback var().",
+          "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Gejala: properti diabaikan</h2><p class=\"mb-4\">Jika --ukuran-kartu berisi 16px tetapi dipakai di warna, browser menandai nilai invalid at computed-value time dan mengabaikan deklarasi. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> pisahkan token ukuran dan token warna. Jangan menaruh satuan panjang di variabel yang dipakai color.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fallback hanya untuk kosong, bukan untuk tipe salah</h2><p class=\"mb-4\">var(--ukuran-kartu, 1rem) tidak menyelamatkan pemakaian di color. Fallback dipakai jika variabel belum terdefinisi, bukan jika tipe salah. Beri nama --warna- dan --ukuran- supaya tidak tertukar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> sengaja salahkan satu token lalu lihat elemen mana yang hilang. Kembalikan nilai, muat ulang, dan tulis pasangan nama-tipe di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+          "source": "MDN — var()",
+          "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/var",
+          "sourceSnippet": "If the custom property is invalid for the property it is used in, the declaration is invalid at computed-value time.",
+          "source2": "CSS Values — var()",
+          "source2Url": "https://www.w3.org/TR/css-variables-1/#using-variables",
+          "source3": "Clincoo Editor",
+          "source3Url": "https://editor.clincoo.buzz/"
+        },
+        "en": {
+          "title": "How to Handle a CSS Variable That Is Invalid at Computed-Value Time",
+          "desc": "How to spot a Clincoo custom property that is invalid at computed-value time and fix the var() fallback.",
+          "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Symptom: the property is dropped</h2><p class=\"mb-4\">If --ukuran-kartu holds 16px but is used as a color, the browser marks it invalid at computed-value time and drops the declaration. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> keep size tokens and color tokens apart. Do not store a length in a variable used by color.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">A fallback is for missing, not for the wrong type</h2><p class=\"mb-4\">var(--ukuran-kartu, 1rem) does not save a color usage. The fallback applies when the variable is not defined, not when the type is wrong. Prefix names with --warna- and --ukuran- so they are not swapped.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in preview</h2><p class=\"mb-4\">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> break one token on purpose and see which element disappears. Restore the value, reload, and write the name-to-type pairs on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+          "source": "MDN — var()",
+          "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/var",
+          "sourceSnippet": "If the custom property is invalid for the property it is used in, the declaration is invalid at computed-value time.",
+          "source2": "CSS Values — var()",
+          "source2Url": "https://www.w3.org/TR/css-variables-1/#using-variables",
           "source3": "Clincoo Editor",
           "source3Url": "https://editor.clincoo.buzz/"
         }
