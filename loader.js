@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + modul extra + fokus) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadFokusExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_fokus_extra.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
   function loadFokus() {
     var e = document.createElement('script');
     e.src = 'data_fokus.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadFokusExtra;
+    e.onerror = loadFokusExtra;
     document.body.appendChild(e);
   }
   function loadModulExtra() {
@@ -21,11 +28,18 @@
     e.onerror = loadFokus;
     document.body.appendChild(e);
   }
+  function loadIntegrasiAiExtra2() {
+    var e = document.createElement('script');
+    e.src = 'data_integrasi_ai_extra2.js?v=1';
+    e.onload = loadModulExtra;
+    e.onerror = loadModulExtra;
+    document.body.appendChild(e);
+  }
   function loadIntegrasiAiExtra() {
     var e = document.createElement('script');
     e.src = 'data_integrasi_ai_extra.js?v=1';
-    e.onload = loadModulExtra;
-    e.onerror = loadModulExtra;
+    e.onload = loadIntegrasiAiExtra2;
+    e.onerror = loadIntegrasiAiExtra2;
     document.body.appendChild(e);
   }
   function loadMcpExtra() {
