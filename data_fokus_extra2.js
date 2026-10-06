@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel Fokus +1 (6 Oktober 2026, 12:00 WIB)
 // Clincoo Docs — artikel tambahan Fokus (6 Oktober 2026, 08:00 WIB — tambah 5 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -151,6 +152,36 @@
    }
   }
  }
+,
+{
+ "id": "fokus-kembalikan-fokus-setelah-hapus-elemen",
+ "langs": {
+  "id": {
+   "title": "Cara Kembalikan Fokus Setelah Elemen Dihapus",
+   "desc": "Tata cara memindahkan fokus keyboard setelah elemen yang sedang aktif dihapus, supaya kursor tidak hilang dari halaman Clincoo.",
+   "content": "<p class=\"mb-4\">Menghapus tombol yang sedang fokus membuat penekanan Tab berikutnya tidak terduga, karena browser tidak selalu memilih target yang masuk akal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tentukan target sebelum hapus</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan referensi elemen berikutnya, misalnya tombol di atasnya atau tautan kembali. Hapus elemen aktif hanya setelah target itu ada di DOM dan bisa menerima fokus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan lalu uji Tab</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> panggil focus pada target setelah penghapusan. Tekan Tab dan Shift+Tab di pratinjau. Jika fokus hilang, jangan menutupinya dengan outline none. Catat pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLElement.focus()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
+   "sourceSnippet": "Calling focus moves keyboard focus to an element that remains in the document.",
+   "source2": "WAI-ARIA Authoring Practices — keyboard",
+   "source2Url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Restore Focus After Removing an Element",
+   "desc": "How to move keyboard focus after the active element is removed so the cursor does not disappear from a Clincoo page.",
+   "content": "<p class=\"mb-4\">Removing the button that currently has focus makes the next Tab press unpredictable, because the browser does not always choose a sensible target.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Choose the target before removal</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep a reference to the next element, such as the button above it or a back link. Remove the active element only after that target is in the DOM and can accept focus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move focus, then test Tab</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> call focus on the target after the removal. Press Tab and Shift+Tab in the preview. If focus disappears, do not hide that by setting outline to none. Note this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLElement.focus()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus",
+   "sourceSnippet": "Calling focus moves keyboard focus to an element that remains in the document.",
+   "source2": "WAI-ARIA Authoring Practices — keyboard",
+   "source2Url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ];
   extra.forEach(function (item) {
     if (!list.some(function (x) { return x.id === item.id; })) list.push(item);

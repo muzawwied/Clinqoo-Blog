@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel Integrasi AI +1 (6 Oktober 2026, 12:00 WIB)
 // Clincoo Docs — artikel tambahan Integrasi AI (6 Oktober 2026, 11:00 WIB — tambah 1 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -237,6 +238,36 @@
    "source2Url": "https://editor.clincoo.buzz/",
    "source3": "Clincoo Blog",
    "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "integrasi-ai-sebutkan-browser-dan-lebar-layar",
+ "langs": {
+  "id": {
+   "title": "Cara Sebutkan Browser dan Lebar Layar Saat Minta Bantuan AI",
+   "desc": "Tata cara menulis browser, lebar viewport, dan langkah klik saat meminta integrasi AI Clincoo menelusuri bug tampilan.",
+   "content": "<p class=\"mb-4\">Permintaan yang hanya bilang tampilan rusak membuat saran AI tidak bisa diuji, karena bug CSS sering hanya muncul di lebar atau browser tertentu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis kondisi yang terlihat</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sebutkan nama browser, lebar viewport, dan selector yang bermasalah. Lampirkan cuplikan CSS pendek, bukan seluruh berkas. Jangan tempel token atau data pengguna.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Minta satu uji yang bisa diulang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> minta satu perubahan lalu cara mengujinya pada lebar yang sama. Ulangi di pratinjau sebelum menerima saran kedua. Simpan kalimat kondisi ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar sesi berikutnya tetap terukur.</p>",
+   "source": "MDN — Using media queries",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries",
+   "sourceSnippet": "Layout bugs should be reproduced at the viewport width where they appear.",
+   "source2": "Chrome DevTools — device mode",
+   "source2Url": "https://developer.chrome.com/docs/devtools/device-mode/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Name the Browser and Viewport When Asking AI for Help",
+   "desc": "How to include the browser, viewport width, and click steps when asking Clincoo AI integration to trace a layout bug.",
+   "content": "<p class=\"mb-4\">A request that only says the layout is broken makes an AI suggestion hard to test, because a CSS bug often appears only at one width or in one browser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write the condition you can see</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> name the browser, the viewport width, and the selector that misbehaves. Attach a short CSS snippet, not the whole file. Do not paste a token or user data.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ask for one repeatable check</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ask for one change and how to retest it at the same width. Repeat it in the preview before accepting a second suggestion. Keep this condition sentence on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next session stays measurable.</p>",
+   "source": "MDN — Using media queries",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries",
+   "sourceSnippet": "Layout bugs should be reproduced at the viewport width where they appear.",
+   "source2": "Chrome DevTools — device mode",
+   "source2Url": "https://developer.chrome.com/docs/devtools/device-mode/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
   }
  }
 }

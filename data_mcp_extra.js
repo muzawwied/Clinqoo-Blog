@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel MCP +3 (6 Oktober 2026, 12:00 WIB)
 // Clincoo Docs — artikel tambahan MCP (6 Oktober 2026, 10:00 WIB — tambah 3 artikel)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.mcp) return;
@@ -230,6 +231,94 @@
    "sourceSnippet": "Tool input is defined by a schema; clients should not send values the user did not intend to share.",
    "source2": "Clincoo App",
    "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "mcp-catat-hasil-tool-sebelum-lanjut",
+ "langs": {
+  "id": {
+   "title": "Cara Catat Hasil Tool MCP Sebelum Lanjut",
+   "desc": "Tata cara menyalin hasil tool MCP Clincoo ke catatan sebelum langkah berikutnya, supaya argumen tidak ditebak ulang.",
+   "content": "<p class=\"mb-4\">Hasil tool MCP yang langsung ditimpa langkah berikutnya sering membuat asisten mengulang permintaan dengan argumen yang sudah berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin hasil yang dipakai</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tempel cuplikan hasil yang benar-benar dipakai: nama tool, status, dan nilai yang akan dirujuk. Jangan salin token atau isi rahasia. Tandai hasil yang gagal supaya tidak dipakai sebagai dasar langkah tulis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lanjut hanya dari catatan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> minta langkah berikut memakai nilai di catatan, bukan menebak dari memori obrolan. Jika hasil kosong, berhenti dan ulangi tool baca. Simpan pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> untuk sesi berikutnya.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Clients should surface tool results to the user before relying on them for a later call.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Record an MCP Tool Result Before Continuing",
+   "desc": "How to copy a Clincoo MCP tool result into a note before the next step so arguments are not guessed again.",
+   "content": "<p class=\"mb-4\">An MCP tool result that is immediately overwritten by the next step often makes the assistant repeat the request with arguments that already changed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy the result you will use</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> paste the snippet you will actually use: tool name, status, and the value the next step will cite. Do not copy a token or secret body. Mark a failed result so it is not used as the basis for a write step.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Continue only from the note</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ask the next step to use the value in the note, not a guess from chat memory. If the result is empty, stop and repeat the read tool. Keep this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> for the next session.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Clients should surface tool results to the user before relying on them for a later call.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "mcp-hentikan-jika-argumen-wajib-kosong",
+ "langs": {
+  "id": {
+   "title": "Cara Hentikan Tool MCP Jika Argumen Wajib Kosong",
+   "desc": "Tata cara menolak pemanggilan tool MCP Clincoo ketika argumen wajib masih kosong atau hanya berupa tebakan.",
+   "content": "<p class=\"mb-4\">Tool MCP yang dipanggil dengan argumen wajib kosong sering menulis data palsu atau mengulang error yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan dengan skema</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bandingkan argumen yang akan dikirim dengan field wajib di skema tool. Jika id, path, atau nama masih kosong, jangan jalankan. Isi dari sumber yang Anda lihat, bukan dari contoh di dokumentasi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Berhenti lalu minta data</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> hentikan tool dan minta asisten menyebut argumen yang kurang. Baru lanjut setelah nilai itu ada di catatan <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Jangan mengganti argumen kosong dengan string sembarang hanya agar panggilan terkirim.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Tool arguments follow an input schema; required fields must be present before a call.",
+   "source2": "MDN — Working with JSON",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stop an MCP Tool When a Required Argument Is Empty",
+   "desc": "How to reject a Clincoo MCP tool call when a required argument is still empty or only a guess.",
+   "content": "<p class=\"mb-4\">An MCP tool called with an empty required argument often writes fake data or repeats the same error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the schema</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> compare the arguments about to be sent with the required fields in the tool schema. If an id, path, or name is still empty, do not run it. Fill the value from a source you can see, not from a documentation example.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Stop and ask for the data</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> stop the tool and ask the assistant to name the missing argument. Continue only after that value is in the note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Do not replace an empty argument with an arbitrary string just so the call is sent.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Tool arguments follow an input schema; required fields must be present before a call.",
+   "source2": "MDN — Working with JSON",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "mcp-uji-tool-di-proyek-salinan",
+ "langs": {
+  "id": {
+   "title": "Cara Uji Tool MCP di Proyek Salinan",
+   "desc": "Tata cara mencoba tool MCP Clincoo yang mengubah file pada salinan proyek, bukan pada proyek yang sedang tayang.",
+   "content": "<p class=\"mb-4\">Tool MCP yang menulis file sebaiknya diuji di salinan, karena kesalahan path bisa menimpa halaman yang sudah benar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Siapkan salinan kecil</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> duplikasi satu folder uji yang berisi file sampel, bukan seluruh situs tayang. Catat path salinan. Jangan beri tool izin ke folder produksi hanya untuk percobaan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan sebelum mengulang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jalankan tool sekali, lalu buka diff salinan. Jika hasilnya sesuai, baru pertimbangkan proyek asli. Simpan langkah uji di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar sesi lain tidak langsung menulis ke folder tayang.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "A tool with side effects should be invoked only when the user has confirmed the target.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Try an MCP Tool on a Copy of the Project",
+   "desc": "How to test a Clincoo MCP tool that changes files on a project copy, not on the project that is already live.",
+   "content": "<p class=\"mb-4\">An MCP tool that writes files should be tested on a copy, because a wrong path can overwrite a page that was already correct.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prepare a small copy</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> duplicate one test folder that holds sample files, not the whole live site. Note the copy path. Do not give the tool permission to the production folder just for a trial.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare before you repeat</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> run the tool once, then open the diff of the copy. If the result matches, only then consider the original project. Keep the test steps on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so another session does not write straight to the live folder.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "A tool with side effects should be invoked only when the user has confirmed the target.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
