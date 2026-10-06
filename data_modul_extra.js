@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan Modul (6 Oktober 2026, 06:00 WIB — tambah 5 artikel)
+// Clincoo Docs — artikel tambahan Modul (6 Oktober 2026, 10:00 WIB — tambah 2 artikel)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["modul"]) {
@@ -176,6 +176,64 @@
    "sourceSnippet": "Bare specifiers need an import map or a bundler; browsers do not resolve them alone.",
    "source2": "MDN — Import map",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "modul-defer-bukan-pengganti-type-module",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Pakai defer sebagai Pengganti type=module",
+   "desc": "Tata cara membedakan skrip defer dan type=module di halaman Clincoo supaya impor tidak pecah.",
+   "content": "<p class=\\\"mb-4\\\">Atribut defer menunda skrip klasik. Itu bukan modul dan tidak mendukung import. Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> cek tag skrip sebelum mengubah urutan muat.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Pilih satu model</h2><p class=\\\"mb-4\\\">Jika berkas memakai import atau export, tag harus type=module. defer hanya untuk skrip klasik yang tidak saling impor. Mencampur keduanya pada berkas yang sama membuat browser mengabaikan impor.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji di konsol pratinjau</h2><p class=\\\"mb-4\\\">Buka pratinjau di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. Jika konsol menulis cannot use import statement outside a module, kembalikan type=module. Catat tag yang benar di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — script: defer and type",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+   "sourceSnippet": "defer applies to classic scripts; module scripts are deferred by default and support import and export.",
+   "source2": "MDN — JavaScript modules",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How Not to Use defer as a Substitute for type=module",
+   "desc": "How to tell a deferred classic script from type=module on a Clincoo page so imports do not break.",
+   "content": "<p class=\\\"mb-4\\\">The defer attribute delays a classic script. It is not a module and does not support import. In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> check the script tag before you change load order.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Pick one model</h2><p class=\\\"mb-4\\\">If the file uses import or export, the tag must be type=module. defer is only for classic scripts that do not import each other. Mixing them on the same file makes the browser ignore the import.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test in the preview console</h2><p class=\\\"mb-4\\\">Open the preview in <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a>. If the console says cannot use import statement outside a module, restore type=module. Note the correct tag on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — script: defer and type",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+   "sourceSnippet": "defer applies to classic scripts; module scripts are deferred by default and support import and export.",
+   "source2": "MDN — JavaScript modules",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "modul-hindari-impor-sirkular",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari Impor Sirkular antar Modul",
+   "desc": "Tata cara memutus impor sirkular di proyek Clincoo supaya binding belum siap tidak menjadi undefined.",
+   "content": "<p class=\\\"mb-4\\\">Dua berkas yang saling import sering mengembalikan binding kosong saat dievaluasi. Gambar arah impor di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> sebelum menambah export baru.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Pecah bagian yang saling butuh</h2><p class=\\\"mb-4\\\">Pindahkan konstanta atau fungsi yang dipakai bersama ke berkas ketiga. Biarkan kedua modul mengimpor berkas itu, bukan saling mengimpor. Jangan menaruh efek samping di level atas modul yang masih saling menunggu.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji urutan evaluasi</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> muat ulang pratinjau dan baca konsol. Jika nilai impor undefined hanya pada muatan pertama, ada siklus. Catat berkas ketiga di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> supaya perubahan berikutnya tidak menyambungkan siklus lagi.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "Modules are evaluated once; circular imports can expose bindings before their initialization has finished.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Circular Imports Between Modules",
+   "desc": "How to break a circular import in a Clincoo project so a binding is not undefined before it is initialized.",
+   "content": "<p class=\\\"mb-4\\\">Two files that import each other often return an empty binding while they are evaluated. Draw the import direction in <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> before adding a new export.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Split the shared part</h2><p class=\\\"mb-4\\\">Move the shared constant or function into a third file. Let both modules import that file instead of each other. Do not put side effects at the top level of modules that still wait on each other.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test evaluation order</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> reload the preview and read the console. If an import is undefined only on the first load, there is a cycle. Note the third file on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> so the next change does not reconnect the cycle.</p>",
+   "source": "MDN — JavaScript modules",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+   "sourceSnippet": "Modules are evaluated once; circular imports can expose bindings before their initialization has finished.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

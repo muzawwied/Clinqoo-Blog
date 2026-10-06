@@ -1,4 +1,4 @@
-// Clincoo Docs — artikel tambahan MCP (6 Oktober 2026, 03:00 WIB — tambah 5 artikel)
+// Clincoo Docs — artikel tambahan MCP (6 Oktober 2026, 10:00 WIB — tambah 3 artikel)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.mcp) return;
   var list = window.countryDataFiles.mcp.articles;
@@ -143,6 +143,93 @@
    "sourceSnippet": "Clients connect to an MCP server endpoint; after a server change, the configured URL should be checked before tools are called.",
    "source2": "Clincoo Docs — MCP server",
    "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "mcp-pisahkan-tool-baca-dan-tulis",
+ "langs": {
+  "id": {
+   "title": "Cara Pisahkan Tool MCP Baca dan Tool yang Menulis",
+   "desc": "Tata cara memisahkan tool MCP Clincoo yang hanya membaca dari tool yang mengubah berkas sebelum asisten dijalankan.",
+   "content": "<p class=\\\"mb-4\\\">Satu daftar tool yang mencampur baca dan tulis membuat asisten mudah menyentuh berkas yang tidak diminta. Pisahkan dulu di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Dua daftar, dua izin</h2><p class=\\\"mb-4\\\">Buat daftar baca (status, pohon berkas, cuplikan) dan daftar tulis (simpan, commit, hapus). Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> jalankan hanya daftar baca pada sesi debug. Tool tulis baru dibuka setelah cuplikan dan path sudah dicek.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cek efek di pratinjau</h2><p class=\\\"mb-4\\\">Setelah tool baca selesai, bandingkan hasil dengan halaman di pratinjau. Catat nama tool yang lolos di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>. Jika sebuah tool menulis tanpa konfirmasi, keluarkan dari sesi itu.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Tools are listed with a name, description, and input schema so a client can decide whether to invoke them.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Separate Read-Only MCP Tools from Tools That Write",
+   "desc": "How to split Clincoo MCP tools that only read from tools that change files before an assistant runs.",
+   "content": "<p class=\\\"mb-4\\\">A single tool list that mixes reads and writes makes it easy for an assistant to touch files you did not ask for. Split them first in <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Two lists, two permissions</h2><p class=\\\"mb-4\\\">Make a read list (status, file tree, snippets) and a write list (save, commit, delete). In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> run only the read list during a debug session. Open write tools after the snippet and path are checked.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Check the effect in preview</h2><p class=\\\"mb-4\\\">After a read tool finishes, compare the result with the preview page. Note the tool names that passed on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>. If a tool writes without confirmation, remove it from that session.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Tools are listed with a name, description, and input schema so a client can decide whether to invoke them.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "mcp-tolak-tool-tanpa-deskripsi",
+ "langs": {
+  "id": {
+   "title": "Cara Tolak Tool MCP yang Tidak Punya Deskripsi",
+   "desc": "Tata cara menolak tool MCP Clincoo yang tidak menjelaskan efeknya sebelum dipanggil.",
+   "content": "<p class=\\\"mb-4\\\">Tool tanpa deskripsi memaksa tebakan. Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> baca nama dan deskripsi sebelum mengizinkan panggilan.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Syarat minimum sebelum izin</h2><p class=\\\"mb-4\\\">Deskripsi harus menyebut apakah tool membaca, menulis, atau mengirim permintaan. Argumen wajib harus terlihat di skema. Jika salah satu kosong, jangan centang tool itu untuk sesi ini.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji dengan satu panggilan</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> izinkan satu tool yang deskripsinya jelas, lalu bandingkan hasil dengan catatan di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>. Jangan mengaktifkan sisa daftar hanya karena nama tool terdengar mirip.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Each tool should expose a description so the client and user can understand the intended effect.",
+   "source2": "MDN — using the console",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Reject an MCP Tool That Has No Description",
+   "desc": "How to refuse a Clincoo MCP tool that does not explain its effect before it is called.",
+   "content": "<p class=\\\"mb-4\\\">A tool with no description forces a guess. In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> read the name and description before you allow a call.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Minimum bar before permission</h2><p class=\\\"mb-4\\\">The description must say whether the tool reads, writes, or sends a request. Required arguments must show in the schema. If either is empty, do not enable that tool for this session.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test with one call</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> allow one tool whose description is clear, then compare the result with notes on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>. Do not enable the rest of the list just because a tool name sounds similar.</p>",
+   "source": "Model Context Protocol — tools",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+   "sourceSnippet": "Each tool should expose a description so the client and user can understand the intended effect.",
+   "source2": "MDN — using the console",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "mcp-simpan-contoh-argumen-aman",
+ "langs": {
+  "id": {
+   "title": "Cara Simpan Contoh Argumen MCP yang Aman",
+   "desc": "Tata cara menyimpan contoh argumen MCP Clincoo tanpa token, cookie, atau URL rahasia.",
+   "content": "<p class=\\\"mb-4\\\">Contoh argumen yang berisi rahasia sering tertempel ulang di obrolan berikutnya. Simpan versi aman di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Ganti rahasia dengan penanda</h2><p class=\\\"mb-4\\\">Salin skema, lalu ganti token, cookie, dan kunci dengan teks seperti CONTOH_TOKEN. Path proyek boleh tetap, asalkan bukan path mesin lokal yang berisi nama akun.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Tempel contoh, bukan riwayat</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> tempel contoh aman saat minta bantuan, bukan cuplikan log mentah. Simpan contoh yang lolos di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> supaya sesi baru tidak mengulang tebakan field.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Tool input is defined by a schema; clients should not send values the user did not intend to share.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Save a Safe MCP Argument Example",
+   "desc": "How to store a Clincoo MCP argument example without tokens, cookies, or secret URLs.",
+   "content": "<p class=\\\"mb-4\\\">Argument examples that contain secrets get pasted again in the next chat. Keep a safe version in <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a>.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Replace secrets with markers</h2><p class=\\\"mb-4\\\">Copy the schema, then replace tokens, cookies, and keys with text such as SAMPLE_TOKEN. A project path can stay if it is not a local machine path that includes an account name.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Paste the example, not the history</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> paste the safe example when you ask for help, not a raw log snippet. Save examples that worked on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> so a new session does not guess field names again.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Tool input is defined by a schema; clients should not send values the user did not intend to share.",
+   "source2": "Clincoo App",
+   "source2Url": "https://app.clincoo.buzz/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
