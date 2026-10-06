@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to git add -p to Stage Part of a Change — Clincoo</title>
+<meta name="description" content="How to split hunks in a Clincoo project so a commit only contains the fix that is ready.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-add-patch-stage-sebagian/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-add-patch-stage-sebagian/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-add-patch-stage-sebagian/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-add-patch-stage-sebagian/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to git add -p to Stage Part of a Change">
+<meta property="og:description" content="How to split hunks in a Clincoo project so a commit only contains the fix that is ready.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-add-patch-stage-sebagian/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-add-patch-stage-sebagian/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-add-patch-stage-sebagian/">
+</head>
+<body>
+<article>
+<h1>How to git add -p to Stage Part of a Change</h1>
+<p>How to split hunks in a Clincoo project so a commit only contains the fix that is ready.</p>
+<p class="mb-4">One file often mixes a bug fix and a style experiment. git add -p selects hunks, not the whole file.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pick hunks</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> run git add -p file.html. Answer y for a hunk that is ready, n for one that is still a trial. s splits a hunk that is too large.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Commit separately</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> commit the staged hunks first and leave the rest unstaged. The commit message should name only the fix that went in. A sample flow is on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://git-scm.com/docs/git-add">Git — git-add</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Ignore node_modules and Build Folders in .gitignore — Clincoo</title>
+<meta name="description" content="How to write .gitignore so Clincoo dependencies and build output stay out of commits.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-gitignore-node-modules-build/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-gitignore-node-modules-build/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-gitignore-node-modules-build/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-gitignore-node-modules-build/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Ignore node_modules and Build Folders in .gitignore">
+<meta property="og:description" content="How to write .gitignore so Clincoo dependencies and build output stay out of commits.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-gitignore-node-modules-build/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-gitignore-node-modules-build/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-gitignore-node-modules-build/">
+</head>
+<body>
+<article>
+<h1>How to Ignore node_modules and Build Folders in .gitignore</h1>
+<p>How to write .gitignore so Clincoo dependencies and build output stay out of commits.</p>
+<p class="mb-4">node_modules and build folders are large, can be regenerated, and make diffs unreadable. They belong in .gitignore before the first git add.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Write ignore patterns</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add node_modules/, dist/, and .env to .gitignore at the repo root. Run git status: those folders must not appear as untracked files you are about to commit.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Untrack what is already committed</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> if a folder was committed before, run git rm -r --cached node_modules and commit the .gitignore. Do not delete the folder on disk. Save a sample pattern on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://git-scm.com/docs/gitignore">Git — gitignore</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

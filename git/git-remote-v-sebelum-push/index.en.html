@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Check git remote -v Before a Push — Clincoo</title>
+<meta name="description" content="How to confirm Clincoo fetch and push remotes point at the right repo before git push.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-remote-v-sebelum-push/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-remote-v-sebelum-push/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-remote-v-sebelum-push/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-remote-v-sebelum-push/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Check git remote -v Before a Push">
+<meta property="og:description" content="How to confirm Clincoo fetch and push remotes point at the right repo before git push.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-remote-v-sebelum-push/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-remote-v-sebelum-push/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-remote-v-sebelum-push/">
+</head>
+<body>
+<article>
+<h1>How to Check git remote -v Before a Push</h1>
+<p>How to confirm Clincoo fetch and push remotes point at the right repo before git push.</p>
+<p class="mb-4">A push to the wrong remote overwrites another project's history. git remote -v prints the fetch and push URLs before you run push.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Read the remote URL</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> run git remote -v. The origin lines must point at the Clincoo repo you are working on. If the URL belongs to a fork or another account, do not push.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Push the intended branch</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> use git push origin branch-name, not git push --force to main. An experiment branch stays separate from what is already live. Keep a remote checklist on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://git-scm.com/docs/git-remote">Git — git-remote</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

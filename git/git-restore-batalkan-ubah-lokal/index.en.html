@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to git restore to Discard Local Changes — Clincoo</title>
+<meta name="description" content="How to discard uncommitted file changes in a Clincoo project without deleting other commits.">
+<link rel="canonical" href="https://blog.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to git restore to Discard Local Changes">
+<meta property="og:description" content="How to discard uncommitted file changes in a Clincoo project without deleting other commits.">
+<meta property="og:url" content="https://blog.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/git/git-restore-batalkan-ubah-lokal/">
+</head>
+<body>
+<article>
+<h1>How to git restore to Discard Local Changes</h1>
+<p>How to discard uncommitted file changes in a Clincoo project without deleting other commits.</p>
+<p class="mb-4">An experiment file that is not committed can be discarded without resetting the whole branch. git restore returns the file to the last commit.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Restore one file</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> check git status first. Then git restore path discards unstaged edits. If the file is already staged, git restore --staged path removes it from the index without deleting the working copy.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not restore everything at once</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> avoid git restore . if a draft still needs to be kept. Restore by path, then check status again. Note the steps on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://git-scm.com/docs/git-restore">Git — git-restore</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
