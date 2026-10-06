@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hindari Animasi width dan height — Clincoo</title>
+<meta name="description" content="Tata cara menggerakkan komponen Clincoo tanpa memaksa browser menghitung ulang tata letak.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hindari Animasi width dan height">
+<meta property="og:description" content="Tata cara menggerakkan komponen Clincoo tanpa memaksa browser menghitung ulang tata letak.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-jangan-animasikan-width-height/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+</head>
+<body>
+<article>
+<h1>Cara Hindari Animasi width dan height</h1>
+<p>Tata cara menggerakkan komponen Clincoo tanpa memaksa browser menghitung ulang tata letak.</p>
+<p class="mb-4">Mengubah width atau height di setiap frame membuat browser menghitung ulang layout. Halaman terasa patah, terutama di daftar panjang.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ganti dengan transform</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> ganti transisi width menjadi transform: scaleX atau translate. Untuk panel yang membuka, geser dengan translateY dan opacity, bukan menambah tinggi.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ukur sekali, lalu animasikan</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> ukur tinggi hanya saat dibuka, simpan di variabel CSS, lalu transisikan transform. Catat properti yang masih menggeser layout di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://web.dev/articles/animations-guide">web.dev — stick to compositor-friendly properties</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
