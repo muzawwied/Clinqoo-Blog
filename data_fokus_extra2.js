@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel Fokus +1 (6 Oktober 2026, 13:00 WIB)
 // Clincoo Docs — tambah artikel Fokus +1 (6 Oktober 2026, 12:00 WIB)
 // Clincoo Docs — artikel tambahan Fokus (6 Oktober 2026, 08:00 WIB — tambah 5 artikel)
 (function () {
@@ -182,6 +183,36 @@
   }
  }
 }
+,
+ {
+  "id": "fokus-urutan-tab-ikuti-tata-visual",
+  "langs": {
+   "id": {
+    "title": "Cara Samakan Urutan Tab dengan Tata Letak Visual",
+    "desc": "Tata cara menata ulang urutan Tab di halaman Clincoo agar mengikuti urutan visual, bukan urutan DOM yang acak.",
+    "content": "<p class=\"mb-4\">Tombol yang terlihat di kanan kadang terfokus lebih dulu karena elemennya ditulis lebih awal di HTML. Pengguna keyboard kehilangan arah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Rapikan sumber, bukan tabindex</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> susun ulang elemen di HTML mengikuti urutan baca: header, navigasi, konten, lalu aksi. Jangan memakai tabindex positif untuk memaksa urutan. Flex order boleh untuk tampilan, tetapi pastikan sumber tetap logis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Telusuri dengan Tab di dua lebar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tekan Tab dari atas halaman di lebar desktop dan ponsel. Fokus harus berjalan kiri ke kanan, atas ke bawah. Catat elemen yang meloncat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "WCAG — Focus Order",
+    "sourceUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+    "sourceSnippet": "Focus order should preserve meaning and operability, usually matching the visual reading order.",
+    "source2": "MDN — tabindex",
+    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   },
+   "en": {
+    "title": "How to Match Tab Order to the Visual Layout",
+    "desc": "How to reorder Tab on a Clincoo page so it follows the visual sequence, not a scrambled DOM order.",
+    "content": "<p class=\"mb-4\">A button that looks like it sits on the right can receive focus first because its element was written earlier in the HTML. Keyboard users lose their place.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fix the source, not tabindex</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> reorder elements in HTML to match reading order: header, navigation, content, then actions. Do not use a positive tabindex to force the sequence. Flex order is fine for display, but keep the source logical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Walk Tab at two widths</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> press Tab from the top of the page at desktop and phone widths. Focus should move left to right, top to bottom. Record jumping elements on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "WCAG — Focus Order",
+    "sourceUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+    "sourceSnippet": "Focus order should preserve meaning and operability, usually matching the visual reading order.",
+    "source2": "MDN — tabindex",
+    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+   }
+  }
+ }
 ];
   extra.forEach(function (item) {
     if (!list.some(function (x) { return x.id === item.id; })) list.push(item);
