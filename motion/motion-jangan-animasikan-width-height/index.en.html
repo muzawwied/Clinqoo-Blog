@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Animating width and height — Clincoo</title>
+<meta name="description" content="How to move Clincoo components without forcing the browser to recalculate layout.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Animating width and height">
+<meta property="og:description" content="How to move Clincoo components without forcing the browser to recalculate layout.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-jangan-animasikan-width-height/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-jangan-animasikan-width-height/">
+</head>
+<body>
+<article>
+<h1>How to Avoid Animating width and height</h1>
+<p>How to move Clincoo components without forcing the browser to recalculate layout.</p>
+<p class="mb-4">Changing width or height every frame forces layout. The page feels janky, especially on long lists.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Switch to transform</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> replace a width transition with transform: scaleX or translate. For an opening panel, slide with translateY and opacity instead of growing height.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Measure once, then animate</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> measure height only when opened, store it in a CSS variable, then transition transform. Note any property that still shifts layout on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://web.dev/articles/animations-guide">web.dev — stick to compositor-friendly properties</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
