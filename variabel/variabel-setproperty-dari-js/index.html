@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Set Variabel CSS dari JavaScript — Clincoo Docs</title>
+<meta name="description" content="Tata cara memakai setProperty untuk token tema Clincoo tanpa menulis ulang seluruh stylesheet.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-setproperty-dari-js/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Set Variabel CSS dari JavaScript — Clincoo Docs">
+<meta property="og:description" content="Tata cara memakai setProperty untuk token tema Clincoo tanpa menulis ulang seluruh stylesheet.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-setproperty-dari-js/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Set Variabel CSS dari JavaScript</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ubah token, bukan puluhan kelas</h2><p class="mb-4">Tombol tema tidak perlu menyentuh setiap warna. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> panggil document.documentElement.style.setProperty('--warna-latar', '#111827') saat pengguna memilih mode gelap.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Nama harus persis</h2><p class="mb-4">setProperty('--warna-latar', nilai) gagal diam-diam jika nama salah satu tanda hubung. Baca kembali getPropertyValue('--warna-latar') dan cocokkan dengan deklarasi :root.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan simpan rahasia di variabel</h2><p class="mb-4">Token warna boleh di style inline. Jangan taruh kunci API di custom property karena tampil di DevTools. Uji di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> lalu catat nama token di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty">MDN — CSSStyleDeclaration.setProperty</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>
