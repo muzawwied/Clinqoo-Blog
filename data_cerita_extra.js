@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Cerita (6 Oktober 2026, 21:00 WIB)
 // Clincoo Docs — tambah 1 artikel Cerita (6 Oktober 2026, 15:00 WIB)
 // Clincoo Docs — artikel tambahan Cerita (5 Oktober 2026, WIB)
 (function () {
@@ -325,6 +326,36 @@
   }
  }
 }
+
+{
+ "id": "cerita-meta-viewport-tertinggal",
+ "langs": {
+  "id": {
+   "title": "Cara Sadar Meta Viewport Tertinggal setelah Salin HTML",
+   "desc": "Tata cara menemukan halaman Clincoo yang terlihat desktop di ponsel karena tag viewport tidak ikut tersalin.",
+   "content": "<p class=\"mb-4\">Halaman baru disalin dari berkas lama. Di laptop terlihat rapi. Di ponsel teks mengecil dan pengunjung harus mencubit layar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek head sebelum pratinjau ponsel</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka head. Pastikan ada meta name viewport dengan content width=device-width, initial-scale=1. Tanpa tag ini browser menganggap lebar sekitar 980 piksel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ulangi di lebar 375</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kecilkan pratinjau ke lebar ponsel. Judul, kartu, dan tombol harus turun, bukan mengecil bersama halaman. Catat hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya salinan berikutnya tidak mengulang kelupaan yang sama.</p>",
+   "source": "MDN — Viewport meta tag",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag",
+   "sourceSnippet": "The viewport meta tag controls the layout viewport width on mobile browsers.",
+   "source2": "web.dev — Responsive web design basics",
+   "source2Url": "https://web.dev/articles/responsive-web-design-basics",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Notice a Missing Viewport Meta after Copying HTML",
+   "desc": "How to catch a Clincoo page that looks desktop-only on a phone because the viewport tag was not copied.",
+   "content": "<p class=\"mb-4\">A new page was copied from an old file. On a laptop it looked fine. On a phone the text shrank and visitors had to pinch the screen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the head before a phone preview</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the head. Confirm a meta name viewport with content width=device-width, initial-scale=1. Without that tag the browser assumes a width near 980 pixels.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Retest at 375</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> shrink the preview to phone width. Headings, cards, and buttons should stack, not shrink with the page. Note the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next copy does not repeat the miss.</p>",
+   "source": "MDN — Viewport meta tag",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag",
+   "sourceSnippet": "The viewport meta tag controls the layout viewport width on mobile browsers.",
+   "source2": "web.dev — Responsive web design basics",
+   "source2Url": "https://web.dev/articles/responsive-web-design-basics",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
 ];
   extra.forEach(function (article) {
     var exists = list.some(function (item) { return item.id === article.id; });
