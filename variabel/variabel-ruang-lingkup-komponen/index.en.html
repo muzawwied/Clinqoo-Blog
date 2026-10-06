@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Scope CSS Variables to a Component — Clincoo Docs</title>
+<meta name="description" content="How to put custom properties on a component selector, not only :root, so a card does not override global tokens.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-ruang-lingkup-komponen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Scope CSS Variables to a Component — Clincoo Docs">
+<meta property="og:description" content="How to put custom properties on a component selector, not only :root, so a card does not override global tokens.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-ruang-lingkup-komponen/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Scope CSS Variables to a Component</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not override :root for one card</h2><p class="mb-4">Changing --warna-teks on :root restyles the whole page. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set --warna-teks on .kartu-promo only. Descendants inherit it; siblings outside the card do not.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Keep local names obvious</h2><p class="mb-4">Use a component prefix such as --promo-latar when the value must not leak. In the Styles pane, confirm the winning property is the one closest to the element.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test two components side by side</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> place a promo card next to a plain card. Each should keep its own color. Record the scope decision on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>
