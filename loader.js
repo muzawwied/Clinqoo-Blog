@@ -7,11 +7,25 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadFlexbox() {
+    var e = document.createElement('script');
+    e.src = 'data_flexbox.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadZindexExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_zindex_extra.js?v=1';
+    e.onload = loadFlexbox;
+    e.onerror = loadFlexbox;
+    document.body.appendChild(e);
+  }
   function loadZindex() {
     var e = document.createElement('script');
     e.src = 'data_zindex.js?v=2';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadZindexExtra;
+    e.onerror = loadZindexExtra;
     document.body.appendChild(e);
   }
   function loadSpacing() {
