@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hitung Ukuran dengan calc() dan Variabel CSS — Clincoo Docs</title>
+<meta name="description" content="Tata cara memakai var() di dalam calc() supaya lebar kartu Clincoo mengikuti token tanpa angka ajaib.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-hitung-dengan-calc/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hitung Ukuran dengan calc() dan Variabel CSS — Clincoo Docs">
+<meta property="og:description" content="Tata cara memakai var() di dalam calc() supaya lebar kartu Clincoo mengikuti token tanpa angka ajaib.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-hitung-dengan-calc/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Hitung Ukuran dengan calc() dan Variabel CSS</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kenapa angka ajaib pecah</h2><p class="mb-4">Lebar kartu yang ditulis 320px tidak ikut saat sidebar berubah. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> simpan token --lebar-sidebar: 16rem; lalu hitung sisa ruang dengan calc(100% - var(--lebar-sidebar) - 1.5rem).</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Satuan harus ada di token</h2><p class="mb-4">var(--celah) di dalam calc() gagal jika nilainya hanya 16 tanpa rem. Simpan --celah: 1rem; lalu pakai calc(var(--celah) * 2). Pratinjau di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> pada lebar 360px dan 1200px.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Catat rumus yang dipakai</h2><p class="mb-4">Tulis rumus di komentar CSS dan ringkas di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> supaya orang berikutnya tidak menimpa calc dengan piksel tetap.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">MDN — calc()</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>
