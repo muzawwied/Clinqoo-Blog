@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Read prefers-reduced-motion in JavaScript — Clincoo</title>
+<meta name="description" content="How to disable Clincoo canvas or rAF motion when a visitor asks for reduced motion.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Read prefers-reduced-motion in JavaScript">
+<meta property="og:description" content="How to disable Clincoo canvas or rAF motion when a visitor asks for reduced motion.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Read prefers-reduced-motion in JavaScript</h1>
+<p>How to disable Clincoo canvas or rAF motion when a visitor asks for reduced motion.</p>
+<p class="mb-4">A CSS media query does not stop requestAnimationFrame or canvas. JavaScript motion has to read the same signal.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check matchMedia before the loop</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> create const reduce = window.matchMedia("(prefers-reduced-motion: reduce)"). If reduce.matches, draw a still state and do not call requestAnimationFrame. Listen for change so the loop stops when the setting changes.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test both modes</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> turn reduce motion on, reload, then turn it off. The canvas should be still first, then move. Note the listener name on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN — prefers-reduced-motion</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

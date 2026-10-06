@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Animate Transform and Opacity, Not Width — Clincoo</title>
+<meta name="description" content="How to move Clincoo cards with transform and opacity so layout is not recalculated.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Animate Transform and Opacity, Not Width">
+<meta property="og:description" content="How to move Clincoo cards with transform and opacity so layout is not recalculated.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-animasikan-transform-dan-opacity/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Animate Transform and Opacity, Not Width</h1>
+<p>How to move Clincoo cards with transform and opacity so layout is not recalculated.</p>
+<p class="mb-4">Animating width or top forces the browser to recalculate layout. Transform and opacity are usually enough for an entering card.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Replace layout shifts</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> replace left or margin animation with transform: translateY(8px) to translateY(0), plus opacity from 0 to 1. Do not animate the height of a list that is opening.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the preview</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the Performance panel and record the card entrance. There should be no long Layout bars every frame. Note any property that still paints green on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms">MDN — CSS transforms</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Baca prefers-reduced-motion di JavaScript — Clincoo</title>
+<meta name="description" content="Tata cara menonaktifkan animasi kanvas atau rAF Clincoo bila pengunjung meminta gerakan dikurangi.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Baca prefers-reduced-motion di JavaScript">
+<meta property="og:description" content="Tata cara menonaktifkan animasi kanvas atau rAF Clincoo bila pengunjung meminta gerakan dikurangi.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-matchmedia-reduced-motion-di-javascript/">
+</head>
+<body>
+<article>
+<h1>Cara Baca prefers-reduced-motion di JavaScript</h1>
+<p>Tata cara menonaktifkan animasi kanvas atau rAF Clincoo bila pengunjung meminta gerakan dikurangi.</p>
+<p class="mb-4">Media query CSS tidak menghentikan requestAnimationFrame atau kanvas. Gerakan di JavaScript harus membaca sinyal yang sama.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek matchMedia sebelum loop</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> buat const reduce = window.matchMedia("(prefers-reduced-motion: reduce)"). Jika reduce.matches, gambar keadaan diam dan jangan panggil requestAnimationFrame. Dengarkan change agar loop berhenti saat pengaturan berubah.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji kedua mode</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> nyalakan reduce motion, muat ulang, lalu matikan lagi. Kanvas harus diam dulu, baru bergerak. Catat nama listener di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN — prefers-reduced-motion</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

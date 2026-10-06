@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Motion (6 Oktober 2026, 21:00 WIB — 4 artikel)
+// Clincoo Docs — kategori Motion (6 Oktober 2026, 22:00 WIB) — 9 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["motion"] = {
  "names": { "id": "Motion", "en": "Motion" },
@@ -114,6 +114,152 @@ window.countryDataFiles["motion"] = {
    "sourceSnippet": "The Page Visibility API tells you when a document is hidden or visible.",
    "source2": "MDN — animation-play-state",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "motion-animasikan-transform-dan-opacity",
+ "langs": {
+  "id": {
+   "title": "Cara Animasi Transform dan Opacity, Bukan Width",
+   "desc": "Tata cara menggerakkan kartu Clincoo dengan transform dan opacity agar layout tidak dihitung ulang.",
+   "content": "<p class=\"mb-4\">Mengubah width atau top memaksa browser menghitung ulang layout. Transform dan opacity biasanya cukup untuk kartu yang masuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti pergeseran layout</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ganti animasi left atau margin dengan transform: translateY(8px) menuju translateY(0), plus opacity 0 ke 1. Jangan animasikan height daftar yang sedang terbuka.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka panel Performance lalu rekam saat kartu masuk. Tidak boleh ada baris Layout panjang tiap frame. Catat properti yang masih hijau di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS transforms",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms",
+   "sourceSnippet": "CSS transforms let you rotate, scale, and translate an element without affecting normal document flow.",
+   "source2": "web.dev — Animations",
+   "source2Url": "https://web.dev/articles/animations-guide",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Animate Transform and Opacity, Not Width",
+   "desc": "How to move Clincoo cards with transform and opacity so layout is not recalculated.",
+   "content": "<p class=\"mb-4\">Animating width or top forces the browser to recalculate layout. Transform and opacity are usually enough for an entering card.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace layout shifts</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> replace left or margin animation with transform: translateY(8px) to translateY(0), plus opacity from 0 to 1. Do not animate the height of a list that is opening.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the Performance panel and record the card entrance. There should be no long Layout bars every frame. Note any property that still paints green on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS transforms",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms",
+   "sourceSnippet": "CSS transforms let you rotate, scale, and translate an element without affecting normal document flow.",
+   "source2": "web.dev — Animations",
+   "source2Url": "https://web.dev/articles/animations-guide",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "motion-hindari-will-change-selalu-aktif",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Biarkan will-change Selalu Aktif",
+   "desc": "Tata cara memakai will-change hanya saat animasi Clincoo benar-benar jalan.",
+   "content": "<p class=\"mb-4\">will-change: transform pada setiap kartu membuat lapisan ekstra meski tidak ada yang bergerak. Petunjuk itu untuk sesaat, bukan gaya default.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang hanya sebelum gerak</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan will-change pada kelas is-animating, lalu hapus kelas itu di animationend. Jangan tulis will-change di reset global.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji jumlah lapisan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Layers saat halaman diam. Kartu statis tidak perlu layer sendiri. Catat pemilih yang masih menahan will-change di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — will-change",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change",
+   "sourceSnippet": "will-change hints that an element will change, but keeping it on too many elements wastes memory.",
+   "source2": "web.dev — Animations guide",
+   "source2Url": "https://web.dev/articles/animations-guide",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Leaving will-change Always On",
+   "desc": "How to use will-change only while a Clincoo animation is actually running.",
+   "content": "<p class=\"mb-4\">will-change: transform on every card creates extra layers even when nothing moves. The hint is temporary, not a default style.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add it only before motion</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add will-change on an is-animating class, then remove that class on animationend. Do not put will-change in a global reset.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check layer count</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open Layers while the page is idle. Static cards should not own a layer. Note selectors that still hold will-change on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — will-change",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change",
+   "sourceSnippet": "will-change hints that an element will change, but keeping it on too many elements wastes memory.",
+   "source2": "web.dev — Animations guide",
+   "source2Url": "https://web.dev/articles/animations-guide",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "motion-token-durasi-dan-easing",
+ "langs": {
+  "id": {
+   "title": "Cara Satukan Durasi dan Easing Animasi",
+   "desc": "Tata cara menyimpan durasi dan kurva animasi Clincoo di variabel CSS supaya gerakan terasa satu sistem.",
+   "content": "<p class=\"mb-4\">Satu tombol 150ms dan kartu 700ms terasa acak. Durasi dan easing sebaiknya token, bukan angka yang disalin.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan token di :root</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set --motion-fast: 150ms, --motion-base: 220ms, dan --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1). Pakai var() di transition. Hover singkat, panel memakai base.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan menu dan tombol. Keduanya harus selesai sebelum 300ms. Catat nilai token di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using CSS custom properties",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+   "sourceSnippet": "Custom properties are entities defined by authors that contain specific values to be reused throughout a document.",
+   "source2": "MDN — easing-function",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Share Duration and Easing Tokens",
+   "desc": "How to store Clincoo duration and easing in CSS variables so motion feels like one system.",
+   "content": "<p class=\"mb-4\">A 150ms button next to a 700ms card feels random. Duration and easing should be tokens, not copied numbers.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Store tokens on :root</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set --motion-fast: 150ms, --motion-base: 220ms, and --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1). Use var() in transition. Short hovers use fast; panels use base.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare in the preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> compare the menu and the button. Both should finish before 300ms. Note the token values on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using CSS custom properties",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+   "sourceSnippet": "Custom properties are entities defined by authors that contain specific values to be reused throughout a document.",
+   "source2": "MDN — easing-function",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "motion-transition-untuk-hover-bukan-keyframes",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai Transition untuk Hover, Bukan Keyframes",
+   "desc": "Tata cara memakai transition pada hover Clincoo supaya keadaan balik mulus tanpa keyframes.",
+   "content": "<p class=\"mb-4\">Hover yang memakai animation keyframes sering macet di frame terakhir saat kursor pergi. Transition menginterpolasi dua keadaan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis transition di keadaan dasar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set transition: transform 180ms ease pada tombol, lalu :hover dan :focus-visible hanya mengubah transform: scale(1.02). Jangan buat @keyframes untuk hover.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji masuk dan keluar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> arahkan kursor lalu cepat keluar. Tombol harus kembali, bukan tersangkut. Catat pemilih hover di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS transitions",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions",
+   "sourceSnippet": "CSS transitions let you change property values smoothly over a given duration.",
+   "source2": "MDN — @keyframes",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use Transition for Hover, Not Keyframes",
+   "desc": "How to use transition on Clincoo hover so the state returns smoothly without keyframes.",
+   "content": "<p class=\"mb-4\">Hover that uses animation keyframes often sticks on the last frame when the pointer leaves. Transition interpolates two states.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put transition on the base state</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set transition: transform 180ms ease on the button, then change only transform: scale(1.02) in :hover and :focus-visible. Do not build @keyframes for hover.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test enter and leave</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> hover, then leave quickly. The button should return, not stick. Note the hover selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS transitions",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions",
+   "sourceSnippet": "CSS transitions let you change property values smoothly over a given duration.",
+   "source2": "MDN — @keyframes",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "motion-matchmedia-reduced-motion-di-javascript",
+ "langs": {
+  "id": {
+   "title": "Cara Baca prefers-reduced-motion di JavaScript",
+   "desc": "Tata cara menonaktifkan animasi kanvas atau rAF Clincoo bila pengunjung meminta gerakan dikurangi.",
+   "content": "<p class=\"mb-4\">Media query CSS tidak menghentikan requestAnimationFrame atau kanvas. Gerakan di JavaScript harus membaca sinyal yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek matchMedia sebelum loop</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat const reduce = window.matchMedia(\"(prefers-reduced-motion: reduce)\"). Jika reduce.matches, gambar keadaan diam dan jangan panggil requestAnimationFrame. Dengarkan change agar loop berhenti saat pengaturan berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji kedua mode</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> nyalakan reduce motion, muat ulang, lalu matikan lagi. Kanvas harus diam dulu, baru bergerak. Catat nama listener di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — prefers-reduced-motion",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "sourceSnippet": "The prefers-reduced-motion media feature is used to detect if a user has requested the system minimize non-essential motion.",
+   "source2": "MDN — Window.matchMedia",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read prefers-reduced-motion in JavaScript",
+   "desc": "How to disable Clincoo canvas or rAF motion when a visitor asks for reduced motion.",
+   "content": "<p class=\"mb-4\">A CSS media query does not stop requestAnimationFrame or canvas. JavaScript motion has to read the same signal.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check matchMedia before the loop</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create const reduce = window.matchMedia(\"(prefers-reduced-motion: reduce)\"). If reduce.matches, draw a still state and do not call requestAnimationFrame. Listen for change so the loop stops when the setting changes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test both modes</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> turn reduce motion on, reload, then turn it off. The canvas should be still first, then move. Note the listener name on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — prefers-reduced-motion",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "sourceSnippet": "The prefers-reduced-motion media feature is used to detect if a user has requested the system minimize non-essential motion.",
+   "source2": "MDN — Window.matchMedia",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

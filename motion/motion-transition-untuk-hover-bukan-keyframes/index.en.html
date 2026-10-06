@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use Transition for Hover, Not Keyframes — Clincoo</title>
+<meta name="description" content="How to use transition on Clincoo hover so the state returns smoothly without keyframes.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use Transition for Hover, Not Keyframes">
+<meta property="og:description" content="How to use transition on Clincoo hover so the state returns smoothly without keyframes.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-transition-untuk-hover-bukan-keyframes/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Use Transition for Hover, Not Keyframes</h1>
+<p>How to use transition on Clincoo hover so the state returns smoothly without keyframes.</p>
+<p class="mb-4">Hover that uses animation keyframes often sticks on the last frame when the pointer leaves. Transition interpolates two states.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Put transition on the base state</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set transition: transform 180ms ease on the button, then change only transform: scale(1.02) in :hover and :focus-visible. Do not build @keyframes for hover.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test enter and leave</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> hover, then leave quickly. The button should return, not stick. Note the hover selector on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions">MDN — CSS transitions</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

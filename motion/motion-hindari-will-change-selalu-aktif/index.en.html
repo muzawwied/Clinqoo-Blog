@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Leaving will-change Always On — Clincoo</title>
+<meta name="description" content="How to use will-change only while a Clincoo animation is actually running.">
+<link rel="canonical" href="https://blog.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Leaving will-change Always On">
+<meta property="og:description" content="How to use will-change only while a Clincoo animation is actually running.">
+<meta property="og:url" content="https://blog.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/motion/motion-hindari-will-change-selalu-aktif/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Avoid Leaving will-change Always On</h1>
+<p>How to use will-change only while a Clincoo animation is actually running.</p>
+<p class="mb-4">will-change: transform on every card creates extra layers even when nothing moves. The hint is temporary, not a default style.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Add it only before motion</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add will-change on an is-animating class, then remove that class on animationend. Do not put will-change in a global reset.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check layer count</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open Layers while the page is idle. Static cards should not own a layer. Note selectors that still hold will-change on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/will-change">MDN — will-change</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
