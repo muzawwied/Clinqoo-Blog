@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Add a Fallback When an Image src Fails — Clincoo Docs</title>
+<meta name="description" content="How to show a backup image in Clincoo when src is 404, blocked, or corrupt.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-fallback-onerror-saat-src-gagal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Add a Fallback When an Image src Fails — Clincoo Docs">
+<meta property="og:description" content="How to show a backup image in Clincoo when src is 404, blocked, or corrupt.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-fallback-onerror-saat-src-gagal/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Add a Fallback When an Image src Fails</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Why a broken image confuses people</h2><p class="mb-4">A broken image only shows a missing icon. Visitors cannot tell if it was a product photo, avatar, or illustration. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> prepare one light backup file, such as a neutral illustration, then set onerror to replace src only once.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Prevent an onerror loop</h2><p class="mb-4">If the backup also fails, onerror can call itself forever. After the first swap, remove the handler or mark the element with data-fallback. Do not point the backup at the same URL as the original src.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test a 404 before publish</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> deliberately change src to a missing path, then load the preview. The backup should appear, the layout should not jump, and the console should not flood. Note the backup path on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event">MDN — HTMLImageElement error event</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

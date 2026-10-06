@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hindari Base64 Besar di HTML — Clincoo Docs</title>
+<meta name="description" content="Tata cara menolak data URI gambar besar di Clincoo supaya HTML tetap kecil dan cache gambar tetap terpakai.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-hindari-base64-besar-di-html/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hindari Base64 Besar di HTML — Clincoo Docs">
+<meta property="og:description" content="Tata cara menolak data URI gambar besar di Clincoo supaya HTML tetap kecil dan cache gambar tetap terpakai.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-hindari-base64-besar-di-html/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Hindari Base64 Besar di HTML</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Base64 membesar dan tidak ter-cache sendiri</h2><p class="mb-4">Data URI ikut setiap unduhan HTML. Gambar 200 KB menjadi lebih besar setelah di-encode, dan tidak bisa di-cache terpisah. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> simpan foto sebagai berkas, lalu rujuk dengan src biasa. Base64 hanya untuk ikon SVG sangat kecil yang dipakai sekali.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cari data URI yang menyelinap</h2><p class="mb-4">Cari string data:image di HTML dan CSS. Jika lebih dari beberapa ratus byte, pindahkan ke berkas. Jangan tempel tangkapan layar utuh dari obrolan AI langsung ke markup.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Ukur HTML setelah dibersihkan</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> bandingkan ukuran dokumen sebelum dan sesudah gambar dikeluarkan. HTML harus turun, dan gambar muncul sebagai permintaan terpisah yang bisa di-cache. Tuliskan batas ukuran di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data">MDN — Data URLs</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Serve AVIF with a WebP Fallback — Clincoo Docs</title>
+<meta name="description" content="How to use picture so newer browsers fetch AVIF while older ones still get WebP or JPEG.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-avif-dengan-fallback-webp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Serve AVIF with a WebP Fallback — Clincoo Docs">
+<meta property="og:description" content="How to use picture so newer browsers fetch AVIF while older ones still get WebP or JPEG.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-avif-dengan-fallback-webp/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Serve AVIF with a WebP Fallback</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">One URL is not enough for every browser</h2><p class="mb-4">AVIF is smaller, but not every older browser can open it. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> wrap img with picture: a source of type image/avif, then a source of type image/webp, and a final img as JPEG. The browser picks the first supported source.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not download twice</h2><p class="mb-4">Do not set an AVIF src on img and also an AVIF source. img is the last fallback. Keep width and height on img so the slot does not change when a format is chosen.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Compare file sizes</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open Network and check which type was actually fetched. AVIF should be smaller than JPEG for the same photo. Keep that file trio on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> as a compression reference.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">MDN — picture element</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

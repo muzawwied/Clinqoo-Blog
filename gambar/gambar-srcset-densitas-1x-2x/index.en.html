@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use 1x and 2x srcset for Retina Screens — Clincoo Docs</title>
+<meta name="description" content="How to offer two Clincoo image files with density descriptors so normal screens do not download the 2x version.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-srcset-densitas-1x-2x/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use 1x and 2x srcset for Retina Screens — Clincoo Docs">
+<meta property="og:description" content="How to offer two Clincoo image files with density descriptors so normal screens do not download the 2x version.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-srcset-densitas-1x-2x/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Use 1x and 2x srcset for Retina Screens</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Retina is not a reason to download large files for everyone</h2><p class="mb-4">Small icons and logos often need only two sizes. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set src to the 1x file, then srcset with name-1x.png 1x and name-2x.png 2x. The browser picks based on devicePixelRatio.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not mix 1x with width w</h2><p class="mb-4">Do not mix x and w descriptors in the same srcset. For photos that grow with the container, use w and sizes. For fixed icons, use 1x and 2x.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the downloaded file</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> change zoom or emulate DPR in the device. A 1x screen must not fetch the 2x file. Note the size pair on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images">MDN — Responsive images</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>

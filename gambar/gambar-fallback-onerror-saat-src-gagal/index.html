@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pasang Fallback Saat src Gambar Gagal — Clincoo Docs</title>
+<meta name="description" content="Tata cara menampilkan gambar cadangan di Clincoo bila src 404, diblokir, atau berkas rusak.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-fallback-onerror-saat-src-gagal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pasang Fallback Saat src Gambar Gagal — Clincoo Docs">
+<meta property="og:description" content="Tata cara menampilkan gambar cadangan di Clincoo bila src 404, diblokir, atau berkas rusak.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-fallback-onerror-saat-src-gagal/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Pasang Fallback Saat src Gambar Gagal</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kenapa gambar kosong membingungkan</h2><p class="mb-4">Gambar yang pecah hanya menampilkan ikon rusak. Pengunjung tidak tahu itu foto produk, avatar, atau ilustrasi. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> siapkan satu berkas cadangan ringan, misalnya ilustrasi netral, lalu pasang onerror yang mengganti src sekali saja.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cegah loop onerror</h2><p class="mb-4">Jika cadangan juga gagal, onerror bisa memanggil dirinya terus. Setelah penggantian pertama, hapus handler atau tandai elemen dengan data-fallback. Jangan arahkan cadangan ke URL yang sama dengan src asli.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji 404 sebelum publish</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> sengaja ubah src ke path yang tidak ada, lalu muat pratinjau. Cadangan harus tampil, layout tidak meloncat, dan konsol tidak banjir error. Catat path cadangan di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event">MDN — HTMLImageElement error event</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

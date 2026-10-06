@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Large Base64 Images in HTML — Clincoo Docs</title>
+<meta name="description" content="How to reject large image data URIs in Clincoo so HTML stays small and image caching still works.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/gambar/gambar-hindari-base64-besar-di-html/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Large Base64 Images in HTML — Clincoo Docs">
+<meta property="og:description" content="How to reject large image data URIs in Clincoo so HTML stays small and image caching still works.">
+<meta property="og:url" content="https://blog.clincoo.buzz/gambar/gambar-hindari-base64-besar-di-html/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Avoid Large Base64 Images in HTML</h1>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Base64 grows and is not cached on its own</h2><p class="mb-4">A data URI rides along with every HTML download. A 200 KB image gets larger after encoding and cannot be cached separately. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> save the photo as a file, then reference it with a normal src. Use Base64 only for a tiny SVG icon used once.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Find data URIs that slipped in</h2><p class="mb-4">Search HTML and CSS for data:image. If it is more than a few hundred bytes, move it to a file. Do not paste a full screenshot from an AI chat straight into the markup.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Measure HTML after cleanup</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> compare document size before and after the image is extracted. HTML should shrink, and the image should appear as a separate cacheable request. Write the size limit on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data">MDN — Data URLs</a></p>
+<p><a href="https://blog.clincoo.buzz/gambar/">Back to category</a></p>
+</main>
+</body>
+</html>
