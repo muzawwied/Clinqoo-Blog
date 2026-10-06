@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Beri Fallback pada var() yang Kosong — Clincoo Docs</title>
+<meta name="description" content="Tata cara menulis var(--token, nilai-cadangan) di Clincoo supaya komponen tetap tampil jika token belum didefinisikan.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-fallback-var/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Beri Fallback pada var() yang Kosong — Clincoo Docs">
+<meta property="og:description" content="Tata cara menulis var(--token, nilai-cadangan) di Clincoo supaya komponen tetap tampil jika token belum didefinisikan.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-fallback-var/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>Cara Beri Fallback pada var() yang Kosong</h1>
+<p class="mb-4">var(--warna-aksen) tanpa cadangan membuat properti tidak valid jika token belum ada. Teks bisa jatuh ke warna awal browser dan hilang di latar gelap.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cadangan di argumen kedua</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tulis color: var(--warna-aksen, #1f2937). Argumen kedua dipakai hanya jika token belum diwariskan. Jangan taruh var() lain yang juga kosong sebagai satu-satunya cadangan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji dengan token dihapus</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> komen token di :root lalu muat ulang. Komponen harus tetap terbaca. Catat cadangan yang dipakai di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var">MDN — var()</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Kembali ke kategori</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Unify a Spacing Scale with Variables — Clincoo Docs</title>
+<meta name="description" content="How to replace ad-hoc Clincoo margins and gaps with a --jarak-1 to --jarak-4 token scale.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-skala-jarak/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Unify a Spacing Scale with Variables — Clincoo Docs">
+<meta property="og:description" content="How to replace ad-hoc Clincoo margins and gaps with a --jarak-1 to --jarak-4 token scale.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-skala-jarak/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Unify a Spacing Scale with Variables</h1>
+<p class="mb-4">A 13px margin on one card and 16px on another breaks the page rhythm. Magic numbers are hard to audit.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">A stepped scale</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set --jarak-1: 0.25rem, --jarak-2: 0.5rem, --jarak-3: 1rem, and --jarak-4: 1.5rem on :root. Gap and padding use var(--jarak-3). Do not mix loose pixels in the same component.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test on a narrow screen</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> narrow the preview. Spacing should stay proportional, not stack into a lump. Record the agreed scale on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>

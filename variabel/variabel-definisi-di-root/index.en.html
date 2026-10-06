@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Define CSS Custom Properties on :root — Clincoo Docs</title>
+<meta name="description" content="How to put Clincoo color and spacing tokens on :root so components do not repeat hex and pixel values.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-definisi-di-root/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Define CSS Custom Properties on :root — Clincoo Docs">
+<meta property="og:description" content="How to put Clincoo color and spacing tokens on :root so components do not repeat hex and pixel values.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-definisi-di-root/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Define CSS Custom Properties on :root</h1>
+<p class="mb-4">Colors and gaps copied into every component break when the theme changes. One mismatched hex is enough to make cards look uneven.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">One place for tokens</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> define --warna-teks, --warna-latar, and --jarak-kartu on :root. Components use var(--warna-teks), not a copied hex. Names start with two hyphens and stay lowercase.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test after changing a value</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> change one token and reload the preview. Every consumer of that token should follow. Record the token list on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> so new names do not collide.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — Using CSS custom properties</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){if(/\.pages\.dev$/.test(location.hostname))location.replace("https://blog.clincoo.buzz"+location.pathname+location.search+location.hash);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Switch a Dark Theme with Color Variables — Clincoo Docs</title>
+<meta name="description" content="How to override Clincoo color tokens in prefers-color-scheme or a .gelap class without copying the stylesheet.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.clincoo.buzz/variabel/variabel-tema-gelap/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Switch a Dark Theme with Color Variables — Clincoo Docs">
+<meta property="og:description" content="How to override Clincoo color tokens in prefers-color-scheme or a .gelap class without copying the stylesheet.">
+<meta property="og:url" content="https://blog.clincoo.buzz/variabel/variabel-tema-gelap/">
+<meta property="og:site_name" content="Clincoo Docs">
+<meta property="og:image" content="https://docs.clincoo.buzz/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/seo.css?v=4">
+</head>
+<body>
+<main>
+<h1>How to Switch a Dark Theme with Color Variables</h1>
+<p class="mb-4">A dark theme that duplicates the whole stylesheet falls behind. A new component often stays light because nobody copied its rules.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Override tokens, not rules</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> keep components on var(--warna-latar). In @media (prefers-color-scheme: dark) or .gelap, override --warna-latar and --warna-teks only. Do not repeat margin and font size in the theme block.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check contrast</h2><p class="mb-4">On <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> enable the system dark mode. Text and buttons should stay contrasted. Record the token pairs on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">MDN — prefers-color-scheme</a></p>
+<p><a href="https://blog.clincoo.buzz/variabel/">Back to category</a></p>
+</main>
+</body>
+</html>
