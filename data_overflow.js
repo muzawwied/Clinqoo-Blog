@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Overflow (7 Oktober 2026, 23:00 WIB) — 5 artikel
+// Clincoo Docs — kategori Overflow (7 Oktober 2026, 23:00 WIB) — 10 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["overflow"] = {
  "names": { "id": "Overflow", "en": "Overflow" },
@@ -145,6 +145,151 @@ window.countryDataFiles["overflow"] = {
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/minmax",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-clip-bukan-hidden-untuk-potongan",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai overflow clip agar Potongan Tidak Membuat Scroll Container",
+   "desc": "Tata cara mengganti overflow hidden dengan overflow clip di kartu Clincoo supaya fokus dan sticky tidak terjebak.",
+   "content": "<p class=\"mb-4\">overflow: hidden memotong isi, tetapi juga membuat scroll container. Itu sering menjebak position: sticky dan memengaruhi rantai scroll. overflow: clip memotong tanpa menjadi scroll container.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan clip dan hidden</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pilih kartu yang hanya perlu sudut membulat terpotong. Ganti overflow: hidden menjadi overflow: clip. Jangan pakai clip jika kontainer memang harus bisa digulir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji sticky dan fokus</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir header sticky di dalam kartu. Jika header ikut menggulir hanya karena hidden, clip biasanya mengembalikan perilaku yang diharapkan. Cek juga cincin fokus tidak terpotong di tepi.</p>",
+   "source": "MDN — overflow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "sourceSnippet": "overflow: clip clips content and, unlike hidden, does not create a scroll container.",
+   "source2": "MDN — position sticky",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use overflow clip So Cropping Does Not Create a Scroll Container",
+   "desc": "How to replace overflow hidden with overflow clip on Clincoo cards so focus and sticky are not trapped.",
+   "content": "<p class=\"mb-4\">overflow: hidden crops content, but it also creates a scroll container. That often traps position: sticky and changes scroll chaining. overflow: clip crops without becoming a scroll container.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tell clip from hidden</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> select a card that only needs rounded corners clipped. Replace overflow: hidden with overflow: clip. Do not use clip if the container must actually scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test sticky and focus</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll a sticky header inside the card. If the header only scrolls because of hidden, clip usually restores the expected behavior. Also check that the focus ring is not cropped at the edge.</p>",
+   "source": "MDN — overflow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "sourceSnippet": "overflow: clip clips content and, unlike hidden, does not create a scroll container.",
+   "source2": "MDN — position sticky",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-scrollbar-gutter-stabilkan-lebar",
+ "langs": {
+  "id": {
+   "title": "Cara Stabilkan Lebar dengan scrollbar-gutter saat Overflow Muncul",
+   "desc": "Tata cara mencadangkan ruang scrollbar di daftar Clincoo agar layout tidak bergeser saat konten bertambah.",
+   "content": "<p class=\"mb-4\">Daftar yang tiba-tiba bisa digulir sering menggeser konten karena scrollbar klasik memakan lebar. scrollbar-gutter mencadangkan ruang itu sebelum overflow terjadi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cadangkan gutter, bukan sembunyikan scroll</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pada panel daftar set overflow-y: auto dan scrollbar-gutter: stable. Jangan pakai overflow: hidden hanya untuk menghilangkan pergeseran.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan sebelum dan sesudah isi</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tambah item sampai scroll muncul. Lebar kartu dan tombol aksi harus tetap. Di overlay, both-edges berguna jika scrollbar bisa muncul di kedua sisi.</p>",
+   "source": "MDN — scrollbar-gutter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter",
+   "sourceSnippet": "scrollbar-gutter reserves space for the scrollbar so layout does not shift when overflow appears.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stabilize Width with scrollbar-gutter When Overflow Appears",
+   "desc": "How to reserve scrollbar space in a Clincoo list so layout does not shift when content grows.",
+   "content": "<p class=\"mb-4\">A list that suddenly becomes scrollable often shifts content because a classic scrollbar consumes width. scrollbar-gutter reserves that space before overflow happens.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reserve the gutter, do not hide scroll</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set overflow-y: auto and scrollbar-gutter: stable on the list panel. Do not use overflow: hidden only to remove the shift.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare before and after content</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> add items until scroll appears. Card width and action buttons should stay put. On overlays, both-edges helps if a scrollbar can appear on either side.</p>",
+   "source": "MDN — scrollbar-gutter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter",
+   "sourceSnippet": "scrollbar-gutter reserves space for the scrollbar so layout does not shift when overflow appears.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-dropdown-keluar-dari-kartu",
+ "langs": {
+  "id": {
+   "title": "Cara Keluarkan Dropdown dari Kartu yang Memakai Overflow",
+   "desc": "Tata cara mencegah menu Clincoo terpotong kartu induk dengan popover atau portal, bukan z-index buta.",
+   "content": "<p class=\"mb-4\">Menu yang terpotong di tepi kartu hampir selalu karena induk memakai overflow selain visible. Menaikkan z-index tidak menembus pemotongan itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Temukan induk yang memotong</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> telusuri induk sampai ketemu overflow: auto, hidden, atau clip. Catat apakah overflow itu memang untuk scroll isi kartu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pindahkan lapisan menu</h2><p class=\"mb-4\">Untuk menu pendek pakai atribut popover agar berada di top layer. Jika belum, render menu di luar kartu lalu posisikan dengan anchor. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka menu di baris terakhir dan pastikan semua item bisa diklik serta fokus tidak hilang.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API puts content in the top layer so it is not clipped by ancestor overflow.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Let a Dropdown Escape a Card That Uses Overflow",
+   "desc": "How to stop a Clincoo menu being clipped by a parent card with a popover or portal, not a blind z-index.",
+   "content": "<p class=\"mb-4\">A menu clipped at the card edge is almost always caused by an ancestor with overflow other than visible. Raising z-index does not punch through that clipping.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Find the clipping ancestor</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> walk up the tree until you find overflow: auto, hidden, or clip. Note whether that overflow is actually needed to scroll the card body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move the menu layer</h2><p class=\"mb-4\">For a short menu use the popover attribute so it sits in the top layer. If that is not available, render the menu outside the card and position it with an anchor. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the menu on the last row and confirm every item is clickable and focus is not lost.</p>",
+   "source": "MDN — Popover API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+   "sourceSnippet": "The Popover API puts content in the top layer so it is not clipped by ancestor overflow.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-overscroll-behavior-daftar-panjang",
+ "langs": {
+  "id": {
+   "title": "Cara Hentikan Scroll Bocor dengan overscroll-behavior pada Daftar Panjang",
+   "desc": "Tata cara mengunci rantai scroll di panel Clincoo tanpa mematikan scroll halaman di luar panel.",
+   "content": "<p class=\"mb-4\">Saat daftar internal sudah mentok, guliran berikutnya sering menggerakkan halaman di belakangnya. overscroll-behavior memutus rantai itu di kontainer yang memang digulir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang di kontainer scroll, bukan di body</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri overflow-y: auto dan overscroll-behavior: contain pada panel daftar. contain menghentikan scroll chaining dan tetap mengizinkan bounce di beberapa browser; none juga mematikan bounce.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji ujung atas dan bawah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir sampai mentok atas lalu bawah. Halaman induk tidak boleh ikut bergerak. Jangan pasang overscroll-behavior: none pada body jika pengguna masih perlu menarik untuk menyegarkan.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior controls scroll chaining to the ancestor when a scroll container reaches its boundary.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stop Scroll Chaining with overscroll-behavior on a Long List",
+   "desc": "How to lock scroll chaining in a Clincoo panel without disabling page scroll outside that panel.",
+   "content": "<p class=\"mb-4\">When an inner list hits its end, the next wheel tick often moves the page behind it. overscroll-behavior breaks that chain on the container that is meant to scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set it on the scroll container, not body</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set overflow-y: auto and overscroll-behavior: contain on the list panel. contain stops scroll chaining and still allows bounce in some browsers; none also disables bounce.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test both ends</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll to the top, then the bottom. The parent page must not move. Do not set overscroll-behavior: none on body if users still need pull-to-refresh.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior controls scroll chaining to the ancestor when a scroll container reaches its boundary.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-nowrap-tabel-buat-scroll-sumbu",
+ "langs": {
+  "id": {
+   "title": "Cara Bungkus Tabel nowrap agar Overflow Hanya di Sumbu Tabel",
+   "desc": "Tata cara memberi pembungkus overflow-x pada tabel Clincoo supaya halaman tidak ikut melebar.",
+   "content": "<p class=\"mb-4\">white-space: nowrap pada sel tabel berguna untuk angka, tetapi membuat tabel lebih lebar dari viewport. Overflow harus tinggal di pembungkus tabel, bukan di body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bungkus, jangan kunci body</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus table dengan div yang punya overflow-x: auto dan max-width: 100%. Tambah tabindex=\"0\" pada pembungkus supaya scroll horizontal bisa dijangkau keyboard.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jaga halaman tetap 100%</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan ke 360px. documentElement.scrollWidth harus sama dengan clientWidth, sementara pembungkus tabel yang menggulir. Beri caption atau teks bantuan bahwa tabel bisa digulir ke samping.</p>",
+   "source": "MDN — white-space",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space",
+   "sourceSnippet": "white-space: nowrap collapses whitespace and prevents text from wrapping, which can widen a table.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Wrap a nowrap Table So Overflow Stays on the Table Axis",
+   "desc": "How to add an overflow-x wrapper on a Clincoo table so the page itself does not grow wider.",
+   "content": "<p class=\"mb-4\">white-space: nowrap on table cells is useful for numbers, but it makes the table wider than the viewport. Overflow should stay on the table wrapper, not on the body.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Wrap it, do not lock the body</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap the table in a div with overflow-x: auto and max-width: 100%. Add tabindex=\"0\" on the wrapper so horizontal scroll is keyboard reachable.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the page at 100%</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow to 360px. documentElement.scrollWidth should match clientWidth, while the table wrapper scrolls. Provide a caption or hint that the table can be scrolled sideways.</p>",
+   "source": "MDN — white-space",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space",
+   "sourceSnippet": "white-space: nowrap collapses whitespace and prevents text from wrapping, which can widen a table.",
+   "source2": "MDN — overflow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
   }
  }
 }
