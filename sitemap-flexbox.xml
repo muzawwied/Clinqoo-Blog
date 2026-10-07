@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-baca-flex-shorthand/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-baca-flex-shorthand/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-baca-flex-shorthand/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-baca-flex-shorthand/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-align-baseline-label-input/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-align-baseline-label-input/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-align-baseline-label-input/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-align-baseline-label-input/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-wrap-kartu-responsif/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-wrap-kartu-responsif/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-wrap-kartu-responsif/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-wrap-kartu-responsif/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-kolom-nested-tinggi-nol/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-kolom-nested-tinggi-nol/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-kolom-nested-tinggi-nol/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-kolom-nested-tinggi-nol/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-justify-safe-center/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-justify-safe-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-justify-safe-center/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-justify-safe-center/"/>
+  </url>
+</urlset>
