@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 22:00 WIB)
 // Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 21:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -146,6 +147,151 @@
    "sourceSnippet": "Thresholds are ratios of intersection area over total bounding area, from 0.0 to 1.0.",
    "source2": "MDN — IntersectionObserverEntry.intersectionRatio",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/intersectionRatio",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-root-margin-prefetch-sebelum-terlihat",
+ "langs": {
+  "id": {
+   "title": "Cara Prefetch Bagian dengan rootMargin Sebelum Masuk Layar",
+   "desc": "Tata cara memakai rootMargin di Intersection Observer agar bagian berat Clincoo mulai dimuat sedikit sebelum terlihat.",
+   "content": "<p class=\\\"mb-4\\\">Memuat gambar atau blok besar tepat saat masuk viewport sering telat satu frame dan membuat halaman terasa tersendat.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Beri margin positif di root</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> buat IntersectionObserver dengan rootMargin 200px 0px. Saat elemen masih 200px di bawah lipatan, callback sudah jalan dan Anda bisa menyetel src atau menyisipkan markup. Jangan pakai margin besar di halaman pendek, karena semuanya langsung dianggap terlihat.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji jarak prefetch</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> gulir pelan dan lihat panel console: log harus muncul sebelum elemen menyentuh tepi layar. Catat nilai rootMargin di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> supaya prefetch tidak memakan kuota di koneksi lambat.</p>",
+   "source": "MDN — IntersectionObserver.rootMargin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin",
+   "sourceSnippet": "rootMargin grows or shrinks the root box used for intersection checks, similar to a CSS margin.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Prefetch a Section with rootMargin Before It Enters the Screen",
+   "desc": "How to use rootMargin on Intersection Observer so a heavy Clincoo section starts loading just before it is visible.",
+   "content": "<p class=\\\"mb-4\\\">Loading a large image or block exactly when it enters the viewport is often one frame late and makes the page feel stuck.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Add a positive root margin</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> create an IntersectionObserver with rootMargin 200px 0px. While the element is still 200px below the fold, the callback already runs and you can set src or insert markup. Do not use a huge margin on a short page, or everything counts as visible at once.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test the prefetch distance</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> scroll slowly and watch the console: the log should appear before the element touches the screen edge. Record the rootMargin value on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a> so prefetch does not burn data on a slow connection.</p>",
+   "source": "MDN — IntersectionObserver.rootMargin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin",
+   "sourceSnippet": "rootMargin grows or shrinks the root box used for intersection checks, similar to a CSS margin.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-set-root-ke-kontainer-scroll",
+ "langs": {
+  "id": {
+   "title": "Cara Set Root Observer ke Kontainer Scroll, Bukan Viewport",
+   "desc": "Tata cara mengisi opsi root agar Intersection Observer mengikuti panel yang bergulir di dalam halaman Clincoo.",
+   "content": "<p class=\\\"mb-4\\\">Daftar di dalam panel samping tidak memakai scroll jendela. Observer default hanya melihat viewport, jadi callback salah waktu.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Arahkan root ke elemen scroll</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> beri opsi root: elemen panel yang overflow auto. Pastikan elemen target adalah keturunan root. Jika root null, browser memakai viewport. Jangan mengamati elemen yang posisinya fixed terhadap jendela lalu mengharapkan root panel.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji scroll panel saja</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> gulir panel dalam tanpa menggeser halaman. Entri harus muncul saat item masuk panel, bukan saat masuk jendela. Catat id root di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — IntersectionObserver.root",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root",
+   "sourceSnippet": "The root is the ancestor element whose viewport is used for the intersection. Null means the browser viewport.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set an Observer Root to a Scroll Container, Not the Viewport",
+   "desc": "How to set the root option so Intersection Observer follows a scrolling panel inside a Clincoo page.",
+   "content": "<p class=\\\"mb-4\\\">A list inside a side panel does not use window scroll. The default observer only watches the viewport, so the callback fires at the wrong time.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Point root at the scrolling element</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> set root to the panel element that has overflow auto. The target must be a descendant of root. If root is null, the browser uses the viewport. Do not observe a fixed element and expect a panel root to matter.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test panel scroll only</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> scroll the inner panel without moving the page. The entry should fire when the item enters the panel, not the window. Record the root id on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — IntersectionObserver.root",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root",
+   "sourceSnippet": "The root is the ancestor element whose viewport is used for the intersection. Null means the browser viewport.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-hindari-loop-mutation-observer",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari Loop MutationObserver Saat Mengubah DOM",
+   "desc": "Tata cara menahan callback MutationObserver supaya ubahan yang Anda buat sendiri tidak memicu observasi tanpa henti.",
+   "content": "<p class=\\\"mb-4\\\">Callback yang menulis class atau teks pada node yang sama akan memicu mutasi baru, lalu callback lagi, sampai halaman berat.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Putuskan sebentar atau saring mutasi</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> panggil observer.disconnect sebelum mengubah DOM, lalu observe lagi setelah selesai. Atau abaikan mutasi yang atributnya Anda set sendiri. Batasi childList dan attributes ke subtree yang benar-benar perlu, jangan amati document.body tanpa filter.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji tidak ada lonjakan callback</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> lakukan satu aksi, lalu hitung log di console. Harus satu gelombang, bukan puluhan per detik. Catat atribut yang diamati di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — MutationObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
+   "sourceSnippet": "MutationObserver invokes a callback when the DOM changes. Changes made inside the callback can be observed again.",
+   "source2": "MDN — MutationObserver.disconnect",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/disconnect",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid a MutationObserver Loop When You Change the DOM",
+   "desc": "How to guard a MutationObserver callback so changes you make yourself do not trigger endless observation.",
+   "content": "<p class=\\\"mb-4\\\">A callback that writes a class or text on the same node triggers a new mutation, then another callback, until the page gets heavy.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Disconnect briefly or filter mutations</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> call observer.disconnect before changing the DOM, then observe again when finished. Or ignore mutations whose attribute you set yourself. Limit childList and attributes to the subtree you actually need; do not watch document.body with no filter.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test that callbacks do not spike</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> do one action, then count console logs. There should be one burst, not dozens per second. Record the observed attributes on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — MutationObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
+   "sourceSnippet": "MutationObserver invokes a callback when the DOM changes. Changes made inside the callback can be observed again.",
+   "source2": "MDN — MutationObserver.disconnect",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/disconnect",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-jeda-saat-tab-tersembunyi",
+ "langs": {
+  "id": {
+   "title": "Cara Jeda Observer Saat Tab Browser Tersembunyi",
+   "desc": "Tata cara menghentikan Intersection Observer saat document.hidden agar pekerjaan Clincoo tidak jalan di tab latar.",
+   "content": "<p class=\\\"mb-4\\\">Observer tetap memanggil callback di tab yang tidak aktif jika elemen dianggap berpotongan, dan itu membuang baterai.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Dengar visibilitychange</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> dengarkan visibilitychange. Jika document.hidden, panggil disconnect. Saat visible lagi, observe target yang sama. Jangan mengandalkan requestAnimationFrame di tab tersembunyi; browser sudah menundanya, tetapi observer tidak selalu ikut.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji ganti tab</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> buka halaman, pindah tab lain sepuluh detik, lalu kembali. Log tidak boleh bertambah saat tersembunyi. Catat hasilnya di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Page Visibility API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+   "sourceSnippet": "The Page Visibility API lets you know when a document is visible or hidden via the visibilitychange event.",
+   "source2": "MDN — Document.hidden",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/hidden",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Pause an Observer When the Browser Tab Is Hidden",
+   "desc": "How to stop an Intersection Observer when document.hidden so Clincoo work does not run in a background tab.",
+   "content": "<p class=\\\"mb-4\\\">An observer can still call back in an inactive tab if an element counts as intersecting, and that wastes battery.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Listen for visibilitychange</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> listen for visibilitychange. If document.hidden, call disconnect. When visible again, observe the same targets. Do not rely on requestAnimationFrame in a hidden tab; the browser already pauses it, but an observer does not always follow.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test a tab switch</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> open the page, switch away for ten seconds, then return. Logs must not increase while hidden. Record the result on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Page Visibility API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+   "sourceSnippet": "The Page Visibility API lets you know when a document is visible or hidden via the visibilitychange event.",
+   "source2": "MDN — Document.hidden",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/hidden",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-cek-dukungan-dan-fallback",
+ "langs": {
+  "id": {
+   "title": "Cara Cek Dukungan Observer dan Siapkan Fallback",
+   "desc": "Tata cara mendeteksi IntersectionObserver sebelum dipakai, lalu memuat konten langsung jika browser Clincoo tidak mendukung.",
+   "content": "<p class=\\\"mb-4\\\">Memanggil IntersectionObserver di browser lama melempar ReferenceError dan gambar tidak pernah terpasang.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Cek window sebelum new</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> bungkus dengan if ('IntersectionObserver' in window). Jika tidak ada, set src gambar langsung dan tampilkan bagian yang ditunda. Jangan hanya menangkap error di callback; konstruktornya yang gagal lebih dulu.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Uji fallback</h2><p class=\\\"mb-4\\\">Di <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> simulakan dengan menonaktifkan API di console, atau buka pratinjau di browser lama. Konten harus tetap ada, hanya tanpa tunda. Catat cabang fallback di <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — IntersectionObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver",
+   "sourceSnippet": "IntersectionObserver is available in modern browsers. Feature-detect it on window before constructing one.",
+   "source2": "MDN — Feature detection",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check Observer Support and Prepare a Fallback",
+   "desc": "How to detect IntersectionObserver before using it, then load content immediately if the Clincoo browser does not support it.",
+   "content": "<p class=\\\"mb-4\\\">Calling IntersectionObserver in an old browser throws ReferenceError and the image never attaches.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Check window before new</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://editor.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">editor.clincoo.buzz</a> wrap with if ('IntersectionObserver' in window). If it is missing, set image src immediately and show the deferred section. Do not only catch errors in the callback; the constructor fails first.</p><h2 class=\\\"text-lg font-bold text-gray-900 mt-8 mb-2\\\">Test the fallback</h2><p class=\\\"mb-4\\\">In <a href=\\\"https://app.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">app.clincoo.buzz</a> simulate by disabling the API in the console, or open the preview in an old browser. Content must still appear, just without the delay. Record the fallback branch on <a href=\\\"https://blog.clincoo.buzz/\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\" class=\\\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\\\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — IntersectionObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver",
+   "sourceSnippet": "IntersectionObserver is available in modern browsers. Feature-detect it on window before constructing one.",
+   "source2": "MDN — Feature detection",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
