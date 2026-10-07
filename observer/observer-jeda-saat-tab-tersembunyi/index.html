@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Jeda Observer Saat Tab Browser Tersembunyi — Clincoo</title>
+<meta name="description" content="Tata cara menghentikan Intersection Observer saat document.hidden agar pekerjaan Clincoo tidak jalan di tab latar.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Jeda Observer Saat Tab Browser Tersembunyi">
+<meta property="og:description" content="Tata cara menghentikan Intersection Observer saat document.hidden agar pekerjaan Clincoo tidak jalan di tab latar.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+</head>
+<body>
+<article>
+<h1>Cara Jeda Observer Saat Tab Browser Tersembunyi</h1>
+<p>Tata cara menghentikan Intersection Observer saat document.hidden agar pekerjaan Clincoo tidak jalan di tab latar.</p>
+<p class="mb-4">Observer tetap memanggil callback di tab yang tidak aktif jika elemen dianggap berpotongan, dan itu membuang baterai.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Dengar visibilitychange</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> dengarkan visibilitychange. Jika document.hidden, panggil disconnect. Saat visible lagi, observe target yang sama. Jangan mengandalkan requestAnimationFrame di tab tersembunyi; browser sudah menundanya, tetapi observer tidak selalu ikut.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji ganti tab</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka halaman, pindah tab lain sepuluh detik, lalu kembali. Log tidak boleh bertambah saat tersembunyi. Catat hasilnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API">MDN — Page Visibility API</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
