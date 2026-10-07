@@ -1,4 +1,5 @@
 // Clincoo Docs — kategori Cascade (7 Oktober 2026, 14:00 WIB) — 5 artikel baru
+// Clincoo Docs — tambah 5 artikel Cascade (7 Oktober 2026, 15:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["cascade"] = {
  "names": { "id": "Cascade", "en": "Cascade" },
@@ -143,6 +144,151 @@ window.countryDataFiles["cascade"] = {
    "sourceSnippet": "Using !important is a last resort; it reverses the normal cascade and makes later overrides harder.",
    "source2": "CSS Cascading and Inheritance Level 5",
    "source2Url": "https://www.w3.org/TR/css-cascade-5/#importance",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-pakai-revert-layer-bukan-revert",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai revert-layer, Bukan revert",
+   "desc": "Tata cara mengembalikan properti Clincoo ke hasil layer sebelumnya dengan revert-layer, bukan ke user agent.",
+   "content": "<p class=\"mb-4\"><code>revert</code> mengembalikan properti sampai ke stylesheet user agent. Di komponen yang sudah berlayer, itu sering menghapus reset yang seharusnya tetap hidup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih revert-layer di komponen</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis <code>margin: revert-layer;</code> di dalam <code>@layer components</code> jika kartu harus mewarisi reset, bukan margin browser. <code>revert</code> hanya untuk properti yang memang ingin kembali ke asal browser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek pemenang di Computed</h2><p class=\"mb-4\">Pilih elemen di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, buka Computed, lalu lihat layer pemenang. Jika pemenangnya user agent, ganti ke <code>revert-layer</code>. Catat properti yang sengaja di-revert di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — revert-layer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer",
+   "sourceSnippet": "The revert-layer keyword rolls back the cascade to the previous cascade layer.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#revert-layer",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use revert-layer Instead of revert",
+   "desc": "How to roll a Clincoo property back to the previous layer with revert-layer, not to the user agent.",
+   "content": "<p class=\"mb-4\"><code>revert</code> rolls a property back to the user-agent stylesheet. Inside a layered component, that often wipes a reset that should stay in effect.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prefer revert-layer in components</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write <code>margin: revert-layer;</code> inside <code>@layer components</code> when a card should inherit the reset, not the browser margin. Use <code>revert</code> only for properties that should truly return to the browser origin.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the winner in Computed</h2><p class=\"mb-4\">Select the element in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, open Computed, and read the winning layer. If the user agent won, switch to <code>revert-layer</code>. Note properties you intentionally revert on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — revert-layer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer",
+   "sourceSnippet": "The revert-layer keyword rolls back the cascade to the previous cascade layer.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#revert-layer",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-baca-asal-aturan-author-user-agent",
+ "langs": {
+  "id": {
+   "title": "Cara Baca Asal Aturan Author dan User Agent",
+   "desc": "Tata cara membedakan stylesheet Clincoo, user agent, dan user di DevTools saat gaya tampak datang dari browser.",
+   "content": "<p class=\"mb-4\">Warna tautan atau margin body yang aneh sering berasal dari user agent, bukan dari berkas yang baru disimpan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lihat nama sumber</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pilih elemen, buka Styles, lalu baca label di kanan aturan. <code>user agent stylesheet</code> adalah bawaan browser. Aturan dari berkas proyek adalah author origin. Jangan menimpa user agent dengan ID jika reset di layer <code>reset</code> sudah cukup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan reset sebelum komponen</h2><p class=\"mb-4\">Letakkan reset margin dan warna tautan di layer paling rendah. Uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pada Chrome dan Firefox. Tulis pengecualian browser di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Cascade origin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade",
+   "sourceSnippet": "The cascade considers origin and importance before specificity and source order.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#cascade-origin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read Author vs User-Agent Origins",
+   "desc": "How to tell Clincoo stylesheets, user agent, and user styles apart in DevTools when a style looks like it came from the browser.",
+   "content": "<p class=\"mb-4\">An odd link color or body margin often comes from the user agent, not from the file you just saved.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the source label</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> select the element, open Styles, and read the label beside the rule. <code>user agent stylesheet</code> is the browser default. A project file is author origin. Do not override the user agent with an ID if a reset in the <code>reset</code> layer is enough.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put the reset before components</h2><p class=\"mb-4\">Place margin and link-color resets in the lowest layer. Check the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> in Chrome and Firefox. Write browser exceptions on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Cascade origin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade",
+   "sourceSnippet": "The cascade considers origin and importance before specificity and source order.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#cascade-origin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-bedakan-gaya-inline-dan-stylesheet",
+ "langs": {
+  "id": {
+   "title": "Cara Bedakan Gaya Inline dan Stylesheet",
+   "desc": "Tata cara menemukan style atribut yang mengalahkan berkas CSS Clincoo, lalu memindahkannya ke kelas.",
+   "content": "<p class=\"mb-4\">Atribut <code>style</code> punya spesifisitas tinggi di author origin dan sering menang atas kelas di stylesheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cari elemen dengan style</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cari <code>style=</code> di HTML. Di DevTools, aturan inline tampil sebagai <code>element.style</code>. Pindahkan warna, lebar, dan jarak ke kelas di layer komponen atau utilitas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sisakan inline hanya untuk nilai dinamis</h2><p class=\"mb-4\">Tinggi yang dihitung dari data boleh tetap inline. Warna tema tidak. Uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> setelah kelas menang. Ringkas pengecualian di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Specificity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",
+   "sourceSnippet": "Declarations in a style attribute are treated as author-origin declarations with high specificity.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#style-attr",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Tell Inline Styles from Stylesheets",
+   "desc": "How to find a style attribute that beats a Clincoo stylesheet, then move it onto a class.",
+   "content": "<p class=\"mb-4\">A <code>style</code> attribute has high author specificity and often beats a class in a stylesheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Find elements with style</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> search HTML for <code>style=</code>. In DevTools, an inline rule shows as <code>element.style</code>. Move color, width, and spacing onto a class in the components or utilities layer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep inline only for dynamic values</h2><p class=\"mb-4\">A height computed from data may stay inline. A theme color should not. Check the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> after the class wins. Summarize exceptions on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Specificity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",
+   "sourceSnippet": "Declarations in a style attribute are treated as author-origin declarations with high specificity.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#style-attr",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-samakan-spesifisitas-lalu-andalkan-urutan",
+ "langs": {
+  "id": {
+   "title": "Cara Samakan Spesifisitas lalu Andalkan Urutan Sumber",
+   "desc": "Tata cara membuat dua selektor Clincoo seimbang supaya yang menang adalah yang ditulis belakangan, bukan yang lebih rumit.",
+   "content": "<p class=\"mb-4\">Jika spesifisitas sama dan layer sama, urutan sumber yang menentukan. Selektor yang lebih panjang hanya membingungkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan bentuk selektor</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bandingkan dua aturan yang bentrok. Jika satu memakai dua kelas dan yang lain satu kelas, samakan keduanya jadi satu kelas, lalu letakkan pengecualian di bawah aturan dasar dalam berkas yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan mengandalkan urutan impor yang rapuh</h2><p class=\"mb-4\">Urutan menang di dalam satu berkas mudah dibaca. Urutan antar berkas mudah berubah saat impor pindah. Uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dan tulis urutan yang disepakati di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Cascade",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade",
+   "sourceSnippet": "When origin, importance, and specificity tie, the declaration that appears last in source order wins.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#cascade-sort",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Match Specificity and Rely on Source Order",
+   "desc": "How to balance two Clincoo selectors so the later rule wins, not the more complicated one.",
+   "content": "<p class=\"mb-4\">When specificity and layer match, source order decides. A longer selector only makes the tie harder to see.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match selector shape</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> compare the two clashing rules. If one uses two classes and the other uses one, make both a single class, then place the exception below the base rule in the same file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a fragile import order</h2><p class=\"mb-4\">Order inside one file is easy to read. Order across files breaks when an import moves. Check the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> and write the agreed order on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Cascade",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade",
+   "sourceSnippet": "When origin, importance, and specificity tie, the declaration that appears last in source order wins.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#cascade-sort",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-scope-gaya-komponen-tanpa-menaikkan-selektor",
+ "langs": {
+  "id": {
+   "title": "Cara Scope Gaya Komponen tanpa Menaikkan Selektor",
+   "desc": "Tata cara membatasi gaya kartu Clincoo dengan @scope supaya tidak perlu selektor panjang yang menaikkan spesifisitas.",
+   "content": "<p class=\"mb-4\">Membungkus setiap aturan dengan <code>.card .title</code> menaikkan spesifisitas dan menyulitkan utilitas. <code>@scope</code> membatasi wilayah tanpa menambah kelas pada setiap selektor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi akar komponen</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis <code>@scope (.card) { h2 { font-size: 1.25rem; } }</code> di layer komponen. Selektor di dalam scope hanya berlaku di bawah <code>.card</code>. Jangan menggabungkannya dengan ID.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji batas dan utilitas</h2><p class=\"mb-4\">Pastikan judul di luar kartu tidak berubah, dan kelas utilitas di layer lebih tinggi tetap bisa menimpa. Cek di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Simpan contoh scope di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @scope",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@scope",
+   "sourceSnippet": "The @scope at-rule limits the reach of style rules to a subtree without raising specificity the way a long selector does.",
+   "source2": "CSS Cascading and Inheritance Level 6",
+   "source2Url": "https://www.w3.org/TR/css-cascade-6/#scope-atrule",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Scope Component Styles without Raising Selectors",
+   "desc": "How to limit Clincoo card styles with @scope so you do not need a long selector that raises specificity.",
+   "content": "<p class=\"mb-4\">Wrapping every rule in <code>.card .title</code> raises specificity and fights utilities. <code>@scope</code> limits the subtree without adding a class to every selector.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit the component root</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write <code>@scope (.card) { h2 { font-size: 1.25rem; } }</code> in the components layer. Rules inside the scope apply only under <code>.card</code>. Do not combine it with an ID.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the boundary and utilities</h2><p class=\"mb-4\">Confirm a heading outside the card does not change, and that a utility in a higher layer can still override. Check the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Keep a scope example on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @scope",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@scope",
+   "sourceSnippet": "The @scope at-rule limits the reach of style rules to a subtree without raising specificity the way a long selector does.",
+   "source2": "CSS Cascading and Inheritance Level 6",
+   "source2Url": "https://www.w3.org/TR/css-cascade-6/#scope-atrule",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
