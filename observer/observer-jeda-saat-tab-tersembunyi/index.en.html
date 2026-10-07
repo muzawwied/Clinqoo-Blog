@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Pause an Observer When the Browser Tab Is Hidden — Clincoo</title>
+<meta name="description" content="How to stop an Intersection Observer when document.hidden so Clincoo work does not run in a background tab.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Pause an Observer When the Browser Tab Is Hidden">
+<meta property="og:description" content="How to stop an Intersection Observer when document.hidden so Clincoo work does not run in a background tab.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Pause an Observer When the Browser Tab Is Hidden</h1>
+<p>How to stop an Intersection Observer when document.hidden so Clincoo work does not run in a background tab.</p>
+<p class="mb-4">An observer can still call back in an inactive tab if an element counts as intersecting, and that wastes battery.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Listen for visibilitychange</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> listen for visibilitychange. If document.hidden, call disconnect. When visible again, observe the same targets. Do not rely on requestAnimationFrame in a hidden tab; the browser already pauses it, but an observer does not always follow.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test a tab switch</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the page, switch away for ten seconds, then return. Logs must not increase while hidden. Record the result on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API">MDN — Page Visibility API</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
