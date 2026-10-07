@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hindari Loop MutationObserver Saat Mengubah DOM — Clincoo</title>
+<meta name="description" content="Tata cara menahan callback MutationObserver supaya ubahan yang Anda buat sendiri tidak memicu observasi tanpa henti.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hindari Loop MutationObserver Saat Mengubah DOM">
+<meta property="og:description" content="Tata cara menahan callback MutationObserver supaya ubahan yang Anda buat sendiri tidak memicu observasi tanpa henti.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+</head>
+<body>
+<article>
+<h1>Cara Hindari Loop MutationObserver Saat Mengubah DOM</h1>
+<p>Tata cara menahan callback MutationObserver supaya ubahan yang Anda buat sendiri tidak memicu observasi tanpa henti.</p>
+<p class="mb-4">Callback yang menulis class atau teks pada node yang sama akan memicu mutasi baru, lalu callback lagi, sampai halaman berat.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Putuskan sebentar atau saring mutasi</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> panggil observer.disconnect sebelum mengubah DOM, lalu observe lagi setelah selesai. Atau abaikan mutasi yang atributnya Anda set sendiri. Batasi childList dan attributes ke subtree yang benar-benar perlu, jangan amati document.body tanpa filter.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji tidak ada lonjakan callback</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> lakukan satu aksi, lalu hitung log di console. Harus satu gelombang, bukan puluhan per detik. Catat atribut yang diamati di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MDN — MutationObserver</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
