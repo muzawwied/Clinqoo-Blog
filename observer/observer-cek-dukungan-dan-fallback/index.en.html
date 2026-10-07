@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Check Observer Support and Prepare a Fallback — Clincoo</title>
+<meta name="description" content="How to detect IntersectionObserver before using it, then load content immediately if the Clincoo browser does not support it.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Check Observer Support and Prepare a Fallback">
+<meta property="og:description" content="How to detect IntersectionObserver before using it, then load content immediately if the Clincoo browser does not support it.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Check Observer Support and Prepare a Fallback</h1>
+<p>How to detect IntersectionObserver before using it, then load content immediately if the Clincoo browser does not support it.</p>
+<p class="mb-4">Calling IntersectionObserver in an old browser throws ReferenceError and the image never attaches.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check window before new</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> wrap with if ('IntersectionObserver' in window). If it is missing, set image src immediately and show the deferred section. Do not only catch errors in the callback; the constructor fails first.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test the fallback</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> simulate by disabling the API in the console, or open the preview in an old browser. Content must still appear, just without the delay. Record the fallback branch on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">MDN — IntersectionObserver</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
