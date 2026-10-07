@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Storage (7 Oktober 2026, 12:00 WIB) — 7 artikel
+// Clincoo Docs — kategori Storage (7 Oktober 2026, 13:00 WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["storage"] = {
  "names": { "id": "Storage", "en": "Storage" },
@@ -206,5 +206,156 @@ window.countryDataFiles["storage"] = {
   }
  }
 }
+,
+{
+ "id": "storage-ukur-byte-sebelum-setitem",
+ "langs": {
+  "id": {
+   "title": "Cara Ukur Byte String Sebelum setItem",
+   "desc": "Tata cara menghitung ukuran JSON sebelum localStorage.setItem agar tidak melempar QuotaExceededError di Clincoo.",
+   "content": "<p class=\"mb-4\">setItem menerima string. JSON yang terlihat kecil di editor bisa melewati kuota setelah di-serialize, lalu simpan gagal di tengah draf.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hitung sebelum menulis</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat string dengan JSON.stringify, lalu ukur byte lewat new Blob([nilai]).size. Jika lebih dari batas yang Anda tetapkan, pangkas riwayat atau simpan ringkasan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan panjang karakter</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> karakter non-ASCII memakai lebih dari satu byte. Catat batas byte di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya draf tetap muat.</p>",
+   "source": "MDN — Blob.size",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Blob/size",
+   "sourceSnippet": "The size property returns the size in bytes of the data contained in the Blob.",
+   "source2": "MDN — Storage.setItem",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Measure String Bytes Before setItem",
+   "desc": "How to measure JSON size before localStorage.setItem so Clincoo drafts do not throw QuotaExceededError.",
+   "content": "<p class=\"mb-4\">setItem stores a string. JSON that looks small in the editor can exceed the quota after serialization, and the draft save fails halfway.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure before writing</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> build the string with JSON.stringify, then measure bytes with new Blob([value]).size. If it passes your limit, trim history or store a summary.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not trust character length</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> non-ASCII characters use more than one byte. Record the byte limit on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so drafts still fit.</p>",
+   "source": "MDN — Blob.size",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Blob/size",
+   "sourceSnippet": "The size property returns the size in bytes of the data contained in the Blob.",
+   "source2": "MDN — Storage.setItem",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "storage-tunda-tulis-dengan-debounce",
+ "langs": {
+  "id": {
+   "title": "Cara Tunda Tulis localStorage dengan Debounce",
+   "desc": "Tata cara menunda setItem saat mengetik agar draf Clincoo tidak menulis storage di setiap keystroke.",
+   "content": "<p class=\"mb-4\">Menulis localStorage di setiap input membuat tab berat dan mudah menabrak kuota. Draf formulir cukup disimpan setelah pengguna berhenti mengetik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jadwalkan satu tulis</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan id timeout. Setiap input, clearTimeout lalu setTimeout sekitar 400 ms yang memanggil setItem. Saat beforeunload, tulis sekali lagi jika masih ada perubahan tertunda.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tulis rahasia</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> debounce hanya untuk draf teks, bukan token. Catat jeda yang dipakai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Window.setTimeout",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "sourceSnippet": "setTimeout schedules a function to run after a delay, which is the usual way to debounce writes.",
+   "source2": "MDN — localStorage",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debounce localStorage Writes",
+   "desc": "How to delay setItem while typing so Clincoo drafts do not write storage on every keystroke.",
+   "content": "<p class=\"mb-4\">Writing localStorage on every input makes the tab sluggish and easier to hit the quota. A form draft only needs to be saved after the user pauses.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Schedule one write</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep a timeout id. On each input, clearTimeout then setTimeout about 400 ms that calls setItem. On beforeunload, write once more if a change is still pending.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not write secrets</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> debounce text drafts only, not tokens. Record the delay on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Window.setTimeout",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "sourceSnippet": "setTimeout schedules a function to run after a delay, which is the usual way to debounce writes.",
+   "source2": "MDN — localStorage",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "storage-migrasi-kunci-saat-ganti-nama",
+ "langs": {
+  "id": {
+   "title": "Cara Migrasi Kunci Storage Saat Nama Berubah",
+   "desc": "Tata cara menyalin nilai kunci lama ke nama baru lalu menghapus kunci lama di proyek Clincoo.",
+   "content": "<p class=\"mb-4\">Mengganti nama kunci tanpa migrasi membuat draf pengguna hilang setelah rilis. Nilai lama tetap ada, tetapi kode baru tidak membacanya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Salin sekali, lalu hapus</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> saat muat, jika kunci baru kosong dan kunci lama ada, salin nilainya dengan setItem lalu removeItem pada kunci lama. Jalankan migrasi sekali, bukan di setiap render.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat versi skema</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> simpan angka versi skema di kunci terpisah. Tulis langkah migrasi di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar rilis berikutnya tidak menimpa data.</p>",
+   "source": "MDN — Storage.getItem",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem",
+   "sourceSnippet": "getItem returns the current value for a key, or null when that key has not been set.",
+   "source2": "MDN — Storage.removeItem",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Migrate a Storage Key When Its Name Changes",
+   "desc": "How to copy an old key to a new name and then remove the old key in a Clincoo project.",
+   "content": "<p class=\"mb-4\">Renaming a key without a migration drops the user's draft after release. The old value is still there, but the new code never reads it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Copy once, then delete</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> on load, if the new key is empty and the old key exists, copy it with setItem then removeItem on the old key. Run the migration once, not on every render.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record the schema version</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> store a schema version in a separate key. Write the migration steps on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next release does not overwrite data.</p>",
+   "source": "MDN — Storage.getItem",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem",
+   "sourceSnippet": "getItem returns the current value for a key, or null when that key has not been set.",
+   "source2": "MDN — Storage.removeItem",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "storage-jangan-simpan-html-mentah",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Simpan HTML Mentah di Storage",
+   "desc": "Tata cara menyimpan teks polos, bukan markup, agar draf Clincoo tidak menjadi vektor XSS saat dibaca kembali.",
+   "content": "<p class=\"mb-4\">localStorage bisa diubah dari skrip lain di origin yang sama. Menyimpan HTML lalu memasukkannya dengan innerHTML menampilkan markup yang tidak Anda tulis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan data, bukan markup</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan objek bidang formulir lewat JSON.stringify. Saat memuat, isi textContent atau value, bukan innerHTML.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tolak string yang berisi tag</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jika draf harus menolak markup, buang nilai yang berisi < sebelum disimpan. Catat aturan ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "OWASP — DOM based XSS Prevention Cheat Sheet",
+   "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+   "sourceSnippet": "Untrusted data should not be written into HTML parsing sinks such as innerHTML.",
+   "source2": "MDN — Node.textContent",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Storing Raw HTML in Storage",
+   "desc": "How to store plain text instead of markup so a Clincoo draft does not become an XSS sink when read back.",
+   "content": "<p class=\"mb-4\">localStorage can be changed by other script on the same origin. Saving HTML and injecting it with innerHTML renders markup you did not write.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Store data, not markup</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> save form fields with JSON.stringify. On load, set textContent or value, not innerHTML.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reject strings that contain tags</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> if a draft must reject markup, drop values that contain < before saving. Record this rule on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "OWASP — DOM based XSS Prevention Cheat Sheet",
+   "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+   "sourceSnippet": "Untrusted data should not be written into HTML parsing sinks such as innerHTML.",
+   "source2": "MDN — Node.textContent",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "storage-cek-storage-ada-sebelum-akses",
+ "langs": {
+  "id": {
+   "title": "Cara Cek Storage Ada Sebelum Diakses",
+   "desc": "Tata cara mendeteksi localStorage yang diblokir sebelum membaca kunci draf di proyek Clincoo.",
+   "content": "<p class=\"mb-4\">Mengakses localStorage bisa melempar SecurityError jika browser memblokirnya. Kode yang langsung memanggil getItem membuat halaman draf gagal sebelum formulir tampil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji tulis kecil</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus setItem dan removeItem pada kunci uji di dalam try/catch. Jika lempar, anggap storage tidak tersedia dan simpan draf hanya di memori.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan paksa muat ulang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tampilkan catatan bahwa draf tidak tersimpan di browser, bukan halaman kosong. Tulis pesan itu di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Web Storage API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+   "sourceSnippet": "Access to storage can throw a security exception when the browser blocks it.",
+   "source2": "MDN — Window.localStorage",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check Storage Exists Before Access",
+   "desc": "How to detect blocked localStorage before reading a draft key in a Clincoo project.",
+   "content": "<p class=\"mb-4\">Reading localStorage can throw SecurityError when the browser blocks it. Code that calls getItem immediately fails the draft page before the form renders.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Probe with a tiny write</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap setItem and removeItem for a probe key in try/catch. If it throws, treat storage as unavailable and keep the draft in memory only.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not force a reload</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> show a note that the draft is not saved in the browser, not a blank page. Write that message on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Web Storage API",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+   "sourceSnippet": "Access to storage can throw a security exception when the browser blocks it.",
+   "source2": "MDN — Window.localStorage",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+
  ]
 };
