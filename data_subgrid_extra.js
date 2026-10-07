@@ -1,4 +1,4 @@
-// Clincoo Docs — tambah artikel Subgrid 5-9 (7 Oktober 2026, 10:00 WIB)
+// Clincoo Docs — tambah artikel Subgrid 5-12 (7 Oktober 2026, 11:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.subgrid) return;
   var list = window.countryDataFiles.subgrid.articles;
@@ -143,6 +143,94 @@
    "sourceSnippet": "DevTools can overlay grid lines and show the computed grid template.",
    "source2": "MDN — subgrid",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "subgrid-span-melebihi-jumlah-track",
+ "langs": {
+  "id": {
+   "title": "Cara Debug Span subgrid yang Melebihi Jumlah Track",
+   "desc": "Tata cara memperbaiki kartu subgrid yang meluber karena span lebih besar dari track induk.",
+   "content": "<p class=\"mb-4\">Span yang lebih besar dari jumlah track induk membuat item subgrid meluber atau pindah baris tanpa pesan error di konsol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hitung track, lalu span</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka panel Grid. Catat jumlah kolom induk, lalu bandingkan dengan grid-column: span N pada anak. Jika N lebih besar, kecilkan span atau tambah track induk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau sempit</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan pratinjau. Span yang aman di desktop sering pecah di ponsel. Simpan cuplikan gejala di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum mengubah template.</p>",
+   "source": "MDN — grid-column",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column",
+   "sourceSnippet": "The grid-column CSS shorthand specifies a grid item's size and location within the grid column.",
+   "source2": "MDN — subgrid",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debug a subgrid Span That Exceeds the Track Count",
+   "desc": "How to fix a subgrid card that overflows because its span is larger than the parent tracks.",
+   "content": "<p class=\"mb-4\">A span larger than the parent track count makes a subgrid item overflow or wrap with no console error.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Count tracks, then the span</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the Grid overlay. Note the parent column count, then compare it with grid-column: span N on the child. If N is larger, shrink the span or add a parent track.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the narrow preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow the preview. A span that is safe on desktop often breaks on a phone. Save the symptom on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before changing the template.</p>",
+   "source": "MDN — grid-column",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column",
+   "sourceSnippet": "The grid-column CSS shorthand specifies a grid item's size and location within the grid column.",
+   "source2": "MDN — subgrid",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "subgrid-areas-tidak-diwariskan",
+ "langs": {
+  "id": {
+   "title": "Cara Mengganti grid-template-areas yang Tidak Diwariskan subgrid",
+   "desc": "Tata cara menyusun ulang area kartu karena subgrid mewarisi track, bukan nama area induk.",
+   "content": "<p class=\"mb-4\">subgrid mewarisi ukuran track dan nama garis, tetapi tidak menyalin grid-template-areas induk. Anak yang memakai nama area lama akan jatuh ke penempatan otomatis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti area dengan garis</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis penempatan anak memakai grid-column dan grid-row, atau named lines yang memang diwariskan. Jangan mengharapkan nama area seperti header tetap ada di kartu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu kartu sebagai contoh</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> perbaiki satu kartu dulu, lalu salin pola ke kartu lain. Catat pemetaan lama ke baru di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "The subgrid value lets a grid item inherit the parent grid's tracks rather than defining its own.",
+   "source2": "MDN — grid-template-areas",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Replace grid-template-areas That subgrid Does Not Inherit",
+   "desc": "How to rebuild card areas because subgrid inherits tracks, not the parent's area names.",
+   "content": "<p class=\"mb-4\">subgrid inherits track sizes and line names, but it does not copy the parent grid-template-areas. A child that still uses the old area name falls back to auto placement.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace areas with lines</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> place children with grid-column and grid-row, or with named lines that are actually inherited. Do not expect an area name such as header to exist on the card.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fix one card first</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> fix one card, then copy the pattern. Record the old-to-new mapping on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "The subgrid value lets a grid item inherit the parent grid's tracks rather than defining its own.",
+   "source2": "MDN — grid-template-areas",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "subgrid-debug-baris-tidak-sejajar",
+ "langs": {
+  "id": {
+   "title": "Cara Debug Baris subgrid yang Tidak Sejajar",
+   "desc": "Tata cara menyejajarkan baris kartu subgrid yang tingginya berbeda karena konten, bukan karena track.",
+   "content": "<p class=\"mb-4\">Baris yang tidak sejajar biasanya berarti anak belum memakai grid-template-rows: subgrid, atau jumlah baris anak tidak sama dengan track induk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan sumbu baris</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> setel grid-template-rows: subgrid pada kartu dan pastikan induk punya track baris yang eksplisit. Tinggi otomatis dari paragraf tidak akan menyamakan label jika track baris tidak diwariskan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan dua kartu</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> isi satu kartu dengan teks pendek dan satu dengan teks panjang. Jika garis label tetap sebaris, warisan baris sudah benar. Simpan tangkapan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "Using subgrid on rows lets nested items align to the same row tracks as the parent grid.",
+   "source2": "MDN — grid-template-rows",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debug subgrid Rows That Do Not Line Up",
+   "desc": "How to align subgrid card rows whose heights differ because of content, not tracks.",
+   "content": "<p class=\"mb-4\">Rows that do not line up usually mean the child is not using grid-template-rows: subgrid, or the child row count does not match the parent tracks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the row axis</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set grid-template-rows: subgrid on the card and make sure the parent has explicit row tracks. Auto height from a paragraph will not align labels if row tracks are not inherited.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare two cards</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> fill one card with short text and one with long text. If the label lines stay aligned, row inheritance is working. Save a capture on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "Using subgrid on rows lets nested items align to the same row tracks as the parent grid.",
+   "source2": "MDN — grid-template-rows",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
