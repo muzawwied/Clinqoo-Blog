@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid a MutationObserver Loop When You Change the DOM — Clincoo</title>
+<meta name="description" content="How to guard a MutationObserver callback so changes you make yourself do not trigger endless observation.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid a MutationObserver Loop When You Change the DOM">
+<meta property="og:description" content="How to guard a MutationObserver callback so changes you make yourself do not trigger endless observation.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Avoid a MutationObserver Loop When You Change the DOM</h1>
+<p>How to guard a MutationObserver callback so changes you make yourself do not trigger endless observation.</p>
+<p class="mb-4">A callback that writes a class or text on the same node triggers a new mutation, then another callback, until the page gets heavy.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Disconnect briefly or filter mutations</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> call observer.disconnect before changing the DOM, then observe again when finished. Or ignore mutations whose attribute you set yourself. Limit childList and attributes to the subtree you actually need; do not watch document.body with no filter.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test that callbacks do not spike</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> do one action, then count console logs. There should be one burst, not dozens per second. Record the observed attributes on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MDN — MutationObserver</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
