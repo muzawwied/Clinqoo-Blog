@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Performa (7 Oktober 2026, 16:00 WIB) — 5 artikel baru
+// Clincoo Docs — kategori Performa (7 Oktober 2026, 17:00 WIB) — tambah 5 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["performa"] = {
  "names": { "id": "Performa", "en": "Performance" },
@@ -143,6 +143,152 @@ window.countryDataFiles["performa"] = {
    "sourceSnippet": "A reflow happens when the browser must recalculate layout after a style or content change.",
    "source2": "web.dev — Avoid large, complex layouts",
    "source2Url": "https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "performa-ukur-inp-interaksi-lambat",
+ "langs": {
+  "id": {
+   "title": "Cara Ukur INP dari Interaksi Lambat",
+   "desc": "Tata cara mengukur Interaction to Next Paint di halaman Clincoo supaya klik dan ketukan tidak terasa macet.",
+   "content": "<p class=\"mb-4\">INP mencatat penundaan dari klik, ketukan, atau tombol keyboard sampai frame berikutnya tergambar. Satu interaksi lambat sudah cukup membuat skor buruk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kenali interaksi yang diukur</h2><p class=\"mb-4\">INP mencatat penundaan dari klik, ketukan, atau tombol keyboard sampai frame berikutnya tergambar. Satu interaksi lambat sudah cukup membuat skor buruk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Rekam di panel Performance</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka pratinjau, mulai rekaman, lalu klik tombol yang terasa lambat. Di jalur Interactions lihat durasi input delay, processing, dan presentation.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pecah pekerjaan di handler</h2><p class=\"mb-4\">Jika processing panjang, pindahkan hitungan berat ke setelah paint dengan requestAnimationFrame atau setTimeout 0. Jangan menunggu seluruh daftar selesai sebelum umpan balik visual.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ulangi di perangkat lambat</h2><p class=\"mb-4\">Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> dengan CPU throttle 4x. Catat interaksi terburuk, bukan rata-rata. Perbaiki yang melewati 200 ms lebih dulu.</p>",
+   "source": "web.dev — Interaction to Next Paint",
+   "sourceUrl": "https://web.dev/articles/inp",
+   "sourceSnippet": "INP assesses responsiveness by observing the latency of all click, tap, and keyboard interactions.",
+   "source2": "Chrome DevTools — Performance",
+   "source2Url": "https://developer.chrome.com/docs/devtools/performance",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Measure INP from a Slow Interaction",
+   "desc": "How to measure Interaction to Next Paint on a Clincoo page so clicks and taps do not feel stuck.",
+   "content": "<p class=\"mb-4\">INP records the delay from a click, tap, or keyboard action until the next frame is painted. One slow interaction is enough to hurt the score.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Know which interaction is measured</h2><p class=\"mb-4\">INP records the delay from a click, tap, or keyboard action until the next frame is painted. One slow interaction is enough to hurt the score.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record in the Performance panel</h2><p class=\"mb-4\">On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the preview, start a recording, then click the button that feels slow. On the Interactions track, read input delay, processing, and presentation.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Split work in the handler</h2><p class=\"mb-4\">If processing is long, move heavy work until after paint with requestAnimationFrame or a 0 ms timeout. Do not wait for the whole list before visual feedback.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Repeat on a slow device</h2><p class=\"mb-4\">Test on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> with 4x CPU throttle. Note the worst interaction, not the average. Fix anything over 200 ms first.</p>",
+   "source": "web.dev — Interaction to Next Paint",
+   "sourceUrl": "https://web.dev/articles/inp",
+   "sourceSnippet": "INP assesses responsiveness by observing the latency of all click, tap, and keyboard interactions.",
+   "source2": "Chrome DevTools — Performance",
+   "source2Url": "https://developer.chrome.com/docs/devtools/performance",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-tunda-iframe-pihak-ketiga",
+ "langs": {
+  "id": {
+   "title": "Cara Tunda Iframe Pihak Ketiga",
+   "desc": "Tata cara menunda iframe sematan di Clincoo supaya video atau peta tidak memblokir layar pertama.",
+   "content": "<p class=\"mb-4\">Iframe peta, video, atau widget chat sering menarik skrip berat sebelum pengunjung membaca judul. Itu memperlambat LCP dan main thread.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan muat iframe di atas lipatan</h2><p class=\"mb-4\">Iframe peta, video, atau widget chat sering menarik skrip berat sebelum pengunjung membaca judul. Itu memperlambat LCP dan main thread.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti dengan poster dulu</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tampilkan gambar poster dan tombol Putar. Pasang iframe hanya setelah klik, atau saat elemen mendekati viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tambahkan loading lazy</h2><p class=\"mb-4\">Untuk sematan di bawah lipatan, beri atribut loading=lazy dan tentukan width serta height agar layout tidak melonjak saat iframe masuk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat domain yang ikut termuat</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Network, filter ke domain pihak ketiga, lalu pastikan tidak ada permintaan sebelum interaksi. Simpan daftar domain di komentar proyek.</p>",
+   "source": "web.dev — Third-party embeds",
+   "sourceUrl": "https://web.dev/articles/embed-best-practices",
+   "sourceSnippet": "Third-party embeds can delay page load; load them on interaction or when they are near the viewport.",
+   "source2": "MDN — iframe loading",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Delay a Third-Party Iframe",
+   "desc": "How to delay an embed iframe in Clincoo so a video or map does not block the first screen.",
+   "content": "<p class=\"mb-4\">A map, video, or chat iframe often pulls heavy scripts before the visitor reads the heading. That slows LCP and the main thread.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not load the iframe above the fold</h2><p class=\"mb-4\">A map, video, or chat iframe often pulls heavy scripts before the visitor reads the heading. That slows LCP and the main thread.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Show a poster first</h2><p class=\"mb-4\">On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> show a poster image and a Play button. Insert the iframe only after the click, or when the element nears the viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add loading lazy</h2><p class=\"mb-4\">For embeds below the fold, set loading=lazy and give width and height so layout does not jump when the iframe arrives.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Note the domains that load</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open Network, filter third-party domains, and confirm there is no request before the interaction. Keep the domain list in a project comment.</p>",
+   "source": "web.dev — Third-party embeds",
+   "sourceUrl": "https://web.dev/articles/embed-best-practices",
+   "sourceSnippet": "Third-party embeds can delay page load; load them on interaction or when they are near the viewport.",
+   "source2": "MDN — iframe loading",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-fetchpriority-gambar-lcp",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang fetchpriority pada Gambar LCP",
+   "desc": "Tata cara menaikkan prioritas unduhan gambar LCP di Clincoo tanpa mem-preload semua aset.",
+   "content": "<p class=\"mb-4\">fetchpriority=high hanya untuk elemen terbesar di layar pertama. Memakai high di banyak gambar membuat prioritas kembali rata.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih satu gambar saja</h2><p class=\"mb-4\">fetchpriority=high hanya untuk elemen terbesar di layar pertama. Memakai high di banyak gambar membuat prioritas kembali rata.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang di tag gambar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan fetchpriority=high dan loading=eager pada gambar hero. Jangan gabungkan dengan loading=lazy pada elemen yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hindari preload ganda</h2><p class=\"mb-4\">Jika sudah ada link rel=preload untuk gambar itu, jangan tambah fetchpriority lagi. Dua isyarat bisa membuat browser mengunduh dua kali.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan waterfall</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> rekam Network. Gambar LCP harus mulai lebih awal dari ikon dan gambar kartu di bawah. Jika tidak, periksa apakah CSS menyembunyikan elemen itu.</p>",
+   "source": "web.dev — fetchpriority",
+   "sourceUrl": "https://web.dev/articles/fetch-priority",
+   "sourceSnippet": "fetchpriority lets you hint that a resource is more or less important than others of the same type.",
+   "source2": "MDN — HTMLImageElement fetchPriority",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set fetchpriority on the LCP Image",
+   "desc": "How to raise the download priority of the Clincoo LCP image without preloading every asset.",
+   "content": "<p class=\"mb-4\">fetchpriority=high is for the largest element on the first screen. Using high on many images flattens priority again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick only one image</h2><p class=\"mb-4\">fetchpriority=high is for the largest element on the first screen. Using high on many images flattens priority again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set it on the image tag</h2><p class=\"mb-4\">On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add fetchpriority=high and loading=eager on the hero image. Do not combine it with loading=lazy on the same element.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Avoid a double preload</h2><p class=\"mb-4\">If a link rel=preload already points at that image, do not also add fetchpriority. Two hints can make the browser download it twice.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare the waterfall</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> record Network. The LCP image should start earlier than icons and card images below. If not, check whether CSS hides that element.</p>",
+   "source": "web.dev — fetchpriority",
+   "sourceUrl": "https://web.dev/articles/fetch-priority",
+   "sourceSnippet": "fetchpriority lets you hint that a resource is more or less important than others of the same type.",
+   "source2": "MDN — HTMLImageElement fetchPriority",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-content-visibility-bawah-lipatan",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai content-visibility di Bawah Lipatan",
+   "desc": "Tata cara menunda render bagian bawah halaman Clincoo dengan content-visibility tanpa merusak scrollbar.",
+   "content": "<p class=\"mb-4\">content-visibility: auto melewatkan layout bagian yang belum terlihat. Jangan pasang pada header, hero, atau elemen yang langsung di viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Terapkan hanya di section jauh</h2><p class=\"mb-4\">content-visibility: auto melewatkan layout bagian yang belum terlihat. Jangan pasang pada header, hero, atau elemen yang langsung di viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri contain-intrinsic-size</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan contain-intrinsic-size perkiraan tinggi section, misalnya 720px. Tanpa itu scrollbar melonjak saat pengguna menggulir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan sembunyikan konten interaktif</h2><p class=\"mb-4\">Form, dialog, dan tautan skip tetap harus bisa difokus. Jika section berisi input, jangan tunda render sampai fokus hilang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur ulang waktu render</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan Rendering di panel Performance sebelum dan sesudah. Waktu style dan layout layar pertama harus turun, bukan hanya total node.</p>",
+   "source": "web.dev — content-visibility",
+   "sourceUrl": "https://web.dev/articles/content-visibility",
+   "sourceSnippet": "content-visibility lets the browser skip rendering work for off-screen content until it is needed.",
+   "source2": "MDN — content-visibility",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use content-visibility Below the Fold",
+   "desc": "How to defer rendering of below-the-fold Clincoo sections with content-visibility without breaking the scrollbar.",
+   "content": "<p class=\"mb-4\">content-visibility: auto skips layout for sections that are not visible yet. Do not put it on the header, hero, or anything already in the viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Apply it only to far sections</h2><p class=\"mb-4\">content-visibility: auto skips layout for sections that are not visible yet. Do not put it on the header, hero, or anything already in the viewport.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set contain-intrinsic-size</h2><p class=\"mb-4\">On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add a guessed section height, for example 720px, with contain-intrinsic-size. Without it the scrollbar jumps while scrolling.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not hide interactive content</h2><p class=\"mb-4\">Forms, dialogs, and skip links must stay focusable. If a section contains an input, do not defer rendering until focus is lost.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure render time again</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> compare Rendering in the Performance panel before and after. First-screen style and layout time should drop, not only the total node count.</p>",
+   "source": "web.dev — content-visibility",
+   "sourceUrl": "https://web.dev/articles/content-visibility",
+   "sourceSnippet": "content-visibility lets the browser skip rendering work for off-screen content until it is needed.",
+   "source2": "MDN — content-visibility",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-preload-font-yang-terpakai",
+ "langs": {
+  "id": {
+   "title": "Cara Preload Font yang Memang Terpakai",
+   "desc": "Tata cara preload satu file font kritis di Clincoo supaya teks tidak menunggu keluarga yang tidak tampil.",
+   "content": "<p class=\"mb-4\">Setiap weight adalah file terpisah. Preload hanya weight yang dipakai judul layar pertama. Weight lain biarkan font-display swap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload satu file, bukan satu keluarga</h2><p class=\"mb-4\">Setiap weight adalah file terpisah. Preload hanya weight yang dipakai judul layar pertama. Weight lain biarkan font-display swap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang link di head</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan link rel=preload as=font type=font/woff2 crossorigin. Tanpa crossorigin browser mengunduh dua kali.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan nama file</h2><p class=\"mb-4\">URL preload harus sama persis dengan url() di @font-face, termasuk query. Perbedaan kecil membuat preload sia-sia.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di Network</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> filter Font. File preload harus mulai sebelum CSS selesai, dan tidak ada 404. Jika teks tetap kosong, periksa unicode-range.</p>",
+   "source": "web.dev — Preload critical assets",
+   "sourceUrl": "https://web.dev/articles/preload-critical-assets",
+   "sourceSnippet": "Preload a late-discovered critical resource so the browser starts the download earlier.",
+   "source2": "MDN — rel=preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Preload Only the Font You Use",
+   "desc": "How to preload one critical font file in Clincoo so text does not wait on a family that never shows.",
+   "content": "<p class=\"mb-4\">Each weight is a separate file. Preload only the weight used by the first-screen heading. Leave other weights on font-display swap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload one file, not a family</h2><p class=\"mb-4\">Each weight is a separate file. Preload only the weight used by the first-screen heading. Leave other weights on font-display swap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put the link in the head</h2><p class=\"mb-4\">On <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add link rel=preload as=font type=font/woff2 crossorigin. Without crossorigin the browser downloads the file twice.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the file name</h2><p class=\"mb-4\">The preload URL must match the @font-face url() exactly, including the query. A small difference wastes the preload.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check Network</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> filter Font. The preloaded file should start before CSS finishes, with no 404. If text stays blank, check unicode-range.</p>",
+   "source": "web.dev — Preload critical assets",
+   "sourceUrl": "https://web.dev/articles/preload-critical-assets",
+   "sourceSnippet": "Preload a late-discovered critical resource so the browser starts the download earlier.",
+   "source2": "MDN — rel=preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
