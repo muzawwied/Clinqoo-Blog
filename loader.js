@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadSubgridExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_subgrid_extra.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
   function loadSubgrid() {
     var e = document.createElement('script');
     e.src = 'data_subgrid.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadSubgridExtra;
+    e.onerror = loadSubgridExtra;
     document.body.appendChild(e);
   }
   function loadFlexboxExtra() {
