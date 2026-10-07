@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Prefetch Bagian dengan rootMargin Sebelum Masuk Layar — Clincoo</title>
+<meta name="description" content="Tata cara memakai rootMargin di Intersection Observer agar bagian berat Clincoo mulai dimuat sedikit sebelum terlihat.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Prefetch Bagian dengan rootMargin Sebelum Masuk Layar">
+<meta property="og:description" content="Tata cara memakai rootMargin di Intersection Observer agar bagian berat Clincoo mulai dimuat sedikit sebelum terlihat.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+</head>
+<body>
+<article>
+<h1>Cara Prefetch Bagian dengan rootMargin Sebelum Masuk Layar</h1>
+<p>Tata cara memakai rootMargin di Intersection Observer agar bagian berat Clincoo mulai dimuat sedikit sebelum terlihat.</p>
+<p class="mb-4">Memuat gambar atau blok besar tepat saat masuk viewport sering telat satu frame dan membuat halaman terasa tersendat.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Beri margin positif di root</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> buat IntersectionObserver dengan rootMargin 200px 0px. Saat elemen masih 200px di bawah lipatan, callback sudah jalan dan Anda bisa menyetel src atau menyisipkan markup. Jangan pakai margin besar di halaman pendek, karena semuanya langsung dianggap terlihat.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji jarak prefetch</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> gulir pelan dan lihat panel console: log harus muncul sebelum elemen menyentuh tepi layar. Catat nilai rootMargin di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> supaya prefetch tidak memakan kuota di koneksi lambat.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">MDN — IntersectionObserver.rootMargin</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
