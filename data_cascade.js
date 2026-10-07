@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel (7 Oktober 2026, 18:00 WIB) cascade +2
 // Clincoo Docs — kategori Cascade (7 Oktober 2026, 14:00 WIB) — 5 artikel baru
 // Clincoo Docs — tambah 5 artikel Cascade (7 Oktober 2026, 15:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -289,6 +290,64 @@ window.countryDataFiles["cascade"] = {
    "sourceSnippet": "The @scope at-rule limits the reach of style rules to a subtree without raising specificity the way a long selector does.",
    "source2": "CSS Cascading and Inheritance Level 6",
    "source2Url": "https://www.w3.org/TR/css-cascade-6/#scope-atrule",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-pakai-unlayered-untuk-override-darurat",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai Unlayered untuk Override Darurat",
+   "desc": "Tata cara menaruh perbaikan darurat di luar @layer supaya menang atas layer utilitas tanpa menaikkan ID.",
+   "content": "<p class=\"mb-4\">Aturan di luar <code>@layer</code> mengalahkan aturan di dalam layer, meski spesifisitasnya lebih rendah. Itu berguna untuk perbaikan darurat, berbahaya jika dipakai setiap hari.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Taruh patch di blok unlayered</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis perbaikan di bawah semua <code>@layer</code>, misalnya <code>.hero { outline: 2px solid transparent; }</code>. Jangan bungkus dengan ID. Beri komentar tanggal dan alasan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kembalikan ke layer setelah lulus</h2><p class=\"mb-4\">Cek pemenang di Computed pada pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Jika unlayered masih menang setelah bug selesai, pindahkan aturan ke layer komponen. Catat pengecualian di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @layer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer",
+   "sourceSnippet": "Unlayered styles have higher priority than layered styles, regardless of specificity.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#layering",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use Unlayered Styles for an Emergency Override",
+   "desc": "How to place a hotfix outside @layer so it wins over utility layers without raising an ID.",
+   "content": "<p class=\"mb-4\">A rule outside <code>@layer</code> beats a rule inside a layer, even with lower specificity. That is useful for a hotfix and harmful as a daily habit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put the patch in an unlayered block</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write the fix below every <code>@layer</code>, for example <code>.hero { outline: 2px solid transparent; }</code>. Do not wrap it in an ID. Comment the date and the reason.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Move it back into a layer after it ships</h2><p class=\"mb-4\">Check the winner in Computed on the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview. If unlayered still wins after the bug is gone, move the rule into the components layer. Record the exception on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @layer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer",
+   "sourceSnippet": "Unlayered styles have higher priority than layered styles, regardless of specificity.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#layering",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cascade-baca-computed-bukan-hanya-stylesheet",
+ "langs": {
+  "id": {
+   "title": "Cara Baca Computed Style, Bukan Hanya Stylesheet",
+   "desc": "Tata cara membedakan nilai yang menang di Computed dari aturan yang hanya tertulis di stylesheet Clincoo.",
+   "content": "<p class=\"mb-4\">Stylesheet menunjukkan apa yang ditulis. Computed menunjukkan apa yang menang setelah cascade, pewarisan, dan nilai awal. Debug yang hanya membaca file sering salah sasaran.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan Styles dan Computed</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pilih elemen, buka panel Styles untuk melihat aturan yang dicoret, lalu Computed untuk nilai akhir. Jika nilai akhir dari pewarisan, perbaiki induk, bukan selektor anak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Catat pemenang sebelum mengubah spesifisitas</h2><p class=\"mb-4\">Uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Jangan menaikkan ID hanya karena stylesheet terlihat kalah. Simpan cuplikan pemenang di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Computed value",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Value_processing",
+   "sourceSnippet": "The computed value is the result after the cascade resolves specified values.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#computed",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read the Computed Style, Not Only the Stylesheet",
+   "desc": "How to tell the winning computed value from a rule that is only written in the Clincoo stylesheet.",
+   "content": "<p class=\"mb-4\">The stylesheet shows what was written. Computed shows what won after the cascade, inheritance, and initial values. Debugging the file alone often aims at the wrong rule.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare Styles and Computed</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> select the element, open Styles to see crossed-out rules, then Computed for the used value. If the used value is inherited, fix the parent, not the child selector.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record the winner before raising specificity</h2><p class=\"mb-4\">Test in the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview. Do not raise an ID just because the stylesheet looks like it lost. Keep a snippet of the winner on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Computed value",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Value_processing",
+   "sourceSnippet": "The computed value is the result after the cascade resolves specified values.",
+   "source2": "CSS Cascading and Inheritance Level 5",
+   "source2Url": "https://www.w3.org/TR/css-cascade-5/#computed",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

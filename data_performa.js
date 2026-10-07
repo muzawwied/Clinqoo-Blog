@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah artikel (7 Oktober 2026, 18:00 WIB) performa +2
 // Clincoo Docs — kategori Performa (7 Oktober 2026, 17:00 WIB) — tambah 5 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["performa"] = {
@@ -289,6 +290,64 @@ window.countryDataFiles["performa"] = {
    "sourceSnippet": "Preload a late-discovered critical resource so the browser starts the download earlier.",
    "source2": "MDN — rel=preload",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-ukur-tbt-sebelum-optimasi",
+ "langs": {
+  "id": {
+   "title": "Cara Ukur Total Blocking Time Sebelum Optimasi",
+   "desc": "Tata cara membaca Total Blocking Time di Lighthouse sebelum memecah skrip Clincoo.",
+   "content": "<p class=\"mb-4\">Total Blocking Time menjumlahkan bagian long task di atas 50 ms antara First Contentful Paint dan Time to Interactive. Tanpa angka awal, optimasi skrip hanya tebakan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ambil baseline di lab</h2><p class=\"mb-4\">Jalankan Lighthouse pada pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Catat TBT, long task terpanjang, dan skrip yang memilikinya. Ulangi dengan throttling yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pecah hanya tugas yang mengunci</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pecah loop besar menjadi potongan di bawah 50 ms, lalu ukur ulang. Jangan menunda skrip yang memang kritis untuk LCP. Simpan angka sebelum dan sesudah di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Total Blocking Time",
+   "sourceUrl": "https://web.dev/articles/tbt",
+   "sourceSnippet": "TBT measures the total amount of time that a page is blocked from responding to user input.",
+   "source2": "Lighthouse TBT",
+   "source2Url": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Measure Total Blocking Time Before Optimizing",
+   "desc": "How to read Total Blocking Time in Lighthouse before splitting Clincoo scripts.",
+   "content": "<p class=\"mb-4\">Total Blocking Time sums the portion of long tasks over 50 ms between First Contentful Paint and Time to Interactive. Without a baseline, script work is guesswork.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Take a lab baseline</h2><p class=\"mb-4\">Run Lighthouse on the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview. Record TBT, the longest long task, and the script that owns it. Repeat with the same throttling.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Split only the tasks that block</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> split a large loop into chunks under 50 ms, then measure again. Do not defer a script that is critical for LCP. Keep the before and after numbers on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Total Blocking Time",
+   "sourceUrl": "https://web.dev/articles/tbt",
+   "sourceSnippet": "TBT measures the total amount of time that a page is blocked from responding to user input.",
+   "source2": "Lighthouse TBT",
+   "source2Url": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "performa-geser-kerja-ke-requestidlecallback",
+ "langs": {
+  "id": {
+   "title": "Cara Geser Kerja Sampingan ke requestIdleCallback",
+   "desc": "Tata cara menunda analitik dan prefetch non-kritis sampai browser Clincoo menganggur.",
+   "content": "<p class=\"mb-4\"><code>requestIdleCallback</code> menjalankan kerja saat main thread longgar. Analitik, prefetch, dan pencatatan yang tidak mengubah tampilan cocok di sana. Render awal tidak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri batas waktu dan fallback</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil <code>requestIdleCallback(run, { timeout: 2000 })</code>. Jika API tidak ada, jadwalkan <code>setTimeout(run, 1)</code>. Jangan menyentuh layout di dalam callback.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur INP sesudah digeser</h2><p class=\"mb-4\">Bandingkan interaksi di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sebelum dan sesudah. Jika tugas tetap memblokir, pecah lagi. Dokumentasikan pekerjaan yang boleh menganggur di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — requestIdleCallback",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback",
+   "sourceSnippet": "requestIdleCallback queues a function to be called during a browser's idle periods.",
+   "source2": "web.dev — Optimize long tasks",
+   "source2Url": "https://web.dev/articles/optimize-long-tasks",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Move Side Work onto requestIdleCallback",
+   "desc": "How to defer analytics and non-critical prefetch until the Clincoo browser is idle.",
+   "content": "<p class=\"mb-4\"><code>requestIdleCallback</code> runs work when the main thread is free. Analytics, prefetch, and logging that do not change the paint belong there. First render does not.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set a timeout and a fallback</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call <code>requestIdleCallback(run, { timeout: 2000 })</code>. If the API is missing, schedule <code>setTimeout(run, 1)</code>. Do not touch layout inside the callback.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure INP after the move</h2><p class=\"mb-4\">Compare interactions on the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview before and after. If the task still blocks, split it again. Document idle-safe work on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — requestIdleCallback",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback",
+   "sourceSnippet": "requestIdleCallback queues a function to be called during a browser's idle periods.",
+   "source2": "web.dev — Optimize long tasks",
+   "source2Url": "https://web.dev/articles/optimize-long-tasks",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
