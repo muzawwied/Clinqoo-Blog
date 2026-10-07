@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Observer (8 Oktober 2026, 01:00 WIB)
 // Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 22:00 WIB)
 // Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 21:00 WIB)
 (function () {
@@ -292,6 +293,36 @@
    "sourceSnippet": "IntersectionObserver is available in modern browsers. Feature-detect it on window before constructing one.",
    "source2": "MDN — Feature detection",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "observer-baca-isintersecting",
+ "langs": {
+  "id": {
+   "title": "Cara Baca isIntersecting, Bukan Hanya Rasio",
+   "desc": "Tata cara memakai isIntersecting saat lazy-load di pratinjau Clincoo supaya callback tidak jalan terlalu awal.",
+   "content": "<p class=\"mb-4\">intersectionRatio 0 bisa muncul saat elemen baru saja keluar, dan rasio kecil bisa muncul saat baru menyentuh rootMargin. Keputusan muat gambar sebaiknya memakai isIntersecting.</p><p class=\"mb-4\">Di callback IntersectionObserver, lewati entry yang isIntersecting-nya false. Baru kemudian unobserve jika tugasnya sekali jalan, supaya observer tidak menahan elemen yang sudah selesai.</p><p class=\"mb-4\">rootMargin yang besar, misalnya 200px, membuat isIntersecting true sebelum elemen masuk layar. Itu cocok untuk prefetch, bukan untuk animasi yang harus terlihat.</p><p class=\"mb-4\">Catat boundingClientRect dan rootBounds saat debug di konsol editor.clincoo.buzz. Jika rootBounds null, root-nya viewport. Jika ada, root-nya kontainer scroll.</p><p class=\"mb-4\">Selalu sediakan fallback bila IntersectionObserver tidak ada: muat gambar segera. Jangan biarkan konten kosong hanya karena API pengamat tidak didukung.</p>",
+   "source": "MDN — IntersectionObserverEntry",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry",
+   "sourceSnippet": "isIntersecting is a boolean that is true if the target element intersects the root.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read isIntersecting, Not Only the Ratio",
+   "desc": "How to use isIntersecting for lazy-load in a Clincoo preview so the callback does not run too early.",
+   "content": "<p class=\"mb-4\">An intersectionRatio of 0 can appear when an element has just left, and a tiny ratio can appear when it only touches rootMargin. Load decisions should use isIntersecting.</p><p class=\"mb-4\">In the IntersectionObserver callback, skip entries whose isIntersecting is false. Then unobserve if the job runs once, so the observer does not keep a finished element.</p><p class=\"mb-4\">A large rootMargin, such as 200px, makes isIntersecting true before the element enters the screen. That fits prefetch, not an animation that must be visible.</p><p class=\"mb-4\">Log boundingClientRect and rootBounds when debugging in the editor.clincoo.buzz console. If rootBounds is null, the root is the viewport. If it exists, the root is a scroll container.</p><p class=\"mb-4\">Always provide a fallback when IntersectionObserver is missing: load the image immediately. Do not leave content blank only because the observer API is unsupported.</p>",
+   "source": "MDN — IntersectionObserverEntry",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry",
+   "sourceSnippet": "isIntersecting is a boolean that is true if the target element intersects the root.",
+   "source2": "MDN — Intersection Observer API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

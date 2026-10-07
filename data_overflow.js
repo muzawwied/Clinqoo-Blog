@@ -1,4 +1,5 @@
 // Clincoo Docs — kategori Overflow (7 Oktober 2026, 23:00 WIB) — 10 artikel
+// Clincoo Docs — tambah 2 artikel Overflow (8 Oktober 2026, 01:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["overflow"] = {
  "names": { "id": "Overflow", "en": "Overflow" },
@@ -290,6 +291,65 @@ window.countryDataFiles["overflow"] = {
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
    "source3": "Clincoo Blog",
    "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+}
+ ,
+{
+ "id": "overflow-isolasi-contain-layout",
+ "langs": {
+  "id": {
+   "title": "Cara Isolasi Layout dengan contain agar Scroll Tidak Bocor",
+   "desc": "Tata cara memakai contain: layout agar komponen di pratinjau Clincoo tidak memaksa scroll halaman.",
+   "content": "<p class=\"mb-4\">Scroll horizontal sering muncul karena satu kartu menghitung lebar dari seluruh halaman, bukan dari induknya. Properti contain: layout memberi batas berisi supaya perhitungan ukuran tidak naik ke luar komponen.</p><p class=\"mb-4\">Di editor.clincoo.buzz, bungkus kartu yang sering meluber dengan kelas yang berisi contain: layout. Jangan pasang contain pada body. Itu memotong konteks yang justru dibutuhkan header tetap.</p><p class=\"mb-4\">Setelah itu buka pratinjau, perkecil lebar, lalu bandingkan documentElement.scrollWidth dengan clientWidth. Jika masih lebih lebar, elemen penyebab ada di luar kartu yang diisolasi.</p><p class=\"mb-4\">contain bukan pengganti overflow yang disengaja. Daftar panjang tetap boleh scroll di dalam panel. Yang dicegah adalah bocornya ukuran ke halaman utama blog.clincoo.buzz atau situs yang sedang disusun.</p><p class=\"mb-4\">Uji juga fokus keyboard. contain: layout tidak boleh menyembunyikan outline. Jika ring fokus terpotong, longgarkan contain atau pindahkan ke pembungkus dalam, bukan ke tombol itu sendiri.</p>",
+   "source": "MDN — contain",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain",
+   "sourceSnippet": "The contain property indicates that an element and its contents are independent of the rest of the document tree.",
+   "source2": "web.dev — content-visibility",
+   "source2Url": "https://web.dev/articles/content-visibility",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Isolate Layout with contain so Scroll Does Not Leak",
+   "desc": "How to use contain: layout so a component in a Clincoo preview does not force a page scroll.",
+   "content": "<p class=\"mb-4\">Horizontal scroll often appears because a card measures width against the whole page, not its parent. contain: layout gives a containment boundary so size calculation does not escape the component.</p><p class=\"mb-4\">In editor.clincoo.buzz, wrap cards that often spill with a class that sets contain: layout. Do not put contain on body. That cuts the context a sticky header still needs.</p><p class=\"mb-4\">Then open the preview, narrow the width, and compare documentElement.scrollWidth with clientWidth. If it is still wider, the cause sits outside the isolated card.</p><p class=\"mb-4\">contain is not a replacement for intentional overflow. A long list may still scroll inside a panel. What you prevent is size leaking into the main page on blog.clincoo.buzz or the site you are building.</p><p class=\"mb-4\">Also test keyboard focus. contain: layout must not hide the outline. If the focus ring is clipped, loosen contain or move it to an inner wrapper, not the button itself.</p>",
+   "source": "MDN — contain",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain",
+   "sourceSnippet": "The contain property indicates that an element and its contents are independent of the rest of the document tree.",
+   "source2": "web.dev — content-visibility",
+   "source2Url": "https://web.dev/articles/content-visibility",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overflow-wrap-url-panjang",
+ "langs": {
+  "id": {
+   "title": "Cara Patahkan URL Panjang tanpa Memaksa Scroll",
+   "desc": "Tata cara memakai overflow-wrap dan word-break pada tautan panjang di halaman Clincoo.",
+   "content": "<p class=\"mb-4\">URL tanpa spasi adalah penyebab klasik scroll horizontal. Browser menganggapnya satu kata, lalu kartu melebar mengikuti string itu.</p><p class=\"mb-4\">Pada tautan di pratinjau Clincoo, set overflow-wrap: anywhere pada elemen yang menampilkan URL. anywhere membolehkan patah di mana saja jika tidak ada peluang patah yang lebih baik.</p><p class=\"mb-4\">Jangan pakai word-break: break-all pada seluruh paragraf. Itu memotong kata biasa di judul. Batasi aturan pada kelas .url atau kode inline.</p><p class=\"mb-4\">Jika URL harus tetap bisa disalin utuh, jangan sisipkan tag br manual. Biarkan CSS yang mematahkan tampilan, sementara teks di DOM tetap satu string.</p><p class=\"mb-4\">Cek lagi di lebar 360px pada app.clincoo.buzz dan editor. Setelah patah, scrollWidth halaman harus sama dengan clientWidth, sementara tautan masih bisa diketuk.</p>",
+   "source": "MDN — overflow-wrap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+   "sourceSnippet": "The overflow-wrap property sets whether the browser should insert line breaks within an otherwise unbreakable string.",
+   "source2": "MDN — word-break",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-break",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Break a Long URL without Forcing Scroll",
+   "desc": "How to use overflow-wrap and word-break on long links in a Clincoo page.",
+   "content": "<p class=\"mb-4\">A URL with no spaces is a classic cause of horizontal scroll. The browser treats it as one word, then the card grows to fit that string.</p><p class=\"mb-4\">On links in a Clincoo preview, set overflow-wrap: anywhere on the element that shows the URL. anywhere may break anywhere if no better break opportunity exists.</p><p class=\"mb-4\">Do not put word-break: break-all on the whole paragraph. That slices ordinary words in headings. Limit the rule to a .url class or inline code.</p><p class=\"mb-4\">If the URL must stay copyable as a whole, do not insert manual br tags. Let CSS break the display while the DOM text remains one string.</p><p class=\"mb-4\">Check again at 360px on app.clincoo.buzz and the editor. After the break, page scrollWidth should match clientWidth, and the link should still be tappable.</p>",
+   "source": "MDN — overflow-wrap",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+   "sourceSnippet": "The overflow-wrap property sets whether the browser should insert line breaks within an otherwise unbreakable string.",
+   "source2": "MDN — word-break",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-break",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
   }
  }
 }
