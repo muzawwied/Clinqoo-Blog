@@ -3199,5 +3199,47 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/overflow-debug-scroll-horizontal-tersembunyi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/overflow-debug-scroll-horizontal-tersembunyi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/overflow-debug-scroll-horizontal-tersembunyi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/overflow-debug-scroll-horizontal-tersembunyi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/overflow-hidden-memotong-fokus-dan-tooltip/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/overflow-hidden-memotong-fokus-dan-tooltip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/overflow-hidden-memotong-fokus-dan-tooltip/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/overflow-hidden-memotong-fokus-dan-tooltip/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/overflow-teks-panjang-dengan-ellipsis/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/overflow-teks-panjang-dengan-ellipsis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/overflow-teks-panjang-dengan-ellipsis/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/overflow-teks-panjang-dengan-ellipsis/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/overflow-scroll-chaining-di-modal/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/overflow-scroll-chaining-di-modal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/overflow-scroll-chaining-di-modal/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/overflow-scroll-chaining-di-modal/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/overflow/overflow-min-content-pada-grid-dan-flex/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/overflow/overflow-min-content-pada-grid-dan-flex/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/overflow/overflow-min-content-pada-grid-dan-flex/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/overflow/overflow-min-content-pada-grid-dan-flex/"/>
+  </url>
 </urlset>
 
