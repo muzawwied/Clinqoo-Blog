@@ -3164,5 +3164,40 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-set-root-ke-kontainer-scroll/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-set-root-ke-kontainer-scroll/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-set-root-ke-kontainer-scroll/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-set-root-ke-kontainer-scroll/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-hindari-loop-mutation-observer/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-jeda-saat-tab-tersembunyi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/"/>
+  </url>
 </urlset>
 
