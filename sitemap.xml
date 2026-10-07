@@ -3016,4 +3016,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/cascade/cascade-scope-gaya-komponen-tanpa-menaikkan-selektor/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/cascade/cascade-scope-gaya-komponen-tanpa-menaikkan-selektor/"/>
   </url>
+  <url><loc>https://docs.clincoo.buzz/performa/</loc><lastmod>2026-10-07</lastmod></url>
+  <url>
+    <loc>https://docs.clincoo.buzz/performa/performa-baca-lcp-di-panel-performance/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/performa/performa-baca-lcp-di-panel-performance/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/performa/performa-baca-lcp-di-panel-performance/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/performa/performa-baca-lcp-di-panel-performance/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/performa/performa-tunda-skrip-bukan-kritis/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/performa/performa-tunda-skrip-bukan-kritis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/performa/performa-tunda-skrip-bukan-kritis/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/performa/performa-tunda-skrip-bukan-kritis/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/performa/performa-pecah-long-task-main-thread/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/performa/performa-pecah-long-task-main-thread/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/performa/performa-pecah-long-task-main-thread/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/performa/performa-pecah-long-task-main-thread/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/performa/performa-beri-header-cache-aset-statis/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/performa/performa-beri-header-cache-aset-statis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/performa/performa-beri-header-cache-aset-statis/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/performa/performa-beri-header-cache-aset-statis/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/performa/performa-hindari-layout-thrashing/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/performa/performa-hindari-layout-thrashing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/performa/performa-hindari-layout-thrashing/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/performa/performa-hindari-layout-thrashing/"/>
+  </url>
 </urlset>
