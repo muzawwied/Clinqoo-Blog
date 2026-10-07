@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Prefetch a Section with rootMargin Before It Enters the Screen — Clincoo</title>
+<meta name="description" content="How to use rootMargin on Intersection Observer so a heavy Clincoo section starts loading just before it is visible.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Prefetch a Section with rootMargin Before It Enters the Screen">
+<meta property="og:description" content="How to use rootMargin on Intersection Observer so a heavy Clincoo section starts loading just before it is visible.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-root-margin-prefetch-sebelum-terlihat/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Prefetch a Section with rootMargin Before It Enters the Screen</h1>
+<p>How to use rootMargin on Intersection Observer so a heavy Clincoo section starts loading just before it is visible.</p>
+<p class="mb-4">Loading a large image or block exactly when it enters the viewport is often one frame late and makes the page feel stuck.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Add a positive root margin</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> create an IntersectionObserver with rootMargin 200px 0px. While the element is still 200px below the fold, the callback already runs and you can set src or insert markup. Do not use a huge margin on a short page, or everything counts as visible at once.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test the prefetch distance</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> scroll slowly and watch the console: the log should appear before the element touches the screen edge. Record the rootMargin value on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a> so prefetch does not burn data on a slow connection.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">MDN — IntersectionObserver.rootMargin</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
