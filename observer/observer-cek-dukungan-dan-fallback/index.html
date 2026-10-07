@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Cek Dukungan Observer dan Siapkan Fallback — Clincoo</title>
+<meta name="description" content="Tata cara mendeteksi IntersectionObserver sebelum dipakai, lalu memuat konten langsung jika browser Clincoo tidak mendukung.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Cek Dukungan Observer dan Siapkan Fallback">
+<meta property="og:description" content="Tata cara mendeteksi IntersectionObserver sebelum dipakai, lalu memuat konten langsung jika browser Clincoo tidak mendukung.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-cek-dukungan-dan-fallback/">
+</head>
+<body>
+<article>
+<h1>Cara Cek Dukungan Observer dan Siapkan Fallback</h1>
+<p>Tata cara mendeteksi IntersectionObserver sebelum dipakai, lalu memuat konten langsung jika browser Clincoo tidak mendukung.</p>
+<p class="mb-4">Memanggil IntersectionObserver di browser lama melempar ReferenceError dan gambar tidak pernah terpasang.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek window sebelum new</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> bungkus dengan if ('IntersectionObserver' in window). Jika tidak ada, set src gambar langsung dan tampilkan bagian yang ditunda. Jangan hanya menangkap error di callback; konstruktornya yang gagal lebih dulu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji fallback</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> simulakan dengan menonaktifkan API di console, atau buka pratinjau di browser lama. Konten harus tetap ada, hanya tanpa tunda. Catat cabang fallback di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">MDN — IntersectionObserver</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
