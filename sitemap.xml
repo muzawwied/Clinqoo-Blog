@@ -3123,6 +3123,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-muat-gambar-saat-masuk-viewport/"/>
   </url>
   <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-putuskan-pengamat-setelah-sekali/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-putuskan-pengamat-setelah-sekali/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-putuskan-pengamat-setelah-sekali/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-putuskan-pengamat-setelah-sekali/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-tandai-bagian-aktif-di-nav/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-tandai-bagian-aktif-di-nav/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-tandai-bagian-aktif-di-nav/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-tandai-bagian-aktif-di-nav/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-ukur-tinggi-kartu-resize/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-ukur-tinggi-kartu-resize/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-ukur-tinggi-kartu-resize/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-ukur-tinggi-kartu-resize/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-amati-node-baru-mutation/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-amati-node-baru-mutation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-amati-node-baru-mutation/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-amati-node-baru-mutation/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-pilih-threshold-rasio-terlihat/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-pilih-threshold-rasio-terlihat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-pilih-threshold-rasio-terlihat/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-pilih-threshold-rasio-terlihat/"/>
+  </url>
+
+  <url>
     <loc>https://docs.clincoo.buzz/observer/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/"/>
