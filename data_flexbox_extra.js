@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Flexbox (7 Oktober 2026, 09:00 WIB)
 // Clincoo Docs — tambah 5 artikel Flexbox (7 Oktober 2026, 08:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -146,6 +147,36 @@
    "sourceSnippet": "The justify-content CSS property defines how the browser distributes space between and around content items along the main axis.",
    "source2": "CSS Overflow — safe alignment",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment/Box_alignment_in_block_abspos_tables#safe_and_unsafe_alignment",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "flexbox-margin-auto-dorong-item",
+ "langs": {
+  "id": {
+   "title": "Cara Dorong Item Flex dengan margin auto",
+   "desc": "Tata cara mendorong satu item flex Clincoo ke tepi dengan margin auto, tanpa spacer kosong.",
+   "content": "<p class=\"mb-4\">Spacer div kosong sering dipakai untuk mendorong tombol ke kanan. Di flex, margin auto pada item itu sendiri sudah cukup dan tidak menambah elemen yang bisa terfokus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang margin-left auto pada item terakhir</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pilih item yang harus menempel ke tepi akhir. Set margin-left: auto jika barisnya row, atau margin-top: auto jika kolom. Jangan gabungkan dengan justify-content: space-between pada kontainer yang sama, karena keduanya berebut ruang bebas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji saat item membungkus</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan ke 360px. Jika flex-wrap aktif, margin auto hanya mendorong di dalam baris item itu. Tab harus tetap mengikuti urutan DOM, bukan urutan visual semata. Catat hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — margin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+   "sourceSnippet": "The margin CSS shorthand property sets the margin area on all four sides of an element.",
+   "source2": "CSS Flexible Box — auto margins",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Push a Flex Item with margin auto",
+   "desc": "How to push one Clincoo flex item to the edge with margin auto, without an empty spacer.",
+   "content": "<p class=\"mb-4\">An empty spacer div is often used to push a button to the right. In flex, margin auto on the item itself is enough and does not add a focusable element.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set margin-left auto on the last item</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> select the item that should sit on the end edge. Set margin-left: auto for a row, or margin-top: auto for a column. Do not also set justify-content: space-between on the same container, because both compete for free space.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test when items wrap</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow the preview to 360px. If flex-wrap is on, margin auto only pushes within that item's line. Tab order should still follow the DOM, not only the visual order. Note the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — margin",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+   "sourceSnippet": "The margin CSS shorthand property sets the margin area on all four sides of an element.",
+   "source2": "CSS Flexible Box — auto margins",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra + subgrid) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
-  function loadFlexboxExtra() {
+  function loadSubgrid() {
     var e = document.createElement('script');
-    e.src = 'data_flexbox_extra.js?v=1';
+    e.src = 'data_subgrid.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadFlexboxExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_flexbox_extra.js?v=2';
+    e.onload = loadSubgrid;
+    e.onerror = loadSubgrid;
     document.body.appendChild(e);
   }
   function loadFlexbox() {
