@@ -3785,5 +3785,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aspect/aspect-media-query-orientasi-layar/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aspect/aspect-media-query-orientasi-layar/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/aspect/aspect-ratio-auto-gambar-intrinsik/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/aspect/aspect-ratio-auto-gambar-intrinsik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/aspect/aspect-ratio-auto-gambar-intrinsik/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/aspect/aspect-ratio-auto-gambar-intrinsik/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/media/media-breakpoint-mobile-first-min-width/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/media/media-breakpoint-mobile-first-min-width/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/media/media-breakpoint-mobile-first-min-width/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/media/media-breakpoint-mobile-first-min-width/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/media/media-hover-hover-bukan-layar-sentuh/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/media/media-hover-hover-bukan-layar-sentuh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/media/media-hover-hover-bukan-layar-sentuh/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/media/media-hover-hover-bukan-layar-sentuh/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/media/media-prefers-color-scheme-tanpa-kilat/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/media/media-prefers-color-scheme-tanpa-kilat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/media/media-prefers-color-scheme-tanpa-kilat/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/media/media-prefers-color-scheme-tanpa-kilat/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/media/media-width-bukan-device-width/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/media/media-width-bukan-device-width/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/media/media-width-bukan-device-width/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/media/media-width-bukan-device-width/"/>
+  </url>
 </urlset>
+
 

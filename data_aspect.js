@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Aspect (8 Oktober 2026, 17:00 WIB) — tambah 1 artikel
 // Clincoo Docs — kategori Aspect (8 Oktober 2026, 16:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Aspect (8 Oktober 2026, 15:00 WIB) — 5 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -294,6 +295,37 @@ window.countryDataFiles["aspect"] = {
    "source3Url": "https://app.clincoo.buzz/"
   }
  }
+},
+
+{
+ "id": "aspect-ratio-auto-gambar-intrinsik",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai aspect-ratio auto agar Gambar Intrinsik Tidak Penyok",
+   "desc": "Tata cara memakai aspect-ratio: auto pada gambar Clincoo supaya rasio cadangan tidak menimpa ukuran asli berkas.",
+   "content": "<p class=\"mb-4\">aspect-ratio angka tetap berguna untuk kotak cadangan. Pada gambar yang sudah punya lebar dan tinggi intrinsik, nilai auto menjaga rasio berkas dan hanya mengisi rasio saat ukuran asli belum diketahui.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih auto untuk gambar yang ukurannya sah</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis <code>img { aspect-ratio: auto; width: 100%; height: auto; }</code> untuk foto yang atribut width dan height-nya sudah benar. Jangan timpa dengan 16 / 9 jika rasio asli 4 / 3, karena gambar akan penyok sebelum object-fit sempat bekerja.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cadangkan hanya pembungkus yang kosong</h2><p class=\"mb-4\">Di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan gambar gagal dimuat dan gambar berhasil. Kotak cadangan tetap di pembungkus, bukan di img yang sudah punya ukuran intrinsik. Catat pilihan ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya revisi berikutnya tidak mengganti auto dengan rasio tetap tanpa alasan.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The auto value uses the intrinsic aspect ratio of replaced elements when it is available.",
+   "source2": "CSSWG — CSS Sizing",
+   "source2Url": "https://drafts.csswg.org/css-sizing-4/#aspect-ratio",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use aspect-ratio auto so an Intrinsic Image Does Not Squash",
+   "desc": "How to use aspect-ratio: auto on a Clincoo image so a reserved ratio does not override the file's real size.",
+   "content": "<p class=\"mb-4\">A fixed aspect-ratio is useful for a reserved box. On an image that already has an intrinsic width and height, auto keeps the file ratio and only supplies a ratio while the natural size is unknown.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use auto when the image size is valid</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write <code>img { aspect-ratio: auto; width: 100%; height: auto; }</code> for photos whose width and height attributes are already correct. Do not override a 4 / 3 file with 16 / 9, or the image squashes before object-fit can help.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reserve space only on an empty wrapper</h2><p class=\"mb-4\">In the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview, compare a failed image and a loaded image. Keep the reserved box on the wrapper, not on an img that already has an intrinsic size. Note the choice on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so a later edit does not replace auto with a fixed ratio for no reason.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The auto value uses the intrinsic aspect ratio of replaced elements when it is available.",
+   "source2": "CSSWG — CSS Sizing",
+   "source2Url": "https://drafts.csswg.org/css-sizing-4/#aspect-ratio",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
+
 ]
 };
