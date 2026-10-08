@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 4 artikel Debounce (8 Oktober 2026, 09:00 WIB)
 // Clincoo Docs — tambah 5 artikel Debounce (8 Oktober 2026, 08:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.debounce) return;
@@ -147,7 +148,123 @@
     "source3Url": "https://editor.clincoo.buzz/"
    }
   }
+ },
+{
+ "id": "debounce-leading-edge-sekali-di-awal",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai Leading Debounce agar Aksi Pertama Langsung Jalan",
+   "desc": "Tata cara menembakkan aksi di ketukan pertama lalu mengabaikan ketukan berikutnya sampai jeda selesai.",
+   "content": "<p class=\"mb-4\">Pencarian yang menunggu trailing debounce terasa lambat pada klik pertama. Leading debounce menjalankan aksi segera, lalu menahan ulang sampai jeda habis.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bedakan leading dan trailing</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan waktu eksekusi terakhir. Jika jarak dari eksekusi sebelumnya sudah lewat dari 300 ms, jalankan fungsi sekarang dan catat waktu. Jika belum, abaikan. Trailing tetap dipakai untuk simpan draf; leading untuk buka panel atau fetch pertama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan gabung keduanya tanpa uji</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik cepat lima kali dan pastikan hanya satu permintaan berangkat. Catatan polanya ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — setTimeout",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "sourceSnippet": "setTimeout schedules a callback after a delay; a leading debounce uses the last-run timestamp instead of waiting for that delay on the first call.",
+   "source2": "CSS-Tricks — Debouncing and Throttling Explained",
+   "source2Url": "https://css-tricks.com/debouncing-throttling-explained-examples/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use a Leading Debounce So the First Action Runs Immediately",
+   "desc": "How to fire an action on the first tap, then ignore repeats until the quiet period ends.",
+   "content": "<p class=\"mb-4\">A search that waits on a trailing debounce feels slow on the first click. A leading debounce runs the action now, then blocks repeats until the gap ends.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate leading from trailing</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> store the last run time. If the gap since the last run is already over 300 ms, call the function now and record the time. Otherwise ignore it. Keep trailing for draft saves; use leading for the first fetch or opening a panel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not combine both without a test</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click five times quickly and confirm only one request leaves. The pattern is noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — setTimeout",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "sourceSnippet": "setTimeout schedules a callback after a delay; a leading debounce uses the last-run timestamp instead of waiting for that delay on the first call.",
+   "source2": "CSS-Tricks — Debouncing and Throttling Explained",
+   "source2Url": "https://css-tricks.com/debouncing-throttling-explained-examples/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
  }
+},
+{
+ "id": "debounce-cegah-submit-ganda",
+ "langs": {
+  "id": {
+   "title": "Cara Cegah Submit Ganda dengan Debounce pada Tombol",
+   "desc": "Tata cara menahan klik beruntun pada tombol kirim di Clincoo supaya formulir hanya terkirim sekali.",
+   "content": "<p class=\"mb-4\">Tombol kirim yang tidak dikunci mengirim dua permintaan saat pengguna mengetuk dua kali. Debounce pada handler klik menahan pengiriman kedua selama permintaan pertama belum selesai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kunci tombol, bukan hanya timer</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set disabled pada tombol saat submit dimulai, lalu lepas setelah respons atau gagal. Timer 400 ms hanya menahan klik sebelum disabled sempat terpasang. Jangan andalkan debounce sendirian jika jaringan lambat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji ketukan ganda</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ketuk kirim dua kali dalam 200 ms dan hitung permintaan di Network. Harus satu. Langkahnya dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLButtonElement disabled",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement",
+   "sourceSnippet": "The disabled attribute stops further activation of a button while a request is in flight.",
+   "source2": "MDN — click event",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stop Double Submits with a Debounced Button",
+   "desc": "How to hold repeated clicks on a Clincoo submit button so the form is sent only once.",
+   "content": "<p class=\"mb-4\">An unlocked submit button sends two requests when the user taps twice. Debouncing the click handler holds the second send while the first request is still starting.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lock the button, not only the timer</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set disabled on the button when submit starts, then clear it after the response or a failure. A 400 ms timer only covers the gap before disabled applies. Do not rely on debounce alone if the network is slow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a double tap</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tap submit twice within 200 ms and count requests in Network. There should be one. The steps are noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLButtonElement disabled",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement",
+   "sourceSnippet": "The disabled attribute stops further activation of a button while a request is in flight.",
+   "source2": "MDN — click event",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "debounce-batalkan-fetch-dengan-abort",
+ "langs": {
+  "id": {
+   "title": "Cara Batalkan Fetch Lama saat Debounce Menjadwalkan yang Baru",
+   "desc": "Tata cara menggandeng debounce dengan AbortController supaya respons pencarian yang kadaluarsa tidak menimpa hasil baru.",
+   "content": "<p class=\"mb-4\">Debounce mengurangi jumlah fetch, tetapi respons yang lambat tetap bisa tiba setelah pengguna sudah mengetik kata baru. Tanpa abort, hasil lama menimpa hasil baru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Abort sebelum fetch berikutnya</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan controller di luar timer. Saat timer trailing jalan, panggil abort pada controller lama, buat controller baru, lalu fetch dengan signal itu. Abaikan error AbortError di catch.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek urutan di Network</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ketik dua kata dengan jeda singkat dan pastikan permintaan pertama berstatus canceled. Pola ini dirangkum di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — AbortController",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "sourceSnippet": "AbortController aborts one or more fetch requests when abort is called on its controller.",
+   "source2": "MDN — fetch signal",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Abort a Stale Fetch When Debounce Schedules a New One",
+   "desc": "How to pair debounce with AbortController so an outdated search response does not overwrite newer results.",
+   "content": "<p class=\"mb-4\">Debounce cuts the number of fetches, but a slow response can still arrive after the user has typed a new word. Without abort, the old result overwrites the new one.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Abort before the next fetch</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep the controller outside the timer. When the trailing timer fires, abort the old controller, create a new one, then fetch with that signal. Ignore AbortError in catch.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check order in Network</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> type two words with a short gap and confirm the first request is canceled. The pattern is summarized on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — AbortController",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "sourceSnippet": "AbortController aborts one or more fetch requests when abort is called on its controller.",
+   "source2": "MDN — fetch signal",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "debounce-uji-dengan-timer-palsu",
+ "langs": {
+  "id": {
+   "title": "Cara Uji Debounce dengan Timer Palsu, Bukan setTimeout Asli",
+   "desc": "Tata cara menguji jeda debounce di Clincoo dengan jam palsu supaya tes tidak menunggu ratusan milidetik.",
+   "content": "<p class=\"mb-4\">Tes yang memakai setTimeout asli lambat dan flaky. Timer palsu memajukan jam sesuai jeda yang diharapkan, lalu menegaskan fungsi baru terpanggil.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Suntikkan penjadwal</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat debounce menerima now dan schedule, bukan memanggil Date.now dan setTimeout langsung. Tes menyimpan antrean callback dan menjalankan yang jatuh tempo setelah jam dimajukan 300 ms.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu skenario cukup</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pratinjau tetap diuji manual sekali. Tes otomatis hanya memeriksa hitungan panggilan. Catatannya ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Date.now",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now",
+   "sourceSnippet": "Date.now returns a millisecond timestamp; tests replace it so debounce does not depend on wall-clock time.",
+   "source2": "MDN — setTimeout",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Test Debounce with a Fake Timer, Not a Real setTimeout",
+   "desc": "How to test a Clincoo debounce gap with a fake clock so the test does not wait hundreds of milliseconds.",
+   "content": "<p class=\"mb-4\">A test that uses a real setTimeout is slow and flaky. A fake timer advances the clock by the expected gap, then asserts the function ran.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Inject the scheduler</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> make debounce accept now and schedule instead of calling Date.now and setTimeout directly. The test stores callbacks and runs those that are due after the clock jumps 300 ms.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One manual scenario is enough</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> still check the preview by hand once. The automated test only checks the call count. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Date.now",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now",
+   "sourceSnippet": "Date.now returns a millisecond timestamp; tests replace it so debounce does not depend on wall-clock time.",
+   "source2": "MDN — setTimeout",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ];
   extra.forEach(function (item) {
     if (!list.some(function (x) { return x.id === item.id; })) list.push(item);
