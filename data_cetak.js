@@ -177,5 +177,151 @@ window.countryDataFiles["cetak"] = {
   }
  }
 }
- ]
+ ,
+{
+ "id": "cetak-ulang-thead-tiap-halaman",
+ "langs": {
+  "id": {
+   "title": "Cara Ulangi Header Tabel di Setiap Halaman Cetak",
+   "desc": "Tata cara memakai thead dan table-header-group supaya judul kolom ikut tercetak di tiap halaman.",
+   "content": "<p class=\"mb-4\">Tabel panjang yang dicetak dari pratinjau kehilangan judul kolom di halaman kedua. Pembaca harus kembali ke halaman pertama untuk mengingat arti tiap sel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tandai thead dan izinkan grup header</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus baris judul dengan thead, lalu pada @media print set thead { display: table-header-group; } dan tr { break-inside: avoid; }. Jangan ubah tabel menjadi div, karena browser hanya mengulang header pada tabel sungguhan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau lebih dari satu halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka print preview dengan data yang melewati satu halaman. Judul kolom harus muncul lagi di halaman dua. Catatan uji bisa disimpan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — display",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+   "sourceSnippet": "table-header-group behaves like the thead HTML element.",
+   "source2": "MDN — break-inside",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Repeat a Table Header on Every Printed Page",
+   "desc": "How to use thead and table-header-group so column titles print on every page.",
+   "content": "<p class=\"mb-4\">A long table printed from preview loses its column titles on page two. Readers have to flip back to remember what each cell means.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Mark thead and allow the header group</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap the title row in thead, then in @media print set thead { display: table-header-group; } and tr { break-inside: avoid; }. Do not turn the table into divs, because browsers only repeat headers on a real table.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a preview longer than one page</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open print preview with data that spans more than one page. Column titles should appear again on page two. Keep the check note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — display",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+   "sourceSnippet": "table-header-group behaves like the thead HTML element.",
+   "source2": "MDN — break-inside",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cetak-cegah-kartu-terbelah",
+ "langs": {
+  "id": {
+   "title": "Cara Cegah Kartu dan Gambar Terbelah saat Dicetak",
+   "desc": "Tata cara memakai break-inside: avoid supaya kartu, gambar, dan keterangan tidak terpotong antar halaman.",
+   "content": "<p class=\"mb-4\">Kartu ringkas dan figure sering terbelah: gambar di akhir halaman, keterangan di halaman berikutnya. Hasil cetak lalu sulit dibaca.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jaga satu blok tetap utuh</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan di @media print: .card, figure { break-inside: avoid; page-break-inside: avoid; }. Pasangkan img dengan figcaption di dalam figure yang sama. Jangan memakai avoid pada section yang lebih tinggi dari satu halaman, karena browser akan mengabaikannya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek potongan di batas halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> geser pratinjau ke batas halaman. Kartu harus pindah utuh, bukan terpotong. Pola ini dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — break-inside",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside",
+   "sourceSnippet": "The break-inside CSS property sets how page, column, or region breaks should behave inside a generated box.",
+   "source2": "MDN — page-break-inside",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-inside",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep Cards and Figures from Splitting When Printed",
+   "desc": "How to use break-inside: avoid so cards, figures, and captions are not split across pages.",
+   "content": "<p class=\"mb-4\">Compact cards and figures often split: the image at the end of a page, the caption on the next. The printout is then hard to read.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep one block intact</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add this in @media print: .card, figure { break-inside: avoid; page-break-inside: avoid; }. Pair the img with figcaption inside the same figure. Do not set avoid on a section taller than one page, because the browser will ignore it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the cut at the page boundary</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll the preview to a page boundary. The card should move as a whole, not split. This pattern is noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — break-inside",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside",
+   "sourceSnippet": "The break-inside CSS property sets how page, column, or region breaks should behave inside a generated box.",
+   "source2": "MDN — page-break-inside",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-inside",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cetak-atur-orphans-widows",
+ "langs": {
+  "id": {
+   "title": "Cara Atur Orphans dan Widows pada Teks Cetak",
+   "desc": "Tata cara menahan minimal dua baris paragraf di awal dan akhir halaman cetak dengan orphans dan widows.",
+   "content": "<p class=\"mb-4\">Satu baris paragraf yang tertinggal di awal atau akhir halaman membuat teks cetak terlihat putus. Pembaca mengira ada bagian yang hilang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Naikkan batas baris minimum</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pada @media print set p { orphans: 3; widows: 3; }. Orphans menahan baris di awal halaman, widows menahan baris di akhir halaman. Gabungkan dengan break-after: avoid pada h2 supaya judul tidak menggantung sendirian.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan sebelum dan sesudah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cetak pratinjau paragraf panjang. Tidak boleh ada satu baris yatim di puncak halaman. Contoh nilai ini ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — orphans",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/orphans",
+   "sourceSnippet": "The orphans CSS property sets the minimum number of lines in a block container that must be shown at the bottom of a page.",
+   "source2": "MDN — widows",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set Orphans and Widows on Printed Text",
+   "desc": "How to keep at least two paragraph lines at the start and end of a printed page with orphans and widows.",
+   "content": "<p class=\"mb-4\">A single paragraph line left at the start or end of a page makes printed text look broken. Readers think a part is missing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Raise the minimum line count</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set p { orphans: 3; widows: 3; } inside @media print. Orphans keep lines at the start of a page, widows keep lines at the end. Pair that with break-after: avoid on h2 so a heading is not left alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare before and after</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview a long paragraph. There should be no single orphan line at the top of a page. Sample values live on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — orphans",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/orphans",
+   "sourceSnippet": "The orphans CSS property sets the minimum number of lines in a block container that must be shown at the bottom of a page.",
+   "source2": "MDN — widows",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cetak-sembunyikan-kontrol-form",
+ "langs": {
+  "id": {
+   "title": "Cara Sembunyikan Kontrol Form dan Tampilkan Nilainya saat Cetak",
+   "desc": "Tata cara menyembunyikan input, select, dan tombol lalu menampilkan nilai isian pada hasil cetak.",
+   "content": "<p class=\"mb-4\">Form yang dicetak apa adanya memuat border input, panah select, dan tombol kirim. Yang dibutuhkan pembaca adalah label dan nilai, bukan kontrol.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Siapkan salinan nilai untuk cetak</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> letakkan span.print-value di samping tiap input. Saat nilai berubah, salin teks ke span itu. Pada @media print sembunyikan input, select, textarea, dan button, lalu tampilkan .print-value. Jangan mengandalkan placeholder, karena placeholder bukan nilai yang dikirim.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cetak satu isian contoh</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> isi nama dan jumlah, lalu buka print preview. Hanya label dan nilai yang terlihat. Langkah ini dirangkum di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @media print",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media#print",
+   "sourceSnippet": "The print media type matches documents viewed in a print preview or sent to a printer.",
+   "source2": "MDN — HTML input",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Hide Form Controls and Print Their Values",
+   "desc": "How to hide inputs, selects, and buttons and show the filled values on the printout.",
+   "content": "<p class=\"mb-4\">A form printed as-is includes input borders, select arrows, and the submit button. Readers need the label and the value, not the controls.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prepare a print copy of the value</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> place a span.print-value next to each input. When the value changes, copy the text into that span. In @media print hide input, select, textarea, and button, then show .print-value. Do not rely on placeholder, because a placeholder is not the submitted value.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Print one sample entry</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> fill a name and an amount, then open print preview. Only the label and the value should show. This step is summarized on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @media print",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media#print",
+   "sourceSnippet": "The print media type matches documents viewed in a print preview or sent to a printer.",
+   "source2": "MDN — HTML input",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "cetak-paksa-halaman-baru-sebelum-bab",
+ "langs": {
+  "id": {
+   "title": "Cara Paksa Halaman Baru sebelum Bab",
+   "desc": "Tata cara memakai break-before: page supaya tiap bab mulai di halaman cetak yang baru.",
+   "content": "<p class=\"mb-4\">Dokumen panjang yang dicetak menempelkan bab baru di sisa halaman sebelumnya. Judul bab lalu terjepit di bawah, bukan di awal lembar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Putus halaman pada penanda bab</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri kelas .bab pada section, lalu di @media print set .bab { break-before: page; page-break-before: always; }. Kecualikan bab pertama dengan .bab:first-of-type { break-before: auto; } supaya tidak ada halaman kosong di depan. Hindari memaksa jeda pada setiap h2 pendek.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hitung lembar di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka print preview dua bab. Bab kedua harus mulai di halaman baru, tanpa lembar kosong ekstra. Pola ini ditulis di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — break-before",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-before",
+   "sourceSnippet": "The break-before CSS property sets how page, column, or region breaks should behave before a generated box.",
+   "source2": "MDN — page-break-before",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Force a Page Break Before a Chapter",
+   "desc": "How to use break-before: page so each chapter starts on a new printed page.",
+   "content": "<p class=\"mb-4\">A long document printed as one flow sticks a new chapter onto the leftover space of the previous page. The chapter title is then squeezed at the bottom instead of starting a sheet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Break the page on the chapter marker</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add a .bab class on the section, then in @media print set .bab { break-before: page; page-break-before: always; }. Exclude the first chapter with .bab:first-of-type { break-before: auto; } so there is no blank page up front. Do not force a break on every short h2.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Count sheets in preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open print preview for two chapters. The second chapter should start on a new page, with no extra blank sheet. This pattern is written on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — break-before",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-before",
+   "sourceSnippet": "The break-before CSS property sets how page, column, or region breaks should behave before a generated box.",
+   "source2": "MDN — page-break-before",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+]
 };
