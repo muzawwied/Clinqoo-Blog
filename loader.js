@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra + subgrid + storage + cascade + performa + observer + observer extra + overflow + baseline + baseline extra + inp + inp extra + debounce + debounce extra + cetak + iframe + aspect + media) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra + subgrid + storage + cascade + performa + observer + observer extra + overflow + baseline + baseline extra + inp + inp extra + debounce + debounce extra + cetak + iframe + aspect + media) + viewtransition) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -28,16 +28,23 @@
     e.onerror = loadCetak;
     document.body.appendChild(e);
   }
-  function loadMedia() {
+  function loadViewTransition() {
     var e = document.createElement('script');
-    e.src = 'data_media.js?v=1';
+    e.src = 'data_viewtransition.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
   }
+  function loadMedia() {
+    var e = document.createElement('script');
+    e.src = 'data_media.js?v=2';
+    e.onload = loadViewTransition;
+    e.onerror = loadViewTransition;
+    document.body.appendChild(e);
+  }
   function loadAspect() {
     var e = document.createElement('script');
-    e.src = 'data_aspect.js?v=3';
+    e.src = 'data_aspect.js?v=4';
     e.onload = loadMedia;
     e.onerror = loadMedia;
     document.body.appendChild(e);

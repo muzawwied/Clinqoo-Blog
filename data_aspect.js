@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Aspect (8 Oktober 2026, 17:00 WIB) — tambah 1 artikel
+// Clincoo Docs — tambah 1 artikel Aspect (8 Oktober 2026, 19:00 WIB)
 // Clincoo Docs — kategori Aspect (8 Oktober 2026, 16:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Aspect (8 Oktober 2026, 15:00 WIB) — 5 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -327,5 +327,35 @@ window.countryDataFiles["aspect"] = {
  }
 }
 
+,
+{
+ "id": "aspect-canvas-grafik-jaga-rasio",
+ "langs": {
+  "id": {
+   "title": "Cara Jaga Rasio Canvas Grafik dengan aspect-ratio",
+   "desc": "Tata cara memberi aspect-ratio pada canvas Clincoo supaya grafik tidak loncat saat skrip menggambar ulang.",
+   "content": "<p class=\"mb-4\">Canvas tanpa rasio cadangan tinggi nol sampai skrip selesai. Kartu harga di bawahnya meloncat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cadangkan kotak dulu</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set <code>aspect-ratio: 16 / 9</code> dan <code>width: 100%</code> pada canvas. Jangan gabungkan dengan <code>height</code> piksel tetap. Samakan ukuran buffer gambar dengan ukuran tampilan agar grafik tidak buram.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur sebelum dan sesudah gambar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> rekam layout shift di DevTools. Kotak harus sama sebelum skrip jalan. Simpan rasio yang dipakai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The aspect-ratio CSS property sets a preferred ratio for the box, used in the calculation of auto sizes.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep a Chart Canvas Ratio with aspect-ratio",
+   "desc": "How to set aspect-ratio on a Clincoo canvas so the chart does not jump when the script redraws.",
+   "content": "<p class=\"mb-4\">A canvas without a reserved ratio has zero height until the script finishes. The price card below it jumps.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Reserve the box first</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set <code>aspect-ratio: 16 / 9</code> and <code>width: 100%</code> on the canvas. Do not combine it with a fixed pixel <code>height</code>. Match the drawing buffer to the display size so the chart is not blurry.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure before and after drawing</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> record layout shift in DevTools. The box should be the same before the script runs. Save the ratio you used on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "The aspect-ratio CSS property sets a preferred ratio for the box, used in the calculation of auto sizes.",
+   "source2": "web.dev — Optimize CLS",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };

@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Media (8 Oktober 2026, 18:00 WIB) — 9 artikel
+// Clincoo Docs — tambah 3 artikel Media (8 Oktober 2026, 19:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["media"] = {
  "names": { "id": "Media", "en": "Media" },
@@ -260,6 +260,94 @@ window.countryDataFiles["media"] = {
    "sourceSnippet": "The forced-colors media feature detects when the user agent is enforcing a limited palette, such as Windows high contrast.",
    "source2": "MDN — System colors",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/system-color",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "media-prefers-reduced-data-ringankan-aset",
+ "langs": {
+  "id": {
+   "title": "Cara Ringankan Aset saat prefers-reduced-data Aktif",
+   "desc": "Tata cara mendeteksi prefers-reduced-data di Clincoo supaya gambar hero dan video tidak diunduh saat pengunjung menghemat data.",
+   "content": "<p class=\"mb-4\">Beberapa pengunjung menyalakan hemat data di sistem. Halaman yang tetap memuat video latar dan gambar lebar membuat pratinjau Clincoo terasa berat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek fitur media</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> bungkus sumber berat dengan <code>@media (prefers-reduced-data: reduce)</code>. Sembunyikan video latar, turunkan kualitas gambar, dan tampilkan poster statis. Jangan andalkan fitur ini sendirian karena dukungannya belum merata.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> emulasikan reduced-data lewat DevTools Rendering. Pastikan teks dan tombol tetap ada tanpa video. Catat keputusan aset di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — prefers-reduced-data",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data",
+   "sourceSnippet": "The prefers-reduced-data media feature detects when the user has requested the web content that consumes less internet traffic.",
+   "source2": "web.dev — Adaptive loading",
+   "source2Url": "https://web.dev/articles/adaptive-loading-cds-2019",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Lighten Assets When prefers-reduced-data Is Active",
+   "desc": "How to detect prefers-reduced-data in Clincoo so the hero image and video are not downloaded when a visitor is saving data.",
+   "content": "<p class=\"mb-4\">Some visitors enable data saver on the system. A page that still loads a background video and a wide image makes the Clincoo preview feel heavy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the media feature</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> wrap heavy sources with <code>@media (prefers-reduced-data: reduce)</code>. Hide the background video, lower image quality, and show a static poster. Do not rely on this feature alone because support is not even yet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> emulate reduced-data through DevTools Rendering. Make sure text and buttons remain without the video. Record the asset decision on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — prefers-reduced-data",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data",
+   "sourceSnippet": "The prefers-reduced-data media feature detects when the user has requested the web content that consumes less internet traffic.",
+   "source2": "web.dev — Adaptive loading",
+   "source2Url": "https://web.dev/articles/adaptive-loading-cds-2019",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "media-scripting-none-dasar-tanpa-js",
+ "langs": {
+  "id": {
+   "title": "Cara Siapkan Tampilan Dasar saat scripting none",
+   "desc": "Tata cara memakai media query scripting: none supaya halaman Clincoo tetap terbaca jika JavaScript tidak berjalan.",
+   "content": "<p class=\"mb-4\">Menu yang hanya muncul setelah skrip berjalan kosong saat JavaScript diblokir. Pengunjung melihat halaman tanpa navigasi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis dasar di HTML</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> letakkan tautan utama di HTML, lalu tambah <code>@media (scripting: none)</code> untuk menampilkan daftar cadangan dan menyembunyikan tombol yang butuh skrip. Jangan sembunyikan konten utama dengan <code>hidden</code> yang hanya dibuka JS.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Matikan JavaScript sebentar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> nonaktifkan JavaScript di DevTools dan muat ulang. Judul, harga, dan tautan kontak harus tetap ada. Simpan catatan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scripting",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting",
+   "sourceSnippet": "The scripting media feature tests whether scripting such as JavaScript is available.",
+   "source2": "MDN — Progressive enhancement",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Prepare a Base View When scripting Is none",
+   "desc": "How to use the scripting: none media query so a Clincoo page stays readable when JavaScript does not run.",
+   "content": "<p class=\"mb-4\">A menu that appears only after a script runs is empty when JavaScript is blocked. The visitor sees a page without navigation.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write the base in HTML</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> put the main links in HTML, then add <code>@media (scripting: none)</code> to show a fallback list and hide buttons that need a script. Do not hide the main content with <code>hidden</code> that only JS opens.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Disable JavaScript briefly</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> disable JavaScript in DevTools and reload. The title, price, and contact link must remain. Save the note on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scripting",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting",
+   "sourceSnippet": "The scripting media feature tests whether scripting such as JavaScript is available.",
+   "source2": "MDN — Progressive enhancement",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "media-display-mode-standalone-bedakan-pwa",
+ "langs": {
+  "id": {
+   "title": "Cara Bedakan Tampilan PWA dengan display-mode standalone",
+   "desc": "Tata cara memakai display-mode: standalone di Clincoo supaya situs yang dipasang sebagai aplikasi tidak menampilkan ajakan pasang berulang.",
+   "content": "<p class=\"mb-4\">Spanduk pasang aplikasi yang tetap muncul di jendela standalone membingungkan. Pengunjung sudah membuka Clincoo dari ikon layar utama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan gaya terpasang</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sembunyikan spanduk dengan <code>@media (display-mode: standalone)</code>. Tambah jarak atas jika status bar menutup judul. Cek juga <code>display-mode: browser</code> untuk tombol pasang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji jendela terpasang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pratinjau lewat aplikasi terpasang atau emulasi display-mode. Pastikan navigasi tidak tertutup. Tulis hasilnya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — display-mode",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+   "sourceSnippet": "The display-mode media feature tests the display mode of the web app, such as browser or standalone.",
+   "source2": "web.dev — Add a web app manifest",
+   "source2Url": "https://web.dev/articles/add-manifest",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Tell a PWA Apart with display-mode standalone",
+   "desc": "How to use display-mode: standalone in Clincoo so a site installed as an app does not keep showing an install prompt.",
+   "content": "<p class=\"mb-4\">An install banner that still appears in a standalone window is confusing. The visitor already opened Clincoo from the home-screen icon.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate the installed style</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> hide the banner with <code>@media (display-mode: standalone)</code>. Add top spacing if the status bar covers the title. Also check <code>display-mode: browser</code> for the install button.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test the installed window</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the preview through the installed app or a display-mode emulation. Make sure navigation is not covered. Write the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — display-mode",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+   "sourceSnippet": "The display-mode media feature tests the display mode of the web app, such as browser or standalone.",
+   "source2": "web.dev — Add a web app manifest",
+   "source2Url": "https://web.dev/articles/add-manifest",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
