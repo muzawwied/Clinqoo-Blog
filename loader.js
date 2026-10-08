@@ -44,7 +44,7 @@
   }
   function loadAbort() {
     var e = document.createElement('script');
-    e.src = 'data_abort.js?v=1';
+    e.src = 'data_abort.js?v=2';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);

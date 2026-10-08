@@ -4201,4 +4201,39 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-lepas-listener-dengan-signal/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-lepas-listener-dengan-signal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-lepas-listener-dengan-signal/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-lepas-listener-dengan-signal/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-alasan-batal-kustom/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-alasan-batal-kustom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-alasan-batal-kustom/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-alasan-batal-kustom/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-batalkan-unggahan-saat-ganti-berkas/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-batalkan-unggahan-saat-ganti-berkas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-batalkan-unggahan-saat-ganti-berkas/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-batalkan-unggahan-saat-ganti-berkas/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-satu-controller-untuk-fetch-paralel/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-satu-controller-untuk-fetch-paralel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-satu-controller-untuk-fetch-paralel/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-satu-controller-untuk-fetch-paralel/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/"/>
+  </url>
 </urlset>

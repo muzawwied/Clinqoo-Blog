@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Abort (9 Oktober 2026, 05:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Abort (9 Oktober 2026, 04:00 WIB) — 5 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["abort"] = {
@@ -143,6 +144,152 @@ window.countryDataFiles["abort"] = {
    "sourceSnippet": "Passing an AbortSignal to fetch cancels the request when abort() is called on the controller.",
    "source2": "MDN — Fetch signal option",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/RequestInit#signal",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "abort-lepas-listener-dengan-signal",
+ "langs": {
+  "id": {
+   "title": "Cara Lepas Event Listener dengan AbortSignal",
+   "desc": "Tata cara melepas listener Clincoo lewat sinyal abort supaya tidak menumpuk saat komponen dibongkar.",
+   "content": "<p class=\"mb-4\">Listener yang tidak dilepas tetap jalan setelah panel ditutup. Klik berikutnya bisa memicu fungsi lama dan menimpa state yang sudah tidak dipakai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ikat listener ke sinyal</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat AbortController saat panel dibuka. Daftarkan listener dengan opsi { signal: controller.signal }. Saat panel ditutup, panggil controller.abort(). Browser melepas listener itu tanpa removeEventListener manual.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu sinyal untuk banyak listener</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pakai sinyal yang sama untuk resize, keydown, dan pointermove pada panel yang sama. Jangan buat controller baru tiap event. Catat pola ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya tim tidak mencampur cara lepas lama dan cara sinyal.</p>",
+   "source": "MDN — addEventListener signal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#signal",
+   "sourceSnippet": "The signal option removes the listener when the given AbortSignal is aborted.",
+   "source2": "MDN — AbortController",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Remove an Event Listener with AbortSignal",
+   "desc": "How to remove a Clincoo listener with an abort signal so it does not pile up when a component is torn down.",
+   "content": "<p class=\"mb-4\">A listener that is never removed keeps running after the panel closes. The next click can fire the old function and overwrite state that is no longer in use.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bind the listener to a signal</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create an AbortController when the panel opens. Register the listener with { signal: controller.signal }. When the panel closes, call controller.abort(). The browser removes that listener without a manual removeEventListener.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One signal for many listeners</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> use the same signal for resize, keydown, and pointermove on the same panel. Do not create a new controller per event. Note this pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the team does not mix the old removal style with the signal style.</p>",
+   "source": "MDN — addEventListener signal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#signal",
+   "sourceSnippet": "The signal option removes the listener when the given AbortSignal is aborted.",
+   "source2": "MDN — AbortController",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "abort-alasan-batal-kustom",
+ "langs": {
+  "id": {
+   "title": "Cara Kirim Alasan Batal lewat abort(reason)",
+   "desc": "Tata cara mengirim alasan batal yang bisa dibaca di catch supaya pesan di Clincoo tidak generik.",
+   "content": "<p class=\"mb-4\">AbortError tanpa alasan membuat semua batal terlihat sama. Pengguna yang menutup dialog dan jaringan yang putus butuh pesan berbeda.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kirim alasan yang stabil</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil controller.abort(\"panel-ditutup\") atau abort(new DOMException(\"panel ditutup\", \"AbortError\")). Di catch, baca error.name dan signal.reason sebelum menampilkan toast.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan taruh data rahasia di reason</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reason boleh berupa kode singkat, bukan token atau isi formulir. Uji di konsol bahwa reason tampil setelah abort. Simpan daftar kode alasan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar tiap halaman memakai kata yang sama.</p>",
+   "source": "MDN — AbortController.abort",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort",
+   "sourceSnippet": "abort() accepts an optional reason that is stored on the signal and surfaced to the aborted operation.",
+   "source2": "MDN — AbortSignal.reason",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/reason",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Pass a Custom Reason with abort(reason)",
+   "desc": "How to pass a cancel reason that catch can read so Clincoo messages are not generic.",
+   "content": "<p class=\"mb-4\">An AbortError with no reason makes every cancel look the same. A user who closes a dialog and a dropped network need different messages.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Send a stable reason</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call controller.abort(\"panel-closed\") or abort(new DOMException(\"panel closed\", \"AbortError\")). In catch, read error.name and signal.reason before showing a toast.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not put secrets in reason</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> the reason may be a short code, not a token or form contents. Check in the console that reason appears after abort. Keep the reason codes on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so every page uses the same words.</p>",
+   "source": "MDN — AbortController.abort",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort",
+   "sourceSnippet": "abort() accepts an optional reason that is stored on the signal and surfaced to the aborted operation.",
+   "source2": "MDN — AbortSignal.reason",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/reason",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "abort-batalkan-unggahan-saat-ganti-berkas",
+ "langs": {
+  "id": {
+   "title": "Cara Batalkan Unggahan Saat Pengguna Ganti Berkas",
+   "desc": "Tata cara menghentikan unggahan Clincoo yang lama saat pengguna memilih berkas baru.",
+   "content": "<p class=\"mb-4\">Unggahan yang dibiarkan selesai setelah berkas diganti bisa menimpa pratinjau baru dengan hasil lama. Tombol progres juga tetap menunjuk berkas yang sudah tidak dipilih.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti controller tiap pilihan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan controller unggahan di variabel panel. Saat input file berubah, abort controller lama, buat yang baru, lalu kirim signal ke fetch atau XHR yang mengunggah berkas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Abaikan hasil yang terlambat</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jika catch adalah AbortError, jangan tampilkan gagal jaringan. Kosongkan bilah progres dan biarkan unggahan baru yang mengisinya. Catat urutan ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya pratinjau tidak berkedip ke berkas sebelumnya.</p>",
+   "source": "MDN — Using AbortController with fetch",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController#using_with_fetch",
+   "sourceSnippet": "Passing an AbortSignal to fetch lets you cancel an in-flight request, including an upload.",
+   "source2": "MDN — XMLHttpRequest.abort",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Abort an Upload When the User Picks Another File",
+   "desc": "How to stop an in-flight Clincoo upload when the user selects a new file.",
+   "content": "<p class=\"mb-4\">An upload that finishes after the file changed can overwrite the new preview with the old result. The progress control also keeps pointing at a file that is no longer selected.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace the controller on each pick</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep the upload controller on the panel. When the file input changes, abort the old controller, create a new one, then pass signal to the fetch or XHR that uploads the file.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ignore a late result</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> if catch is an AbortError, do not show a network failure. Clear the progress bar and let the new upload fill it. Note this order on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the preview does not flash back to the previous file.</p>",
+   "source": "MDN — Using AbortController with fetch",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController#using_with_fetch",
+   "sourceSnippet": "Passing an AbortSignal to fetch lets you cancel an in-flight request, including an upload.",
+   "source2": "MDN — XMLHttpRequest.abort",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "abort-satu-controller-untuk-fetch-paralel",
+ "langs": {
+  "id": {
+   "title": "Cara Batalkan Beberapa Fetch Paralel dengan Satu Controller",
+   "desc": "Tata cara menghentikan sekelompok fetch Clincoo sekaligus saat pengguna meninggalkan langkah.",
+   "content": "<p class=\"mb-4\">Halaman yang memuat judul, gambar, dan daftar secara bersamaan sering hanya membatalkan satu permintaan. Dua sisanya tetap menulis ke state setelah langkah ditutup.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bagikan satu sinyal</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat satu AbortController untuk langkah itu. Kirim controller.signal ke setiap fetch di Promise.all. Saat pengguna kembali, satu abort menghentikan seluruh kelompok.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan campur dengan timeout per permintaan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> timeout tiap permintaan tetap boleh lewat AbortSignal.any jika perlu, tetapi batal pengguna harus tetap satu sinyal bersama. Setelah abort, abaikan seluruh hasil kelompok. Tuliskan batas kelompok di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar tidak ada fetch yatim di langkah yang sama.</p>",
+   "source": "MDN — AbortSignal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+   "sourceSnippet": "One AbortSignal can be passed to multiple operations so a single abort cancels the group.",
+   "source2": "MDN — Promise.all",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Abort Several Parallel Fetches with One Controller",
+   "desc": "How to stop a group of Clincoo fetches at once when the user leaves a step.",
+   "content": "<p class=\"mb-4\">A page that loads a title, an image, and a list together often cancels only one request. The other two still write into state after the step is closed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Share one signal</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create one AbortController for that step. Pass controller.signal to every fetch in Promise.all. When the user goes back, one abort stops the whole group.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep user cancel on one shared signal</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> a per-request timeout may still use AbortSignal.any if needed, but the user cancel must stay one shared signal. After abort, ignore every result in the group. Write the group boundary on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so no orphan fetch remains on the same step.</p>",
+   "source": "MDN — AbortSignal",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+   "sourceSnippet": "One AbortSignal can be passed to multiple operations so a single abort cancels the group.",
+   "source2": "MDN — Promise.all",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "abort-cek-signal-sudah-aborted",
+ "langs": {
+  "id": {
+   "title": "Cara Cek signal.aborted Sebelum Melanjutkan Kerja",
+   "desc": "Tata cara menghentikan kerja lanjutan Clincoo setelah sinyal sudah batal, bukan hanya fetch-nya.",
+   "content": "<p class=\"mb-4\">Fetch yang dibatalkan tetap bisa punya kode sesudah await yang menulis cache atau membuka panel. Pemeriksaan hanya di catch tidak cukup jika jalur sukses masih lanjut.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek sebelum efek samping</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> setelah await fetch, baca signal.aborted sebelum menyimpan JSON, menggambar kanvas, atau memindahkan fokus. Jika sudah aborted, return tanpa menyentuh DOM.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang pendengar abort untuk kerja panjang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> untuk loop pemrosesan lokal, dengarkan event abort pada sinyal dan setel bendera berhenti. Jangan mulai loop baru jika sinyal sudah aborted saat fungsi dipanggil. Simpan daftar titik cek di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya efek samping tidak lolos setelah batal.</p>",
+   "source": "MDN — AbortSignal.aborted",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/aborted",
+   "sourceSnippet": "The aborted property is true after the signal aborts, so later work can exit before side effects.",
+   "source2": "MDN — AbortSignal abort event",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort_event",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Check signal.aborted Before Continuing Work",
+   "desc": "How to stop follow-up Clincoo work after the signal is already aborted, not only the fetch.",
+   "content": "<p class=\"mb-4\">A cancelled fetch can still have code after await that writes cache or opens a panel. A check only in catch is not enough if the success path keeps going.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check before side effects</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> after await fetch, read signal.aborted before saving JSON, drawing a canvas, or moving focus. If it is already aborted, return without touching the DOM.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Listen for abort on long work</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> for a local processing loop, listen for the abort event on the signal and set a stop flag. Do not start a new loop if the signal is already aborted when the function is called. Keep the check points on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so side effects do not slip through after cancel.</p>",
+   "source": "MDN — AbortSignal.aborted",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/aborted",
+   "sourceSnippet": "The aborted property is true after the signal aborts, so later work can exit before side effects.",
+   "source2": "MDN — AbortSignal abort event",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort_event",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
   }
