@@ -1,4 +1,4 @@
-// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra + subgrid + storage + cascade + performa + observer + observer extra + overflow + baseline + baseline extra + inp + inp extra + debounce + debounce extra + cetak + iframe + aspect + media) + viewtransition + shadow + komentar) lalu app.js
+// Loader: muat konten blog Clincoo (data_clincoo.js + extra + semantic + form + dialog + aria + keyboard + prompt + console + seo + csp + network + prefetch + pembayaran + cls + popover + container + cerita extra + anchor + testing + testing extra + stack + stack extra + mcp + mcp extra + integrasi-ai extra + integrasi-ai extra2 + modul extra + fokus + fokus extra + fokus extra2 + selector + selector extra + variabel + variabel extra + variabel extra2 + gambar + gambar extra + git + motion + motion extra + spacing + zindex + flexbox extra + subgrid + storage + cascade + performa + observer + observer extra + overflow + baseline + baseline extra + inp + inp extra + debounce + debounce extra + cetak + iframe + aspect + media) + viewtransition + shadow + komentar + abort) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -38,6 +38,13 @@
   function loadKomentar() {
     var e = document.createElement('script');
     e.src = 'data_komentar.js?v=1';
+    e.onload = loadAbort;
+    e.onerror = loadAbort;
+    document.body.appendChild(e);
+  }
+  function loadAbort() {
+    var e = document.createElement('script');
+    e.src = 'data_abort.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
