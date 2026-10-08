@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 5 artikel Iframe (8 Oktober 2026, 14:00 WIB)
 // Clincoo Docs — kategori Iframe (8 Oktober 2026, 12:00 WIB) — 4 artikel
 // Clincoo Docs — tambah 5 artikel Iframe (8 Oktober 2026, 13:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -264,7 +265,151 @@ window.countryDataFiles["iframe"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "iframe-debug-refused-to-connect",
+ "langs": {
+  "id": {
+   "title": "Cara Debug Iframe yang Menolak Terhubung",
+   "desc": "Tata cara membaca pesan refused to connect: cek X-Frame-Options, CSP frame-ancestors, dan URL yang diblokir.",
+   "content": "<p class=\"mb-4\">Bingkai kosong bertuliskan refused to connect hampir selalu berarti situs tujuan melarang dirinya disematkan, bukan karena tag iframe-nya salah ketik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca header yang menolak frame</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka pratinjau, lalu panel jaringan pada dokumen iframe. Jika status gagal, lihat header X-Frame-Options (DENY atau SAMEORIGIN) atau Content-Security-Policy frame-ancestors. SAMEORIGIN hanya mengizinkan halaman satu origin. Situs lain tidak bisa Anda ubah dari Clincoo.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti sumber, jangan paksa</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ganti src ke URL embed resmi (bukan URL halaman biasa), atau tautkan keluar jika pemilik tidak menyediakan embed. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — X-Frame-Options",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+   "sourceSnippet": "X-Frame-Options controls whether a browser may render a page inside a frame.",
+   "source2": "MDN — CSP frame-ancestors",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debug an Iframe That Refuses to Connect",
+   "desc": "How to read a refused to connect message: check X-Frame-Options, CSP frame-ancestors, and the blocked URL.",
+   "content": "<p class=\"mb-4\">A blank frame that says refused to connect almost always means the target site forbids being embedded, not that the iframe tag is mistyped.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the header that blocks the frame</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open the preview, then the network panel for the iframe document. If the request fails, check X-Frame-Options (DENY or SAMEORIGIN) or Content-Security-Policy frame-ancestors. SAMEORIGIN only allows a page on the same origin. You cannot change another site from Clincoo.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Switch the source, do not force it</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> replace src with an official embed URL (not the normal page URL), or link out if the owner does not provide an embed. Notes live on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — X-Frame-Options",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+   "sourceSnippet": "X-Frame-Options controls whether a browser may render a page inside a frame.",
+   "source2": "MDN — CSP frame-ancestors",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-youtube-nocookie",
+ "langs": {
+  "id": {
+   "title": "Cara Sematkan YouTube Tanpa Cookie Pihak Ketiga",
+   "desc": "Tata cara memakai domain youtube-nocookie dan judul iframe supaya video tidak memasang cookie sebelum diputar.",
+   "content": "<p class=\"mb-4\">URL youtube.com/embed memasang cookie pihak ketiga begitu frame dimuat. Pengunjung yang hanya membaca teks ikut terkena pelacakan itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai domain nocookie</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set src ke https://www.youtube-nocookie.com/embed/ID_VIDEO. Tambahkan title yang menyebut judul video, loading=\"lazy\" jika pemutar di bawah lipatan, dan referrerpolicy=\"strict-origin-when-cross-origin\". Jangan salin URL tontonan biasa ke src.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek cookie di panel aplikasi</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat ulang pratinjau tanpa memutar video, lalu buka penyimpanan. Cookie YouTube tidak boleh muncul sebelum interaksi putar. Detail ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "YouTube — Embed videos and playlists",
+   "sourceUrl": "https://developers.google.com/youtube/player_parameters",
+   "sourceSnippet": "The youtube-nocookie.com domain serves the player without setting cookies until playback.",
+   "source2": "MDN — iframe element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Embed YouTube Without Third-Party Cookies",
+   "desc": "How to use the youtube-nocookie domain and an iframe title so a video does not set cookies before playback.",
+   "content": "<p class=\"mb-4\">A youtube.com/embed URL sets third-party cookies as soon as the frame loads. Visitors who only read the text still get that tracking.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use the nocookie domain</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set src to https://www.youtube-nocookie.com/embed/VIDEO_ID. Add a title that names the video, loading=\"lazy\" if the player is below the fold, and referrerpolicy=\"strict-origin-when-cross-origin\". Do not paste a normal watch URL into src.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check cookies in the application panel</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reload the preview without playing the video, then open storage. YouTube cookies should not appear before a play interaction. Details are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "YouTube — Embed videos and playlists",
+   "sourceUrl": "https://developers.google.com/youtube/player_parameters",
+   "sourceSnippet": "The youtube-nocookie.com domain serves the player without setting cookies until playback.",
+   "source2": "MDN — iframe element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-sandbox-jangan-gabung-scripts",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari sandbox allow-scripts dan allow-same-origin Bersamaan",
+   "desc": "Tata cara menjaga iframe sandbox: jangan gabungkan allow-scripts dan allow-same-origin pada dokumen yang tidak tepercaya.",
+   "content": "<p class=\"mb-4\">Atribut sandbox tanpa token memblokir skrip. Menambah allow-scripts dan allow-same-origin sekaligus membuat dokumen bisa melepas sandbox-nya sendiri jika origin-nya sama dengan halaman induk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih satu jalur izin</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> untuk cuplikan pihak ketiga pakai sandbox=\"allow-scripts\" tanpa allow-same-origin, atau srcdoc kosong dari skrip. Untuk widget yang memang harus satu origin dan tepercaya, jangan andalkan sandbox sebagai pagar utama. Jangan salin daftar allow lengkap dari contoh lama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji apakah frame bisa menyentuh induk</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka konsol pada dokumen frame dan coba baca parent.location. Akses itu harus gagal untuk konten yang tidak tepercaya. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — iframe sandbox",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+   "sourceSnippet": "Allowing both scripts and same-origin can let the framed page remove the sandbox.",
+   "source2": "HTML spec — sandbox attribute",
+   "source2Url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid sandbox allow-scripts with allow-same-origin",
+   "desc": "How to keep a sandboxed iframe safe: do not combine allow-scripts and allow-same-origin on an untrusted document.",
+   "content": "<p class=\"mb-4\">A sandbox attribute with no tokens blocks scripts. Adding allow-scripts and allow-same-origin together lets the document remove its own sandbox if it shares the parent origin.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pick one permission path</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> use sandbox=\"allow-scripts\" without allow-same-origin for a third-party snippet, or a script-free srcdoc. For a widget that must share your origin and is trusted, do not treat sandbox as the main fence. Do not copy a full allow list from an old example.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test whether the frame can touch the parent</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the console in the frame document and try to read parent.location. That access should fail for untrusted content. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — iframe sandbox",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+   "sourceSnippet": "Allowing both scripts and same-origin can let the framed page remove the sandbox.",
+   "source2": "HTML spec — sandbox attribute",
+   "source2Url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-tinggi-cadangan-cegah-lonjakan",
+ "langs": {
+  "id": {
+   "title": "Cara Siapkan Tinggi Cadangan agar Iframe Tidak Melonjak",
+   "desc": "Tata cara mengunci lebar dan tinggi iframe sebelum dokumen pihak ketiga selesai agar layout tidak bergeser.",
+   "content": "<p class=\"mb-4\">Iframe tanpa ukuran intrinsik mulai setinggi beberapa piksel, lalu melonjak setelah widget selesai. Teks di bawahnya terdorong dan Cumulative Layout Shift naik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kunci kotak sebelum src dimuat</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri width dan height pada iframe, atau bungkus dengan div yang aspect-ratio-nya sama dengan pemutar (misalnya 16/9). Set display block dan width 100% pada frame, max-width 100%, dan jangan biarkan tinggi mengikuti konten lintas-origin yang tidak Anda kendalikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur lonjakan di panel performa</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> rekam muat ulang dan lihat layout shift. Kotak iframe harus sudah stabil sebelum dokumen pihak ketiga selesai. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "aspect-ratio reserves a box before replaced content such as an iframe finishes loading.",
+   "source2": "web.dev — Optimize Cumulative Layout Shift",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Reserve Height so an Iframe Does Not Jump",
+   "desc": "How to lock an iframe width and height before the third-party document finishes so layout does not shift.",
+   "content": "<p class=\"mb-4\">An iframe with no intrinsic size starts a few pixels tall, then jumps after the widget finishes. Text below it is pushed down and Cumulative Layout Shift rises.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lock the box before src loads</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set width and height on the iframe, or wrap it in a div whose aspect-ratio matches the player (for example 16/9). Set the frame to display block and width 100%, max-width 100%, and do not let height follow cross-origin content you do not control.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure the jump in the performance panel</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> record a reload and look for layout shift. The iframe box should already be stable before the third-party document finishes. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — aspect-ratio",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
+   "sourceSnippet": "aspect-ratio reserves a box before replaced content such as an iframe finishes loading.",
+   "source2": "web.dev — Optimize Cumulative Layout Shift",
+   "source2Url": "https://web.dev/articles/optimize-cls",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-permissions-policy-kamera",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi Kamera dan Mikrofon di Iframe",
+   "desc": "Tata cara memakai atribut allow dan Permissions-Policy supaya iframe tidak meminta kamera atau mikrofon.",
+   "content": "<p class=\"mb-4\">Widget rapat atau peta kadang meminta kamera begitu frame dimuat. Tanpa batas, prompt itu muncul di situs Anda atas nama dokumen lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kosongkan izin yang tidak perlu</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> jangan tulis allow=\"camera; microphone\" kecuali pemutar memang butuh. Untuk peta atau formulir, sisakan allow kosong atau hanya geolocation jika benar-benar dipakai. Di header halaman induk, Permissions-Policy camera=() dan microphone=() menutup delegasi ke frame.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pastikan prompt tidak muncul</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat pratinjau dan buka sensor di DevTools. Izin kamera pada frame harus denied sebelum pengguna mengetuk apa pun. Detail ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy",
+   "sourceSnippet": "Permissions-Policy can disable camera and microphone for the page and its frames.",
+   "source2": "MDN — iframe allow attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Restrict Camera and Microphone in an Iframe",
+   "desc": "How to use the allow attribute and Permissions-Policy so an iframe cannot request the camera or microphone.",
+   "content": "<p class=\"mb-4\">A meeting widget or map sometimes asks for the camera as soon as the frame loads. Without a limit, that prompt appears on your site on behalf of another document.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Leave out permissions you do not need</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> do not write allow=\"camera; microphone\" unless the player really needs them. For a map or form, leave allow empty or keep only geolocation if it is actually used. On the parent page header, Permissions-Policy camera=() and microphone=() close delegation to the frame.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Confirm the prompt does not appear</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> load the preview and open sensors in DevTools. Camera permission on the frame should be denied before the user taps anything. Details are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy",
+   "sourceSnippet": "Permissions-Policy can disable camera and microphone for the page and its frames.",
+   "source2": "MDN — iframe allow attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
-
 ]
 };
