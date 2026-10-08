@@ -148,5 +148,151 @@ window.countryDataFiles["shadow"] = {
   }
  }
 }
+,
+{
+ "id": "shadow-baca-event-retarget-dengan-composed-path",
+ "langs": {
+  "id": {
+   "title": "Cara Baca Event yang Diretarget di Shadow dengan composedPath",
+   "desc": "Tata cara membaca klik di dalam shadow root Clincoo ketika event.target sudah bergeser ke host, memakai composedPath.",
+   "content": "<p class=\"mb-4\">Klik tombol di dalam shadow sering terlihat berasal dari host, bukan dari elemen yang benar-benar diklik. Itu retargeting: event yang menembus shadow boundary melaporkan target di host.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang listener di host</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> dengarkan click pada custom element. Jangan andalkan event.target untuk nama tombol. Panggil event.composedPath() dan ambil elemen pertama yang punya data-action.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek composed sebelum naik ke halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan event.composed true dan false. Event yang composed false berhenti di shadow dan tidak sampai ke listener halaman. Catat jalur path-nya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya debug berikutnya tidak menebak selector.</p>",
+   "source": "MDN — Event.composedPath()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath",
+   "sourceSnippet": "composedPath returns the event path, including nodes inside open shadow trees that listeners would otherwise miss after retargeting.",
+   "source2": "MDN — Event.composed",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/composed",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Read Retargeted Shadow Events with composedPath",
+   "desc": "How to read a click inside a Clincoo shadow root when event.target has already moved to the host, using composedPath.",
+   "content": "<p class=\"mb-4\">A click on a button inside shadow DOM often looks like it came from the host, not the element that was actually clicked. That is retargeting: an event that crosses the shadow boundary reports the host as target.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Listen on the host</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> listen for click on the custom element. Do not trust event.target for the button name. Call event.composedPath() and take the first element that has data-action.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check composed before it reaches the page</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> compare composed true and false. An event with composed false stops at the shadow and never reaches a page listener. Write the path down on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next debug session is not guessing selectors.</p>",
+   "source": "MDN — Event.composedPath()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath",
+   "sourceSnippet": "composedPath returns the event path, including nodes inside open shadow trees that listeners would otherwise miss after retargeting.",
+   "source2": "MDN — Event.composed",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/composed",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "shadow-delegates-focus-agar-keyboard-masuk",
+ "langs": {
+  "id": {
+   "title": "Cara Aktifkan delegatesFocus agar Fokus Keyboard Masuk Shadow",
+   "desc": "Tata cara memakai delegatesFocus di Clincoo supaya Tab dan klik pada host memindahkan fokus ke kontrol di dalam shadow.",
+   "content": "<p class=\"mb-4\">Host custom element tidak otomatis meneruskan fokus ke input di dalamnya. Tanpa delegatesFocus, Tab bisa mendarat di host yang tidak bisa diketik.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Nyalakan saat attachShadow</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panggil attachShadow dengan mode open dan delegatesFocus true. Taruh input atau button di shadow, dan jangan beri tabindex pada host jika kontrol dalamnya yang harus menerima ketikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji urutan Tab</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab dari field sebelumnya. Fokus harus masuk ke input shadow, bukan berhenti di host. Kalau host masih fokus, cek apakah ada elemen fokusabel lain yang lebih dulu. Simpan urutan tab di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ShadowRoot.delegatesFocus",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus",
+   "sourceSnippet": "delegatesFocus makes focus and click on the host move into the first focusable element inside the shadow tree.",
+   "source2": "MDN — Element.attachShadow()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Enable delegatesFocus so Keyboard Focus Enters the Shadow",
+   "desc": "How to use delegatesFocus in Clincoo so Tab and a click on the host move focus to a control inside the shadow.",
+   "content": "<p class=\"mb-4\">A custom element host does not automatically forward focus to an input inside it. Without delegatesFocus, Tab can land on a host that cannot be typed in.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Turn it on in attachShadow</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call attachShadow with mode open and delegatesFocus true. Put the input or button in the shadow, and do not set tabindex on the host if the inner control should receive typing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test Tab order</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab from the previous field. Focus should enter the shadow input, not stop on the host. If the host still focuses, check for another focusable element that comes first. Save the tab order on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ShadowRoot.delegatesFocus",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus",
+   "sourceSnippet": "delegatesFocus makes focus and click on the host move into the first focusable element inside the shadow tree.",
+   "source2": "MDN — Element.attachShadow()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "shadow-closed-mode-hanya-untuk-api-internal",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai Closed Mode hanya untuk API Internal",
+   "desc": "Tata cara memilih mode closed di Clincoo bila shadow tidak boleh dibaca skrip luar, plus batasan debug yang harus diterima.",
+   "content": "<p class=\"mb-4\">Mode closed menyembunyikan shadowRoot dari elemen.host.shadowRoot. Itu berguna untuk API internal, tetapi DevTools dan tes halaman jadi lebih sempit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan referensi sendiri</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan hasil attachShadow di properti privat kelas, misalnya this.#root. Mode closed tidak mengirim referensi lewat element.shadowRoot, jadi komponen harus memegang root-nya sendiri untuk mengisi slot dan gaya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan dipakai hanya untuk menyembunyikan bug</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> uji bahwa skrip halaman tidak bisa query tombol di dalam. Kalau layout rusak, debug lewat method publik komponen, bukan dengan membuka root dari luar. Tulis keputusan open versus closed di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Element.attachShadow()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow",
+   "sourceSnippet": "mode closed keeps element.shadowRoot null so outside script cannot walk the shadow tree; the component must keep its own reference.",
+   "source2": "MDN — Using shadow DOM",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use Closed Mode only for an Internal API",
+   "desc": "How to choose closed mode in Clincoo when outside script must not read the shadow, and the debug limits you accept.",
+   "content": "<p class=\"mb-4\">Closed mode hides shadowRoot from element.shadowRoot. That fits an internal API, but DevTools and page tests get narrower.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep your own reference</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> store the attachShadow result on a private field, such as this.#root. Closed mode does not expose element.shadowRoot, so the component must hold the root to fill slots and styles.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not use it just to hide a bug</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> confirm page script cannot query the inner button. If layout breaks, debug through a public method, not by opening the root from outside. Record the open versus closed decision on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Element.attachShadow()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow",
+   "sourceSnippet": "mode closed keeps element.shadowRoot null so outside script cannot walk the shadow tree; the component must keep its own reference.",
+   "source2": "MDN — Using shadow DOM",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "shadow-tembuskan-token-warna-custom-property",
+ "langs": {
+  "id": {
+   "title": "Cara Tembuskan Token Warna ke Shadow dengan Custom Property",
+   "desc": "Tata cara mewariskan token warna Clincoo ke dalam shadow root, karena selektor halaman tidak menembus boundary.",
+   "content": "<p class=\"mb-4\">CSS biasa di halaman tidak menata elemen di dalam shadow. Custom property adalah pengecualian: nilainya diwariskan ke shadow dan bisa dipakai komponen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Definisi token di host</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set --clincoo-accent pada host atau :root. Di stylesheet shadow pakai color: var(--clincoo-accent, #111827). Jangan menyalin hex ke dalam shadow jika token halaman yang harus menang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji tema tanpa ::part</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ganti token di host dan pastikan teks shadow ikut berubah tanpa mengekspos part. Kalau warna tidak ikut, token belum diwariskan ke host. Catat nama token di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using shadow DOM",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM",
+   "sourceSnippet": "Inherited custom properties cross the shadow boundary, so a page can theme a component without piercing encapsulation.",
+   "source2": "MDN — var()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/var",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Pass Color Tokens into Shadow with Custom Properties",
+   "desc": "How to inherit Clincoo color tokens into a shadow root, because page selectors do not cross the boundary.",
+   "content": "<p class=\"mb-4\">Ordinary page CSS does not style elements inside a shadow tree. Custom properties are the exception: their values inherit into the shadow and the component can use them.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Define the token on the host</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set --clincoo-accent on the host or :root. In the shadow stylesheet use color: var(--clincoo-accent, #111827). Do not copy the hex into the shadow if the page token should win.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test theme without ::part</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> change the token on the host and confirm shadow text follows without exposing a part. If the color stays put, the token is not inherited onto the host. Record the token name on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using shadow DOM",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM",
+   "sourceSnippet": "Inherited custom properties cross the shadow boundary, so a page can theme a component without piercing encapsulation.",
+   "source2": "MDN — var()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/var",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "shadow-input-form-associated-di-dalam-shadow",
+ "langs": {
+  "id": {
+   "title": "Cara Hubungkan Input Shadow ke Form dengan ElementInternals",
+   "desc": "Tata cara membuat custom element form-associated di Clincoo supaya nilai di shadow ikut submit dan validasi form.",
+   "content": "<p class=\"mb-4\">Input di dalam shadow tidak otomatis menjadi field form. Tanpa ElementInternals, submit hanya melihat light DOM dan nilai komponen hilang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Daftarkan formAssociated</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set static formAssociated = true, lalu di constructor panggil this.attachInternals(). Saat input shadow berubah, panggil internals.setFormValue dengan nilai yang harus terkirim.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji submit dan setValidity</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> taruh komponen di dalam form dan submit. FormData harus memuat nama field. Jika kosong, setFormValue belum terpanggil. Untuk error, panggil setValidity lalu tulis pesannya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ElementInternals",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals",
+   "sourceSnippet": "ElementInternals lets a form-associated custom element set its submitted value and validity from inside shadow DOM.",
+   "source2": "MDN — ElementInternals.setFormValue()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals/setFormValue",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Connect a Shadow Input to a Form with ElementInternals",
+   "desc": "How to build a form-associated custom element in Clincoo so a shadow value joins form submit and validation.",
+   "content": "<p class=\"mb-4\">An input inside shadow DOM is not automatically a form field. Without ElementInternals, submit only sees light DOM and the component value is dropped.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Register formAssociated</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set static formAssociated = true, then call this.attachInternals() in the constructor. When the shadow input changes, call internals.setFormValue with the value that should be submitted.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test submit and setValidity</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> place the component in a form and submit. FormData should include the field name. If it is missing, setFormValue never ran. For errors, call setValidity and write the message on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — ElementInternals",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals",
+   "sourceSnippet": "ElementInternals lets a form-associated custom element set its submitted value and validity from inside shadow DOM.",
+   "source2": "MDN — ElementInternals.setFormValue()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals/setFormValue",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
 ]
 };
