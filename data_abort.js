@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Abort (9 Oktober 2026, 06:00 WIB) — tambah 2 artikel sampai full 12
 // Clincoo Docs — kategori Abort (9 Oktober 2026, 05:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Abort (9 Oktober 2026, 04:00 WIB) — 5 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -290,6 +291,65 @@ window.countryDataFiles["abort"] = {
    "sourceSnippet": "The aborted property is true after the signal aborts, so later work can exit before side effects.",
    "source2": "MDN — AbortSignal abort event",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort_event",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "abort-jangan-pakai-ulang-controller",
+ "langs": {
+  "id": {
+   "title": "Cara Jangan Pakai Ulang AbortController yang Sudah Batal",
+   "desc": "Tata cara membuat AbortController baru setelah abort, karena controller yang sudah aborted tidak bisa dihidupkan lagi.",
+   "content": "<p class=\"mb-4\">AbortController yang sudah memanggil abort() tetap aborted selamanya. Fetch baru yang memakai signal lama langsung gagal dengan AbortError, tanpa pernah ke jaringan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buat controller baru tiap permintaan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan controller di variabel yang bisa diganti. Setelah abort, atau sebelum fetch berikutnya, buat AbortController baru dan oper signal yang baru ke fetch. Jangan menyimpan satu controller di modul lalu memakainya untuk semua permintaan seumur halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan reset dengan trik</h2><p class=\"mb-4\">Tidak ada metode reset di AbortController. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> anggap controller sebagai objek sekali pakai. Catat polanya di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya pencarian, unggahan, dan simpan draf tidak berbagi sinyal yang sudah mati.</p>",
+   "source": "MDN — AbortController",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "sourceSnippet": "Calling abort() permanently aborts the signal; a new controller is required for the next request.",
+   "source2": "MDN — AbortSignal",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Reusing an Already Aborted AbortController",
+   "desc": "How to create a fresh AbortController after abort, because an aborted controller cannot be restarted.",
+   "content": "<p class=\"mb-4\">An AbortController that has already called abort() stays aborted forever. A new fetch that reuses that signal fails immediately with AbortError and never hits the network.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Create a controller for each request</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep the controller in a variable you can replace. After abort, or before the next fetch, create a new AbortController and pass the new signal. Do not store one controller on the module and reuse it for every request for the life of the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not try to reset it</h2><p class=\"mb-4\">AbortController has no reset method. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> treat the controller as single-use. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so search, upload, and draft save do not share a dead signal.</p>",
+   "source": "MDN — AbortController",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+   "sourceSnippet": "Calling abort() permanently aborts the signal; a new controller is required for the next request.",
+   "source2": "MDN — AbortSignal",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "abort-batalkan-saat-dokumen-tersembunyi",
+ "langs": {
+  "id": {
+   "title": "Cara Batalkan Fetch Saat Tab Dokumen Tersembunyi",
+   "desc": "Tata cara membatalkan permintaan yang tidak perlu dilanjutkan saat pengguna pindah tab, tanpa menutup halaman.",
+   "content": "<p class=\"mb-4\">Permintaan pratinjau atau saran yang masih berjalan di tab tersembunyi tetap memakai kuota dan bisa menimpa UI saat pengguna kembali.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Dengar visibilitychange</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang listener visibilitychange. Jika document.visibilityState menjadi hidden, panggil abort pada controller milik permintaan yang hanya berguna saat tab terlihat, seperti saran ketik atau pratinjau live.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan batalkan simpan yang harus selesai</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pisahkan permintaan opsional dari simpan draf atau unggah yang harus tuntas. Yang wajib selesai tetap memakai timeout sendiri, bukan sinyal sembunyi tab. Simpan daftar mana yang dibatalkan saat tersembunyi di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Document.visibilityState",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState",
+   "sourceSnippet": "visibilityState is hidden when the document is not visible, which is a signal to pause non-essential work.",
+   "source2": "MDN — Page Visibility API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Abort Fetch When the Document Becomes Hidden",
+   "desc": "How to cancel requests that should not continue when the user switches tabs, without closing the page.",
+   "content": "<p class=\"mb-4\">Preview or suggestion requests that keep running in a hidden tab still spend quota and can overwrite the UI when the user comes back.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Listen for visibilitychange</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add a visibilitychange listener. If document.visibilityState becomes hidden, abort the controller for requests that only matter while the tab is visible, such as typeahead or live preview.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not abort saves that must finish</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> separate optional requests from draft saves or uploads that must complete. Required work keeps its own timeout, not the hidden-tab signal. Record which calls abort when hidden on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Document.visibilityState",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState",
+   "sourceSnippet": "visibilityState is hidden when the document is not visible, which is a signal to pause non-essential work.",
+   "source2": "MDN — Page Visibility API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
   }

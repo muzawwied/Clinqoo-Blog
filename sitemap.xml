@@ -4236,4 +4236,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-cek-signal-sudah-aborted/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/details/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/details/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/details/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/details/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-jangan-pakai-ulang-controller/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-jangan-pakai-ulang-controller/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-jangan-pakai-ulang-controller/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-jangan-pakai-ulang-controller/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/abort/abort-batalkan-saat-dokumen-tersembunyi/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/abort/abort-batalkan-saat-dokumen-tersembunyi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/abort/abort-batalkan-saat-dokumen-tersembunyi/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/abort/abort-batalkan-saat-dokumen-tersembunyi/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/details/details-elemen-details-tanpa-javascript/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/details/details-elemen-details-tanpa-javascript/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/details/details-elemen-details-tanpa-javascript/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/details/details-elemen-details-tanpa-javascript/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/details/details-accordion-eksklusif-dengan-name/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/details/details-accordion-eksklusif-dengan-name/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/details/details-accordion-eksklusif-dengan-name/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/details/details-accordion-eksklusif-dengan-name/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/details/details-summary-fokus-keyboard/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/details/details-summary-fokus-keyboard/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/details/details-summary-fokus-keyboard/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/details/details-summary-fokus-keyboard/"/>
+  </url>
 </urlset>
