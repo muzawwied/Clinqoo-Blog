@@ -30,7 +30,7 @@
   }
   function loadAspect() {
     var e = document.createElement('script');
-    e.src = 'data_aspect.js?v=1';
+    e.src = 'data_aspect.js?v=2';
     e.onload = loadApp;
     e.onerror = loadApp;
     document.body.appendChild(e);
