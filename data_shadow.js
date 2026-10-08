@@ -293,6 +293,64 @@ window.countryDataFiles["shadow"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "shadow-gaya-host-dengan-selector-host",
+ "langs": {
+  "id": {
+   "title": "Cara Gaya Host Komponen dengan Selector :host",
+   "desc": "Tata cara menata elemen custom dari dalam shadow memakai :host dan :host() supaya gaya tidak bergantung pada CSS halaman.",
+   "content": "<p class=\"mb-4\">Tombol komponen sering terlihat polos karena CSS halaman tidak menembus shadow. Selector :host menata elemen custom itu sendiri dari dalam shadow root.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis :host di stylesheet shadow</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat shadow root, lalu masukkan style yang dimulai dengan :host. Contoh: :host { display: inline-block; } dan :host([disabled]) { opacity: 0.5; }. Aturan ini hanya berlaku pada host komponen, bukan pada elemen di luar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan andalkan class halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pasang komponen di kartu terang dan kartu gelap. Jika warna hanya benar di satu kartu, gaya masih diambil dari luar. Pindahkan ke :host. Catat selector yang dipakai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya tim tidak menimpa host dari stylesheet global.</p>",
+   "source": "MDN — :host()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function",
+   "sourceSnippet": ":host() matches the shadow host only when the host itself matches the given selector, and it is written from inside the shadow tree.",
+   "source2": "MDN — CSS :host",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Style a Component Host with the :host Selector",
+   "desc": "How to style a custom element from inside shadow DOM with :host and :host() so it does not depend on page CSS.",
+   "content": "<p class=\"mb-4\">A component button often looks unstyled because page CSS does not cross the shadow boundary. The :host selector styles that custom element from inside its shadow root.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write :host in the shadow stylesheet</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> attach a shadow root, then add a style that starts with :host. For example :host { display: inline-block; } and :host([disabled]) { opacity: 0.5; }. These rules apply only to the component host, not to elements outside it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not rely on a page class</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> place the component on a light card and a dark card. If the color is correct on only one card, the style is still coming from outside. Move it to :host. Note the selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the team does not override the host from a global stylesheet.</p>",
+   "source": "MDN — :host()",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function",
+   "sourceSnippet": ":host() matches the shadow host only when the host itself matches the given selector, and it is written from inside the shadow tree.",
+   "source2": "MDN — CSS :host",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "shadow-reset-properti-warisan-di-host",
+ "langs": {
+  "id": {
+   "title": "Cara Reset Properti Warisan di Dalam Shadow",
+   "desc": "Tata cara menahan font, warna, dan line-height yang ikut warisan dari halaman agar komponen shadow tetap konsisten.",
+   "content": "<p class=\"mb-4\">Shadow DOM menahan selector, tetapi properti yang diwariskan tetap mengalir masuk. Warna dan font halaman bisa mengubah teks di dalam komponen tanpa Anda sadari.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set nilai awal di :host</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tetapkan color, font, dan line-height pada :host, lalu biarkan elemen dalam shadow mewarisi nilai itu. all: initial terlalu agresif karena ikut mereset display. Pilih properti yang benar-benar ingin Anda kunci.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan di dua halaman</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tempel komponen yang sama di halaman dengan font besar dan halaman dengan font kecil. Jika ukuran teks ikut berubah, reset belum kena. Simpan pasangan nilai token di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar komponen lain memakai reset yang sama.</p>",
+   "source": "MDN — Inheritance",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Inheritance",
+   "sourceSnippet": "Some CSS properties are inherited: if no value is set on an element, it takes the computed value from its parent.",
+   "source2": "MDN — :host",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Reset Inherited Properties Inside Shadow DOM",
+   "desc": "How to stop page font, color, and line-height from inheriting into a shadow component so it stays consistent.",
+   "content": "<p class=\"mb-4\">Shadow DOM blocks selectors, but inherited properties still flow in. Page color and font can change text inside a component without an obvious rule.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set initial values on :host</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set color, font, and line-height on :host, then let inner shadow elements inherit those values. all: initial is too aggressive because it also resets display. Pick only the properties you actually want to lock.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare on two pages</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> drop the same component on a page with a large font and a page with a small font. If the text size still changes, the reset missed a property. Save the token pair on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so other components share the same reset.</p>",
+   "source": "MDN — Inheritance",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Inheritance",
+   "sourceSnippet": "Some CSS properties are inherited: if no value is set on an element, it takes the computed value from its parent.",
+   "source2": "MDN — :host",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:host",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
 ]
 };
