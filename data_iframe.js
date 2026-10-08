@@ -1,4 +1,5 @@
 // Clincoo Docs — kategori Iframe (8 Oktober 2026, 12:00 WIB) — 4 artikel
+// Clincoo Docs — tambah 5 artikel Iframe (8 Oktober 2026, 13:00 WIB)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["iframe"] = {
  "names": { "id": "Iframe", "en": "Iframe" },
@@ -118,6 +119,152 @@ window.countryDataFiles["iframe"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "iframe-allow-hanya-izin-yang-perlu",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi Izin Iframe lewat Atribut allow",
+   "desc": "Tata cara mengisi allow hanya untuk izin yang benar-benar dipakai, bukan menyalakan kamera atau pembayaran untuk semua frame.",
+   "content": "<p class=\"mb-4\">Atribut allow pada iframe adalah daftar izin, bukan dekorasi. Nilai kosong atau bintang memberi widget akses yang tidak diminta pengunjung.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis izin per fitur</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> isi allow hanya untuk fitur yang dipakai. Pemutar video cukup fullscreen. Peta tidak perlu microphone. Pembayaran hanya payment jika tombol bayar memang ada di dalam frame. Jangan salin allow=\"camera; microphone; geolocation\" dari contoh lama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka halaman, picu fitur di dalam frame, lalu cek apakah prompt izin muncul hanya saat aksi itu. Jika prompt muncul saat halaman dibuka, allow terlalu longgar. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy / allow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow",
+   "sourceSnippet": "The allow attribute defines a Permissions Policy for the iframe.",
+   "source2": "MDN — Permissions Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit Iframe Permissions with the allow Attribute",
+   "desc": "How to set allow only for permissions the frame actually uses, instead of enabling camera or payment on every embed.",
+   "content": "<p class=\"mb-4\">The iframe allow attribute is a permission list, not decoration. An empty or wildcard value gives a widget access the visitor did not ask for.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Name permissions per feature</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set allow only for the feature in use. A video player needs fullscreen. A map does not need microphone. A checkout needs payment only if the pay button lives inside the frame. Do not copy allow=\"camera; microphone; geolocation\" from an old example.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check it in preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the page, trigger the feature inside the frame, and confirm the permission prompt appears only for that action. If the prompt appears on load, allow is too wide. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy / allow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow",
+   "sourceSnippet": "The allow attribute defines a Permissions Policy for the iframe.",
+   "source2": "MDN — Permissions Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-referrerpolicy-jangan-bocorkan-path",
+ "langs": {
+  "id": {
+   "title": "Cara Set Referrer Policy pada Iframe",
+   "desc": "Tata cara memakai referrerpolicy agar URL halaman Clincoo tidak ikut terbawa saat iframe memuat pihak ketiga.",
+   "content": "<p class=\"mb-4\">Tanpa referrerpolicy, dokumen iframe bisa menerima URL lengkap halaman induk, termasuk path draf atau slug yang belum dipublikasikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pilih strict-origin-when-cross-origin</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan referrerpolicy=\"strict-origin-when-cross-origin\" pada iframe pihak ketiga. Origin tetap terkirim agar layanan mengenal situs, path tidak. Untuk widget yang tidak butuh origin sama sekali, pakai no-referrer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek header permintaan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka panel jaringan, pilih dokumen iframe, dan lihat header Referer. Path halaman tidak boleh ada. Jika widget rusak setelah no-referrer, longgarkan hanya pada frame itu, bukan pada semua iframe. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — referrerpolicy attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#referrerpolicy",
+   "sourceSnippet": "The referrerpolicy attribute indicates which referrer to send when fetching the frame.",
+   "source2": "MDN — Referrer-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set an Iframe Referrer Policy",
+   "desc": "How to use referrerpolicy so the Clincoo page URL is not forwarded when an iframe loads a third party.",
+   "content": "<p class=\"mb-4\">Without referrerpolicy, the iframe document can receive the full parent URL, including a draft path or an unpublished slug.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Prefer strict-origin-when-cross-origin</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add referrerpolicy=\"strict-origin-when-cross-origin\" on third-party iframes. The origin still goes out so the service can recognize the site; the path does not. For a widget that needs no origin at all, use no-referrer.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Inspect the request header</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the network panel, select the iframe document, and read the Referer header. The page path should be absent. If a widget breaks after no-referrer, loosen the policy only on that frame, not on every iframe. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — referrerpolicy attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#referrerpolicy",
+   "sourceSnippet": "The referrerpolicy attribute indicates which referrer to send when fetching the frame.",
+   "source2": "MDN — Referrer-Policy",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-tinggi-lewat-postmessage",
+ "langs": {
+  "id": {
+   "title": "Cara Atur Tinggi Iframe lewat postMessage",
+   "desc": "Tata cara mengukur tinggi isi di dalam iframe dan mengirimnya ke halaman induk supaya tidak ada scroll ganda.",
+   "content": "<p class=\"mb-4\">Iframe dengan tinggi tetap memotong isi panjang atau menyisakan ruang kosong. Scroll di dalam frame di atas scroll halaman membingungkan di ponsel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kirim tinggi, cek origin</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> dari dokumen di dalam frame kirim postMessage berisi tinggi scrollHeight hanya ke origin halaman induk. Di induk, dengarkan message, abaikan event yang origin-nya bukan domain frame, lalu set style.height. Jangan percaya angka dari origin lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji setelah isi berubah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pratinjau, tambah paragraf di dalam frame, dan pastikan tinggi mengikuti tanpa scrollbar dalam. Jika frame pihak ketiga tidak mengirim pesan, kembali ke aspect-ratio tetap. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — window.postMessage",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage",
+   "sourceSnippet": "postMessage safely enables cross-origin communication between Window objects.",
+   "source2": "MDN — iframe element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Size an Iframe Height with postMessage",
+   "desc": "How to measure content inside an iframe and send the height to the parent page so nested scrolling does not appear.",
+   "content": "<p class=\"mb-4\">A fixed iframe height clips long content or leaves empty space. A scrollbar inside the frame on top of the page scroll is confusing on a phone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Send the height and check origin</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> have the inner document postMessage its scrollHeight only to the parent origin. On the parent, listen for message, ignore events whose origin is not the frame domain, then set style.height. Do not trust a number from another origin.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Retest after content changes</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open preview, add a paragraph inside the frame, and confirm the height follows without an inner scrollbar. If a third-party frame never sends a message, fall back to a fixed aspect-ratio. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — window.postMessage",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage",
+   "sourceSnippet": "postMessage safely enables cross-origin communication between Window objects.",
+   "source2": "MDN — iframe element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-srcdoc-cuplikan-tanpa-url",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai srcdoc untuk Cuplikan Tanpa URL Luar",
+   "desc": "Tata cara menaruh cuplikan HTML di srcdoc supaya pratinjau tidak bergantung pada berkas eksternal.",
+   "content": "<p class=\"mb-4\">Cuplikan kecil yang di-iframe lewat src tetap butuh URL, CORS, dan berkas terpisah. srcdoc menyimpan HTML langsung di atribut, cocok untuk contoh di dokumentasi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis HTML ringkas dan sandbox</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> isi srcdoc dengan dokumen mini, tetap beri title, dan pasang sandbox tanpa allow-scripts kecuali contoh memang butuh skrip. Escape tanda kutip. Jangan taruh rahasia atau token di srcdoc karena atribut terlihat di sumber halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan dengan src</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pratinjau harus menampilkan cuplikan tanpa permintaan jaringan tambahan. Jika contoh besar atau sering berubah, pindah ke src berkas sendiri. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — srcdoc attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#srcdoc",
+   "sourceSnippet": "srcdoc specifies the HTML content of the page to show in the inline frame.",
+   "source2": "MDN — iframe sandbox",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use srcdoc for a Snippet Without an External URL",
+   "desc": "How to place a small HTML snippet in srcdoc so a preview does not depend on an external file.",
+   "content": "<p class=\"mb-4\">A small snippet iframed with src still needs a URL, CORS, and a separate file. srcdoc stores the HTML in the attribute, which fits a documentation example.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep the HTML short and sandboxed</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set srcdoc to a mini document, keep a title, and add sandbox without allow-scripts unless the example truly needs script. Escape quotes. Do not put secrets or tokens in srcdoc; the attribute is visible in page source.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare it with src</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> the preview should show the snippet with no extra network request. If the example is large or changes often, move it to its own src file. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — srcdoc attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#srcdoc",
+   "sourceSnippet": "srcdoc specifies the HTML content of the page to show in the inline frame.",
+   "source2": "MDN — iframe sandbox",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "iframe-allowfullscreen-hanya-pemutar",
+ "langs": {
+  "id": {
+   "title": "Cara Izinkan Layar Penuh Hanya pada Pemutar",
+   "desc": "Tata cara memasang allowfullscreen hanya pada iframe video, bukan pada setiap widget.",
+   "content": "<p class=\"mb-4\">Tombol layar penuh di dalam iframe diabaikan browser jika halaman induk tidak mengizinkannya. Sebaliknya, mengizinkan semua frame membuka overlay yang menutup navigasi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang hanya pada pemutar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan allowfullscreen dan allow=\"fullscreen\" hanya pada iframe video. Peta, formulir, dan chat tidak perlu. Tetap beri title yang menyebut nama pemutar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Coba tombolnya</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka pratinjau, tekan layar penuh, lalu Esc. Halaman induk harus kembali utuh, fokus tidak hilang ke body. Jika widget non-video juga bisa layar penuh, cabut atributnya. Catatan ada di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — allowfullscreen attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allowfullscreen",
+   "sourceSnippet": "allowfullscreen lets the iframe activate fullscreen mode.",
+   "source2": "MDN — Fullscreen API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Allow Fullscreen Only on a Player Iframe",
+   "desc": "How to set allowfullscreen only on a video iframe, not on every widget.",
+   "content": "<p class=\"mb-4\">A fullscreen button inside an iframe is ignored unless the parent page allows it. Allowing every frame instead lets overlays cover navigation.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add it only on the player</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add allowfullscreen and allow=\"fullscreen\" only on the video iframe. Maps, forms, and chat do not need it. Keep a title that names the player.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Press the control</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open preview, enter fullscreen, then press Esc. The parent page should return intact and focus should not drop to the body. If a non-video widget can also go fullscreen, remove the attribute. Notes are on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — allowfullscreen attribute",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allowfullscreen",
+   "sourceSnippet": "allowfullscreen lets the iframe activate fullscreen mode.",
+   "source2": "MDN — Fullscreen API",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
+
 ]
 };
