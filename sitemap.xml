@@ -3603,4 +3603,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/cetak/cetak-paksa-halaman-baru-sebelum-bab/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/cetak/cetak-paksa-halaman-baru-sebelum-bab/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/cetak/cetak-nomor-halaman-dengan-counter/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/cetak/cetak-nomor-halaman-dengan-counter/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/cetak/cetak-nomor-halaman-dengan-counter/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/cetak/cetak-nomor-halaman-dengan-counter/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/iframe/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/iframe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/iframe/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/iframe/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/iframe/iframe-wajib-title-aksesibel/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/iframe/iframe-wajib-title-aksesibel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/iframe/iframe-wajib-title-aksesibel/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/iframe/iframe-wajib-title-aksesibel/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/iframe/iframe-sandbox-batas-izin/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/iframe/iframe-sandbox-batas-izin/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/iframe/iframe-sandbox-batas-izin/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/iframe/iframe-sandbox-batas-izin/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/iframe/iframe-rasio-aspect-ratio/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/iframe/iframe-rasio-aspect-ratio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/iframe/iframe-rasio-aspect-ratio/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/iframe/iframe-rasio-aspect-ratio/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/iframe/iframe-loading-lazy/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/iframe/iframe-loading-lazy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/iframe/iframe-loading-lazy/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/iframe/iframe-loading-lazy/"/>
+  </url>
 </urlset>

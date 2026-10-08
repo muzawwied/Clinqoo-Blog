@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Cetak (8 Oktober 2026, 10:00 WIB) — 6 artikel
+// Clincoo Docs — kategori Cetak (8 Oktober 2026, 10:00 WIB) — 12 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["cetak"] = {
  "names": { "id": "Cetak", "en": "Print" },
@@ -318,6 +318,37 @@ window.countryDataFiles["cetak"] = {
    "sourceSnippet": "The break-before CSS property sets how page, column, or region breaks should behave before a generated box.",
    "source2": "MDN — page-break-before",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+
+{
+ "id": "cetak-nomor-halaman-dengan-counter",
+ "langs": {
+  "id": {
+   "title": "Cara Tambah Nomor Halaman pada Hasil Cetak",
+   "desc": "Tata cara menampilkan nomor halaman di margin cetak dengan CSS counter dan @page.",
+   "content": "<p class=\"mb-4\">Dokumen yang dicetak dari pratinjau tidak punya nomor halaman, jadi pembaca kehilangan posisi setelah lembar dipisah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang counter di margin bawah</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan di @media print: body { counter-reset: halaman; } lalu @page { @bottom-center { content: counter(halaman); } } dan h1, article { counter-increment: halaman; }. Browser yang mendukung margin at-rule akan menaruh angka di tengah bawah. Sediakan juga footer HTML dengan .nomor-halaman sebagai cadangan bila margin box diabaikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek urutan di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka print preview tiga halaman. Angka harus berurutan, tidak mengulang 1 di setiap kartu, dan tidak menimpa isi. Pola ini dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @page",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@page",
+   "sourceSnippet": "The @page at-rule is used to modify some CSS properties when printing a document.",
+   "source2": "MDN — CSS counters",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Add Page Numbers to a Printout",
+   "desc": "How to show page numbers in the print margin with a CSS counter and @page.",
+   "content": "<p class=\"mb-4\">A document printed from preview has no page numbers, so readers lose their place once the sheets are separated.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Put a counter in the bottom margin</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add inside @media print: body { counter-reset: halaman; } then @page { @bottom-center { content: counter(halaman); } } and increment the counter on the article. Browsers that support margin at-rules place the number at bottom center. Also keep an HTML footer with .nomor-halaman as a fallback when margin boxes are ignored.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the sequence in preview</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open print preview for three pages. Numbers should increase, not restart at 1 on every card, and should not cover the content. This pattern is noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — @page",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/@page",
+   "sourceSnippet": "The @page at-rule is used to modify some CSS properties when printing a document.",
+   "source2": "MDN — CSS counters",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
