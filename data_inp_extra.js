@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 2 artikel INP (8 Oktober 2026, 07:00 WIB)
 // Clincoo Docs — tambah 5 artikel INP (8 Oktober 2026, 06:00 WIB)
 (function () {
   if (!window.countryDataFiles || !window.countryDataFiles.inp) return;
@@ -149,6 +150,65 @@
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+  "id": "inp-hindari-json-parse-di-jalur-klik",
+  "langs": {
+   "id": {
+    "title": "Cara Jauhkan JSON.parse Besar dari Jalur Klik",
+    "desc": "Tata cara agar parse JSON besar di Clincoo tidak menahan INP saat tombol ditekan.",
+    "content": "<p class=\"mb-4\">JSON.parse pada payload besar adalah tugas sinkron. Jika ia jalan di handler klik, processing duration naik dan frame berikutnya tertahan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Parse setelah umpan balik</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ubah status tombol dulu, lalu parse di tugas berikutnya. Simpan hasil parse, jangan mengulang parse pada setiap klik daftar yang sama. Jika data lebih dari beberapa ratus KB, pecah atau minta server mengirim ringkasan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur long task di Performance</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> rekam klik yang membuka panel data. Long task harus hilang dari interaction. Bandingkan sebelum dan sesudah di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — JSON.parse",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+    "sourceSnippet": "JSON.parse berjalan sinkron dan bisa menjadi long task jika string-nya besar.",
+    "source2": "web.dev — Optimize INP",
+    "source2Url": "https://web.dev/articles/optimize-inp",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+  },
+   "en": {
+    "title": "How to Keep a Large JSON.parse Off the Click Path",
+    "desc": "How to stop a large JSON.parse in Clincoo from holding INP when a button is pressed.",
+    "content": "<p class=\"mb-4\">JSON.parse on a large payload is a synchronous task. If it runs in a click handler, processing duration rises and the next frame waits.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Parse after feedback</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> update the button state first, then parse in a later task. Cache the parsed result and do not parse again on every click of the same list. If the data is more than a few hundred KB, split it or ask the server for a summary.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure the long task in Performance</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> record the click that opens the data panel. The long task should leave the interaction. Compare before and after on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — JSON.parse",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+    "sourceSnippet": "JSON.parse is synchronous and can become a long task when the string is large.",
+    "source2": "web.dev — Optimize INP",
+    "source2Url": "https://web.dev/articles/optimize-inp",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+  "id": "inp-hindari-localstorage-sinkron-saat-klik",
+  "langs": {
+   "id": {
+    "title": "Cara Hindari localStorage Sinkron di Handler Klik",
+    "desc": "Tata cara memindahkan tulis localStorage di Clincoo supaya tidak memperlama INP.",
+    "content": "<p class=\"mb-4\">localStorage.setItem memblokir main thread. Menulis draf besar tepat saat klik membuat interaksi terasa macet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tulis setelah paint</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> simpan draf di memori saat tombol ditekan, lalu tulis localStorage di tugas setelah frame. Jangan stringify seluruh proyek di dalam click. Batasi nilai yang disimpan dan hapus kunci yang sudah tidak dipakai.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di panel Application</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik simpan berulang. Interaction di Performance tidak boleh berisi setItem panjang. Catat pola penyimpanan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — localStorage.setItem",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem",
+    "sourceSnippet": "setItem menulis ke disk secara sinkron dan dapat menahan interaksi.",
+    "source2": "web.dev — Optimize INP",
+    "source2Url": "https://web.dev/articles/optimize-inp",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+  },
+   "en": {
+    "title": "How to Avoid Synchronous localStorage in a Click Handler",
+    "desc": "How to move a Clincoo localStorage write so it does not stretch INP.",
+    "content": "<p class=\"mb-4\">localStorage.setItem blocks the main thread. Writing a large draft at the moment of a click makes the interaction feel stuck.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Write after paint</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep the draft in memory when the button is pressed, then write localStorage in a task after the frame. Do not stringify the whole project inside click. Limit the stored value and delete keys you no longer use.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the Application panel</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click save repeatedly. The interaction in Performance should not contain a long setItem. Note the storage pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — localStorage.setItem",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem",
+    "sourceSnippet": "setItem writes to disk synchronously and can hold up an interaction.",
+    "source2": "web.dev — Optimize INP",
+    "source2Url": "https://web.dev/articles/optimize-inp",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
 }
