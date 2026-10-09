@@ -4601,4 +4601,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/template/template-set-canonical-halaman-turunan/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/template/template-set-canonical-halaman-turunan/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/color/color-cek-kontras-teks-latar/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/color/color-cek-kontras-teks-latar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/color/color-cek-kontras-teks-latar/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/color/color-cek-kontras-teks-latar/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/color/color-currentcolor-untuk-ikon/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/color/color-currentcolor-untuk-ikon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/color/color-currentcolor-untuk-ikon/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/color/color-currentcolor-untuk-ikon/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/color/color-mode-gelap-prefers-color-scheme/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/color/color-mode-gelap-prefers-color-scheme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/color/color-mode-gelap-prefers-color-scheme/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/color/color-mode-gelap-prefers-color-scheme/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/color/color-jangan-andalkan-warna-saja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/color/color-jangan-andalkan-warna-saja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/color/color-jangan-andalkan-warna-saja/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/color/color-jangan-andalkan-warna-saja/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/color/color-opacity-token-bukan-rgba-acak/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/color/color-opacity-token-bukan-rgba-acak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/color/color-opacity-token-bukan-rgba-acak/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/color/color-opacity-token-bukan-rgba-acak/"/>
+  </url>
 </urlset>
