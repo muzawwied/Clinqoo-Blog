@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 2 artikel Lazy (9 Oktober 2026, 14:00 WIB)
 // Clincoo Docs — kategori Lazy (9 Oktober 2026, 13:00 WIB) — tambah 5 artikel, sisa 2 slot ke full 12
 // Clincoo Docs — kategori Lazy (9 Oktober 2026, 12:00 WIB) — 5 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -294,5 +295,64 @@ window.countryDataFiles["lazy"] = {
   }
  }
 }
- ]
+,
+{
+ "id": "lazy-fetchpriority-high-pada-lcp",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang fetchpriority=high pada Gambar LCP",
+   "desc": "Tata cara menaikkan prioritas unduh gambar terbesar di layar pertama tanpa menunda gambar lain.",
+   "content": "<p class=\"mb-4\">Gambar LCP yang sudah tidak memakai loading=lazy masih bisa kalah antrean dengan skrip dan gambar kecil. fetchpriority=high memberi isyarat ke browser agar unduhan itu didahulukan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tandai satu gambar saja</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang fetchpriority=\"high\" hanya pada gambar hero yang terukur sebagai LCP. Gambar di bawah lipatan tetap loading=\"lazy\" dan fetchpriority=\"low\". Jangan menandai dua hero sekaligus karena prioritas tinggi yang dobel saling meniadakan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan dengan preload</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Network, filter Img, lalu muat ulang. Baris LCP harus mulai lebih awal dari gambar kartu. Kalau URL srcset berbeda dari preload, hapus preload yang salah agar tidak mengunduh dua berkas. Catat pilihan akhir di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — fetchpriority",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "sourceSnippet": "fetchpriority hints whether the browser should download an image with high, low, or auto priority.",
+   "source2": "web.dev — optimize LCP",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set fetchpriority=high on the LCP Image",
+   "desc": "How to raise the download priority of the largest above-the-fold image without delaying the rest.",
+   "content": "<p class=\"mb-4\">An LCP image that is not loading=lazy can still lose the queue to scripts and small images. fetchpriority=high tells the browser to fetch that file first.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Mark only one image</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set fetchpriority=\"high\" only on the hero measured as LCP. Below-the-fold images stay loading=\"lazy\" and fetchpriority=\"low\". Do not mark two heroes at once; doubled high priority cancels itself out.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the preload</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open Network, filter Img, and reload. The LCP row should start before card images. If the srcset URL differs from the preload, remove the wrong preload so two files are not downloaded. Record the final choice on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — fetchpriority",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+   "sourceSnippet": "fetchpriority hints whether the browser should download an image with high, low, or auto priority.",
+   "source2": "web.dev — optimize LCP",
+   "source2Url": "https://web.dev/articles/optimize-lcp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "lazy-preload-font-kritis",
+ "langs": {
+  "id": {
+   "title": "Cara Preload Font Kritis, Jangan Ditunda",
+   "desc": "Tata cara memuat font judul lebih awal supaya teks tidak berganti wajah saat halaman Clincoo tampil.",
+   "content": "<p class=\"mb-4\">Font yang baru diminta saat CSS selesai diurai membuat teks judul berganti ukuran. Itu memperlambat LCP teks dan menggeser layout. Font kritis di-preload, font ikon dan dekorasi tidak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload satu potongan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan link rel=\"preload\" as=\"font\" type=\"font/woff2\" crossorigin pada berkas woff2 yang dipakai h1. Jangan preload seluruh keluarga font. Font yang hanya ada di footer tidak perlu masuk head.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek pertukaran teks</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> muat ulang dengan cache kosong dan lihat apakah judul langsung memakai wajah yang benar. font-display: swap boleh tetap ada, tetapi preload mengurangi jeda fallback. Simpan nama berkas font di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya duplikat template tidak mengarah ke path lama.</p>",
+   "source": "MDN — rel=preload",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload",
+   "sourceSnippet": "rel=preload fetches a resource early; fonts need crossorigin even on the same origin.",
+   "source2": "web.dev — font best practices",
+   "source2Url": "https://web.dev/articles/font-best-practices",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Preload a Critical Font Instead of Deferring It",
+   "desc": "How to load the heading font early so Clincoo text does not swap faces after first paint.",
+   "content": "<p class=\"mb-4\">A font requested only after CSS is parsed makes the heading change size. That slows text LCP and shifts layout. Preload the critical font; leave icon and decorative fonts alone.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Preload one file</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add link rel=\"preload\" as=\"font\" type=\"font/woff2\" crossorigin for the woff2 used by h1. Do not preload the whole family. A footer-only font does not belong in the head.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the text swap</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> reload with an empty cache and confirm the heading uses the final face immediately. font-display: swap can stay, but preload shortens the fallback gap. Record the font filename on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so duplicated templates do not point at an old path.</p>",
+   "source": "MDN — rel=preload",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload",
+   "sourceSnippet": "rel=preload fetches a resource early; fonts need crossorigin even on the same origin.",
+   "source2": "web.dev — font best practices",
+   "source2Url": "https://web.dev/articles/font-best-practices",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+]
 };

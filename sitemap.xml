@@ -4531,4 +4531,39 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/lazy/lazy-content-visibility-kartu/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/lazy/lazy-content-visibility-kartu/"/>
   </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/lazy/lazy-fetchpriority-high-pada-lcp/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/lazy/lazy-fetchpriority-high-pada-lcp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/lazy/lazy-fetchpriority-high-pada-lcp/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/lazy/lazy-fetchpriority-high-pada-lcp/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/lazy/lazy-preload-font-kritis/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/lazy/lazy-preload-font-kritis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/lazy/lazy-preload-font-kritis/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/lazy/lazy-preload-font-kritis/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/template/template-ganti-placeholder-sebelum-publish/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/template/template-ganti-placeholder-sebelum-publish/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/template/template-ganti-placeholder-sebelum-publish/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/template/template-ganti-placeholder-sebelum-publish/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/template/template-perbaiki-path-aset-setelah-duplikat/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/template/template-perbaiki-path-aset-setelah-duplikat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/template/template-perbaiki-path-aset-setelah-duplikat/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/template/template-perbaiki-path-aset-setelah-duplikat/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/template/template-cek-judul-dan-meta-unik/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/template/template-cek-judul-dan-meta-unik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/template/template-cek-judul-dan-meta-unik/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/template/template-cek-judul-dan-meta-unik/"/>
+  </url>
 </urlset>
