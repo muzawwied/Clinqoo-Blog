@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pakai will-change Hanya Saat Transisi Aktif — Clincoo</title>
+<meta name="description" content="Tata cara menyiapkan layer komposit Clincoo tanpa meninggalkan will-change permanen.">
+<link rel="canonical" href="https://blog.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pakai will-change Hanya Saat Transisi Aktif">
+<meta property="og:description" content="Tata cara menyiapkan layer komposit Clincoo tanpa meninggalkan will-change permanen.">
+<meta property="og:url" content="https://blog.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/transition/transition-will-change-hanya-saat-aktif/">
+</head>
+<body>
+<article>
+<h1>Cara Pakai will-change Hanya Saat Transisi Aktif</h1>
+<p>Tata cara menyiapkan layer komposit Clincoo tanpa meninggalkan will-change permanen.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">will-change permanen boros memori</h2><p class="mb-4">will-change: transform pada setiap kartu membuat layer yang tidak perlu. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tambahkan will-change hanya pada pointerenter, lalu hapus di transitionend. Properti yang ditransisikan tetap transform atau opacity, bukan width.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek layer di DevTools</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka Rendering lalu Layer borders. Setelah hover selesai, border layer ekstra harus hilang. Jika tetap ada, listener transitionend tidak terpanggil. Catat hasilnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/will-change">MDN — will-change</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
