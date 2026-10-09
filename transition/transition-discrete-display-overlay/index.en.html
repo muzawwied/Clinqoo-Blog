@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Transition display with allow-discrete — Clincoo</title>
+<meta name="description" content="How to use transition-behavior so a Clincoo overlay can fade and drop display together.">
+<link rel="canonical" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Transition display with allow-discrete">
+<meta property="og:description" content="How to use transition-behavior so a Clincoo overlay can fade and drop display together.">
+<meta property="og:url" content="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/transition/transition-discrete-display-overlay/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/transition/transition-discrete-display-overlay/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Transition display with allow-discrete</h1>
+<p>How to use transition-behavior so a Clincoo overlay can fade and drop display together.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Discrete properties need permission</h2><p class="mb-4">display, overlay, and content-visibility are discrete. The browser does not interpolate them unless transition-behavior: allow-discrete is set. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> write transition: opacity 180ms ease, display 180ms allow-discrete, overlay 180ms allow-discrete on a light dialog.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Start from @starting-style</h2><p class="mb-4">An element that just entered the tree has no previous value to transition from. Add @starting-style { .overlay { opacity: 0 } } so the first frame is transparent. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the help panel: it should fade in, and after close it must not capture clicks. Keep the snippet on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior">MDN — transition-behavior</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

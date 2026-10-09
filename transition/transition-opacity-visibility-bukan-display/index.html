@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Munculkan Panel dengan Opacity dan Visibility — Clincoo</title>
+<meta name="description" content="Tata cara menampilkan dropdown Clincoo tanpa melompat, karena display none tidak bisa ditransisikan.">
+<link rel="canonical" href="https://blog.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Munculkan Panel dengan Opacity dan Visibility">
+<meta property="og:description" content="Tata cara menampilkan dropdown Clincoo tanpa melompat, karena display none tidak bisa ditransisikan.">
+<meta property="og:url" content="https://blog.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/transition/transition-opacity-visibility-bukan-display/">
+</head>
+<body>
+<article>
+<h1>Cara Munculkan Panel dengan Opacity dan Visibility</h1>
+<p>Tata cara menampilkan dropdown Clincoo tanpa melompat, karena display none tidak bisa ditransisikan.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">display none memutus transisi</h2><p class="mb-4">Mengganti display dari none ke block langsung memunculkan panel. Tidak ada frame antara. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tahan panel dengan opacity: 0 dan visibility: hidden, lalu ke opacity: 1 dan visibility: visible.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tunda visibility saat menutup</h2><p class="mb-4">Saat menutup, transition: opacity 160ms ease, visibility 0s linear 160ms. Visibility baru hidden setelah opacity selesai, jadi klik tidak tembus di tengah animasi. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka menu akun lalu tutup: panel harus memudar, bukan lenyap. Catat pola ini di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility">MDN — visibility</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

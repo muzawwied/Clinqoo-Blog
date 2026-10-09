@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Transisikan display dengan allow-discrete — Clincoo</title>
+<meta name="description" content="Tata cara memakai transition-behavior agar overlay Clincoo bisa memudar sekaligus melepas display.">
+<link rel="canonical" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Transisikan display dengan allow-discrete">
+<meta property="og:description" content="Tata cara memakai transition-behavior agar overlay Clincoo bisa memudar sekaligus melepas display.">
+<meta property="og:url" content="https://blog.clincoo.buzz/transition/transition-discrete-display-overlay/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/transition/transition-discrete-display-overlay/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/transition/transition-discrete-display-overlay/">
+</head>
+<body>
+<article>
+<h1>Cara Transisikan display dengan allow-discrete</h1>
+<p>Tata cara memakai transition-behavior agar overlay Clincoo bisa memudar sekaligus melepas display.</p>
+<h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Properti diskret butuh izin</h2><p class="mb-4">display, overlay, dan content-visibility bersifat diskret. Browser tidak menginterpolasinya kecuali transition-behavior: allow-discrete. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tulis transition: opacity 180ms ease, display 180ms allow-discrete, overlay 180ms allow-discrete pada dialog ringan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Mulai dari @starting-style</h2><p class="mb-4">Elemen yang baru masuk pohon tidak punya nilai awal untuk ditransisikan. Tambah @starting-style { .overlay { opacity: 0 } } supaya frame pertama transparan. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka panel bantuan: harus memudar masuk, dan setelah tutup tidak lagi menangkap klik. Simpan cuplikan di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior">MDN — transition-behavior</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
