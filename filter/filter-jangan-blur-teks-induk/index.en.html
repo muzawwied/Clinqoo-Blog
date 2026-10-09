@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Stop a Parent filter from Blurring Text — Clincoo</title>
+<meta name="description" content="How to move a Clincoo filter onto a decorative element so the heading stays sharp.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-jangan-blur-teks-induk/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-jangan-blur-teks-induk/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-jangan-blur-teks-induk/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-jangan-blur-teks-induk/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Stop a Parent filter from Blurring Text">
+<meta property="og:description" content="How to move a Clincoo filter onto a decorative element so the heading stays sharp.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-jangan-blur-teks-induk/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-jangan-blur-teks-induk/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-jangan-blur-teks-induk/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Stop a Parent filter from Blurring Text</h1>
+<p>How to move a Clincoo filter onto a decorative element so the heading stays sharp.</p><p class="mb-4">A filter on a card processes every child, including text. blur(2px) on the parent makes the heading unreadable.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Split the image layer</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> put the filter only on the img or the background div, not on the article. Text stays a sibling, not a child of the filtered element.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check at 200 percent zoom</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> zoom the page. If glyph edges break, the filter is still on the parent. will-change: filter on the parent can also blur text on some engines. Remove will-change after the test. Save a capture on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">For hover, transition the background layer opacity, not a filter on the whole card.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN — filter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

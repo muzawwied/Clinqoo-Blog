@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Replace an SVG Icon box-shadow with filter: drop-shadow — Clincoo</title>
+<meta name="description" content="How to shadow the shape of a Clincoo SVG icon instead of the element box.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Replace an SVG Icon box-shadow with filter: drop-shadow">
+<meta property="og:description" content="How to shadow the shape of a Clincoo SVG icon instead of the element box.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-drop-shadow-ikon-svg/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Replace an SVG Icon box-shadow with filter: drop-shadow</h1>
+<p>How to shadow the shape of a Clincoo SVG icon instead of the element box.</p><p class="mb-4">box-shadow on an SVG icon follows the element box, so the shadow looks like a tiny card around the icon stroke.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Move the shadow to filter</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> remove box-shadow from the svg. Write filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.25)). drop-shadow follows the alpha channel, so only the icon shape is shadowed.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not stack another filter by accident</h2><p class="mb-4">filter does not stack like box-shadow. If the icon also needs grayscale, combine one declaration: filter: grayscale(1) drop-shadow(0 1px 1px rgb(0 0 0 / 0.25)). Check in <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> on light and dark backgrounds. Save the snippet on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">A clipped shadow is usually overflow: hidden on the parent. Loosen the parent instead of raising the blur.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow">MDN — filter drop-shadow()</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

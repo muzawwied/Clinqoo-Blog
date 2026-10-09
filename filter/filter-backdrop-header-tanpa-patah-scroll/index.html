@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Pakai backdrop-filter di Header Tanpa Mematahkan Scroll — Clincoo</title>
+<meta name="description" content="Tata cara blur latar header Clincoo tanpa membuat area di belakangnya tidak bisa digulir.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Pakai backdrop-filter di Header Tanpa Mematahkan Scroll">
+<meta property="og:description" content="Tata cara blur latar header Clincoo tanpa membuat area di belakangnya tidak bisa digulir.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+</head>
+<body>
+<article>
+<h1>Cara Pakai backdrop-filter di Header Tanpa Mematahkan Scroll</h1>
+<p>Tata cara blur latar header Clincoo tanpa membuat area di belakangnya tidak bisa digulir.</p><p class="mb-4">backdrop-filter pada header sticky sering membuat lapisan baru yang menelan sentuhan, sehingga gulir terasa macet di atas kartu.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Blur hanya pada lapisan dekoratif</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> jangan taruh backdrop-filter pada header yang juga memegang tautan. Buat anak ::before dengan position absolute, inset 0, backdrop-filter: blur(8px), dan pointer-events: none.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jaga header tetap setipis mungkin</h2><p class="mb-4">Beri header background semi-transparan, z-index rendah, dan isolation: isolate agar blur tidak bocor ke dropdown. Uji gulir di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> dengan jari di atas header: halaman harus tetap jalan. Catat hasilnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Jika blur tidak muncul, elemen di belakang belum punya latar. Beri body warna solid dulu sebelum menilai filter.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">MDN — backdrop-filter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

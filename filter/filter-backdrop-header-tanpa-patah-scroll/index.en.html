@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use backdrop-filter on a Header Without Breaking Scroll — Clincoo</title>
+<meta name="description" content="How to blur a Clincoo header background without making the area behind it unscrollable.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use backdrop-filter on a Header Without Breaking Scroll">
+<meta property="og:description" content="How to blur a Clincoo header background without making the area behind it unscrollable.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-backdrop-header-tanpa-patah-scroll/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Use backdrop-filter on a Header Without Breaking Scroll</h1>
+<p>How to blur a Clincoo header background without making the area behind it unscrollable.</p><p class="mb-4">backdrop-filter on a sticky header often creates a layer that swallows hits, so scroll feels stuck over the cards.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Blur only a decorative layer</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> do not put backdrop-filter on the header that also holds links. Add a ::before child with position absolute, inset 0, backdrop-filter: blur(8px), and pointer-events: none.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Keep the header as thin as it can be</h2><p class="mb-4">Give the header a semi-transparent background, a low z-index, and isolation: isolate so the blur does not leak into a dropdown. Test scroll in <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> with a finger over the header: the page must still move. Note the result on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">If the blur never appears, the element behind has no background. Give body a solid color before judging the filter.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">MDN — backdrop-filter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Turn Off Heavy Filters When prefers-reduced-motion Is Set — Clincoo</title>
+<meta name="description" content="How to disable Clincoo blur and drop-shadow for people who request reduced motion.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Turn Off Heavy Filters When prefers-reduced-motion Is Set">
+<meta property="og:description" content="How to disable Clincoo blur and drop-shadow for people who request reduced motion.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Turn Off Heavy Filters When prefers-reduced-motion Is Set</h1>
+<p>How to disable Clincoo blur and drop-shadow for people who request reduced motion.</p><p class="mb-4">Animated blur and a large drop-shadow still feel like motion, even when transform is not changing.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Zero the filter in a media query</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add @media (prefers-reduced-motion: reduce) { .card-glow { filter: none; backdrop-filter: none; } }. Do not only disable transition.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Offer a static replacement</h2><p class="mb-4">Replace the blur with a 1px solid border and a slightly darker background. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> turn on reduced motion in the system, then reload. The header must stay readable without a haze. Write that decision on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Do not rely on a class added by JavaScript. The media query still works if the script fails.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN — prefers-reduced-motion</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

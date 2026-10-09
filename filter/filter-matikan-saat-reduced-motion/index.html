@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Matikan Filter Berat Saat prefers-reduced-motion — Clincoo</title>
+<meta name="description" content="Tata cara menonaktifkan blur dan drop-shadow Clincoo untuk pengguna yang meminta gerakan dikurangi.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Matikan Filter Berat Saat prefers-reduced-motion">
+<meta property="og:description" content="Tata cara menonaktifkan blur dan drop-shadow Clincoo untuk pengguna yang meminta gerakan dikurangi.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-matikan-saat-reduced-motion/">
+</head>
+<body>
+<article>
+<h1>Cara Matikan Filter Berat Saat prefers-reduced-motion</h1>
+<p>Tata cara menonaktifkan blur dan drop-shadow Clincoo untuk pengguna yang meminta gerakan dikurangi.</p><p class="mb-4">Blur animasi dan drop-shadow besar tetap terasa seperti gerak, meskipun yang berubah bukan transform.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Nolkan filter di media query</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> tambahkan @media (prefers-reduced-motion: reduce) { .card-glow { filter: none; backdrop-filter: none; } }. Jangan hanya mematikan transition.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Sediakan pengganti statis</h2><p class="mb-4">Ganti blur dengan border solid 1px dan latar sedikit lebih gelap. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> aktifkan reduced motion di sistem, lalu muat ulang. Header harus tetap terbaca tanpa kabut. Tulis keputusan itu di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Jangan andalkan kelas yang ditambah JavaScript. Media query tetap jalan jika skrip gagal.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN — prefers-reduced-motion</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

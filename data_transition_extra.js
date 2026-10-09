@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Transisi (10 Oktober 2026, 04:00 WIB) sampai full 12
 // Clincoo Docs — tambah artikel Transition (9 Oktober 2026, 22:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -176,6 +177,36 @@
    "sourceSnippet": "When the transition property is set, the browser animates from the current value back when the state changes again.",
    "source2": "MDN — animation-fill-mode",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "transition-debug-panel-animasi-devtools",
+ "langs": {
+  "id": {
+   "title": "Cara Debug Transisi yang Tidak Jalan di Panel Animations",
+   "desc": "Tata cara mencari properti yang tidak ikut transisi di Clincoo lewat panel Animations DevTools.",
+   "content": "<p class=\"mb-4\">Transisi yang diam sering bukan karena duration salah, melainkan properti yang berubah tidak ada di daftar transition.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Rekam di panel Animations</h2><p class=\"mb-4\">Buka pratinjau di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, lalu DevTools, panel Animations. Picu hover atau kelas is-open. Jika tidak ada batang animasi, browser tidak melihat perubahan properti yang ditransisikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cocokkan nama properti</h2><p class=\"mb-4\">Di Computed, bandingkan nilai sebelum dan sesudah. transition: opacity 160ms tidak akan jalan jika yang berubah hanya visibility. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> catat nama properti yang benar-benar berubah, lalu tulis ulang transition hanya untuk nama itu. Simpan contoh yang lolos di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p><p class=\"mb-4\">Ulangi dengan prefers-reduced-motion menyala. Panel harus kosong jika transisi memang dimatikan, bukan karena selector kalah.</p>",
+   "source": "Chrome DevTools — Inspect animations",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/css/animations",
+   "sourceSnippet": "The Animations panel records CSS transitions and animations so you can inspect timing when a change does not play.",
+   "source2": "MDN — CSS transitions",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Debug a Transition That Never Runs in the Animations Panel",
+   "desc": "How to find a Clincoo property that is not transitioning by using the DevTools Animations panel.",
+   "content": "<p class=\"mb-4\">A transition that stays still is often not a bad duration. The property that changed is missing from the transition list.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record in the Animations panel</h2><p class=\"mb-4\">Open the preview in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>, then DevTools, Animations. Trigger hover or the is-open class. If no animation bar appears, the browser sees no change on a transitioned property.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match the property name</h2><p class=\"mb-4\">In Computed, compare the value before and after. transition: opacity 160ms will not run if only visibility changed. In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> note the property that actually changed, then rewrite transition for that name only. Save a passing example on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p><p class=\"mb-4\">Repeat with prefers-reduced-motion on. The panel should be empty because transitions are disabled, not because a selector lost.</p>",
+   "source": "Chrome DevTools — Inspect animations",
+   "sourceUrl": "https://developer.chrome.com/docs/devtools/css/animations",
+   "sourceSnippet": "The Animations panel records CSS transitions and animations so you can inspect timing when a change does not play.",
+   "source2": "MDN — CSS transitions",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
