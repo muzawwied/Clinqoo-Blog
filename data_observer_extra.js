@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel observer (9 Oktober 2026, 11:00 WIB)
 // Clincoo Docs — tambah 1 artikel Observer (8 Oktober 2026, 01:00 WIB)
 // Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 22:00 WIB)
 // Clincoo Docs — tambah 5 artikel Observer (7 Oktober 2026, 21:00 WIB)
@@ -323,6 +324,35 @@
    "sourceSnippet": "isIntersecting is a boolean that is true if the target element intersects the root.",
    "source2": "MDN — Intersection Observer API",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "observer-atasi-resizeobserver-loop",
+ "langs": {
+  "id": {
+   "title": "Cara Atasi ResizeObserver loop completed with undelivered notifications",
+   "desc": "Tata cara menghentikan loop ResizeObserver di Clincoo yang menulis ukuran lalu memicu resize lagi di callback yang sama.",
+   "content": "<p class=\"mb-4\">Pesan ResizeObserver loop completed with undelivered notifications muncul jika callback mengubah layout elemen yang sedang diamati, lalu browser menunda notifikasi berikutnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan tulis ukuran di callback yang sama</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> baca contentRect, simpan angka, dan terapkan gaya di requestAnimationFrame berikutnya. Amati pembungkus, bukan elemen yang tingginya Anda ubah. Jika hanya butuh sekali, disconnect setelah pengukuran pertama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan panel berukuran berubah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ubah lebar panel berulang kali. Console tidak boleh membanjir. Jika masih ada loop, catat elemen yang di-observe di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> dan pisahkan elemen yang diukur dari elemen yang digaya.</p>",
+   "source": "MDN — ResizeObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver",
+   "sourceSnippet": "The ResizeObserver interface reports changes to the dimensions of an Element's content or border box.",
+   "source2": "W3C — Resize Observer",
+   "source2Url": "https://www.w3.org/TR/resize-observer/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Handle ResizeObserver loop completed with undelivered notifications",
+   "desc": "How to stop a Clincoo ResizeObserver loop that writes a size and triggers another resize in the same callback.",
+   "content": "<p class=\"mb-4\">The message ResizeObserver loop completed with undelivered notifications appears when a callback changes the layout of the observed element and the browser defers the next notification.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not write size in the same callback</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> read contentRect, store the number, and apply style on the next requestAnimationFrame. Observe the wrapper, not the element whose height you change. If you only need one measurement, disconnect after the first one.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a panel that changes size</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> resize the panel repeatedly. The console should not flood. If the loop remains, note the observed element on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> and separate the measured element from the styled element.</p>",
+   "source": "MDN — ResizeObserver",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver",
+   "sourceSnippet": "The ResizeObserver interface reports changes to the dimensions of an Element's content or border box.",
+   "source2": "W3C — Resize Observer",
+   "source2Url": "https://www.w3.org/TR/resize-observer/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

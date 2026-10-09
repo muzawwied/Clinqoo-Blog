@@ -4425,4 +4425,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/pointer/pointer-id-multi-sentuh/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/pointer/pointer-id-multi-sentuh/"/>
   </url>
+
+  <url>
+    <loc>https://docs.clincoo.buzz/pointer/pointer-rawupdate-garis-halus/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/pointer/pointer-rawupdate-garis-halus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/pointer/pointer-rawupdate-garis-halus/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/pointer/pointer-rawupdate-garis-halus/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/git/git-bisect-lacak-commit-rusak/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/git/git-bisect-lacak-commit-rusak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/git/git-bisect-lacak-commit-rusak/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/git/git-bisect-lacak-commit-rusak/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/gambar/gambar-decoding-async-cegah-blokir/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/gambar/gambar-decoding-async-cegah-blokir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/gambar/gambar-decoding-async-cegah-blokir/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/gambar/gambar-decoding-async-cegah-blokir/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/flexbox/flexbox-align-self-satu-item/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/flexbox/flexbox-align-self-satu-item/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/flexbox/flexbox-align-self-satu-item/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/flexbox/flexbox-align-self-satu-item/"/>
+  </url>
+  <url>
+    <loc>https://docs.clincoo.buzz/observer/observer-atasi-resizeobserver-loop/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docs.clincoo.buzz/observer/observer-atasi-resizeobserver-loop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.clincoo.buzz/observer/observer-atasi-resizeobserver-loop/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.clincoo.buzz/observer/observer-atasi-resizeobserver-loop/"/>
+  </url>
 </urlset>

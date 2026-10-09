@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel flexbox (9 Oktober 2026, 11:00 WIB)
 // Clincoo Docs — tambah 1 artikel Flexbox (7 Oktober 2026, 09:00 WIB)
 // Clincoo Docs — tambah 5 artikel Flexbox (7 Oktober 2026, 08:00 WIB)
 (function () {
@@ -176,6 +177,35 @@
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
    "sourceSnippet": "The margin CSS shorthand property sets the margin area on all four sides of an element.",
    "source2": "CSS Flexible Box — auto margins",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "flexbox-align-self-satu-item",
+ "langs": {
+  "id": {
+   "title": "Cara Sejajarkan Satu Item Flex dengan align-self",
+   "desc": "Tata cara menggeser satu item di baris Flexbox Clincoo tanpa mengubah align-items pada kontainer.",
+   "content": "<p class=\"mb-4\">align-items mengatur sumbu silang untuk semua item. Satu tombol yang harus menempel ke bawah tidak perlu mengubah seluruh baris.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Timpa hanya item yang berbeda</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> biarkan kontainer align-items: center. Pada item pengecualian set align-self: flex-end atau stretch. align-self: auto kembali mengikuti kontainer. Jangan pakai margin-top tetap jika tinggi baris berubah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek saat wrap</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sempitkan jendela sampai item pindah baris. align-self tetap berlaku di baris baru. Jika item lain ikut bergeser, selektor terlalu luas. Catat selektor itu di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — align-self",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self",
+   "sourceSnippet": "The align-self CSS property overrides a grid or flex item's align-items value.",
+   "source2": "CSS Flexible Box — Aligning items",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Align One Flex Item with align-self",
+   "desc": "How to shift one item in a Clincoo Flexbox row without changing align-items on the container.",
+   "content": "<p class=\"mb-4\">align-items sets the cross axis for every item. One button that must sit at the bottom does not need to change the whole row.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Override only the item that differs</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> leave the container at align-items: center. On the exception set align-self: flex-end or stretch. align-self: auto follows the container again. Do not use a fixed margin-top if the row height changes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check when the row wraps</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> narrow the window until items wrap. align-self still applies on the new line. If other items move too, the selector is too broad. Note that selector on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — align-self",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self",
+   "sourceSnippet": "The align-self CSS property overrides a grid or flex item's align-items value.",
+   "source2": "CSS Flexible Box — Aligning items",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"

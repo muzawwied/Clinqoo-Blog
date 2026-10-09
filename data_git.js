@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel git (9 Oktober 2026, 11:00 WIB)
 // Clincoo Docs — kategori Git (6 Oktober 2026, 23:00 WIB) — 2 artikel
 // Clincoo Docs — tambah 5 artikel Git (7 Oktober 2026, 04:00 WIB)
 // Clincoo Docs — tambah 5 artikel Git (7 Oktober 2026, 05:00 WIB)
@@ -348,6 +349,35 @@ window.countryDataFiles["git"] = {
    "sourceSnippet": "git remote -v shows the URLs that Git has stored for each remote.",
    "source2": "Git — git-push",
    "source2Url": "https://git-scm.com/docs/git-push",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "git-bisect-lacak-commit-rusak",
+ "langs": {
+  "id": {
+   "title": "Cara Lacak Commit Rusak dengan git bisect",
+   "desc": "Tata cara membagi riwayat Git Clincoo sampai ketemu commit yang membuat halaman rusak.",
+   "content": "<p class=\"mb-4\">Membaca log panjang jarang menunjukkan commit penyebab. git bisect memotong rentang jadi dua sampai tersisa satu commit.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tandai baik dan buruk</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pastikan pohon kerja bersih. Jalankan git bisect start, lalu git bisect bad pada commit yang rusak dan git bisect good pada commit yang masih benar. Uji halaman di tiap pemberhentian, lalu jawab good atau bad.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Selesai, lalu reset</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ulangi uji yang sama tiap langkah, jangan ganti kriteria. Setelah Git menunjuk commit, catat hash dan jalankan git bisect reset. Tulis temuan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum memperbaiki.</p>",
+   "source": "Git — git bisect",
+   "sourceUrl": "https://git-scm.com/docs/git-bisect",
+   "sourceSnippet": "This command uses a binary search algorithm to find which commit in your project's history introduced a bug.",
+   "source2": "Pro Git — Debugging with Git",
+   "source2Url": "https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Find a Broken Commit with git bisect",
+   "desc": "How to split Clincoo Git history until you find the commit that broke the page.",
+   "content": "<p class=\"mb-4\">Reading a long log rarely shows the commit that caused the bug. git bisect cuts the range in half until one commit remains.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Mark good and bad</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> make sure the work tree is clean. Run git bisect start, then git bisect bad on the broken commit and git bisect good on a commit that still worked. Test the page at each stop, then answer good or bad.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Finish, then reset</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> repeat the same check each step; do not change the criterion. After Git names the commit, copy the hash and run git bisect reset. Write the finding on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before fixing it.</p>",
+   "source": "Git — git bisect",
+   "sourceUrl": "https://git-scm.com/docs/git-bisect",
+   "sourceSnippet": "This command uses a binary search algorithm to find which commit in your project's history introduced a bug.",
+   "source2": "Pro Git — Debugging with Git",
+   "source2Url": "https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

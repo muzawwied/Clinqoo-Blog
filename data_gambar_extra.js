@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel gambar (9 Oktober 2026, 11:00 WIB)
 // Clincoo Docs — tambah 4 artikel Gambar (6 Oktober 2026, 20:00 WIB)
 // Clincoo Docs — artikel tambahan Gambar (6 Oktober 2026, 19:00 WIB — tambah 5 artikel)
 (function () {
@@ -263,6 +264,35 @@
    "sourceSnippet": "Descriptive file names and alt text help search engines understand the image.",
    "source2": "MDN — img alt",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "gambar-decoding-async-cegah-blokir",
+ "langs": {
+  "id": {
+   "title": "Cara Cegah Gambar Memblokir Main Thread dengan decoding async",
+   "desc": "Tata cara menandai gambar non-LCP di Clincoo dengan decoding async agar decode tidak membekukan klik.",
+   "content": "<p class=\"mb-4\">Gambar besar yang di-decode di main thread bisa menunda klik. Atribut decoding memberi petunjuk kapan pekerjaan itu boleh terjadi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Async untuk gambar di bawah lipatan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri decoding=\"async\" pada gambar yang bukan LCP. Biarkan gambar hero tanpa async, atau pakai decoding=\"sync\" hanya jika kedipan decode terlihat. Tetap isi width dan height agar kotak tidak bergeser.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di panel Performance</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir daftar gambar dan rekam interaksi. Decode tidak boleh jadi long task di tengah klik. Jika masih memblokir, catat ukuran berkas di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> lalu kecilkan aset, jangan hanya menambah atribut.</p>",
+   "source": "MDN — HTMLImageElement.decoding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decoding",
+   "sourceSnippet": "The decoding property of the HTMLImageElement interface provides a hint to the browser as to how it should decode the image.",
+   "source2": "HTML — img decoding attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#decoding",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep Images Off the Main Thread with decoding async",
+   "desc": "How to mark non-LCP images in Clincoo with decoding async so decode does not freeze a click.",
+   "content": "<p class=\"mb-4\">A large image decoded on the main thread can delay a click. The decoding attribute hints when that work may happen.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Async for below-the-fold images</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set decoding=\"async\" on images that are not the LCP. Leave the hero image without async, or use decoding=\"sync\" only if a decode flicker is visible. Still set width and height so the box does not shift.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in the Performance panel</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll an image list and record the interaction. Decode should not become a long task in the middle of a click. If it still blocks, note the file size on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> and shrink the asset; do not only add the attribute.</p>",
+   "source": "MDN — HTMLImageElement.decoding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decoding",
+   "sourceSnippet": "The decoding property of the HTMLImageElement interface provides a hint to the browser as to how it should decode the image.",
+   "source2": "HTML — img decoding attribute",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#decoding",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }

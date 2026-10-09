@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel pointer (9 Oktober 2026, 11:00 WIB)
 // Clincoo Docs — kategori Pointer (9 Oktober 2026, 10:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Pointer (9 Oktober 2026, 09:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Pointer (9 Oktober 2026, 08:00 WIB) — kategori baru, 1 artikel
@@ -320,6 +321,35 @@ window.countryDataFiles["pointer"] = {
    "sourceSnippet": "The pointerId read-only property of the PointerEvent interface provides an identifier for the pointer that caused the event.",
    "source2": "MDN — Pointer events",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "pointer-rawupdate-garis-halus",
+ "langs": {
+  "id": {
+   "title": "Cara Gambar Garis Halus dengan pointerrawupdate",
+   "desc": "Tata cara memakai pointerrawupdate di Clincoo agar goresan pena tidak patah-patah di antara pointermove.",
+   "content": "<p class=\"mb-4\">pointermove bisa di-koalese browser. Pada pena, titik yang hilang membuat garis patah meski tangan bergerak mulus.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Dengarkan pointerrawupdate hanya saat menggambar</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang setPointerCapture pada pointerdown, lalu dengarkan pointerrawupdate. Simpan titik terakhir per pointerId. Gambar segmen dari titik lama ke event.getCoalescedEvents jika ada, dan tetap baca pointerrawupdate untuk sampel yang lebih rapat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan biarkan listener hidup terus</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> lepas listener pada pointerup dan pointercancel. Uji pena lambat lalu pena cepat. Jika garis masih patah, catat jumlah event per detik di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum mengganti ke event lain.</p>",
+   "source": "MDN — Element: pointerrawupdate",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerrawupdate_event",
+   "sourceSnippet": "The pointerrawupdate event is fired when a pointer changes coordinates, and the event is not coalesced.",
+   "source2": "MDN — getCoalescedEvents",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent/getCoalescedEvents",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Draw a Smooth Line with pointerrawupdate",
+   "desc": "How to use pointerrawupdate in Clincoo so a pen stroke does not break between pointermove events.",
+   "content": "<p class=\"mb-4\">The browser can coalesce pointermove. With a pen, missing points make a jagged stroke even when the hand moved smoothly.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Listen to pointerrawupdate only while drawing</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> call setPointerCapture on pointerdown, then listen for pointerrawupdate. Keep the last point per pointerId. Draw a segment from the old point through event.getCoalescedEvents when present, and still read pointerrawupdate for denser samples.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not leave the listener running</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> remove the listener on pointerup and pointercancel. Test a slow pen stroke, then a fast one. If the line is still broken, note events per second on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> before switching events.</p>",
+   "source": "MDN — Element: pointerrawupdate",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerrawupdate_event",
+   "sourceSnippet": "The pointerrawupdate event is fired when a pointer changes coordinates, and the event is not coalesced.",
+   "source2": "MDN — getCoalescedEvents",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent/getCoalescedEvents",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
