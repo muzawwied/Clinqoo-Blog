@@ -77,11 +77,18 @@
     e.onerror = loadTransition;
     document.body.appendChild(e);
   }
-  function loadTransitionExtra() {
+  function loadScrollbar() {
     var e = document.createElement('script');
-    e.src = 'data_transition_extra.js?v=1';
+    e.src = 'data_scrollbar.js?v=1';
     e.onload = loadApp;
     e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
+  function loadTransitionExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_transition_extra.js?v=2';
+    e.onload = loadScrollbar;
+    e.onerror = loadScrollbar;
     document.body.appendChild(e);
   }
   function loadTransition() {
