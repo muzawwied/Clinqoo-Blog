@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Lock Background Scroll in a Modal Without Losing Position — Clincoo</title>
+<meta name="description" content="How to hold the Clincoo body while a dialog is open without jumping to the top of the page.">
+<link rel="canonical" href="https://blog.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Lock Background Scroll in a Modal Without Losing Position">
+<meta property="og:description" content="How to hold the Clincoo body while a dialog is open without jumping to the top of the page.">
+<meta property="og:url" content="https://blog.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/scrollbar/scrollbar-jangan-kunci-scroll-latar-modal/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Lock Background Scroll in a Modal Without Losing Position</h1>
+<p>How to hold the Clincoo body while a dialog is open without jumping to the top of the page.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Store scrollY before locking</h2><p class="mb-4">overflow: hidden on the body often resets scroll to 0. In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> store window.scrollY, set body to position fixed with a negative top equal to the scroll, width 100 percent, and keep scrollbar-gutter: stable.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Restore position when the dialog closes</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> scroll to the middle of the list, open a dialog, then close it. The page must return to the same item, not the hero. If it jumps, top was not restored. Keep the open-close order on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">MDN — position</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
