@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Template (9 Oktober 2026, 15:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Template (9 Oktober 2026, 14:00 WIB) — 3 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["template"] = {
@@ -85,6 +86,151 @@ window.countryDataFiles["template"] = {
    "sourceSnippet": "The title element is required and should describe the specific document, not a shared template label.",
    "source2": "web.dev — document metadata",
    "source2Url": "https://web.dev/learn/html/metadata",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "template-ganti-favicon-dan-og-image",
+ "langs": {
+  "id": {
+   "title": "Cara Ganti Favicon dan Gambar OG pada Template",
+   "desc": "Tata cara menukar ikon tab dan gambar pratinjau sosial bawaan template sebelum situs Clincoo dibagikan.",
+   "content": "<p class=\"mb-4\">Template sering menyertakan favicon demo dan gambar Open Graph merek orang lain. Kalau tidak diganti, tab browser dan unggahan chat menampilkan identitas yang salah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti file, jangan hanya ganti nama</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> unggah favicon.ico atau PNG 32px, lalu arahkan link rel icon ke path baru. Gambar OG idealnya 1200x630, di bawah 300KB, dan disimpan di folder gambar proyek, bukan hotlink ke CDN template.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek pratinjau sebelum dibagikan</h2><p class=\"mb-4\">Buka preview di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, lihat ikon tab, lalu salin URL halaman ke alat debug tautan. Pastikan og:image, og:title, dan twitter:card menunjuk ke asetmu. Catat path final di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya halaman turunan tidak kembali memakai gambar demo.</p>",
+   "source": "MDN — link rel icon",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel",
+   "sourceSnippet": "The icon link relation points to a resource that represents the page in the user interface, such as a favicon.",
+   "source2": "Open Graph protocol",
+   "source2Url": "https://ogp.me/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Replace a Template Favicon and OG Image",
+   "desc": "How to swap the template tab icon and social preview image before a Clincoo site is shared.",
+   "content": "<p class=\"mb-4\">Templates often ship a demo favicon and someone else's Open Graph image. If you leave them, the browser tab and chat unfurls show the wrong identity.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace the file, not only the name</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> upload favicon.ico or a 32px PNG, then point the icon link at the new path. The OG image should be 1200x630, under 300KB, and stored in the project image folder, not hotlinked from the template CDN.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the preview before sharing</h2><p class=\"mb-4\">Open the preview in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, look at the tab icon, then paste the page URL into a link debugger. Confirm og:image, og:title, and twitter:card point at your assets. Note the final paths on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so child pages do not fall back to the demo image.</p>",
+   "source": "MDN — link rel icon",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel",
+   "sourceSnippet": "The icon link relation points to a resource that represents the page in the user interface, such as a favicon.",
+   "source2": "Open Graph protocol",
+   "source2Url": "https://ogp.me/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "template-rapikan-hierarki-heading",
+ "langs": {
+  "id": {
+   "title": "Cara Rapikan Hierarki Heading Setelah Pakai Template",
+   "desc": "Tata cara memastikan satu h1 dan heading berurutan saat section template digabung di Clincoo.",
+   "content": "<p class=\"mb-4\">Section template sering masing-masing membawa h1. Setelah digabung, halaman punya beberapa judul utama dan outline aksesibilitas rusak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu h1, lalu turun bertahap</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sisakan satu h1 untuk judul halaman. Section berikutnya pakai h2, subbagian h3. Jangan loncat dari h2 ke h4 hanya karena class visual template memakai ukuran itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pisahkan gaya dan level</h2><p class=\"mb-4\">Kalau tampilan harus tetap besar, pindahkan ukuran ke class, bukan ke level tag. Cek outline di panel aksesibilitas preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Simpan pola heading yang lolos di catatan <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menduplikasi halaman lain.</p>",
+   "source": "MDN — heading elements",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements",
+   "sourceSnippet": "Heading elements should be used to describe the document outline, not only to change font size.",
+   "source2": "web.dev — headings",
+   "source2Url": "https://web.dev/learn/html/headings",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Fix Heading Hierarchy After Using a Template",
+   "desc": "How to keep a single h1 and sequential headings when template sections are combined in Clincoo.",
+   "content": "<p class=\"mb-4\">Template sections often each include an h1. After you combine them, the page has several main titles and the accessibility outline breaks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One h1, then step down</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> keep a single h1 for the page title. Later sections use h2, and subsections use h3. Do not jump from h2 to h4 only because a template visual class uses that size.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Separate style from level</h2><p class=\"mb-4\">If the look must stay large, move the size into a class, not the tag level. Check the outline in the accessibility pane of the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview. Save the heading pattern that passes in <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> notes before duplicating other pages.</p>",
+   "source": "MDN — heading elements",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements",
+   "sourceSnippet": "Heading elements should be used to describe the document outline, not only to change font size.",
+   "source2": "web.dev — headings",
+   "source2Url": "https://web.dev/learn/html/headings",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "template-nonaktifkan-aksi-form-demo",
+ "langs": {
+  "id": {
+   "title": "Cara Nonaktifkan Aksi Form Demo pada Template",
+   "desc": "Tata cara mengganti action, method, dan endpoint contoh pada form template sebelum pengunjung mengirim data sungguhan.",
+   "content": "<p class=\"mb-4\">Form kontak template sering mengarah ke formspree demo, mailto palsu, atau action hash. Data pengunjung bisa hilang atau masuk ke akun orang lain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti endpoint sebelum tombol diaktifkan</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cari tag form. Ganti action ke endpoint milikmu, set method yang sesuai, dan beri name pada setiap input. Hapus onsubmit yang hanya menampilkan alert demo.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji kirim dan pesan gagal</h2><p class=\"mb-4\">Dari preview <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> kirim isian uji, lalu cek apakah balasan sukses dan gagal terlihat. Jangan deploy selama action masih berisi domain template. Catat endpoint final di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar salinan halaman tidak mengembalikan form demo.</p>",
+   "source": "MDN — form element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+   "sourceSnippet": "The action attribute defines where form data is sent when the form is submitted.",
+   "source2": "web.dev — forms",
+   "source2Url": "https://web.dev/learn/forms",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Disable a Template Demo Form Action",
+   "desc": "How to replace the sample action, method, and endpoint on a template form before visitors submit real data.",
+   "content": "<p class=\"mb-4\">Template contact forms often point at a demo Formspree, a fake mailto, or a hash action. Visitor data can vanish or land in someone else's account.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Replace the endpoint before enabling the button</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> find the form tag. Point action at your endpoint, set the matching method, and give every input a name. Remove onsubmit handlers that only show a demo alert.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test submit and failure messages</h2><p class=\"mb-4\">From the <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> preview send a test entry, then check that success and failure feedback are visible. Do not deploy while action still contains the template domain. Record the final endpoint on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so page copies do not restore the demo form.</p>",
+   "source": "MDN — form element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+   "sourceSnippet": "The action attribute defines where form data is sent when the form is submitted.",
+   "source2": "web.dev — forms",
+   "source2Url": "https://web.dev/learn/forms",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "template-hapus-section-tanpa-pecah-grid",
+ "langs": {
+  "id": {
+   "title": "Cara Hapus Section Template Tanpa Memecah Grid",
+   "desc": "Tata cara menghapus blok yang tidak dipakai tanpa merusak grid, flex, atau penutup tag di Clincoo.",
+   "content": "<p class=\"mb-4\">Menghapus separuh section template sering meninggalkan div terbuka, sehingga grid di bawahnya pindah ke kolom yang salah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Hapus satu blok utuh</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> lipat section dari tag pembuka sampai penutup yang sejajar. Hapus sekaligus, termasuk komentar penanda awal dan akhir. Jangan menghapus hanya isi kalau parent grid mengandalkan jumlah anak.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek sisa kolom</h2><p class=\"mb-4\">Setelah hapus, lihat preview desktop dan ponsel di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Kalau grid-cols-3 kehilangan satu kartu, ubah ke grid-cols-2 atau biarkan auto-fit. Validator HTML membantu menemukan tag yatim. Simpan pola hapus yang aman di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS grid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+   "sourceSnippet": "Grid layout places items into rows and columns defined on the container, so removing a child changes how the track fills.",
+   "source2": "web.dev — layout",
+   "source2Url": "https://web.dev/learn/css/grid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Remove a Template Section Without Breaking the Grid",
+   "desc": "How to delete an unused block without breaking grid, flex, or closing tags in Clincoo.",
+   "content": "<p class=\"mb-4\">Deleting half a template section often leaves an open div, so the grid below shifts into the wrong column.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Remove one whole block</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> fold the section from its opening tag to the matching close. Delete it in one step, including the start and end marker comments. Do not delete only the inner content if the parent grid depends on the child count.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the remaining columns</h2><p class=\"mb-4\">After the delete, review desktop and phone previews in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. If grid-cols-3 loses one card, switch to grid-cols-2 or auto-fit. An HTML validator helps find orphan tags. Save the safe delete pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — CSS grid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+   "sourceSnippet": "Grid layout places items into rows and columns defined on the container, so removing a child changes how the track fills.",
+   "source2": "web.dev — layout",
+   "source2Url": "https://web.dev/learn/css/grid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "template-set-canonical-halaman-turunan",
+ "langs": {
+  "id": {
+   "title": "Cara Set Canonical pada Halaman Turunan Template",
+   "desc": "Tata cara mengisi link canonical yang masih menunjuk ke domain demo template di setiap halaman Clincoo.",
+   "content": "<p class=\"mb-4\">Halaman hasil duplikat template kadang membawa canonical ke situs pembuat template. Mesin telusur lalu menganggap halamanmu salinan, bukan sumber.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu canonical per URL jadi</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cari link rel canonical. Ganti href ke URL final halaman itu, dengan https dan tanpa parameter uji. Halaman beranda dan halaman dalam tidak boleh berbagi canonical yang sama.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Samakan dengan yang dibagikan</h2><p class=\"mb-4\">Setelah deploy dari <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, buka sumber halaman live dan cocokkan canonical dengan URL di bilah alamat. Catat pola path di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> supaya salinan berikutnya tidak mewarisi domain demo.</p>",
+   "source": "Google Search Central — canonical",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+   "sourceSnippet": "A canonical URL is the URL of the page that Google thinks is most representative of a set of duplicate pages.",
+   "source2": "MDN — link rel canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set Canonical URLs on Template Child Pages",
+   "desc": "How to fill canonical links that still point at the template demo domain on every Clincoo page.",
+   "content": "<p class=\"mb-4\">Duplicated template pages sometimes keep a canonical pointing at the template author's site. Search engines then treat your page as a copy, not the source.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One canonical per final URL</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> find the canonical link. Set href to that page's final URL, with https and without test parameters. The home page and inner pages must not share the same canonical.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Match what you share</h2><p class=\"mb-4\">After deploy from <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>, view the live page source and match the canonical to the address bar. Record the path pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so the next copy does not inherit the demo domain.</p>",
+   "source": "Google Search Central — canonical",
+   "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+   "sourceSnippet": "A canonical URL is the URL of the page that Google thinks is most representative of a set of duplicate pages.",
+   "source2": "MDN — link rel canonical",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
