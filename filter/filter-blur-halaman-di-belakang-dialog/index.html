@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Blur Halaman di Belakang Dialog Tanpa Memburamkan Dialog — Clincoo</title>
+<meta name="description" content="Tata cara memberi backdrop blur pada halaman Clincoo saat dialog terbuka tanpa membuat isi dialog kabur.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Blur Halaman di Belakang Dialog Tanpa Memburamkan Dialog">
+<meta property="og:description" content="Tata cara memberi backdrop blur pada halaman Clincoo saat dialog terbuka tanpa membuat isi dialog kabur.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+</head>
+<body>
+<article>
+<h1>Cara Blur Halaman di Belakang Dialog Tanpa Memburamkan Dialog</h1>
+<p>Tata cara memberi backdrop blur pada halaman Clincoo saat dialog terbuka tanpa membuat isi dialog kabur.</p><p class="mb-4">Blur pada body saat modal terbuka ikut memburamkan dialog karena dialog masih keturunan body. Blur harus hidup di lapisan di belakang dialog.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Pakai ::backdrop, bukan filter di body</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> buka dialog dengan showModal(). Beri dialog::backdrop { background: rgb(15 23 42 / 0.45); backdrop-filter: blur(6px); }.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jaga isi dialog tetap tajam</h2><p class="mb-4">Jangan tambah filter pada dialog itu sendiri. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka dialog konfirmasi: teks tombol harus tajam, halaman di belakang boleh kabur. Catat pengecualian browser di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Jika blur tidak didukung, latar semi-transparan tetap memisahkan dialog dari halaman.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop">MDN — ::backdrop</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

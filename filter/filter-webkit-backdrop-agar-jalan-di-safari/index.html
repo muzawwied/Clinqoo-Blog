@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Tambah -webkit-backdrop-filter Supaya Blur Jalan di Safari — Clincoo</title>
+<meta name="description" content="Tata cara menulis backdrop-filter berawalan webkit di Clincoo supaya header buram tetap tampil di Safari.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Tambah -webkit-backdrop-filter Supaya Blur Jalan di Safari">
+<meta property="og:description" content="Tata cara menulis backdrop-filter berawalan webkit di Clincoo supaya header buram tetap tampil di Safari.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-webkit-backdrop-agar-jalan-di-safari/">
+</head>
+<body>
+<article>
+<h1>Cara Tambah -webkit-backdrop-filter Supaya Blur Jalan di Safari</h1>
+<p>Tata cara menulis backdrop-filter berawalan webkit di Clincoo supaya header buram tetap tampil di Safari.</p><p class="mb-4">Header yang buram di Chrome bisa tampil polos di Safari jika hanya properti standar yang ditulis. Prefiks lama masih perlu untuk sebagian versi.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tulis prefiks sebelum properti standar</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> pada lapisan ::before header: -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);. Latar semi-transparan wajib, kalau tidak blur tidak kelihatan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji di Safari, bukan hanya di DevTools Chrome</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka halaman di Safari iOS. Jika blur hilang, cek elemen tidak punya opacity kurang dari 1 pada induk. Catat versi yang lolos di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Jangan hanya mengandalkan prefiks. Sediakan background solid sebagai cadangan.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">MDN — backdrop-filter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

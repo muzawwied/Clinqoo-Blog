@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Blur the Page Behind a Dialog Without Blurring the Dialog — Clincoo</title>
+<meta name="description" content="How to blur the Clincoo page when a dialog opens without making the dialog content blurry.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Blur the Page Behind a Dialog Without Blurring the Dialog">
+<meta property="og:description" content="How to blur the Clincoo page when a dialog opens without making the dialog content blurry.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-blur-halaman-di-belakang-dialog/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Blur the Page Behind a Dialog Without Blurring the Dialog</h1>
+<p>How to blur the Clincoo page when a dialog opens without making the dialog content blurry.</p><p class="mb-4">A blur on body while a modal is open also blurs the dialog, because the dialog is still a descendant of body. The blur has to live on a layer behind the dialog.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Use ::backdrop, not a filter on body</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> open the dialog with showModal(). Set dialog::backdrop { background: rgb(15 23 42 / 0.45); backdrop-filter: blur(6px); }.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Keep the dialog content sharp</h2><p class="mb-4">Do not add a filter on the dialog itself. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open a confirm dialog: button text must be sharp, the page behind may be blurred. Note browser exceptions on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">If blur is unsupported, the semi-transparent background still separates the dialog from the page.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop">MDN — ::backdrop</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

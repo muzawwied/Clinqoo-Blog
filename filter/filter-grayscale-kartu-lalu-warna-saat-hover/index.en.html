@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Make a Grayscale Card Turn Color on Hover — Clincoo</title>
+<meta name="description" content="How to desaturate a Clincoo image card, then restore color when the pointer or focus enters.">
+<link rel="canonical" href="https://blog.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Make a Grayscale Card Turn Color on Hover">
+<meta property="og:description" content="How to desaturate a Clincoo image card, then restore color when the pointer or focus enters.">
+<meta property="og:url" content="https://blog.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/filter/filter-grayscale-kartu-lalu-warna-saat-hover/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Make a Grayscale Card Turn Color on Hover</h1>
+<p>How to desaturate a Clincoo image card, then restore color when the pointer or focus enters.</p><p class="mb-4">Gallery cards that stay fully saturated compete for attention. Grayscale at rest, then full color on hover or focus, makes the choice feel intentional.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Put the filter on the image, not the link</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set img to filter: grayscale(1) and transition: filter 160ms ease. Do not put the filter on the <a> or the title text turns gray too.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Restore color for hover and keyboard</h2><p class="mb-4">Use .card:hover img, .card:focus-within img { filter: grayscale(0); }. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> tab to the card: color must return without a mouse. Note the pattern on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p><p class="mb-4">Do not rely on hover alone. On touch screens hover can stick, so also provide :focus-within.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN — filter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
