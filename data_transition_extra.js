@@ -1,4 +1,4 @@
-// Clincoo Docs — tambah 5 artikel Transition (9 Oktober 2026, 21:00 WIB)
+// Clincoo Docs — tambah artikel Transition (9 Oktober 2026, 22:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["transition"]) {
@@ -146,6 +146,36 @@
    "sourceSnippet": "The will-change CSS property hints to browsers how an element is expected to change.",
    "source2": "web.dev — Rendering performance",
    "source2Url": "https://web.dev/articles/rendering-performance",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "transition-balik-saat-hover-terputus",
+ "langs": {
+  "id": {
+   "title": "Cara Biarkan Transisi Berjalan Mundur Saat Hover Terputus",
+   "desc": "Tata cara supaya animasi hover Clincoo tidak macet di tengah ketika kursor cepat pergi.",
+   "content": "<p class=\"mb-4\">Tata cara supaya animasi hover Clincoo tidak macet di tengah ketika kursor cepat pergi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan kunci di keyframe yang tidak bisa mundur</h2><p class=\"mb-4\">Transisi CSS berjalan mundur dari nilai saat ini jika properti yang sama ditransisikan di kedua arah. Animasi keyframes sering macet karena tidak punya jalan balik. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tulis transition: transform 160ms ease, opacity 160ms ease pada tombol, bukan animation: pop 200ms forwards.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji kursor yang lewat cepat</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> geser kursor melewati beberapa kartu tanpa berhenti. Kartu harus kembali ke skala semula, bukan tertahan di 1.02. Jika macet, cek animation-fill-mode: forwards. Catat yang lolos di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using CSS transitions",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions",
+   "sourceSnippet": "When the transition property is set, the browser animates from the current value back when the state changes again.",
+   "source2": "MDN — animation-fill-mode",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Let a Transition Reverse When Hover Breaks Off",
+   "desc": "How to keep a Clincoo hover animation from sticking halfway when the pointer leaves early.",
+   "content": "<p class=\"mb-4\">How to keep a Clincoo hover animation from sticking halfway when the pointer leaves early.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not lock a keyframe that cannot reverse</h2><p class=\"mb-4\">A CSS transition reverses from the current value when the same property is transitioned both ways. A keyframes animation often sticks because it has no return path. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> write transition: transform 160ms ease, opacity 160ms ease on the button, not animation: pop 200ms forwards.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test a pointer that passes quickly</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> sweep the pointer across several cards without pausing. Cards must return to the original scale, not stay at 1.02. If one sticks, check animation-fill-mode: forwards. Note what passed on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Using CSS transitions",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions",
+   "sourceSnippet": "When the transition property is set, the browser animates from the current value back when the state changes again.",
+   "source2": "MDN — animation-fill-mode",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
