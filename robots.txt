@@ -13,3 +13,4 @@ Sitemap: https://blog.clincoo.buzz/sitemap-variabel.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-flexbox.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-inp.xml
 Sitemap: https://blog.clincoo.buzz/sitemap-color.xml
+Sitemap: https://blog.clincoo.buzz/sitemap-transition.xml
