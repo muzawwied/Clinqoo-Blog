@@ -1,3 +1,4 @@
+// Clincoo Docs — tambah 1 artikel Color (9 Oktober 2026, 20:00 WIB)
 // Clincoo Docs — tambah 5 artikel Color (9 Oktober 2026, 19:00 WIB)
 // Clincoo Docs — tambah 5 artikel Color (9 Oktober 2026, 18:00 WIB)
 // Clincoo Docs — kategori Color (9 Oktober 2026, 16:00 WIB) — 1 artikel baru
@@ -325,6 +326,35 @@ window.countryDataFiles["color"] = {
   }
  }
 }
-
+,
+{
+ "id": "color-relative-color-syntax-dari-token",
+ "langs": {
+  "id": {
+   "title": "Cara Terangkan atau Gelapkan Token dengan Relative Color Syntax",
+   "desc": "Tata cara menurunkan shade hover dari token warna Clincoo tanpa hex acak.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ambil shade dari token, bukan dari tebakan hex</h2><p class=\"mb-4\">Hover yang lebih gelap sering ditulis ulang sebagai hex baru, lalu pecah saat tema berganti. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> turunkan shade dari token yang sudah ada dengan relative color syntax: oklch(from var(--accent) calc(l - 0.08) c h).</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di tema terang dan gelap</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> arahkan kursor ke tombol utama. Latar hover harus tetap satu keluarga warna dengan token, bukan abu-abu asing. Simpan cuplikan sebelum-sesudah di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Relative color syntax",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors",
+   "sourceSnippet": "Relative color syntax lets you derive a new color from an existing one by adjusting individual components.",
+   "source2": "MDN — oklch()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Lighten or Darken a Token with Relative Color Syntax",
+   "desc": "How to derive a hover shade from a Clincoo color token without a random hex.",
+   "content": "<h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Derive the shade from the token, not a guessed hex</h2><p class=\"mb-4\">A darker hover is often rewritten as a new hex, then breaks when the theme changes. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> derive the shade from the existing token with relative color syntax: oklch(from var(--accent) calc(l - 0.08) c h).</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check light and dark themes</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> hover the primary button. The hover fill should stay in the same color family as the token, not an unrelated gray. Keep the before-and-after capture on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Relative color syntax",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors",
+   "sourceSnippet": "Relative color syntax lets you derive a new color from an existing one by adjusting individual components.",
+   "source2": "MDN — oklch()",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
  ]
 };
