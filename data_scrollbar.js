@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Scrollbar (10 Oktober 2026, 00:00 WIB) — tambah 3 artikel, kategori full 12
 // Clincoo Docs — kategori Scrollbar (9 Oktober 2026, 23:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Scrollbar (9 Oktober 2026, 22:00 WIB) — 4 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -261,6 +262,94 @@ window.countryDataFiles["scrollbar"] = {
    "sourceSnippet": "The overflow CSS property sets what to do when content is too big to fit in an element. auto shows a scrollbar only if needed.",
    "source2": "MDN — max-height",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-height",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "scrollbar-horizontal-tabel-lebar",
+ "langs": {
+  "id": {
+   "title": "Cara Tampilkan Scrollbar Horizontal pada Tabel Lebar",
+   "desc": "Tata cara membungkus tabel Clincoo yang lebih lebar dari layar tanpa memotong kolom.",
+   "content": "<p class=\"mb-4\">Tata cara membungkus tabel Clincoo yang lebih lebar dari layar tanpa memotong kolom.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bungkus tabel, jangan potong sel</h2><p class=\"mb-4\">Tabel harga di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> sering melebar karena kolom aksi. Bungkus table dengan div overflow-x: auto, biarkan tabel min-width sesuai kolom, dan jangan set overflow-x: hidden pada kartu induk.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji geser jari dan keyboard</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> geser tabel ke kolom terakhir dengan roda tetikus, trackpad, dan Shift+roda. Header kolom harus ikut terlihat. Jika hanya baris terpotong, pembungkus belum overflow. Catat lebar minimum di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overflow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "sourceSnippet": "overflow-x: auto shows a horizontal scrollbar only when the content is wider than the box.",
+   "source2": "MDN — min-width",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Show a Horizontal Scrollbar on a Wide Table",
+   "desc": "How to wrap a Clincoo table that is wider than the screen without clipping columns.",
+   "content": "<p class=\"mb-4\">How to wrap a Clincoo table that is wider than the screen without clipping columns.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Wrap the table, do not clip cells</h2><p class=\"mb-4\">A pricing table in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> often grows because of an action column. Wrap the table in a div with overflow-x: auto, keep the table min-width to its columns, and do not set overflow-x: hidden on the parent card.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test drag, wheel, and keyboard</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> move the table to the last column with the wheel, trackpad, and Shift+wheel. The column header must stay visible. If only the row is clipped, the wrapper is not overflowing. Note the minimum width on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overflow",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+   "sourceSnippet": "overflow-x: auto shows a horizontal scrollbar only when the content is wider than the box.",
+   "source2": "MDN — min-width",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "scrollbar-scroll-padding-supaya-fokus-tidak-tertutup",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai scroll-padding supaya Fokus Tidak Tertutup",
+   "desc": "Tata cara menambahkan scroll-padding Clincoo agar kontrol yang difokus tidak hilang di bawah header lengket.",
+   "content": "<p class=\"mb-4\">Tata cara menambahkan scroll-padding Clincoo agar kontrol yang difokus tidak hilang di bawah header lengket.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set padding pada kontainer yang menggulir</h2><p class=\"mb-4\">scroll-margin sudah ada di artikel sticky header. scroll-padding berada di elemen yang menggulir, bukan di target. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set scroll-padding-top: 4.5rem pada html dan pada panel daftar yang overflow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bandingkan dengan scroll-margin pada target</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab ke input di bawah header lengket. Input harus muncul utuh, bukan hanya garis bawahnya. Jika hanya tautan anchor yang aman, padding belum dipasang di kontainer. Simpan nilai rem di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scroll-padding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding",
+   "sourceSnippet": "The scroll-padding property defines offsets for the optimal viewing region of a scroll container.",
+   "source2": "MDN — scroll-margin",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use scroll-padding So Focus Is Not Covered",
+   "desc": "How to add Clincoo scroll-padding so a focused control is not hidden under a sticky header.",
+   "content": "<p class=\"mb-4\">How to add Clincoo scroll-padding so a focused control is not hidden under a sticky header.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set padding on the scrolling container</h2><p class=\"mb-4\">scroll-margin is already covered in the sticky-header article. scroll-padding lives on the scrolling element, not the target. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set scroll-padding-top: 4.5rem on html and on the overflowing list panel.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Compare it with scroll-margin on the target</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab to an input under the sticky header. The input must appear whole, not only its bottom border. If only anchor links are safe, padding is missing on the container. Keep the rem value on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scroll-padding",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding",
+   "sourceSnippet": "The scroll-padding property defines offsets for the optimal viewing region of a scroll container.",
+   "source2": "MDN — scroll-margin",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "scrollbar-behavior-smooth-hanya-untuk-anchor",
+ "langs": {
+  "id": {
+   "title": "Cara Batasi scroll-behavior smooth pada Anchor Saja",
+   "desc": "Tata cara memakai gulir halus Clincoo untuk tautan dalam halaman tanpa membuat fokus keyboard terasa lambat.",
+   "content": "<p class=\"mb-4\">Tata cara memakai gulir halus Clincoo untuk tautan dalam halaman tanpa membuat fokus keyboard terasa lambat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan set smooth di html global</h2><p class=\"mb-4\">scroll-behavior: smooth pada html membuat setiap pindah fokus ikut meluncur. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> biarkan html auto. Pada klik tautan #bagian, panggil scrollIntoView dengan behavior smooth, lalu kembalikan ke auto.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Animasikan hanya klik anchor</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab antar field form. Fokus harus pindah langsung. Klik daftar isi boleh halus. Jika tab terasa tertunda, smooth masih global. Catat pengecualian prefers-reduced-motion di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior",
+   "sourceSnippet": "The scroll-behavior property sets whether scrolling is smooth or instant.",
+   "source2": "MDN — prefers-reduced-motion",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Limit scroll-behavior smooth to Anchors Only",
+   "desc": "How to use smooth Clincoo scrolling for in-page links without making keyboard focus feel slow.",
+   "content": "<p class=\"mb-4\">How to use smooth Clincoo scrolling for in-page links without making keyboard focus feel slow.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not set smooth on html globally</h2><p class=\"mb-4\">scroll-behavior: smooth on html makes every focus move glide. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> leave html as auto. On a #section link click, call scrollIntoView with behavior smooth, then return to auto.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Animate only anchor clicks</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> tab between form fields. Focus must move immediately. A table-of-contents click may be smooth. If tab feels delayed, smooth is still global. Note the prefers-reduced-motion exception on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — scroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior",
+   "sourceSnippet": "The scroll-behavior property sets whether scrolling is smooth or instant.",
+   "source2": "MDN — prefers-reduced-motion",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
