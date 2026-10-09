@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Cegah Layout Bergeser dengan scrollbar-gutter — Clincoo</title>
+<meta name="description" content="Tata cara menyiapkan ruang scrollbar Clincoo supaya konten tidak meloncat saat overflow muncul.">
+<link rel="canonical" href="https://blog.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Cegah Layout Bergeser dengan scrollbar-gutter">
+<meta property="og:description" content="Tata cara menyiapkan ruang scrollbar Clincoo supaya konten tidak meloncat saat overflow muncul.">
+<meta property="og:url" content="https://blog.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/scrollbar/scrollbar-gutter-stable-cegah-geser-layout/">
+</head>
+<body>
+<article>
+<h1>Cara Cegah Layout Bergeser dengan scrollbar-gutter</h1>
+<p>Tata cara menyiapkan ruang scrollbar Clincoo supaya konten tidak meloncat saat overflow muncul.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Sediakan gutter sebelum overflow ada</h2><p class="mb-4">Scrollbar klasik memakan lebar saat konten lebih tinggi dari viewport. Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set scrollbar-gutter: stable pada html. both-edges hanya jika kedua sisi memang butuh simetri.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji buka modal yang mengunci body</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka dialog yang menambah overflow: hidden pada body. Header dan judul tidak boleh geser ke kanan. Jika masih geser, gutter belum dihitung karena scrollbar overlay. Catat hasilnya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter">MDN — scrollbar-gutter</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
