@@ -9,11 +9,11 @@ window.countryDataFiles["color"] = {
   "id": {
    "title": "Cara Pakai Token Warna, Bukan Hex Acak",
    "desc": "Tata cara menyimpan warna UI Clincoo sebagai token CSS supaya hex tidak berserakan.",
-   "content": "<p class=\"mb-4\">Hex yang diketik langsung di setiap komponen membuat hover, fokus, dan mode gelap sulit diseragamkan. Token warna memusatkan keputusan di satu berkas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri nama peran, bukan merek mentah</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> definisikan <code>--color-text</code>, <code>--color-bg</code>, <code>--color-accent</code>, dan <code>--color-danger</code> pada <code>:root</code>. Komponen memakai <code>var(--color-text)</code>, bukan <code>#111</code> baru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek kontras pasangan</h2><p class=\"mb-4\">Pasangkan teks dan latar, lalu uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>. Catat token yang lolos di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menambah aksen baru.</p>",
+   "content": "<p class=\"mb-4\">Hex yang diketik langsung di setiap komponen membuat hover, fokus, dan mode gelap sulit diseragamkan. Token warna memusatkan keputusan di satu berkas.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Beri nama peran, bukan merek mentah</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> definisikan <code>--color-text</code>, <code>--color-bg</code>, <code>--color-accent</code>, dan <code>--color-danger</code> pada <code>:root</code>. Komponen memakai <code>var(--color-text)</code>, bukan <code>#111</code> baru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek kontras pasangan</h2><p class=\"mb-4\">Pasangkan teks dan latar, lalu uji di pratinjau <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>. Catat token yang lolos di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> sebelum menambah aksen baru.</p>",
    "source": "MDN — CSS custom properties",
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
    "sourceSnippet": "Custom properties are subject to the cascade and inherit their value from their parent.",
-   "source2": "Clincoo Docs",
+   "source2": "W3C — CSS Color",
    "source2Url": "https://www.w3.org/TR/css-color-4/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
@@ -25,7 +25,7 @@ window.countryDataFiles["color"] = {
    "source": "MDN — CSS custom properties",
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
    "sourceSnippet": "Custom properties are subject to the cascade and inherit their value from their parent.",
-   "source2": "Clincoo Docs",
+   "source2": "W3C — CSS Color",
    "source2Url": "https://www.w3.org/TR/css-color-4/",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
