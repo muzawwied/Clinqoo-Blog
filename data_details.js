@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Details (9 Oktober 2026, 08:00 WIB) — tambah 4 artikel sampai full 12
 // Clincoo Docs — kategori Details (9 Oktober 2026, 07:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Details (9 Oktober 2026, 06:00 WIB) — 3 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -234,6 +235,122 @@ window.countryDataFiles["details"] = {
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "details-tutup-dari-tombol-di-dalam",
+ "langs": {
+  "id": {
+   "title": "Cara Tutup Panel details dari Tombol di Dalam",
+   "desc": "Tata cara menutup panel details Clincoo dari tombol di dalam konten, bukan hanya dari summary.",
+   "content": "<p class="mb-4">Pengguna sering selesai membaca jawaban lalu ingin menutup panel tanpa menggulir kembali ke judul. Tombol di dalam konten harus menghapus status terbuka, bukan hanya menyembunyikan isi dengan CSS.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Hapus atribut open</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> beri tombol type="button" di dalam details. Pada klik, panggil closest('details').open = false. Jangan pakai type submit jika tombol ada di dalam form.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kembalikan fokus ke summary</h2><p class="mb-4">Setelah panel tertutup, fokus bisa hilang. Pindahkan fokus ke elemen summary panel yang sama supaya pengguna keyboard tetap tahu posisinya. Cek di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> dengan Tab, bukan hanya klik mouse. Catat polanya di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTML details element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+   "sourceSnippet": "The open property reflects the open attribute and can be set from script to close the disclosure.",
+   "source2": "HTML spec — the details element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Close a details Panel from an Inner Button",
+   "desc": "How to close a Clincoo details panel from a button inside the content, not only from the summary.",
+   "content": "<p class="mb-4">People often finish an answer and want to close the panel without scrolling back to the title. A button inside the content must clear the open state, not merely hide the body with CSS.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Remove the open attribute</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> add a type="button" inside details. On click, set closest('details').open = false. Do not use type submit if the button sits inside a form.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Return focus to summary</h2><p class="mb-4">After the panel closes, focus can disappear. Move focus to that panel's summary so keyboard users still know where they are. Check it in <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> with Tab, not only a mouse click. Note the pattern on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTML details element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+   "sourceSnippet": "The open property reflects the open attribute and can be set from script to close the disclosure.",
+   "source2": "HTML spec — the details element",
+   "source2Url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "details-animasikan-buka-dengan-grid",
+ "langs": {
+  "id": {
+   "title": "Cara Animaskan Buka Tutup details dengan Grid",
+   "desc": "Tata cara menganimasikan tinggi panel details Clincoo dengan grid-template-rows tanpa mengukur scrollHeight.",
+   "content": "<p class="mb-4">Transisi height dari 0 ke auto sering diabaikan browser. Mengukur scrollHeight tiap klik mudah salah saat teks membungkus ulang.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Bungkus isi dalam grid</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> jadikan details sebagai grid satu kolom. Baris konten memakai grid-template-rows: 0fr saat tertutup dan 1fr saat details[open]. Anak langsung diberi overflow: hidden dan min-height: 0.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Hormati reduced motion</h2><p class="mb-4">Tambahkan prefers-reduced-motion: reduce yang mematikan transisi. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka dan tutup panel: isi tidak boleh terpotong, dan fokus summary tetap terlihat. Simpan cuplikan CSS di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — grid-template-rows",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
+   "sourceSnippet": "The fr unit distributes free space in a grid row, which can transition between 0fr and 1fr.",
+   "source2": "MDN — prefers-reduced-motion",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Animate a details Panel with Grid Rows",
+   "desc": "How to animate a Clincoo details panel height with grid-template-rows without measuring scrollHeight.",
+   "content": "<p class="mb-4">A transition from height 0 to auto is often ignored by the browser. Measuring scrollHeight on every click breaks when text rewraps.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Wrap the body in a grid</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> make details a one-column grid. The content row uses grid-template-rows: 0fr when closed and 1fr when details[open]. The direct child gets overflow: hidden and min-height: 0.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Honor reduced motion</h2><p class="mb-4">Add a prefers-reduced-motion: reduce rule that disables the transition. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open and close the panel: content must not clip, and the summary focus ring stays visible. Keep the CSS snippet on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — grid-template-rows",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
+   "sourceSnippet": "The fr unit distributes free space in a grid row, which can transition between 0fr and 1fr.",
+   "source2": "MDN — prefers-reduced-motion",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "details-form-di-dalam-panel",
+ "langs": {
+  "id": {
+   "title": "Cara Letakkan Form di Dalam Panel details",
+   "desc": "Tata cara menaruh formulir Clincoo di dalam details tanpa ikut tertutup saat validasi gagal.",
+   "content": "<p class="mb-4">Panel bantuan yang berisi formulir singkat mudah tertutup lagi saat browser menolak submit, sehingga pesan error tidak kelihatan.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jaga panel tetap open saat invalid</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> dengarkan invalid pada form di dalam details dan set details.open = true. Jangan tutup panel di event submit sebelum checkValidity() lolos.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Jangan bungkus summary dengan form</h2><p class="mb-4">Form harus berada di dalam konten, setelah summary, bukan membungkus seluruh details. Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> kirim form kosong: panel tetap terbuka dan fokus pindah ke kolom yang gagal. Catat urutan markup di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLFormElement.checkValidity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/checkValidity",
+   "sourceSnippet": "checkValidity reports whether the form's controls satisfy their constraints and fires invalid when they do not.",
+   "source2": "MDN — details element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Place a Form Inside a details Panel",
+   "desc": "How to put a Clincoo form inside details without the panel closing when validation fails.",
+   "content": "<p class="mb-4">A help panel that holds a short form often closes again when the browser rejects submit, so the error message disappears.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Keep the panel open when invalid</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> listen for invalid on the form inside details and set details.open = true. Do not close the panel on submit before checkValidity() passes.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Do not wrap summary in the form</h2><p class="mb-4">The form belongs in the content, after summary, not around the whole details element. In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> submit an empty form: the panel stays open and focus moves to the failing field. Record the markup order on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — HTMLFormElement.checkValidity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/checkValidity",
+   "sourceSnippet": "checkValidity reports whether the form's controls satisfy their constraints and fires invalid when they do not.",
+   "source2": "MDN — details element",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "details-summary-punya-nama-aksesibel",
+ "langs": {
+  "id": {
+   "title": "Cara Beri Nama Aksesibel pada summary",
+   "desc": "Tata cara menulis teks summary Clincoo yang tetap punya nama aksesibel saat ikon dipakai.",
+   "content": "<p class="mb-4">Summary yang hanya berisi ikon panah dibaca sebagai tombol kosong. Pengguna pembaca layar tidak tahu panel itu tentang apa.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Teks terlihat atau aria-label</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> biarkan judul pertanyaan sebagai teks di dalam summary. Jika ikon SVG ikut ada, beri aria-hidden="true" pada ikon supaya tidak menggandakan nama.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Cek nama di pohon aksesibilitas</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka accessibility tree: summary harus punya nama yang sama dengan pertanyaan, dan peran button tetap ada. Jangan mengganti summary dengan div yang hanya diklik. Simpan contoh nama di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — summary element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
+   "sourceSnippet": "The summary element is the disclosure widget label and is exposed as a button.",
+   "source2": "WAI-ARIA — button role accessible name",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Give summary an Accessible Name",
+   "desc": "How to write Clincoo summary text that keeps an accessible name when an icon is used.",
+   "content": "<p class="mb-4">A summary that contains only a chevron is announced as an empty button. Screen reader users cannot tell what the panel is about.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Visible text or an aria-label</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> keep the question title as text inside summary. If an SVG icon is included, set aria-hidden="true" on the icon so it does not duplicate the name.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Check the name in the accessibility tree</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open the accessibility tree: summary needs the same name as the question, and the button role stays. Do not replace summary with a div that only has a click handler. Save a sample name on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — summary element",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
+   "sourceSnippet": "The summary element is the disclosure widget label and is exposed as a button.",
+   "source2": "WAI-ARIA — button role accessible name",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role",
+   "source3": "Clincoo Docs",
+   "source3Url": "https://blog.clincoo.buzz/"
   }
  }
 }
