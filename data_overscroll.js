@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Overscroll (10 Oktober 2026, 02:00 WIB — 12 artikel)
 // Clincoo Docs — kategori Overscroll (10 Oktober 2026, 01:00 WIB) — tambah 5 artikel
 // Clincoo Docs — kategori Overscroll (10 Oktober 2026, 00:00 WIB) — 2 artikel baru
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
@@ -201,6 +202,152 @@ window.countryDataFiles["overscroll"] = {
    "source": "MDN — overscroll-behavior",
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
    "sourceSnippet": "contain stops scroll chaining to the parent while still allowing bounce inside the element.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+}
+,
+{
+ "id": "overscroll-pasang-di-html-dan-body",
+ "langs": {
+  "id": {
+   "title": "Cara Pasang overscroll-behavior di html dan body",
+   "desc": "Tata cara memilih html atau body saat memasang overscroll-behavior di halaman Clincoo supaya rantai scroll benar-benar berhenti.",
+   "content": "<p class=\"mb-4\">Tata cara memilih html atau body saat memasang overscroll-behavior di halaman Clincoo supaya rantai scroll benar-benar berhenti.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pasang di elemen yang menjadi scrollport</h2><p class=\"mb-4\">Browser sering menggulir dokumen lewat html, bukan body. Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka DevTools, pilih html, lalu lihat apakah overflow-nya yang menghasilkan scrollbar. Pasang overscroll-behavior: none di situ jika yang ingin dihentikan adalah bounce halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan dobel tanpa alasan</h2><p class=\"mb-4\">Menaruh contain di html dan body sekaligus tidak merusak, tetapi menyulitkan debug. Pilih satu scrollport dokumen. Panel dalam tetap punya aturannya sendiri. Simpan catatan pilihan ini di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior sets what a scroll container does when it reaches its boundary.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set overscroll-behavior on html and body",
+   "desc": "How to choose html or body when setting overscroll-behavior on a Clincoo page so scroll chaining actually stops.",
+   "content": "<p class=\"mb-4\">How to choose html or body when setting overscroll-behavior on a Clincoo page so scroll chaining actually stops.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set it on the element that scrolls</h2><p class=\"mb-4\">Browsers often scroll the document through html, not body. In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open DevTools, select html, and check whether its overflow creates the scrollbar. Put overscroll-behavior: none there when you want to stop page bounce.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not double it without a reason</h2><p class=\"mb-4\">Putting contain on both html and body is harmless, but it makes debugging harder. Pick one document scrollport. Inner panels keep their own rules. Keep that choice noted on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior sets what a scroll container does when it reaches its boundary.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overscroll-iframe-preview-tidak-menyeret-induk",
+ "langs": {
+  "id": {
+   "title": "Cara Cegah Preview iframe Menyeret Halaman Induk",
+   "desc": "Tata cara menahan overscroll di iframe pratinjau Clincoo supaya guliran di dalam preview tidak menggeser editor.",
+   "content": "<p class=\"mb-4\">Tata cara menahan overscroll di iframe pratinjau Clincoo supaya guliran di dalam preview tidak menggeser editor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Contain di dokumen iframe</h2><p class=\"mb-4\">Pratinjau di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> adalah dokumen lain. Pasang overscroll-behavior: contain pada html di dalam iframe, bukan hanya di halaman editor. Saat ujung preview tercapai, roda berhenti di situ.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di batas atas dan bawah</h2><p class=\"mb-4\">Gulir sampai mentok, lalu lanjutkan satu putaran roda. Editor tidak boleh ikut. Jika ikut, scrollbar yang aktif ada di induk iframe. Beri iframe tinggi tetap dan overflow tersembunyi di pembungkus. Catat hasil uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "Scroll chaining can cross into a parent browsing context when the iframe document reaches its scroll boundary.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Stop an iframe Preview from Dragging the Parent Page",
+   "desc": "How to contain overscroll in a Clincoo preview iframe so scrolling inside the preview does not move the editor.",
+   "content": "<p class=\"mb-4\">How to contain overscroll in a Clincoo preview iframe so scrolling inside the preview does not move the editor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Contain inside the iframe document</h2><p class=\"mb-4\">The preview in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> is another document. Set overscroll-behavior: contain on html inside the iframe, not only on the editor page. When the preview hits an edge, the wheel stops there.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test both edges</h2><p class=\"mb-4\">Scroll until it stops, then give the wheel one more notch. The editor must not move. If it does, the active scrollbar is on the iframe parent. Give the iframe a fixed height and hide overflow on the wrapper. Record the check in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "Scroll chaining can cross into a parent browsing context when the iframe document reaches its scroll boundary.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overscroll-dan-scroll-snap-tidak-bentrok",
+ "langs": {
+  "id": {
+   "title": "Cara Gabungkan overscroll-behavior dengan scroll-snap",
+   "desc": "Tata cara memakai overscroll-behavior bersama scroll-snap di carousel Clincoo tanpa menyeret halaman.",
+   "content": "<p class=\"mb-4\">Tata cara memakai overscroll-behavior bersama scroll-snap di carousel Clincoo tanpa menyeret halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Sumbu yang sama, tugas berbeda</h2><p class=\"mb-4\">scroll-snap-type: x mandatory menempelkan slide. overscroll-behavior-x: contain menahan sisa gestur agar tidak pindah ke body. Pasang keduanya pada kontainer yang sama di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Jangan matikan sumbu yang tidak dipakai</h2><p class=\"mb-4\">Jika carousel hanya horizontal, cukup overscroll-behavior-x. Sumbu Y biarkan auto supaya halaman tetap bisa digulir saat jari bergerak vertikal. Cek di ponsel lewat <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior-x contain stops horizontal scroll chaining while scroll-snap still aligns items.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Combine overscroll-behavior with scroll-snap",
+   "desc": "How to use overscroll-behavior with scroll-snap on a Clincoo carousel without dragging the page.",
+   "content": "<p class=\"mb-4\">How to use overscroll-behavior with scroll-snap on a Clincoo carousel without dragging the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Same axis, different jobs</h2><p class=\"mb-4\">scroll-snap-type: x mandatory locks slides. overscroll-behavior-x: contain keeps leftover gesture from moving the body. Set both on the same container in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Do not block the unused axis</h2><p class=\"mb-4\">If the carousel is horizontal only, overscroll-behavior-x is enough. Leave the Y axis on auto so the page can still scroll when the finger moves vertically. Check on a phone via <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "overscroll-behavior-x contain stops horizontal scroll chaining while scroll-snap still aligns items.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overscroll-panel-log-editor-contain",
+ "langs": {
+  "id": {
+   "title": "Cara Kunci Rantai Scroll di Panel Log Editor",
+   "desc": "Tata cara menahan gulir panel log dan konsol Clincoo supaya tidak menarik kanvas atau halaman di belakangnya.",
+   "content": "<p class=\"mb-4\">Tata cara menahan gulir panel log dan konsol Clincoo supaya tidak menarik kanvas atau halaman di belakangnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Contain pada daftar log</h2><p class=\"mb-4\">Panel log di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> panjang dan sering di ujung bawah karena entri baru. Beri overflow-y: auto, max-height, dan overscroll-behavior: contain pada daftarnya, bukan pada seluruh layout editor.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Autoscroll tidak boleh merusak contain</h2><p class=\"mb-4\">Jika skrip menggulir ke entri terakhir, biarkan contain tetap ada. Gulir paksa ke dalam panel tidak boleh merambat ke induk. Uji dengan roda saat log sudah mentok. Pola yang lolos dicatat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "contain keeps scroll chaining inside the element even when script scrolls that element to its end.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Contain Scroll Chaining in the Editor Log Panel",
+   "desc": "How to contain scrolling in the Clincoo log and console panel so it does not pull the canvas or the page behind it.",
+   "content": "<p class=\"mb-4\">How to contain scrolling in the Clincoo log and console panel so it does not pull the canvas or the page behind it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Contain on the log list</h2><p class=\"mb-4\">The log panel in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> is long and often sits at the bottom because of new entries. Give the list overflow-y: auto, a max-height, and overscroll-behavior: contain, not the whole editor layout.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Autoscroll must not break contain</h2><p class=\"mb-4\">If a script scrolls to the latest entry, leave contain in place. A forced scroll inside the panel must not chain to the parent. Test with the wheel while the log is already at the edge. Keep the pattern that passes on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "contain keeps scroll chaining inside the element even when script scrolls that element to its end.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "overscroll-drawer-dengan-touch-action",
+ "langs": {
+  "id": {
+   "title": "Cara Atur Drawer Mobile dengan overscroll-behavior dan touch-action",
+   "desc": "Tata cara menggabungkan overscroll-behavior dan touch-action pada drawer Clincoo supaya gestur tutup tidak menyeret halaman.",
+   "content": "<p class=\"mb-4\">Tata cara menggabungkan overscroll-behavior dan touch-action pada drawer Clincoo supaya gestur tutup tidak menyeret halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bagi tugas dua properti</h2><p class=\"mb-4\">touch-action: pan-y pada pegangan drawer mengizinkan geser vertikal untuk menutup. overscroll-behavior: contain pada isi drawer menahan sisa gulir. Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jangan memakai touch-action: none pada seluruh drawer, karena isi panjang tidak bisa digulir.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kunci latar hanya saat terbuka</h2><p class=\"mb-4\">Selama drawer terbuka, halaman latar boleh overscroll-behavior: none. Saat ditutup, kembalikan auto. Uji tarik di ujung daftar dan di pegangan. Keduanya harus terasa terpisah di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "touch-action limits which gestures the browser handles, while overscroll-behavior controls boundary chaining.",
+   "source2": "CSS Overscroll Behavior Module",
+   "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set a Mobile Drawer with overscroll-behavior and touch-action",
+   "desc": "How to combine overscroll-behavior and touch-action on a Clincoo drawer so the close gesture does not drag the page.",
+   "content": "<p class=\"mb-4\">How to combine overscroll-behavior and touch-action on a Clincoo drawer so the close gesture does not drag the page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Split the job across two properties</h2><p class=\"mb-4\">touch-action: pan-y on the drawer handle allows a vertical swipe to close. overscroll-behavior: contain on the drawer content holds leftover scrolling. On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> do not set touch-action: none on the whole drawer, or long content cannot scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Lock the backdrop only while open</h2><p class=\"mb-4\">While the drawer is open, the background page may use overscroll-behavior: none. Restore auto when it closes. Test a pull at the end of the list and on the handle. They should feel separate in <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a>.</p>",
+   "source": "MDN — overscroll-behavior",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior",
+   "sourceSnippet": "touch-action limits which gestures the browser handles, while overscroll-behavior controls boundary chaining.",
    "source2": "CSS Overscroll Behavior Module",
    "source2Url": "https://www.w3.org/TR/css-overscroll-1/",
    "source3": "Clincoo Editor",
