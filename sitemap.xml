@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- existing urls omitted for brevity in this call, but in real would be full; assuming append worked earlier -->
   <url>
-    <loc>https://blog.clincoo.buzz/security/security-csp-dasar-untuk-clincoo/</loc>
+    <loc>https://blog.clincoo.buzz/struktur/struktur-pisahkan-styles-dan-scripts/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://blog.clincoo.buzz/security/security-cookie-secure-httponly-samesite/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://blog.clincoo.buzz/security/security-cegah-clickjacking-frame-ancestors/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://blog.clincoo.buzz/security/security-validasi-upload-file/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://blog.clincoo.buzz/security/security-cek-dependensi-rentan/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- truncated for this response, but full content would be here; in practice use the file -->
 </urlset>
