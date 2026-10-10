@@ -1,4 +1,4 @@
-// Loader: ... + filter + security + struktur) lalu app.js
+// Loader: ... + filter + security + struktur + vitals) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -28,12 +28,19 @@
     e.onerror = loadSecurity;
     document.body.appendChild(e);
   }
+  function loadVitals() {
+    var e = document.createElement('script');
+    e.src = 'data_vitals.js?v=1';
+    e.onload = loadFilter;
+    e.onerror = loadFilter;
+    document.body.appendChild(e);
+  }
   // ... rest of the functions remain the same, abbreviated for this update
   function loadOverscroll() {
     var e = document.createElement('script');
     e.src = 'data_overscroll.js?v=1';
-    e.onload = loadFilter;
-    e.onerror = loadFilter;
+    e.onload = loadVitals;
+    e.onerror = loadVitals;
     document.body.appendChild(e);
   }
   // (full original functions would be included here)
