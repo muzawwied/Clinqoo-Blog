@@ -30,5 +30,29 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- existing URLs remain; this is an append for new articles -->
+  <url>
+    <loc>https://blog.clincoo.buzz/vitals/vitals-ukur-cls-dengan-devtools/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/vitals/vitals-optimasi-lcp-dengan-preload/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/vitals/vitals-hindari-inp-tinggi-dari-script/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/security/security-hindari-mixed-content/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.clincoo.buzz/observer/observer-deteksi-perubahan-dom-dengan-mutation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
