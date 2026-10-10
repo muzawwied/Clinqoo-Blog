@@ -28,19 +28,33 @@
     e.onerror = loadSecurity;
     document.body.appendChild(e);
   }
-  function loadVitals() {
+  function loadVitalsExtra() {
     var e = document.createElement('script');
-    e.src = 'data_vitals.js?v=1';
+    e.src = 'data_vitals_extra.js?v=1';
     e.onload = loadFilter;
     e.onerror = loadFilter;
     document.body.appendChild(e);
   }
+  function loadVitals() {
+    var e = document.createElement('script');
+    e.src = 'data_vitals.js?v=1';
+    e.onload = loadVitalsExtra;
+    e.onerror = loadVitalsExtra;
+    document.body.appendChild(e);
+  }
   // ... rest of the functions remain the same, abbreviated for this update
+  function loadDebugcssExtra() {
+    var e = document.createElement('script');
+    e.src = 'data_debugcss_extra.js?v=1';
+    e.onload = loadOverscroll;
+    e.onerror = loadOverscroll;
+    document.body.appendChild(e);
+  }
   function loadDebugcss() {
     var e = document.createElement('script');
     e.src = 'data_debugcss.js?v=1';
-    e.onload = loadOverscroll;
-    e.onerror = loadOverscroll;
+    e.onload = loadDebugcssExtra;
+    e.onerror = loadDebugcssExtra;
     document.body.appendChild(e);
   }
   function loadOverscroll() {
