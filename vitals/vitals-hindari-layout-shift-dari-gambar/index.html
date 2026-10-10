@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Hindari Layout Shift dari Gambar yang Dimuat Lambat — Clincoo</title>
+<meta name="description" content="Tata cara set width height dan aspect-ratio agar gambar di Clincoo tidak menyebabkan CLS.">
+<link rel="canonical" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Hindari Layout Shift dari Gambar yang Dimuat Lambat">
+<meta property="og:description" content="Tata cara set width height dan aspect-ratio agar gambar di Clincoo tidak menyebabkan CLS.">
+<meta property="og:url" content="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+</head>
+<body>
+<article>
+<h1>Cara Hindari Layout Shift dari Gambar yang Dimuat Lambat</h1>
+<p>Tata cara set width height dan aspect-ratio agar gambar di Clincoo tidak menyebabkan CLS.</p>
+<p class="mb-4">Gambar tanpa ukuran tetap sering mendorong konten di bawahnya saat dimuat, membuat CLS tinggi di Clincoo.</p><p class="mb-4">Selalu set atribut width dan height pada img, atau CSS aspect-ratio. Browser bisa reservasi ruang sebelum gambar selesai.</p><p class="mb-4">Untuk gambar responsif di editor.clincoo.buzz, pakai srcset dan sizes, tetapi tetap berikan ukuran intrinsik.</p><p class="mb-4">Lazy load hanya untuk gambar di bawah fold. Gambar LCP jangan di-lazy.</p><p class="mb-4">Cek CLS di Lighthouse atau DevTools. Nilai harus di bawah 0.1 setelah optimasi.</p>
+<p>Sumber: <a href="https://web.dev/articles/optimize-cls">web.dev — Optimize CLS</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

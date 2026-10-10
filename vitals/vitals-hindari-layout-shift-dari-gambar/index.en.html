@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid Layout Shift from Slow-Loading Images — Clincoo</title>
+<meta name="description" content="How to set width, height, and aspect-ratio so images on Clincoo do not cause CLS.">
+<link rel="canonical" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid Layout Shift from Slow-Loading Images">
+<meta property="og:description" content="How to set width, height, and aspect-ratio so images on Clincoo do not cause CLS.">
+<meta property="og:url" content="https://blog.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/vitals/vitals-hindari-layout-shift-dari-gambar/">
+</head>
+<body>
+<article>
+<h1>How to Avoid Layout Shift from Slow-Loading Images</h1>
+<p>How to set width, height, and aspect-ratio so images on Clincoo do not cause CLS.</p>
+<p class="mb-4">Images without reserved size often push content below them when they load, raising CLS on Clincoo.</p><p class="mb-4">Always set width and height attributes on img, or use CSS aspect-ratio. The browser can reserve space before the image finishes.</p><p class="mb-4">For responsive images in editor.clincoo.buzz, use srcset and sizes, but still provide intrinsic dimensions.</p><p class="mb-4">Lazy-load only images below the fold. Never lazy-load the LCP image.</p><p class="mb-4">Check CLS in Lighthouse or DevTools. The score should stay under 0.1 after optimization.</p>
+<p>Source: <a href="https://web.dev/articles/optimize-cls">web.dev — Optimize CLS</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

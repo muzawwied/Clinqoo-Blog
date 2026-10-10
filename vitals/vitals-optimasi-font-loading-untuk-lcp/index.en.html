@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Optimize Font Loading for Faster LCP — Clincoo</title>
+<meta name="description" content="How to use font-display and preload so text on Clincoo does not delay Largest Contentful Paint.">
+<link rel="canonical" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Optimize Font Loading for Faster LCP">
+<meta property="og:description" content="How to use font-display and preload so text on Clincoo does not delay Largest Contentful Paint.">
+<meta property="og:url" content="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+</head>
+<body>
+<article>
+<h1>How to Optimize Font Loading for Faster LCP</h1>
+<p>How to use font-display and preload so text on Clincoo does not delay Largest Contentful Paint.</p>
+<p class="mb-4">Slow-loading fonts often become the LCP on Clincoo pages, especially large hero text.</p><p class="mb-4">Use font-display: swap on @font-face so text shows immediately with a fallback, then swaps. Preload the main font in the head with rel=preload as=font type=font/woff2 crossorigin.</p><p class="mb-4">In editor.clincoo.buzz, check if web fonts are self-hosted or from a CDN. Self-hosting is usually faster for LCP.</p><p class="mb-4">Avoid too many font families. Limit to two at most so extra requests do not delay paint.</p><p class="mb-4">Re-measure LCP after the change in DevTools Performance. Text should appear sooner on app.clincoo.buzz.</p>
+<p>Source: <a href="https://web.dev/articles/optimize-fonts">web.dev — Optimize fonts</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

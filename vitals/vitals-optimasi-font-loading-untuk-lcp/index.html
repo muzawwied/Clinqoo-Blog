@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Optimasi Font Loading agar LCP Lebih Cepat — Clincoo</title>
+<meta name="description" content="Tata cara memakai font-display dan preload agar teks di Clincoo tidak menunda Largest Contentful Paint.">
+<link rel="canonical" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Optimasi Font Loading agar LCP Lebih Cepat">
+<meta property="og:description" content="Tata cara memakai font-display dan preload agar teks di Clincoo tidak menunda Largest Contentful Paint.">
+<meta property="og:url" content="https://blog.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/vitals/vitals-optimasi-font-loading-untuk-lcp/">
+</head>
+<body>
+<article>
+<h1>Cara Optimasi Font Loading agar LCP Lebih Cepat</h1>
+<p>Tata cara memakai font-display dan preload agar teks di Clincoo tidak menunda Largest Contentful Paint.</p>
+<p class="mb-4">Font yang lambat dimuat sering menjadi LCP di halaman Clincoo, terutama jika teks hero besar.</p><p class="mb-4">Pakai font-display: swap pada @font-face agar teks tampil segera dengan fallback, lalu ganti font. Preload font utama di head dengan rel=preload as=font type=font/woff2 crossorigin.</p><p class="mb-4">Di editor.clincoo.buzz, cek apakah font web di-host sendiri atau dari CDN. Host sendiri lebih cepat untuk LCP.</p><p class="mb-4">Hindari terlalu banyak font family. Batasi maksimal dua agar tidak menambah request yang menunda paint.</p><p class="mb-4">Ukur ulang LCP setelah perubahan di DevTools Performance. Teks harus muncul lebih cepat di app.clincoo.buzz.</p>
+<p>Sumber: <a href="https://web.dev/articles/optimize-fonts">web.dev — Optimize fonts</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
