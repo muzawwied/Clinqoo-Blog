@@ -96,7 +96,7 @@ window.countryDataFiles["observer"] = {
   "id": {
    "title": "Cara Deteksi Perubahan DOM dengan Mutation Observer",
    "desc": "Tata cara memantau penambahan atau perubahan atribut elemen di Clincoo menggunakan Mutation Observer.",
-   "content": "<p class=\"mb-4\">Mutation Observer memberitahu saat node ditambahkan, dihapus, atau atributnya berubah, tanpa polling.",
+   "content": "<p class=\"mb-4\">Mutation Observer memberitahu saat node ditambahkan, dihapus, atau atributnya berubah, tanpa polling.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Amati container</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat MutationObserver dan panggil observe pada container induk dengan childList dan attributes. Di dalam callback tangani array mutations.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Disconnect saat selesai</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> panggil disconnect saat fitur tidak lagi dibutuhkan. Catat pola di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
    "source": "MDN — Mutation Observer",
    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
    "sourceSnippet": "MutationObserver provides a way to react to changes in the DOM.",
