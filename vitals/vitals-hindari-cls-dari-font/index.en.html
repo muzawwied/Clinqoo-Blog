@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Avoid CLS from a Font Swap — Clincoo</title>
+<meta name="description" content="How to reduce Cumulative Layout Shift on Clincoo when the primary font finishes loading.">
+<link rel="canonical" href="https://blog.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Avoid CLS from a Font Swap">
+<meta property="og:description" content="How to reduce Cumulative Layout Shift on Clincoo when the primary font finishes loading.">
+<meta property="og:url" content="https://blog.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/vitals/vitals-hindari-cls-dari-font/">
+</head>
+<body>
+<article>
+<h1>How to Avoid CLS from a Font Swap</h1>
+<p>How to reduce Cumulative Layout Shift on Clincoo when the primary font finishes loading.</p>
+<p class="mb-4">A font swap shifts text and triggers CLS. Users see the content jump.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Use font-display and metric override</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> set font-display: optional or swap with ascent-override on the fallback. Use size-adjust if the width differs a lot. Avoid fonts whose metrics are very different.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Measure CLS in Lighthouse</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> run Lighthouse. CLS should stay under 0.1. Record the score before and after on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://web.dev/articles/cls">web.dev — CLS</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>
