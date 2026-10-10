@@ -118,6 +118,35 @@ window.countryDataFiles["mcp"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "mcp-cache-hasil-tool-untuk-hemat",
+ "langs": {
+  "id": {
+   "title": "Cara Cache Hasil Tool MCP agar Tidak Berulang",
+   "desc": "Tata cara menyimpan hasil tool MCP Clincoo sementara untuk menghindari pemanggilan berulang yang sama.",
+   "content": "<p class=\"mb-4\">Memanggil tool yang sama berkali-kali membuang kuota dan waktu. Cache sederhana di sesi bisa membantu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan hasil di variabel sesi</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> setelah dapat hasil list tools atau get status, simpan di objek. Cek dulu sebelum panggil ulang. Jangan cache data yang berubah cepat seperti log terbaru.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Bersihkan saat sesi baru</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> mulai obrolan baru, cache harus kosong. Catat strategi di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Clients may cache tool results within a session to reduce repeated calls.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Cache MCP Tool Results to Avoid Repeats",
+   "desc": "How to temporarily store Clincoo MCP tool results to avoid calling the same tool repeatedly.",
+   "content": "<p class=\"mb-4\">Calling the same tool many times wastes quota and time. A simple session cache can help.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Store results in a session variable</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> after getting a list-tools or status result, save it in an object. Check first before calling again. Do not cache fast-changing data such as latest logs.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Clear on a new session</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> start a new chat; the cache should be empty. Record the strategy on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Clients may cache tool results within a session to reduce repeated calls.",
+   "source2": "Clincoo Docs — MCP server",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
  ]
 };
