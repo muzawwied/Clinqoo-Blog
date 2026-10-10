@@ -1,4 +1,4 @@
-// Loader: ... + filter + security) lalu app.js
+// Loader: ... + filter + security + struktur) lalu app.js
 (function() {
   var done = false;
   function loadApp() {
@@ -7,11 +7,18 @@
     a.src = 'app.js?v=12';
     document.body.appendChild(a);
   }
+  function loadStruktur() {
+    var e = document.createElement('script');
+    e.src = 'data_struktur.js?v=1';
+    e.onload = loadApp;
+    e.onerror = loadApp;
+    document.body.appendChild(e);
+  }
   function loadSecurity() {
     var e = document.createElement('script');
     e.src = 'data_security.js?v=1';
-    e.onload = loadApp;
-    e.onerror = loadApp;
+    e.onload = loadStruktur;
+    e.onerror = loadStruktur;
     document.body.appendChild(e);
   }
   function loadFilter() {
