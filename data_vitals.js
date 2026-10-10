@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Vitals (10 Oktober 2026, 21:00 WIB — 5 artikel)
+// Clincoo Docs — kategori Vitals (10 Oktober 2026, 23:00 WIB — tambah 3 artikel)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["vitals"] = {
  "names": { "id": "Vitals", "en": "Vitals" },
@@ -143,6 +143,93 @@ window.countryDataFiles["vitals"] = {
    "sourceSnippet": "fetchpriority lets you hint the relative priority of a resource.",
    "source2": "MDN — fetchpriority",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#fetchpriority",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "vitals-ukur-cls-dengan-devtools",
+ "langs": {
+  "id": {
+   "title": "Cara Ukur CLS dengan DevTools",
+   "desc": "Tata cara mengukur Cumulative Layout Shift di Clincoo menggunakan panel Performance dan Experience.",
+   "content": "<p class=\"mb-4\">CLS yang tinggi membuat elemen Clincoo bergeser saat halaman dimuat. Ukur sebelum memperbaiki.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Rekam dan cari layout shift</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buka DevTools Performance, rekam muat ulang. Cari marker Layout Shift. Catat elemen yang bergeser dan skornya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di berbagai ukuran layar</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ubah ukuran jendela lalu rekam lagi. CLS harus di bawah 0,1. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — CLS",
+   "sourceUrl": "https://web.dev/articles/cls",
+   "sourceSnippet": "Cumulative Layout Shift measures unexpected layout movement during the lifespan of the page.",
+   "source2": "Chrome DevTools — Experience",
+   "source2Url": "https://developer.chrome.com/docs/devtools/performance/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Measure CLS with DevTools",
+   "desc": "How to measure Cumulative Layout Shift on Clincoo using the Performance and Experience panels.",
+   "content": "<p class=\"mb-4\">A high CLS makes Clincoo elements shift as the page loads. Measure before fixing.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Record and find layout shifts</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> open DevTools Performance and record a reload. Find the Layout Shift marker. Note which elements shifted and the score.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test on different screen sizes</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> resize the window and record again. CLS should stay under 0.1. Record it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — CLS",
+   "sourceUrl": "https://web.dev/articles/cls",
+   "sourceSnippet": "Cumulative Layout Shift measures unexpected layout movement during the lifespan of the page.",
+   "source2": "Chrome DevTools — Experience",
+   "source2Url": "https://developer.chrome.com/docs/devtools/performance/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "vitals-optimasi-lcp-dengan-preload",
+ "langs": {
+  "id": {
+   "title": "Cara Optimasi LCP dengan Preload",
+   "desc": "Tata cara menggunakan rel preload untuk sumber daya LCP di Clincoo agar dimuat lebih awal.",
+   "content": "<p class=\"mb-4\">Preload memberi petunjuk kepada browser untuk memuat sumber LCP sebelum parser menemukannya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tambah link preload</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan <code><link rel=\"preload\" href=\"hero.webp\" as=\"image\"></code> di head. Gunakan hanya untuk sumber LCP, bukan semua gambar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek waterfall</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Network dan pastikan gambar LCP dimulai lebih awal. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Preload",
+   "sourceUrl": "https://web.dev/articles/preload-critical-assets",
+   "sourceSnippet": "Preload tells the browser to fetch a resource as soon as possible.",
+   "source2": "MDN — link rel preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Optimize LCP with Preload",
+   "desc": "How to use rel preload for the LCP resource on Clincoo so it loads earlier.",
+   "content": "<p class=\"mb-4\">Preload hints the browser to fetch the LCP resource before the parser finds it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add a preload link</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add <code><link rel=\"preload\" href=\"hero.webp\" as=\"image\"></code> in the head. Use it only for the LCP resource, not every image.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the waterfall</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open Network and confirm the LCP image starts earlier. Record it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — Preload",
+   "sourceUrl": "https://web.dev/articles/preload-critical-assets",
+   "sourceSnippet": "Preload tells the browser to fetch a resource as soon as possible.",
+   "source2": "MDN — link rel preload",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "vitals-hindari-inp-tinggi-dari-script",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari INP Tinggi dari Script Panjang",
+   "desc": "Tata cara memecah script panjang di Clincoo agar interaksi tidak tertunda.",
+   "content": "<p class=\"mb-4\">Script yang berjalan lama di main thread menunda respons klik dan menaikkan INP.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pecah tugas panjang</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pindahkan pekerjaan berat ke requestIdleCallback atau Web Worker. Hindari loop panjang di event handler.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ukur setelah perubahan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> klik tombol setelah perubahan. INP harus turun. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — INP",
+   "sourceUrl": "https://web.dev/articles/inp",
+   "sourceSnippet": "Long tasks on the main thread delay interaction response and raise INP.",
+   "source2": "web.dev — Optimize INP",
+   "source2Url": "https://web.dev/articles/optimize-inp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid High INP from Long Scripts",
+   "desc": "How to break up long scripts on Clincoo so interactions are not delayed.",
+   "content": "<p class=\"mb-4\">A long-running script on the main thread delays click response and raises INP.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Break up long tasks</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> move heavy work to requestIdleCallback or a Web Worker. Avoid long loops inside event handlers.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Measure after the change</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> click buttons after the change. INP should drop. Record it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "web.dev — INP",
+   "sourceUrl": "https://web.dev/articles/inp",
+   "sourceSnippet": "Long tasks on the main thread delay interaction response and raise INP.",
+   "source2": "web.dev — Optimize INP",
+   "source2Url": "https://web.dev/articles/optimize-inp",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
