@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Observer (10 Oktober 2026, 09:12 WIB — tambah 2 artikel)
+// Clincoo Docs — kategori Observer (10 Oktober 2026, 23:00 WIB — tambah 1 artikel)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["observer"] = {
  "names": { "id": "Observer", "en": "Observer" },
@@ -89,6 +89,35 @@ window.countryDataFiles["observer"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "observer-deteksi-perubahan-dom-dengan-mutation",
+ "langs": {
+  "id": {
+   "title": "Cara Deteksi Perubahan DOM dengan Mutation Observer",
+   "desc": "Tata cara memantau penambahan atau perubahan atribut elemen di Clincoo menggunakan Mutation Observer.",
+   "content": "<p class=\"mb-4\">Mutation Observer memberitahu saat node ditambahkan, dihapus, atau atributnya berubah, tanpa polling.",
+   "source": "MDN — Mutation Observer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
+   "sourceSnippet": "MutationObserver provides a way to react to changes in the DOM.",
+   "source2": "MDN — MutationObserver.observe",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Detect DOM Changes with Mutation Observer",
+   "desc": "How to watch for added nodes or attribute changes on Clincoo elements using Mutation Observer.",
+   "content": "<p class=\"mb-4\">Mutation Observer reports when nodes are added, removed, or their attributes change, without polling.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Observe the container</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create a MutationObserver and call observe on the parent container with childList and attributes. Inside the callback handle the mutations array.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Disconnect when done</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> call disconnect when the feature is no longer needed. Record the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Mutation Observer",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
+   "sourceSnippet": "MutationObserver provides a way to react to changes in the DOM.",
+   "source2": "MDN — MutationObserver.observe",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
-]
+ ]
 };
