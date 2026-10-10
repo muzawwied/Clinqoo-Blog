@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori MCP (10 Oktober 2026, 09:12 WIB — tambah 2 artikel)
+// Clincoo Docs — kategori MCP (10 Oktober 2026, 15:00 WIB — tambah 1 artikel)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["mcp"] = {
  "names": { "id": "MCP", "en": "MCP" },
@@ -89,6 +89,35 @@ window.countryDataFiles["mcp"] = {
    "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+ "id": "mcp-tangani-error-tool",
+ "langs": {
+  "id": {
+   "title": "Cara Tangani Error Tool MCP yang Dikembalikan",
+   "desc": "Tata cara membaca dan menangani pesan error dari tool MCP Clincoo tanpa mengulang permintaan yang sama.",
+   "content": "<p class=\"mb-4\">Error dari tool MCP sering berisi kode status atau pesan yang menjelaskan masalah, bukan alasan untuk langsung mengulang.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Baca pesan sebelum ulang</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> salin pesan error lengkap. Periksa apakah itu 401, 404, atau timeout. Perbaiki penyebabnya dulu, misalnya token atau path, baru coba lagi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Batasi percobaan ulang</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> jangan ulang lebih dari dua kali. Jika masih gagal, catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> dan minta bantuan dengan pesan error utuh, bukan ringkasan.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Tool calls return results or errors that the client should surface to the user.",
+   "source2": "Clincoo Docs — server MCP",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Handle an Error Returned by an MCP Tool",
+   "desc": "How to read and handle an error message from a Clincoo MCP tool without repeating the same request.",
+   "content": "<p class=\"mb-4\">An error from an MCP tool often contains a status code or message that explains the problem, not a reason to retry immediately.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Read the message before retrying</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> copy the full error message. Check whether it is a 401, 404, or timeout. Fix the cause first, such as the token or path, then try again.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Limit the retries</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> do not retry more than twice. If it still fails, record it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> and ask for help with the full error message, not a summary.</p>",
+   "source": "Model Context Protocol — specification",
+   "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+   "sourceSnippet": "Tool calls return results or errors that the client should surface to the user.",
+   "source2": "Clincoo Docs — MCP server",
+   "source2Url": "https://docs.clincoo.buzz/dokumentasi/server-mcp-clincoo/",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
-]
+ ]
 };
