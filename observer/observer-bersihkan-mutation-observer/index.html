@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Bersihkan Mutation Observer saat Elemen Hilang — Clincoo</title>
+<meta name="description" content="Tata cara melepaskan Mutation Observer di Clincoo agar tidak terus memantau DOM yang sudah tidak ada.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Bersihkan Mutation Observer saat Elemen Hilang">
+<meta property="og:description" content="Tata cara melepaskan Mutation Observer di Clincoo agar tidak terus memantau DOM yang sudah tidak ada.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-bersihkan-mutation-observer/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+</head>
+<body>
+<article>
+<h1>Cara Bersihkan Mutation Observer saat Elemen Hilang</h1>
+<p>Tata cara melepaskan Mutation Observer di Clincoo agar tidak terus memantau DOM yang sudah tidak ada.</p>
+<p class="mb-4">Mutation Observer yang tidak di-disconnect terus berjalan dan bisa memperlambat halaman atau menulis state pada elemen yang sudah dihapus.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Simpan referensi observer</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> simpan instance observer di variabel yang bisa diakses saat komponen di-unmount. Panggil disconnect sebelum menghapus node yang diamati.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Uji dengan menambah dan menghapus panel</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> buka panel yang memakai observer, tutup, lalu buka lagi. Pastikan tidak ada callback ganda. Catat langkah di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MDN — Mutation Observer</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Create a Focus Trap in a Modal Dialog — Clincoo</title>
+<meta name="description" content="How to keep keyboard focus inside a Clincoo dialog until the user closes it.">
+<link rel="canonical" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Create a Focus Trap in a Modal Dialog">
+<meta property="og:description" content="How to keep keyboard focus inside a Clincoo dialog until the user closes it.">
+<meta property="og:url" content="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Create a Focus Trap in a Modal Dialog</h1>
+<p>How to keep keyboard focus inside a Clincoo dialog until the user closes it.</p>
+<p class="mb-4">Without a focus trap, a keyboard user can Tab out of the dialog and interact with the background that should be inert.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Catch Tab at the ends of the dialog</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> on the dialog element, listen for keydown Tab. If focus is on the last element and Tab is pressed, move to the first element. If Shift+Tab is on the first element, move to the last element.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Restore focus when closed</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> save the element that opened the dialog. When the dialog closes, return focus to that element. Record the pattern on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets">MDN — Focus management</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

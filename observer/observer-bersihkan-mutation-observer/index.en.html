@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Clean Up a Mutation Observer When the Element Is Gone — Clincoo</title>
+<meta name="description" content="How to release a Mutation Observer in Clincoo so it does not keep watching a DOM that no longer exists.">
+<link rel="canonical" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Clean Up a Mutation Observer When the Element Is Gone">
+<meta property="og:description" content="How to release a Mutation Observer in Clincoo so it does not keep watching a DOM that no longer exists.">
+<meta property="og:url" content="https://blog.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/observer/observer-bersihkan-mutation-observer/index.en.html">
+</head>
+<body>
+<article>
+<h1>How to Clean Up a Mutation Observer When the Element Is Gone</h1>
+<p>How to release a Mutation Observer in Clincoo so it does not keep watching a DOM that no longer exists.</p>
+<p class="mb-4">A Mutation Observer that is not disconnected keeps running and can slow the page or write state on an element that has already been removed.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Keep a reference to the observer</h2><p class="mb-4">In <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> store the observer instance in a variable that is reachable when the component unmounts. Call disconnect before removing the observed node.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Test by adding and removing the panel</h2><p class="mb-4">In <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> open a panel that uses the observer, close it, then open it again. Confirm there are no duplicate callbacks. Record the steps on <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MDN — Mutation Observer</a></p>
+<p><a href="https://blog.clincoo.buzz/">Back to blog</a></p>
+</article>
+</body>
+</html>

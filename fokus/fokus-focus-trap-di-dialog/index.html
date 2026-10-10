@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Buat Focus Trap di Dialog Modal — Clincoo</title>
+<meta name="description" content="Tata cara menjaga fokus keyboard tetap di dalam dialog Clincoo sampai pengguna menutupnya.">
+<link rel="canonical" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<link rel="alternate" hreflang="id" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<link rel="alternate" hreflang="en" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara Buat Focus Trap di Dialog Modal">
+<meta property="og:description" content="Tata cara menjaga fokus keyboard tetap di dalam dialog Clincoo sampai pengguna menutupnya.">
+<meta property="og:url" content="https://blog.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+<meta property="og:site_name" content="Clincoo">
+<script>window.location.replace("https://docs.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/");</script>
+<meta http-equiv="refresh" content="0;url=https://docs.clincoo.buzz/fokus/fokus-focus-trap-di-dialog/">
+</head>
+<body>
+<article>
+<h1>Cara Buat Focus Trap di Dialog Modal</h1>
+<p>Tata cara menjaga fokus keyboard tetap di dalam dialog Clincoo sampai pengguna menutupnya.</p>
+<p class="mb-4">Tanpa focus trap, pengguna keyboard bisa Tab keluar dari dialog dan berinteraksi dengan latar yang seharusnya tidak bisa diakses.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Tangkap Tab di ujung dialog</h2><p class="mb-4">Di <a href="https://editor.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">editor.clincoo.buzz</a> pada elemen dialog, dengarkan keydown Tab. Jika fokus di elemen terakhir dan Tab ditekan, pindahkan ke elemen pertama. Jika Shift+Tab di elemen pertama, pindahkan ke elemen terakhir.</p><h2 class="text-lg font-bold text-gray-900 mt-8 mb-2">Kembalikan fokus saat ditutup</h2><p class="mb-4">Di <a href="https://app.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">app.clincoo.buzz</a> simpan elemen yang membuka dialog. Saat dialog ditutup, kembalikan fokus ke elemen itu. Catat pola di <a href="https://blog.clincoo.buzz/" target="_blank" rel="noopener" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900">blog.clincoo.buzz</a>.</p>
+<p>Sumber: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets">MDN — Focus management</a></p>
+<p><a href="https://blog.clincoo.buzz/">Kembali ke blog</a></p>
+</article>
+</body>
+</html>
