@@ -36,6 +36,13 @@
     document.body.appendChild(e);
   }
   // ... rest of the functions remain the same, abbreviated for this update
+  function loadDebugcss() {
+    var e = document.createElement('script');
+    e.src = 'data_debugcss.js?v=1';
+    e.onload = loadOverscroll;
+    e.onerror = loadOverscroll;
+    document.body.appendChild(e);
+  }
   function loadOverscroll() {
     var e = document.createElement('script');
     e.src = 'data_overscroll.js?v=1';
@@ -46,7 +53,7 @@
   // (full original functions would be included here)
   var s = document.createElement('script');
   s.src = 'data_clincoo.js?v=10';
-  s.onload = loadExtra;
+  s.onload = loadDebugcss;
   s.onerror = loadExtra;
   document.body.appendChild(s);
 })();
