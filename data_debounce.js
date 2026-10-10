@@ -89,6 +89,35 @@ window.countryDataFiles["debounce"] = {
     "source3Url": "https://editor.clincoo.buzz/"
   }
  }
+},
+{
+  "id": "debounce-resize-window-dengan-throttle",
+  "langs": {
+   "id": {
+    "title": "Cara Throttle Event Resize Window di Clincoo",
+    "desc": "Tata cara membatasi handler resize agar tidak jalan terlalu sering dan merusak performa.",
+    "content": "<p class=\"mb-4\">Event resize bisa terpicu puluhan kali saat pengguna mengubah ukuran jendela. Handler berat membuat UI lag.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Throttle dengan requestAnimationFrame</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pasang listener resize yang hanya menjadwalkan satu rAF. Di dalam frame, baca ukuran dan update layout. Flag untuk mencegah antrian ganda.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan drag jendela</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> ubah ukuran jendela cepat. Console tidak boleh spam log. Catat hasil di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — Window resize event",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event",
+    "sourceSnippet": "The resize event fires when the document view has been resized.",
+    "source2": "MDN — requestAnimationFrame",
+    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+  },
+   "en": {
+    "title": "How to Throttle the Window Resize Event in Clincoo",
+    "desc": "How to limit a resize handler so it does not run too often and hurt performance.",
+    "content": "<p class=\"mb-4\">The resize event can fire dozens of times while the user drags the window. A heavy handler makes the UI lag.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Throttle with requestAnimationFrame</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> attach a resize listener that only schedules one rAF. Inside the frame, read the size and update layout. Use a flag to prevent double queues.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test by dragging the window</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> resize the window quickly. The console should not spam logs. Record the result on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+    "source": "MDN — Window resize event",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event",
+    "sourceSnippet": "The resize event fires when the document view has been resized.",
+    "source2": "MDN — requestAnimationFrame",
+    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "source3": "Clincoo Editor",
+    "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
 }
  ]
 };
