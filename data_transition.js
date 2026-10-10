@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Transition (9 Oktober 2026, 20:00 WIB — 4 artikel)
+// Clincoo Docs — kategori Transition (9 Oktober 2026, 20:00 WIB — 5 artikel)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["transition"] = {
  "names": { "id": "Transisi", "en": "Transition" },
@@ -114,6 +114,35 @@ window.countryDataFiles["transition"] = {
    "sourceSnippet": "The transform CSS property lets you rotate, scale, skew, or translate an element.",
    "source2": "web.dev — Rendering performance",
    "source2Url": "https://web.dev/articles/rendering-performance",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "transition-will-change-hemat-gpu",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai will-change Hemat untuk Transisi",
+   "desc": "Tata cara memakai will-change hanya pada elemen yang memang bertransisi di Clincoo agar GPU tidak terbebani terus.",
+   "content": "<p class=\"mb-4\">will-change: transform pada setiap kartu membuat layer GPU menumpuk dan memperlambat scroll.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Tambahkan hanya saat hover atau fokus</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set will-change: transform pada state :hover atau :focus-visible, bukan di aturan dasar. Hapus setelah transisi selesai jika memungkinkan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di Performance</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> rekam scroll dan hover. Layer tidak boleh bertambah terus. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — will-change",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change",
+   "sourceSnippet": "will-change hints the browser about upcoming changes so it can optimize, but overuse creates extra layers.",
+   "source2": "web.dev — Animations",
+   "source2Url": "https://web.dev/articles/animations-guide",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use will-change Sparingly for Transitions",
+   "desc": "How to apply will-change only to elements that actually transition in Clincoo so the GPU is not loaded continuously.",
+   "content": "<p class=\"mb-4\">will-change: transform on every card piles up GPU layers and slows scrolling.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Add it only on hover or focus</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set will-change: transform on the :hover or :focus-visible state, not in the base rule. Remove it after the transition ends if possible.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in Performance</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> record scroll and hover. Layers should not keep growing. Note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — will-change",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change",
+   "sourceSnippet": "will-change hints the browser about upcoming changes so it can optimize, but overuse creates extra layers.",
+   "source2": "web.dev — Animations",
+   "source2Url": "https://web.dev/articles/animations-guide",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
