@@ -1,4 +1,4 @@
-// Clincoo Docs — tambah 5 artikel Security (10 Oktober 2026, 20:00 WIB)
+// Clincoo Docs — tambah artikel Security (10 Oktober 2026, 23:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["security"]) {
@@ -30,6 +30,35 @@
    "sourceSnippet": "Content-Security-Policy is a HTTP response header that controls resources the user agent is allowed to load.",
    "source2": "web.dev — CSP",
    "source2Url": "https://web.dev/articles/csp",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "security-hindari-mixed-content",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari Mixed Content di Halaman HTTPS Clincoo",
+   "desc": "Tata cara memastikan semua sumber daya di halaman Clincoo menggunakan HTTPS agar tidak diblokir browser.",
+   "content": "<p class=\"mb-4\">Mixed content terjadi saat halaman HTTPS memuat gambar, skrip, atau stylesheet dari HTTP. Browser modern memblokirnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Ganti semua URL ke HTTPS</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> cari src atau href yang dimulai dengan http://. Ganti ke https://. Jika server tidak mendukung HTTPS, pindahkan aset ke domain yang aman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek di Console</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> buka Console. Jika ada peringatan mixed content, perbaiki. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Mixed content",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content",
+   "sourceSnippet": "Mixed content occurs when a secure page loads insecure resources.",
+   "source2": "web.dev — Mixed content",
+   "source2Url": "https://web.dev/articles/mixed-content",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Avoid Mixed Content on an HTTPS Clincoo Page",
+   "desc": "How to ensure all resources on a Clincoo page use HTTPS so they are not blocked by the browser.",
+   "content": "<p class=\"mb-4\">Mixed content happens when an HTTPS page loads images, scripts, or stylesheets from HTTP. Modern browsers block it.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Change all URLs to HTTPS</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> search for src or href that start with http://. Change them to https://. If the server does not support HTTPS, move the asset to a secure domain.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check the Console</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> open the Console. If there is a mixed content warning, fix it. Record on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Mixed content",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content",
+   "sourceSnippet": "Mixed content occurs when a secure page loads insecure resources.",
+   "source2": "web.dev — Mixed content",
+   "source2Url": "https://web.dev/articles/mixed-content",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
