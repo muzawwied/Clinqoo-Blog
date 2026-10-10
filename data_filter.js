@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Filter (10 Oktober 2026, 11:00 WIB) — 5 artikel baru
+// Clincoo Docs — kategori Filter (10 Oktober 2026, 12:00 WIB — tambah 5 artikel)
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["filter"] = {
  "names": { "id": "Filter", "en": "Filter" },
@@ -145,6 +145,151 @@ window.countryDataFiles["filter"] = {
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function",
    "source3": "Clincoo Blog",
    "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "filter-blur-latar-belakang-modal",
+ "langs": {
+  "id": {
+   "title": "Cara Blur Latar Belakang Modal dengan filter: blur",
+   "desc": "Tata cara membuat latar modal Clincoo kabur dengan filter: blur tanpa mengganggu performa.",
+   "content": "<p class=\"mb-4\">Modal dengan latar kabur memfokuskan perhatian ke dialog. Filter blur pada backdrop membuatnya lebih halus daripada overlay datar.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Terapkan blur pada backdrop saja</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> beri backdrop filter: blur(8px) dan background semi-transparan. Jangan blur pada dialog itu sendiri. Batasi blur di bawah 12px agar tidak berat di perangkat rendah.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji dengan prefers-reduced-motion</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> aktifkan reduced motion. Blur harus hilang atau dikurangi. Catat nilai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The blur() CSS function applies a Gaussian blur to the input image.",
+   "source2": "MDN — backdrop-filter",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Blur Modal Background with filter: blur",
+   "desc": "How to make a Clincoo modal backdrop blurry with filter: blur without hurting performance.",
+   "content": "<p class=\"mb-4\">A modal with a blurred background focuses attention on the dialog. A filter blur on the backdrop is smoother than a flat overlay.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Apply blur only to the backdrop</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> give the backdrop filter: blur(8px) and a semi-transparent background. Do not blur the dialog itself. Keep blur under 12px so it stays light on low-end devices.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test with prefers-reduced-motion</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> enable reduced motion. The blur should disappear or reduce. Record the value on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The blur() CSS function applies a Gaussian blur to the input image.",
+   "source2": "MDN — backdrop-filter",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "filter-drop-shadow-bukan-box-shadow",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai drop-shadow daripada box-shadow pada Ikon SVG",
+   "desc": "Tata cara memberi bayangan pada ikon SVG Clincoo dengan filter: drop-shadow yang mengikuti bentuk.",
+   "content": "<p class=\"mb-4\">box-shadow pada SVG mengikuti kotak, bukan bentuk ikon. drop-shadow mengikuti alpha channel sehingga bayangan sesuai siluet.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Terapkan pada elemen SVG</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)) pada svg. Hindari pada grup besar karena bisa mahal. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pada tema terang dan gelap.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fallback jika filter tidak didukung</h2><p class=\"mb-4\">Sediakan box-shadow sederhana sebagai cadangan. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The drop-shadow() CSS function applies a drop shadow effect to the input image.",
+   "source2": "MDN — box-shadow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use drop-shadow Instead of box-shadow on SVG Icons",
+   "desc": "How to add a shadow to Clincoo SVG icons with filter: drop-shadow that follows the shape.",
+   "content": "<p class=\"mb-4\">box-shadow on an SVG follows the box, not the icon shape. drop-shadow follows the alpha channel so the shadow matches the silhouette.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Apply to the SVG element</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)) on the svg. Avoid it on large groups because it can be expensive. Test on <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> in light and dark themes.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Fallback if filter is unsupported</h2><p class=\"mb-4\">Provide a simple box-shadow as backup. Note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The drop-shadow() CSS function applies a drop shadow effect to the input image.",
+   "source2": "MDN — box-shadow",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "filter-grayscale-status-disabled",
+ "langs": {
+  "id": {
+   "title": "Cara Grayscale untuk Status Disabled pada Tombol",
+   "desc": "Tata cara membuat tombol disabled Clincoo terlihat nonaktif dengan filter: grayscale tanpa mengubah warna dasar.",
+   "content": "<p class=\"mb-4\">Tombol disabled sering hanya opacity rendah. Grayscale membuatnya jelas tidak aktif tanpa mengaburkan teks.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Gabungkan grayscale dan opacity</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> pada :disabled atau [aria-disabled], set filter: grayscale(1) opacity(0.6). Jangan hanya opacity karena warna aksen masih terlihat aktif.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pastikan kontras teks tetap</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> cek rasio kontras setelah filter. Teks harus tetap terbaca. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The grayscale() CSS function converts the input image to grayscale.",
+   "source2": "WCAG — Contrast",
+   "source2Url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use Grayscale for Disabled Button State",
+   "desc": "How to make a Clincoo disabled button look inactive with filter: grayscale without changing the base color.",
+   "content": "<p class=\"mb-4\">Disabled buttons often use only low opacity. Grayscale makes them clearly inactive without washing out the text.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Combine grayscale and opacity</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> on :disabled or [aria-disabled], set filter: grayscale(1) opacity(0.6). Do not use opacity alone because accent color still looks active.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Keep text contrast</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> check the contrast ratio after the filter. Text must stay readable. Record it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The grayscale() CSS function converts the input image to grayscale.",
+   "source2": "WCAG — Contrast",
+   "source2Url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "filter-hue-rotate-aksen-tema",
+ "langs": {
+  "id": {
+   "title": "Cara Hue-rotate untuk Mengubah Aksen Tema",
+   "desc": "Tata cara menyesuaikan warna aksen Clincoo dengan filter: hue-rotate tanpa mengganti banyak variabel.",
+   "content": "<p class=\"mb-4\">Mengubah aksen tema sering butuh banyak CSS variable. hue-rotate pada elemen ikon atau badge bisa menyesuaikan cepat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Terapkan pada elemen monokrom</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set filter: hue-rotate(90deg) pada ikon aksen. Uji beberapa derajat untuk menemukan yang cocok dengan palet. Jangan pada foto karena mengubah makna warna.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Simpan nilai di catatan</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bandingkan sebelum dan sesudah. Catat derajat yang dipakai di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> agar konsisten.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The hue-rotate() CSS function rotates the hue of the input image.",
+   "source2": "MDN — CSS filters",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use hue-rotate to Shift Theme Accent",
+   "desc": "How to adjust Clincoo accent color with filter: hue-rotate without changing many variables.",
+   "content": "<p class=\"mb-4\">Changing a theme accent often needs many CSS variables. hue-rotate on an icon or badge can shift it quickly.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Apply to monochrome elements</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set filter: hue-rotate(90deg) on an accent icon. Try a few degrees to match the palette. Do not use it on photos because it changes color meaning.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Save the value in a note</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> compare before and after. Record the degrees used on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a> so it stays consistent.</p>",
+   "source": "MDN — filter",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "sourceSnippet": "The hue-rotate() CSS function rotates the hue of the input image.",
+   "source2": "MDN — CSS filters",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "filter-opacity-vs-filter-opacity",
+ "langs": {
+  "id": {
+   "title": "Cara Pilih opacity Properti atau filter: opacity",
+   "desc": "Tata cara membedakan opacity CSS dan filter: opacity di komponen Clincoo.",
+   "content": "<p class=\"mb-4\">opacity properti memengaruhi seluruh elemen termasuk anak. filter: opacity hanya memengaruhi rendering filter stack.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Pakai opacity untuk konten</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> untuk membuat tombol setengah transparan, pakai opacity: 0.7. Untuk efek filter bertumpuk, filter: opacity(0.7). Jangan campur jika tidak perlu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji stacking</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> lihat apakah anak ikut transparan. Catat pilihan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — opacity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity",
+   "sourceSnippet": "The opacity CSS property sets the opacity of an element.",
+   "source2": "MDN — filter",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Choose opacity Property or filter: opacity",
+   "desc": "How to distinguish CSS opacity and filter: opacity in Clincoo components.",
+   "content": "<p class=\"mb-4\">The opacity property affects the whole element including children. filter: opacity only affects the filter rendering stack.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use opacity for content</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> to make a button half-transparent, use opacity: 0.7. For stacked filter effects, use filter: opacity(0.7). Do not mix them unless needed.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test stacking</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> see if children become transparent too. Record the choice on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — opacity",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity",
+   "sourceSnippet": "The opacity CSS property sets the opacity of an element.",
+   "source2": "MDN — filter",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
   }
  }
 }
