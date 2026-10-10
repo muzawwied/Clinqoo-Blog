@@ -1,4 +1,4 @@
-// Clincoo Docs — kategori Subgrid (7 Oktober 2026, 09:00 WIB) — 4 artikel
+// Clincoo Docs — kategori Subgrid (7 Oktober 2026, 09:00 WIB) — 5 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["subgrid"] = {
  "names": { "id": "Subgrid", "en": "Subgrid" },
@@ -114,6 +114,35 @@ window.countryDataFiles["subgrid"] = {
    "sourceSnippet": "The @supports CSS at-rule lets you specify declarations that depend on a browser's support for CSS features.",
    "source2": "MDN — subgrid",
    "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "subgrid-selaraskan-header-konten",
+ "langs": {
+  "id": {
+   "title": "Cara Selaraskan Header dan Konten dengan Subgrid",
+   "desc": "Tata cara menyelaraskan header sticky dan konten utama Clincoo menggunakan subgrid agar kolom tetap rata.",
+   "content": "<p class=\"mb-4\">Header dan konten yang tidak memakai jalur grid yang sama membuat tombol aksi tidak sejajar dengan judul di bawahnya.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Gunakan subgrid pada konten</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set grid pada body atau wrapper, lalu header dan main memakai grid-template-columns: subgrid. Header dapat span semua kolom.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji scroll dan resize</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> gulir dan ubah lebar. Kolom harus tetap rata. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "subgrid allows child grids to align to the parent tracks.",
+   "source2": "MDN — CSS Grid",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Align Header and Content with Subgrid",
+   "desc": "How to align a sticky header and main content in Clincoo using subgrid so columns stay even.",
+   "content": "<p class=\"mb-4\">A header and content that do not share the same grid tracks make action buttons misalign with the title below.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Use subgrid on the content</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> set a grid on the body or wrapper, then have the header and main use grid-template-columns: subgrid. The header can span all columns.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test scroll and resize</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> scroll and change the width. Columns should stay aligned. Note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — subgrid",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid",
+   "sourceSnippet": "subgrid allows child grids to align to the parent tracks.",
+   "source2": "MDN — CSS Grid",
+   "source2Url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
