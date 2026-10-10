@@ -1,3 +1,4 @@
+// Clincoo Docs — kategori Struktur (10 Oktober 2026, 18:00 WIB) — tambah 5 artikel (sekarang 10)
 // Clincoo Docs — kategori Struktur (10 Oktober 2026, 17:00 WIB) — kategori baru, 5 artikel
 if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
 window.countryDataFiles["struktur"] = {
@@ -145,6 +146,151 @@ window.countryDataFiles["struktur"] = {
    "source2Url": "https://editor.clincoo.buzz/",
    "source3": "Clincoo App",
    "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "struktur-pisahkan-styles-dan-scripts",
+ "langs": {
+  "id": {
+   "title": "Cara Pisahkan Folder Styles dan Scripts",
+   "desc": "Tata cara menaruh CSS dan JS di folder terpisah di proyek Clincoo supaya tidak tercampur dengan HTML.",
+   "content": "<p class=\"mb-4\">File CSS dan JS di root atau campur dengan HTML membuat pencarian lambat dan deploy lebih berat.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Buat folder khusus</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat styles/ untuk semua .css dan scripts/ untuk semua .js. Link dari HTML pakai path relatif yang konsisten.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji path setelah pindah</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pastikan style dan skrip tetap ter-load setelah dipindah. Catat konvensi di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Organizing files",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Group related files into folders to keep the project maintainable.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Separate Styles and Scripts Folders",
+   "desc": "How to put CSS and JS into separate folders in a Clincoo project so they are not mixed with HTML.",
+   "content": "<p class=\"mb-4\">CSS and JS files in the root or mixed with HTML make search slow and deploys heavier.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Create dedicated folders</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create styles/ for all .css and scripts/ for all .js. Link from HTML with consistent relative paths.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test paths after moving</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> confirm styles and scripts still load after the move. Note the convention on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Organizing files",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Group related files into folders to keep the project maintainable.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "struktur-buat-subfolder-halaman",
+ "langs": {
+  "id": {
+   "title": "Cara Buat Subfolder untuk Setiap Halaman Utama",
+   "desc": "Tata cara menaruh setiap halaman Clincoo di folder sendiri supaya path dan aset terkait mudah dikelola.",
+   "content": "<p class=\"mb-4\">Semua HTML di root membuat daftar panjang dan sulit memisahkan aset per halaman.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Satu folder per halaman</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat pages/about/ dengan index.html di dalamnya, atau about/index.html. Aset khusus halaman ikut di dalam folder itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update navigasi</h2><p class=\"mb-4\">Sesuaikan href di menu. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bahwa URL bersih tetap bekerja. Catat pola di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — File structure",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Organize pages into folders to keep related assets together.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Create a Subfolder for Each Main Page",
+   "desc": "How to place each Clincoo page in its own folder so paths and related assets are easier to manage.",
+   "content": "<p class=\"mb-4\">All HTML in the root creates a long list and makes it hard to isolate assets per page.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">One folder per page</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create pages/about/ with index.html inside, or about/index.html. Page-specific assets go inside that folder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update navigation</h2><p class=\"mb-4\">Adjust hrefs in the menu. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> that clean URLs still work. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — File structure",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Organize pages into folders to keep related assets together.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo App",
+   "source3Url": "https://app.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "struktur-pakai-kebab-case-semua-file",
+ "langs": {
+  "id": {
+   "title": "Cara Pakai kebab-case untuk Semua Nama File",
+   "desc": "Tata cara memakai huruf kecil dan tanda hubung di semua file Clincoo supaya path tidak bermasalah di server.",
+   "content": "<p class=\"mb-4\">Nama file dengan spasi atau huruf kapital sering gagal di server Linux atau saat deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Konversi semua nama</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> ubah My Header.png menjadi my-header.png, dan FormHandler.js menjadi form-handler.js.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update semua referensi</h2><p class=\"mb-4\">Cari dan ganti di HTML dan CSS. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bahwa tidak ada 404. Simpan aturan di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — File names",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Use lowercase names with hyphens to avoid issues on case-sensitive servers.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Use kebab-case for All File Names",
+   "desc": "How to use lowercase and hyphens for all Clincoo files so paths do not break on servers.",
+   "content": "<p class=\"mb-4\">File names with spaces or capitals often fail on Linux servers or during deploy.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Convert all names</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> change My Header.png to my-header.png and FormHandler.js to form-handler.js.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update all references</h2><p class=\"mb-4\">Search and replace in HTML and CSS. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> that there are no 404s. Save the rule on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — File names",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Dealing_with_files",
+   "sourceSnippet": "Use lowercase names with hyphens to avoid issues on case-sensitive servers.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "struktur-buat-folder-assets-icons",
+ "langs": {
+  "id": {
+   "title": "Cara Buat Folder Khusus untuk Ikon dan Favicon",
+   "desc": "Tata cara menaruh ikon, favicon, dan apple-touch-icon di folder assets/icons di proyek Clincoo.",
+   "content": "<p class=\"mb-4\">Ikon tersebar di root membuat root berantakan dan sulit dioptimasi.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Kumpulkan di satu tempat</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> buat assets/icons/ lalu pindahkan favicon.ico, apple-touch-icon.png, dan SVG ikon ke sana.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update link di head</h2><p class=\"mb-4\">Sesuaikan href di HTML. Uji di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> bahwa favicon masih muncul. Catat di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Favicon",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#icon",
+   "sourceSnippet": "The icon relation points to a favicon that should be placed in an organized location.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Create a Dedicated Folder for Icons and Favicons",
+   "desc": "How to place icons, favicons, and apple-touch-icons in assets/icons in a Clincoo project.",
+   "content": "<p class=\"mb-4\">Scattered icons clutter the root and make optimization harder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Collect them in one place</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> create assets/icons/ and move favicon.ico, apple-touch-icon.png, and SVG icons there.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Update links in the head</h2><p class=\"mb-4\">Adjust hrefs in HTML. Test in <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> that the favicon still appears. Note it on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Favicon",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#icon",
+   "sourceSnippet": "The icon relation points to a favicon that should be placed in an organized location.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "struktur-hindari-file-sementara-di-repo",
+ "langs": {
+  "id": {
+   "title": "Cara Hindari File Sementara Masuk ke Repo",
+   "desc": "Tata cara memakai .gitignore dan folder drafts supaya file percobaan Clincoo tidak ikut di-commit.",
+   "content": "<p class=\"mb-4\">File .tmp, .bak, atau draft yang ikut commit membuat history berisik dan deploy tidak bersih.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Perluas .gitignore</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan *.tmp, *.bak, drafts/, dan .DS_Store ke .gitignore. Pindahkan file percobaan ke drafts/ yang diabaikan.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Cek sebelum commit</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> pastikan git status bersih. Catat pola di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Git — gitignore",
+   "sourceUrl": "https://git-scm.com/docs/gitignore",
+   "sourceSnippet": "Use .gitignore to exclude temporary and generated files from the repository.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Keep Temporary Files Out of the Repo",
+   "desc": "How to use .gitignore and a drafts folder so Clincoo experiment files are not committed.",
+   "content": "<p class=\"mb-4\">.tmp, .bak, or draft files that get committed make history noisy and deploys unclean.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Expand .gitignore</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add *.tmp, *.bak, drafts/, and .DS_Store to .gitignore. Move experiment files to an ignored drafts/ folder.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Check before commit</h2><p class=\"mb-4\">In <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> confirm git status is clean. Note the pattern on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "Git — gitignore",
+   "sourceUrl": "https://git-scm.com/docs/gitignore",
+   "sourceSnippet": "Use .gitignore to exclude temporary and generated files from the repository.",
+   "source2": "Clincoo Editor",
+   "source2Url": "https://editor.clincoo.buzz/",
+   "source3": "Clincoo Blog",
+   "source3Url": "https://blog.clincoo.buzz/"
   }
  }
 }
