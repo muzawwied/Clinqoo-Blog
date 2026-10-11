@@ -14,11 +14,18 @@
     e.onerror = loadApp;
     document.body.appendChild(e);
   }
+  function loadSecurityExtra2() {
+    var e = document.createElement('script');
+    e.src = 'data_security_extra2.js?v=1';
+    e.onload = loadStruktur;
+    e.onerror = loadStruktur;
+    document.body.appendChild(e);
+  }
   function loadSecurity() {
     var e = document.createElement('script');
     e.src = 'data_security.js?v=1';
-    e.onload = loadStruktur;
-    e.onerror = loadStruktur;
+    e.onload = loadSecurityExtra2;
+    e.onerror = loadSecurityExtra2;
     document.body.appendChild(e);
   }
   function loadFilter() {
