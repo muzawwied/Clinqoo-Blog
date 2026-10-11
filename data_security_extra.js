@@ -1,4 +1,5 @@
 // Clincoo Docs — tambah artikel Security (10 Oktober 2026, 23:00 WIB)
+// Clincoo Docs — tambah 1 artikel Security (11 Oktober 2026, 08:00 WIB)
 (function () {
   if (typeof window.countryDataFiles === 'undefined') window.countryDataFiles = {};
   if (!window.countryDataFiles["security"]) {
@@ -59,6 +60,35 @@
    "sourceSnippet": "Mixed content occurs when a secure page loads insecure resources.",
    "source2": "web.dev — Mixed content",
    "source2Url": "https://web.dev/articles/mixed-content",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  }
+ }
+},
+{
+ "id": "security-atur-permissions-policy",
+ "langs": {
+  "id": {
+   "title": "Cara Atur Permissions-Policy untuk Batasi Fitur Browser",
+   "desc": "Tata cara memasang Permissions-Policy di Clincoo supaya kamera, lokasi, dan fitur lain tidak dipakai tanpa izin.",
+   "content": "<p class=\"mb-4\">Tanpa policy, skrip bisa meminta kamera atau geolocation tanpa kontrol. Permissions-Policy membatasi itu.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set header atau meta</h2><p class=\"mb-4\">Di <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> tambahkan Permissions-Policy: camera=(), microphone=(), geolocation=(). Atau meta http-equiv.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Uji di pratinjau</h2><p class=\"mb-4\">Di <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> coba akses fitur yang diblokir. Pastikan error jelas. Catat policy di <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy",
+   "sourceSnippet": "Permissions-Policy allows you to control which features and APIs can be used in the browser.",
+   "source2": "web.dev — Permissions Policy",
+   "source2Url": "https://web.dev/articles/permissions-policy",
+   "source3": "Clincoo Editor",
+   "source3Url": "https://editor.clincoo.buzz/"
+  },
+  "en": {
+   "title": "How to Set Permissions-Policy to Limit Browser Features",
+   "desc": "How to add Permissions-Policy in Clincoo so camera, location, and other features cannot be used without permission.",
+   "content": "<p class=\"mb-4\">Without a policy, scripts can request camera or geolocation without control. Permissions-Policy limits that.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Set the header or meta</h2><p class=\"mb-4\">In <a href=\"https://editor.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">editor.clincoo.buzz</a> add Permissions-Policy: camera=(), microphone=(), geolocation=(). Or a meta http-equiv.</p><h2 class=\"text-lg font-bold text-gray-900 mt-8 mb-2\">Test in preview</h2><p class=\"mb-4\">On <a href=\"https://app.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">app.clincoo.buzz</a> try to access blocked features. Confirm a clear error. Record the policy on <a href=\"https://blog.clincoo.buzz/\" target=\"_blank\" rel=\"noopener\" class=\"underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900 text-gray-900\">blog.clincoo.buzz</a>.</p>",
+   "source": "MDN — Permissions-Policy",
+   "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy",
+   "sourceSnippet": "Permissions-Policy allows you to control which features and APIs can be used in the browser.",
+   "source2": "web.dev — Permissions Policy",
+   "source2Url": "https://web.dev/articles/permissions-policy",
    "source3": "Clincoo Editor",
    "source3Url": "https://editor.clincoo.buzz/"
   }
